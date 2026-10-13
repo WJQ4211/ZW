@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-e2a978df-2abe-40f9-8cfa-f05fce7e1f0b",
+  "object": "chat.completion",
+  "created": 1787717963,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"normalized_claim\": \"JAIC计划在未来2至3年内使用敏捷方法更新和完善AI库存组合分析工具。\"}"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 252,
+    "total_tokens": 279,
+    "completion_tokens": 27,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

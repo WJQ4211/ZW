@@ -1,0 +1,13 @@
+{
+  "authorization_text": "我已审阅P3b-R2a作者签核摘要，同意其余50项建议，并同意上述5项修订；授权以‘AI预标注＋作者批量签核、重点项逐条裁决’的方式执行正式G1-T0。",
+  "authorization_sha256": "1ae10600aba2b6749bc514d4f46feba367f561e4514fe5af9c56c970ecaca969",
+  "reviewer_id": "author_01",
+  "review_mode": "ai_preannotation_author_batch_signoff_with_focus_adjudication",
+  "author_signoff_count": 55,
+  "batch_confirmed_count": 50,
+  "focus_adjudication_count": 5,
+  "human_source_visual_review_count": 0,
+  "ai_assisted_visual_pre_review_count": 7,
+  "signed_at_utc": "2026-08-26T07:13:22Z",
+  "human_reviewed_semantics": "作者确认签核摘要和最终决定；不表示逐条阅读全部原始材料或逐页视觉核验。"
+}

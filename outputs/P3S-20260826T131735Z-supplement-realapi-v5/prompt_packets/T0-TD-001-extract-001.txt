@@ -1,0 +1,100 @@
+PROMPT_ID: evidence_extract_p3s
+VERSION: 1.2
+BATCH_ID: T0-TD-001-extract-001
+SOURCE_ID: T0-TD-001
+RESEARCH_QUESTION: Based only on public, non-classified material available through 2024-12-31, what dominant deployment form is more likely for U.S. military AI capability building in 2025-2027?
+TASK: Extract zero or more directly auditable atomic evidence candidates from this one source only. There is no minimum quantity.
+INPUT LIMIT: Use only the supplied source paragraphs. Do not use other sources, prior outputs, search results, or outside knowledge.
+OUTPUT: strict JSON array; every object must contain exactly eight fields and no others: source_locator, excerpt_original, excerpt_zh, normalized_claim, evidence_nature, coding_dimensions, topics, possible_corroboration_group.
+Do not produce any deterministic metadata such as case_id, source_grade, published_at, publisher, title, URL, evidence_id, version, or content_hash.
+excerpt_original must be a continuous verbatim string from exactly one supplied paragraph. Keep original punctuation, quotation marks, numbers, and units.
+normalized_claim must be Chinese, atomic, and contain no source-attribution prefix. excerpt_zh must be non-empty for every English excerpt.
+Use goal for aims/plans; test_event for a test or exercise occurrence/configuration; test_result only for explicitly observed performance or result; deployment_event only for deployment or sustained use already occurring; constraint for limitations; resource_input for actual resources; evaluation for evaluations; governance_event for already-issued governance mechanisms.
+Do not turn demonstrations, competitions, tests, plans, or statements by a program lead into deployment or independently verified effectiveness.
+Do not generate hypotheses, viewpoints, conclusions, or a 2025-2027 route judgment. Do not optimize for a quantity target.
+FIELD_DEFINITIONS:
+{"application_maturity": "应用成熟度：概念战略、研发、试验、试点、采购部署或持续运用。", "engineering_resource_conditions": "工程与资源条件：数据、算力、模型、接口、供应链、预算、人才和保障。", "human_machine_authority": "人机权限关系：辅助决策、人在回路中、受监督自主或更高程度自主；普通协同、信息传输、培训或文档要求不足以支持此维度。", "integration_level": "能力集成层级：单工具、单任务、单平台、跨平台、跨任务或体系级集成。", "organizational_system_fit": "组织与体系适配：指挥流程、任务编组、跨平台协同、人员负荷和组织变革。", "trust_governance_constraints": "可信与治理约束：安全、可靠性、测试评价、授权边界、责任与伦理。"}
+{"constraint": "限制、风险、障碍、依赖或边界条件。", "deployment_event": "部署、实装、现场运用或正式采用已经发生。", "evaluation": "评价、审查、验证或评估结论。", "goal": "战略目标、愿景或计划方向；不能写成已实现结果。", "governance_event": "已经发生的政策发布、机构职责确立、治理工具发布、标准指南采用或组织机制建立；不得据此推断技术部署。", "resource_input": "投入、资源、预算、数据、人才或基础设施条件。", "test_event": "测试或演习发生、参与主体或配置；不表示功能结果或作战效能。", "test_result": "测试中观察到的功能、性能或结果；必须由摘录直接说明。"}
+OUTPUT_ITEM_COUNT: return 0 to 6 objects only
+OUTPUT_FIELDS: exactly eight fields
+coding_dimensions must be a JSON string array, never an object.
+topics must be a JSON string array.
+evidence_nature must be a single enum string.
+possible_corroboration_group must be a string; use an empty string when there is no group.
+Do not enumerate one item per paragraph. If there are more than 6 facts, select at most 6 with the highest information gain, non-overlap, and coverage.
+SOURCE_PARAGRAPHS:
+--- web_paragraph_0001 ---
+character_start: 0
+character_end: 552
+DARPA’s Robotic Autonomy in Complex Environments with Resiliency (RACER) program is picking up speed after three teams were selected to go to the starting line last October. The program is focused on advancing off-road autonomy of combat vehicles and seeks to demonstrate the ability of these platforms to travel at speeds that maintain pace with manned combat vehicles in complex terrain typical of that seen in real situations. Awards for Phase 1 were given to Carnegie Mellon University, NASA-Jet Propulsion Laboratory, and University of Washington.
+--- web_paragraph_0002 ---
+character_start: 554
+character_end: 1087
+The DARPA RACER program’s goal is to develop and demonstrate autonomy technologies that enable unmanned ground vehicles (UGVs) to maneuver in unstructured off-road terrain at the limit of the vehicle’s mechanical systems and at, or beyond, human-driven speeds and efficiencies. “RACER is intended to disruptively advance the integration and fielding of autonomy for robotic combat vehicles into the Army, Marine Corps, and Special Forces communities,” said Stuart Young , RACER program manager in DARPA’s Tactical Technology Office .
+--- web_paragraph_0003 ---
+character_start: 1089
+character_end: 1406
+In November, the selected teams received the first of the DARPA-provided RACER Fleet Vehicles (RFVs) – a high performance all-terrain vehicle outfitted with world-class sensing and computational abilities – that they are using to develop platform-based autonomy for testing at upcoming DARPA-hosted field experiments.
+--- web_paragraph_0004 ---
+character_start: 1416
+character_end: 1899
+RFV robots include 360o range and image sensing such as multiple LIDARs, stereo camera pairs, color and infrared imaging cameras, RADAR, event sensors, and inertial measurement sensing. Computation tools have multiple best-of-class graphical processing units (GPUs) in an environmentally protected, shock/vibration proof, and thermally managed Electronics Box (E-Box) that’s specifically engineered for the demands of the RACER high speed, off-road terrain expected in DARPA’s tests.
+--- web_paragraph_0005 ---
+character_start: 1901
+character_end: 2416
+The sensor and E-box combination currently collects four terabytes of sensor data per hour to support artificial intelligence, machine learning-based autonomy algorithms and stack approaches required of fast-paced combat maneuvers in complex terrain. Modifications for roll protection, sensor/E-box integration, autonomous control, and increased 7kW of power are included in each RFV. The RFVs were integrated by Carnegie Robotics LLC (CRL) and are housed on a Polaris RZR S4 1000 Turbo base drive-by-wire platform.
+--- web_paragraph_0006 ---
+character_start: 2418
+character_end: 2698
+Four RFVs have been completed, with three already delivered to RACER Phase 1 performers in November 2021. Four more are expected to be built prior to DARPA’s first RACER-hosted field experiment, scheduled for March of 2022 at the National Training Center in Ft. Irwin, California.
+--- web_paragraph_0007 ---
+character_start: 2708
+character_end: 2993
+DARPA-hosted field experiments will provide the teams with a place to demonstrate the full capability of their autonomy stacks in complex environments. At Ft. Irwin, teams will demonstrate their ability to navigate courses with a variety of terrain and distances up to five kilometers.
+--- web_paragraph_0008 ---
+character_start: 2995
+character_end: 3660
+To further support software development, DARPA has also collected over 100 terabytes of RFV-based sensor data from more than 500 kilometers of terrain in the Mid-Atlantic and West Coast. Shared with teams and managed within a RACER development tool for efficiency and security, this data will assist with learning approaches. Conceptual government baseline stacks and autonomy architectures will also be provided. They leverage recent products of Combat Capabilities Development Command-Army Research Laboratory initiatives in collaborative robotics, learning, and intelligent systems activities in partnership with basic research university and industry consortia.
+--- web_paragraph_0009 ---
+character_start: 3662
+character_end: 4190
+The RACER program also has awarded two contracts to develop simulation environments and capabilities to enable development of off-road autonomy algorithms. “The RACER-SIM portion of the program looks to expand current simulation capabilities and physics-based models to support the testing of off-road autonomy in virtual environments,” said Young. “These simulation environments will allow teams to test and validate portions of their autonomy stacks without having to spend large amounts of time and money with field testing.”
+--- web_paragraph_0010 ---
+character_start: 4192
+character_end: 4272
+The two primes for the RACER-SIM program are Duality Robotics and Intel-Federal.
+--- web_paragraph_0011 ---
+character_start: 4274
+character_end: 4569
+Future RACER program activities include continuation into a RACER Phase 2 effort with a more representative 10T combat vehicle surrogate. The plan is to evolve in speed, scale, and mobility beyond the RFVs, as well as add a research track exploring tactics-based derivation of the new platforms.
+END_SOURCE_PARAGRAPHS
+OUTPUT_ITEM_COUNT: return 0 to 6 objects only
+OUTPUT_FIELDS: exactly eight fields
+coding_dimensions must be a JSON string array, never an object.
+topics must be a JSON string array.
+evidence_nature must be a single enum string.
+possible_corroboration_group must be a string; use an empty string when there is no group.
+Do not enumerate one item per paragraph. If there are more than 6 facts, select at most 6 with the highest information gain, non-overlap, and coverage.
+OUTPUT_SCHEMA_EXAMPLE:
+[
+  {
+    "source_locator": "web_paragraph_NNNN",
+    "excerpt_original": "[PLACEHOLDER_VERBATIM_SOURCE_TEXT]",
+    "excerpt_zh": "[PLACEHOLDER_CHINESE_TRANSLATION]",
+    "normalized_claim": "[PLACEHOLDER_ATOMIC_CHINESE_CLAIM]",
+    "evidence_nature": "goal",
+    "coding_dimensions": [
+      "application_maturity"
+    ],
+    "topics": [
+      "[PLACEHOLDER_TOPIC]"
+    ],
+    "possible_corroboration_group": ""
+  }
+]
+Return a JSON array containing 0-6 objects.
+coding_dimensions is an array, never an object.
+Do not output one item per paragraph.
+Do not output additional fields.
+JSON_REPAIR: Return only one strict JSON array with exactly the eight candidate fields and no Markdown or commentary. source_id is injected by the program and must not be returned.
+MODEL_RESPONSE_POSITION: output only the JSON array now.

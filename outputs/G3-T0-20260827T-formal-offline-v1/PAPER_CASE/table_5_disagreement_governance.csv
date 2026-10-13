@@ -1,0 +1,4 @@
+﻿disagreement_id,type,decision_impact,status,resolution_action,contested_node,viewpoint_ref_count
+DISAG-T0-01,mechanism,high,conditionally_retained,monitor,判断体系整合是否已经成为主导演进方向时，应以组织、制度和共用平台建设作为领先指标，还是必须以跨军种、跨任务的实际复用作成立判据。,10
+DISAG-T0-02,risk_weight,medium,conditionally_retained,monitor,任务分散和应用不均衡主要是数据、算力、基础设施、采办及测试治理瓶颈造成的过渡状态，还是适应任务差异的常态化发展形态。,4
+DISAG-T0-03,scope,medium,resolved,scope_split,治理架构建立与运行整合实现是同一判断层次，还是需要分开观察的两个层次。,2

@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-ab267a1f-a932-4858-9e9a-0af5d58e6521",
+  "object": "chat.completion",
+  "created": 1787712164,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n  {\n    \"source_id\": \"T0-TD-007\",\n    \"source_locator\": \"web_paragraph_0006\",\n    \"excerpt_original\": \"The Army deployed and operationalized AIDP rapidly to units in all priority theaters in under 12 months, showing just how important this new and improved intel tool is to Soldiers and DoD.\",\n    \"excerpt_zh\": \"陆军在不到12个月的时间内迅速向所有优先战区部署并投入使用AIDP，这表明这一新的改进型情报工具对士兵和国防部的重要性。\",\n    \"normalized_claim\": \"陆军在不到12个月内向所有优先战区部署并投入使用AIDP。\",\n    \"coding_dimensions\": {\n      \"application_maturity\": \"采购部署\",\n      \"engineering_resource_conditions\": null,\n      \"human_machine_authority\": null,\n      \"integration_level\": \"跨任务\",\n      \"organizational_system_fit\": null,\n      \"trust_governance_constraints\": null\n    },\n    \"evidence_nature\": \"deployment_event\",\n    \"topics\": [\"deployment_event\"]\n  },\n  {\n    \"source_id\": \"T0-TD-007\",\n    \"source_locator\": \"web_paragraph_0005\",\n    \"excerpt_original\": \"U.S. Army Intelligence units around the world are receiving the Army Intelligence Data Platform (AIDP), enabling intelligence soldiers the ability to gather, analyze and distribute information to units faster and more accurately than ever before.\",\n    \"excerpt_zh\": \"世界各地的美国陆军情报单位正在接收陆军情报数据平台（AIDP），使情报士兵能够比以往更快、更准确地收集、分析和向各单位分发信息。\",\n    \"normalized_claim\": \"世界各地的美国陆军情报单位正在接收AIDP。\",\n    \"coding_dimensions\": {\n      \"application_maturity\": \"采购部署\",\n      \"engineering_resource_conditions\": null,\n      \"human_machine_authority\": null,\n      \"integration_level\": \"跨任务\",\n      \"organizational_system_fit\": null,\n      \"trust_governance_constraints\": null\n    },\n    \"evidence_nature\": \"deployment_event\",\n    \"topics\": [\"deployment_event\"]\n  },\n  {\n    \"source_id\": \"T0-TD-007\",\n    \"source_locator\": \"web_paragraph_0012\",\n    \"excerpt_original\": \"Additionally, AIDP is the first major Army Intel program to fully deploy in the Army Intel Cloud environment.\",\n    \"excerpt_zh\": \"此外，AIDP是第一个在陆军情报云环境中全面部署的主要陆军情报项目。\",\n    \"normalized_claim\": \"AIDP是第一个在陆军情报云环境中全面部署的主要陆军情报项目。\",\n    \"coding_dimensions\": {\n      \"application_maturity\": \"采购部署\",\n      \"engineering_resource_conditions\": \"基础设施\",\n      \"human_machine_authority\": null,\n      \"integration_level\": \"体系级\",\n      \"organizational_system_fit\": null,\n      \"trust_governance_constraints\": null\n    },\n    \"evidence_nature\": \"deployment_event\",\n    \"topics\": [\"deployment_event\"]\n  },\n  {\n    \"source_id\": \"T0-TD-007\",\n    \"source_locator\": \"web_paragraph_0008\",\n    \"excerpt_original\": \"AIDP sets the foundation for future technology integration such as big data analytics, artificial intelligence & machine learning.\",\n    \"excerpt_zh\": \"AIDP为未来技术集成（如大数据分析、人工智能和机器学习）奠定了基础。\",\n    \"normalized_claim\": \"AIDP为未来集成大数据分析、人工智能和机器学习等技术奠定基础。\",\n    \"coding_dimensions\": {\n      \"application_maturity\": \"概念战略\",\n      \"engineering_resource_conditions\": null,\n      \"human_machine_authority\": null,\n      \"integration_level\": \"体系级\",\n      \"organizational_system_fit\": null,\n      \"trust_governance_constraints\": null\n    },\n    \"evidence_nature\": \"goal\",\n    \"topics\": [\"goal\"]\n  },\n  {\n    \"source_id\": \"T0-TD-007\",\n    \"source_locator\": \"web_paragraph_0007\",\n    \"excerpt_original\": \"“24 months ago, we were testing AIDP with intel units stateside trying to stress the system and fine tune the system to meet the needs of intel soldiers,” Brig. Gen. Ed Barker, the Program Executive Officer for Intelligence, Electronic Warfare, and Sensors said.\",\n    \"excerpt_zh\": \"“24个月前，我们正与美国本土的情报单位一起测试AIDP，试图对系统进行压力测试并微调系统以满足情报士兵的需求，”情报、电子战和传感器项目执行官Ed Barker准将说。\",\n    \"normalized_claim\": \"24个月前，AIDP正与美国本土情报单位进行压力测试和系统微调。\",\n    \"coding_dimensions\": {\n      \"application_maturity\": \"试验\",\n      \"engineering_resource_conditions\": null,\n      \"human_machine_authority\": null,\n      \"integration_level\": \"单任务\",\n      \"organizational_system_fit\": null,\n      \"trust_governance_constraints\": null\n    },\n    \"evidence_nature\": \"test_event\",\n    \"topics\": [\"test_event\"]\n  }\n]\n```"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2654,
+    "total_tokens": 3813,
+    "completion_tokens": 1159,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

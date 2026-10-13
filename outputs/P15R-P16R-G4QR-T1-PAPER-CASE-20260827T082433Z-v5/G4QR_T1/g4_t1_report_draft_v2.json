@@ -1,0 +1,10 @@
+{
+  "candidate_disagreement_count": 3,
+  "formal_g3_t1_executed": false,
+  "formal_g4_t1_signed": false,
+  "model_api_calls": 19,
+  "status": "draft_pending_author_signoff",
+  "t1_snapshot_refrozen": false,
+  "unchanged_viewpoint_count": 9,
+  "updated_viewpoint_count": 6
+}

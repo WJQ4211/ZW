@@ -1,0 +1,19 @@
+The ability to accurately and rapidly identify key physiological signatures of injury – such as hemorrhage and airway injuries – proved key to success in the DARPA Triage Challenge Event 1. DART took the top spot in the Systems competition, while Coordinated Robotics topped the leaderboard in the Virtual competition and pulled off the win in the Data competition. DARPA-funded and self-funded teams compete side-by-side throughout the DARPA Triage Challenge.
+
+Only self-funded teams are eligible for prizes in the challenge events, but they must finish in the top five overall for the Systems competition and top five overall for the Virtual competition. All qualified teams are eligible for prizes in the Final Event. These self-funded teams won between $60,000 - $120,000 each for their first-place finishes.
+
+The DARPA Triage Challenge is a series of events designed to spur development of novel physiological features for medical triage. The DARPA Triage Challenge aims to drive breakthrough innovations in identification of “signatures” of injury that will help medical responders perform scalable, timely, and accurate triage. Of particular interest are mass casualty incidents, in both civilian and military settings, when medical resources are limited relative to the need.
+
+“Challenge Event 1 is the first in a series of challenge events that will be taking place over the next three years,” said Dr. Jean-Paul Chretien, program manager for the DARPA Triage Challenge. “We have been impressed with the many diverse and innovative approaches of teams onsite and their ability to develop autonomous technologies to enhance response capability in mass casualty events.”
+
+In the Systems competition of the first event, eleven teams representing multiple countries navigated three courses winding through a simulated airplane crash site, a convoy ambush, and a battlefield scenario in Perry, Georgia, September 28-October 4, 2024. DARPA designed the courses to represent complex urban and rural infrastructure. The Virtual competition took place August 12- September 10, 2024, and the Data competition submission window was open from July 30- August 30, 2024, for teams to submit their solutions with results for all three competitions announced on October 5, 2024.
+
+Competitors had the option of joining one or more of the three parallel competitions. Only self-funded teams are eligible for prizes in the initial challenge events. All qualified teams are eligible for prizes in the Final Event.
+
+Systems competition
+
+During primary triage in the field, casualties are assessed to determine priorities for treatment on scene and transport of patients to hospital. The objective of the Systems Competition is to detect and identify physiological signatures of injury derived from data captured by stand-off sensors onboard autonomous systems. This will enable early prioritization of casualties in primary triage, allowing medical care professionals to quickly focus on the most urgent casualties. Teams used their stand-off sensors, robotic mobility platforms – such as unmanned aerial and ground vehicles – and algorithms, to autonomously process sensor data and provide real-time casualty identification and injury assessment.
+
+Though coming in first place in the competition, the DART team is DARPA-funded, and therefore not eligible for prize money. The self-funded Systems competition teams of Coordinated Robotics and UAS-DTU were awarded $120,000 for first place and $60,000 for second place, respectively.
+
+Final scores are as follows:

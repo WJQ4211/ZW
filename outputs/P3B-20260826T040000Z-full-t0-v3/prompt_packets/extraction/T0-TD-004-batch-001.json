@@ -1,0 +1,167 @@
+{
+  "batch_id": "T0-TD-004-batch-001",
+  "source_id": "T0-TD-004",
+  "source_locator_count": 14,
+  "segments": [
+    {
+      "source_id": "T0-TD-004",
+      "source_locator": "web_paragraph_0001",
+      "text": "ACE Program Achieves World First for AI in Aerospace Skip to main content",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0001",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-TD-004",
+      "source_locator": "web_paragraph_0002",
+      "text": "Official websites use .mil A .mil website belongs to an official U.S. Department of War organization.",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0002",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-TD-004",
+      "source_locator": "web_paragraph_0003",
+      "text": "Secure .mil websites use HTTPS A lock ( ) or https:// means you’ve safely connected to the .mil website. Share sensitive information only on official, secure websites.",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0003",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-TD-004",
+      "source_locator": "web_paragraph_0004",
+      "text": "Breadcrumb",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0004",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-TD-004",
+      "source_locator": "web_paragraph_0005",
+      "text": "Home News ACE Program Achieves World First For AI In Aerospace",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0005",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-TD-004",
+      "source_locator": "web_paragraph_0006",
+      "text": "ACE Program Achieves World First for AI in Aerospace",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0006",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-TD-004",
+      "source_locator": "web_paragraph_0007",
+      "text": "In-air combat tests between AI- and human-piloted F-16s show transformational progress for human-machine teaming and trusted autonomy",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0007",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-TD-004",
+      "source_locator": "web_paragraph_0008",
+      "text": "April 17, 2024",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0008",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-TD-004",
+      "source_locator": "web_paragraph_0009",
+      "text": "DARPA’s Air Combat Evolution (ACE) program has achieved the first-ever in-air tests of AI algorithms autonomously flying an F-16 against a human-piloted F-16 in within-visual-range combat scenarios (sometimes referred to as “dogfighting”).",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0009",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-TD-004",
+      "source_locator": "web_paragraph_0010",
+      "text": "Team members discuss what makes the ACE program unlike other aerospace autonomy projects and how it represents a transformational moment in aerospace history, establishing a foundation for ethical, trusted, human-machine teaming for complex military and civilian applications.",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0010",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-TD-004",
+      "source_locator": "web_paragraph_0011",
+      "text": "In flight, the ACE AI algorithms controlled a specially modified F-16 test aircraft known as the X-62A, or VISTA (Variable In-flight Simulator Test Aircraft), at the Air Force Test Pilot School at Edwards Air Force Base, California, where all demonstrations of autonomous combat maneuvers took place in 2023 and are continuing in 2024.",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0011",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-TD-004",
+      "source_locator": "web_paragraph_0012",
+      "text": "Office",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0012",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-TD-004",
+      "source_locator": "web_paragraph_0013",
+      "text": "Tactical Technology Office",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0013",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-TD-004",
+      "source_locator": "web_paragraph_0014",
+      "text": "Contact",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0014",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    }
+  ],
+  "source_raw_path": "outputs/P2-20260825T154432Z-author-pilot/source_raw/T0-TD-004.html",
+  "source_text_path": "outputs/P2-20260825T154432Z-author-pilot/source_text/T0-TD-004.txt",
+  "source_raw_sha256": "4a03e7ce5bf8d17272bedb8f60c4d11ac36a2c20170b64431edad792b99686ef",
+  "source_text_sha256": "b9a0cdf9773b9791c14141c87fa6130d1d47d6b73f62329ce319af8b93773a48",
+  "max_batch_chars": 45000,
+  "max_candidates": 5
+}

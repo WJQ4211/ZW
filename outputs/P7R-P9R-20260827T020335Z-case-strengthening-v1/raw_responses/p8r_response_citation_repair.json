@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-8dd58129-99ba-4023-9112-60d071063079",
+  "object": "chat.completion",
+  "created": 1787796864,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"citation_repairs\":[{\"issue_id\":\"CIT-001\",\"perspective_id\":\"TECH\",\"viewpoint_id\":\"VP-T0-TECH-H01\",\"field\":\"supporting_evidence\",\"index\":3,\"evidence_id\":\"EV-T0-51D65DEC82584BCD\",\"relation\":\"limit\",\"target_field\":\"supporting_evidence\",\"importance\":\"required\"},{\"issue_id\":\"CIT-002\",\"perspective_id\":\"TECH\",\"viewpoint_id\":\"VP-T0-TECH-H01\",\"field\":\"supporting_evidence\",\"index\":4,\"evidence_id\":\"EV-T0-A515E3B9391C51B4\",\"relation\":\"limit\",\"target_field\":\"supporting_evidence\",\"importance\":\"required\"}]}"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 297,
+    "total_tokens": 448,
+    "completion_tokens": 151,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

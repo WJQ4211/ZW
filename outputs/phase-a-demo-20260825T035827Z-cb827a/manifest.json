@@ -1,0 +1,18 @@
+{
+  "artifacts": {
+    "case_config": "data\\cases\\synthetic_military_ai.json"
+  },
+  "case_id": "synthetic_military_ai",
+  "manifest_version": "phase-a.1",
+  "mode": "synthetic_manual_json",
+  "model_client": null,
+  "reproducibility": {
+    "input_hash": "bf280cad5026c3d3a717d5292f425d4c0820b4ac194f405816fc9aebe3f1ad5b",
+    "llm_called": false,
+    "python": "3.11.7"
+  },
+  "run_id": "phase-a-demo-20260825T035827Z-cb827a",
+  "snapshots": [],
+  "stage": "A",
+  "synthetic": true
+}

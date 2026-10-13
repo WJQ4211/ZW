@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-024af905-3f12-47bb-b345-b4ccd65c019d",
+  "object": "chat.completion",
+  "created": 1787712527,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n  {\n    \"source_id\": \"T0-PB-003\",\n    \"source_locator\": \"web_paragraph_0009\",\n    \"excerpt_original\": \"DARPA’s Rapid Experimental Missionized Autonomy (REMA) program aims to enable a drone to autonomously continue its predefined mission when connection to the operator is lost.\",\n    \"excerpt_zh\": \"DARPA的快速实验任务化自主（REMA）项目旨在使无人机在失去与操作员连接时自主继续其预定义任务。\",\n    \"normalized_claim\": \"REMA项目旨在使无人机在失去与操作员连接时自主继续其预定义任务。\",\n    \"coding_dimensions\": [\"human_machine_authority\"],\n    \"evidence_nature\": \"goal\",\n    \"topics\": [\"REMA项目\", \"无人机自主\", \"任务自主\"]\n  },\n  {\n    \"source_id\": \"T0-PB-003\",\n    \"source_locator\": \"web_paragraph_0012\",\n    \"excerpt_original\": \"REMA is focused on creating autonomous solutions to maximize effectiveness of stock commercial and small military drones on the battlefield\",\n    \"excerpt_zh\": \"REMA专注于创建自主解决方案，以最大化现役商用和小型军用无人机在战场上的效能。\",\n    \"normalized_claim\": \"REMA项目专注于创建自主解决方案，以最大化现役商用和小型军用无人机在战场上的效能。\",\n    \"coding_dimensions\": [\"application_maturity\"],\n    \"evidence_nature\": \"goal\",\n    \"topics\": [\"REMA项目\", \"自主解决方案\", \"无人机效能\"]\n  },\n  {\n    \"source_id\": \"T0-PB-003\",\n    \"source_locator\": \"web_paragraph_0013\",\n    \"excerpt_original\": \"The 18-month, single-phase program is divided into two technical areas: 1) A drone-autonomy adapter interface and 2) mission-specific autonomy software.\",\n    \"excerpt_zh\": \"这个为期18个月的单阶段项目分为两个技术领域：1）无人机自主适配器接口和2）任务特定自主软件。\",\n    \"normalized_claim\": \"REMA项目为期18个月，分为无人机自主适配器接口和任务特定自主软件两个技术领域。\",\n    \"coding_dimensions\": [\"engineering_resource_conditions\"],\n    \"evidence_nature\": \"goal\",\n    \"topics\": [\"REMA项目\", \"技术领域\", \"自主适配器\", \"自主软件\"]\n  },\n  {\n    \"source_id\": \"T0-PB-003\",\n    \"source_locator\": \"web_paragraph_0014\",\n    \"excerpt_original\": \"Contracts for the drone-autonomy adapter interface technical area have been awarded to Anduril and RTX. Contracts for the mission-specific autonomy software technical area have been awarded to Leidos, Northrop Grumman, and SoarTech.\",\n    \"excerpt_zh\": \"无人机自主适配器接口技术领域的合同已授予Anduril和RTX。任务特定自主软件技术领域的合同已授予Leidos、Northrop Grumman和SoarTech。\",\n    \"normalized_claim\": \"REMA项目已将无人机自主适配器接口合同授予Anduril和RTX，将任务特定自主软件合同授予Leidos、Northrop Grumman和SoarTech。\",\n    \"coding_dimensions\": [\"engineering_resource_conditions\"],\n    \"evidence_nature\": \"deployment_event\",\n    \"topics\": [\"REMA项目\", \"合同授予\", \"承包商\"]\n  },\n  {\n    \"source_id\": \"T0-PB-003\",\n    \"source_locator\": \"web_paragraph_0015\",\n    \"excerpt_original\": \"The first development cycle, or “spiral challenge,” started in December 2023, is focused on developing platforms with agnostic autonomy features. The performers are expected to demonstrate a full working solution to the first challenge in March 2024.\",\n    \"excerpt_zh\": \"第一个开发周期，即“螺旋挑战”，于2023年12月开始，专注于开发具有不可知自主功能的平台。预计执行者将在2024年3月展示第一个挑战的完整工作解决方案。\",\n    \"normalized_claim\": \"REMA项目第一个开发周期于2023年12月开始，预计在2024年3月展示完整工作解决方案。\",\n    \"coding_dimensions\": [\"test_event\"],\n    \"evidence_nature\": \"test_event\",\n    \"topics\": [\"REMA项目\", \"开发周期\", \"螺旋挑战\"]\n  }\n]\n```"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2562,
+    "total_tokens": 3528,
+    "completion_tokens": 966,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,87 @@
+PROMPT_ID: evidence_extract
+VERSION: 1.0
+BATCH_ID: T0-TD-008-batch-01
+SOURCE_DOCUMENT_ID: T0-TD-008
+RESEARCH_QUESTION: Based only on public, non-classified material available through 2024-12-31, what dominant deployment form is more likely for U.S. military AI capability building in 2025-2027?
+TASK: Extract a small set of auditable evidence candidates from the supplied source segments.
+INPUT LIMIT: Use only the source segments below, the research question, and the field definitions in this prompt. Do not infer from prior runs.
+OUTPUT: A strict JSON array. Each object must contain exactly the eight fields in the output schema.
+Each candidate must express one checkable fact or one bounded explicit claim.
+CANDIDATE_LIMIT: Output no more than 5 candidates for this source; output fewer when evidence is insufficient.
+source_id must equal SOURCE_DOCUMENT_ID exactly. source_locator must equal the exact source_locator shown for the segment; do not substitute the machine anchor or a paragraph label.
+coding_dimensions must use only these exact keys: integration_level, application_maturity, human_machine_authority, engineering_resource_conditions, trust_governance_constraints, organizational_system_fit.
+excerpt_original must be copied verbatim from one named segment; do not silently correct extraction errors.
+All English candidates must have a non-empty excerpt_zh; translation is provisional and requires pending_g1_translation_review.
+Use test_event only for the occurrence, participants, or configuration of a test or exercise. Use test_result only when the excerpt reports an observed function, performance, or result.
+An exercise or demonstration is not automatically proof of operational effectiveness.
+Do not generate hypotheses, viewpoints, conclusions, or a final 2025-2027 route judgment.
+Do not use pseudo-continuous locators. If a fact requires non-contiguous text, output separate candidates.
+SOURCE_SEGMENTS:
+--- article/paragraph-01 ---
+pdf_page_number: None
+printed_page_number: None
+section_title: article
+machine_extracted_anchor: article/paragraph-01
+visual_review_required: false
+MANAMA, Bahrain - The International Maritime Security Construct (IMSC) completed a three-day maritime exercise in the Arabian Gulf, Jan. 9, integrating unmanned systems and artificial intelligence during a naval drill for the second time in six months.
+--- article/paragraph-02 ---
+pdf_page_number: None
+printed_page_number: None
+section_title: article
+machine_extracted_anchor: article/paragraph-02
+visual_review_required: false
+IMSC’s operational task force, Coalition Task Force (CTF) Sentinel, completed exercise Sentinel Shield with U.S. Navy guided-missile destroyer USS Delbert D. Black (DDG 119) and two Saildrone Explorer unmanned surface vessels from U.S. 5th Fleet “We planned this exercise to demonstrate how artificial intelligence and unmanned systems effectively increase CTF Sentinel’s maritime domain awareness to maintain maritime security in Middle Eastern waters,” said Royal Saudi Navy Capt. Alamri Assem, CTF Sentinel’s director of plans.
+--- article/paragraph-03 ---
+pdf_page_number: None
+printed_page_number: None
+section_title: article
+machine_extracted_anchor: article/paragraph-03
+visual_review_required: false
+During the exercise, unmanned and artificial intelligence systems operated in conjunction with Delbert D. Black and CTF Sentinel’s command center ashore in Bahrain.
+--- article/paragraph-04 ---
+pdf_page_number: None
+printed_page_number: None
+section_title: article
+machine_extracted_anchor: article/paragraph-04
+visual_review_required: false
+The systems were able to help locate and identify objects in nearby waters and relay visual depictions to watchstanders.
+--- article/paragraph-05 ---
+pdf_page_number: None
+printed_page_number: None
+section_title: article
+machine_extracted_anchor: article/paragraph-05
+visual_review_required: false
+“Saildrones transmitted information on contacts of interest and our watch officers coordinated with the destroyer for further monitoring,” said U.S. Navy Capt. Brian Granger, CTF Sentinel’s deputy commander.
+--- article/paragraph-06 ---
+pdf_page_number: None
+printed_page_number: None
+section_title: article
+machine_extracted_anchor: article/paragraph-06
+visual_review_required: true
+CTF Sentinel previously completed a similar exercise Aug. 23 when Royal Bahrain Naval Force ship RBNS Ahmed Al-Fateh (P20) and U.S. Coast Guard patrol boat USCGC Baranof (WPB 1318) participated with another Saildrone Explorer from U.S. 5th Fleet.
+--- article/paragraph-07 ---
+pdf_page_number: None
+printed_page_number: None
+section_title: article
+machine_extracted_anchor: article/paragraph-07
+visual_review_required: false
+The late-summer event was the first time IMSC planners specifically designed a Sentinel Shield exercise to integrate unmanned systems.
+--- article/paragraph-08 ---
+pdf_page_number: None
+printed_page_number: None
+section_title: article
+machine_extracted_anchor: article/paragraph-08
+visual_review_required: false
+IMSC was formed in July 2019 in response to increased threats to freedom of navigation for merchant mariners transiting international waters in the Middle East. IMSC’s operational arm, CTF Sentinel, was established four months later to deter state-sponsored malign activity and reassure the merchant shipping industry in the Bab al-Mandeb and Strait of Hormuz.
+--- article/paragraph-09 ---
+pdf_page_number: None
+printed_page_number: None
+section_title: article
+machine_extracted_anchor: article/paragraph-09
+visual_review_required: false
+IMSC membership currently includes 11 nations: Albania, Bahrain, Estonia, Latvia, Lithuania, Romania, Saudi Arabia, Seychelles, United Arab Emirates, United Kingdom, and the United States.
+FIELD_DEFINITIONS:
+{"items": {"additionalProperties": false, "properties": {"coding_dimensions": {"items": {"type": "string"}, "type": "array"}, "evidence_nature": {"enum": ["goal", "resource_input", "test_event", "test_result", "deployment_event", "constraint", "evaluation"], "type": "string"}, "excerpt_original": {"type": "string"}, "excerpt_zh": {"type": "string"}, "normalized_claim": {"type": "string"}, "source_id": {"type": "string"}, "source_locator": {"type": "string"}, "topics": {"items": {"type": "string"}, "type": "array"}}, "required": ["source_id", "source_locator", "excerpt_original", "excerpt_zh", "normalized_claim", "coding_dimensions", "evidence_nature", "topics"], "type": "object"}, "type": "array"}
+{}
+{}
+JSON_REPAIR: 只修复JSON语法、缺失的允许字段或字段类型；不得补写事实、改写excerpt_original或新增确定性元数据。修复后仍只能输出严格JSON数组。

@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-46f3a828-b19b-4560-a65f-b2d12ee4bef7",
+  "object": "chat.completion",
+  "created": 1787712443,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n  {\n    \"source_id\": \"T0-IR-006\",\n    \"source_locator\": \"pdf_page_20\",\n    \"excerpt_original\": \"The Joint Logistics Mission Initiative team is using historic maintenance data to train AI models to predict these longer than normal maintenance periods. The initial logistics model was demonstrated on February 11, 2021.\",\n    \"excerpt_zh\": \"联合后勤任务倡议团队正在使用历史维护数据来训练AI模型，以预测这些比正常时间更长的维护周期。初始后勤模型已于2021年2月11日进行了演示。\",\n    \"normalized_claim\": \"联合后勤任务倡议团队使用历史维护数据训练AI模型，以预测超出正常时长的维护周期，初始模型于2021年2月11日进行了演示。\",\n    \"coding_dimensions\": [\"application_maturity\", \"engineering_resource_conditions\"],\n    \"evidence_nature\": \"test_event\",\n    \"topics\": [\"AI模型演示\", \"预测性维护\", \"联合后勤任务倡议\"]\n  }\n]\n```"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 12258,
+    "total_tokens": 12480,
+    "completion_tokens": 222,
+    "prompt_tokens_details": {
+      "cached_tokens": 11264
+    }
+  }
+}

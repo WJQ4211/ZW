@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-b3919150-a545-416a-96ea-e38fab5ca34f",
+  "object": "chat.completion",
+  "created": 1787712470,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n  {\n    \"candidate_index\": 0,\n    \"status\": \"pass\",\n    \"reason\": \"The claim directly restates the excerpt's statement about JAIC shifting focus from adoption to integration. The evidence nature 'goal' is supported as the excerpt describes an intended strategic shift.\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": [\n      {\n        \"dimension\": \"integration_level\",\n        \"supported\": true,\n        \"supporting_span\": \"shifts its focus from adoption of AI capabilities to integration\",\n        \"reason\": \"The excerpt explicitly mentions a shift toward 'integration' of AI capabilities, which directly supports the integration_level dimension.\"\n      }\n    ]\n  }\n]\n```"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 651,
+    "total_tokens": 810,
+    "completion_tokens": 159,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

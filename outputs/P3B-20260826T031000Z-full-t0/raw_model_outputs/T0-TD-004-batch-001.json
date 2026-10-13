@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-e11ce9e8-f1c7-4b5a-a6c1-891ee49d660f",
+  "object": "chat.completion",
+  "created": 1787712141,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n  {\n    \"source_id\": \"T0-TD-004\",\n    \"source_locator\": \"web_paragraph_0009\",\n    \"excerpt_original\": \"DARPA’s Air Combat Evolution (ACE) program has achieved the first-ever in-air tests of AI algorithms autonomously flying an F-16 against a human-piloted F-16 in within-visual-range combat scenarios (sometimes referred to as “dogfighting”).\",\n    \"excerpt_zh\": \"DARPA的“空战演进”（ACE）项目实现了首次AI算法自主驾驶F-16与人类驾驶的F-16在视距内作战场景（有时称为“狗斗”）中的空中测试。\",\n    \"normalized_claim\": \"DARPA的ACE项目实现了AI算法自主驾驶F-16与人类驾驶的F-16进行视距内空战对抗的首次空中测试。\",\n    \"coding_dimensions\": {\n      \"application_maturity\": \"试验\",\n      \"engineering_resource_conditions\": null,\n      \"human_machine_authority\": \"受监督自主\",\n      \"integration_level\": \"单平台\",\n      \"organizational_system_fit\": null,\n      \"trust_governance_constraints\": null\n    },\n    \"evidence_nature\": \"test_event\",\n    \"topics\": [\"AI空战\", \"自主飞行\", \"F-16\", \"ACE项目\"]\n  },\n  {\n    \"source_id\": \"T0-TD-004\",\n    \"source_locator\": \"web_paragraph_0011\",\n    \"excerpt_original\": \"In flight, the ACE AI algorithms controlled a specially modified F-16 test aircraft known as the X-62A, or VISTA (Variable In-flight Simulator Test Aircraft), at the Air Force Test Pilot School at Edwards Air Force Base, California, where all demonstrations of autonomous combat maneuvers took place in 2023 and are continuing in 2024.\",\n    \"excerpt_zh\": \"在飞行中，ACE AI算法控制了一架经过特殊改装的F-16测试飞机，称为X-62A或VISTA（可变飞行模拟器测试飞机），位于加利福尼亚州爱德华兹空军基地的空军试飞员学校，所有自主作战机动演示于2023年进行，并持续到2024年。\",\n    \"normalized_claim\": \"ACE AI算法在2023年及2024年持续于爱德华兹空军基地控制X-62A测试飞机进行自主作战机动演示。\",\n    \"coding_dimensions\": {\n      \"application_maturity\": \"试验\",\n      \"engineering_resource_conditions\": null,\n      \"human_machine_authority\": \"受监督自主\",\n      \"integration_level\": \"单平台\",\n      \"organizational_system_fit\": null,\n      \"trust_governance_constraints\": null\n    },\n    \"evidence_nature\": \"test_event\",\n    \"topics\": [\"X-62A\", \"VISTA\", \"自主作战机动\", \"测试地点\"]\n  }\n]\n```"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1865,
+    "total_tokens": 2504,
+    "completion_tokens": 639,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

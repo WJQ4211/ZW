@@ -1,0 +1,201 @@
+T1增量候选证据语义筛选。只检查候选字段是否被所给原文直接支持，不读取其他阶段分析。
+研究问题：以公开、非密材料为依据，研究2025年1月1日至2026年6月30日期间，美国军用人工智能能力形成、应用部署和体系化发展的公开可观察变化。
+来源：T1-DARPA-003
+为每条返回candidate_evidence_id、status、reason、claim_supported、nature_supported、dimension_reviews、revised_fields。status只能为accept、revise或reject；dimension_reviews必须是数组，逐维度包含dimension、supported、supporting_span、reason。只处理原候选声明的维度，禁止新增维度；revise不得修改excerpt_original和source_locator。
+性质定义：
+- goal: 计划、目标、拟议能力或未来安排，不等于已经实现。
+- governance_event: 已经发生的政策、职责、指南或组织治理机制建立。
+- resource_input: 已经发生的预算、合同、采购、数据、人才或基础设施投入。
+- test_event: 测试、演示、演习或竞赛发生及其参与主体、配置。
+- test_result: 测试中明确观察到的功能、性能或结果。
+- deployment_event: 明确已经部署、实装、投入运行或持续使用。
+- constraint: 限制能力形成、部署或评估的已报告条件。
+- evaluation: 来源明确给出的评估、判断或评价，不改写为客观结果。
+编码维度定义：
+- integration_level: 跨项目、跨平台、跨军种或企业级系统集成的程度。
+- application_maturity: 从目标、演示、试验到部署和持续使用的应用成熟度。
+- human_machine_authority: 人机在任务中的权责、授权、监督与决策关系。
+- engineering_resource_conditions: 数据、算力、基础设施、人才、预算、采办和保障条件。
+- trust_governance_constraints: 可信性、安全、测试评估、责任、治理约束及制度落地。
+- organizational_system_fit: 组织运用、流程、任务适配和体系制度环境的匹配程度。
+候选：
+[
+  {
+    "candidate_evidence_id": "CE-T1-F2BE64F4810C89EF",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "application_maturity"
+    ],
+    "content_hash": "f2be64f4810c89efb2b9e4fd954d19a10ae9222a7bb2b4f69a340abfc6c5e980",
+    "evidence_nature": "test_event",
+    "excerpt_original": "DARPA concluded the second year of the DARPA Triage Challenge on October 4, awarding top marks to DART and MSAI in Systems and Data competitions, respectively.",
+    "excerpt_zh": "DARPA于10月4日结束了DARPA分诊挑战赛的第二年，分别在系统竞赛和数据竞赛中授予DART和MSAI最高分。",
+    "extraction_run_id": "",
+    "normalized_claim": "DARPA于2025年10月4日结束了DARPA分诊挑战赛第二年。",
+    "pending_g1_translation_review": true,
+    "pending_g1_visual_review": false,
+    "published_at": "2025-11-14",
+    "published_at_precision": "day",
+    "publisher": "DARPA",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DARPA-003",
+    "source_locator": "web_paragraph_0006",
+    "title": "DART and MSAI triumph at DARPA Triage Challenge",
+    "topics": [
+      "DARPA Triage Challenge",
+      "竞赛"
+    ],
+    "url_or_path": "https://www.darpa.mil/news/2025/dart-msai-triumph-darpa-triage-challenge",
+    "version": 1
+  },
+  {
+    "candidate_evidence_id": "CE-T1-C20674F2CA89D5C5",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "application_maturity"
+    ],
+    "content_hash": "c20674f2ca89d5c5826de233d8c4f73e69477284b1aae9871132e6bb239c0343",
+    "evidence_nature": "test_event",
+    "excerpt_original": "In the Systems competition, held from Sept. 26, 2025 to Oct. 3, 2025, at Guardian Centers in Perry, Georgia, teams navigated courses modeled on a C-130 airplane crash and night ambush scenarios that were complicated by smoke, darkness, and visual obstructions.",
+    "excerpt_zh": "在2025年9月26日至10月3日于佐治亚州佩里市Guardian Centers举行的系统竞赛中，各团队在模拟C-130飞机坠毁和夜间伏击场景的场地上进行导航，这些场景因烟雾、黑暗和视觉障碍而变得复杂。",
+    "extraction_run_id": "",
+    "normalized_claim": "系统竞赛于2025年9月26日至10月3日在佐治亚州佩里市Guardian Centers举行。",
+    "pending_g1_translation_review": true,
+    "pending_g1_visual_review": false,
+    "published_at": "2025-11-14",
+    "published_at_precision": "day",
+    "publisher": "DARPA",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DARPA-003",
+    "source_locator": "web_paragraph_0010",
+    "title": "DART and MSAI triumph at DARPA Triage Challenge",
+    "topics": [
+      "DARPA Triage Challenge",
+      "系统竞赛"
+    ],
+    "url_or_path": "https://www.darpa.mil/news/2025/dart-msai-triumph-darpa-triage-challenge",
+    "version": 1
+  },
+  {
+    "candidate_evidence_id": "CE-T1-43B8C6F6E7B77F40",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "application_maturity"
+    ],
+    "content_hash": "43b8c6f6e7b77f40609df13ac083dc519040fbc2e79490048b55431ab24adae0",
+    "evidence_nature": "test_result",
+    "excerpt_original": "Coordinated Robotics earned the top prize of $300,000, demonstrating robotic platforms that successfully detected vital signs and identified injury patterns despite impaired visibility and environmental complexity.",
+    "excerpt_zh": "Coordinated Robotics赢得了30万美元的最高奖金，展示了在能见度受损和环境复杂的情况下成功检测生命体征并识别损伤模式的机器人平台。",
+    "extraction_run_id": "",
+    "normalized_claim": "Coordinated Robotics在系统竞赛中展示了能检测生命体征和识别损伤模式的机器人平台。",
+    "pending_g1_translation_review": true,
+    "pending_g1_visual_review": false,
+    "published_at": "2025-11-14",
+    "published_at_precision": "day",
+    "publisher": "DARPA",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DARPA-003",
+    "source_locator": "web_paragraph_0010",
+    "title": "DART and MSAI triumph at DARPA Triage Challenge",
+    "topics": [
+      "DARPA Triage Challenge",
+      "系统竞赛",
+      "机器人"
+    ],
+    "url_or_path": "https://www.darpa.mil/news/2025/dart-msai-triumph-darpa-triage-challenge",
+    "version": 1
+  },
+  {
+    "candidate_evidence_id": "CE-T1-12F70AE60CD787AA",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "engineering_resource_conditions"
+    ],
+    "content_hash": "12f70ae60cd787aa7d9ff4253c06b5aa1159fa69983c9f3120d7cdc73e8145d4",
+    "evidence_nature": "test_event",
+    "excerpt_original": "In the Data Competition, teams tackled DARPA-provided datasets of de-identified physiological data from trauma patients.",
+    "excerpt_zh": "在数据竞赛中，各团队处理了DARPA提供的来自创伤患者的去标识化生理数据集。",
+    "extraction_run_id": "",
+    "normalized_claim": "数据竞赛中团队使用了DARPA提供的去标识化创伤患者生理数据。",
+    "pending_g1_translation_review": true,
+    "pending_g1_visual_review": false,
+    "published_at": "2025-11-14",
+    "published_at_precision": "day",
+    "publisher": "DARPA",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DARPA-003",
+    "source_locator": "web_paragraph_0021",
+    "title": "DART and MSAI triumph at DARPA Triage Challenge",
+    "topics": [
+      "DARPA Triage Challenge",
+      "数据竞赛",
+      "数据"
+    ],
+    "url_or_path": "https://www.darpa.mil/news/2025/dart-msai-triumph-darpa-triage-challenge",
+    "version": 1
+  },
+  {
+    "candidate_evidence_id": "CE-T1-9D61AF59EFDD3694",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "application_maturity"
+    ],
+    "content_hash": "9d61af59efdd369457c7f93ef1071d334044c2c77fc770c9085ac28972f9d319",
+    "evidence_nature": "goal",
+    "excerpt_original": "Teams interested in participating in the final challenge event should note that qualification submissions for the final Systems and Data competitions are due Jan. 2, 2026.",
+    "excerpt_zh": "有兴趣参加最终挑战赛的团队应注意，最终系统竞赛和数据竞赛的资格提交截止日期为2026年1月2日。",
+    "extraction_run_id": "",
+    "normalized_claim": "最终系统竞赛和数据竞赛的资格提交截止日期为2026年1月2日。",
+    "pending_g1_translation_review": true,
+    "pending_g1_visual_review": false,
+    "published_at": "2025-11-14",
+    "published_at_precision": "day",
+    "publisher": "DARPA",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DARPA-003",
+    "source_locator": "web_paragraph_0028",
+    "title": "DART and MSAI triumph at DARPA Triage Challenge",
+    "topics": [
+      "DARPA Triage Challenge",
+      "未来计划"
+    ],
+    "url_or_path": "https://www.darpa.mil/news/2025/dart-msai-triumph-darpa-triage-challenge",
+    "version": 1
+  },
+  {
+    "candidate_evidence_id": "CE-T1-45417DAD097210B1",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "engineering_resource_conditions",
+      "trust_governance_constraints"
+    ],
+    "content_hash": "45417dad097210b146d1fe083eba2790f605b8e6307c18ec72f656fbf0cc39fd",
+    "evidence_nature": "resource_input",
+    "excerpt_original": "The DARPA Triage Challenge is strengthened by the contributions of government and industry partners, including the Naval Information Warfare Center, the Johns Hopkins University Applied Physics Laboratory, the US Army Institute of Surgical Research, the University of Maryland, Baltimore, and the University of Pittsburgh, who collectively provide data, independent verification and validation, and technical expertise to ensure rigorous evaluation of triage solutions.",
+    "excerpt_zh": "DARPA分诊挑战赛因政府和行业合作伙伴的贡献而得到加强，包括海军信息战中心、约翰霍普金斯大学应用物理实验室、美国陆军外科研究所、马里兰大学巴尔的摩分校和匹兹堡大学，他们共同提供数据、独立验证和确认以及技术专长，以确保对分诊解决方案进行严格评估。",
+    "extraction_run_id": "",
+    "normalized_claim": "多个政府和行业合作伙伴为DARPA分诊挑战赛提供数据、独立验证和技术专长。",
+    "pending_g1_translation_review": true,
+    "pending_g1_visual_review": false,
+    "published_at": "2025-11-14",
+    "published_at_precision": "day",
+    "publisher": "DARPA",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DARPA-003",
+    "source_locator": "web_paragraph_0029",
+    "title": "DART and MSAI triumph at DARPA Triage Challenge",
+    "topics": [
+      "DARPA Triage Challenge",
+      "合作伙伴",
+      "资源投入"
+    ],
+    "url_or_path": "https://www.darpa.mil/news/2025/dart-msai-triumph-darpa-triage-challenge",
+    "version": 1
+  }
+]

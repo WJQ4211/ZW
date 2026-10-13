@@ -1,0 +1,25 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "```json\n[\n  {\n    \"candidate_evidence_id\": \"CE-T1-4FB8FAA8A8330E44\",\n    \"status\": \"reject\",\n    \"reason\": \"候选证据声称的维度为application_maturity和engineering_resource_conditions，但摘录内容仅描述MICA项目的目标（开发新方法），未提供任何关于应用成熟度阶段或工程资源条件（如数据、算力、预算等）的直接信息。\",\n    \"claim_supported\": false,\n    \"nature_supported\": true,\n    \"dimension_reviews\": [\n      {\n        \"dimension\": \"application_maturity\",\n        \"supported\": false,\n        \"supporting_span\": \"\",\n        \"reason\": \"摘录仅描述项目目标，未提及任何演示、试验、部署或持续使用阶段，无法支持应用成熟度维度。\"\n      },\n      {\n        \"dimension\": \"engineering_resource_conditions\",\n        \"supported\": false,\n        \"supporting_span\": \"\",\n        \"reason\": \"摘录未提及任何数据、算力、基础设施、人才、预算、采办或保障条件，无法支持工程资源条件维度。\"\n      }\n    ],\n    \"revised_fields\": null\n  },\n  {\n    \"candidate_evidence_id\": \"CE-T1-4B846FAA8F4D1717\",\n    \"status\": \"reject\",\n    \"reason\": \"候选证据声称的维度为application_maturity，但摘录内容仅描述MICA项目的技术重点（反应级联），未提供任何关于应用成熟度阶段（如目标、演示、试验、部署）的直接信息。\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": [\n      {\n        \"dimension\": \"application_maturity\",\n        \"supported\": false,\n        \"supporting_span\": \"\",\n        \"reason\": \"摘录仅描述技术目标，未提及任何演示、试验、部署或持续使用阶段，无法支持应用成熟度维度。\"\n      }\n    ],\n    \"revised_fields\": null\n  },\n  {\n    \"candidate_evidence_id\": \"CE-T1-D3B894C73FD944EE\",\n    \"status\": \"reject\",\n    \"reason\": \"候选证据声称的维度为application_maturity和engineering_resource_conditions，但摘录内容仅描述MICA项目计划创建建模和模拟工具，未提供任何关于应用成熟度阶段或工程资源条件（如数据、算力、基础设施等）的直接信息。\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": [\n      {\n        \"dimension\": \"application_maturity\",\n        \"supported\": false,\n        \"supporting_span\": \"\",\n        \"reason\": \"摘录仅描述计划创建工具，未提及任何演示、试验、部署或持续使用阶段，无法支持应用成熟度维度。\"\n      },\n      {\n        \"dimension\": \"engineering_resource_conditions\",\n        \"supported\": false,\n        \"supporting_span\": \"\",\n        \"reason\": \"摘录未提及任何数据、算力、基础设施、人才、预算、采办或保障条件，无法支持工程资源条件维度。\"\n      }\n    ],\n    \"revised_fields\": null\n  },\n  {\n    \"candidate_evidence_id\": \"CE-T1-A1CA2BFDAB042FF4\",\n    \"status\": \"reject\",\n    \"reason\": \"候选证据声称的维度为engineering_resource_conditions，但摘录内容仅描述提案截止日期和目标开始日期，未提供任何关于数据、算力、基础设施、人才、预算、采办或保障条件的直接信息。\",\n    \"claim_supported\": true,\n    \"nature_supported\": false,\n    \"dimension_reviews\": [\n      {\n        \"dimension\": \"engineering_resource_conditions\",\n        \"supported\": false,\n        \"supporting_span\": \"\",\n        \"reason\": \"摘录仅提及时间安排，未涉及任何工程资源条件（如数据、算力、基础设施、人才、预算等），无法支持该维度。\"\n      }\n    ],\n    \"revised_fields\": null\n  },\n  {\n    \"candidate_evidence_id\": \"CE-T1-1358AD9B42536FEA\",\n    \"status\": \"reject\",\n    \"reason\": \"候选证据声称的维度为application_maturity和trust_governance_constraints，但摘录内容仅描述MICA项目的计划安排（两阶段、39个月）和包含道德、法律和社会影响计划，未提供任何关于应用成熟度阶段或治理约束制度落地的直接信息。\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": [\n      {\n        \"dimension\": \"application_maturity\",\n        \"supported\": false,\n        \"supporting_span\": \"\",\n        \"reason\": \"摘录仅描述项目计划，未提及任何演示、试验、部署或持续使用阶段，无法支持应用成熟度维度。\"\n      },\n      {\n        \"dimension\": \"trust_governance_constraints\",\n        \"supported\": false,\n        \"supporting_span\": \"\",\n        \"reason\": \"摘录仅提及计划包含道德、法律和社会影响计划，但未提供任何已落地的治理机制、政策或约束，无法支持该维度。\"\n      }\n    ],\n    \"revised_fields\": null\n  }\n]\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1787812229,
+  "id": "chatcmpl-b0e3318b-d1e9-4697-b637-6c36fb01fb43",
+  "model": "deepseek-v4-flash-0731",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 1161,
+    "prompt_tokens": 2708,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3869
+  }
+}

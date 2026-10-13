@@ -1,0 +1,639 @@
+{
+  "disagreements": [
+    {
+      "disagreement_id": "DISAGREE-T0-001",
+      "viewpoint_refs": [
+        {
+          "viewpoint_id": "VP-T0-TECH-H01",
+          "version": 1,
+          "field": "judgment"
+        },
+        {
+          "viewpoint_id": "VP-T0-TECH-H02",
+          "version": 1,
+          "field": "judgment"
+        }
+      ],
+      "type": "mechanism",
+      "contested_node": "美国军用AI体系化整合的主导路径：是统一平台/治理驱动的集中化整合，还是任务驱动的分散发展？",
+      "branch_a": {
+        "claim": "体系整合更多是战略方向而非已实现的技术状态，统一治理和共用平台（如JCF）的规划意图明确，但技术实现和部署进度严重滞后，尚未形成可支撑跨军种整合的成熟技术底座。",
+        "viewpoint_refs": [
+          {
+            "viewpoint_id": "VP-T0-TECH-H01",
+            "version": 1,
+            "field": "judgment"
+          },
+          {
+            "viewpoint_id": "VP-T0-ENG-H01",
+            "version": 1,
+            "field": "judgment"
+          },
+          {
+            "viewpoint_id": "VP-T0-OPS-H01",
+            "version": 1,
+            "field": "judgment"
+          },
+          {
+            "viewpoint_id": "VP-T0-TRUST-H01",
+            "version": 1,
+            "field": "judgment"
+          }
+        ],
+        "evidence_ids": [
+          "EV-T0-7E37FBD511FC654E",
+          "EV-T0-0A73030BBF2649F9",
+          "EV-T0-51D65DEC82584BCD",
+          "EV-T0-A515E3B9391C51B4"
+        ]
+      },
+      "branch_b": {
+        "claim": "2022-2024年间美国军用AI的能力形成确实以任务驱动、分散项目为主，DARPA的ACE、RACER、REMA等项目均展示了特定任务领域的技术突破，但缺乏跨项目复用的统一技术平台或模型，表明分散发展是当前主导模式。",
+        "viewpoint_refs": [
+          {
+            "viewpoint_id": "VP-T0-TECH-H02",
+            "version": 1,
+            "field": "judgment"
+          },
+          {
+            "viewpoint_id": "VP-T0-ENG-H02",
+            "version": 1,
+            "field": "judgment"
+          },
+          {
+            "viewpoint_id": "VP-T0-OPS-H02",
+            "version": 1,
+            "field": "judgment"
+          },
+          {
+            "viewpoint_id": "VP-T0-TRUST-H02",
+            "version": 1,
+            "field": "judgment"
+          }
+        ],
+        "evidence_ids": [
+          "EV-T0-DB4536B8270ECF58",
+          "EV-T0-DDA30BF3C0C38B0C",
+          "EV-T0-A8459E6E8776A15D",
+          "EV-T0-3FA6806CF267B04B"
+        ]
+      },
+      "decision_impact": "high",
+      "resolvable_now": false,
+      "resolution_action": "conditional_retain",
+      "status": "candidate",
+      "diagnosis_reason": "这是关于主导路径的核心分歧。分支A强调统一治理和平台（JCF、CDAO）的规划意图和方向，但认为工程实现滞后；分支B强调任务驱动项目的实际进展和分散模式。两者并非完全互斥，但关于'主导路径'的判断不同。当前证据显示JCF延迟和DARPA项目未进入采办，支持分支B；但SP-008战略和CDAO设立表明集中化意图，支持分支A。该分歧影响对'体系化发展主导路径'的总体研判，但当前证据不足以完全裁决，需观察JCF后续进展和DARPA项目是否转入采办。"
+    },
+    {
+      "disagreement_id": "DISAGREE-T0-002",
+      "viewpoint_refs": [
+        {
+          "viewpoint_id": "VP-T0-TECH-H01",
+          "version": 1,
+          "field": "judgment"
+        },
+        {
+          "viewpoint_id": "VP-T0-TECH-H03",
+          "version": 1,
+          "field": "judgment"
+        }
+      ],
+      "type": "scope",
+      "contested_node": "资源约束（如机载处理速度、数据质量、基础设施延迟）是否构成能力形成的主要瓶颈？",
+      "branch_a": {
+        "claim": "资源约束和治理瓶颈（如缺乏统一采办指导）确实限制了能力形成和应用扩展，战略规划中的资源投资目标尚未完全实现，导致技术成熟度提升缓慢且应用不均衡。",
+        "viewpoint_refs": [
+          {
+            "viewpoint_id": "VP-T0-TECH-H03",
+            "version": 1,
+            "field": "judgment"
+          },
+          {
+            "viewpoint_id": "VP-T0-ENG-H03",
+            "version": 1,
+            "field": "judgment"
+          },
+          {
+            "viewpoint_id": "VP-T0-OPS-H03",
+            "version": 1,
+            "field": "judgment"
+          },
+          {
+            "viewpoint_id": "VP-T0-TRUST-H03",
+            "version": 1,
+            "field": "judgment"
+          }
+        ],
+        "evidence_ids": [
+          "EV-T0-AD4CCAC18E1BB26C",
+          "EV-T0-62B1ECDA7DF87F1A",
+          "EV-T0-8E35B508DF5C2E65",
+          "EV-T0-51D65DEC82584BCD"
+        ]
+      },
+      "branch_b": {
+        "claim": "资源约束和治理瓶颈是能力形成的主要瓶颈，但该判断的适用范围有限，主要适用于机载AI系统和共用基础设施（如JCF），不适用于已解决资源瓶颈的特定项目。",
+        "viewpoint_refs": [
+          {
+            "viewpoint_id": "VP-T0-ENG-H03",
+            "version": 1,
+            "field": "boundary_conditions"
+          },
+          {
+            "viewpoint_id": "VP-T0-OPS-H03",
+            "version": 1,
+            "field": "boundary_conditions"
+          }
+        ],
+        "evidence_ids": [
+          "EV-T0-AD4CCAC18E1BB26C",
+          "EV-T0-51D65DEC82584BCD"
+        ]
+      },
+      "decision_impact": "medium",
+      "resolvable_now": false,
+      "resolution_action": "scope_split",
+      "status": "candidate",
+      "diagnosis_reason": "该分歧涉及资源约束判断的适用范围。分支A认为资源约束是普遍瓶颈，分支B（通过边界条件）限定其适用于特定领域（机载AI、JCF）。这并非实质性分歧，而是范围界定问题。通过scope_split可以解决：明确资源约束在哪些领域是主要瓶颈，在哪些领域已被克服（如AIDP的快速部署）。当前证据支持在机载AI和基础设施领域存在瓶颈，但AIDP的成功表明某些领域可绕过这些瓶颈。"
+    },
+    {
+      "disagreement_id": "DISAGREE-T0-003",
+      "viewpoint_refs": [
+        {
+          "viewpoint_id": "VP-T0-TECH-H02",
+          "version": 1,
+          "field": "mechanism_claims"
+        },
+        {
+          "viewpoint_id": "VP-T0-OPS-H02",
+          "version": 1,
+          "field": "mechanism_claims"
+        }
+      ],
+      "type": "assumption",
+      "contested_node": "DARPA项目（如ACE、RACER、REMA）的演示验证状态是否代表其尚未进入规模化采办？",
+      "branch_a": {
+        "claim": "ACE项目通过X-62A测试飞机实现了AI自主空战，但该成果仅限于空战领域，未显示向其他任务领域迁移。",
+        "viewpoint_refs": [
+          {
+            "viewpoint_id": "VP-T0-TECH-H02",
+            "version": 1,
+            "field": "mechanism_claims"
+          },
+          {
+            "viewpoint_id": "VP-T0-ENG-H02",
+            "version": 1,
+            "field": "mechanism_claims"
+          }
+        ],
+        "evidence_ids": [
+          "EV-T0-DB4536B8270ECF58",
+          "EV-T0-7B65174669ACA9CE"
+        ]
+      },
+      "branch_b": {
+        "claim": "RACER、REMA等DARPA项目通过技术演示和试验验证，在特定任务领域（越野自主、无人机任务自主）形成能力，但未进入规模化采办。",
+        "viewpoint_refs": [
+          {
+            "viewpoint_id": "VP-T0-OPS-H02",
+            "version": 1,
+            "field": "mechanism_claims"
+          },
+          {
+            "viewpoint_id": "VP-T0-TRUST-H02",
+            "version": 1,
+            "field": "mechanism_claims"
+          }
+        ],
+        "evidence_ids": [
+          "EV-T0-3FA6806CF267B04B",
+          "EV-T0-9C79EF2837BC80A2"
+        ]
+      },
+      "decision_impact": "medium",
+      "resolvable_now": false,
+      "resolution_action": "evidence_check",
+      "status": "candidate",
+      "diagnosis_reason": "该分歧涉及DARPA项目成果是否已进入采办流程。分支A和分支B都认为DARPA项目处于演示验证阶段，但分支A强调'未显示向其他任务领域迁移'，分支B强调'未进入规模化采办'。两者实质相同，但表述不同。关键问题是缺乏DARPA项目向军种过渡的直接证据。通过evidence_check可以核查是否有项目进入采办流程的公开记录。"
+    },
+    {
+      "disagreement_id": "DISAGREE-T0-004",
+      "viewpoint_refs": [
+        {
+          "viewpoint_id": "VP-T0-TECH-H01",
+          "version": 1,
+          "field": "judgment"
+        },
+        {
+          "viewpoint_id": "VP-T0-TRUST-H01",
+          "version": 1,
+          "field": "judgment"
+        }
+      ],
+      "type": "assumption",
+      "contested_node": "集中化平台和统一治理是否是体系化整合的主要标志？",
+      "branch_a": {
+        "claim": "JCF等共用平台是体系整合的技术前提，CDAO的治理职能能够有效转化为技术标准与工程流程。",
+        "viewpoint_refs": [
+          {
+            "viewpoint_id": "VP-T0-TECH-H01",
+            "version": 1,
+            "field": "key_assumptions"
+          },
+          {
+            "viewpoint_id": "VP-T0-ENG-H01",
+            "version": 1,
+            "field": "key_assumptions"
+          }
+        ],
+        "evidence_ids": [
+          "EV-T0-7E37FBD511FC654E",
+          "EV-T0-0A73030BBF2649F9"
+        ]
+      },
+      "branch_b": {
+        "claim": "集中化平台和统一治理是体系化整合的主要标志，但该假设高估了治理架构和共用平台的现实整合程度。",
+        "viewpoint_refs": [
+          {
+            "viewpoint_id": "VP-T0-TRUST-H01",
+            "version": 1,
+            "field": "judgment"
+          },
+          {
+            "viewpoint_id": "VP-T0-TRUST-H01",
+            "version": 1,
+            "field": "key_assumptions"
+          }
+        ],
+        "evidence_ids": [
+          "EV-T0-0A73030BBF2649F9",
+          "EV-T0-51D65DEC82584BCD",
+          "EV-T0-8E35B508DF5C2E65"
+        ]
+      },
+      "decision_impact": "high",
+      "resolvable_now": false,
+      "resolution_action": "conditional_retain",
+      "status": "candidate",
+      "diagnosis_reason": "该分歧涉及体系化整合的判断标准。分支A认为JCF和CDAO是整合的技术前提和标志；分支B承认其是标志，但认为现实整合程度被高估。两者在'标志'上一致，但在'实现程度'上分歧。这影响对'体系化能力是否已形成'的总体判断。当前证据（JCF延迟、采办指导缺失）支持分支B，但需观察后续进展。"
+    },
+    {
+      "disagreement_id": "DISAGREE-T0-005",
+      "viewpoint_refs": [
+        {
+          "viewpoint_id": "VP-T0-TECH-H03",
+          "version": 1,
+          "field": "judgment"
+        },
+        {
+          "viewpoint_id": "VP-T0-OPS-H03",
+          "version": 1,
+          "field": "judgment"
+        }
+      ],
+      "type": "mechanism",
+      "contested_node": "JCF延迟是否直接阻碍了跨军种体系化部署？",
+      "branch_a": {
+        "claim": "JCF的全面作战能力延迟和路线图未定，表明基础设施瓶颈尚未解决，阻碍了跨军种体系化部署。",
+        "viewpoint_refs": [
+          {
+            "viewpoint_id": "VP-T0-OPS-H03",
+            "version": 1,
+            "field": "mechanism_claims"
+          },
+          {
+            "viewpoint_id": "VP-T0-ENG-H03",
+            "version": 1,
+            "field": "mechanism_claims"
+          }
+        ],
+        "evidence_ids": [
+          "EV-T0-51D65DEC82584BCD",
+          "EV-T0-A515E3B9391C51B4"
+        ]
+      },
+      "branch_b": {
+        "claim": "JCF作为共用平台，其工程实现进度直接决定体系整合的物理基础是否具备，但JCF延迟的具体影响缺乏详细分析。",
+        "viewpoint_refs": [
+          {
+            "viewpoint_id": "VP-T0-ENG-H01",
+            "version": 1,
+            "field": "mechanism_claims"
+          },
+          {
+            "viewpoint_id": "VP-T0-ENG-H03",
+            "version": 1,
+            "field": "information_gaps"
+          }
+        ],
+        "evidence_ids": [
+          "EV-T0-51D65DEC82584BCD"
+        ]
+      },
+      "decision_impact": "medium",
+      "resolvable_now": false,
+      "resolution_action": "evidence_check",
+      "status": "candidate",
+      "diagnosis_reason": "该分歧涉及JCF延迟与跨军种部署之间的因果关系。分支A直接推断JCF延迟阻碍了跨军种部署；分支B承认JCF延迟但指出缺乏详细影响分析。这属于机制层面的分歧，需要更多证据来确认JCF延迟的具体影响。当前证据仅显示JCF延迟，但未量化其对具体项目的影响。"
+    },
+    {
+      "disagreement_id": "DISAGREE-T0-006",
+      "viewpoint_refs": [
+        {
+          "viewpoint_id": "VP-T0-TECH-H02",
+          "version": 1,
+          "field": "judgment"
+        },
+        {
+          "viewpoint_id": "VP-T0-TRUST-H02",
+          "version": 1,
+          "field": "judgment"
+        }
+      ],
+      "type": "scope",
+      "contested_node": "AIDP的部署是否代表了陆军AI能力的普遍水平？",
+      "branch_a": {
+        "claim": "AIDP在陆军情报领域快速部署，但这是首个在陆军情报云环境中部署的项目，表明其应用范围局限于特定军种和任务。",
+        "viewpoint_refs": [
+          {
+            "viewpoint_id": "VP-T0-TECH-H02",
+            "version": 1,
+            "field": "mechanism_claims"
+          },
+          {
+            "viewpoint_id": "VP-T0-ENG-H02",
+            "version": 1,
+            "field": "mechanism_claims"
+          }
+        ],
+        "evidence_ids": [
+          "EV-T0-A8459E6E8776A15D",
+          "EV-T0-B33EF9F7AA480E81"
+        ]
+      },
+      "branch_b": {
+        "claim": "AIDP的快速部署是情报领域特定用例的成功，不代表所有军种或任务领域均达到同等水平。",
+        "viewpoint_refs": [
+          {
+            "viewpoint_id": "VP-T0-TRUST-H02",
+            "version": 1,
+            "field": "mechanism_claims"
+          },
+          {
+            "viewpoint_id": "VP-T0-OPS-H02",
+            "version": 1,
+            "field": "mechanism_claims"
+          }
+        ],
+        "evidence_ids": [
+          "EV-T0-A8459E6E8776A15D"
+        ]
+      },
+      "decision_impact": "low",
+      "resolvable_now": true,
+      "resolution_action": "scope_split",
+      "status": "candidate",
+      "diagnosis_reason": "该分歧涉及AIDP部署的代表性。分支A和分支B都认为AIDP是情报领域的特定用例，但分支A强调'首个'和'局限于特定军种'，分支B强调'不代表所有军种或任务领域'。两者实质相同，只是表述略有差异。通过scope_split可以明确AIDP的适用范围，当前证据已足够支持该判断。"
+    },
+    {
+      "disagreement_id": "DISAGREE-T0-007",
+      "viewpoint_refs": [
+        {
+          "viewpoint_id": "VP-T0-TECH-H01",
+          "version": 1,
+          "field": "boundary_conditions"
+        },
+        {
+          "viewpoint_id": "VP-T0-TECH-H02",
+          "version": 1,
+          "field": "boundary_conditions"
+        }
+      ],
+      "type": "fact",
+      "contested_node": "JCF是否已达到全面作战能力？",
+      "branch_a": {
+        "claim": "JCF达到全面作战能力并实现跨军种数据共享是体系整合的边界条件，但当前JCF尚未达到该状态。",
+        "viewpoint_refs": [
+          {
+            "viewpoint_id": "VP-T0-TECH-H01",
+            "version": 1,
+            "field": "boundary_conditions"
+          },
+          {
+            "viewpoint_id": "VP-T0-ENG-H01",
+            "version": 1,
+            "field": "boundary_conditions"
+          }
+        ],
+        "evidence_ids": [
+          "EV-T0-51D65DEC82584BCD",
+          "EV-T0-A515E3B9391C51B4"
+        ]
+      },
+      "branch_b": {
+        "claim": "JCF的全面作战能力延迟和路线图未定，表明统一能力底座尚未形成。",
+        "viewpoint_refs": [
+          {
+            "viewpoint_id": "VP-T0-TECH-H02",
+            "version": 1,
+            "field": "boundary_conditions"
+          },
+          {
+            "viewpoint_id": "VP-T0-OPS-H02",
+            "version": 1,
+            "field": "boundary_conditions"
+          }
+        ],
+        "evidence_ids": [
+          "EV-T0-51D65DEC82584BCD"
+        ]
+      },
+      "decision_impact": "high",
+      "resolvable_now": true,
+      "resolution_action": "evidence_check",
+      "status": "candidate",
+      "diagnosis_reason": "该分歧涉及JCF是否达到全面作战能力的事实判断。分支A和分支B都认为JCF尚未达到全面作战能力，但分支A将其作为边界条件，分支B将其作为现状描述。两者实质相同，当前证据（EV-T0-51D65DEC82584BCD）明确显示JCF全面作战能力被推迟且无预计日期。该事实可核查，通过evidence_check可以确认。"
+    },
+    {
+      "disagreement_id": "DISAGREE-T0-008",
+      "viewpoint_refs": [
+        {
+          "viewpoint_id": "VP-T0-TECH-H03",
+          "version": 1,
+          "field": "key_assumptions"
+        },
+        {
+          "viewpoint_id": "VP-T0-TRUST-H03",
+          "version": 1,
+          "field": "key_assumptions"
+        }
+      ],
+      "type": "assumption",
+      "contested_node": "预算投入（如2023财年11亿美元）是否已有效转化为实际的技术能力提升？",
+      "branch_a": {
+        "claim": "预算投入（如2023财年11亿美元）和DARPA的数据收集（如100TB传感器数据）尚未完全解决这些瓶颈。",
+        "viewpoint_refs": [
+          {
+            "viewpoint_id": "VP-T0-TECH-H03",
+            "version": 1,
+            "field": "key_assumptions"
+          },
+          {
+            "viewpoint_id": "VP-T0-ENG-H03",
+            "version": 1,
+            "field": "key_assumptions"
+          }
+        ],
+        "evidence_ids": [
+          "EV-T0-0405886E04C205A6",
+          "EV-T0-FB39056D1BA1F579"
+        ]
+      },
+      "branch_b": {
+        "claim": "预算投入和数据收集尚未完全解决这些瓶颈，但缺乏直接证据表明预算投入是否已有效转化为实际能力。",
+        "viewpoint_refs": [
+          {
+            "viewpoint_id": "VP-T0-TRUST-H03",
+            "version": 1,
+            "field": "uncertainties"
+          },
+          {
+            "viewpoint_id": "VP-T0-OPS-H03",
+            "version": 1,
+            "field": "uncertainties"
+          }
+        ],
+        "evidence_ids": [
+          "EV-T0-0405886E04C205A6",
+          "EV-T0-FB39056D1BA1F579"
+        ]
+      },
+      "decision_impact": "medium",
+      "resolvable_now": false,
+      "resolution_action": "monitor",
+      "status": "candidate",
+      "diagnosis_reason": "该分歧涉及预算投入效果的不确定性。分支A和分支B都认为预算投入尚未完全解决瓶颈，但分支B更明确地指出缺乏直接证据。这属于证据不足导致的不确定性，而非实质性分歧。通过monitor可以跟踪预算投入的实际效果。"
+    },
+    {
+      "disagreement_id": "DISAGREE-T0-009",
+      "viewpoint_refs": [
+        {
+          "viewpoint_id": "VP-T0-TECH-H02",
+          "version": 1,
+          "field": "judgment"
+        },
+        {
+          "viewpoint_id": "VP-T0-OPS-H02",
+          "version": 1,
+          "field": "judgment"
+        }
+      ],
+      "type": "mechanism",
+      "contested_node": "SP-008战略文件是否已转化为实际的跨项目统一部署？",
+      "branch_a": {
+        "claim": "SP-008等规划文件尚未转化为实际的跨项目统一部署。",
+        "viewpoint_refs": [
+          {
+            "viewpoint_id": "VP-T0-TECH-H02",
+            "version": 1,
+            "field": "key_assumptions"
+          },
+          {
+            "viewpoint_id": "VP-T0-ENG-H02",
+            "version": 1,
+            "field": "key_assumptions"
+          }
+        ],
+        "evidence_ids": [
+          "EV-T0-27370C837C885AEE",
+          "EV-T0-5EA556C2C939C121"
+        ]
+      },
+      "branch_b": {
+        "claim": "SP-008战略中关于'优先采用联合或部门赞助解决方案'和'开展综合多边演习'的表述表明体系化整合意图已包含具体采购优先序和演习验证路径，但实际转化仍有限。",
+        "viewpoint_refs": [
+          {
+            "viewpoint_id": "VP-T0-OPS-H02",
+            "version": 1,
+            "field": "judgment"
+          },
+          {
+            "viewpoint_id": "VP-T0-OPS-H02",
+            "version": 1,
+            "field": "response_note"
+          }
+        ],
+        "evidence_ids": [
+          "EV-T0-5EA556C2C939C121",
+          "EV-T0-F8E3070F89D94D25"
+        ]
+      },
+      "decision_impact": "medium",
+      "resolvable_now": false,
+      "resolution_action": "conditional_retain",
+      "status": "candidate",
+      "diagnosis_reason": "该分歧涉及SP-008战略的转化程度。分支A认为SP-008尚未转化为实际部署；分支B承认SP-008包含具体采购优先序和演习验证路径，但实际转化有限。两者在'转化有限'上一致，但分支B更细致地指出了SP-008中的具体机制。这影响对'体系化整合意图'的判断，但当前证据不足以完全裁决。"
+    },
+    {
+      "disagreement_id": "DISAGREE-T0-010",
+      "viewpoint_refs": [
+        {
+          "viewpoint_id": "VP-T0-TECH-H01",
+          "version": 1,
+          "field": "judgment"
+        },
+        {
+          "viewpoint_id": "VP-T0-TECH-H03",
+          "version": 1,
+          "field": "judgment"
+        }
+      ],
+      "type": "risk_weight",
+      "contested_node": "技术成熟度提升缓慢和应用不均衡的主要原因是资源约束还是治理瓶颈？",
+      "branch_a": {
+        "claim": "资源约束（如机载处理速度、数据质量、基础设施延迟）和治理瓶颈（如缺乏统一采办指导）确实限制了能力形成和应用扩展。",
+        "viewpoint_refs": [
+          {
+            "viewpoint_id": "VP-T0-TECH-H03",
+            "version": 1,
+            "field": "judgment"
+          },
+          {
+            "viewpoint_id": "VP-T0-ENG-H03",
+            "version": 1,
+            "field": "judgment"
+          }
+        ],
+        "evidence_ids": [
+          "EV-T0-AD4CCAC18E1BB26C",
+          "EV-T0-62B1ECDA7DF87F1A",
+          "EV-T0-8E35B508DF5C2E65"
+        ]
+      },
+      "branch_b": {
+        "claim": "统一治理和共用平台（如JCF）的规划意图明确，但技术实现和部署进度严重滞后，尚未形成可支撑跨军种整合的成熟技术底座。",
+        "viewpoint_refs": [
+          {
+            "viewpoint_id": "VP-T0-TECH-H01",
+            "version": 1,
+            "field": "judgment"
+          },
+          {
+            "viewpoint_id": "VP-T0-ENG-H01",
+            "version": 1,
+            "field": "judgment"
+          }
+        ],
+        "evidence_ids": [
+          "EV-T0-7E37FBD511FC654E",
+          "EV-T0-51D65DEC82584BCD"
+        ]
+      },
+      "decision_impact": "medium",
+      "resolvable_now": false,
+      "resolution_action": "conditional_retain",
+      "status": "candidate",
+      "diagnosis_reason": "该分歧涉及技术成熟度缓慢的原因权重。分支A强调资源约束和治理瓶颈；分支B强调统一平台的技术实现滞后。两者并非互斥，但权重不同。当前证据同时支持两者，但缺乏量化比较。该分歧影响对'主导路径'的判断，但当前证据不足以完全裁决。"
+    }
+  ]
+}

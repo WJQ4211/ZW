@@ -1,0 +1,173 @@
+T1候选证据语义筛选。只检查给定候选字段与其摘录之间的直接支持关系。不得引用或推断任何T0分析。
+研究问题：以公开、非密材料为依据，研究2025年1月1日至2026年6月30日期间，美国军用人工智能能力形成、应用部署和体系化发展的公开可观察变化。
+来源：T1-DAF-006
+每条返回一项review，字段为candidate_evidence_id、status、reason、claim_supported、nature_supported、dimension_reviews、revised_fields。status只能是accept、revise或reject；dimension_reviews必须是数组，每项包含dimension、supported、supporting_span、reason。只处理候选原本声明的维度；不得新增维度。若claim或nature无直接支持则reject；revise不得修改excerpt_original和source_locator。
+证据性质完整定义：
+- goal: 计划、目标、拟议能力或未来安排，不等于已经实现。
+- governance_event: 已经发生的政策、职责、指南或组织治理机制建立。
+- resource_input: 已经发生的预算、合同、采购、数据、人才或基础设施投入。
+- test_event: 测试、演示、演习或竞赛发生及其参与主体、配置。
+- test_result: 测试中明确观察到的功能、性能或结果。
+- deployment_event: 明确已经部署、实装、投入运行或持续使用。
+- constraint: 限制能力形成、部署或评估的已报告条件。
+- evaluation: 来源明确给出的评估、判断或评价，不改写为客观结果。
+编码维度完整定义：
+- integration_level: 跨项目、跨平台、跨军种或企业级系统集成的程度。
+- application_maturity: 从目标、演示、试验到部署和持续使用的应用成熟度。
+- human_machine_authority: 人机在任务中的权责、授权、监督与决策关系。
+- engineering_resource_conditions: 数据、算力、基础设施、人才、预算、采办和保障条件。
+- trust_governance_constraints: 可信性、安全、测试评估、责任、治理约束及制度落地。
+- organizational_system_fit: 组织运用、流程、任务适配和体系制度环境的匹配程度。
+候选：
+[
+  {
+    "candidate_evidence_id": "CE-T1-C06BCFD9C4907B64",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "organizational_system_fit"
+    ],
+    "content_hash": "c06bcfd9c4907b64d6003757dd984f0391791ba375ae4f8ba0f52fba1c687d33",
+    "evidence_nature": "test_event",
+    "excerpt_original": "DASH 2 took place at the Shadow Operations Center-Nellis’ unclassified location in downtown Las Vegas and was led by the Advanced Battle Management System Cross-Functional Team.",
+    "excerpt_zh": "DASH 2 在拉斯维加斯市中心的 Shadow Operations Center-Nellis 非保密地点举行，由先进战斗管理系统跨职能团队牵头。",
+    "extraction_run_id": "G4-P11-P12-20260827T051332Z-v1",
+    "normalized_claim": "DASH 2 实验在拉斯维加斯市中心的 Shadow Operations Center-Nellis 非保密地点举行，由先进战斗管理系统跨职能团队领导。",
+    "pending_g1_translation_review": true,
+    "pending_g1_visual_review": false,
+    "published_at": "2025-07-29",
+    "published_at_precision": "day",
+    "publisher": "U.S. Air Force",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DAF-006",
+    "source_locator": "web_paragraph_0007",
+    "title": "Air Force experiments with AI, boosts battle management speed, accurac",
+    "topics": [
+      "DASH 2实验",
+      "ABMS跨职能团队",
+      "实验地点"
+    ],
+    "url_or_path": "https://www.af.mil/News/Article-Display/Article/4310090/air-force-experiments-with-ai-boosts-battle-management-speed-accuracy/",
+    "version": 1
+  },
+  {
+    "candidate_evidence_id": "CE-T1-7AB164824EAAD82A",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "application_maturity"
+    ],
+    "content_hash": "7ab164824eaad82a15fc82be4aa1485a16f58ad058219514f0947337aaf98e76",
+    "evidence_nature": "test_result",
+    "excerpt_original": "Initial results showed that machines produced recommendations in less than ten seconds and generated 30 times more options than human-only teams.",
+    "excerpt_zh": "初步结果显示，机器在不到十秒内产生建议，并生成比纯人类团队多30倍的选项。",
+    "extraction_run_id": "G4-P11-P12-20260827T051332Z-v1",
+    "normalized_claim": "DASH 2 的初步结果显示，机器在不到十秒内产生建议，并生成比纯人类团队多30倍的选项。",
+    "pending_g1_translation_review": true,
+    "pending_g1_visual_review": false,
+    "published_at": "2025-07-29",
+    "published_at_precision": "day",
+    "publisher": "U.S. Air Force",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DAF-006",
+    "source_locator": "web_paragraph_0009",
+    "title": "Air Force experiments with AI, boosts battle management speed, accurac",
+    "topics": [
+      "DASH 2实验结果",
+      "机器性能",
+      "决策速度"
+    ],
+    "url_or_path": "https://www.af.mil/News/Article-Display/Article/4310090/air-force-experiments-with-ai-boosts-battle-management-speed-accuracy/",
+    "version": 1
+  },
+  {
+    "candidate_evidence_id": "CE-T1-11BE4D003ECA817F",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "application_maturity"
+    ],
+    "content_hash": "11be4d003eca817fba7089d75198c9ea9f8ecfd8ad12e723bbb72bc77b530edb",
+    "evidence_nature": "test_result",
+    "excerpt_original": "Two vendors each produced more than 6,000 solutions for roughly 20 problems in just one hour.",
+    "excerpt_zh": "两家供应商各自在一小时内为大约20个问题生成了超过6000个解决方案。",
+    "extraction_run_id": "G4-P11-P12-20260827T051332Z-v1",
+    "normalized_claim": "在DASH 2中，两家供应商各自在一小时内为大约20个问题生成了超过6000个解决方案。",
+    "pending_g1_translation_review": true,
+    "pending_g1_visual_review": false,
+    "published_at": "2025-07-29",
+    "published_at_precision": "day",
+    "publisher": "U.S. Air Force",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DAF-006",
+    "source_locator": "web_paragraph_0009",
+    "title": "Air Force experiments with AI, boosts battle management speed, accurac",
+    "topics": [
+      "DASH 2实验结果",
+      "供应商产出",
+      "解决方案数量"
+    ],
+    "url_or_path": "https://www.af.mil/News/Article-Display/Article/4310090/air-force-experiments-with-ai-boosts-battle-management-speed-accuracy/",
+    "version": 1
+  },
+  {
+    "candidate_evidence_id": "CE-T1-06554E1EE0D2B6C0",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "application_maturity"
+    ],
+    "content_hash": "06554e1ee0d2b6c076511c8838c9aa22e6c6858511ed777b21dc673372d108a4",
+    "evidence_nature": "test_result",
+    "excerpt_original": "The software’s accuracy was on par with human performance, despite only two weeks of development.",
+    "excerpt_zh": "尽管只有两周的开发时间，该软件的准确性与人类表现相当。",
+    "extraction_run_id": "G4-P11-P12-20260827T051332Z-v1",
+    "normalized_claim": "DASH 2中开发的软件在准确性上与人类表现相当，尽管开发时间只有两周。",
+    "pending_g1_translation_review": true,
+    "pending_g1_visual_review": false,
+    "published_at": "2025-07-29",
+    "published_at_precision": "day",
+    "publisher": "U.S. Air Force",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DAF-006",
+    "source_locator": "web_paragraph_0009",
+    "title": "Air Force experiments with AI, boosts battle management speed, accurac",
+    "topics": [
+      "DASH 2实验结果",
+      "软件准确性",
+      "开发周期"
+    ],
+    "url_or_path": "https://www.af.mil/News/Article-Display/Article/4310090/air-force-experiments-with-ai-boosts-battle-management-speed-accuracy/",
+    "version": 1
+  },
+  {
+    "candidate_evidence_id": "CE-T1-BA0073FF99C5719B",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "organizational_system_fit"
+    ],
+    "content_hash": "ba0073ff99c5719bab7118d81c5bb464b02d9411b8c3093ad89a0d34273d9057",
+    "evidence_nature": "test_event",
+    "excerpt_original": "Seven teams participated in DASH 2, including six industry teams and one ShOC-N innovation team.",
+    "excerpt_zh": "七个团队参加了DASH 2，包括六个行业团队和一个ShOC-N创新团队。",
+    "extraction_run_id": "G4-P11-P12-20260827T051332Z-v1",
+    "normalized_claim": "DASH 2有七个团队参加，包括六个行业团队和一个ShOC-N创新团队。",
+    "pending_g1_translation_review": true,
+    "pending_g1_visual_review": false,
+    "published_at": "2025-07-29",
+    "published_at_precision": "day",
+    "publisher": "U.S. Air Force",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DAF-006",
+    "source_locator": "web_paragraph_0011",
+    "title": "Air Force experiments with AI, boosts battle management speed, accurac",
+    "topics": [
+      "DASH 2实验",
+      "参与团队",
+      "行业合作"
+    ],
+    "url_or_path": "https://www.af.mil/News/Article-Display/Article/4310090/air-force-experiments-with-ai-boosts-battle-management-speed-accuracy/",
+    "version": 1
+  }
+]

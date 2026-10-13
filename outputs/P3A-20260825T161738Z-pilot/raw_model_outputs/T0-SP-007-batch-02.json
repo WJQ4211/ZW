@@ -1,0 +1,18 @@
+[
+  {
+    "source_id": "T0-SP-007",
+    "source_locator": "pdf_page_44",
+    "excerpt_original": "Test & Evaluation (T&E) is the process by which a system or compone nts are compared against requirements and specifications through testing . The resuJts are evaluated to assess progress of des ign, performance , source: DAU supportab ility, etc.",
+    "excerpt_zh": "",
+    "normalized_claim": "The glossary defines test and evaluation as comparing a system or component with requirements and specifications through testing and evaluating results for design progress, performance, and supportability.",
+    "coding_dimensions": [
+      "trust_governance_constraints",
+      "application_maturity"
+    ],
+    "evidence_nature": "evaluation",
+    "topics": [
+      "test_and_evaluation",
+      "verification"
+    ]
+  }
+]

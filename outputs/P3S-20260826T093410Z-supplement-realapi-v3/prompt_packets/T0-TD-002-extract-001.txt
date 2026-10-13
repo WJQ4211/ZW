@@ -1,0 +1,55 @@
+PROMPT_ID: evidence_extract_p3s
+VERSION: 1.0
+BATCH_ID: T0-TD-002-extract-001
+SOURCE_ID: T0-TD-002
+RESEARCH_QUESTION: Based only on public, non-classified material available through 2024-12-31, what dominant deployment form is more likely for U.S. military AI capability building in 2025-2027?
+TASK: Extract zero or more directly auditable atomic evidence candidates from this one source only. There is no minimum quantity.
+INPUT LIMIT: Use only the supplied source paragraphs. Do not use other sources, prior outputs, search results, or outside knowledge.
+OUTPUT: strict JSON array; every object must contain exactly the ten fields in the P3S output schema.
+Do not produce any deterministic metadata such as case_id, source_grade, published_at, publisher, title, URL, evidence_id, version, or content_hash.
+excerpt_original must be a continuous verbatim string from exactly one supplied paragraph. Keep original punctuation, quotation marks, numbers, and units.
+normalized_claim must be Chinese, atomic, and contain no source-attribution prefix. excerpt_zh must be non-empty for every English excerpt.
+Use goal for aims/plans; test_event for a test or exercise occurrence/configuration; test_result only for explicitly observed performance or result; deployment_event only for deployment or sustained use already occurring; constraint for limitations; resource_input for actual resources; evaluation for evaluations; governance_event for already-issued governance mechanisms.
+Do not turn demonstrations, competitions, tests, plans, or statements by a program lead into deployment or independently verified effectiveness.
+Do not generate hypotheses, viewpoints, conclusions, or a 2025-2027 route judgment. Do not optimize for a quantity target.
+FIELD_DEFINITIONS:
+{"application_maturity": "应用成熟度：概念战略、研发、试验、试点、采购部署或持续运用。", "engineering_resource_conditions": "工程与资源条件：数据、算力、模型、接口、供应链、预算、人才和保障。", "human_machine_authority": "人机权限关系：辅助决策、人在回路中、受监督自主或更高程度自主；普通协同、信息传输、培训或文档要求不足以支持此维度。", "integration_level": "能力集成层级：单工具、单任务、单平台、跨平台、跨任务或体系级集成。", "organizational_system_fit": "组织与体系适配：指挥流程、任务编组、跨平台协同、人员负荷和组织变革。", "trust_governance_constraints": "可信与治理约束：安全、可靠性、测试评价、授权边界、责任与伦理。"}
+{"constraint": "限制、风险、障碍、依赖或边界条件。", "deployment_event": "部署、实装、现场运用或正式采用已经发生。", "evaluation": "评价、审查、验证或评估结论。", "goal": "战略目标、愿景或计划方向；不能写成已实现结果。", "governance_event": "已经发生的政策发布、机构职责确立、治理工具发布、标准指南采用或组织机制建立；不得据此推断技术部署。", "resource_input": "投入、资源、预算、数据、人才或基础设施条件。", "test_event": "测试或演习发生、参与主体或配置；不表示功能结果或作战效能。", "test_result": "测试中观察到的功能、性能或结果；必须由摘录直接说明。"}
+SOURCE_PARAGRAPHS:
+--- web_paragraph_0001 ---
+character_start: 0
+character_end: 569
+DARPA’s Robotic Autonomy in Complex Environments with Resiliency (RACER) program recently conducted its third experiment to assess the performance of off-road unmanned vehicles. These test runs, conducted March 12-27, included the first with completely uninhabited RACER Fleet Vehicles (RFVs), with a safety operator overseeing in a supporting chase vehicle. The goal of the RACER program is to demonstrate autonomous movement of combat-scale vehicles in complex, mission-relevant off-road environments that are significantly more unpredictable than on-road conditions.
+--- web_paragraph_0002 ---
+character_start: 571
+character_end: 1118
+The multiple courses were in the challenging and unforgiving terrain of the Mojave Desert at the U.S. Army’s National Training Center (NTC) in Ft. Irwin, California. As at the previous events, teams from Carnegie Mellon University, NASA’s Jet Propulsion Laboratory, and the University of Washington participated. Additionally, researchers from the Army Research Laboratory demonstrated the flexibility of the performer team’s autonomy software, critical to transitioning RACER capabilites to the services. This completed the project’s first phase.
+--- web_paragraph_0003 ---
+character_start: 1120
+character_end: 1591
+“At Experiment Three, we successfully demonstrated significant improvements in our off-road speeds while simultaneously reducing any interaction with the vehicle during test runs,” said Stuart Young , RACER program manager in DARPA’s Tactical Technology Office . “We were also honored to have representatives from the Army and Marine Corps at the experiment to facilitate transition of technologies developed in RACER to future service unmanned initiatives and concepts.”
+--- web_paragraph_0004 ---
+character_start: 1593
+character_end: 2195
+During the most recent experiment, teams completed more than 55 driverless runs of between roughly four and 11 miles each, reaching speeds of about 25 miles per hour. The performers completed 246 miles over 24.6 total hours on course with a robotic fleet of 12 RFVs. The terrain at Fort Irwin provided a number of obstacles, such as large and small rocks, bushes, ditches, and trees, which limited vehicle speed and, if improperly navigated, could completely disable it. Success depended upon how teams perceived the terrain, planned paths, and controlled their robotic vehicles at high average speeds.
+--- web_paragraph_0005 ---
+character_start: 2197
+character_end: 2573
+Last month’s experiment followed earlier experiments in March 2022 and September 2022 at NTC and at Camp Roberts, California, respectively. At those events, the teams tested their autonomous software stacks developed for the RACER program using DARPA-provided robot systems in a variety of environments, after development runs on their own in various locations across the U.S.
+--- web_paragraph_0006 ---
+character_start: 2575
+character_end: 3098
+“We provided the performers RACER fleet vehicles with common performance, sensing, and compute. This enables us to evaluate the performance of the performer team autonomy software in similar environments and compare it to human performance,” said Young. “During this latest experiment, we continued to push vehicle limits in perceiving the environments to greater distances, enabling further increase in speeds and better adaptation to newly encountered environmental conditions that will continue into RACER’s next phase.”
+--- web_paragraph_0007 ---
+character_start: 3100
+character_end: 3506
+Phase 2 will focus on maturing software stacks and testing autonomy over longer off-road courses with fewer interventions. The participating team or teams will port implementations of their autonomy solutions onto large-scale demonstration platforms, which will be representative of a combat-scale vehicle. They will also be required to increase speeds to twice that of the first phase performance metrics.
+--- web_paragraph_0008 ---
+character_start: 3508
+character_end: 3718
+&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;nbsp;
+--- web_paragraph_0009 ---
+character_start: 3720
+character_end: 3733
+Photo Gallery
+JSON_REPAIR: Return only one strict JSON array with exactly the eight candidate fields and no Markdown or commentary. source_id is injected by the program and must not be returned.

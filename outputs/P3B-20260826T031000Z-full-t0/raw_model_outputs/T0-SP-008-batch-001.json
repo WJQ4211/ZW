@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-87f0c5bc-e495-44ab-9a77-7bf54278d32c",
+  "object": "chat.completion",
+  "created": 1787712124,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n  {\n    \"source_id\": \"T0-SP-008\",\n    \"source_locator\": \"pdf_page_14\",\n    \"excerpt_original\": \"Thus, DoD Components will seek to centralize certain AI development platforms for continuous experimentation and deployment, and then maximize the adoption of responsible AI shared services.\",\n    \"excerpt_zh\": \"因此，国防部各组成部门将寻求集中某些AI开发平台，以进行持续实验和部署，然后最大限度地采用负责任的AI共享服务。\",\n    \"normalized_claim\": \"国防部各组成部门将集中某些AI开发平台，以进行持续实验和部署，并最大化采用负责任的AI共享服务。\",\n    \"coding_dimensions\": {\n      \"application_maturity\": \"goal\",\n      \"engineering_resource_conditions\": \"resource_input\",\n      \"human_machine_authority\": \"\",\n      \"integration_level\": \"体系级集成\",\n      \"organizational_system_fit\": \"\",\n      \"trust_governance_constraints\": \"trust_governance_constraints\"\n    },\n    \"evidence_nature\": \"goal\",\n    \"topics\": [\"AI开发平台\", \"共享服务\", \"集中化\"]\n  }\n]\n```"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10724,
+    "total_tokens": 10980,
+    "completion_tokens": 256,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

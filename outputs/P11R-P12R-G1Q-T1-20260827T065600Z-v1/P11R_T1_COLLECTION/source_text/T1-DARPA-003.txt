@@ -1,0 +1,67 @@
+DART and MSAI triumph at DARPA Triage Challenge | DARPA
+
+Breadcrumb
+
+DART and MSAI Triumph At DARPA Triage Challenge
+
+DART and MSAI triumph at DARPA Triage Challenge
+
+In Challenge Event 2, teams drive mass casualty tool advancements, facilitate robot-medic teaming demonstrations
+
+DARPA concluded the second year of the DARPA Triage Challenge on October 4, awarding top marks to DART and MSAI in Systems and Data competitions, respectively. The three-year prize competition aims to revolutionize medical triage in mass casualty incidents where medical resources are limited.
+
+This year's event pushed teams to new limits with more complex, noisy datasets and degraded operational environments, mirroring the chaos of real-world disasters and battlefields. For the first time, medic teams and DARPA Triage Challenge technology teams collaborated in a special event to identify casualties in real-time, providing crucial medical decision support to first responders and paving the way for next year's final competition.
+
+The challenge events are designed to bridge the gap between fundamental research and practical applications for military and national security needs. A key objective is to develop technologies to accurately assess life threatening injuries – such as hemorrhage or airway compromise – to help responders prioritize care and save lives when medical resources are stretched in both civilian and military crises.
+
+“In a mass casualty event, every minute makes a difference—but today’s triage methods are time consuming and fragile,” noted retired Army Col. Jeremy C. Pamplin, M.D., DARPA Triage Challenge program manager . “The DARPA Triage Challenge is driving new solutions to close this critical gap and ensure that limited medical resources reach the right patients at the right time to maximize survival.”
+
+In the Systems competition, held from Sept. 26, 2025 to Oct. 3, 2025, at Guardian Centers in Perry, Georgia, teams navigated courses modeled on a C-130 airplane crash and night ambush scenarios that were complicated by smoke, darkness, and visual obstructions. The teams deployed unmanned aerial and ground vehicles, programmed with algorithms capable of processing sensor data to provide real-time casualty identification and injury assessment. Though DART and RoboScout scored highest overall, only self-funded teams were eligible for prize money. Coordinated Robotics earned the top prize of $300,000, demonstrating robotic platforms that successfully detected vital signs and identified injury patterns despite impaired visibility and environmental complexity. Second place with a prize of $150,000 went to UAS-DTU.
+
+Systems Competition Results (self-funded teams)
+
+1st prize: Coordinated Robotics – $300,000
+
+2nd prize: UAS-DTU – $150,000
+
+Final leaderboard (Systems Competition)
+
+DART *
+
+RoboScout *
+
+Coordinated Robotics
+
+PRONTO *
+
+UAS-DTU
+
+* Indicates a DARPA-funded team
+
+In the Data Competition, teams tackled DARPA-provided datasets of de-identified physiological data from trauma patients. The competition challenged teams to, using bespoke algorithms, uncover physiological signs of injury that could predict the need for life-saving interventions. DARPA-funded team MSAI excelled, and self-funded team Coordinated Robotics earned a $300,000 cash prize.
+
+Data Competition Results (self-funded teams)
+
+Final leaderboard (Data Competition)
+
+MSAI *
+
+AI-TEMPO *
+
+CRITIC *
+
+LENS *
+
+As in the first year, DARPA-funded and self-funded teams competed side-by-side. Only self-funded teams are eligible for prize money in year one and year two events, provided they finish among the top five overall in their competition category. All qualified teams are eligible for prizes in the final event in 2026. Teams interested in participating in the final challenge event should note that qualification submissions for the final Systems and Data competitions are due Jan. 2, 2026.
+
+The DARPA Triage Challenge is strengthened by the contributions of government and industry partners, including the Naval Information Warfare Center, the Johns Hopkins University Applied Physics Laboratory, the US Army Institute of Surgical Research, the University of Maryland, Baltimore, and the University of Pittsburgh, who collectively provide data, independent verification and validation, and technical expertise to ensure rigorous evaluation of triage solutions.
+
+“Year two has introduced more realistic challenges that simulate the chaos of real mass casualty incidents,” added Pamplin. “Teams have risen to the occasion, showing remarkable innovation in applying autonomous systems and data science to help responders make faster, more accurate triage decisions in situations where every second counts.”
+
+###
+
+Media with inquiries should contact DARPA Public Affairs .
+
+DARPA Triage Challenge
+
+Revolutionizing triage (DARPA Triage Challenge) | Ep 81

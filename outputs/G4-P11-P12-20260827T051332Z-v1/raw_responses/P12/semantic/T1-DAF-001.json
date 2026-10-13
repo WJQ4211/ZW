@@ -1,0 +1,25 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "```json\n[\n  {\n    \"candidate_evidence_id\": \"CE-T1-02DFF1DCD73E8F93\",\n    \"status\": \"accept\",\n    \"reason\": \"摘录明确提到战略为空军部成为AI优先部队提供路线图，直接支持申请中的目标声明。\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": [\n      {\n        \"dimension\": \"application_maturity\",\n        \"supported\": true,\n        \"supporting_span\": \"These strategies provide a strategic roadmap for the department to become an AI-first force\",\n        \"reason\": \"摘录明确将战略描述为成为AI优先部队的路线图，属于目标层面的成熟度，与维度定义中的'目标'阶段直接对应。\"\n      },\n      {\n        \"dimension\": \"organizational_system_fit\",\n        \"supported\": true,\n        \"supporting_span\": \"operationalizing data and AI as decisive force multipliers and strategic assets to maintain air and space dominance from the boardroom to the battlefield\",\n        \"reason\": \"摘录提到将数据和AI作为战略资产运用以维持空中和太空优势，涉及组织层面的任务适配和体系制度环境，与维度定义中的'组织运用、流程、任务适配'直接相关。\"\n      }\n    ],\n    \"revised_fields\": null\n  },\n  {\n    \"candidate_evidence_id\": \"CE-T1-050BC7E34C88F297\",\n    \"status\": \"accept\",\n    \"reason\": \"摘录明确提到指导文件在多个任务领域确立AI优先事项，直接支持申请中的目标声明。\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": [\n      {\n        \"dimension\": \"organizational_system_fit\",\n        \"supported\": true,\n        \"supporting_span\": \"The guiding documents establish AI priorities across several different mission areas, ranging from training and readiness to multi-domain operations.\",\n        \"reason\": \"摘录明确提到在训练、战备和多域作战等任务领域确立AI优先事项，直接涉及组织运用和任务适配，与维度定义中的'组织运用、流程、任务适配'直接对应。\"\n      }\n    ],\n    \"revised_fields\": null\n  },\n  {\n    \"candidate_evidence_id\": \"CE-T1-2995ED3DEF557C50\",\n    \"status\": \"accept\",\n    \"reason\": \"摘录明确提到战略强调将数据视为战略资产并采用去中心化数据架构，直接支持申请中的目标声明。\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": [\n      {\n        \"dimension\": \"engineering_resource_conditions\",\n        \"supported\": true,\n        \"supporting_span\": \"the strategies emphasize treating data as a strategic asset and by adopting a decentralized data architecture, the DAF provides warfighters with trusted data at the speed of mission.\",\n        \"reason\": \"摘录明确提到数据作为战略资产和去中心化数据架构，直接涉及数据资源条件，与维度定义中的'数据、算力、基础设施'直接对应。\"\n      }\n    ],\n    \"revised_fields\": null\n  },\n  {\n    \"candidate_evidence_id\": \"CE-T1-B5C396D3278023D1\",\n    \"status\": \"accept\",\n    \"reason\": \"摘录明确提到战略实施推进了首席数据和AI办公室2026财年将数据和AI制度化为核心任务组成部分的目标，直接支持申请中的目标声明。\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": [\n      {\n        \"dimension\": \"organizational_system_fit\",\n        \"supported\": true,\n        \"supporting_span\": \"The implementation of these strategies directly advances the CDAO’s FY2026 goal to institutionalize data and AI as core mission components.\",\n        \"reason\": \"摘录明确提到将数据和AI制度化为核心任务组成部分，直接涉及组织运用和体系制度环境，与维度定义中的'组织运用、流程、任务适配和体系制度环境'直接对应。\"\n      }\n    ],\n    \"revised_fields\": null\n  }\n]\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1787812082,
+  "id": "chatcmpl-0b6b1581-3882-4953-b250-6b42829b6f2f",
+  "model": "deepseek-v4-flash-0731",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 908,
+    "prompt_tokens": 2274,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3182
+  }
+}

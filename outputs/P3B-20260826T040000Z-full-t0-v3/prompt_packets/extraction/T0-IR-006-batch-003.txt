@@ -1,0 +1,829 @@
+PROMPT_ID: evidence_extract_p3b
+VERSION: 2.0
+BATCH_ID: T0-IR-006-batch-003
+SOURCE_DOCUMENT_ID: T0-IR-006
+RESEARCH_QUESTION: Based only on public, non-classified material available through 2024-12-31, what dominant deployment form is more likely for U.S. military AI capability building in 2025-2027?
+TASK: Extract at most five auditable evidence candidates from these source segments. Output zero candidates when the supplied text contains insufficient directly relevant evidence.
+INPUT LIMIT: Use only the source segments and definitions supplied here. Do not use prior runs, other sources, or outside knowledge.
+OUTPUT: strict JSON array; each object must contain exactly the eight model fields in the schema.
+normalized_claim must be Chinese only, state one evidence proposition, and contain no source-attribution prefix such as 本报告认为 or 某机构指出. Source metadata is supplied by the program.
+coding_dimensions must be a JSON array of zero or more exact dimension key strings, never an object/map and never Chinese descriptions or maturity labels. Allowed keys: integration_level, application_maturity, human_machine_authority, engineering_resource_conditions, trust_governance_constraints, organizational_system_fit.
+excerpt_original must be copied verbatim from one exact source_locator. Do not silently repair OCR, spelling, or layout extraction.
+If an English excerpt is returned, excerpt_zh must be non-empty and remains pending G1 translation review.
+Use goal for strategy/vision/plan; test_event only for a test or exercise occurrence, participants, or configuration; test_result only for an explicitly observed function, performance, or result; deployment_event only for deployment, fielding, adoption, or sustained use that has already occurred.
+Ordinary coordination, information transfer, training, or documentation does not automatically support human_machine_authority.
+Do not add subjects, actions, numbers, scope, or results absent from the excerpt. Do not generate hypotheses, viewpoints, conclusions, or a 2025-2027 route judgment.
+Do not use pseudo-continuous locators. One candidate expresses one checkable fact. Do not duplicate an equivalent excerpt within this source.
+CANDIDATE_LIMIT: 5
+SOURCE_SEGMENTS:
+--- pdf_page_43 ---
+pdf_page_number: 43
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_43|printed_page_pending|section_pending
+visual_review_required: false
+Table 5: Select Mechanisms for Interagency Collaboration, Their Definitions, and Reported Usage, October 2021
+Percentage of times
+respondents reported they
+Collaborative used a collaborative
+mechanism Definition mechanism out of total
+Interagency groups Groups led by agencies that are sometimes referred to as task 64
+forces, working groups, councils, or committees.
+Conferences A meeting that brings together representatives of different agencies 44
+or departments for the discussion of common problems, the
+exchange of information, or the development of agreements on
+issues of mutual interest.
+Strategy development A document or initiative that is national in scope and provides a 42
+broad framework for addressing issues that cut across federal
+agencies and often across other levels of government and sectors.
+Shared data systems Tools that facilitate collaboration, such as shared databases and 36
+or technologies web portals.
+Specific positions to An employee of one organization assigned to work primarily or 33
+facilitate coordination exclusively with another agency.
+(e.g. liaisons)
+Co-location One office maintaining responsibility for collaborating with federal 23
+agencies or departments that are located in the same geographic
+region. Also, in some cases, the location of more than one program
+office from different federal agencies into a facility with the intention
+of personnel from the agencies collaborating with one another.
+Memorandum of A written agreement between more than one federal agency or 23
+understanding, department.
+memorandum of agreements
+interagency agreements
+Source: GAO 12-1022 and GAO Survey about Department of Defense Collaboration on Artificial Intelligence Activities I GAO-22-105834.
+Note: The mechanisms reported are not mutually exclusive and more than one mechanism could
+have been reported for each collaboration instance.
+According to our survey respondents, the most frequently used formal
+collaborative mechanism to collaborate with other organizations and the
+JAIC was interagency groups (64 percent). Survey respondents reported
+using mechanisms such as memoranda of understanding, memorandum
+of agreements, interagency agreements, co-location, and specific
+positions to facilitate coordination (e.g., liaisons) least frequently (See
+table 5.). Most frequently, survey respondents reported using multiple
+collaborative mechanisms; in numerous cases, using three or four
+different mechanisms. On average, the Defense Intelligence Enterprise
+organizations respondents we surveyed reported the highest average
+number of formal collaboration mechanisms used to collaborate with
+another organization.
+Page 38 GAO-22-105834 Artificial Intelligence
+--- pdf_page_44 ---
+pdf_page_number: 44
+printed_page_number: None
+section_title: GAO-22-104765
+machine_extracted_anchor: pdf_page_44|printed_page_pending|section_GAO_22_104765
+visual_review_required: false
+DOD Intends to Use the According to DOD officials, DOD intends to improve collaboration by
+Joint Common Foundation establishing the Joint Common Foundation as a collaborative
+mechanism.73 In 2019, the JAIC began developing the Joint Common
+as a Mechanism to
+Foundation to create a department-wide data-sharing platform in lieu of
+Improve Collaboration
+each organization maintaining their data in separate systems as shown in
+figure 8.74
+Figure 8: DOD’s Joint Common Foundation Concept
+aThe 2018 DOD Artificial Intelligence (AI) Strategy calls for Joint Artificial Intelligence Center to
+establish a common foundation for scaling AI’s impact across DOD, leading strategic data acquisition
+and introducing unified data stores, reusable tools, frameworks and standards, and cloud and edge
+services. Absent a common foundation, DOD’s AI development operated where every program had to
+build platform and infrastructure from scratch.
+Through the Joint Common Foundation, the JAIC aims to eliminate
+duplicative efforts and reduce the challenges to initial AI adoption by
+providing a secure space where DOD organizations can share data and
+algorithms needed to build, test, and field AI applications. In other words,
+a DOD official told us that the Joint Common Foundation acts as an “AI
+sandbox,” where one organization can use data from another
+organization’s AI application to develop its own data and potentially
+73Department of Defense, DOD Artificial Intelligence Strategy (2018).
+74We reported on additional details and DOD’s plans for the Joint Common Foundation in
+GAO-22-104765.
+Page 39 GAO-22-105834 Artificial Intelligence
+--- pdf_page_45 ---
+pdf_page_number: 45
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_45|printed_page_pending|section_pending
+visual_review_required: false
+collaborate on AI projects.75 According to DOD documentation, the Joint
+Common Foundation will bring disparate AI applications under a single
+platform and scale AI across the department.
+Of the 39 organizations we surveyed, 12 organizations reported the Joint
+Common Foundation as one of their most important collaboration
+activities with the JAIC. According to a senior JAIC official, the JAIC is
+developing a communication plan including a rollout strategy for the
+expected increase of Joint Common Foundation users. In the meantime,
+the JAIC fosters awareness about the Joint Common Foundation by word
+of mouth (e.g., DOD JAIC AI Symposium), as described in Appendix IV.
+DOD Has Not Fully We found that DOD has not fully incorporated leading practices for
+Incorporated Leading collaboration in working groups, such as the JAIC subcommittees;
+collaborative technologies, such as the Joint Common Foundation; and
+Collaboration Practices
+other collaborative mechanisms.76 While collaborative mechanisms may
+differ in complexity and scope (see table 5 above), the mechanisms all
+benefit from the incorporation of leading collaboration practices, based on
+our prior work. The mechanisms fall into the categories of outcomes and
+accountability; bridging organizational cultures; leadership; clarity of roles
+and responsibilities; including relevant participants; identifying and
+leveraging resources; and written guidance and agreements (See table
+6.). Table 6 includes examples that informed our assessment of DOD’s
+incorporation of the leading collaboration practices.
+75For example, according to a senior JAIC official, the DOD AI Inventory Portfolio Analytics
+Tool could be used in a variety of ways such as a catalog or customer list for the Joint
+Common Foundation in the future.
+76GAO-12-1022. We have previously reported that interagency mechanisms or strategies
+to coordinate programs that address crosscutting issues may reduce potentially
+duplicative, overlapping, and fragmented efforts. In addition, while collaborative
+mechanisms may differ in complexity and scope, they all benefit from certain leading
+practices, which raise issues to consider when implementing these mechanisms,
+according our analysis.
+Page 40 GAO-22-105834 Artificial Intelligence
+--- pdf_page_46 ---
+pdf_page_number: 46
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_46|printed_page_pending|section_pending
+visual_review_required: false
+Table 6: GAO Analysis of the Extent to Which DOD Incorporated Leading Collaboration Practices and Key Considerations
+Key Extent
+Leading practice considerations incorporated GAO analysis
+Defining outcomes and Is there a way to track and Joint Artificial Intelligence Center (JAIC)
+monitoring accountability monitor progress toward short- officials told us they are working on an
+term and long-term outcomes? internal measurement to track outcomes.
+However, the 2018 Department of
+◐ Defense (DOD) AI Strategy and other
+associated plans do not fully include
+performance measures and milestones
+to achieve the outcomes defined in the
+strategies and plans.a
+Bridging organizational What are the commonalities The JAIC is developing the Joint
+cultures between the participating Common Foundation in response to
+agencies’ missions and DOD’s need for a cohesive development
+cultures, and what are some environment, which will include classified
+potential challenges? Have capabilities. However, DOD has not fully
+participating agencies ◐ agreed on common terminology or
+developed ways for operating developed a common understanding of
+across agency boundaries? AI to operate across component
+Have participating agencies boundaries.
+agreed on common terminology
+and definitions?
+Identifying and How will leadership be The Director of the JAIC reports to the
+sustaining leadership sustained over the long term? If Deputy Secretary of Defense. However,
+leadership is shared, have roles ◐ DOD has not fully defined leadership
+and responsibilities been clearly roles and responsibilities within DOD’s AI
+identified and agreed upon? governance structure.
+Clarifying roles and Have participating agencies DOD developed an AI governance
+responsibilities clarified roles and structure to define department-wide AI
+responsibilities? roles and responsibilities consisting of
+the DOD AI Executive Steering Group, AI
+◐ Working Group, and nine
+subcommittees. However, DOD has not
+fully defined roles and responsibilities for
+the JAIC within the AI governance
+structure.
+Including relevant Have all relevant participants DOD identified organizations involved in
+participants been included? Do participants developing, transitioning, and using AI.
+have appropriate knowledge, However, DOD has not identified which
+skills, and abilities to contribute? ◐ organizations must collaborate with the
+JAIC and other organizations (or which
+organizations will be required to use the
+Joint Common Foundation).
+Page 41 GAO-22-105834 Artificial Intelligence
+--- pdf_page_47 ---
+pdf_page_number: 47
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_47|printed_page_pending|section_pending
+visual_review_required: false
+Key Extent
+Leading practice considerations incorporated GAO analysis
+Identifying and leveraging How will the collaborative DOD has identified and increased
+resources mechanism be funded and funding for the JAIC, since its 2018
+staffed? inception. However, responses to our
+survey indicated that additional subject
+matter experts, resources, and technical
+expertise might frequently be needed to
+◐
+further collaborate. As previously
+discussed, DOD’s efforts to establish a
+process to identify AI activities and
+associated investments (i.e. resources)
+are ongoing and could benefit from a
+road-map to better guide its efforts.
+Developing and updating If appropriate, have the In a 2018 memorandum, the Deputy
+written guidance and participating agencies Secretary of Defense directed the CIO to
+agreements documented their agreement establish the JAIC. This memorandum
+regarding how they will highly encouraged the military services
+collaborate? Have participating and other DOD organizations to
+agencies developed ways to collaborate with the JAIC for new AI
+continually update or monitor initiatives, and required components to
+◐
+written agreements? initially coordinate on each initiative that
+totals more than $15 million annually.
+However, DOD is in the process of
+developing guidance and written
+agreements that will provide more details
+regarding expectations and requirements
+for AI collaboration.
+Key: ● = fully included aspects of this leading practice; ◐ = partially included aspects of this leading practice;
+○ = does not include aspects of this leading practice
+Source: GAO 12-1022, GAO analysis of DOD documentation, and GAO Survey about Department of Defense Collaboration on Artificial Intelligence Activities. I GAO-105834
+aDeputy Secretary of Defense Memorandum, Establishment of the Joint Artificial Intelligence Center
+(June 27, 2018).
+According to our analysis, DOD’s collaboration on AI activities partially
+incorporates the leading practices for collaboration, but we identified
+collaboration challenges in three key areas:
+Defining outcomes and monitoring accountability. DOD does not
+have performance measures and milestones to achieve the outcomes for
+AI collaboration activities or to monitor progress toward short-term and
+long-term outcomes. For example, a survey respondent said that efforts
+are hindered by uncertain expectations of AI-driven capabilities and more
+near-term focus than normal for basic research efforts. Another survey
+respondent commented that for some of their collaborations there are
+currently no identified milestones; however, periodic discussions for future
+planning are taking place. The JAIC is developing internal and external
+key performance indicators that will assess how effectively it is achieving
+its mission to transform the department through AI and expects to report
+Page 42 GAO-22-105834 Artificial Intelligence
+--- pdf_page_48 ---
+pdf_page_number: 48
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_48|printed_page_pending|section_pending
+visual_review_required: false
+quantitative measures on its metrics by December 2021. Additionally,
+DOD does not have a mechanism to track and monitor progress and
+milestones for the Joint Common Foundation. According to DOD officials,
+DOD planned to finalize a roadmap or high-level plan with milestones for
+the Joint Common Foundation by August 2021, but has experienced
+multiple delays, and as of November 2021 the roadmap was not finalized.
+Bridging organizational culture. DOD previously established an
+enterprise definition of AI in the 2018 DOD AI Strategy, but it is not
+consistently used across the department to align DOD-wide AI activities
+and bridge organizational culture. According to our survey, 50 percent of
+respondents said they use the National Artificial Intelligence Initiative Act
+of 2020 definition of AI, while 24 percent said they use the DOD AI
+Strategy’s definition, 13 percent said they use another strategy or
+guidance document for their definition, and 9 percent used an
+organization-specific definition.77 Further, DOD is in the process of
+determining how to define and identify specific AI activities as part of its
+AI inventory effort. According to DOD officials, the JAIC is developing an
+AI ontology foundry (i.e. a uniform vocabulary) in coordination with Chief
+Data Officer and the Intelligence Community. The JAIC plans to house
+this vocabulary in the Joint Common Foundation to further bridge DOD’s
+organization culture by enabling collaboration, sharing, and the reuse of
+knowledge models to avoid fragmentation over how DOD labels data.
+Our analysis showed some DOD officials were unaware of these AI-
+related efforts or reported challenges with DOD-wide or Intelligence
+Community collaboration because some organizations have not
+prioritized participation in the interagency groups such as the JAIC. For
+example, one organization respondent reported that the scope of AI
+efforts does not seem to be clearly understood. According to an Office of
+the Under Secretary for Defense for Intelligence and Security survey
+respondent, JAIC-led subcommittees are in the process of being
+77Pub. L. No. 116-283, § 5002 (2021). The National Defense Authorization Act for Fiscal
+Year 2021’s definition of AI is part of the National Artificial Intelligence Initiative Act of
+2020 which was enacted as Division E of the National Defense Authorization Act for Fiscal
+Year 2021. The act directed the President to establish the National AI Initiative to ensure
+continued U.S. leadership in AI research and development; lead the world in the
+development and use of trustworthy AI systems in the public and private sectors; prepare
+the present and future U.S. workforce for the integration of AI systems across all sectors
+of the economy and society; and coordinate ongoing AI research, development, and
+demonstration activities among the civilian agencies, the Department of Defense, and the
+Intelligence Community to ensure that each informs the work of the others. Pub. L. No.
+116-283, §§ 5101-06 (2021).
+Page 43 GAO-22-105834 Artificial Intelligence
+--- pdf_page_49 ---
+pdf_page_number: 49
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_49|printed_page_pending|section_pending
+visual_review_required: false
+developed and tend to discuss basic issues. Accordingly, the respondent
+stated, the subcommittees are not well attended by the services, defense
+agencies and other components because they are in the process of being
+organized and as a result challenge the ability of others to collaborate
+with the JAIC. Additionally, each of the four responding Defense
+Intelligence Enterprise organizations respondents stated that
+classification challenges or data sharing policies hindered their
+collaboration with the JAIC and across DOD.78
+Guidance and agreements to clarify roles and responsibilities and
+identify leadership and participants. DOD developed an AI governance
+structure to define department-wide AI roles and responsibilities and to
+establish and advance policies. However, according to one senior JAIC
+official, the DOD AI governance structure may not be the most effective
+tool for AI integration and collaboration because it does not ensure
+collaboration with the JAIC as a separate entity. For example, while the
+Director of the JAIC co-chairs the Executive Steering Group, the
+Executive Steering Group is not a direct function of the JAIC, as shown in
+figure 4 above. DOD is updating the DOD AI Executive Steering Group’s
+charter to serve as a vetting body for senior officials, but has not issued it
+as of September 2021, according to JAIC officials.
+DOD has not defined or set expectations for those responsible for
+collaborating with the JAIC or the broader DOD data ecosystem (e.g.,
+people, technology, and culture). For example, respondents representing
+20 organizations stated that they believe collaboration is challenged by a
+lack of clearly defined roles and responsibilities. Having clearly defined
+roles and responsibilities is consistent with one of our leading
+collaboration practices.79 JAIC officials stated that they have several
+component-specific agreements and memorandums of understanding in
+place, and they are prepared to engage in more agreements in the future
+to improve collaboration. DOD officials also told us they are working to
+formalize their collaborative relationships with the Intelligence Community
+78At an unclassified level, collaboration between the Defense Intelligence Enterprise
+organizations we surveyed and the JAIC is generally related to the Responsible AI
+subcommittee and sharing lessons learned.
+79GAO-12-1022.
+Page 44 GAO-22-105834 Artificial Intelligence
+--- pdf_page_50 ---
+pdf_page_number: 50
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_50|printed_page_pending|section_pending
+visual_review_required: false
+but will require further policies and agreements to support such
+collaboration with the JAIC.80
+Figure 9 below contains examples of comments from survey respondents
+on select leading collaboration practices.
+80Compared to the military services, the Intelligence Community’s collaboration with JAIC
+and within the DOD’s AI governance structure is a recent addition. For example, according
+to our survey responses, the National Geospatial-Intelligence Agency requested to
+become a member of DOD’s AI Executive Steering Group as of Aug. 2021.
+Page 45 GAO-22-105834 Artificial Intelligence
+--- pdf_page_51 ---
+pdf_page_number: 51
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_51|printed_page_pending|section_pending
+visual_review_required: false
+Figure 9: Comments from Survey Respondents
+DOD has taken some steps recently to incorporate leading practices for
+interagency collaboration into its guidance, such as developing additional
+data sharing guidance and updating prior guidance, according to our
+analysis. For example:
+• In May 2021, the Deputy Secretary of Defense issued a memorandum
+outlining five “data decrees,” which cover the creation, publication,
+protection, management, and use of data and directs the creation of
+Page 46 GAO-22-105834 Artificial Intelligence
+--- pdf_page_52 ---
+pdf_page_number: 52
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_52|printed_page_pending|section_pending
+visual_review_required: false
+the DOD Data Council for organizations to coordinate their data
+activities.81
+• In May 2021, the Secretary of Defense signed the Joint All-Domain
+Command and Control Strategy to provide guidance on shaping future
+Joint Force command and control capabilities that leverage AI and
+machine learning.82
+• In June 2021, the Vice Chairman of the Joint Chiefs of Staff signed
+four new strategic directives that mandate all U.S. military services to
+make data accessible for all their weapons and platforms in response
+to the memorandum’s requirement to use a central repository to
+support decision-making.83
+• In June 2021, the Deputy Secretary of Defense issued a
+memorandum establishing the AI and Data Acceleration initiative to
+rapidly advance AI implementation efforts through a series of
+implementation experiments or exercises.84 As a part of this new
+initiative, the JAIC will send out “flyaway” teams of data and AI
+81Deputy Secretary of Defense Memorandum, Creating Data Advantage (May 5, 2021).
+82DOD’s March 2022 unclassified summary of the Joint All-Domain Command and Control
+Strategy states that advanced Joint All-Domain Command and Control technologies will
+leverage AI and machine learning to help accelerate the commander’s decision cycle.
+Automatic machine-to-machine transactions will extract, consolidate and process massive
+amounts of data and information directly from the sensing infrastructure. DOD, Summary
+of the Joint All-Domain Command and Control (JADC2) Strategy (March 2022).
+Additionally, in March 2022, the Deputy Secretary of Defense signed the Department of
+Defense Joint All-Domain Command and Control (JADC2) Implementation Plan.
+83Vice Chairman of the Joint Chiefs of Staff, JSD 001-21, (U) Joint Requirements
+Oversight Council Strategic Directive ISO Logistics Functional Capability Board (LOG
+FCB) Multi-Capable Distribution Platforms Capability Portfolio Management Review (June
+21, 2021) (SECRET//NOFORN); Vice Chairman of the Joint Chiefs of Staff, JSD 002-21,
+(U) JROC Strategic Directive for Joint Fires (June 21, 2021) (SECRET//NOFORN); Vice
+Chairman of the Joint Chiefs of Staff, JSD 003-21, (U) JROC Strategic Directive for
+Information Advantage: Title 10/50 Interdependency (June 21, 2021)
+(SECRET//NOFORN); Vice Chairman of the Joint Chiefs of Staff, JSD 004-21, (U) Joint
+Concept for Command and Control Strategic Directive (June 21, 2021) (SECRET).
+84Deputy Secretary of Defense, Accelerating Data and Artificial Intelligence for the
+Warfighter (June 21, 2021).
+Page 47 GAO-22-105834 Artificial Intelligence
+--- pdf_page_53 ---
+pdf_page_number: 53
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_53|printed_page_pending|section_pending
+visual_review_required: true
+experts to help combatant commands quickly shift AI from labs to
+real-world warfighting.85
+• In September 2021, the Deputy Secretary of Defense issued a
+memorandum giving the Director of the JAIC authority to discover,
+access, share, and appropriately reuse DOD data and models of
+defense components and elements and to build and maintain Al
+capabilities for the department.86
+• In December 2021, the Deputy Secretary of Defense issued a
+memorandum that directs the establishment of the Chief Digital and AI
+Officer to serve as the department’s senior official responsible for
+strengthening and integrating data, AI, and digital solutions in the
+department. Further, the memorandum states that the Office of the
+Chief Digital and AI Officer will serve as the successor organization to
+the JAIC in reporting directly to the Deputy Secretary of Defense.87
+• In February 2022, the Deputy Secretary of Defense issued two
+memoranda announcing the initial operating capability and clarifying
+the roles of the Chief Digital and AI Officer.88
+Additionally, DOD officials told us they are in the process of developing
+guidance and agreements that will define the roles and responsibilities of
+the military services and organizations as participants in AI collaboration.
+As of October 2021, DOD officials said that they have not issued such
+guidance but expect to complete drafting a DOD AI Directive within 90
+days. However, they have not established time frames for issuing the final
+DOD AI directive or other additional guidance and agreements. Further,
+DOD officials did not provide details about what will be included in the
+additional guidance. Therefore, we are unable to determine to what extent
+85These teams, known as Operational Data Teams, will be forward-deployed to each
+combatant command and will help scale existing platforms and assist warfighters in
+making their data visible, accessible, understandable, linked, trustworthy, interoperable,
+and secure.
+86Deputy Secretary of Defense, Joint Artificial Intelligence Center Data Access for Artificial
+Intelligence Development and Coordination of Activities (Sept. 22, 2021).
+87Deputy Secretary of Defense, Establishment of the Chief Digital and Artificial Intelligence
+Officer (Dec. 8, 2021).
+88Deputy Secretary of Defense Memorandum, Initial Operating Capability of the Chief
+Digital and Artificial Intelligence Officer (Feb. 1, 2022) and Deputy Secretary of Defense
+Memorandum, Role Clarity for the Chief Digital and Artificial Intelligence Officer (Feb. 1,
+2022).
+Page 48 GAO-22-105834 Artificial Intelligence
+--- pdf_page_54 ---
+pdf_page_number: 54
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_54|printed_page_pending|section_pending
+visual_review_required: false
+the additional guidance may address the opportunities we have identified
+for DOD to improve its AI collaboration practices.
+However, as described above, some DOD and JAIC officials we surveyed
+reported that AI is not fully integrated across the department and
+increased collaboration is key to achieving the department’s desired
+outcomes. As previously discussed, incorporating leading practices for
+collaboration can improve agency’s efforts to achieve its desired
+outcomes.89 Further, we have previously reported that interagency
+mechanisms or strategies to coordinate programs that would better
+manage or reduce potential fragmentation and address crosscutting
+issues may reduce unwarranted duplication and overlap.90
+In line with these leading practices on collaboration, DOD’s efforts would
+specifically benefit from:
+• defining outcomes and monitoring accountability for AI-related
+activities, such as issuing key performance indicators and a roadmap
+or high-level plan for the Joint Common Foundation as a mechanism
+to track and monitor progress and milestones against its
+requirements;
+• establishing a timeline and guidance for establishing common
+terminology for AI related activities to further bridge organizational
+culture and better aligning DOD-wide AI activities, such as improving
+processes for sharing classified data; and
+89GAO-12-1022. We broadly defined collaboration as any joint activity that is intended to
+produce more value than could be produced when the agencies act alone. This work
+found that agencies that define outcomes, use common terminology, clarify roles and
+responsibilities, develop written guidance and agreements, and routinely monitor and
+update them, can strengthen their commitment to working collaboratively. As previously
+discussed, these key features include (1) outcomes and accountability; (2) bridging
+organizational cultures; (3) leadership; (4) clarity of roles and responsibilities; (5)
+participants; (6) resources; and (7) written guidance and agreements.
+90GAO-12-1022. See also GAO, Fragmentation, Overlap, and Duplication: An Evaluation
+and Management Guide GAO-15-49SP (Washington, D.C.: Apr. 14, 2015). We define
+duplication as instances when two or more agencies or programs are engaged in the
+same activities or provide the same services to the same beneficiaries; overlap as
+instances when multiple agencies or programs have similar goals, engage in similar
+activities or strategies to achieve them, or target similar beneficiaries; and fragmentation
+as instances when more than one federal agency, or organization within an agency, is
+involved in the same broad area of national need, and opportunities exist to improve
+service delivery.
+Page 49 GAO-22-105834 Artificial Intelligence
+--- pdf_page_55 ---
+pdf_page_number: 55
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_55|printed_page_pending|section_pending
+visual_review_required: true
+• finalizing guidance and agreements that clearly define roles and
+responsibilities for leadership and relevant participants to ensure they
+are aware of and agree upon: (1) who will have what responsibilities;
+(2) how they will organize their joint and individual data sharing
+efforts; and (3) how they will make decisions regarding collaboration
+AI technology across the department.
+Unless DOD addresses these shortcomings in collaboration across the AI
+landscape, DOD risks having a fragmented approach that may lead to
+unnecessary duplication and overlap. Further, DOD will not be well
+positioned to meet its desired objectives for AI across the department.
+DOD’s 2018 AI Strategy noted that adversaries and strategic competitors
+Conclusions
+such as China and Russia are making significant investments in AI for
+national security purposes.91 Since 2018, DOD has made organizational
+changes and is investing billions of dollars to incorporate AI technology
+into its operations. For example, DOD has developed an overarching AI
+strategy and other AI-related strategy documents. However, these
+strategies do not include all key elements of a comprehensive strategy,
+which could impede the department’s ability to meet its AI-related goals
+and objectives. As DOD further develops and updates AI-associated
+guidance, it will also be beneficial to consider the key governance
+practices outlined in GAO’s AI accountability framework.92 Further,
+Congress and DOD decision makers do not have complete information
+about the number of AI activities and investments that comprise DOD’s AI
+portfolio. As DOD works to develop its AI inventory process, they would
+benefit from a high-level plan or roadmap that provides requirements,
+activities, and milestones for the entire process. This plan would help
+DOD to deliver a complete and accurate inventory to Congress and DOD
+decision makers. Finally, the military services and other key DOD
+organizations are building collaborative relationships and a shared data
+network to better leverage expertise. However, takings steps to further
+incorporate leading collaboration practices would help DOD avoid
+unnecessary fragmentation, duplication, and overlap in the future as DOD
+organizations adopt and integrate AI technologies. Further, DOD has an
+opportunity to fully implement these leading collaboration practices as it
+establishes the Office of the Chief Digital and AI Officer in 2022.
+91Department of Defense, DOD AI Strategy (2018).
+92GAO-21-519SP.
+Page 50 GAO-22-105834 Artificial Intelligence
+--- pdf_page_56 ---
+pdf_page_number: 56
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_56|printed_page_pending|section_pending
+visual_review_required: false
+We are making the following seven recommendations to DOD:
+Recommendations for
+Executive Action
+The Secretary of Defense should ensure that the Deputy Secretary of
+Defense issues guidance to the Chief Digital and AI Officer (once
+established) and the JAIC, military services, and relevant DOD
+organizations to include all characteristics of a comprehensive strategy in
+future AI strategies and associated plans and to consider the key
+governance practices outlined in the GAO AI accountability framework.
+(Recommendation 1)
+The Secretary of Defense should ensure that the Deputy Secretary of
+Defense, in consultation with the Chief Digital and AI Officer (once
+established), the JAIC, and military departments, establish documented
+procedures, including timelines, for the periodic review of the DOD AI
+Strategy and associated military service annexes to assess the
+implementation of the strategy and whether any revision is necessary.
+(Recommendation 2)
+The Secretary of Defense should ensure that the Chief Digital and AI
+Officer (once established) and the Director of the JAIC in collaboration
+with the Office of the Under Secretary of Defense Comptroller and other
+entities, as appropriate, develop a high-level plan or roadmap—aligned
+with the best practices of an integrated master schedule—that captures
+all requirements, activities, and milestones that supports the preparation
+of the department’s AI portfolio inventory and budget data.
+(Recommendation 3)
+The Secretary of Defense should ensure that the Deputy Secretary of
+Defense issues guidance that defines outcomes and monitors
+accountability for AI-related activities and includes AI key performance
+indicators. (Recommendation 4)
+The Secretary of Defense should ensure that the Chief Digital and AI
+Officer (once established) and the Director of the JAIC issue a roadmap
+or a high-level plan that captures all requirements and milestones for
+developing and onboarding users to the Joint Common Foundation.
+(Recommendation 5)
+The Secretary of Defense should ensure that the Deputy Secretary of
+Defense develops a timeline and guidance that directs Chief Digital and
+AI Officer (once established), and the JAIC, military services, and other
+relevant entities to establish common terminology for AI related activities.
+(Recommendation 6)
+Page 51 GAO-22-105834 Artificial Intelligence
+--- pdf_page_57 ---
+pdf_page_number: 57
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_57|printed_page_pending|section_pending
+visual_review_required: true
+The Secretary of Defense should ensure that the Deputy Secretary of
+Defense, in coordination with the Chief Digital and AI Officer (once
+established) and the JAIC, finalize and issue guidance and agreements
+that define the roles and responsibilities of the military services and other
+DOD organizations for leadership and relevant participants collaborating
+on AI activities. (Recommendation 7)
+We provided a draft of the sensitive report to DOD, ODNI, and the
+Agency Comments
+National Institute for Standards and Technology for review and comment.
+and Our Evaluation
+In its written comments on the sensitive report, reproduced in appendix V,
+DOD concurred with all seven of our recommendations and identified
+actions it was taking or planned to take in response. DOD also provided
+technical comments, which we incorporated as appropriate. ODNI and the
+National Institute for Standards and Technology chose not to provide
+comments.
+In concurring with our first and second recommendations, DOD stated
+that it plans to incorporate characteristics of the GAO AI accountability
+framework in its strategies and plans moving forward. In concurring with
+our sixth recommendation, DOD stated that upon completion of the 2022
+DOD AI Strategy, the department plans to adopt a common enterprise
+definition for AI to ensure use of common terminology. Additionally, DOD
+stated that it will develop plans to implement our third, fourth, fifth, and
+seventh recommendations after the Chief Digital and AI Officer is at full
+operational capability.
+We are encouraged that DOD is planning to take these actions to address
+all seven of our recommendations. We believe that once DOD
+implements our recommendations, the department will be better
+positioned to provide Congress and decision makers information to
+improve collaboration, to manage or reduce potential fragmentation, and
+to address crosscutting issues related to DOD’s AI activities. DOD’s
+planned actions to address our recommendations are also important
+given strategic competitors’, such as China, significant AI national
+security investments and activities.
+We are sending copies of this report to the appropriate congressional
+committees, the Secretary of Defense, the Deputy Secretary of Defense,
+the Director of National Intelligence, the Director of the Joint Artificial
+Intelligence Center, Secretaries of the Air Force, Army, and Navy, and
+combatant command commanders. In addition, the report is available at
+no charge on the GAO website at https://www.gao.gov.
+Page 52 GAO-22-105834 Artificial Intelligence
+--- pdf_page_58 ---
+pdf_page_number: 58
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_58|printed_page_pending|section_pending
+visual_review_required: false
+If you or members of your staff have any questions regarding this report,
+please contact me at (202) 512-5130 or mazanecb@gao.gov. Contact
+points for our Offices of Congressional Relations and Public Affairs may
+be found on the last page of this report. Key contributors to this report are
+listed in appendix VI.
+Brian M. Mazanec
+Director, Defense Capabilities and Management
+Page 53 GAO-22-105834 Artificial Intelligence
+--- pdf_page_59 ---
+pdf_page_number: 59
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_59|printed_page_pending|section_pending
+visual_review_required: false
+List of Committees
+The Honorable Jack Reed
+Chairman
+The Honorable James M. Inhofe
+Ranking Member
+Committee on Armed Services
+United States Senate
+The Honorable Jon Tester
+Chairman
+The Honorable Richard C. Shelby
+Ranking Member
+Subcommittee on Defense
+Committee on Appropriations
+United States Senate
+The Honorable Adam Smith
+Chairman
+The Honorable Mike Rogers
+Ranking Member
+Committee on Armed Services
+House of Representatives
+The Honorable Betty McCollum
+Chair
+The Honorable Ken Calvert
+Ranking Member
+Subcommittee on Defense
+Committee on Appropriations
+House of Representatives
+Page 54 GAO-22-105834 Artificial Intelligence
+--- pdf_page_60 ---
+pdf_page_number: 60
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_60|printed_page_pending|section_pending
+visual_review_required: true
+Appendix I: Objectives, Scope, and
+Appendix I: Objectives, Scope, and
+Methodology
+Methodology
+In a report accompanying a bill for the National Defense Authorization Act
+for Fiscal Year 2021, the House Armed Services Committee includes a
+provision that we assess the Department of Defense’s (DOD) resources,
+capabilities, and plans for artificial intelligence (AI) technology.1 This
+report evaluates (1) the extent to which the 2018 DOD AI Strategy and
+associated plans include characteristics of a comprehensive strategy; (2)
+the extent to which DOD has identified and reported AI investments and
+activities across the department; and (3) the extent to which DOD
+collaborates across the department to coordinate its AI activities.2
+This report is a public version of a sensitive report that we issued in
+February 2022.3 DOD deemed some of the information in our February
+2022 report to be sensitive, which must be protected from public
+disclosure. Therefore, this report omits sensitive detailed information
+pertaining to our objective on the extent DOD has identified and reported
+on AI activities across the department. Specifically, we omit information
+on the methodology DOD used to create its inventory of AI activities and
+its plans for the next phases of the inventory process. Although the
+information provided in this report is more limited, the report addresses
+the same objectives as the sensitive report and uses the same
+methodology.
+To address these objectives, we reviewed relevant laws, regulations,
+executive orders, and DOD and military service strategies that outline
+plans and processes to manage AI across the department. We also
+interviewed and collected documentation from officials in the JAIC,
+military services, and relevant defense agencies, and DOD organizations
+with AI oversight responsibilities, as well as other federal organizations
+with AI oversight responsibilities. We included information from 2017,
+1H.R. Rep. No. 116-442 at 257 (2020).
+2Characteristics of a comprehensive strategy encompass the seven key elements of a
+comprehensive strategy and three select internal control principles.
+3GAO, Artificial Intelligence: DOD Should Improve Strategies, Inventory Process, and
+Collaboration Guidance, GAO-104516SU (Washington, D.C.: Feb.16, 2022).
+Page 55 GAO-22-105834 Artificial Intelligence
+--- pdf_page_61 ---
+pdf_page_number: 61
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_61|printed_page_pending|section_pending
+visual_review_required: false
+Appendix I: Objectives, Scope, and
+Methodology
+when the Algorithmic Warfare Cross-Functional Team was established, to
+2021.4
+To determine the extent to which the 2018 DOD AI Strategy and
+associated plans include characteristics of a comprehensive strategy, we
+reviewed, assessed, and compared them to elements of a comprehensive
+strategy and relevant Standards for Internal Control in the Federal
+Government principles on management responsibilities and risk
+management.5 Specifically, we have reported that a comprehensive
+strategy should include seven elements: a mission statement; a problem
+definition, scope, and methodology; goals and objectives; activities,
+milestones, and performance measures; resources and investments;
+information about organizational roles, responsibilities, and coordination;
+and a description of key external factors that could affect the achievement
+of goals.6 Additionally, we determined that certain internal control
+principles apply to the DOD’s AI body of strategies including the principles
+stating that the oversight body and management should demonstrate a
+commitment to integrity and ethical values; management should
+demonstrate a commitment to recruit, develop, and retain competent
+individuals; and management should identify, analyze, and respond to
+risks related to achieving the defined objectives.7 The criteria we used
+aligns with our AI Accountability Framework for Federal Agencies and
+Other Entities.8 To conduct the content analysis on the 2018 DOD AI
+4The Algorithmic Warfare Cross-Functional Team was established by the Deputy
+Secretary of Defense in a memorandum signed on Apr. 26, 2017. See Deputy Secretary
+of Defense Memorandum, Establishment of an Algorithmic Warfare Cross-Functional
+Team (Project Maven) (Apr. 26, 2017).
+5Associated plans we assessed include: DOD, Office of the DOD Chief Information
+Officer, Artificial Intelligence Governance Plan Version 1.0 (May 2020); DOD, DOD Digital
+Modernization Strategy: DOD Information Resource Management Strategic Plan FY19-23
+(July 12, 2019); DOD, DOD Data Strategy (2020); DOD Joint AI Center and DOD Chief
+Information Officer, 2020 Department of Defense Artificial Intelligence Education Strategy
+(September 2020); Department of the Air Force, The United States Air Force Artificial
+Intelligence Annex to The Department of Defense Artificial Intelligence Strategy (2019);
+United States Marine Corps, (U) USMC Annex to the DOD AI Strategy (Mar. 15, 2019)
+(U//FOUO); Department of the Army, The 2020 Army AI Strategy (2020); U.S. Navy, (U)
+The Navy’s Annex to the DOD AI Strategy (SECRET); and U.S. Navy, Transforming Naval
+Operations: USN AI Strategic Vectors.
+6GAO, Defense Logistics: A Completed Comprehensive Strategy is Needed to Guide
+DOD’s In-Transit Visibility Efforts, GAO-13-201 (Washington, D.C.: Feb. 28, 2013).
+7GAO-14-704G.
+8GAO-21-519SP.
+Page 56 GAO-22-105834 Artificial Intelligence
+--- pdf_page_62 ---
+pdf_page_number: 62
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_62|printed_page_pending|section_pending
+visual_review_required: false
+Appendix I: Objectives, Scope, and
+Methodology
+Strategy and associated plans, we assessed each document against the
+set of criteria to determine the extent to which the body of work contains
+characteristics needed for an effective strategy. Two analysts assessed
+each document on a scale of fully includes, partially includes, or does not
+include for each characteristic, and a third analyst adjudicated the results
+blindly, without knowing the identity of the two assessing analysts. The
+three analysts discussed any assessment discrepancies to reach
+consensus. From the assessment results, we identified gaps between
+DOD’s documentation and elements of a comprehensive strategy and
+internal control principles.
+To address objective one and determine timelines for periodically
+reviewing the 2018 DOD AI Strategy and associated military service
+annexes, we also reviewed the National Defense Authorization Act for
+Fiscal Year 2017, which required the Secretary of Defense to provide the
+National Defense Strategy and update it at least once every 4 years and,
+during the years without an update, to assess the implementation of the
+strategy and whether any revision is required.9 Additionally, we discussed
+plans to update strategies with document owners, and compared those
+plans with federal internal controls that state management should define
+objectives to include what is to be achieved, who is to achieve it, how it
+will be achieved, and the time frames for achievement. From this
+comparison, we identified gaps between when the 2018 DOD AI Strategy
+was updated and plans to update it in the future.
+To address objective two, we reviewed existing DOD reporting
+requirements and processes to track and report AI investments and
+activities. We also interviewed JAIC officials to determine the actions
+planned or taken by the JAIC to implement and communicate a
+department-wide process for identifying and establishing an inventory of
+AI activities. Specifically, we reviewed the JAIC’s April 2021 report to
+Congress that provided a baseline inventory of AI activities and discussed
+with JAIC officials planned actions for the next phases of their effort to
+address certain areas not captured in the initial baseline.
+We assessed the JAIC’s baseline inventory of AI activities against
+Standards for Internal Control in the Federal Government, which state
+that management should identify information requirements in an iterative
+and ongoing process, using and communicating the resulting quality
+9Pub. L. No. 114-328, § 941(a) (2016) (codified at 10 U.S.C. § 113(g)).
+Page 57 GAO-22-105834 Artificial Intelligence
+FIELD_DEFINITIONS:
+{"coding_dimensions_allowed_values": ["integration_level", "application_maturity", "human_machine_authority", "engineering_resource_conditions", "trust_governance_constraints", "organizational_system_fit"], "exact_fields": ["source_id", "source_locator", "excerpt_original", "excerpt_zh", "normalized_claim", "coding_dimensions", "evidence_nature", "topics"], "excerpt_original_rule": "逐字复制输入文本；不得静默纠正OCR或版式错误", "field_types": {"coding_dimensions": "array of zero or more exact dimension key strings", "evidence_nature": "string", "excerpt_original": "string", "excerpt_zh": "string", "normalized_claim": "string", "source_id": "string", "source_locator": "string", "topics": "array of strings"}, "normalized_claim_language": "zh-CN"}
+{"application_maturity": "应用成熟度：概念战略、研发、试验、试点、采购部署或持续运用。", "engineering_resource_conditions": "工程与资源条件：数据、算力、模型、接口、供应链、预算、人才和保障。", "human_machine_authority": "人机权限关系：辅助决策、人在回路中、受监督自主或更高程度自主；普通系统协同、信息传输、培训或文档要求本身不足以支持此维度。", "integration_level": "能力集成层级：单工具、单任务、单平台、跨平台、跨任务或体系级集成。", "organizational_system_fit": "组织与体系适配：指挥流程、任务编组、跨平台协同、人员负荷和组织变革。", "trust_governance_constraints": "可信与治理约束：安全、可靠性、测试评价、授权边界、责任与伦理。"}
+{"constraint": "限制、风险、障碍、依赖或边界条件。", "deployment_event": "部署、实装、现场运用或正式采用已经发生。", "evaluation": "评价、审查、验证或评估结论。", "goal": "战略目标、愿景或计划方向；不能写成已实现结果。", "resource_input": "投入、资源、预算、数据、人才或基础设施条件。", "test_event": "测试或演习发生、参与主体或配置；不表示功能结果或作战效能。", "test_result": "测试中观察到的功能、性能或结果；必须由摘录直接说明。"}
+JSON_REPAIR: Return one strict JSON array with exactly the eight output fields and no Markdown, commentary, metadata, or source-attribution prefix.

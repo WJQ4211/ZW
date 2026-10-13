@@ -1,0 +1,17 @@
+Air Force advances secure AI capabilities with IL5 approval for VIA’s
+
+Published April 17, 2026
+
+By Secretary of the Air Force Public Affairs
+
+The Department of the Air Force has awarded Via Science, Inc., a leading provider of AI technologies, Impact Level 5 Authority to Operate for its eJARVIS application.
+
+The eJARVIS application (a USAF-configured version of VIA’s dual-use commercial Share Less, Ask More Artificial Intelligence solution) delivers fast, secure data access for rapid installation energy, utility and resilience data analysis.
+
+“The Department of the Air Force is committed to responsibly accelerating AI integration to strengthen operational readiness,” said Nancy Balkus , deputy assistant secretary of the Air Force for Infrastructure, Energy and Environment. “Ensuring the availability and resilience of installation energy data is critical to DAF's power projection, and eJARVIS allows us to provide warfighters with access to this critical information in minutes rather than weeks, speeding decisions without compromising security.”
+
+IL5 is a designation for storing and processing specialized types of Controlled Unclassified Information that require a higher level of protection than standard CUI. The increase to IL5 expands the range of data that eJARVIS’ generative artificial intelligence solution can analyze, increasing its reach and value beyond the IL4 capability awarded in May 2024.
+
+In early 2024, eJARVIS achieved a significant milestone when it became one of the early generative AI applications to achieve Authority to Operate.
+
+Web3 technologies represent the next iteration of the internet, centered on decentralization and user ownership of data. VIA’s Web3 blockchain technology enables a clear chain of custody for data, prompts and responses required for high-stakes decision making and after-action reviews. eJARVIS’ architecture reduces the need to share data with AI large language models, ensuring sensitive information remains protected. Additionally, eJARVIS enables non-technical users to analyze datasets previously too large for LLMs, providing faster, more data-informed decisions.

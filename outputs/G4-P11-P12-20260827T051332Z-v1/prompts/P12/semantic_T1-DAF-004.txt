@@ -1,0 +1,209 @@
+T1候选证据语义筛选。只检查给定候选字段与其摘录之间的直接支持关系。不得引用或推断任何T0分析。
+研究问题：以公开、非密材料为依据，研究2025年1月1日至2026年6月30日期间，美国军用人工智能能力形成、应用部署和体系化发展的公开可观察变化。
+来源：T1-DAF-004
+每条返回一项review，字段为candidate_evidence_id、status、reason、claim_supported、nature_supported、dimension_reviews、revised_fields。status只能是accept、revise或reject；dimension_reviews必须是数组，每项包含dimension、supported、supporting_span、reason。只处理候选原本声明的维度；不得新增维度。若claim或nature无直接支持则reject；revise不得修改excerpt_original和source_locator。
+证据性质完整定义：
+- goal: 计划、目标、拟议能力或未来安排，不等于已经实现。
+- governance_event: 已经发生的政策、职责、指南或组织治理机制建立。
+- resource_input: 已经发生的预算、合同、采购、数据、人才或基础设施投入。
+- test_event: 测试、演示、演习或竞赛发生及其参与主体、配置。
+- test_result: 测试中明确观察到的功能、性能或结果。
+- deployment_event: 明确已经部署、实装、投入运行或持续使用。
+- constraint: 限制能力形成、部署或评估的已报告条件。
+- evaluation: 来源明确给出的评估、判断或评价，不改写为客观结果。
+编码维度完整定义：
+- integration_level: 跨项目、跨平台、跨军种或企业级系统集成的程度。
+- application_maturity: 从目标、演示、试验到部署和持续使用的应用成熟度。
+- human_machine_authority: 人机在任务中的权责、授权、监督与决策关系。
+- engineering_resource_conditions: 数据、算力、基础设施、人才、预算、采办和保障条件。
+- trust_governance_constraints: 可信性、安全、测试评估、责任、治理约束及制度落地。
+- organizational_system_fit: 组织运用、流程、任务适配和体系制度环境的匹配程度。
+候选：
+[
+  {
+    "candidate_evidence_id": "CE-T1-2EC1A86FF3D5DEEF",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "application_maturity",
+      "organizational_system_fit"
+    ],
+    "content_hash": "2ec1a86ff3d5deef0e85a8cd29ffb607cf98ea66fc25fed8211a23f2dad93628",
+    "evidence_nature": "test_event",
+    "excerpt_original": "To secure mission dominance in a future, contested environment, the Joint Force must make decisions faster than any adversary. This imperative was the driving force behind the Multi-Decision Advantage Sprint for Human-Machine Teaming, or MASH, a complex, two-week experiment recently hosted in Las Vegas.",
+    "excerpt_zh": "为了在未来的对抗环境中确保任务优势，联合部队必须比任何对手更快地做出决策。这一要求是最近在拉斯维加斯举办的为期两周的复杂实验——人机编队多决策优势冲刺（MASH）背后的驱动力。",
+    "extraction_run_id": "G4-P11-P12-20260827T051332Z-v1",
+    "normalized_claim": "美国空军在拉斯维加斯举办了一次为期两周的名为MASH的人机编队多决策优势冲刺实验。",
+    "pending_g1_translation_review": true,
+    "pending_g1_visual_review": false,
+    "published_at": "2026-06-30",
+    "published_at_precision": "day",
+    "publisher": "United States Space Force",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DAF-004",
+    "source_locator": "web_paragraph_0005",
+    "title": "Space Force integrates with Air Force in AI sprint to ensure mission d",
+    "topics": [
+      "MASH实验",
+      "人机编队",
+      "实验活动"
+    ],
+    "url_or_path": "https://www.spaceforce.mil/News/Article-Display/Article/4530561/space-force-integrates-with-air-force-in-ai-sprint-to-ensure-mission-dominance/",
+    "version": 1
+  },
+  {
+    "candidate_evidence_id": "CE-T1-13704D059FDF383D",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "integration_level",
+      "organizational_system_fit"
+    ],
+    "content_hash": "13704d059fdf383d694144add16d7ad04864dd67e51b8e7c53d04118e170edbf",
+    "evidence_nature": "test_event",
+    "excerpt_original": "For the first time, U.S. Space Force Guardians joined Airmen to work side-by-side with software developers, evaluating how these disparate tools can effectively integrate to solve complex problems across the air, space, cyber, maritime and ground domains.",
+    "excerpt_zh": "美国太空军卫士首次与空军士兵并肩工作，与软件开发者一起评估这些不同工具如何有效集成，以解决跨空中、太空、网络、海上和地面领域的复杂问题。",
+    "extraction_run_id": "G4-P11-P12-20260827T051332Z-v1",
+    "normalized_claim": "美国太空军人员首次参加MASH实验，与空军人员及软件开发者共同评估工具集成。",
+    "pending_g1_translation_review": true,
+    "pending_g1_visual_review": false,
+    "published_at": "2026-06-30",
+    "published_at_precision": "day",
+    "publisher": "United States Space Force",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DAF-004",
+    "source_locator": "web_paragraph_0006",
+    "title": "Space Force integrates with Air Force in AI sprint to ensure mission d",
+    "topics": [
+      "太空军参与",
+      "跨域集成",
+      "MASH实验"
+    ],
+    "url_or_path": "https://www.spaceforce.mil/News/Article-Display/Article/4530561/space-force-integrates-with-air-force-in-ai-sprint-to-ensure-mission-dominance/",
+    "version": 1
+  },
+  {
+    "candidate_evidence_id": "CE-T1-6FA016A513CC103A",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "organizational_system_fit",
+      "integration_level"
+    ],
+    "content_hash": "6fa016a513cc103a9f6729098de3703d7ce2f5c2d2d6f27a4ee74c060c2137b6",
+    "evidence_nature": "test_event",
+    "excerpt_original": "Conducted within a dedicated Shadow Operations Center-Nellis facility in Las Vegas, the MASH experiment set the stage for this strategic collaboration, led by the Department of the Air Force’s Advanced Battle Management System Cross-Functional Team. The experiment was executed in partnership with the Air Force Research Lab , U.S. Space Force, and the 805th Combat Training Squadron , also known as the ShOC-N",
+    "excerpt_zh": "MASH实验在拉斯维加斯一个专门的影子作战中心-内利斯设施内进行，由空军部先进战斗管理系统跨职能团队领导，并与空军研究实验室、美国太空军以及第805战斗训练中队（又称ShOC-N）合作执行。",
+    "extraction_run_id": "G4-P11-P12-20260827T051332Z-v1",
+    "normalized_claim": "MASH实验由空军部ABMS跨职能团队领导，与空军研究实验室、太空军和第805战斗训练中队合作执行。",
+    "pending_g1_translation_review": true,
+    "pending_g1_visual_review": false,
+    "published_at": "2026-06-30",
+    "published_at_precision": "day",
+    "publisher": "United States Space Force",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DAF-004",
+    "source_locator": "web_paragraph_0008",
+    "title": "Space Force integrates with Air Force in AI sprint to ensure mission d",
+    "topics": [
+      "MASH实验",
+      "组织合作",
+      "ABMS"
+    ],
+    "url_or_path": "https://www.spaceforce.mil/News/Article-Display/Article/4530561/space-force-integrates-with-air-force-in-ai-sprint-to-ensure-mission-dominance/",
+    "version": 1
+  },
+  {
+    "candidate_evidence_id": "CE-T1-C631674EB5FED17F",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "human_machine_authority",
+      "organizational_system_fit"
+    ],
+    "content_hash": "c631674eb5fed17f9c3b136c07bc1754cb8ddd3d7c0bff117a0e3a46ad5e36d6",
+    "evidence_nature": "test_event",
+    "excerpt_original": "A defining feature of the multi-decision sprint was the active participation of Space Force Guardians. Moving beyond observational roles, Guardians were \"in the seat,\" directly influencing the development of battle management tools that encompass the space domain.",
+    "excerpt_zh": "多决策冲刺的一个显著特征是太空军卫士的积极参与。卫士们超越了观察角色，直接参与并影响了涵盖太空领域的战斗管理工具的开发。",
+    "extraction_run_id": "G4-P11-P12-20260827T051332Z-v1",
+    "normalized_claim": "在MASH实验中，太空军卫士直接参与并影响了涵盖太空领域的战斗管理工具开发。",
+    "pending_g1_translation_review": true,
+    "pending_g1_visual_review": false,
+    "published_at": "2026-06-30",
+    "published_at_precision": "day",
+    "publisher": "United States Space Force",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DAF-004",
+    "source_locator": "web_paragraph_0010",
+    "title": "Space Force integrates with Air Force in AI sprint to ensure mission d",
+    "topics": [
+      "太空军参与",
+      "战斗管理工具",
+      "人机协作"
+    ],
+    "url_or_path": "https://www.spaceforce.mil/News/Article-Display/Article/4530561/space-force-integrates-with-air-force-in-ai-sprint-to-ensure-mission-dominance/",
+    "version": 1
+  },
+  {
+    "candidate_evidence_id": "CE-T1-6B0D6E320A21509E",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "integration_level",
+      "application_maturity"
+    ],
+    "content_hash": "6b0d6e320a21509e7bdf1c2598c595205394b8fa43872282f1c7d215472c3c8b",
+    "evidence_nature": "test_result",
+    "excerpt_original": "A major breakthrough of the event was the successful integration of these disparate vendor tools.",
+    "excerpt_zh": "该活动的一个重大突破是成功集成了这些不同的供应商工具。",
+    "extraction_run_id": "G4-P11-P12-20260827T051332Z-v1",
+    "normalized_claim": "MASH实验的一个重大突破是成功集成了不同的供应商工具。",
+    "pending_g1_translation_review": true,
+    "pending_g1_visual_review": false,
+    "published_at": "2026-06-30",
+    "published_at_precision": "day",
+    "publisher": "United States Space Force",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DAF-004",
+    "source_locator": "web_paragraph_0027",
+    "title": "Space Force integrates with Air Force in AI sprint to ensure mission d",
+    "topics": [
+      "工具集成",
+      "MASH实验",
+      "技术突破"
+    ],
+    "url_or_path": "https://www.spaceforce.mil/News/Article-Display/Article/4530561/space-force-integrates-with-air-force-in-ai-sprint-to-ensure-mission-dominance/",
+    "version": 1
+  },
+  {
+    "candidate_evidence_id": "CE-T1-8FF394626242D949",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "application_maturity",
+      "human_machine_authority"
+    ],
+    "content_hash": "8ff394626242d9499dd40fe595ad0f4b452289e75152236af92bd37df8e4b7e6",
+    "evidence_nature": "test_result",
+    "excerpt_original": "“A week ago, it took my team and me 50 minutes to an hour to get one tasking done. With the help of the tool, we were able to get five or six taskings done,” said U.S. Air Force Capt. Adam Sochia, 552nd Operations Support Squadron ABM.",
+    "excerpt_zh": "“一周前，我和我的团队完成一项任务需要50分钟到一个小时。在工具的帮助下，我们能够完成五六项任务，”美国空军第552作战支援中队ABM上尉亚当·索奇亚说。",
+    "extraction_run_id": "G4-P11-P12-20260827T051332Z-v1",
+    "normalized_claim": "在MASH实验中，一名空军上尉报告称，使用工具后，完成的任务数量从一项增加到五六项。",
+    "pending_g1_translation_review": true,
+    "pending_g1_visual_review": false,
+    "published_at": "2026-06-30",
+    "published_at_precision": "day",
+    "publisher": "United States Space Force",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DAF-004",
+    "source_locator": "web_paragraph_0033",
+    "title": "Space Force integrates with Air Force in AI sprint to ensure mission d",
+    "topics": [
+      "任务效率",
+      "工具效果",
+      "MASH实验"
+    ],
+    "url_or_path": "https://www.spaceforce.mil/News/Article-Display/Article/4530561/space-force-integrates-with-air-force-in-ai-sprint-to-ensure-mission-dominance/",
+    "version": 1
+  }
+]

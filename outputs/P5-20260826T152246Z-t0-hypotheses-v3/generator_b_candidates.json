@@ -1,0 +1,116 @@
+[
+  {
+    "candidate_id": "GEN-B-H01",
+    "generator_id": "B",
+    "hypothesis_statement": "在2022至2024年间，美国军用人工智能的能力形成主要处于从实验室原型向有限实战部署过渡的演进状态，其主导路径是通过DARPA等机构的高风险技术演示项目（如ACE、RACER、REMA）验证特定任务场景下的自主能力，同时通过陆军AIDP等系统实现情报领域的快速部署，但整体尚未形成跨军种、跨任务的通用化能力体系。",
+    "scope": "2022-01-01至2024-12-31，美国国防部及其下属机构（DARPA、陆军、JAIC/CDAO）的军用AI能力形成过程，聚焦技术成熟度、任务应用和部署状态。",
+    "supporting_evidence_ids": [
+      "EV-T0-DB4536B8270ECF58",
+      "EV-T0-30E9B209F0439B21",
+      "EV-T0-A8459E6E8776A15D",
+      "EV-T0-B33EF9F7AA480E81",
+      "EV-T0-06EEB768196F287C",
+      "EV-T0-DDA30BF3C0C38B0C"
+    ],
+    "counter_evidence_ids": [
+      "EV-T0-51D65DEC82584BCD",
+      "EV-T0-A515E3B9391C51B4",
+      "EV-T0-8E35B508DF5C2E65"
+    ],
+    "key_assumptions": [
+      "DARPA项目（如ACE、RACER）的成功演示代表了技术成熟度的提升，但尚未转化为大规模列装。",
+      "AIDP的快速部署是情报领域特定用例的成功，不代表所有军种或任务领域均达到同等水平。",
+      "联合通用基金会等基础设施的延迟表明体系化能力形成仍受资源条件制约。"
+    ],
+    "falsification_conditions": [
+      "若在2024年底前出现多个军种在作战演习中常态化使用同一套AI系统，且该系统的部署不依赖DARPA等专门项目支持，则本假设不成立。",
+      "若联合通用基金会达到全面作战能力并实现跨军种数据共享，则表明体系化能力已形成，而非仅限特定任务。"
+    ],
+    "unresolved_questions": [
+      "ACE和RACER等项目的技术成果是否已进入正式的采办或列装流程？",
+      "AIDP的部署是否代表了陆军AI能力的普遍水平，还是仅限情报领域？"
+    ],
+    "covered_dimensions": [
+      "technical_engineering_maturity",
+      "testing_deployment_application",
+      "resource_conditions"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "candidate_id": "GEN-B-H02",
+    "generator_id": "B",
+    "hypothesis_statement": "在2022至2024年间，美国军用人工智能的发展路径呈现为“任务驱动、分散验证”的演进状态，即各军种和DARPA根据特定任务需求（如无人地面车辆越野、无人机自主任务延续、情报分析）独立开展技术验证和部署，而体系层面的整合（如联合通用基金会、统一测试评估框架）仍处于规划或早期实施阶段，尚未形成统一的工程化路径。",
+    "scope": "2022-01-01至2024-12-31，美国国防部各组成部门（DARPA、陆军、海军）的AI任务应用与体系集成关系。",
+    "supporting_evidence_ids": [
+      "EV-T0-3FA6806CF267B04B",
+      "EV-T0-9C79EF2837BC80A2",
+      "EV-T0-9263A423CF1D437F",
+      "EV-T0-79B653E22A3D4EF4",
+      "EV-T0-F0773C8E2ECB5C8D",
+      "EV-T0-C557AE16E4403328"
+    ],
+    "counter_evidence_ids": [
+      "EV-T0-27370C837C885AEE",
+      "EV-T0-5EA556C2C939C121",
+      "EV-T0-F8E3070F89D94D25"
+    ],
+    "key_assumptions": [
+      "各项目（RACER、REMA、AIDP、IMSC）的独立进展反映了任务驱动的分散发展模式。",
+      "体系整合的规划文件（如SP-008）尚未转化为实际的跨项目统一部署。",
+      "联合通用基金会的延迟表明体系化整合面临资源和技术挑战。"
+    ],
+    "falsification_conditions": [
+      "若在2024年底前出现一个统一的AI开发平台被多个军种同时用于不同任务，且该平台已实现全面作战能力，则本假设不成立。",
+      "若国防部发布并实施统一的AI测试评估框架，且各项目均遵循该框架，则表明体系化路径已形成。"
+    ],
+    "unresolved_questions": [
+      "各项目之间的技术成果是否存在共享或复用机制？",
+      "CDAO的协调作用是否已实际影响各军种的AI项目执行？"
+    ],
+    "covered_dimensions": [
+      "testing_deployment_application",
+      "trust_organization_system_integration",
+      "resource_conditions"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "candidate_id": "GEN-B-H03",
+    "generator_id": "B",
+    "hypothesis_statement": "在2022至2024年间，美国军用人工智能的能力形成受到工程资源条件（如数据、算力、基础设施）的显著制约，其演进状态表现为“资源瓶颈驱动的渐进式发展”，即虽然战略规划和治理框架已明确（如RAI备忘录、CDAO设立），但实际能力形成受限于数据质量、机载计算能力、基础设施延迟等因素，导致技术成熟度提升缓慢且应用扩展不均衡。",
+    "scope": "2022-01-01至2024-12-31，美国国防部AI能力形成中的资源条件（数据、算力、基础设施）与技术成熟度、应用部署的互动关系。",
+    "supporting_evidence_ids": [
+      "EV-T0-62B1ECDA7DF87F1A",
+      "EV-T0-AD4CCAC18E1BB26C",
+      "EV-T0-26CBA9EE14D71B2D",
+      "EV-T0-850EF492D703EA37",
+      "EV-T0-51D65DEC82584BCD",
+      "EV-T0-A515E3B9391C51B4"
+    ],
+    "counter_evidence_ids": [
+      "EV-T0-0405886E04C205A6",
+      "EV-T0-FB39056D1BA1F579",
+      "EV-T0-425BAC0BC94181E0"
+    ],
+    "key_assumptions": [
+      "资源约束（如机载处理速度、数据质量、基础设施延迟）是能力形成的主要瓶颈。",
+      "预算投入（如2023财年11亿美元）和DARPA的数据收集（如100TB传感器数据）尚未完全解决这些瓶颈。",
+      "战略规划（如SP-008）中的资源投资目标尚未完全实现。"
+    ],
+    "falsification_conditions": [
+      "若在2024年底前，机载AI系统在实战环境中达到与后端计算相当的性能，且联合通用基金会达到全面作战能力，则本假设不成立。",
+      "若国防部发布并实施统一的数据质量标准，且各军种AI项目均达到该标准，则表明资源瓶颈已缓解。"
+    ],
+    "unresolved_questions": [
+      "国防部在算力基础设施（如云、边缘计算）上的实际投资是否足以支撑大规模AI部署？",
+      "数据质量问题的具体影响程度是否因军种或任务领域而异？"
+    ],
+    "covered_dimensions": [
+      "resource_conditions",
+      "technical_engineering_maturity",
+      "strategic_governance"
+    ],
+    "confidence": "medium"
+  }
+]

@@ -1,0 +1,39 @@
+Sharpening AI warfighting advantage on the battlefield | DARPA
+
+Breadcrumb
+
+Sharpening AI Warfighting Advantage On The Battlefield
+
+Sharpening AI warfighting advantage on the battlefield
+
+DARPA’s Securing Artificial Intelligence for Battlefield Effective Robustness (SABER) aims to fill critical gaps in the Defense Department’s understanding of operational systems enabled by AI
+
+As artificial intelligence (AI) becomes increasingly integrated into modern warfare, ensuring its security and resilience is critical to national defense.
+
+Like any new technology, AI has weaknesses. Researchers have demonstrated that AI-enabled systems can be tricked or manipulated via different "attacks." But even these demonstrations have mostly been done in lab conditions, where researchers have complete control over the data and access to the AI's inner workings. As a result, the findings don't necessarily reflect how well the attacks would work in real-world military operations. DARPA experts say we must remedy this lack of understanding to appropriately mitigate adverse downstream effects on operational systems.
+
+"Our warfighters deserve to know the AI they're using is secure and resilient to adversarial threats," said Dr. Nathaniel D. Bastian, a lieutenant colonel in the U.S. Army and DARPA's program manager for Securing Artificial Intelligence for Battlefield Effective Robustness (SABER) . “We know there are different ways to attack AI-enabled systems to degrade performance and that AI itself has weaknesses that adversaries can exploit. But what we haven't fully explored is how an adversary can combine these things to cause real harm on the battlefield – and we certainly want to get in front of that issue."
+
+Bastian says that no well-developed capability nor broader ecosystem exists to operationally assess currently deployed, AI-enabled battlefield systems for vulnerabilities. The SABER program seeks to develop a robust operational AI red-teaming framework to address this gap.
+
+The National Institute of Standards and Technology defines a red team as a group of people authorized and organized to emulate a potential adversary's attack or exploitation capabilities against an enterprise's security posture. The red team's objective is to improve security by demonstrating the impacts of successful attacks and what works for the defenders (i.e., the blue team) in an operational environment.
+
+SABER's goal is to build an exemplar AI red team capable of continuously integrating and employing emerging counter-AI techniques and tools to operationally assess AI-enabled battlefield systems. Bastian expects this work could establish a sustainable model for an operational AI red-teaming process.
+
+The program will execute a series of high-fidelity operational AI security exercises for agile experimentation with continuous evaluations. These evaluations will iteratively assess (i.e., red team) already developed AI-enabled autonomous ground and aerial systems in battlefield environment settings, developing new techniques and tools to ensure the participating AI red teams meet expectations.
+
+The operational AI security exercises will be more than just one-off verifications of systems. If successful, SABER would ultimately ensure that warfighters can trust the AI to complete their mission.
+
+"We want to catalyze a Department of Defense (DOD)-wide operational AI red-teaming ecosystem that transforms warfighting across the DOD via the acquisition, testing, fielding, and sustainment of operationally risk-aware, secure AI-enabled systems," Bastian explained.
+
+SABER is a single-phase, 24-month program with four key stages and experiments designed to gather baselines, experiment, and evaluate SABER research performers' techniques and tools. DARPA solicits ideas only for the selection, development, employment, and integration framework for techniques and tools to generate novel AI attack effects. The deadlines for submitting abstracts and proposals are March 31 and May 6, respectively.
+
+For more information, visit the SABER program page or the Broad Agency Announcement on SAM.gov .
+
+###
+
+Media with inquiries should contact DARPA Public Affairs at outreach@darpa.mil .
+
+Program: SABER
+
+Program Manager Nathaniel D. Bastian

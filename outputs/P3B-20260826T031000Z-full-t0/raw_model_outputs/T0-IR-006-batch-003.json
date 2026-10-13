@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-0181c270-26b1-4499-bae9-d129c7df6dff",
+  "object": "chat.completion",
+  "created": 1787712015,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n  {\n    \"source_id\": \"T0-IR-006\",\n    \"source_locator\": \"pdf_page_44\",\n    \"excerpt_original\": \"In 2019, the JAIC began developing the Joint Common Foundation to create a department-wide data-sharing platform in lieu of each organization maintaining their data in separate systems as shown in figure 8.\",\n    \"excerpt_zh\": \"2019年，JAIC开始开发联合通用基金会，以创建一个部门范围内的数据共享平台，取代各组织将数据分别保存在独立系统中的做法，如图8所示。\",\n    \"normalized_claim\": \"2019年，JAIC开始开发联合通用基金会，旨在创建一个部门范围内的数据共享平台。\",\n    \"coding_dimensions\": {\n      \"application_maturity\": \"研发\",\n      \"engineering_resource_conditions\": \"数据\",\n      \"human_machine_authority\": \"不适用\",\n      \"integration_level\": \"体系级集成\",\n      \"organizational_system_fit\": \"不适用\",\n      \"trust_governance_constraints\": \"不适用\"\n    },\n    \"evidence_nature\": \"goal\",\n    \"topics\": [\"联合通用基金会\", \"数据共享平台\", \"JAIC\"]\n  },\n  {\n    \"source_id\": \"T0-IR-006\",\n    \"source_locator\": \"pdf_page_44\",\n    \"excerpt_original\": \"Through the Joint Common Foundation, the JAIC aims to eliminate duplicative efforts and reduce the challenges to initial AI adoption by providing a secure space where DOD organizations can share data and algorithms needed to build, test, and field AI applications.\",\n    \"excerpt_zh\": \"通过联合通用基金会，JAIC旨在消除重复工作，并通过提供一个安全的空间，让国防部各组织可以共享构建、测试和部署AI应用所需的数据和算法，从而减少初始采用AI的挑战。\",\n    \"normalized_claim\": \"JAIC旨在通过联合通用基金会提供一个安全空间，供国防部组织共享构建、测试和部署AI应用所需的数据和算法。\",\n    \"coding_dimensions\": {\n      \"application_maturity\": \"研发\",\n      \"engineering_resource_conditions\": \"数据\",\n      \"human_machine_authority\": \"不适用\",\n      \"integration_level\": \"体系级集成\",\n      \"organizational_system_fit\": \"不适用\",\n      \"trust_governance_constraints\": \"不适用\"\n    },\n    \"evidence_nature\": \"goal\",\n    \"topics\": [\"联合通用基金会\", \"数据共享\", \"AI应用\"]\n  },\n  {\n    \"source_id\": \"T0-IR-006\",\n    \"source_locator\": \"pdf_page_45\",\n    \"excerpt_original\": \"According to DOD documentation, the Joint Common Foundation will bring disparate AI applications under a single platform and scale AI across the department.\",\n    \"excerpt_zh\": \"根据国防部文件，联合通用基金会将把不同的AI应用整合到一个单一平台下，并在整个部门内扩展AI。\",\n    \"normalized_claim\": \"根据国防部文件，联合通用基金会将把不同的AI应用整合到一个单一平台下，并在整个部门内扩展AI。\",\n    \"coding_dimensions\": {\n      \"application_maturity\": \"研发\",\n      \"engineering_resource_conditions\": \"不适用\",\n      \"human_machine_authority\": \"不适用\",\n      \"integration_level\": \"体系级集成\",\n      \"organizational_system_fit\": \"不适用\",\n      \"trust_governance_constraints\": \"不适用\"\n    },\n    \"evidence_nature\": \"goal\",\n    \"topics\": [\"联合通用基金会\", \"AI应用\", \"平台\"]\n  },\n  {\n    \"source_id\": \"T0-IR-006\",\n    \"source_locator\": \"pdf_page_52\",\n    \"excerpt_original\": \"In June 2021, the Deputy Secretary of Defense issued a memorandum establishing the AI and Data Acceleration initiative to rapidly advance AI implementation efforts through a series of implementation experiments or exercises.\",\n    \"excerpt_zh\": \"2021年6月，国防部副部长发布备忘录，建立AI与数据加速计划，通过一系列实施实验或演习来快速推进AI实施工作。\",\n    \"normalized_claim\": \"2021年6月，国防部副部长发布备忘录，建立AI与数据加速计划，通过一系列实施实验或演习来快速推进AI实施工作。\",\n    \"coding_dimensions\": {\n      \"application_maturity\": \"试验\",\n      \"engineering_resource_conditions\": \"不适用\",\n      \"human_machine_authority\": \"不适用\",\n      \"integration_level\": \"不适用\",\n      \"organizational_system_fit\": \"不适用\",\n      \"trust_governance_constraints\": \"不适用\"\n    },\n    \"evidence_nature\": \"goal\",\n    \"topics\": [\"AI与数据加速计划\", \"实施实验\", \"演习\"]\n  },\n  {\n    \"source_id\": \"T0-IR-006\",\n    \"source_locator\": \"pdf_page_52\",\n    \"excerpt_original\": \"As a part of this new initiative, the JAIC will send out “flyaway” teams of data and AI experts to help combatant commands quickly shift AI from labs to real-world warfighting.\",\n    \"excerpt_zh\": \"作为这项新计划的一部分，JAIC将派出数据和AI专家组成的“飞离”团队，帮助作战司令部快速将AI从实验室转移到实战。\",\n    \"normalized_claim\": \"作为AI与数据加速计划的一部分，JAIC将派出数据和AI专家团队，帮助作战司令部快速将AI从实验室转移到实战。\",\n    \"coding_dimensions\": {\n      \"application_maturity\": \"试点\",\n      \"engineering_resource_conditions\": \"人才\",\n      \"human_machine_authority\": \"不适用\",\n      \"integration_level\": \"不适用\",\n      \"organizational_system_fit\": \"不适用\",\n      \"trust_governance_constraints\": \"不适用\"\n    },\n    \"evidence_nature\": \"goal\",\n    \"topics\": [\"AI与数据加速计划\", \"JAIC\", \"作战司令部\"]\n  }\n]\n```"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10783,
+    "total_tokens": 12080,
+    "completion_tokens": 1297,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

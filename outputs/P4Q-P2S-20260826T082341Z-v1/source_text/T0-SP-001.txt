@@ -1,0 +1,29 @@
+Military operations – from combat, to medical triage, to disaster relief – require complex and rapid decision-making in dynamic situations where there is often no single right answer. Two seasoned military leaders facing the same scenario on the battlefield, for example, may make different tactical decisions when faced with difficult options. As AI systems become more advanced in teaming with humans, building appropriate human trust in the AI’s abilities to make sound decisions is vital. Capturing the key characteristics underlying expert human decision-making in dynamic settings and computationally representing that data in algorithmic decision-makers may be an essential element to ensure algorithms would make trustworthy choices under difficult circumstances.
+
+DARPA announced the In the Moment (ITM) program , which seeks to quantify the alignment of algorithms with trusted human decision-makers in difficult domains where there is no agreed upon right answer. ITM aims to evaluate and build trusted algorithmic decision-makers for mission-critical Department of Defense (DoD) operations.
+
+“ITM is different from typical AI development approaches that require human agreement on the right outcomes,” said Matt Turek, ITM program manager. “The lack of a right answer in difficult scenarios prevents us from using conventional AI evaluation techniques, which implicitly requires human agreement to create ground-truth data.”
+
+To illustrate, self-driving car algorithms can be based on ground truth for right and wrong driving responses based on traffic signs and rules of the road that don’t change. One feasible approach in those scenarios is hard-coding risk values into the simulation environment used to train self-driving car algorithms.
+
+“Baking in one-size-fits-all risk values won’t work from a DoD perspective because combat situations evolve rapidly, and commander’s intent changes from scenario to scenario,” Turek said. “The DoD needs rigorous, quantifiable, and scalable approaches to evaluating and building algorithmic systems for difficult decision-making where objective ground truth is unavailable. Difficult decisions are those where trusted decision-makers disagree, no right answer exists, and uncertainty, time-pressure, and conflicting values create significant decision-making challenges.”
+
+ITM is taking inspiration from the medical imaging analysis field, where techniques have been developed for evaluating systems even when skilled experts may disagree on ground truth. For example, the boundaries of organs or pathologies can be unclear or disputed among radiologists. To overcome the lack of a true boundary, an algorithmically drawn boundary is compared to the distribution of boundaries drawn by human experts. If the algorithm’s boundary lies within the distribution of boundaries drawn by human experts over many trials, the algorithm is said to be comparable to human performance.
+
+“Building on the medical imaging insight, ITM will develop a quantitative framework to evaluate decision-making by algorithms in very difficult domains,” Turek said. “We will create realistic, challenging decision-making scenarios that elicit responses from trusted humans to capture a distribution of key decision-maker attributes. Then we’ll subject a decision-making algorithm to the same challenging scenarios and map its responses into the reference distribution to compare it to the trusted human decision-makers.”
+
+The program has four technical areas. The first is developing decision-maker characterization techniques that identify and quantify key decision-maker attributes in difficult domains. The second technical area is creating a quantitative alignment score between a human decision-maker and an algorithm in ways that are predictive of end-user trust. A third technical area is responsible for designing and executing the program evaluation. The final technical area is responsible for policy and practice integration; providing legal, moral, and ethical expertise to the program; supporting the development of future DoD policy and concepts of operations (CONOPS); overseeing development of an ethical operations process (DevEthOps); and conducting outreach events to the broader policy community.
+
+ITM is a 3.5-year program encompassing two phases with potential for a third phase devoted to maturing the technology with a transition partner. The first phase is 24-months long and focuses on small-unit triage as the decision-making scenario. Phase 2 is 18-months long and increases decision-making complexity by focusing on mass-casualty events.
+
+To evaluate the whole ITM process, multiple human and algorithmic decision-makers will be presented scenarios from the medical triage (Phase 1) or mass casualty (Phase 2) domains. Algorithmic decision-makers will include an aligned algorithmic decision-maker with knowledge of key human decision-making attributes and a baseline algorithmic decision-maker with no knowledge of those key human attributes. A human triage professional will also be included as an experimental control.
+
+“We’re going to collect the decisions, the responses from each of those decision-makers, and present those in a blinded fashion to multiple triage professionals,” Turek said. “Those triage professionals won’t know whether the response comes from an aligned algorithm or a baseline algorithm or from a human. And the question that we might pose to those triage professionals is which decision-maker would they delegate to, providing us a measure of their willingness to trust those particular decision-makers.”
+
+# # #
+
+Media with inquiries should contact DARPA Public Affairs at outreach@darpa.mil
+
+Associated images posted on www.darpa.mil and video posted at www.youtube.com/darpatv may be reused according to the terms of the DARPA User Agreement .
+
+Tweet @darpa

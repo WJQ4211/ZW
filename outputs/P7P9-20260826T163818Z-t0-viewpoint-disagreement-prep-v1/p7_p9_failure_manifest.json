@@ -1,0 +1,15 @@
+{
+  "run_id": "P7P9-20260826T163818Z-t0-viewpoint-disagreement-prep-v1",
+  "failure_stage": "pipeline_consistency",
+  "source_id": null,
+  "exception_type": "P7P9Error",
+  "http_status_code": null,
+  "completed_logical_calls": 1,
+  "saved_batches": [
+    "p7_tech"
+  ],
+  "evidence_inserted": 0,
+  "formal_g3_executed": false,
+  "formal_g4_t0_executed": false,
+  "t1_read": false
+}

@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-6b4ac6fa-c2ed-43b3-af70-e40e9f672101",
+  "object": "chat.completion",
+  "created": 1787712324,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n  {\n    \"source_id\": \"T0-IR-006\",\n    \"source_locator\": \"pdf_page_30\",\n    \"excerpt_original\": \"According to the Director of the JAIC, the updated DOD AI Strategy is needed as the JAIC shifts its focus from adoption of AI capabilities to integration.\",\n    \"excerpt_zh\": \"根据JAIC主任的说法，需要更新DOD AI战略，因为JAIC正将其重点从采用AI能力转向整合。\",\n    \"normalized_claim\": \"JAIC的工作重点正从采用AI能力转向整合。\",\n    \"coding_dimensions\": [\"integration_level\"],\n    \"evidence_nature\": \"goal\",\n    \"topics\": [\"战略转型\", \"AI整合\"]\n  },\n  {\n    \"source_id\": \"T0-IR-006\",\n    \"source_locator\": \"pdf_page_36\",\n    \"excerpt_original\": \"The April 2021 AI baseline inventory contained 685 project and line item accounts that include AI-related activities.\",\n    \"excerpt_zh\": \"2021年4月的AI基线清单包含685个包含AI相关活动的项目和预算科目。\",\n    \"normalized_claim\": \"2021年4月的AI基线清单包含685个AI相关活动项目。\",\n    \"coding_dimensions\": [\"engineering_resource_conditions\"],\n    \"evidence_nature\": \"evaluation\",\n    \"topics\": [\"AI项目清单\", \"资源盘点\"]\n  },\n  {\n    \"source_id\": \"T0-IR-006\",\n    \"source_locator\": \"pdf_page_36\",\n    \"excerpt_original\": \"However, JAIC officials also reported to Congress that the April 2021 AI baseline inventory is not comprehensive and has limitations.\",\n    \"excerpt_zh\": \"然而，JAIC官员也向国会报告称，2021年4月的AI基线清单并不全面，且存在局限性。\",\n    \"normalized_claim\": \"2021年4月的AI基线清单不全面且存在局限性。\",\n    \"coding_dimensions\": [\"engineering_resource_conditions\"],\n    \"evidence_nature\": \"evaluation\",\n    \"topics\": [\"AI项目清单\", \"局限性\"]\n  },\n  {\n    \"source_id\": \"T0-IR-006\",\n    \"source_locator\": \"pdf_page_38\",\n    \"excerpt_original\": \"The JAIC defines the AI Inventory Portfolio Analytics Tool as a tool designed to catalog AI budget data with a web form capability to assist in the collection of data from and coordination with various DOD organizations.\",\n    \"excerpt_zh\": \"JAIC将AI库存组合分析工具定义为一个旨在编目AI预算数据的工具，具有网络表单功能，以协助从各DOD组织收集数据并与之协调。\",\n    \"normalized_claim\": \"AI库存组合分析工具旨在编目AI预算数据并协助数据收集与协调。\",\n    \"coding_dimensions\": [\"engineering_resource_conditions\"],\n    \"evidence_nature\": \"goal\",\n    \"topics\": [\"AI库存工具\", \"预算数据\"]\n  },\n  {\n    \"source_id\": \"T0-IR-006\",\n    \"source_locator\": \"pdf_page_39\",\n    \"excerpt_original\": \"The JAIC's April 2021 report to Congress stated that the JAIC plans to update and refine the AI Inventory Portfolio Analytics Tool using Agile methods over the next 2 to 3 years.\",\n    \"excerpt_zh\": \"JAIC 2021年4月向国会提交的报告称，JAIC计划在未来2至3年内使用敏捷方法更新和完善AI库存组合分析工具。\",\n    \"normalized_claim\": \"JAIC计划在未来2至3年内使用敏捷方法更新和完善AI库存组合分析工具。\",\n    \"coding_dimensions\": [\"engineering_resource_conditions\"],\n    \"evidence_nature\": \"goal\",\n    \"topics\": [\"AI库存工具\", \"敏捷开发\"]\n  }\n]\n```"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10865,
+    "total_tokens": 11692,
+    "completion_tokens": 827,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

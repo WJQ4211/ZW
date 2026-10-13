@@ -1,0 +1,11 @@
+﻿disagreement_id,type,decision_impact,resolvable_now,resolution_action,viewpoint_count,validation_passed,reason
+DISAGREE-T0-001,mechanism,high,False,conditional_retain,2,True,
+DISAGREE-T0-002,scope,medium,False,scope_split,2,True,
+DISAGREE-T0-003,assumption,medium,False,evidence_check,2,True,
+DISAGREE-T0-004,assumption,high,False,conditional_retain,2,True,
+DISAGREE-T0-005,mechanism,medium,False,evidence_check,2,True,
+DISAGREE-T0-006,scope,low,True,scope_split,2,True,
+DISAGREE-T0-007,fact,high,True,evidence_check,2,True,
+DISAGREE-T0-008,assumption,medium,False,monitor,2,True,
+DISAGREE-T0-009,mechanism,medium,False,conditional_retain,2,True,
+DISAGREE-T0-010,risk_weight,medium,False,conditional_retain,2,True,

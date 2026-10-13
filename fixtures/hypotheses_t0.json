@@ -1,0 +1,20 @@
+[
+  {
+    "hypothesis_id": "HYP-A",
+    "statement": "能力建设首先形成受约束、可审计的任务级自治，并在有限任务中逐步扩展。",
+    "decision_dimension": "capability_formation_pattern",
+    "time_horizon": "synthetic 2025-2028",
+    "scope": "synthetic military AI capability programs and bounded mission applications",
+    "observable_implications": ["出现受约束自治试验", "人机交接与测试评价同步制度化"],
+    "falsifiers": ["多个项目在无约束条件下直接形成稳定通用自治", "受约束任务的重复测试长期无法通过"]
+  },
+  {
+    "hypothesis_id": "HYP-B",
+    "statement": "能力建设主要停留在模块化辅助工具与人工监督集成，短期内不会形成稳定的任务级自治。",
+    "decision_dimension": "capability_formation_pattern",
+    "time_horizon": "synthetic 2025-2028",
+    "scope": "synthetic military AI capability programs and bounded mission applications",
+    "observable_implications": ["采购和部署集中于辅助模块", "授权要求持续把关键决策留在人类操作员手中"],
+    "falsifiers": ["受约束自治在多项任务中完成可重复的端到端测试", "正式项目文件明确扩大任务级授权"]
+  }
+]

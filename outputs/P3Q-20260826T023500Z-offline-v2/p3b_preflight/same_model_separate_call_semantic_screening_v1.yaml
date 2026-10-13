@@ -1,0 +1,46 @@
+prompt_id: same_model_separate_call_semantic_screening
+version: "1.0"
+purpose: "Separate-call semantic screen for candidate claim, nature and each declared dimension; never replaces G1"
+allowed_input_fields:
+  - source_locator
+  - excerpt_original
+  - normalized_claim
+  - coding_dimensions
+  - evidence_nature
+  - topics
+output_schema:
+  exact_fields:
+    - candidate_index
+    - status
+    - reason
+    - claim_supported
+    - nature_supported
+    - dimension_reviews
+  dimension_review_fields:
+    - dimension
+    - supported
+    - supporting_span
+    - reason
+coding_dimensions:
+  integration_level: "单工具、单任务、单平台、跨平台、跨任务或体系级集成。普通共存或泛称协同不能自动证明更高集成层级。"
+  application_maturity: "概念战略、研发、试验、试点、采购部署或持续运用；计划不能作为已完成部署。"
+  human_machine_authority: "辅助决策、人在回路中、受监督自主或更高程度自主。普通系统协同不自动等于此维度；向值班人员提供信息可支持辅助型人机关系；培训和文档要求不自动等于权限分配。"
+  engineering_resource_conditions: "数据、算力、模型、接口、供应链、预算、人才和保障。"
+  trust_governance_constraints: "安全、可靠性、测试评价、授权边界、责任与伦理。"
+  organizational_system_fit: "指挥流程、任务编组、跨平台协同、人员负荷和组织变革。"
+evidence_nature:
+  goal: "目标、愿景或计划方向"
+  resource_input: "资源或投入条件"
+  test_event: "测试/演习发生、参与主体或配置"
+  test_result: "测试中观察到的功能、性能或结果"
+  deployment_event: "部署、实装、现场运用或正式采用已发生"
+  constraint: "限制、风险、障碍、依赖或边界"
+  evaluation: "评价、审查、验证或评估结论"
+rules:
+  - "normalized_claim必须是中文证据命题，不含来源归属前缀。"
+  - "检查主体、行动、数字、范围和结果是否由摘录直接支持。"
+  - "为每个申报维度单独输出dimension、supported、supporting_span、reason。"
+  - "不支持的维度由程序删除并记录；全部不支持时转人工复核。"
+  - "普通系统协同不自动等于human_machine_authority。"
+  - "演习发生不自动等于test_result。"
+  - "同模型复核只作为质量筛选，不能代替G1人工审核。"

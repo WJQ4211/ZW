@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-218170c1-1d65-40f9-8d66-69042f0bf0b8",
+  "object": "chat.completion",
+  "created": 1787677862,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n  {\n    \"candidate_index\": 0,\n    \"status\": \"pass\",\n    \"reason\": \"The claim accurately restates the key facts from the excerpt: the completion of a three-day maritime exercise on Jan. 9, the integration of unmanned systems and AI, and that it was the second such drill in six months. All elements are directly present in the excerpt.\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimensions_supported\": true\n  },\n  {\n    \"candidate_index\": 1,\n    \"status\": \"pass\",\n    \"reason\": \"The claim accurately summarizes the excerpt, which mentions the completion of exercise Sentinel Shield, the participation of USS Delbert D. Black and two Saildrone Explorers, and the stated purpose of demonstrating how AI and unmanned systems increase maritime domain awareness. All elements are directly present.\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimensions_supported\": true\n  },\n  {\n    \"candidate_index\": 2,\n    \"status\": \"pass\",\n    \"reason\": \"The claim directly mirrors the excerpt, which states that unmanned and AI systems operated in conjunction with the destroyer and the command center ashore. No new information is added.\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimensions_supported\": true\n  },\n  {\n    \"candidate_index\": 3,\n    \"status\": \"pass\",\n    \"reason\": \"The claim accurately reflects the excerpt's statement that the systems helped locate and identify objects and relayed visual depictions to watchstanders. The claim adds the context 'in the exercise' which is implied by the surrounding text and does not alter the core meaning.\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimensions_supported\": true\n  },\n  {\n    \"candidate_index\": 4,\n    \"status\": \"pass\",\n    \"reason\": \"The claim accurately summarizes the excerpt, which mentions a similar exercise on Aug. 23 with the participation of RBNS Ahmed Al-Fateh, USCGC Baranof, and another Saildrone Explorer. All elements are directly present.\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimensions_supported\": true\n  }\n]\n```"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1123,
+    "total_tokens": 1622,
+    "completion_tokens": 499,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

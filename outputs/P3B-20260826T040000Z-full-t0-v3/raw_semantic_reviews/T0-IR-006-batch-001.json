@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-c4f4af30-d855-44b1-8dd1-203c222b49a2",
+  "object": "chat.completion",
+  "created": 1787712451,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n  {\n    \"candidate_index\": 0,\n    \"status\": \"pass\",\n    \"reason\": \"The claim accurately reflects the excerpt's content: the team is using historic maintenance data to train AI models to predict longer-than-normal maintenance periods, and the initial model was demonstrated on February 11, 2021. The evidence nature is correctly identified as a test_event (demonstration), not a test_result, as no performance or result is reported.\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": [\n      {\n        \"dimension\": \"application_maturity\",\n        \"supported\": true,\n        \"supporting_span\": \"The initial logistics model was demonstrated on February 11, 2021.\",\n        \"reason\": \"The excerpt explicitly reports a demonstration of the initial model, which corresponds to the '试验' (test/trial) stage in the application maturity definition.\"\n      },\n      {\n        \"dimension\": \"engineering_resource_conditions\",\n        \"supported\": true,\n        \"supporting_span\": \"using historic maintenance data to train AI models\",\n        \"reason\": \"The excerpt explicitly mentions the use of historic maintenance data as a data resource for training AI models, which falls under the '数据' (data) category of engineering and resource conditions.\"\n      }\n    ]\n  }\n]\n```"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 713,
+    "total_tokens": 997,
+    "completion_tokens": 284,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

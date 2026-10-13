@@ -1,0 +1,44 @@
+[
+  {
+    "after": {
+      "stance": "conditional"
+    },
+    "before": {
+      "stance": "support"
+    },
+    "change_reason": "T1 合成采购材料命中操作员负荷与授权监测指标，改变了对扩展条件的表述，但没有证明授权已经扩大。",
+    "changed_fields": [
+      "stance",
+      "judgment",
+      "uncertainties[0]"
+    ],
+    "new_version": 2,
+    "old_version": 1,
+    "status_transition": "admitted->admitted",
+    "trigger_evidence": [
+      "EV-T1-002:1"
+    ],
+    "viewpoint_id": "VP-OPS-B"
+  },
+  {
+    "after": {
+      "stance": "conditional"
+    },
+    "before": {
+      "stance": "support"
+    },
+    "change_reason": "T1 合成试验命中受约束自治监测指标，补充了联合任务与人机交接信号，但尚未消除边缘情形和授权不确定性。",
+    "changed_fields": [
+      "stance",
+      "judgment",
+      "key_assumptions[0]"
+    ],
+    "new_version": 2,
+    "old_version": 1,
+    "status_transition": "admitted->admitted",
+    "trigger_evidence": [
+      "EV-T1-001:1"
+    ],
+    "viewpoint_id": "VP-TECH-A"
+  }
+]

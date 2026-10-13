@@ -1,0 +1,22 @@
+{
+  "case_id": "us_military_ai_deployment",
+  "cumulative_from_snapshot": "SNAP-T0-US-MILITARY-AI-C6C812108AF95309",
+  "cutoff_time": "2026-06-30T23:59:59Z",
+  "formal_g1_t1_executed": true,
+  "frozen": true,
+  "grade_counts": {
+    "A": 94,
+    "B": 31
+  },
+  "latest_version_only": true,
+  "logical_item_count": 125,
+  "model_api_calls": 0,
+  "p4_t1_executed": false,
+  "phase": "T1",
+  "snapshot_frozen": true,
+  "snapshot_id": "SNAP-T1-US-MILITARY-AI-99A723BFBC6D273A",
+  "snapshot_manifest_hash": "d82bf6a622648a021796aa0e3d9b28fdd4c0bd42701147108f32ca78ce6504c6",
+  "t0_logical_count": 85,
+  "t1_evidence_count": 40,
+  "t1_read": true
+}

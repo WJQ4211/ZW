@@ -1,0 +1,9 @@
+{
+  "authorization_sha256": "1b8d6a450720f0419c8d88fa3e74e41719a7f5702b01466997bfa81c2b3fb672",
+  "reviewer_id": "author_01",
+  "review_mode": "ai_preannotation_plus_author_batch_signoff",
+  "author_signoff_count": 1,
+  "author_decision_count": 5,
+  "hypothesis_content_authorized": true,
+  "raw_source_visual_review_claimed": false
+}

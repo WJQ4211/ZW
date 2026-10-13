@@ -1,0 +1,68 @@
+{
+  "run_id": "P3BR2A-20260826T063553Z-content-completeness-v1",
+  "case_id": "us_military_ai_deployment",
+  "stage": "P3b-R2a",
+  "executed_at_utc": "2026-08-26T06:35:53Z",
+  "input_run_id": "P3BR2-20260826T050236Z-gate-correction-v1",
+  "git_head": "unavailable_not_a_git_repository",
+  "python_version": "3.12.13",
+  "implementation_file_hashes": {
+    "src/p3br2a.py": "c38731caf0d422e87f2ca8b410ee33b70d7dd4c14e6c1126c41891138fbeeca3",
+    "scripts/15_run_p3br2a.py": "843c808193d0b9d02fb3ea78962dda76354c15e72b6015f48bb913c7fa74e03a",
+    "tests/test_p3br2a.py": "c1b2032affd06c961676c3154f25034f5d0f0b60b738c2131b9d568029800213"
+  },
+  "input_p3br2_hashes": {
+    "outputs/P3BR2-20260826T050236Z-gate-correction-v1/ai_visual_pre_review_log.jsonl": "7bf784a9587e0a6cb755d20874a0d0decb440a682e7fca448d12e637caf0bb4d",
+    "outputs/P3BR2-20260826T050236Z-gate-correction-v1/evidence_candidates_p3br2_combined.jsonl": "06a80358cc0fbc72431af129a7fe66d36db44792f15e5fd4f3e9f5cde8de9c77",
+    "outputs/P3BR2-20260826T050236Z-gate-correction-v1/g1_ai_preannotation_p3br2.csv": "dbe999c4979223d1097b31f2b720c725273a30ab91e2611ce6cb2edf6bf4d1db",
+    "outputs/P3BR2-20260826T050236Z-gate-correction-v1/g1_author_decision_sheet_p3br2.csv": "f174b3bd791f36d3add2e25bf8f5a151925435d8c09773978d640165251b988e",
+    "outputs/P3BR2-20260826T050236Z-gate-correction-v1/g1_author_high_priority_p3br2.csv": "59133f3cb65ddbee55aaff0af0846f84bf662d94c344e55c0e3c22351a12bfc5",
+    "outputs/P3BR2-20260826T050236Z-gate-correction-v1/g1_author_low_risk_sample_p3br2.csv": "ecfa316cf06ee791c332ebde7adb2f21c1144ed104e7841b30904a581739c028",
+    "outputs/P3BR2-20260826T050236Z-gate-correction-v1/p3br2_before_after_diff.csv": "360261b5655fca2bc40190df28280892abb3ae01173400a122e6a298cf1a7f43",
+    "outputs/P3BR2-20260826T050236Z-gate-correction-v1/p3br2_manifest.json": "25844c50b3602b3aff336644065696f1b0e88c040756bf4fe3a0323d9b96cdb8",
+    "outputs/P3BR2-20260826T050236Z-gate-correction-v1/p3br2_risk_coverage_report.md": "21af1f890ddfd523c7e6bcab0756e9a8d6df11605a0234464ed1a3cf6fc98a9d",
+    "outputs/P3BR2-20260826T050236Z-gate-correction-v1/recovery_split_proposals.jsonl": "68ef8f16e8d5cec9b7e7fab766d427ac7839f2cf83de4506f2ea9e0acd4134f1"
+  },
+  "protected_prior_outputs_unchanged": true,
+  "protected_outputs_before_digest": "0134271ff6320a29bb6121fef4fb79a4ef4a19ea2226b61e3e4fbc202a011407",
+  "protected_outputs_after_digest": "0134271ff6320a29bb6121fef4fb79a4ef4a19ea2226b61e3e4fbc202a011407",
+  "author_decision_row_count": 55,
+  "author_unique_evidence_id_count": 55,
+  "decision_counts": {
+    "split": 3,
+    "revise": 34,
+    "accept": 15,
+    "exclude": 3
+  },
+  "field_completeness_counts": {
+    "proposed_nature": 55,
+    "proposed_dimensions": 55,
+    "proposed_normalized_claim": 55,
+    "proposed_excerpt_zh": 55,
+    "excerpt_original": 55
+  },
+  "visual_items_mapped": 7,
+  "split_parent_count": 3,
+  "split_child_count": 6,
+  "split_child_ids_unique": true,
+  "all_final_fields_blank": true,
+  "human_reviewed_true_count": 0,
+  "formal_evidence_db_rows_added": 0,
+  "hypothesis_rows_added": 0,
+  "g1_executed": false,
+  "p4_executed": false,
+  "snapshot_frozen": false,
+  "t1_read": false,
+  "model_client_called": false,
+  "provider_call_count": 0,
+  "api_key_written": false,
+  "stop_after_p3br2a": true,
+  "output_file_hashes": {
+    "ai_visual_pre_review_log_p3br2a.jsonl": "7bf784a9587e0a6cb755d20874a0d0decb440a682e7fca448d12e637caf0bb4d",
+    "g1_author_decision_sheet_p3br2a.csv": "9d9993bef30adeaf4d064a10dc8ca558c331ddf0c5d8eccb2822d01fc39158f3",
+    "g1_author_signoff_summary.md": "bdfe6602cacb2617e3db153ed8b682afd324a29a70514f21f6d669f7c4ef2794",
+    "p3br2a_quality_report.md": "1109a0ce23bb1c29e1f487c66ca072c245134364fe1749109f7fc104beaab55c",
+    "split_child_proposals_p3br2a.jsonl": "164c674af1ec711631ce188ab60c9d6b91077ea1aeb1daa24bffb2887c6dffa4"
+  },
+  "manifest_self_hash_excluded_from_output_file_hashes": true
+}

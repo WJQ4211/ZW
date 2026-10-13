@@ -1,0 +1,106 @@
+[
+  {
+    "candidate_id": "GEN-A-H01",
+    "generator_id": "A",
+    "hypothesis_statement": "在2022-2024年间，美国军用人工智能的发展轨迹表现为从分散的、以项目为中心的AI能力采用，向以集中化平台和标准化流程为特征的体系化整合阶段演进，但这一整合仍受制于基础设施延迟和采办指导方针缺失等约束。",
+    "scope": "美国国防部整体AI发展，时间范围2022-01-01至2024-12-31，涵盖战略、项目、试验和部署事件。",
+    "supporting_evidence_ids": [
+      "EV-T0-5FA6E8C23AC72A82",
+      "EV-T0-7E37FBD511FC654E",
+      "EV-T0-27370C837C885AEE",
+      "EV-T0-0A73030BBF2649F9",
+      "EV-T0-27EE6FA7DA2FADC0"
+    ],
+    "counter_evidence_ids": [
+      "EV-T0-51D65DEC82584BCD",
+      "EV-T0-A515E3B9391C51B4",
+      "EV-T0-8E35B508DF5C2E65"
+    ],
+    "key_assumptions": [
+      "集中化平台（如JCF）和统一治理（如CDAO）是实现体系化整合的主要标志。",
+      "从采用到整合的转变是演进的主要方向，而非简单的技术升级。"
+    ],
+    "falsification_conditions": [
+      "如果2024年底前JCF达到全面作战能力且采办指导方针已发布，则本假设可能被削弱。",
+      "如果出现多个军种独立发展且无统一协调的证据，则体系化整合判断不成立。"
+    ],
+    "unresolved_questions": [
+      "JCF全面作战能力的具体时间表是否在2024年后确定？",
+      "CDAO在整合各军种AI项目中的实际权限和执行力如何？"
+    ],
+    "covered_dimensions": [
+      "strategic_governance",
+      "trust_organization_system_integration"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "candidate_id": "GEN-A-H02",
+    "generator_id": "A",
+    "hypothesis_statement": "在2022-2024年间，美国军用AI的发展轨迹表现为从实验室验证向实战部署的快速推进，尤其在情报分析和无人系统领域，但这一推进仍面临机载AI计算能力和数据质量等工程瓶颈。",
+    "scope": "聚焦于AI在情报分析（如AIDP）和无人系统（如RACER、ACE、REMA）中的应用，时间范围2022-2024。",
+    "supporting_evidence_ids": [
+      "EV-T0-A8459E6E8776A15D",
+      "EV-T0-B33EF9F7AA480E81",
+      "EV-T0-DB4536B8270ECF58",
+      "EV-T0-30E9B209F0439B21",
+      "EV-T0-06EEB768196F287C"
+    ],
+    "counter_evidence_ids": [
+      "EV-T0-AD4CCAC18E1BB26C",
+      "EV-T0-850EF492D703EA37",
+      "EV-T0-62B1ECDA7DF87F1A"
+    ],
+    "key_assumptions": [
+      "AIDP的快速部署和ACE的实弹测试是实战化推进的代表性事件。",
+      "机载AI和数据处理能力是限制进一步部署的主要技术瓶颈。"
+    ],
+    "falsification_conditions": [
+      "如果2024年后AIDP未在更多战区扩展或ACE未进入实际作战使用，则快速推进判断需修正。",
+      "如果机载AI性能在2024年底前显著提升并克服处理速度限制，则瓶颈假设不成立。"
+    ],
+    "unresolved_questions": [
+      "AIDP在部署后的实际作战效能评估结果如何？",
+      "ACE项目在2024年后是否计划从测试转入实际作战集成？"
+    ],
+    "covered_dimensions": [
+      "technical_engineering_maturity",
+      "testing_deployment_application"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "candidate_id": "GEN-A-H03",
+    "generator_id": "A",
+    "hypothesis_statement": "在2022-2024年间，美国军用AI的发展轨迹表现为从单一技术演示向多域、多国联合演习中的系统集成演进，但这一集成仍处于早期阶段，且受限于测试与评估框架的标准化不足。",
+    "scope": "涵盖陆、海、空及多国演习中的AI集成，时间范围2022-2024。",
+    "supporting_evidence_ids": [
+      "EV-T0-F0773C8E2ECB5C8D",
+      "EV-T0-C557AE16E4403328",
+      "EV-T0-41C1E1300EA0D2D7",
+      "EV-T0-451C2F294AC898A8",
+      "EV-T0-F8E3070F89D94D25"
+    ],
+    "counter_evidence_ids": [
+      "EV-T0-582B12D4B09F11B1",
+      "EV-T0-04572D780936A8D6"
+    ],
+    "key_assumptions": [
+      "多域演习（如IMSC、Sentinel Shield）和跨军种演示（如RACER）是系统集成的主要体现。",
+      "测试与评估框架的标准化是集成成熟度的关键指标。"
+    ],
+    "falsification_conditions": [
+      "如果2024年底前T&E框架已全面实施并应用于所有AI项目，则标准化不足的判断不成立。",
+      "如果多域演习中AI集成未出现显著故障或未扩展至更多参与方，则早期阶段判断可能需调整。"
+    ],
+    "unresolved_questions": [
+      "T&E框架在2024年底前的实际应用范围和效果如何？",
+      "多域演习中AI系统的互操作性是否达到预期标准？"
+    ],
+    "covered_dimensions": [
+      "testing_deployment_application",
+      "trust_organization_system_integration"
+    ],
+    "confidence": "low"
+  }
+]

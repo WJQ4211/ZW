@@ -1,0 +1,9 @@
+{"action": "no_auto_update", "evidence_id": "CE-T1-7DE738404CD33807", "item_type": "t1_candidate", "reason": "historical_context_or_excluded_or_no_field_level_rationale", "t1_change_signal_eligible": false}
+{"action": "no_auto_update", "evidence_id": "CE-T1-6B7DB29A3B242353", "item_type": "t1_candidate", "reason": "historical_context_or_excluded_or_no_field_level_rationale", "t1_change_signal_eligible": true}
+{"action": "no_auto_update", "evidence_id": "CE-T1-1797A97EF532F332", "item_type": "t1_candidate", "reason": "historical_context_or_excluded_or_no_field_level_rationale", "t1_change_signal_eligible": true}
+{"action": "no_auto_update", "evidence_id": "CE-T1-1DB188A712B4C1C6", "item_type": "t1_candidate", "reason": "historical_context_or_excluded_or_no_field_level_rationale", "t1_change_signal_eligible": true}
+{"action": "no_auto_update", "evidence_id": "CE-T1-9D61AF59EFDD3694", "item_type": "t1_candidate", "reason": "historical_context_or_excluded_or_no_field_level_rationale", "t1_change_signal_eligible": true}
+{"action": "no_auto_update", "evidence_id": "CE-T1-C1E0527174B2F72F", "item_type": "t1_candidate", "reason": "historical_context_or_excluded_or_no_field_level_rationale", "t1_change_signal_eligible": false}
+{"action": "no_auto_update", "evidence_id": "CE-T1-4DB05E964D50AC61", "item_type": "t1_candidate", "reason": "historical_context_or_excluded_or_no_field_level_rationale", "t1_change_signal_eligible": true}
+{"action": "no_auto_update", "evidence_id": "CE-T1-3DC907538A406628", "item_type": "t1_candidate", "reason": "historical_context_or_excluded_or_no_field_level_rationale", "t1_change_signal_eligible": true}
+{"item_type": "rule", "passed": true, "rule": "keyword_only_trigger_forbidden"}

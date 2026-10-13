@@ -1,0 +1,4 @@
+﻿formal_hypothesis_id,author_authorization_sha256,evidence_count,supporting_evidence_count,supporting_source_count,all_evidence_ids_in_snapshot,minimum_source_requirement_passed
+HYP-T0-01,1b8d6a450720f0419c8d88fa3e74e41719a7f5702b01466997bfa81c2b3fb672,8,5,4,True,True
+HYP-T0-02,1b8d6a450720f0419c8d88fa3e74e41719a7f5702b01466997bfa81c2b3fb672,9,6,4,True,True
+HYP-T0-03,1b8d6a450720f0419c8d88fa3e74e41719a7f5702b01466997bfa81c2b3fb672,17,11,5,True,True

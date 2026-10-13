@@ -1,0 +1,375 @@
+Opportunities for Artificial Intelligence in Operational Medicine: Lessons from the United States Military
+
+Nikolai Rakhilin
+
+H Douglas Morris
+
+Dzung L Pham
+
+Maureen N Hood
+
+Vincent B Ho
+
+Author information
+
+Article notes
+
+Copyright and License information
+
+Correspondence: nikolai.rakhilin.ctr@usuhs.edu
+
+Roles
+
+Received 2025 Apr 10; Revised 2025 May 2; Accepted 2025 May 8; Collection date 2025 May.
+
+Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license ( https://creativecommons.org/licenses/by/4.0/ ).
+
+Abstract
+
+Conducted in challenging environments such as disaster or conflict areas, operational medicine presents unique challenges for the delivery of efficient and quality healthcare. It exposes first responders and medical personnel to many unexpected health risks and dangerous situations. To tackle these issues, artificial intelligence (AI) has been progressively incorporated into operational medicine, both on the front lines and also more recently in support roles. The ability of AI to rapidly analyze high-dimensional data and make inferences has opened up a wide variety of opportunities and increased efficiency for its early adopters, notably for the United States military, for non-invasive medical imaging and for mental health applications. This review discusses the current state of AI and highlights its broad array of potential applications in operational medicine as developed for the United States military.
+
+Keywords: artificial intelligence, machine learning, biomedical technology, bioengineering, disaster medicine, military medicine
+
+1. Background
+
+Artificial intelligence research is advancing at a rapid pace in conjunction with significant breakthroughs in the past few years that promise to revolutionize operational medicine. The AI field has seen substantial investment from and development by the United States (US) government and private industry, as exemplified by the USD 500 billion invested as part of the Project Stargate initiative in 2025 alone [ 1 ]. So far, AI systems have achieved remarkable capabilities, from being able to understand complex text (natural language processing, NLP) to interpreting unstructured visual inputs (computer vision) to using multimodal data to predict future events with high precision (predictive analytics) [ 2 ]. These capabilities have made them a vital part of the digital landscape, being integrated into robotics and AI assistants, such as Alexa or Siri, and enhancing our experience both on the internet and in daily life [ 3 , 4 ]. Tasks as complex as translating foreign text scribbled in a book can now be performed within seconds using AI on a portable device with a camera [ 5 ]. In the medical space, this also means that millions of pages of medical textbooks can be used to train an AI model that can prescribe medical treatments without provider input [ 6 ].
+
+With the recent advancements in computational power and algorithms, AI has become capable of not only imitating human decision-making but also generating unique content (Generative AI) [ 7 ]. By leveraging multi-layered algorithms and statistical models, it can identify multi-dimensional patterns in data without human supervision and minimal guidance. Depending on the corpus it is exposed to, this truly disruptive technology can then create its own text, images, video, programming code, and music [ 8 , 9 , 10 , 11 ]. While such AI still falls short of human-level general intelligence, it excels at narrow, specialized tasks when large amounts of digital data are available to train on, which makes it perfectly suited for medical analysis, especially pertaining to operational medicine [ 12 ].
+
+AI has slowly evolved from narrow algorithms to an indispensable tool integrated into numerous digital systems. It has become essential in the operational theater, where resources are limited and decisions need to be made rapidly. It is also incorporated into the lives of veterans, who need medical treatment after returning home. Here, we provide insights into these fields along with recommendations on how to be trained in using these new resources effectively.
+
+2. Early AI
+
+Early AI research focused on rule-based systems that laid the mathematical groundwork for large data analysis. Machine learning, which emerged in the 1950s, initially relied on statistical methods and simple algorithms to learn from data and generate predicted outcomes [ 13 ]. Widrow and Hoff applied these signal processing algorithms to create adaptive filters to isolate noise from communication systems [ 14 ]. As computational power increased and larger datasets became available, more complex models emerged. The concept of artificial neural networks, inspired by human brain architectures, was further expanded to allow for the recognition of patterns in images, demonstrated by Kohonen’s self-organizing map neural network, which could interpret map features without human guidelines (unsupervised learning) [ 15 ]. While remarkable for its time, this research had a limited impact due to the computational processing power constraints and digital data availability of the time [ 16 ].
+
+A breakthrough was made by Hinton in the mid-2000s with the introduction of deep learning, characterized by neural networks with multiple hidden layers (hence “deep”) [ 17 ]. Each layer progressively extracts higher-level features from the input, identifying more abstract patterns the deeper it goes. This approach aimed to further replicate the higher-order learning mechanisms of human brains, which contain millions of neurons working in parallel to deconstruct complex ideas into abstract ones. The use of these layers led to rapid advancements in areas like computer vision, NLP, and speech recognition, leading to the development of specialized deep learning models like convolutional neural networks (CNNs) and recurrent neural networks (RNNs). CNNs use sliding filters to extract grid-like data across multiple layers, making them optimal for image processing, while RNNs can handle sequential data by maintaining an internal memory, making them powerful tools for language and audio analysis. AlexNet was one of the first models to implement this unique CNN architecture, with five convolutional and three connected layers, combined with the increasing performance of GPUs (graphics processing units) to make a giant leap forward in image recognition efficiency, drastically outperforming other traditional computer vision models and positioning GPUs as a key component for future AI hardware [ 18 , 19 ].
+
+Another pivotal moment in the development of AI came in 2017 with the introduction of a transformer architecture, which revolutionized deep learning by providing self-attention mechanisms which can efficiently process relationships between different parts of the input data simultaneously [ 20 ]. This allowed for the faster analysis of high-resolution image and video data, enabling algorithms to implement billions of parameters simultaneously. This paved the way for the development of Large Language Models (LLMs) like Google’s BERT [ 21 ] in 2018 and OpenAI’s GPT-3 in 2020 [ 22 ], followed by ChatGPT-3 in 2022 [ 23 ], which were built on the principle of transformers. They demonstrated unprecedented language understanding and generation capabilities due to their scalable transformer architecture, increases in computational power, and massive digital repositories. The capabilities of AI are pushed further every year with more advancements, such as AI agents being incorporated into DeepSeek-R1 or the implementation of AI-specific hardware incorporated into NVIDIA GPUs (graphic processing units), drawing us closer to achieving the goal of artificial general intelligence (AGI) or superintelligence [ 24 , 25 , 26 ]. Thanks to these rapid developments and the widespread digitization of medical data, a diverse range of information (from sloppily written medical notes to high-resolution MRI scans) can now be efficiently incorporated into AI training datasets. The ability to process and learn from such varied data sources is increasingly being used to optimize patient care, streamline diagnostics, and support clinical decision-making.
+
+3. AI Health Applications in Austere Locations: Lessons from the US Military
+
+The military has long been an early adopter of technology for use in operational medicine. During the Civil War, the military introduced the use of the ambulance to transport wounded soldiers from the battlefield to treatment facilities [ 27 ]. This resulted in the creation of the first Ambulance Corps. Not surprisingly, the adoption of AI, including generative models, has also been a top priority for the US Department of Defense (DoD), which has had the responsibility of caring for 9.5 million patients [ 28 ]. This includes active-duty service members deployed globally, often to remote regions overseas, as well as those responding to natural disasters in North America or abroad.
+
+AI tools have potential benefits for both disaster relief and combat casualty care in conflict zones ( Figure 1 ). To take advantage of this technology, the US Army Futures Command set out a roadmap in 2022 on how it plans to have AI assist with decision-making in military medicine [ 29 ]. The roadmap included the use of AI-trained digital assistants to strategically prioritize patient treatments by analyzing extensive medical data, especially in scenarios with constrained resources or limited specialist availability. The DoD also sponsored a series of projects to develop novel AI-based technologies, many of which are summarized in Table 1 . In one of these, the Defense Advanced Research Projects Agency (DARPA) sponsored the development of the University of Pittsburgh’s TRACIR (Trauma Care In a Rucksack) program [ 30 ]. The model was trained on over 7000 prehospital trauma patient datasets from the University of Pittsburgh Medical Center’s StatMedEvac medical service to analyze patient trauma and provide predictive outcomes. An additional project, titled “In The Moment (ITM)”, aims to meet similar goals by providing a virtual medic on any battlefield to help with the triage of wounded patients [ 31 , 32 ]. Similar AI medic models are also being developed to be able to detect early symptoms of shock [ 33 ], tension pneumothorax [ 34 ], and even hemorrhage/traumatic brain injury [ 35 , 36 , 37 ], giving on-site medics crucial specialized patient care advice quickly to enable prompt decision-making and improve patient outcomes. These AI tools can also provide critical information on the anticipated outcomes (typically up to 60 min into the future) to both facilitate proper triage on a single-patient level and streamline the distribution of critical resources in cases of mass casualty events.
+
+Figure 1.
+
+Visualization of a neural network used in operational medicine. Neural networks can use a variety of data types ( left column) and process them across several layers, typically including an encoder, a bottleneck, and then a decoder, in which connected nodes are able to learn complex patterns. A trained network can then produce a wide array of outputs ( right column) that can facilitate the completion of tasks related to operational medicine.
+
+Table 1.
+
+Examples of AI systems that have either been implemented in operational medicine or are still in development.
+
+These AI systems also help predict the need for hospitalization or emergency surgical procedures, such as amputations, during the “golden hour” (within 60 min of the injury). While often necessary, emergency field amputations show a four-fold increased risk of cardiovascular disease (for lower-limb amputations at or above the knee), an increased risk of severe lower back pain by 31%, and can cause post-traumatic stress disorder (PTSD), with 50–80% of patients report phantom pain [ 47 ]. AI can be used to mitigate many of these outcomes by assessing the need for immediate amputation [ 48 ] and predicting the limb revascularization recovery outcomes [ 49 ]. Since providing point-of-care treatments is not always possible, AI has also been used to optimize the medical evacuation (MEDEVAC) of wounded patients to enhance efficiency, location, and dispatching procedures in recent warzones, such as in Afghanistan [ 50 ]. This time-sensitive decision-making has been an explicit priority for the US DoD since 2009, leading to a drop in military fatality rates from 13.7% to 7.6% by 2014 [ 51 ].
+
+Innovative AI approaches are being developed to enable the use of medical analytics, traditionally confined to hospitals, in operational medicine scenarios to improve patient triage and outcomes. The MySurgeryRisk model, developed by researchers at the University of Florida, is an AI model that was designed to predict the risks of several major postoperative complications, including sepsis, thromboembolism, and acute kidney injury, with 82–94% accuracy [ 52 ]. It is conceivable that AI tools, once developed and trained in hospital facilities in the US, could be adapted for and transferred for use in field hospitals or to more remote aid stations.
+
+AI is also being implemented in the Medical Common Operating Picture (MedCOP), which is an interactive platform that provides real-time operational medical information and analysis [ 40 ]. Additionally, it is being integrated into wearable sensors for use by service members. These sensors record data on service members’ biometrics, environmental exposure, location and movement, and biomechanical stress [ 53 ]. This approach, known as biosurveillance, offers commanders a powerful tool to assess the health and readiness of their troops [ 54 , 55 , 56 ]. Such rapid, portable decision-making tools not only provide near real-time health monitoring, but also allow for smaller, more flexible deployments without the need for a large complement of highly trained healthcare specialists within medical units. Properly developed and implemented AI healthcare solutions provide military planners with flexibility in planning deployments and/or enhance the efficient use of medical resources, which in remote locations are often in short supply.
+
+In military hospitals, AI can make a dramatic difference to clinical readiness and the early detection of potential risks for a medical disability. AI models can assess the current state of preparedness to identify weaknesses that can put service members at risk, resulting in both physical and mental injuries. One program, MITRE’s Medical Evaluation Readiness Information Toolset (MERIT) program [ 38 ], has contracts with the DoD to implement the prediction of the likelihood of service members entering the Disability Evaluation System (DES) within the next 6 months by analyzing digital military health data and correlating it with future outcomes. Other programs, such as MHS-GENESIS [ 44 ] and the Defense Innovation Unit’s Predictive Health algorithm [ 46 ], use AI to assist in military health screening by expanding the functionality of current medical software. These powerful programs can be digital canaries in the coalmine in identifying any potential medical issues in personnel and those undergoing training, ensuring troop readiness.
+
+4. AI for Military Medical Imaging
+
+Radiology plays a crucial role in providing critical, non-invasive medical data, especially in emergency medical and trauma settings. Over thirty years ago, the Digital Imaging and Communications in Medicine (DICOM) standard was adopted by Radiology Departments in the United States, including in the military, for the storage and exchange of digital medical images. The transition of medical imaging data from film to digital formats has enabled the development and application of AI tools. In addition to the DICOM standard, the DoD was also an early adopter of digital radiography and Picture Archiving and Communication System (PACS) technology, which facilitated its use of teleradiology [ 27 ]. Historically, this capability had been limited to major hospitals and low patient volumes due to the complexity of the equipment along with the need for specialized operators. AI-augmented radiology accelerates this process by facilitating or automating the acquisition and post-processing protocols, enabling the deployment of advanced radiology services in areas where they were otherwise unavailable.
+
+Admittedly, the majority of AI development and use in military radiology has remained primarily in medical centers, similarly to that in civilian hospitals. For X-Ray Computed Tomography (CT), a fixed number of X-ray photons is typically required to pass through each subject to sufficiently resolve the internal structures. Standard CT images require 100× the amount of radiation used to produce a single X-ray image to produce a 3D volume [ 57 ]. While their high-resolution output provides critical medical insights, it comes at the cost of increased radiation exposure. Implementing AI reconstruction systems by training them on low- and high-resolution images can reduce the X-ray exposure needed to produce an equivalent CT volume image. AI-enabled reconstructions can then produce a complete anatomical image with a lower noise floor. This streamlines the clinical workflow for the limited number of radiologists on site [ 58 , 59 , 60 ]. For example, the military has developed a deployable CT scanner (Philips Healthcare, Best, Netherlands) with built-in AI guidance for improved CT workflows, accuracy of scanning, and timely diagnosis [ 61 , 62 ].
+
+Compared to CT, Magnetic Resonance Imaging (MRI) does not cause any ionizing radiation exposure but needs significantly more time to produce an image, which limits the patient throughput. The use of AI-enabled MRI software (such as AUTOMAP) can reduce the image acquisition time, increase the resolution, and lower the noise floor in the resulting diagnostic image 1.5- to 4.5-fold, depending on the subject ( Figure 2 ) [ 63 ]. This is particularly important in portable low-magnetic-field MRI scanners (Hyperfine Swoop, Hyperfine, Inc., Guilford, CT, USA), which has an integrated AI system that can perform these tasks with minimal external support [ 64 ]. This low-magnetic field MR scanner is relatively mobile and can be deployed in a military hospital with minimal staff and resources in order to provide critical anatomical information on injured service members. Such portable systems are becoming much more advanced and common in large part due to the contribution of AI data processing models that can generate high-value images within the portable scanner’s limitations [ 65 , 66 , 67 , 68 , 69 ].
+
+Figure 2.
+
+Accelerated acquisition of MRI data using AI. The traditional collection of MRI frequency data (k-space) takes a long time ( left ). Undersampling the frequency data can reduce the acquisition time but produces a low-resolution output ( middle ). AI is able to process undersampled data rapidly to reconstruct high-resolution data ( right ).
+
+AI is expanding the capabilities and enhancing the throughput of radiologists in more remote operational settings. The recent increased emphasis on developing teleradiology platforms allows for the natural integration of AI, enabling an individual radiologist to virtually support many medical units [ 70 , 71 ]. AI is particularly helpful when addressing medical cases that have no discernible pathology, as it can filter and pre-process much of the raw information. This allows both radiologists and sometimes non-radiologist medical personnel with less specialized training to assist in image interpretation [ 72 , 73 ].
+
+5. AI for Mental Health
+
+The mental health of service members is a critical concern in operational medicine. Military service members and emergency personnel are routinely exposed to traumatic events and the suffering of others, which can have profound psychological impacts on as they witness the severity of the pain and suffering of the wounded victims of natural disasters or conflicts, leading to a higher incidence of mental illness and suicide [ 74 , 75 ]. Service members are often reluctant to share their concerns and desire to harm themselves with their peers or their healthcare providers. Not surprisingly, service members and veterans are more willing to post their concerns in support groups, notably on social media platforms, that are not part of their work environment and outside of their usual healthcare system. The use of AI to evaluate social media posts by service members and veterans is a novel application of AI for the identification of those with suicidal ideation and to improve prevention [ 45 ]. Using their RoBERTa AI model, Zuromski was able to evaluate the social media posts of service members and military veterans to identify individuals with a high likelihood of having suicidal thoughts and behavior (sensitivity, 0.85; specificity, 0.96; precision, 0.64). The ability to use a third-party social media website presents an opportunity to identify a need for and provide early intervention, potentially saving the lives of service members and first responders who otherwise may not be known to have suicidal ideation.
+
+AI can further provide assistance to veterans who have completed their service and are recovering. Recovery Engagement and Coordination for Health—Veterans Enhanced Treatment (REACH-VET) is an AI algorithm developed by the Department of Veterans Affairs (VA) in 2017 to evaluate the health of veterans who have returned home [ 39 , 76 ]. By examining veterans’ military health records, it can identify the top 0.1% of candidates who are most likely to be at risk for suicide, who can then be referred to VA coordinators who can help the veteran before it is too late, flagging 6700 veterans per month. Early intervention is key to the prevention of suicide, which is crucial since veterans are at a 57.3% higher risk of suicide than the general public, making it the second-leading cause of death among veterans [ 77 ].
+
+Beyond suicide prevention, the use of AI is crucial to ensuring veterans’ wellbeing and rehabilitation in a civilian environment. To identify PTSD in the early stages of its development, New York University’s Langone Health researchers have developed an AI-based algorithm to detect PTSD using speech-based markers with 89% accuracy [ 78 ]. To further provide mental health support to veterans at home, the military has invested in the development of AI chatbots trained in the treatment of mental health disorders, such ReflexAI’s HomeTeam [ 41 ] and the USC ICT’s (University of Southern California Institute for Creative Technologies) Ellie [ 42 ], that can help provide 24/7 emergency counseling to veterans experiencing a mental health crisis. This allows for the provision of mental health support around the clock. These tools are becoming vital to combat the ongoing crisis of suicide in veterans, though they still require caution by users and oversight by mental health professionals.
+
+As shown in the above examples, AI’s strongest asset is its ability to analyze vast amounts of data accurately and quickly, enabling rapid decision-making processes across multiple fields. Time-consuming tasks can be automated thanks to AI, and unlike past algorithms, it can be applied to more complex datasets including audio, video, and images. Furthermore, with increased amounts of data, AI systems can improve their performance and optimize their output, leading to further improvement. As such, since 2018, the DoD has invested in the JAIC (Joint Artificial Intelligence Center) to further accelerate the adoption of AI to improve missions’ efficacy [ 43 ]. With the new developments, these flexible systems can be used in the field, on base, and back home to help millions of service members make crucial medical decisions regardless of their location.
+
+6. Limitations of AI
+
+Currently, AI still faces significant limitations in its use. Most crucially, an AI network is only as good as the dataset that it is trained on and the knowledge of the subject matter experts being consulted during the development of the algorithm. The training dataset, moreover, is created and selected by the consulting subject matter experts, and thus the collection and accurate annotation of data is potentially affected by human error. Biased, limited, or inconsistent datasets can lead AI to make poor decisions or overly simplified determinations in novel situations that are not part of the training set. A biased group of patients, skewed either by their race, age, or other characteristics, may also cause the AI network to draw inaccurate conclusions with a massive medical impact [ 79 ]. Deep learning models can potentially overcome these concerns by expanding their training database, such as how ChatGPT-3 is being trained on a massive dataset of 45 Terabytes of compressed plaintext [ 80 ], while the 15-year dataset in the US Joint Trauma System Department of Defense Trauma Registry (DoDTR) contains only 0.017 Gigabytes of data, despite including over 140,000 patient records [ 81 , 82 ]. Such a large dataset is difficult to obtain in large part due to legitimate concerns related to patient privacy and surveillance, as medical data HIPAA protections and privacy laws ensure that AI algorithms do not exploit people’s personal data for their training without consent.
+
+To avoid infringing on personal data, large public (and private) databases have been established that can be used for AI training [ 83 , 84 , 85 ]. Additionally, the usage of information-dense imaging data and changing the method of data collection to automated digital inputs can minimize the impact of bias. However, even with a large dataset, implementing AI in a new, untested environment is always risky due to undetected bias, so rigorous testing is essential to ensure reliable results.
+
+Once trained, the use of AI in the field may be limited by access to resources, such as power and internet connectivity. Despite recent rapid advances in AI hardware and models, most advanced models are optimized for high-power GPUs, which limits their portability or may mean they require an internet connection [ 86 ]. As such, developments in satellite internet connectivity have been critical in the distribution of personalized AI for service members [ 87 ].
+
+The other main concern regarding AI is the “black box” nature of AI, which makes it challenging to follow the decision-making logic of AI systems, thus further reducing trust in the system. This can become a security liability, limiting its compliance with military communication and security requirements. While new approaches, like Explainable Artificial Intelligence (XAI) [ 88 ], are being implemented to allow for a clearer trail of logic, many AI systems often sacrifice clarity for accuracy and efficiency.
+
+Lastly, while AI is helpful in generating medical advice and analyzing data, final patient care decisions require human input to ensure ethical implementation and quality control when dealing with medically critical events. As such, in 2020 the US Department of Defense (DoD) set out ethical principles for AI focused on five core pillars: governable, reliable, traceable, equitable, and responsible AI [ 89 ]. With NATO nations closely following suit [ 90 ], these principles will help if actively enforced and updated with the breakneck changes in AI development. Oversight, both system-wide and on a local device basis, ensures that these systems emulate the decision-making of military physicians and contribute to bettering medical care in the field [ 91 ].
+
+7. Future of AI
+
+Despite its limitations, AI will undoubtedly play a crucial role in operational medicine moving forward as the world becomes more digitized and data continues to be generated at increasingly fast rates. On the battlefield or in the aftermath of a natural disaster, AI has the potential to put medical knowledge in the palm of every service member or relief worker, rapidly imparting triage advice and performing diagnostics when outside assistance or the availability of more specialized healthcare personnel is limited. In hospitals, robotic surgeons are being trained to perform precise, repetitive tasks, while AI models are being trained on ultra-high-resolution medical imaging data to detect injuries and diseases to allow for early intervention. Post-deployment, AI is already being used for monitoring service member and veteran wellbeing, tracking a deluge of medical data from wearables, social media, and internet-of-things devices to identify medical complications before they occur.
+
+In order for AI to be adopted in practice, it needs to be reliably integrated into the healthcare workforce of tomorrow. New medical students are now being trained on how AI functions and implementing AI in their work, with up to 50% of radiology practices saying that they already use or plan to use AI in their practices [ 92 ]. At the Uniformed Services University, medical residents are being exposed to AI technology to interpret X-rays and histopathology slides, not only making them familiar with the software, but teaching them its strengths and pitfalls [ 93 ]. Considering that the current amount of medical knowledge doubles every 75 days, leveraging AI will be crucial for physicians to maintain and improve the quality of care for service members [ 94 ].
+
+8. How to Get Started in the World of AI
+
+While designing large, cutting-edge LLMs requires teams of specialists, getting started in the world of AI is simpler than ever before. The military has also expressed interest in increasing their involvement in the digital space. For those without programming experience, testing out existing AI models can be a useful entry point to understand and test their limits. Chatbots employing AI, such as OpenAI’s ChatGPT, Microsoft’s Copilot, Google’s Gemini, and Perplexity’s Perplexity, allow users to generate advanced programs based on prompts [ 95 ]. This is taken a step further by text-to-image AIs, such as Canva’s AI Image Generator, Adobe’s Firefly, or DeepAI’s Text2Img, and then even further with the recent developments in text-to-video AIs, such as Runway’s GEN-2, Midjourney, and OpenAI’s Sora [ 96 , 97 ].
+
+To get deeper into the programming aspect of AI, it is best to develop strong programming skills in Python, which is the most common language in AI development ( Figure 3 ). Afterwards, obtain experience in machine learning-specific packages, such as TensorFlow, PyTorch, and scikit-learn. These packages will give you the tools needed to build your first machine learning platform and perform predictive analysis. To hone your skills in using these tools, Kaggle provides free repositories of datasets and pre-trained models for users to test their projects and collaborate using Kaggle Notebooks. Kaggle courses and challenges can help new users implement their programming skills and test their models.
+
+Figure 3.
+
+Roadmap for getting started in AI. To implement AI, one can start by exploring AI platforms, progressing to using essential Python packages, taking courses, composing an ML algorithm, incorporating data from publicly available datasets, processing data using more advanced AI techniques, and staying involved in recent AI developments through conferences and publications.
+
+Further learning can be achieved through a plethora of online courses and certificates offered by top universities and companies. Universities, such as Stanford University, the University of California, Berkeley, Carnegie Mellon University, Cornell University, and Columbia University, offer courses in beginner and advanced machine learning development [ 98 , 99 , 100 , 101 , 102 , 103 , 104 ]. This selection is further expanded by companies and non-profit organizations such as Google, Kaggle, Microsoft, and IBM, among others [ 105 , 106 , 107 , 108 ]. These courses and practice datasets can help both beginners and advanced users begin to design the next generation of AI systems and help promote the health of service members both at home and abroad [ 109 ].
+
+9. Summary
+
+Operational medicine involves healthcare delivery in resource-constrained environments, such as after major hurricanes and wildfires or in active warzones. In such instances, the rapid delivery of quality medical care is critical and requires speedy assessment and clinical decision-making. The ability of AI tools to provide expert medical knowledge, analysis, and advice will greatly improve the ability to care for the injured and allow healthcare workers to focus their efforts on those who require the most urgent care. Through the use of a multitude of tools either in development or already being implemented, the U.S. military has embraced AI for its application in healthcare and presents excellent use cases for civilian relief applications. Civilian relief organizations are assuredly not far behind in terms of their recognition of the improved efficiency that AI provides for operational medicine.
+
+Abbreviations
+
+The following abbreviations are used in this manuscript:
+
+Author Contributions
+
+Conceptualization, N.R., M.N.H., and V.B.H.; writing—original draft preparation, N.R., H.D.M., and V.B.H.; writing—review and editing, N.R., D.L.P., H.D.M., M.N.H., and V.B.H.; supervision, V.B.H. All authors have read and agreed to the published version of the manuscript.
+
+Informed Consent Statement
+
+Not applicable.
+
+Conflicts of Interest
+
+The opinions and assertions expressed herein are those of the authors and do not necessarily reflect the official policy or position of the Uniformed Services University of the Health Sciences or the Department of Defense.
+
+Correction Statement
+
+This article has been republished with a minor correction to the image quality of figures 1 and 3. This change does not affect the scientific content of the article.
+
+Funding Statement
+
+This research received no external funding.
+
+Footnotes
+
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.
+
+References
+
+1. Marshall C. Here’s What’s in ‘Stargate’, the $500-Billion Trump-Endorsed Plan to Power U.S. AI. Scientific American. Jan 22, 2025.
+
+2. Sarker I.H. Deep Learning: A Comprehensive Overview on Techniques, Taxonomy, Applications and Research Directions. SN Comput. Sci. 2021;2:420. doi: 10.1007/s42979-021-00815-1. [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ]
+
+3. Living in a brave new AI era. Nat. Hum. Behav. 2023;7:1799. doi: 10.1038/s41562-023-01775-7. [ DOI ] [ PubMed ] [ Google Scholar ]
+
+4. Makridakis S. The forthcoming Artificial Intelligence (AI) revolution: Its impact on society and firms. Futures. 2017;90:46–60. doi: 10.1016/j.futures.2017.03.006. [ DOI ] [ Google Scholar ]
+
+5. Martin S. Advancements in Neural Machine Translation: Techniques and Applications. Acad. Pinnacle. 2024;7:5767–5772. [ Google Scholar ]
+
+6. Ilicki J. Challenges in evaluating the accuracy of AI-containing digital triage systems: A systematic review. PLoS ONE. 2022;17:e0279636. doi: 10.1371/journal.pone.0279636. [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ]
+
+7. Brophy E., Wang Z., She Q., Ward T. Generative Adversarial Networks in Time Series: A Systematic Literature Review. ACM Comput. Surv. 2023;55:1–31. doi: 10.1145/3559540. [ DOI ] [ Google Scholar ]
+
+8. Bengesi S., El-Sayed H., Sarker K., Houkpati Y., Irungu J., Oladunni T. Advancements in Generative AI: A Comprehensive Review of GANs, GPT, Autoencoders, Diffusion Model, and Transformers. IEEE Access. 2024;12:69812–69837. doi: 10.1109/ACCESS.2024.3397775. [ DOI ] [ Google Scholar ]
+
+9. Li Y., Choi D., Chung J., Kushman N., Schrittwieser J., Leblond R., Eccles T., Keeling J., Gimeno F., Dal Lago A., et al. Competition-level code generation with AlphaCode. Science. 2022;378:1092–1097. doi: 10.1126/science.abq1158. [ DOI ] [ PubMed ] [ Google Scholar ]
+
+10. Civit M., Civit-Masot J., Cuadrado F., Escalona M.J. A systematic review of artificial intelligence-based music generation: Scope, applications, and future trends. Expert Syst. Appl. 2022;209:118190. doi: 10.1016/j.eswa.2022.118190. [ DOI ] [ Google Scholar ]
+
+11. Singer U., Polyak A., Hayes T., Yin X., An J., Zhang S., Hu Q., Yang H., Ashual O., Gafni O., et al. Make-A-video: Text-to-video generation without textvideo data. arXiv. 20222209.14792 [ Google Scholar ]
+
+12. Zhang P., Kamel Boulos M.N. Generative AI in Medicine and Healthcare: Promises, Opportunities and Challenges. Future Internet. 2023;15:286. doi: 10.3390/fi15090286. [ DOI ] [ Google Scholar ]
+
+13. Boden M.A. AI: Its Nature and Future. Oxford University Press; Oxford, UK: 2016. [ Google Scholar ]
+
+14. Widrow B., Hoff M.E. Proceedings of the 1960 IRE WESCON, Convention Record. IRE; New York, NY, USA: Adaptive switching circuits; 1960 IRE WESCON Convention Record; pp. 96–104. [ Google Scholar ]
+
+15. Kohonen T. The self-organizing map. Proc. IEEE. 1990;78:1464–1480. doi: 10.1109/5.58325. [ DOI ] [ Google Scholar ]
+
+16. Rumelhart D., McClelland J., Feldman J.A. Parallel Distributed Processing Volume 1: Explorations in the Microstructure of Cognition: Foundations. The MIT Press; Cambridge, MA, USA: 1986. [ Google Scholar ]
+
+17. Hinton G.E., Osindero S., Teh Y.W. A fast learning algorithm for deep belief nets. Neural Comput. 2006;18:1527–1554. doi: 10.1162/neco.2006.18.7.1527. [ DOI ] [ PubMed ] [ Google Scholar ]
+
+18. ImageNet Large Scale Visual Recognition Competition 2012 (ILSVRC2012) [(accessed on 1 April 2025)]. Available online: https://image-net.org/challenges/LSVRC/2012/results.html .
+
+19. Krizhevsky A., Sutskever I., Hinton G.E. ImageNet Classification with Deep Convolutional Neural Networks. Adv. Neural Inf. Process. Syst. 2012;25:1097–1105. doi: 10.1145/3065386. [ DOI ] [ Google Scholar ]
+
+20. Viswani A., Shazeer N., Parmar N., Uszkoreit J., Jones L., Gomez A.N., Kaiser L., Polosukhin I. Attention is all you need. Adv. Neural Inf. Process. Syst. 2017;30:6000–6010. [ Google Scholar ]
+
+21. Devlin J., Chang M.W., Lee K., Toutanova K. Bert: Pre-training of deep bidirectional transformers for language understanding. arXiv. 20181810:04805 [ Google Scholar ]
+
+22. Brown T.B., Mann B., Ryder N., Subbiah M., Kaplan J., Dhariwal P., Neelakantan A., Shyam P., Sastry G., Askell A., et al. Language models are few-shot learners. Adv. Neural Inf. Process. Syst. 2020;33:1877–1901. [ Google Scholar ]
+
+23. Ray P.P. ChatGPT: A comprehensive review on background, applications, key challenges, bias, ethics, limitations and future scope. Internet Things Cyber-Phys. Syst. 2023;3:121–154. doi: 10.1016/j.iotcps.2023.04.003. [ DOI ] [ Google Scholar ]
+
+24. Guo D., Yang D., Zhang H., Song J., Zhang R., Xu R., Zhu Q., Ma S., Wang P., Bi X., et al. DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning. arXiv. 2025 doi: 10.1038/s41586-025-09422-z.2501.12948 [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ]
+
+25. Davies M., McDougall I., Anandaraj S., Machchhar D., Jain R., Sankaralingam K. A Journey of a 1,000 Kernels Begins with a Single Step: A Retrospective of Deep Learning on GPUs; Proceedings of the 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems; La Jolla, CA, USA. 27 April–1 May 2024; pp. 20–36. [ Google Scholar ]
+
+26. Duenas T., Ruiz D. The Path to Superintelligence: A Critical Analysis of OpenAI’s Five Levels of AI Progression.pdf. ResearchGate. 2024 doi: 10.13140/RG.2.2.33794.70085. [ DOI ] [ Google Scholar ]
+
+27. Mogel G.T. The role of the Department of Defense in PACS and telemedicine research and development. Comput. Med. Imaging Graph. 2003;27:129–135. doi: 10.1016/S0895-6111(02)00086-1. [ DOI ] [ PubMed ] [ Google Scholar ]
+
+28. Benedetto J., Serving Over 9.5 Million Service Members, Retirees, and their Families Web Video. [(accessed on 1 April 2025)]. Available online: https://www.dvidshub.net/video/943224/dha-sizzle-2024 .
+
+29. Army Futures Command . Army Futures Command Concept for Medical 2028. Army Futures Command; Austin, TX, USA: 2022. [ Google Scholar ]
+
+30. Poropatich R.K., Pinsky M.R. Robotics Enabled Autonomous and Closed Loop Trauma Care in a Rucksack. Healthc. Transform. 2020 doi: 10.1089/heat.2019.0007. [ DOI ] [ Google Scholar ]
+
+31. Developing Trustworthy AI to Inform Decision When Every Moment Counts. [(accessed on 1 April 2025)]. Available online: https://www.darpa.mil/news/2023/trustworthy-ai .
+
+32. Molineaux M., Weber R.O., Floyd M.W., Menager D., Larue O., UAddison U., Kulhanek R., Reifsnyder N., Rauch C., Mainali M., et al. Aligning to Human Decision-Makers in Military Medical Triage; In Proceedings of ICCBR 2024; Mérida, Mexico. 1 July 2024. [ Google Scholar ]
+
+33. Nemeth C., Amos-Binks A., Burris C., Keeney N., Pinevich Y., Pickering B.W., Rule G., Laufersweiler D., Herasevich V., Sun M.G. Decision Support for Tactical Combat Casualty Care Using Machine Learning to Detect Shock. Mil. Med. 2021;186:273–280. doi: 10.1093/milmed/usaa275. [ DOI ] [ PubMed ] [ Google Scholar ]
+
+34. Sommer A., Mark N., Kohlberg G.D., Gerasi R., Avraham L.W., Fan-Marko R., Eisenkraft A., Nachman D. Hemopneumothorax detection through the process of artificial evolution—A feasibility study. Mil. Med. Res. 2021;8:27. doi: 10.1186/s40779-021-00319-2. [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ]
+
+35. Jin X., Frock A., Nagaraja S., Wallqvist A., Reifman J. AI algorithm for personalized resource allocation and treatment of hemorrhage casualties. Front. Physiol. 2024;15:1327948. doi: 10.3389/fphys.2024.1327948. [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ]
+
+36. Lang E., Neuschwander A., Fave G., Abback P.S., Esnault P., Geeraerts T., Harrois A., Hanouz J.L., Kipnis E., Leone M., et al. Clinical decision support for severe trauma patients: Machine learning based definition of a bundle of care for hemorrhagic shock and traumatic brain injury. J. Trauma Acute Care Surg. 2022;92:135–143. doi: 10.1097/TA.0000000000003401. [ DOI ] [ PubMed ] [ Google Scholar ]
+
+37. Stallings J.D., Laxminarayan S., Yu C., Kapela A., Frock A., Cap A.P., Reisner A.T., Reifman J. Appraise-Hri: An Artificial Intelligence Algorithm for Triage of Hemorrhage Casualties. Shock. 2023;60:199–205. doi: 10.1097/SHK.0000000000002166. [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ]
+
+38. Schiavone D. MERIT Delivers on Its Name with AI to Improve Military Medical Readiness. [(accessed on 1 April 2025)]. Available online: https://www.mitre.org/news-insights/impact-story/merit-delivers-on-its-name-ai-improves-military-medical-readiness .
+
+39. McCarthy J.F., Cooper S.A., Dent K.R., Eagan A.E., Matarazzo B.B., Hannemann C.M., Reger M.A., Landes S.J., Trafton J.A., Schoenbaum M., et al. Evaluation of the Recovery Engagement and Coordination for Health-Veterans Enhanced Treatment Suicide Risk Modeling Clinical Program in the Veterans Health Administration. JAMA Netw. Open. 2021;4:e2129900. doi: 10.1001/jamanetworkopen.2021.29900. [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ]
+
+40. Fact Sheet: Medical Common Operation Picture (MedCOP) Joint Operational Medicine Information Systems Program Office; Arlington, VA, USA: 2023. [ Google Scholar ]
+
+41. ReflexAI Introduces HomeTeam to Revolutionize Veteran Mental Health Support. [(accessed on 1 April 2025)]. Available online: https://www.globenewswire.com/news-release/2023/11/08/2776353/0/en/ReflexAI-Introduces-HomeTeam-to-Revolutionize-Veteran-Mental-Health-Support.html .
+
+42. Rizzo A.A., Scherer S., DeVault D., Gratch J., Artstein R., Hartholt A., Lucas G., Marsella S., Morbini F., Nazarian A., et al. Detection and Computational Analysis of Psychological Signals Using a Virtual Human Interviewing Agent; Proceedings of the 10th International Conference on Disability, Virtual Reality & Associated Technologies; Gothenburg, Sweden. 2–4 September 2014; pp. 73–82. [ Google Scholar ]
+
+43. Doubleday J. DOD wants $75 million to establish Joint AI Center, forecasts $1.7B over six years. Inside Defense. 2018;34:1–8. [ Google Scholar ]
+
+44. Noack D. USMEPCOM Invests in AI to Aide Prescreen Process. [(accessed on 1 April 2025)]. Available online: https://www.mepcom.army.mil/Media/News-and-Press-Releases/Article-View/Article/3547681/usmepcom-invests-in-ai-to-aide-prescreen-process/
+
+45. Zuromski K.L., Low D.M., Jones N.C., Kuzma R., Kessler D., Zhou L., Kastman E.K., Epstein J., Madden C., Ghosh S.S., et al. Detecting suicide risk among U.S. servicemembers and veterans: A deep learning approach using social media data. Psychol. Med. 2024;54:3379–3388. doi: 10.1017/S0033291724001557. [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ]
+
+46. Lopez C.T. Defense Innovation Unit Teaching Artificial Intelligence to Detect Cancer. DOD News. Aug 24, 2020.
+
+47. Robbins C.B., Vreeman D.J., Sothmann M.S., Wilson S.L., Oldridge N.B. A review of the long-term health outcomes associated with ware-related amputation. Mil. Med. 2009;174:588–592. doi: 10.7205/MILMED-D-00-0608. [ DOI ] [ PubMed ] [ Google Scholar ]
+
+48. Siavash B., Thompson D., Siskind S., Bilge K.D., Patel V.M., Mussa F.F. Cleaning Up the MESS: Can Machine Learning Be Used to Predict Lower Extremity Amputation after Trauma-Associated Arterial Injury? J. Am. Coll. Surg. 2020;232:102–113. doi: 10.1016/j.jamcollsurg.2020.09.014. [ DOI ] [ PubMed ] [ Google Scholar ]
+
+49. Perkins Z.B., Yet B., Sharrock A., Rickard R., Marsh W., Rasmussen T.E., Tai N.R.M. Predicting the Outcome of Limb Revascularization in Patients With Lower-extremity Arterial Trauma. Ann. Surg. 2020;272:564–572. doi: 10.1097/SLA.0000000000004132. [ DOI ] [ PubMed ] [ Google Scholar ]
+
+50. Biswas S., Turan H., Elsawah S., Richmond M., Cao T. The future of military medical evacuation: Literature analysis focused on the potential adoption of emerging technologies and advanced decision-analysis techniques. J. Def. Model. Simul. 2023;2023:15485129231207660. doi: 10.1177/15485129231207660. [ DOI ] [ Google Scholar ]
+
+51. Kotwal R.S., Howard J.T., Orman J.A., Tarpey B.W., Bailey J.A., Champion H.R., Mabry R.L., Holcomb J.B., Gross K.R. The Effect of a Golden Hour Policy on the Morbidity and Mortality of Combat Casualties. JAMA Surg. 2016;151:15–24. doi: 10.1001/jamasurg.2015.3104. [ DOI ] [ PubMed ] [ Google Scholar ]
+
+52. Bihorac A., Ozrazgat-Baslanti T., Ebadi A., Motaei A., Madkour M., Pardalos P.M., Lipori G., Hogan W.R., Efron P.A., Moore F., et al. MySurgeryRisk: Development and Validation of a Machine-learning Risk Algorithm for Major Complications and Death After Surgery. Ann. Surg. 2019;269:652–662. doi: 10.1097/SLA.0000000000002706. [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ]
+
+53. Four Q. The Future of Warfare: AI-Powered Biometric Wearables Revolutionizing Soldier Performance. [(accessed on 1 April 2025)]. Available online: https://quadrantfour.com/perspective/the-future-of-warfare-ai-powered-biometric-wearables-revolutionizing-soldier-performance .
+
+54. Oliveto R., Lazich A., Torricelli L., Picariello F., Ceccarelli R., Torchitti P., Boldi F., De Vito L., Tudosa I., Picariello F., et al. MIPHAS: Military Performances and Health Analysis System; Proceedings of the 13th International Joint Conference on Biomedical Engineering Systems and Technologies; Valletta, Malta. 24–26 February 2020; pp. 198–207. [ Google Scholar ]
+
+55. Chioma V.A., Nweke H.F., Ikegwu A.C., Egwuonwu C.A., Onu F.U., Alo U.R., Teh Y.W. Mobile and wearable sensors for data-driven health monitoring system: State-of-the-art and future prospect. Expert Syst. Appl. 2022;202:117362. doi: 10.1016/j.eswa.2022.117362. [ DOI ] [ Google Scholar ]
+
+56. Xiao X., Yin J., Xu J., Tat T., Chen J. Advances in Machine Learning for Wearable Sensors. ACS Nano. 2024;2024:22734–22751. doi: 10.1021/acsnano.4c05851. [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ]
+
+57. Lyu P., Li Z., Chen Y., Wang H., Liu N., Liu J., Zhan P., Liu X., Shang B., Wang L., et al. Deep learning reconstruction CT for liver metastases: Low-dose dual-energy vs standard-dose single-energy. Eur. Radiol. 2024;34:28–38. doi: 10.1007/s00330-023-10033-3. [ DOI ] [ PubMed ] [ Google Scholar ]
+
+58. Caruso D., De Santis D., Tremamunno G., Santangeli C., Polidori T., Bona G.G., Zerunian M., Del Gaudio A., Pugliese L., Laghi A. Deep learning reconstruction algorithm and high-concentration contrast medium: Feasibility of a double-low protocol in coronary computed tomography angiography. Eur. Radiol. 2024;35:2213–2221. doi: 10.1007/s00330-024-11059-x. [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ]
+
+59. Dissaux B., Le Floch P.Y., Robin P., Bourhis D., Couturaud F., Salaun P.Y., Nonent M., Le Roux P.Y. Pulmonary perfusion by iodine subtraction maps CT angiography in acute pulmonary embolism: Comparison with pulmonary perfusion SPECT (PASEP trial) Eur. Radiol. 2020;30:4857–4864. doi: 10.1007/s00330-020-06836-3. [ DOI ] [ PubMed ] [ Google Scholar ]
+
+60. Seeram E. Computed Tomography Image Reconstruction. Radiol. Technol. 2020;92:155CT–169CT. [ PubMed ] [ Google Scholar ]
+
+61. Next Generation CT Scanner Launched for Military Use. [(accessed on 1 April 2025)]. Available online: https://www.defenseadvancement.com/news/next-generation-ct-scanner-launched-for-military-use/
+
+62. Philips Optimizes CT Workflows with In-House AI, Launches CT 5300 in North America at #RSNA2024. [(accessed on 7 May 2025)]. Available online: https://www.usa.philips.com/a-w/about/news/archive/standard/news/press/2024/philips-optimizes-ct-workflows-with-in-house-ai-launches-ct-5300-in-north-america-at-rsna2024.html .
+
+63. Kirsh D. FDA Clears Hyperfine’s AI Software for Improved Image Quality on Portable MRI System. [(accessed on 7 May 2025)]. Available online: https://www.massdevice.com/fda-clears-hyperfines-ai-software-for-improved-image-quality-on-portable-mri-system/
+
+64. Mertz L. Ultra-High to Ultra-Low: MRI Goes to Extremes. [(accessed on 1 April 2025)]. Available online: https://www.embs.org/pulse/articles/ultra-high-to-ultra-low-mri-goes-to-extremes/
+
+65. Donnay C., Okar S.V., Tsagkas C., Gaitan M.I., Poorman M., Reich D.S., Nair G. Super resolution using sparse sampling at portable ultra-low field MR. Front. Neurol. 2024;15:1330203. doi: 10.3389/fneur.2024.1330203. [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ]
+
+66. Lotan E., Morley C., Newman J., Qian M., Abu-Amara D., Marmar C., Lui Y.W. Prevalence of Cerebral Microhemorrhage following Chronic Blast-Related Mild Traumatic Brain Injury in Military Service Members Using Susceptibility-Weighted MRI. AJNR Am. J. Neuroradiol. 2018;39:1222–1225. doi: 10.3174/ajnr.A5688. [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ]
+
+67. Arnold T.C., Tu D., Okar S.V., Nair G., By S., Kawatra K.D., Robert-Fitzgerald T.E., Desiderio L.M., Schindler M.K., Shinohara R.T., et al. Sensitivity of portable low-field magnetic resonance imaging for multiple sclerosis lesions. Neuroimage Clin. 2022;35:103101. doi: 10.1016/j.nicl.2022.103101. [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ]
+
+68. Almansour H., Herrmann J., Gassenmaier S., Lingg A., Nickel M.D., Kannengiesser S., Arberet S., Othman A.E., Afat S. Combined Deep Learning-based Super-Resolution and Partial Fourier Reconstruction for Gradient Echo Sequences in Abdominal MRI at 3 Tesla: Shortening Breath-Hold Time and Improving Image Sharpness and Lesion Conspicuity. Acad. Radiol. 2023;30:863–872. doi: 10.1016/j.acra.2022.06.003. [ DOI ] [ PubMed ] [ Google Scholar ]
+
+69. Gore J.C. Artificial intelligence in medical imaging. Magn. Reson. Imaging. 2020;68:A1–A4. doi: 10.1016/j.mri.2019.12.006. [ DOI ] [ PubMed ] [ Google Scholar ]
+
+70. Langlotz C.P. The Future of AI and Informatics in Radiology: 10 Predictions. Radiology. 2023;309:e231114. doi: 10.1148/radiol.231114. [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ]
+
+71. Hosny A., Parmar C., Quackenbush J., Schwartz L.H., Aerts H. Artificial intelligence in radiology. Nat. Rev. Cancer. 2018;18:500–510. doi: 10.1038/s41568-018-0016-5. [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ]
+
+72. Morales M.A., Manning W.J., Nezafat R. Present and Future Innovations in AI and Cardiac MRI. Radiology. 2024;310:e231269. doi: 10.1148/radiol.231269. [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ]
+
+73. Johnson P.M., Chandarana H. AI-powered Diagnostics: Transforming Prostate Cancer Diagnosis with MRI. Radiology. 2024;312:e241009. doi: 10.1148/radiol.241009. [ DOI ] [ PubMed ] [ Google Scholar ]
+
+74. Bryan C.J., Griffith J.E., Pace B.T., Hinkson K., Bryan A.O., Clemans T.A., Imel Z.E. Combat Exposure and Risk for Suicidal Thoughts and Behaviors Among Military Personnel and Veterans: A Systematic Review and Meta-Analysis. Suicide Life-Threat. Behav. 2015;45:633–649. doi: 10.1111/sltb.12163. [ DOI ] [ PubMed ] [ Google Scholar ]
+
+75. Nichter B., Stein M.B., Norman S.B., Hill M.L., Straus E., Haller M., Pietrzak R.H. Prevalence, correlates, and treatment of suicidal behavior in US military veterans: Results from the 2019–2020 National Health and Resilience in Veterans Study. J. Clin. Psychiatry. 2021;82:20m13714. doi: 10.4088/JCP.20m13714. [ DOI ] [ PubMed ] [ Google Scholar ]
+
+76. Kessler R.C., Hwang I., Hoffmire C.A., McCarthy J.F., Petukhova M.V., Rosellini A.J., Sampson N.A., Schneider A.L., Bradley P.A., Katz I.R., et al. Developing a practical suicide risk prediction model for targeting high-risk patients in the Veterans health Administration. Int. J. Methods Psychiatr. Res. 2017;26:e1575. doi: 10.1002/mpr.1575. [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ]
+
+77. Howard J.T., Stewart I.J., Amuan M.E., Janak J.C., Howard K.J., Pugh M.J. Trends in Suicide Rates Among Post-9_11 US Military Veterans With and Without Traumatic Brain Injury From 2006-2020.pdf. JAMA Neurol. 2023;80:1117–1119. doi: 10.1001/jamaneurol.2023.2893. [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ]
+
+78. Marmar C.R., Brown A.D., Qian M., Laska E., Siegel C., Li M., Abu-Amara D., Tsiartas A., Richey C., Smith J., et al. Speech-based markers for posttraumatic stress disorder in US veterans. Depress. Anxiety. 2019;36:607–616. doi: 10.1002/da.22890. [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ]
+
+79. Kleinberg G., Diaz M.J., Batchu S., Lucke-Wold B. Racial underrepresentation in dermatological datasets leads to biased machine learning models and inequitable healthcare. J. Biomed. Res. 2022;3:42–47. [ Google Scholar ]
+
+80. Kocon R., Cichecki I., Kaszyca O., MKochanek M., Szydlo D., Baran J., Bielaniewicz J., Gruza M., Janz A., Kanclerz K., et al. ChatGPT: Jack of all trades, master of none. Inf. Fusion. 2023;99:101861. doi: 10.1016/j.inffus.2023.101861. [ DOI ] [ Google Scholar ]
+
+81. Dohnam B.P. Data Desert: Military Medicine’s Artificial Intelligence Implementation Barriers. [(accessed on 1 April 2025)]. Available online: https://military-medicine.com/article/4256-data-desert-military-medicine-s-artificial-intelligence-implementation-barriers.html .
+
+82. Joint Trauma System—Registries. [(accessed on 1 April 2025)]. Available online: https://jts.health.mil/index.cfm/data/registries .
+
+83. Sudlow C., Gallacher J., Allen N., Beral V., Burton P., Danesh J., Downey P., Elliott P., Green J., Landray M., et al. UK biobank: An open access resource for identifying the causes of a wide range of complex diseases of middle and old age. PLoS Med. 2015;12:e1001779. doi: 10.1371/journal.pmed.1001779. [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ]
+
+84. Marc D.T., Khairat S.S. Integrating Information Technology and Management for Quality of Care. Vol. 202. IOS Press; Amsterdam, The Netherlands: Medical Subject Headings (MeSH) for indexing and retrieving open-source healthcare data. [ PubMed ] [ Google Scholar ]
+
+85. Bertin-Mahieux T., Ellis D.P.W., Whitman B., Lamere P. The Million Song Dataset; In Proceedings of 12th International Society for Music Information Retrieval Conference; Miami, FL, USA. 24–28 October 2011. [ Google Scholar ]
+
+86. Talib M.A., Majzoub S., Nasir Q., Jamal D. A systematic literature review on hardware implementation of artificial intelligence algorithms. J. Supercomput. 2021;77:1897–1938. doi: 10.1007/s11227-020-03325-8. [ DOI ] [ Google Scholar ]
+
+87. Baen M. Army Tests Commercial Satellite Internet in Pilot Program. [(accessed on 30 April 2025)]. Available online: https://www.army.mil/article/254316/army_tests_commercial_satellite_internet_in_pilot_program .
+
+88. Gunning D., Stefik M., Choi J., Miller T., Tumpf S., Yang G.Z. XAI—Explainable artificial intelligence. Sci. Robot. 2019;4:1404. doi: 10.1126/scirobotics.aay7120. [ DOI ] [ PubMed ] [ Google Scholar ]
+
+89. DOD Adopts Ethical Principles for Artificial Intelligence. [(accessed on 1 April 2025)]; Available online: https://www.defense.gov/News/Releases/Release/Article/2091996/dod-adopts-ethical-principles-for-artificial-intelligence/
+
+90. Summary of the NATO Artificial Intelligence Strategy. [(accessed on 1 April 2025)]. Available online: https://www.nato.int/cps/en/natohq/official_texts_187617.htm .
+
+91. Baker A., Perov Y., Middleton K., Baxter J., Mullarkey D., Sangar D., Butt M., DoRosario A., Johri S. A Comparison of Artificial Intelligence and Human Doctors for the Purpose of Triage and Diagnosis. Front. Artif. Intell. 2020;3:543405. doi: 10.3389/frai.2020.543405. [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ]
+
+92. Allen B., Agarwal S., Coombs L., Wald C., Dreyer K. 2020 ACR Data Science Institute Artificial Intelligence Survey. J. Am. Coll. Radiol. 2021;18:1153–1159. doi: 10.1016/j.jacr.2021.04.002. [ DOI ] [ PubMed ] [ Google Scholar ]
+
+93. Spirnak J.R., Antani S. The Need for Artificial Intelligence Curriculum in Military Medical Education. Mil. Med. 2024;189:954–958. doi: 10.1093/milmed/usad412. [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ]
+
+94. Densen P. Challenges and opportunities facing medical education. Trans. Am. Clin. Climatol. Assoc. 2011;122:48–58. [ PMC free article ] [ PubMed ] [ Google Scholar ]
+
+95. Under C.D. The AI Search Revolution: Perplexity AI vs. Google Gemini vs. ChatGPT. [(accessed on 1 April 2025)]. Available online: https://medium.com/@cognidownunder/the-ai-search-revolution-perplexity-ai-vs-google-gemini-vs-chatgpt-e435caa726e3 .
+
+96. Hachman M. The Best AI Art Generators: Bring your Wildest Dreams to Life. PC World; London, UK: 2023. [ Google Scholar ]
+
+97. Liu Y., Zhang K., Li Y., Yan Z., Gao C., Chen R., Yuan Z., Huang Y., Sun H., Gao J., et al. Sora: A Review on Background, Technology, Limitations, and opportunities of Large Vision Models. arXiv. 20242402.17177 [ Google Scholar ]
+
+98. Stanford Machine Learning Specialization. [(accessed on 1 April 2025)]. Available online: https://www.coursera.org/specializations/machine-learning-introduction .
+
+99. Machine Learning: Fundamentals and Algorithms. [(accessed on 1 April 2025)]. Available online: https://execonline.cs.cmu.edu/machine-learning .
+
+100. Professional Certificate in Machine Learning and Artificial Intelligence. [(accessed on 1 April 2025)]. Available online: https://em-executive.berkeley.edu/professional-certificate-machine-learning-artificial-intelligence .
+
+101. Applied Machine Learning. [(accessed on 1 April 2025)]. Available online: https://online-exec.cvn.columbia.edu/applied-machine-learning .
+
+102. Machine Learninig Cornell Certificate Program. [(accessed on 1 April 2025)]. Available online: https://ecornell.cornell.edu/certificates/technology/machine-learning/
+
+103. AI & Machine Learning Bootcamp. [(accessed on 1 April 2025)]. Available online: https://pg-p.ctme.caltech.edu/ai-machine-learning-bootcamp-online-certification-course .
+
+104. Certificate in Machine Learning. [(accessed on 1 April 2025)]. Available online: https://www.pce.uw.edu/certificates/machine-learning .
+
+105. Google Machine Learning Education. [(accessed on 1 April 2025)]. Available online: https://developers.google.com/machine-learning .
+
+106. Intro to Machine Learning. [(accessed on 1 April 2025)]. Available online: https://www.kaggle.com/learn/intro-to-machine-learning .
+
+107. Artificial Intelligence for Beginners. [(accessed on 1 April 2025)]. Available online: https://microsoft.github.io/AI-For-Beginners/
+
+108. Machine Learning with Python. [(accessed on 1 April 2025)]. Available online: https://www.coursera.org/learn/machine-learning-with-python .
+
+109. Rodriguez C.O. MOOCs and the AI-Stanford Like Courses: Two Successful and Distinct Course Formats for Massive Open Online Courses. Eur. J. Open Distance E-Learn. 2012:1–13. [ Google Scholar ]

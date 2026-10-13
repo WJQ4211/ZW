@@ -1,0 +1,8 @@
+{
+  "approved": false,
+  "artifact": "evidence_snapshot_T0",
+  "case_id": "synthetic_military_ai",
+  "gate": "G1_T0",
+  "notes": "Fill this file and pass it back with the gate-specific approval option.",
+  "reviewer": ""
+}

@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-b2c79174-ca03-48a7-b7b7-be75c486dd83",
+  "object": "chat.completion",
+  "created": 1787718433,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"normalized_claim\": \"2021年4月的AI基线清单包含685个与AI活动相关的项目和行项目账户。\"}"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 234,
+    "total_tokens": 262,
+    "completion_tokens": 28,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

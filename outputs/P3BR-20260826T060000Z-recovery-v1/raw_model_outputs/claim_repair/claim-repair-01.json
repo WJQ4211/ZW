@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-c019b703-f984-4d5e-af60-6cf4fda880f5",
+  "object": "chat.completion",
+  "created": 1787717810,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"normalized_claim\": \"2021年4月的AI基线清单包含685个项目和预算科目，涉及AI相关活动。\"}"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 234,
+    "total_tokens": 262,
+    "completion_tokens": 28,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

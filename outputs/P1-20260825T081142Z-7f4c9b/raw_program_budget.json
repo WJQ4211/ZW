@@ -1,0 +1,47 @@
+{
+  "run_id": "P1-20260825T081142Z-7f4c9b",
+  "case_id": "us_military_ai_deployment",
+  "stage": "P1",
+  "group": "program_budget",
+  "raw_searches": [
+    {
+      "query_id": "P1-PB-DARPA-01",
+      "query_text": "AI enabled radios mission autonomy AI agents",
+      "source_domain": "darpa.mil/api/search",
+      "raw_total": 1080,
+      "page_size_saved": 10,
+      "results": [
+        {"title":"DARPA Eyes Adaptive, Real-Time Processors for Future AI-Enabled Radios","url":"/news/2022/ai-enabled-radios","type":"news","summary":"The unlimited demand for more devices at higher speeds ensures that the future wireless spectrum will be increasingly crowded and complex. A promising way to deal with this complexity is RF (radio frequency) autonomy, where radios use artificial intelligence (AI) to sense the spectrum and adapt to the perceived environment."},
+        {"title":"CODE","url":"/research/programs/collaborative-operations-in-denied-environment","type":"program","summary":"The U.S. military&rsquo;s investments in unmanned aircraft systems (UAS) have proven invaluable for missions ranging from intelligence, surveillance and reconnaissance (ISR) to tactical strike, but most current systems demand continuous control by a dedicated pilot and sensor operator supported by numerous telemetry-linked analysts."},
+        {"title":"GatorWings Wins DARPA Spectrum Collaboration Challenge","url":"/news/2019/gatorwings-wins-spectrum-challenge","type":"news","summary":"DARPA today announced that GatorWings, a team of undergraduate students, Ph.D. candidates, and professors from the University of Florida are the winners of the Spectrum Collaboration Challenge (SC2) &ndash; a three-year competition to unlock the true potential of the radio frequency (RF) spectrum with artificial intelligence (AI)."},
+        {"title":"PROWESS: Processor Reconfiguration for Wideband Spectrum Sensing","url":"/research/programs/processor-reconfiguration-for-wideband-spectrum-sensing","type":"program","summary":"The unlimited demand for more devices at higher speeds ensures that the future wireless spectrum will be increasingly crowded and complex. A promising way to deal with this complexity is RF (radio frequency) autonomy, where radios use artificial intelligence (AI) to sense the spectrum and adapt to the perceived environment."},
+        {"title":"SABER","url":"/research/programs/saber-securing-artificial-intelligence","type":"program","summary":"The Securing Artificial Intelligence for Battlefield Effective Robustness (SABER) program aims to build an exemplar AI red team equipped with the necessary counter-AI techniques, tools, and technical competency to operationally assess AI-enabled battlefield systems."},
+        {"title":"Benjamin Grosof","url":"/about/people/benjamin-grosof","type":"staff","summary":"Benjamin Grosof, Ph.D., has interests in artificial intelligence foundations that include meta logic programs; scalability; deeply combining logical knowledge representation and reasoning with machine learning and natural language (e.g., neuro-symbolic); explainability and interpretability; trustworthiness and critical thinking; autonomy, and human-machine interaction."},
+        {"title":"DARPA Announces Final Teams to Compete in Spectrum Collaboration Challenge Championship Event","url":"/news/2019/spectrum-collaboration-challenge-event","type":"news","summary":"DARPA today announced the 10 teams that have qualified for the Championship Event of the Spectrum Collaboration Challenge (SC2) &ndash; a three-year contest to unlock the potential of the radio frequency (RF) spectrum using artificial intelligence (AI)."},
+        {"title":"SBIR: ALIAS Missionized Autonomy for Emergency Services - SBIR XL","url":"/research/programs/alias-missionized-autonomy-for-emergency-services","type":"program","summary":"The objective of the SBIR effort focuses on development and demonstration of missionized autonomy for emergency services, initially focusing on autonomous wildfire response using autonomous Manned-Unmanned Teaming (MUM-T) and integrated sensing technologies."},
+        {"title":"DARPA’s REMA Program to Add Mission Autonomy to Commercial Drones","url":"/news/2024/mission-autonomy","type":"news","summary":"Commercial drone technology is advancing rapidly, providing cost-effective and robust capabilities for a variety of civil and military missions. DARPA&rsquo;s Rapid Experimental Missionized Autonomy (REMA) program aims to enable a drone to autonomously continue its predefined mission when connection to the operator is lost."},
+        {"title":"DARPA, U.S. Air Force fly AI-controlled F-16","url":"/news/2026/darpa-us-air-force-fly-ai-controlled-f-16","type":"news","summary":"Historic VENOM milestone demonstrates scalable AI development capabilities for the operational fleet."}
+      ]
+    },
+    {
+      "query_id": "P1-PB-CSET-01",
+      "query_text": "contracts",
+      "source_domain": "cset.georgetown.edu/wp-json/wp/v2/document",
+      "raw_total": 10,
+      "page_size_saved": 10,
+      "results": [
+        {"id":20613,"date":"12/16/2024 01:00:09","title":"AI and the Future of Workforce Training","link":"https://cset.georgetown.edu/publication/ai-and-the-future-of-workforce-training/","slug":"ai-and-the-future-of-workforce-training"},
+        {"id":20358,"date":"11/20/2024 08:27:00","title":"Funding the AI Cloud — Amazon, Alphabet, and Microsoft&#8217;s Cloud Computing Investments, Part 3","link":"https://cset.georgetown.edu/publication/funding-the-ai-cloud-amazon-alphabet-and-microsofts-cloud-computing-investments-part-3/","slug":"funding-the-ai-cloud-amazon-alphabet-and-microsofts-cloud-computing-investments-part-3"},
+        {"id":19825,"date":"10/15/2024 00:01:07","title":"Fueling China’s Innovation: The Chinese Academy of Sciences and Its Role in the PRC’s S&amp;T Ecosystem","link":"https://cset.georgetown.edu/publication/fueling-chinas-innovation-the-chinese-academy-of-sciences-and-its-role-in-the-prcs-ecosystem/","slug":"fueling-chinas-innovation-the-chinese-academy-of-sciences-and-its-role-in-the-prcs-ecosystem"},
+        {"id":19661,"date":"10/03/2024 00:03:28","title":"Through the Chat Window and Into the Real World: Preparing for AI Agents","link":"https://cset.georgetown.edu/publication/through-the-chat-window-and-into-the-real-world-preparing-for-ai-agents/","slug":"through-the-chat-window-and-into-the-real-world-preparing-for-ai-agents"},
+        {"id":19568,"date":"09/13/2024 16:20:09","title":"Beijing Municipal Action Plan to Promote &#8220;AI+&#8221; (2024-2025)","link":"https://cset.georgetown.edu/publication/beijing-ai-plan-2024-2025/","slug":"beijing-ai-plan-2024-2025"},
+        {"id":19282,"date":"08/13/2024 11:34:58","title":"Building the Tech Coalition","link":"https://cset.georgetown.edu/publication/building-the-tech-coalition/","slug":"building-the-tech-coalition"},
+        {"id":19223,"date":"08/07/2024 16:51:00","title":"Interim Measures of Shanghai Municipality for the Administration of Disruptive Technology Innovation Projects","link":"https://cset.georgetown.edu/publication/shanghai-disruptive-tech-project-interim-regs/","slug":"shanghai-disruptive-tech-project-interim-regs"},
+        {"id":19014,"date":"07/03/2024 15:35:50","title":"Xi Jinping: Speech at the Nationwide S&amp;T Conference, National Science and Technology Awards Conference, and the Conference of Academicians of CAS and CAE (June 24, 2024)","link":"https://cset.georgetown.edu/publication/xi-jinping-cas-cae-conference-speech-2024/","slug":"xi-jinping-cas-cae-conference-speech-2024"},
+        {"id":18868,"date":"06/20/2024 00:05:52","title":"A Quantitative Assessment of Department of Defense S&amp;T Publication Collaborations","link":"https://cset.georgetown.edu/publication/a-quantitative-assessment-of-department-of-defense-st-publication-collaborations/","slug":"a-quantitative-assessment-of-department-of-defense-st-publication-collaborations"},
+        {"id":18782,"date":"06/18/2024 00:13:10","title":"China&#8217;s Military AI Roadblocks","link":"https://cset.georgetown.edu/publication/chinas-military-ai-roadblocks/","slug":"chinas-military-ai-roadblocks"}
+      ]
+    }
+  ],
+  "raw_result_note": "Search-result fields are preserved as returned by the public search endpoints. They were used for discovery only; title/date/publisher verification was performed on original pages recorded in source_manifest_t0.csv."
+}

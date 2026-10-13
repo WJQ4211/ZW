@@ -1,0 +1,28 @@
+T1证据候选抽取。只使用下面提供的T1原文，不使用外部知识。
+研究问题：以公开、非密材料为依据，研究2025年1月1日至2026年6月30日期间，美国军用人工智能能力形成、应用部署和体系化发展的公开可观察变化。
+来源ID：T1-DAF-001
+标题：DAF releases data, AI strategies to accelerate military dominance
+发布日期：2026-04-22
+输出JSON数组；每条只表达一个可核查事实或明确主张。每条必须恰好包含以下8个字段：source_id, source_locator, excerpt_original, excerpt_zh, normalized_claim, evidence_nature, coding_dimensions, topics。不得输出其他字段；允许输出空数组；每份来源最多6条。source_id必须与给定来源一致；source_locator必须是给定定位。excerpt_original必须逐字连续来自给定段落；normalized_claim使用中文且不得扩大主体、行动、数字、范围或结果；excerpt_zh必须非空。evidence_nature只能使用单一枚举值，coding_dimensions和topics必须是字符串数组。不要把目标写成结果、把演示或试验写成部署、把预算或合同直接写成规模化能力。
+证据性质定义：
+- goal: 计划、目标、拟议能力或未来安排，不等于已经实现。
+- governance_event: 已经发生的政策、职责、指南或组织治理机制建立。
+- resource_input: 已经发生的预算、合同、采购、数据、人才或基础设施投入。
+- test_event: 测试、演示、演习或竞赛发生及其参与主体、配置。
+- test_result: 测试中明确观察到的功能、性能或结果。
+- deployment_event: 明确已经部署、实装、投入运行或持续使用。
+- constraint: 限制能力形成、部署或评估的已报告条件。
+- evaluation: 来源明确给出的评估、判断或评价，不改写为客观结果。
+编码维度定义：
+- integration_level: 跨项目、跨平台、跨军种或企业级系统集成的程度。
+- application_maturity: 从目标、演示、试验到部署和持续使用的应用成熟度。
+- human_machine_authority: 人机在任务中的权责、授权、监督与决策关系。
+- engineering_resource_conditions: 数据、算力、基础设施、人才、预算、采办和保障条件。
+- trust_governance_constraints: 可信性、安全、测试评估、责任、治理约束及制度落地。
+- organizational_system_fit: 组织运用、流程、任务适配和体系制度环境的匹配程度。
+原文段落：
+[web_paragraph_0001] DAF releases data, AI strategies to accelerate military dominance
+[web_paragraph_0002] Published April 22, 2026
+[web_paragraph_0003] Office of the Chief Data and AI Officer
+[web_paragraph_0004] The Office of the Chief Data and Artificial Intelligence Officer for the Department of the Air Force announced, April 20, the public release of the DAF Data and AI Strategies .
+[web_paragraph_0005] These strategies provide a strategic roadmap for the department to become an AI-first force, operationalizing data and AI as decisive force multipliers and strategic assets to maintain air and space dominance from the boardroom to the battlefield. The unified framework accelerates both enterprise and combat capabilities, providing decisive decision advantage over near-peer adversaries. These strategies are directly aligned with the 2026 National Defense Strategy and the 2026 AI Strategy for the Department of War , specifically supporting the Secretary of War’s priorities of reviving the warrior ethos and reestablishing deterrence through technological superiority. “Our focus is not on developing AI for its own sake, but on rapidly delivering tangible, combat-ready capabilities that solve real-world operational problems,” said Secretary of the Air Force Troy Meink in the AI Strategy’s forward. “By becoming an AI-first force, we will empower our warfighters to out-think, out-maneuver, and out-pace any adversary.” The guiding documents establish AI priorities across several different mission areas, ranging from training and readiness to multi-domain operations. Recognizing that data is the ammunition of modern warfare, the strategies emphasize treating data as a strategic asset and by adopting a decentralized data architecture, the DAF provides warfighters with trusted data at the speed of mission. “In today's complex global security environment, data and artificial intelligence are no longer support functions—they are the foundation of our strategic overmatch” said Susan Davenport , the DAF’S chief data and AI officer. “Execution of these strategies ensure the Department of the Air Force remains agile and decisively ahead of pacing threats.” The implementation of these strategies directly advances the CDAO’s FY2026 goal to institutionalize data and AI as core mission components. This effort builds on Secretary of War’s “Speed Wins” priority, maintaining an unrelenting pace in delivering AI-powered capabilities into the hands of operators today to secure the fight of tomorrow.

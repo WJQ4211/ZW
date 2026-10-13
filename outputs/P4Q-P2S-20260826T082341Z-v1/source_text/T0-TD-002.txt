@@ -1,0 +1,25 @@
+DARPA’s Robotic Autonomy in Complex Environments with Resiliency (RACER) program recently conducted its third experiment to assess the performance of off-road unmanned vehicles. These test runs, conducted March 12-27, included the first with completely uninhabited RACER Fleet Vehicles (RFVs), with a safety operator overseeing in a supporting chase vehicle. The goal of the RACER program is to demonstrate autonomous movement of combat-scale vehicles in complex, mission-relevant off-road environments that are significantly more unpredictable than on-road conditions.
+
+The multiple courses were in the challenging and unforgiving terrain of the Mojave Desert at the U.S. Army’s National Training Center (NTC) in Ft. Irwin, California. As at the previous events, teams from Carnegie Mellon University, NASA’s Jet Propulsion Laboratory, and the University of Washington participated. Additionally, researchers from the Army Research Laboratory demonstrated the flexibility of the performer team’s autonomy software, critical to transitioning RACER capabilites to the services. This completed the project’s first phase.
+
+“At Experiment Three, we successfully demonstrated significant improvements in our off-road speeds while simultaneously reducing any interaction with the vehicle during test runs,” said Stuart Young , RACER program manager in DARPA’s Tactical Technology Office . “We were also honored to have representatives from the Army and Marine Corps at the experiment to facilitate transition of technologies developed in RACER to future service unmanned initiatives and concepts.”
+
+During the most recent experiment, teams completed more than 55 driverless runs of between roughly four and 11 miles each, reaching speeds of about 25 miles per hour. The performers completed 246 miles over 24.6 total hours on course with a robotic fleet of 12 RFVs. The terrain at Fort Irwin provided a number of obstacles, such as large and small rocks, bushes, ditches, and trees, which limited vehicle speed and, if improperly navigated, could completely disable it. Success depended upon how teams perceived the terrain, planned paths, and controlled their robotic vehicles at high average speeds.
+
+Last month’s experiment followed earlier experiments in March 2022 and September 2022 at NTC and at Camp Roberts, California, respectively. At those events, the teams tested their autonomous software stacks developed for the RACER program using DARPA-provided robot systems in a variety of environments, after development runs on their own in various locations across the U.S.
+
+“We provided the performers RACER fleet vehicles with common performance, sensing, and compute. This enables us to evaluate the performance of the performer team autonomy software in similar environments and compare it to human performance,” said Young. “During this latest experiment, we continued to push vehicle limits in perceiving the environments to greater distances, enabling further increase in speeds and better adaptation to newly encountered environmental conditions that will continue into RACER’s next phase.”
+
+Phase 2 will focus on maturing software stacks and testing autonomy over longer off-road courses with fewer interventions. The participating team or teams will port implementations of their autonomy solutions onto large-scale demonstration platforms, which will be representative of a combat-scale vehicle. They will also be required to increase speeds to twice that of the first phase performance metrics.
+
+&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;nbsp;
+
+Photo Gallery
+
+# # #
+
+Media with inquiries should contact DARPA Public Affairs at outreach@darpa.mil
+
+Associated images posted on www.darpa.mil and video posted at www.youtube.com/darpatv may be reused according to the terms of the DARPA User Agreement .
+
+Tweet @darpa

@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-81a228c4-c8c1-4290-a4c1-65ac0add700b",
+  "object": "chat.completion",
+  "created": 1787712007,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n  {\n    \"source_id\": \"T0-IR-006\",\n    \"source_locator\": \"pdf_page_30\",\n    \"excerpt_original\": \"According to the Director of the JAIC, the updated DOD AI Strategy is needed as the JAIC shifts its focus from adoption of AI capabilities to integration.\",\n    \"excerpt_zh\": \"根据JAIC主任的说法，更新后的DOD AI战略是必要的，因为JAIC正将其重点从采用AI能力转向整合。\",\n    \"normalized_claim\": \"JAIC的工作重点正从采用AI能力转向整合。\",\n    \"coding_dimensions\": {\n      \"application_maturity\": \"概念战略\",\n      \"engineering_resource_conditions\": null,\n      \"human_machine_authority\": null,\n      \"integration_level\": \"体系级集成\",\n      \"organizational_system_fit\": null,\n      \"trust_governance_constraints\": null\n    },\n    \"evidence_nature\": \"goal\",\n    \"topics\": [\"战略目标\"]\n  }\n]\n```"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10671,
+    "total_tokens": 10893,
+    "completion_tokens": 222,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

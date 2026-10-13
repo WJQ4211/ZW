@@ -1,0 +1,137 @@
+{
+  "affected_fields": [
+    "judgment",
+    "boundary_conditions[0]"
+  ],
+  "boundary_conditions": [
+    "该判断适用于2022-2026年6月间的战略规划与组织建设阶段，仅评估治理架构的规划与建设状态，不评估具体任务项目的技术成熟度，也不将治理目标的设定视为治理结果的实现。T1新增的部门战略目标、局部单位应用和测试约束仅用于限定判断范围，不构成跨军种共用底座已形成的证据。"
+  ],
+  "confidence": "medium",
+  "counter_evidence": [
+    {
+      "evidence_id": "CE-T1-DCF49FC6CBC68958",
+      "importance": "low",
+      "relation": "limit",
+      "target_field": "boundary_conditions[0]",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-AA937CC0AF5E2372",
+      "importance": "low",
+      "relation": "limit",
+      "target_field": "boundary_conditions[0]",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-B40332E796F16865",
+      "importance": "low",
+      "relation": "limit",
+      "target_field": "boundary_conditions[0]",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-7239909FC989F79A",
+      "importance": "low",
+      "relation": "limit",
+      "target_field": "boundary_conditions[0]",
+      "version": 1
+    }
+  ],
+  "evidence_field_changes": [
+    {
+      "after": "T1证据继续支持治理与整合目标存在，但新增材料主要是战略目标、局部运用和测试约束，尚不足以证明跨军种共用底座已经形成。",
+      "before": "T1证据继续支持治理与整合目标存在，但新增材料主要是战略目标、局部运用和测试约束，尚不足以证明跨军种共用底座已经形成。",
+      "change_reason": "T1新增的部门战略目标证据进一步确认治理目标存在，但未改变判断核心，仅强化了目标层面的支持。",
+      "new_evidence_ids": [
+        "CE-T1-02DFF1DCD73E8F93",
+        "CE-T1-050BC7E34C88F297",
+        "CE-T1-2995ED3DEF557C50",
+        "CE-T1-B5C396D3278023D1",
+        "CE-T1-CEACB21D2A3F685C",
+        "CE-T1-A66D49255D61B484"
+      ],
+      "target_field": "judgment"
+    },
+    {
+      "after": "该判断适用于2022-2026年6月间的战略规划与组织建设阶段，仅评估治理架构的规划与建设状态，不评估具体任务项目的技术成熟度，也不将治理目标的设定视为治理结果的实现。T1新增的部门战略目标、局部单位应用和测试约束仅用于限定判断范围，不构成跨军种共用底座已形成的证据。",
+      "before": "该判断适用于2022-2024年间的战略规划与组织建设阶段，仅评估治理架构的规划与建设状态，不评估具体任务项目的技术成熟度，也不将治理目标的设定视为治理结果的实现。",
+      "change_reason": "T1新增的局部单位应用证据显示层级差异，用于限定体系整合外推边界，时间范围扩展至2026年6月。",
+      "new_evidence_ids": [
+        "CE-T1-DCF49FC6CBC68958",
+        "CE-T1-AA937CC0AF5E2372",
+        "CE-T1-B40332E796F16865",
+        "CE-T1-7239909FC989F79A"
+      ],
+      "target_field": "boundary_conditions[0]"
+    }
+  ],
+  "falsifiers": [
+    "若在2026年12月前JCF达到全面作战能力并实现跨军种数据共享，则本观点不成立。",
+    "若出现CDAO治理已对具体任务项目产生可验证的实质性牵引（如项目方向调整、资源重新分配）的成果记录，则本观点不成立。",
+    "若后续A/B级材料显示跨军种共用平台实际迁移并形成可复用工程流程，则需重新评估。"
+  ],
+  "information_gaps": [
+    "缺乏JCF在2023-2026年间运行状态和用户使用情况的具体数据。",
+    "缺乏CDAO治理对具体任务项目产生实际影响的成果记录或评估报告。",
+    "缺乏跨军种共用平台实际迁移和形成可复用工程流程的证据。"
+  ],
+  "judgment": "T1证据继续支持治理与整合目标存在，但新增材料主要是战略目标、局部运用和测试约束，尚不足以证明跨军种共用底座已经形成。",
+  "key_assumptions": [
+    "CDAO的设立和JCF的规划文件代表了统一治理目标的设定，而非治理结果的实现。",
+    "JCF的延迟和路线图未定表明统一平台尚未达到全面作战能力，治理目标尚未转化为实际牵引。",
+    "T1新增的部门战略和局部单位应用属于治理目标或局部试验，不能直接外推为跨军种共用底座已形成。"
+  ],
+  "mechanism_claims": [
+    "CDAO作为继任机构，通过发布战略文件和建立平台来推动统一治理，但该机制受制于资源约束和合同问题，尚未形成对任务项目的有效牵引。治理目标的设定与治理结果的实现之间存在明确落差。"
+  ],
+  "supporting_evidence": [
+    {
+      "evidence_id": "CE-T1-02DFF1DCD73E8F93",
+      "importance": "medium",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-050BC7E34C88F297",
+      "importance": "medium",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-2995ED3DEF557C50",
+      "importance": "medium",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-B5C396D3278023D1",
+      "importance": "medium",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-CEACB21D2A3F685C",
+      "importance": "medium",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-A66D49255D61B484",
+      "importance": "medium",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    }
+  ],
+  "uncertainties": [
+    "JCF的全面作战能力时间表未确定，其实际运行效果未知。",
+    "CDAO治理架构在2024年后是否产生实质性牵引效果尚无法评估。",
+    "T1新增的部门战略和局部应用在2026年6月后的实际推进程度未知。"
+  ],
+  "update_rationale": "T1新增证据均为部门战略目标或局部单位应用，属于治理目标或局部试验层面，不构成跨军种共用底座已形成的直接证据。判断核心维持不变，仅将时间边界扩展至2026年6月，并明确局部应用证据仅用于限定外推边界。"
+}

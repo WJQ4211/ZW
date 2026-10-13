@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-d4624355-973d-4377-9b88-e07d7ee8a8fe",
+  "object": "chat.completion",
+  "created": 1787712742,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n  {\n    \"source_id\": \"T0-TD-007\",\n    \"source_locator\": \"web_paragraph_0006\",\n    \"excerpt_original\": \"The Army deployed and operationalized AIDP rapidly to units in all priority theaters in under 12 months, showing just how important this new and improved intel tool is to Soldiers and DoD.\",\n    \"excerpt_zh\": \"陆军在不到12个月的时间内迅速向所有优先战区部署并投入使用AIDP，这表明这一新的改进型情报工具对士兵和国防部的重要性。\",\n    \"normalized_claim\": \"陆军在不到12个月内向所有优先战区部署并投入使用AIDP。\",\n    \"coding_dimensions\": [\"application_maturity\", \"integration_level\"],\n    \"evidence_nature\": \"deployment_event\",\n    \"topics\": [\"AIDP部署\", \"陆军情报\"]\n  },\n  {\n    \"source_id\": \"T0-TD-007\",\n    \"source_locator\": \"web_paragraph_0007\",\n    \"excerpt_original\": \"“24 months ago, we were testing AIDP with intel units stateside trying to stress the system and fine tune the system to meet the needs of intel soldiers,” Brig. Gen. Ed Barker, the Program Executive Officer for Intelligence, Electronic Warfare, and Sensors said.\",\n    \"excerpt_zh\": \"“24个月前，我们正与国内情报部队一起测试AIDP，试图对系统进行压力测试并微调系统以满足情报士兵的需求，”情报、电子战和传感器项目执行官Ed Barker准将说。\",\n    \"normalized_claim\": \"24个月前，AIDP正在美国国内情报部队中进行压力测试和微调。\",\n    \"coding_dimensions\": [\"application_maturity\"],\n    \"evidence_nature\": \"test_event\",\n    \"topics\": [\"AIDP测试\", \"陆军情报\"]\n  },\n  {\n    \"source_id\": \"T0-TD-007\",\n    \"source_locator\": \"web_paragraph_0008\",\n    \"excerpt_original\": \"AIDP sets the foundation for future technology integration such as big data analytics, artificial intelligence & machine learning.\",\n    \"excerpt_zh\": \"AIDP为未来技术集成（如大数据分析、人工智能和机器学习）奠定了基础。\",\n    \"normalized_claim\": \"AIDP为未来集成大数据分析、人工智能和机器学习等技术奠定基础。\",\n    \"coding_dimensions\": [\"goal\", \"integration_level\"],\n    \"evidence_nature\": \"goal\",\n    \"topics\": [\"AIDP\", \"人工智能集成\"]\n  },\n  {\n    \"source_id\": \"T0-TD-007\",\n    \"source_locator\": \"web_paragraph_0012\",\n    \"excerpt_original\": \"AIDP’s automation capabilities help maintain a comprehensive operational picture and allows for better, more responsive handling of information during multi-domain operations because it is always gathering and processing data.\",\n    \"excerpt_zh\": \"AIDP的自动化能力有助于维护全面的作战态势图，并能在多域作战中更好、更及时地处理信息，因为它始终在收集和处理数据。\",\n    \"normalized_claim\": \"AIDP的自动化能力有助于维护全面的作战态势图，并在多域作战中更好地处理信息。\",\n    \"coding_dimensions\": [\"application_maturity\", \"integration_level\"],\n    \"evidence_nature\": \"test_result\",\n    \"topics\": [\"AIDP自动化\", \"多域作战\"]\n  },\n  {\n    \"source_id\": \"T0-TD-007\",\n    \"source_locator\": \"web_paragraph_0012\",\n    \"excerpt_original\": \"Additionally, AIDP is the first major Army Intel program to fully deploy in the Army Intel Cloud environment.\",\n    \"excerpt_zh\": \"此外，AIDP是第一个在陆军情报云环境中全面部署的主要陆军情报项目。\",\n    \"normalized_claim\": \"AIDP是首个在陆军情报云环境中全面部署的主要陆军情报项目。\",\n    \"coding_dimensions\": [\"application_maturity\", \"integration_level\"],\n    \"evidence_nature\": \"deployment_event\",\n    \"topics\": [\"AIDP部署\", \"云环境\"]\n  }\n]\n```"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2848,
+    "total_tokens": 3748,
+    "completion_tokens": 900,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

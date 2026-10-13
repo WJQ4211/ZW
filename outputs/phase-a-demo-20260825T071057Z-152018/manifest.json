@@ -1,0 +1,28 @@
+{
+  "artifact_hashes": {
+    "data\\snapshots\\SNAP-synthetic_military_ai-T1-f97219be4909.json": "4c4db0451e050d98b4ccfd3b355da38ede46491b735b79a4a9b3954b9a47a8fd"
+  },
+  "artifacts": {
+    "evidence_snapshot": "data\\snapshots\\SNAP-synthetic_military_ai-T1-f97219be4909.json"
+  },
+  "case_id": "synthetic_military_ai",
+  "code_version": "workspace-source-b430cd537bc8dbea",
+  "config_hash": null,
+  "gate": "G1_T1",
+  "input_files": {},
+  "manifest_version": "phase-a.1",
+  "mode": "synthetic_manual_json",
+  "model_client": null,
+  "phase": "T1",
+  "reproducibility": {
+    "input_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "llm_called": false,
+    "python": "3.11.7"
+  },
+  "run_id": "phase-a-demo-20260825T071057Z-152018",
+  "snapshot_hashes": {},
+  "snapshots": [
+    "SNAP-synthetic_military_ai-T1-f97219be4909"
+  ],
+  "stage": "A"
+}

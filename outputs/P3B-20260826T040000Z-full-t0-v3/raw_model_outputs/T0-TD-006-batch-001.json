@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-fa50412b-6009-48d4-a05b-e8ed8437521b",
+  "object": "chat.completion",
+  "created": 1787712718,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n  {\n    \"source_id\": \"T0-TD-006\",\n    \"source_locator\": \"web_paragraph_0011\",\n    \"excerpt_original\": \"This is the challenge of ‘onboard AI’: running AI directly on a device or system without additional backend compute support.\",\n    \"excerpt_zh\": \"这就是‘机载AI’的挑战：直接在设备或系统上运行AI，而无需额外的后端计算支持。\",\n    \"normalized_claim\": \"机载AI被定义为直接在设备或系统上运行AI，无需额外的后端计算支持。\",\n    \"coding_dimensions\": [\"integration_level\", \"engineering_resource_conditions\"],\n    \"evidence_nature\": \"goal\",\n    \"topics\": [\"onboard AI\", \"定义\", \"部署形态\"]\n  },\n  {\n    \"source_id\": \"T0-TD-006\",\n    \"source_locator\": \"web_paragraph_0012\",\n    \"excerpt_original\": \"Onboard AI systems are constrained for several reasons, but the primary factor is processing speed.\",\n    \"excerpt_zh\": \"机载AI系统受到多种因素的限制，但主要因素是处理速度。\",\n    \"normalized_claim\": \"机载AI系统的主要限制因素是处理速度。\",\n    \"coding_dimensions\": [\"engineering_resource_conditions\"],\n    \"evidence_nature\": \"constraint\",\n    \"topics\": [\"机载AI\", \"处理速度\", \"限制\"]\n  },\n  {\n    \"source_id\": \"T0-TD-006\",\n    \"source_locator\": \"web_paragraph_0013\",\n    \"excerpt_original\": \"Onboard AI systems also need substantial working memory.\",\n    \"excerpt_zh\": \"机载AI系统还需要大量的工作内存。\",\n    \"normalized_claim\": \"机载AI系统需要大量的工作内存。\",\n    \"coding_dimensions\": [\"engineering_resource_conditions\"],\n    \"evidence_nature\": \"constraint\",\n    \"topics\": [\"机载AI\", \"工作内存\", \"限制\"]\n  },\n  {\n    \"source_id\": \"T0-TD-006\",\n    \"source_locator\": \"web_paragraph_0014\",\n    \"excerpt_original\": \"These constraints are influenced by the size, weight, and power limitations of many systems.\",\n    \"excerpt_zh\": \"这些限制受到许多系统的尺寸、重量和功率限制的影响。\",\n    \"normalized_claim\": \"机载AI的限制受到系统尺寸、重量和功率限制的影响。\",\n    \"coding_dimensions\": [\"engineering_resource_conditions\"],\n    \"evidence_nature\": \"constraint\",\n    \"topics\": [\"机载AI\", \"尺寸重量功率\", \"限制\"]\n  },\n  {\n    \"source_id\": \"T0-TD-006\",\n    \"source_locator\": \"web_paragraph_0016\",\n    \"excerpt_original\": \"However, in many cases, onboard AI will be inferior to the state-of-the-art models that grab headlines or achieve high-level performance on benchmarks.\",\n    \"excerpt_zh\": \"然而，在许多情况下，机载AI将不如那些登上头条或在基准测试中取得高水平性能的最先进模型。\",\n    \"normalized_claim\": \"在许多情况下，机载AI的性能将不如最先进的模型。\",\n    \"coding_dimensions\": [\"application_maturity\", \"engineering_resource_conditions\"],\n    \"evidence_nature\": \"constraint\",\n    \"topics\": [\"机载AI\", \"性能\", \"限制\"]\n  }\n]\n```"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4190,
+    "total_tokens": 4932,
+    "completion_tokens": 742,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,21 @@
+evidence_id,field,before,after,reason,review_origin,human_reviewed
+EV-T0-2D9AD11D628EFF58,proposed_nature,evaluation,constraint,按P3b-R2性质纠偏要求修订。,protocol_directed_ai_preannotation_revision,false
+EV-T0-A515E3B9391C51B4,proposed_nature,goal,constraint,按P3b-R2性质纠偏要求修订。,protocol_directed_ai_preannotation_revision,false
+EV-T0-A515E3B9391C51B4,proposed_normalized_claim,国防部计划在2021年8月前最终确定联合通用基金会的路线图，但截至2021年11月该路线图尚未最终确定。,国防部计划在2021年8月前最终确定联合通用基金会的路线图，但截至2021年11月该路线图尚未最终确定。,确认规范化声明聚焦路线图延误，且不扩展原事实范围。,protocol_directed_ai_preannotation_revision,false
+EV-T0-794C24A620FE0968,proposed_nature,test_event,test_event + goal,按P3b-R2性质纠偏要求修订。,protocol_directed_ai_preannotation_revision,false
+EV-T0-794C24A620FE0968,split_proposals,单条混合命题,"[{""part_index"":1,""split_focus"":""开发周期已开始"",""proposed_nature"":""test_event"",""proposed_dimensions"":[""application_maturity""]},{""part_index"":2,""split_focus"":""预计展示"",""proposed_nature"":""goal"",""proposed_dimensions"":[""application_maturity""]}]",拆分为开发周期已开始的test_event和预计展示的goal，两个部分均有非空维度。,protocol_directed_ai_preannotation_revision,false
+EV-T0-E4EADC8D35D78E4A,proposed_nature,goal,evaluation,按P3b-R2性质纠偏要求修订。,protocol_directed_ai_preannotation_revision,false
+EV-T0-E4EADC8D35D78E4A,proposed_review_note,goal,性质修订为evaluation，并标注为来源方自我评价；不推断已部署能力。,标明来源方自我评价属性。,protocol_directed_ai_preannotation_revision,false
+EV-T0-63E815AC3300FE8A,proposed_source_locator,pdf_page_52,pdf_pages_52_53,建议接受；将定位修正为pdf_pages_52_53，等待作者视觉核验。,ai_assisted_visual_pre_review,false
+EV-T0-63E815AC3300FE8A,proposed_decision,visual_review,accept,建议接受；将定位修正为pdf_pages_52_53，等待作者视觉核验。,ai_assisted_visual_pre_review,false
+EV-T0-51D65DEC82584BCD,proposed_nature,constraint,constraint,建议接受，性质修订为constraint，仍等待作者视觉核验。,ai_assisted_visual_pre_review,false
+EV-T0-51D65DEC82584BCD,proposed_decision,visual_review,accept,建议接受，性质修订为constraint，仍等待作者视觉核验。,ai_assisted_visual_pre_review,false
+EV-T0-246C331615E11FB3,proposed_decision,visual_review,exclude,建议排除；与EV-T0-8E35B508DF5C2E65同段事实重合。,ai_assisted_visual_pre_review,false
+EV-T0-6FE734DE05953A3C,proposed_nature,goal,constraint,建议接受；性质修订为constraint，维度按协议要求保留治理约束和工程资源条件。,ai_assisted_visual_pre_review,false
+EV-T0-6FE734DE05953A3C,proposed_dimensions,"[""engineering_resource_conditions""]","[""trust_governance_constraints"",""engineering_resource_conditions""]",建议接受；性质修订为constraint，维度按协议要求保留治理约束和工程资源条件。,ai_assisted_visual_pre_review,false
+EV-T0-6FE734DE05953A3C,proposed_decision,visual_review,accept,建议接受；性质修订为constraint，维度按协议要求保留治理约束和工程资源条件。,ai_assisted_visual_pre_review,false
+EV-T0-04572D780936A8D6,proposed_nature,goal,goal,建议接受，性质保持goal，仍等待作者视觉核验。,ai_assisted_visual_pre_review,false
+EV-T0-04572D780936A8D6,proposed_decision,visual_review,accept,建议接受，性质保持goal，仍等待作者视觉核验。,ai_assisted_visual_pre_review,false
+EV-T0-CA999183D4D473C4,proposed_decision,exclude,exclude,继续建议排除：与既有同段事实重复。,ai_assisted_visual_pre_review,false
+EV-T0-1C84CB9C7F271D13,proposed_decision,exclude,exclude,继续建议排除：与既有同一事实重复。,ai_assisted_visual_pre_review,false
+__AUTHOR_SAMPLING__,row_count,51,55,作者表补入全部medium，并按ceil(20%)抽取low。,p3br2_sampling_correction,false

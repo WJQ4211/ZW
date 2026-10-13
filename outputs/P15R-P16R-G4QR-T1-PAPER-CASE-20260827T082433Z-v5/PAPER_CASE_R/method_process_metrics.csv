@@ -1,0 +1,10 @@
+﻿metric,value,unit,origin
+T0_snapshot_logical_evidence,85,items,P4
+T1_cumulative_snapshot_items,125,items,P13
+T1_new_formal_evidence,40,items,G1-T1
+T1_change_signal_evidence,38,items,G1-T1/P14
+P14_impact_edges,46,edges,P14
+viewpoints_updated,6,views,P15R
+viewpoints_unchanged,9,views,P15R
+viewpoint_local_update_rate,40%,ratio,6/15; process metric only
+viewpoint_unchanged_rate,60%,ratio,9/15; process metric only

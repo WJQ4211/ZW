@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-b7504ae7-f950-4a3d-a150-57b49891ad5d",
+  "object": "chat.completion",
+  "created": 1787712309,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n  {\n    \"source_id\": \"T0-IR-006\",\n    \"source_locator\": \"pdf_page_20|printed_page_pending|section_pending\",\n    \"excerpt_original\": \"The Joint Logistics Mission Initiative team is using historic maintenance data to train AI models to predict these longer than normal maintenance periods. The initial logistics model was demonstrated on February 11, 2021.\",\n    \"excerpt_zh\": \"联合后勤任务倡议团队正在使用历史维护数据训练AI模型，以预测这些比正常时间更长的维护周期。初始后勤模型于2021年2月11日进行了演示。\",\n    \"normalized_claim\": \"联合后勤任务倡议团队使用历史维护数据训练AI模型，以预测超出正常时长的维护周期，初始模型于2021年2月11日进行了演示。\",\n    \"coding_dimensions\": [\"application_maturity\", \"engineering_resource_conditions\"],\n    \"evidence_nature\": \"test_event\",\n    \"topics\": [\"AI模型训练\", \"预测性维护\", \"演示\"]\n  },\n  {\n    \"source_id\": \"T0-IR-006\",\n    \"source_locator\": \"pdf_page_7|printed_page_pending|section_pending\",\n    \"excerpt_original\": \"DOD announced initial operating capability of the Chief Digital and AI Officer in February 2022 to serve as the department's senior official responsible for strengthening and integrating data, AI, and digital solutions within the department.\",\n    \"excerpt_zh\": \"国防部于2022年2月宣布首席数字与人工智能官具备初始运作能力，该职位作为部门高级官员，负责加强和整合部门内的数据、人工智能和数字解决方案。\",\n    \"normalized_claim\": \"国防部于2022年2月宣布首席数字与人工智能官具备初始运作能力。\",\n    \"coding_dimensions\": [\"organizational_system_fit\"],\n    \"evidence_nature\": \"deployment_event\",\n    \"topics\": [\"首席数字与人工智能官\", \"初始运作能力\", \"组织变革\"]\n  },\n  {\n    \"source_id\": \"T0-IR-006\",\n    \"source_locator\": \"pdf_page_20|printed_page_pending|section_pending\",\n    \"excerpt_original\": \"On February 1, 2022, the Deputy Secretary of Defense issued two memoranda announcing the initial operating capability and clarifying the roles of the Chief Digital and AI Officer.\",\n    \"excerpt_zh\": \"2022年2月1日，国防部副部长发布两份备忘录，宣布首席数字与人工智能官的初始运作能力并明确其职责。\",\n    \"normalized_claim\": \"国防部副部长于2022年2月1日发布备忘录，宣布首席数字与人工智能官具备初始运作能力并明确其职责。\",\n    \"coding_dimensions\": [\"organizational_system_fit\"],\n    \"evidence_nature\": \"deployment_event\",\n    \"topics\": [\"首席数字与人工智能官\", \"初始运作能力\", \"职责明确\"]\n  },\n  {\n    \"source_id\": \"T0-IR-006\",\n    \"source_locator\": \"pdf_page_20|printed_page_pending|section_pending\",\n    \"excerpt_original\": \"According to a senior JAIC official, as of March 2022, DOD's intention is to formally stand down the JAIC by the end of fiscal year 2022.\",\n    \"excerpt_zh\": \"据一位JAIC高级官员称，截至2022年3月，国防部计划在2022财年末正式解散JAIC。\",\n    \"normalized_claim\": \"截至2022年3月，国防部计划在2022财年末正式解散联合人工智能中心。\",\n    \"coding_dimensions\": [\"organizational_system_fit\"],\n    \"evidence_nature\": \"goal\",\n    \"topics\": [\"联合人工智能中心\", \"解散计划\", \"组织变革\"]\n  },\n  {\n    \"source_id\": \"T0-IR-006\",\n    \"source_locator\": \"pdf_page_17|printed_page_pending|section_pending\",\n    \"excerpt_original\": \"According to the Director of the JAIC, efforts are moving from the initial phase of adopting AI to a second phase of AI integration, and then there will be a third phase of scaling of AI capabilities throughout the department.\",\n    \"excerpt_zh\": \"据JAIC主任称，相关工作正从采用AI的初始阶段进入AI整合的第二阶段，随后将进入在整个部门扩展AI能力的第三阶段。\",\n    \"normalized_claim\": \"联合人工智能中心主任表示，相关工作正从采用AI的初始阶段进入AI整合的第二阶段，随后将进入在整个部门扩展AI能力的第三阶段。\",\n    \"coding_dimensions\": [\"application_maturity\", \"integration_level\"],\n    \"evidence_nature\": \"goal\",\n    \"topics\": [\"AI发展阶段\", \"整合\", \"扩展\"]\n  }\n]\n```"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 12258,
+    "total_tokens": 13293,
+    "completion_tokens": 1035,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "database_transaction_committed": true,
+  "g4_authorization_sha256": "b4c5dab485bb5e2f41da49f42500cdd3bc492039152ed0aef30f8e6e76e98d29",
+  "gate": "G4-T0",
+  "signed_report_sha256": "4250bb274a4430194008e0914b9bb92a959117f01cf31be4a2cfcdedfcecea01",
+  "t1_unsealed": true,
+  "t1_unsealed_at": "2026-08-27T05:14:06Z",
+  "t1_unsealed_by": "author_authorized_pipeline"
+}

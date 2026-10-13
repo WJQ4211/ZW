@@ -1,0 +1,57 @@
+{
+  "batch_id": "T0-SP-008-batch-002",
+  "source_id": "T0-SP-008",
+  "source_locator_count": 4,
+  "segments": [
+    {
+      "source_id": "T0-SP-008",
+      "source_locator": "pdf_page_23",
+      "text": "APPENDIX A: QUALITY DATA\n1. DATA QUALITY DIMENSIONS\nData owners may categorize data sets at different levels of quality over time because of age, prioritization, initial\ncondition, and other factors. Therefore, data quality dimensions are relative, and owners will assess the\ndimensions across the data’s lifecycle. The table below provides sample assessment questions for each dimension.\nDimension Assessment Questions\nAccuracy: Data that correctly reflect proven,  How frequently do values not align to their assigned\ntrue values or the specified action, person, or format?\nentity. Accuracy includes data structure,  How frequently do data values match ground truth?\ncontent, and variability.  How is error measured? Is it tolerable for the specified\npurpose?\nCompleteness: The data present at a specified  Is there known data that would make the set more\ntime contain the expected information or complete?\nstatistics, as measured at the data set, row, or  Does the data set contain sufficient breadth of\ninformation to contextualize the data for its purpose?\ncolumn level.\n What fields in the data expect some null values? How\noften are null values present?\nConformity: Data sets follow agreed upon  Does the data’s format match the applicable\ninternal policies, standards, procedures, and standard(s)?\narchitectural requirements.  Is the data set architecture published and available?\n Are there database constraints implemented in\naccordance with internal policies, standards, and\nprocedures to prevent erroneous input?\nConsistency: The degree to which a value is  Are there other data sets that reference values in this\nuniformly represented within and across data data set?\nsets.  Are there discrepancies?\nUniqueness: Ensures there is a one-to-one  Are there other Authoritative Data Sources that serve\nalignment between each observed event and the same function?\nthe record that describes such an event.  Are there duplicate records in this data set?\nIntegrity: A data set’s pedigree, provenance,  Are there opportunities for data to be tampered with,\nand lineage are known and aligned with misreported, degraded, corrupted, poisoned, or\nrelevant business rules. otherwise altered during the collection, storage,\nprocessing, or transmission processes?\n How often are data quality checks conducted to address\npoor data quality?\n Does the data cleaning process result in data that can be\ntrusted?\nTimeliness: Measures the time between an  How frequently do supported data consumers require\nevent occurring and the data’s availability for updates?\nuse.  Does the data purpose require reduced latency?\nDOD DATA, ANALYTICS, AND ARTIFICIAL INTELLIGENCE ADOPTION STRATEGY 20",
+      "pdf_page_number": 23,
+      "printed_page_number": null,
+      "section_title": "APPENDIX A: QUALITY DATA",
+      "machine_extracted_anchor": "pdf_page_23|printed_page_pending|section_APPENDIX_A_QUALITY_DATA",
+      "visual_review_required": true,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-SP-008",
+      "source_locator": "pdf_page_24",
+      "text": "APPENDIX A: QUALITY DATA\n2. VAULTIS FRAMEWORK\nThe VAULTIS framework discussed in the 2020 DoD Data Strategy remains a useful tool for Components to organize\nand monitor their data management plans. The key attributes and associated assessment questions include:\nAttribute Assessment Questions\nVisible: Consumers can locate  Are authorized users able to discover the existence of data that is of\nthe needed data. particular interest or value?\n Are data stewards, data custodians, and functional data managers\nassigned responsibility for identifying, registering, and exposing data to\nmake it easily discoverable across the enterprise, and to appropriate\nexternal partners?\n Are users able to discover and rapidly identify who is responsible for\nspecific data products, the location of data products, the types of data\nproducts available, and the means of accessing the data products?\nAccessible: Consumers can  Are authorized users able to obtain the data they need when they need\nretrieve the data. it?\n Are data, including warfighting, intelligence, and business data,\naccessible to authorized users?\nUnderstandable: Consumers can  Are tools in place that allow users to securely aggregate, compare, and\nfind descriptions of data to analyze the data?\nrecognize the content, context,  Are the data labeled and formatted appropriately to support large scale\nand applicability. analytics?\n Does the metadata associated with the data contain the contextual\nrelationships and business rules?\nLinked: Consumers can exploit  Are the data linked such that relationships and dependencies can be\ncomplementary data elements uncovered and maintained?\nthrough innate relationships.  Does the organization use industry best practices for open data\nstandards, data catalogs, and metadata tagging?\n Are the data unnecessarily siloed or do they support connections across\ndisparate sources?\nTrustworthy: Consumers can be  Do the data represent a source of truth?\nconfident in all aspects of their  Must the data undergo additional vetting to ensure it can support\nuse of the data for decision- decision-making?\nmaking.  Can users interpret and analyze data without concern for flawed\nassumptions, resulting in potentially fatal outcomes?\n Does the data reflect metadata or context necessary to enable\nconsumers to make appropriate judgments about whether or how to\nrely on the data?\nDOD DATA, ANALYTICS, AND ARTIFICIAL INTELLIGENCE ADOPTION STRATEGY 21",
+      "pdf_page_number": 24,
+      "printed_page_number": null,
+      "section_title": "APPENDIX A: QUALITY DATA",
+      "machine_extracted_anchor": "pdf_page_24|printed_page_pending|section_APPENDIX_A_QUALITY_DATA",
+      "visual_review_required": true,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-SP-008",
+      "source_locator": "pdf_page_25",
+      "text": "APPENDIX A: QUALITY DATA\nAttribute Assessment Questions\nInteroperable: Consumers and  Can the data be exchanged between systems and users while\nproducers have a common maintaining its quality and usability?\nrepresentation and  Do the data have semantic as well as syntactic interoperability based on\ncomprehension of data. common data formats and machine-to-machine communications?\nSecure: Consumers understand  Are the data protected while at rest, in motion, and in use (within\ndata safeguarding applications, with analytics, etc.)?\nresponsibilities, follow  Does the organization use a disciplined approach to data protection,\nclassification management such as attribute-based access control, across the enterprise?\nprocedures, and know that data  Are protective mechanisms (e.g., security controls) in place for\nis protected from unauthorized credentialed users to ensure that access is permitted in accordance\nuse and manipulation. with applicable laws, regulations, and policies?\n Are classified management procedures in place to ensure that data,\naggregated or not, are safeguarded and in accordance with laws,\nregulations, and policies?\nTaken together, these guidelines provide a foundation for organizations to greatly enhance the quality of high\npriority data sets in effective and efficient ways. Absent an organized approach based on tested criteria,\nComponents will face significant challenges developing the level of data quality required to address analytics and\nartificial intelligence requirements. As such, organizations will use collaborative forums, such as the CDAO Council\nand its supporting forums, to flatten communications, enhance visibility, and ensure alignment across approaches\nto data quality improvement and maintenance.\nDOD DATA, ANALYTICS, AND ARTIFICIAL INTELLIGENCE ADOPTION STRATEGY 22",
+      "pdf_page_number": 25,
+      "printed_page_number": null,
+      "section_title": "APPENDIX A: QUALITY DATA",
+      "machine_extracted_anchor": "pdf_page_25|printed_page_pending|section_APPENDIX_A_QUALITY_DATA",
+      "visual_review_required": true,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-SP-008",
+      "source_locator": "pdf_page_26",
+      "text": "2266\nDOD DATA, ANALYTICS, AND ARTIFICIAL INTELLIGENCE ADOPTION STRATEGY",
+      "pdf_page_number": 26,
+      "printed_page_number": null,
+      "section_title": "DOD DATA, ANALYTICS, AND ARTIFICIAL INTELLIGENCE ADOPTION STRATEGY",
+      "machine_extracted_anchor": "pdf_page_26|printed_page_pending|section_DOD_DATA_ANALYTICS_AND_ARTIFICIAL_INTELLIGENCE_ADOPTION_STRATEGY",
+      "visual_review_required": true,
+      "extraction_status": "extracted"
+    }
+  ],
+  "source_raw_path": "data/staging/t0_candidates/manual/DOD_DATA_ANALYTICS_AI_ADOPTION_STRATEGY.pdf",
+  "source_text_path": "outputs/P1B-20260825T140911Z-manual/page_index/T0-SP-008.jsonl",
+  "source_raw_sha256": "25f3c9d42d62da71f6942ebe592211e385a442bd8a012dd08d64fc4b27e37436",
+  "source_text_sha256": "e5433abb34ee3ad0f422699fd8b4644fb1551563fda6c549b92de899405d3e33",
+  "max_batch_chars": 45000,
+  "max_candidates": 5
+}

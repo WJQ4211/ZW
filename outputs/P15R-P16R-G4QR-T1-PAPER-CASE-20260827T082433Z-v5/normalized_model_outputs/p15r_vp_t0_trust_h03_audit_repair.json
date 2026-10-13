@@ -1,0 +1,154 @@
+{
+  "affected_fields": [
+    "judgment",
+    "boundary_conditions[0]"
+  ],
+  "boundary_conditions": [
+    "该判断适用于截至2026年6月30日的公开证据，不排除后续资源投入和治理改进带来能力提升。",
+    "关于负责任AI灵活方法潜在影响的推断，需在获得更多直接证据后重新评估。",
+    "T1证据（CE-T1-FE00C458FAADC5D8、CE-T1-11BBC2ABED0945C2、CE-T1-C4C1018771B30C5A、CE-T1-FA2B6E620D8DDBD2、CE-T1-E2F907CF4DA00903）来源为DARPA公开披露，仅反映该机构视角，不构成全军成熟度判断；其他来源证据（如DAF）仅用于限定范围，不改变此边界。"
+  ],
+  "confidence": "medium",
+  "counter_evidence": [
+    {
+      "evidence_id": "CE-T1-02DFF1DCD73E8F93",
+      "importance": "medium",
+      "relation": "limit",
+      "target_field": "boundary_conditions[0]",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-050BC7E34C88F297",
+      "importance": "medium",
+      "relation": "limit",
+      "target_field": "boundary_conditions[0]",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-06554E1EE0D2B6C0",
+      "importance": "low",
+      "relation": "limit",
+      "target_field": "boundary_conditions[0]",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-0BF350B1F14580F5",
+      "importance": "low",
+      "relation": "limit",
+      "target_field": "boundary_conditions[0]",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-11BE4D003ECA817F",
+      "importance": "low",
+      "relation": "limit",
+      "target_field": "boundary_conditions[0]",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-12F70AE60CD787AA",
+      "importance": "low",
+      "relation": "limit",
+      "target_field": "boundary_conditions[0]",
+      "version": 1
+    }
+  ],
+  "evidence_field_changes": [
+    {
+      "after": "T1证据进一步确认，截至2026年6月30日，可信治理与作战化评估能力的缺口仍是约束性边界，而非一般目标表述；SABER计划仍处于目标设定阶段，尚未形成已部署的成熟能力。",
+      "before": "T1证据补充了作战化评估能力、数据条件和工程约束，表明资源与可信治理瓶颈仍影响应用扩展；局部结果不足以消除这一条件性判断。",
+      "change_reason": "T1证据将可信治理与作战化评估能力的缺口从一般目标表述升级为约束性边界，同时明确SABER计划仍处于目标阶段。",
+      "new_evidence_ids": [
+        "CE-T1-FE00C458FAADC5D8",
+        "CE-T1-11BBC2ABED0945C2",
+        "CE-T1-C4C1018771B30C5A",
+        "CE-T1-FA2B6E620D8DDBD2",
+        "CE-T1-E2F907CF4DA00903"
+      ],
+      "target_field": "judgment"
+    },
+    {
+      "after": "该判断适用于截至2026年6月30日的公开证据，不排除后续资源投入和治理改进带来能力提升；T1证据来源为DARPA公开披露，仅反映该机构视角，不构成全军成熟度判断。",
+      "before": "该判断适用于2022-2024年间的公开证据，不排除后续资源投入和治理改进带来能力提升。",
+      "change_reason": "T1证据将时间边界从2022-2024年扩展至2026年6月30日，并明确证据来源的机构局限性。",
+      "new_evidence_ids": [
+        "CE-T1-FE00C458FAADC5D8",
+        "CE-T1-11BBC2ABED0945C2",
+        "CE-T1-C4C1018771B30C5A",
+        "CE-T1-FA2B6E620D8DDBD2",
+        "CE-T1-E2F907CF4DA00903"
+      ],
+      "target_field": "boundary_conditions[0]"
+    }
+  ],
+  "falsifiers": [
+    "若2026年7月1日以后出现跨军种共用平台实际迁移并形成可复用工程流程的A/B级证据，则需重新评估。",
+    "若统一采办和测试评估制度在多个军种落地，则本观点不成立。",
+    "若出现负责任AI灵活方法导致标准不一致的直接证据，则相关机制声明可升级为证据支持。",
+    "若SABER计划或类似项目形成已部署的作战评估能力并公开披露，则本观点不成立。"
+  ],
+  "information_gaps": [
+    "缺乏关于数据质量改进和基础设施投资实际效果的具体数据。",
+    "缺乏关于各军种采办指南执行情况和统一指导方针制定进展的详细信息。",
+    "缺乏关于负责任AI灵活方法实施效果及其对标准一致性影响的评估报告。",
+    "缺乏SABER计划从目标设定到实际部署的中间进展证据。"
+  ],
+  "judgment": "T1证据进一步确认，截至2026年6月30日，可信治理与作战化评估能力的缺口仍是约束性边界，而非一般目标表述；SABER计划仍处于目标设定阶段，尚未形成已部署的成熟能力。",
+  "key_assumptions": [
+    "资源约束（数据质量、处理速度、基础设施延迟）仍是能力形成的主要瓶颈。",
+    "预算投入和数据收集尚未完全解决这些瓶颈。",
+    "国防部层面AI采办指导方针缺失是体系化发展的主要障碍。",
+    "各军种自行制定采办指南表明缺乏统一协调。",
+    "负责任AI的灵活方法旨在促进创新，但其对标准一致性的影响需进一步验证。",
+    "SABER计划的目标表述不代表已实现部署或成熟能力。"
+  ],
+  "mechanism_claims": [
+    "T1证据（CE-T1-C4C1018771B30C5A）显示，截至2026年6月30日，未观察到成熟能力或更广泛生态系统对已部署AI战场系统进行作战漏洞评估，这一缺口构成可信治理的约束性边界（证据支持）。",
+    "SABER计划的目标（CE-T1-FA2B6E620D8DDBD2、CE-T1-E2F907CF4DA00903）表明相关能力仍处于规划与实验阶段，尚未转化为已部署的成熟能力（证据支持，但仅限目标表述，不构成已实现部署）。",
+    "实验室条件下的攻击演示（CE-T1-FE00C458FAADC5D8、CE-T1-11BBC2ABED0945C2）不能直接外推至真实军事行动效果，这强化了作战化评估能力缺口的约束性（证据支持）。"
+  ],
+  "supporting_evidence": [
+    {
+      "evidence_id": "CE-T1-FE00C458FAADC5D8",
+      "importance": "high",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-11BBC2ABED0945C2",
+      "importance": "high",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-C4C1018771B30C5A",
+      "importance": "high",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-FA2B6E620D8DDBD2",
+      "importance": "medium",
+      "relation": "background",
+      "target_field": "boundary_conditions[0]",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-E2F907CF4DA00903",
+      "importance": "medium",
+      "relation": "background",
+      "target_field": "boundary_conditions[0]",
+      "version": 1
+    }
+  ],
+  "uncertainties": [
+    "预算投入和DARPA数据收集在多大程度上缓解了资源瓶颈尚不明确。",
+    "战略规划中的资源投资目标是否已部分实现存在不确定性。",
+    "负责任AI的灵活方法是否实际导致标准不一致或执行困难，缺乏直接证据。",
+    "SABER计划后续是否成功建立示范性AI红队并形成作战评估能力，截至2026年6月30日无法确认。"
+  ],
+  "update_rationale": "T1证据（CE-T1-FE00C458FAADC5D8、CE-T1-11BBC2ABED0945C2、CE-T1-C4C1018771B30C5A、CE-T1-FA2B6E620D8DDBD2、CE-T1-E2F907CF4DA00903）将可信治理与作战化评估能力的缺口从一般目标表述升级为约束性边界，同时明确SABER计划仍处于目标设定阶段，未形成已部署能力。判断维持支持立场，置信度保持medium。"
+}

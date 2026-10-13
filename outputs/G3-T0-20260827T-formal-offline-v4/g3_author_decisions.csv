@@ -1,0 +1,4 @@
+﻿disagreement_id,decision,decision_impact,resolution_action,reviewer,reviewed_at,author_authorization_sha256
+DISAG-T0-01,conditionally_retained,high,monitor,author_01,2026-08-27T03:37:16Z,f30219fa0bfd415c811cb3c557c4fe5219d12611363299077c1ccab534ad31d5
+DISAG-T0-02,conditionally_retained,medium,monitor,author_01,2026-08-27T03:37:16Z,f30219fa0bfd415c811cb3c557c4fe5219d12611363299077c1ccab534ad31d5
+DISAG-T0-03,resolved,medium,scope_split,author_01,2026-08-27T03:37:16Z,f30219fa0bfd415c811cb3c557c4fe5219d12611363299077c1ccab534ad31d5

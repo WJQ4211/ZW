@@ -1,0 +1,11 @@
+{
+  "approved": true,
+  "artifact_hash": "574fc98a5d0d1c64f01c9651854202d2f8fb253207ce248639cb205c98ddac25",
+  "artifact_path": "data/raw/t1",
+  "case_id": "synthetic_military_ai",
+  "created_at": "2026-08-25T07:24:04.216504+00:00",
+  "gate": "G1_T1",
+  "notes": "Synthetic fixture: T1 evidence membership and cutoff reviewed.",
+  "reviewer": "synthetic-g1-reviewer",
+  "run_id": "phase-a-demo-20260825T072402Z-70e52b"
+}

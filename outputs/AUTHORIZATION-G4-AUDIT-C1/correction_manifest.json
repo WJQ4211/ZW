@@ -1,0 +1,32 @@
+{
+  "run_id": "AUTHORIZATION-G4-AUDIT-C1",
+  "stage": "pure_document_audit_correction",
+  "original_formal_run_id": "FORMAL-G3-T1-G4-T1-FINAL-PAPER-CASE-20260827T112444Z-v1",
+  "original_manifest": "final_case_manifest.json",
+  "model_api_calls": 0,
+  "database_writes": 0,
+  "historical_files_modified": 0,
+  "formal_g3_status_unchanged": true,
+  "formal_g4_status_unchanged": true,
+  "t1_snapshot_item_count": 125,
+  "evidence_inserted": 0,
+  "hypothesis_inserted": 0,
+  "viewpoint_inserted": 0,
+  "dependency_inserted": 0,
+  "disagreement_inserted": 0,
+  "human_review_inserted": 0,
+  "snapshot_refrozen": false,
+  "api_key_written": false,
+  "historical_artifacts_modified": false,
+  "source_report_hash": "f71bf082f59292d72050909dc8a95e676097736e0b9daab18c67756d394e506e",
+  "corrected_report_hash": "56a2c31f3ecc120e0fe07c11aeadf3b24eb38721243aed1b16b5d6d647390172",
+  "authorization_original_sha256": "e43aa1e1221275a902e19f390f4dd64d0c3b5f362911579e7da658f83801d7cf",
+  "file_hashes_excluding_manifest": {
+    "authorization_hash_crosswalk.json": "81cea5333658afd38a0151ed75888e10d13c3254a0258e31169dc21e2448e538",
+    "authorization_original.txt": "e43aa1e1221275a902e19f390f4dd64d0c3b5f362911579e7da658f83801d7cf",
+    "authorization_provenance_correction.json": "f8b25ea007a165f3490843549f4c521784229afc987c68ca66be642d70fd914c",
+    "correction_report.md": "adfb8113e2790898b2a0af94bdd8b28e1ee069bb0817813f9a53e6fac02d47ae",
+    "g4_t1_final_report_c1.md": "56a2c31f3ecc120e0fe07c11aeadf3b24eb38721243aed1b16b5d6d647390172"
+  },
+  "manifest_hash_scope": "all correction files except this manifest to avoid self-hash recursion"
+}

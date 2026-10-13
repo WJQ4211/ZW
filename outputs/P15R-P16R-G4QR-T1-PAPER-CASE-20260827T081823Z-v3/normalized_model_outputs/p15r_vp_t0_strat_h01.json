@@ -1,0 +1,137 @@
+{
+  "affected_fields": [
+    "judgment",
+    "boundary_conditions[0]"
+  ],
+  "boundary_conditions": [
+    "该判断适用于2022-2026年6月30日间的战略规划与组织建设阶段，仅评估治理架构的规划与建设状态，不评估具体任务项目的技术成熟度，也不将治理目标的设定视为治理结果的实现。",
+    "T1新增的局部单位应用（如卢克空军基地AI工作队）仅代表局部探索，不构成跨军种共用底座或全军成熟度的证据。"
+  ],
+  "confidence": "medium",
+  "counter_evidence": [
+    {
+      "evidence_id": "CE-T1-DCF49FC6CBC68958",
+      "importance": "low",
+      "relation": "limit",
+      "target_field": "boundary_conditions[0]",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-AA937CC0AF5E2372",
+      "importance": "low",
+      "relation": "limit",
+      "target_field": "boundary_conditions[0]",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-B40332E796F16865",
+      "importance": "low",
+      "relation": "limit",
+      "target_field": "boundary_conditions[0]",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-7239909FC989F79A",
+      "importance": "low",
+      "relation": "limit",
+      "target_field": "boundary_conditions[0]",
+      "version": 1
+    }
+  ],
+  "evidence_field_changes": [
+    {
+      "after": "T1新增材料继续支持治理与整合目标的存在，但均为部门战略目标、局部单位应用或治理事件，尚不足以证明跨军种共用底座已经形成或CDAO治理已产生实质性牵引。",
+      "before": "T1证据继续支持治理与整合目标存在，但新增材料主要是战略目标、局部运用和测试约束，尚不足以证明跨军种共用底座已经形成。",
+      "change_reason": "T1新增的部门战略和人才计划证据进一步确认了治理目标的存在，但未改变'跨军种共用底座尚未形成'的核心判断，仅强化了目标设定层面的证据基础。",
+      "new_evidence_ids": [
+        "CE-T1-02DFF1DCD73E8F93",
+        "CE-T1-050BC7E34C88F297",
+        "CE-T1-2995ED3DEF557C50",
+        "CE-T1-B5C396D3278023D1",
+        "CE-T1-CEACB21D2A3F685C",
+        "CE-T1-A66D49255D61B484"
+      ],
+      "target_field": "judgment"
+    },
+    {
+      "after": "该判断适用于2022-2026年6月30日间的战略规划与组织建设阶段，仅评估治理架构的规划与建设状态，不评估具体任务项目的技术成熟度，也不将治理目标的设定视为治理结果的实现。T1新增的局部单位应用（如卢克空军基地AI工作队）仅代表局部探索，不构成跨军种共用底座或全军成熟度的证据。",
+      "before": "该判断适用于2022-2024年间的战略规划与组织建设阶段，仅评估治理架构的规划与建设状态，不评估具体任务项目的技术成熟度，也不将治理目标的设定视为治理结果的实现。",
+      "change_reason": "T1新增的局部单位应用证据表明，局部探索与部门战略目标之间存在层级差异，需明确限定其不构成跨军种共用底座或全军成熟度的证据，同时将时间边界延伸至2026年6月30日。",
+      "new_evidence_ids": [
+        "CE-T1-DCF49FC6CBC68958",
+        "CE-T1-AA937CC0AF5E2372",
+        "CE-T1-B40332E796F16865",
+        "CE-T1-7239909FC989F79A"
+      ],
+      "target_field": "boundary_conditions[0]"
+    }
+  ],
+  "falsifiers": [
+    "若在2026年7月1日以后出现JCF达到全面作战能力并实现跨军种数据共享的A/B级材料，则本观点不成立。",
+    "若出现CDAO治理已对具体任务项目产生可验证的实质性牵引（如项目方向调整、资源重新分配）的成果记录，则本观点不成立。",
+    "若T1新增的部门战略和人才计划在2026年7月1日以后被证实已转化为跨军种共用平台的实际迁移和可复用工程流程，则本观点不成立。"
+  ],
+  "information_gaps": [
+    "缺乏JCF在2023-2026年6月30日间运行状态和用户使用情况的具体数据。",
+    "缺乏CDAO治理对具体任务项目产生实际影响的成果记录或评估报告。",
+    "缺乏T1新增战略和人才计划在2026年6月30日前的实施进展数据。"
+  ],
+  "judgment": "T1新增材料继续支持治理与整合目标的存在，但均为部门战略目标、局部单位应用或治理事件，尚不足以证明跨军种共用底座已经形成或CDAO治理已产生实质性牵引。",
+  "key_assumptions": [
+    "T1新增的部门战略、人才计划和基地级AI工作队均属于治理目标设定或局部组织建设，不等同于治理结果的实现。",
+    "截至2026年6月30日，未观察到CDAO治理对具体任务项目产生可验证的实质性牵引（如项目方向调整、资源重新分配）的成果记录。"
+  ],
+  "mechanism_claims": [
+    "T1材料显示，空军部通过发布战略文件、推进人才计划和建立基地级AI工作队等方式，在部门层面和局部单位层面推动AI制度化，但这些机制仍处于目标设定或局部探索阶段，尚未形成跨军种共用底座或对具体任务项目产生可验证的实质性牵引（推断，基于CE-T1-02DFF1DCD73E8F93、CE-T1-CEACB21D2A3F685C、CE-T1-DCF49FC6CBC68958）。"
+  ],
+  "supporting_evidence": [
+    {
+      "evidence_id": "CE-T1-02DFF1DCD73E8F93",
+      "importance": "medium",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-050BC7E34C88F297",
+      "importance": "medium",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-2995ED3DEF557C50",
+      "importance": "medium",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-B5C396D3278023D1",
+      "importance": "medium",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-CEACB21D2A3F685C",
+      "importance": "medium",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-A66D49255D61B484",
+      "importance": "medium",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    }
+  ],
+  "uncertainties": [
+    "JCF的全面作战能力时间表未确定，其实际运行效果未知。",
+    "CDAO治理架构在2026年6月30日前是否产生实质性牵引效果尚无法评估。",
+    "T1新增的部门战略和人才计划在2026年6月30日后的实际执行效果未知。"
+  ],
+  "update_rationale": "T1新增材料均为部门战略目标、人才计划或局部单位应用，属于治理目标设定或局部探索层面，未改变'跨军种共用底座尚未形成'的核心判断。新增证据强化了治理目标存在的证据基础，但局部单位应用证据进一步限定了外推边界，因此维持原判断并更新边界条件。"
+}

@@ -1,0 +1,13 @@
+{
+  "api_key_written": false,
+  "changed_rows": 16,
+  "evidence_inserted": 0,
+  "formal_g1_t1_executed": false,
+  "model_api_calls": 0,
+  "raw_model_responses_changed": false,
+  "repair_type": "program_injected_extraction_run_id",
+  "run_id": "P11R-P12R-G1Q-T1-20260827T065600Z-v1",
+  "source_archives_changed": false,
+  "t1_read": true,
+  "t1_snapshot_frozen": false
+}

@@ -1,0 +1,14 @@
+{
+  "P3S-20260826T090131Z-supplement-realapi-v2": {
+    "eligible_for_formal_p3s": false,
+    "reason": "historical_fixture_or_superseded_run"
+  },
+  "P3S-20260826T092410Z-supplement-realapi-v3": {
+    "eligible_for_formal_p3s": false,
+    "reason": "pre_P3S-H_schema_output_mismatch"
+  },
+  "P3S-20260826T093410Z-supplement-realapi-v3": {
+    "eligible_for_formal_p3s": false,
+    "reason": "failed_run_and_pre_P3S-H_schema_prompt"
+  }
+}

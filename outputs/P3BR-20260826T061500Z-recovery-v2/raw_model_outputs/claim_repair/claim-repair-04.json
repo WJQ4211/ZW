@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-d30a15d8-3219-40ce-acec-603f8cf81c71",
+  "object": "chat.completion",
+  "created": 1787717964,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"normalized_claim\": \"美国国防部官员报告称，其使用正式和非正式协作机制开展人工智能活动合作，并打算利用联合通用基金会作为改进协作的机制。\"}"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 246,
+    "total_tokens": 285,
+    "completion_tokens": 39,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

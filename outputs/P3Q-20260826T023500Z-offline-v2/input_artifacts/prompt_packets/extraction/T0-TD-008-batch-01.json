@@ -1,0 +1,102 @@
+{
+  "batch_id": "T0-TD-008-batch-01",
+  "source_id": "T0-TD-008",
+  "prompt_path": "outputs/P3AR-20260826T010914-real-api-v6/prompt_packets/extraction/T0-TD-008-batch-01.txt",
+  "prompt_sha256": "048655cd037f62ac412804f296243c2525d254d5bd2ae863db606213c7662942",
+  "template_path": "prompts/evidence_extract_v1.yaml",
+  "template_sha256": "251e379bd8d0becb68609ca0f7a1f0f94ef7c6104f7684bda5db751ad3c56486",
+  "segments": [
+    {
+      "source_id": "T0-TD-008",
+      "source_locator": "article/paragraph-01",
+      "text": "MANAMA, Bahrain - The International Maritime Security Construct (IMSC) completed a three-day maritime exercise in the Arabian Gulf, Jan. 9, integrating unmanned systems and artificial intelligence during a naval drill for the second time in six months.",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "article",
+      "machine_extracted_anchor": "article/paragraph-01",
+      "visual_review_required": false
+    },
+    {
+      "source_id": "T0-TD-008",
+      "source_locator": "article/paragraph-02",
+      "text": "IMSC’s operational task force, Coalition Task Force (CTF) Sentinel, completed exercise Sentinel Shield with U.S. Navy guided-missile destroyer USS Delbert D. Black (DDG 119) and two Saildrone Explorer unmanned surface vessels from U.S. 5th Fleet “We planned this exercise to demonstrate how artificial intelligence and unmanned systems effectively increase CTF Sentinel’s maritime domain awareness to maintain maritime security in Middle Eastern waters,” said Royal Saudi Navy Capt. Alamri Assem, CTF Sentinel’s director of plans.",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "article",
+      "machine_extracted_anchor": "article/paragraph-02",
+      "visual_review_required": false
+    },
+    {
+      "source_id": "T0-TD-008",
+      "source_locator": "article/paragraph-03",
+      "text": "During the exercise, unmanned and artificial intelligence systems operated in conjunction with Delbert D. Black and CTF Sentinel’s command center ashore in Bahrain.",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "article",
+      "machine_extracted_anchor": "article/paragraph-03",
+      "visual_review_required": false
+    },
+    {
+      "source_id": "T0-TD-008",
+      "source_locator": "article/paragraph-04",
+      "text": "The systems were able to help locate and identify objects in nearby waters and relay visual depictions to watchstanders.",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "article",
+      "machine_extracted_anchor": "article/paragraph-04",
+      "visual_review_required": false
+    },
+    {
+      "source_id": "T0-TD-008",
+      "source_locator": "article/paragraph-05",
+      "text": "“Saildrones transmitted information on contacts of interest and our watch officers coordinated with the destroyer for further monitoring,” said U.S. Navy Capt. Brian Granger, CTF Sentinel’s deputy commander.",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "article",
+      "machine_extracted_anchor": "article/paragraph-05",
+      "visual_review_required": false
+    },
+    {
+      "source_id": "T0-TD-008",
+      "source_locator": "article/paragraph-06",
+      "text": "CTF Sentinel previously completed a similar exercise Aug. 23 when Royal Bahrain Naval Force ship RBNS Ahmed Al-Fateh (P20) and U.S. Coast Guard patrol boat USCGC Baranof (WPB 1318) participated with another Saildrone Explorer from U.S. 5th Fleet.",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "article",
+      "machine_extracted_anchor": "article/paragraph-06",
+      "visual_review_required": true
+    },
+    {
+      "source_id": "T0-TD-008",
+      "source_locator": "article/paragraph-07",
+      "text": "The late-summer event was the first time IMSC planners specifically designed a Sentinel Shield exercise to integrate unmanned systems.",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "article",
+      "machine_extracted_anchor": "article/paragraph-07",
+      "visual_review_required": false
+    },
+    {
+      "source_id": "T0-TD-008",
+      "source_locator": "article/paragraph-08",
+      "text": "IMSC was formed in July 2019 in response to increased threats to freedom of navigation for merchant mariners transiting international waters in the Middle East. IMSC’s operational arm, CTF Sentinel, was established four months later to deter state-sponsored malign activity and reassure the merchant shipping industry in the Bab al-Mandeb and Strait of Hormuz.",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "article",
+      "machine_extracted_anchor": "article/paragraph-08",
+      "visual_review_required": false
+    },
+    {
+      "source_id": "T0-TD-008",
+      "source_locator": "article/paragraph-09",
+      "text": "IMSC membership currently includes 11 nations: Albania, Bahrain, Estonia, Latvia, Lithuania, Romania, Saudi Arabia, Seychelles, United Arab Emirates, United Kingdom, and the United States.",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "article",
+      "machine_extracted_anchor": "article/paragraph-09",
+      "visual_review_required": false
+    }
+  ],
+  "model_input_restriction": "raw_source_segments_research_question_field_definitions_only",
+  "raw_model_outputs_created": false
+}

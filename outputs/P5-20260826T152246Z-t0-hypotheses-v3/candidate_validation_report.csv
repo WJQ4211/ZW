@@ -1,0 +1,11 @@
+﻿generator_id,candidate_id,valid,reason,supporting_evidence_count,supporting_source_count
+A,GEN-A-H01,True,passed,5,4
+A,GEN-A-H02,True,passed,5,3
+A,GEN-A-H03,True,passed,5,3
+B,GEN-B-H01,True,passed,6,3
+B,GEN-B-H02,True,passed,6,4
+B,GEN-B-H03,True,passed,6,3
+C,GEN-C-H01,True,passed,5,2
+C,GEN-C-H02,True,passed,5,3
+C,GEN-C-H03,True,passed,5,2
+C,GEN-C-H04,True,passed,5,2

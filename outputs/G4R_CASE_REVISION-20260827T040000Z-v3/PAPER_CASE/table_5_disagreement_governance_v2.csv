@@ -1,0 +1,4 @@
+﻿disagreement_id,type,decision_impact,status,resolution_action
+DISAG-T0-01,mechanism,high,conditionally_retained,monitor
+DISAG-T0-02,risk_weight,medium,conditionally_retained,monitor
+DISAG-T0-03,scope,medium,resolved,scope_split

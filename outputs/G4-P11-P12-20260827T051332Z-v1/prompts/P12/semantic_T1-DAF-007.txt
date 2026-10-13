@@ -1,0 +1,199 @@
+T1候选证据语义筛选。只检查给定候选字段与其摘录之间的直接支持关系。不得引用或推断任何T0分析。
+研究问题：以公开、非密材料为依据，研究2025年1月1日至2026年6月30日期间，美国军用人工智能能力形成、应用部署和体系化发展的公开可观察变化。
+来源：T1-DAF-007
+每条返回一项review，字段为candidate_evidence_id、status、reason、claim_supported、nature_supported、dimension_reviews、revised_fields。status只能是accept、revise或reject；dimension_reviews必须是数组，每项包含dimension、supported、supporting_span、reason。只处理候选原本声明的维度；不得新增维度。若claim或nature无直接支持则reject；revise不得修改excerpt_original和source_locator。
+证据性质完整定义：
+- goal: 计划、目标、拟议能力或未来安排，不等于已经实现。
+- governance_event: 已经发生的政策、职责、指南或组织治理机制建立。
+- resource_input: 已经发生的预算、合同、采购、数据、人才或基础设施投入。
+- test_event: 测试、演示、演习或竞赛发生及其参与主体、配置。
+- test_result: 测试中明确观察到的功能、性能或结果。
+- deployment_event: 明确已经部署、实装、投入运行或持续使用。
+- constraint: 限制能力形成、部署或评估的已报告条件。
+- evaluation: 来源明确给出的评估、判断或评价，不改写为客观结果。
+编码维度完整定义：
+- integration_level: 跨项目、跨平台、跨军种或企业级系统集成的程度。
+- application_maturity: 从目标、演示、试验到部署和持续使用的应用成熟度。
+- human_machine_authority: 人机在任务中的权责、授权、监督与决策关系。
+- engineering_resource_conditions: 数据、算力、基础设施、人才、预算、采办和保障条件。
+- trust_governance_constraints: 可信性、安全、测试评估、责任、治理约束及制度落地。
+- organizational_system_fit: 组织运用、流程、任务适配和体系制度环境的匹配程度。
+候选：
+[
+  {
+    "candidate_evidence_id": "CE-T1-DCF49FC6CBC68958",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "organizational_system_fit"
+    ],
+    "content_hash": "dcf49fc6cbc68958f727f90f3d30ff6f970914cd4dd32aad71f921f4d9256310",
+    "evidence_nature": "governance_event",
+    "excerpt_original": "The effort became the foundation of Luke's AI Task Force, a team built to explore how artificial intelligence could reshape daily operations, preserve institutional knowledge and give Airmen more time to focus on the human elements of the mission.",
+    "excerpt_zh": "这项工作成为卢克AI工作队的基石，该团队旨在探索人工智能如何重塑日常运营、保存机构知识，并让飞行员有更多时间专注于任务中的人为因素。",
+    "extraction_run_id": "G4-P11-P12-20260827T051332Z-v1",
+    "normalized_claim": "卢克空军基地的这项工作成为该基地AI工作队的基石，该团队旨在探索AI在基地日常运营中的应用。",
+    "pending_g1_translation_review": true,
+    "pending_g1_visual_review": false,
+    "published_at": "2026-05-18",
+    "published_at_precision": "day",
+    "publisher": "U.S. Air Force",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DAF-007",
+    "source_locator": "web_paragraph_0005",
+    "title": "Luke AFB Airmen pioneer AI integration for daily operations",
+    "topics": [
+      "AI任务部队",
+      "组织建设"
+    ],
+    "url_or_path": "https://www.af.mil/News/Article-Display/Article/4495022/luke-afb-airmen-pioneer-ai-integration-for-daily-operations/",
+    "version": 1
+  },
+  {
+    "candidate_evidence_id": "CE-T1-8F87655320B830B5",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "trust_governance_constraints"
+    ],
+    "content_hash": "8f87655320b830b53afdc829bb4eaad46a5070904789847d7d864ec67eb27223",
+    "evidence_nature": "test_event",
+    "excerpt_original": "A base-wide survey, which received over 170 responses, revealed a consistent theme: while many Airmen recognize AI's growing importance, many feel uncertain on how to use it effectively and within approved guidelines.",
+    "excerpt_zh": "一项覆盖全基地的调查收到了超过170份回复，揭示了一个一致的主题：虽然许多飞行员认识到AI日益增长的重要性，但许多人对如何有效且符合批准指南地使用它感到不确定。",
+    "extraction_run_id": "G4-P11-P12-20260827T051332Z-v1",
+    "normalized_claim": "卢克空军基地一项全基地调查收到超过170份回复，显示许多飞行员对如何有效且合规地使用AI感到不确定。",
+    "pending_g1_translation_review": true,
+    "pending_g1_visual_review": false,
+    "published_at": "2026-05-18",
+    "published_at_precision": "day",
+    "publisher": "U.S. Air Force",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DAF-007",
+    "source_locator": "web_paragraph_0005",
+    "title": "Luke AFB Airmen pioneer AI integration for daily operations",
+    "topics": [
+      "调查",
+      "飞行员认知",
+      "使用指南"
+    ],
+    "url_or_path": "https://www.af.mil/News/Article-Display/Article/4495022/luke-afb-airmen-pioneer-ai-integration-for-daily-operations/",
+    "version": 1
+  },
+  {
+    "candidate_evidence_id": "CE-T1-AA937CC0AF5E2372",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "application_maturity"
+    ],
+    "content_hash": "aa937cc0af5e2372f4328143bdae0ae5455da0667283ff1f33020062eb272ab1",
+    "evidence_nature": "deployment_event",
+    "excerpt_original": "Some Airmen are already using AI to draft emails, summarize information, analyze data and reduce repetitive administrative tasks, while others remain unsure what tools are authorized or how to apply them in a mission context.",
+    "excerpt_zh": "一些飞行员已经在使用AI起草电子邮件、总结信息、分析数据和减少重复性行政任务，而另一些人则不确定哪些工具是授权的，或如何在任务环境中应用它们。",
+    "extraction_run_id": "G4-P11-P12-20260827T051332Z-v1",
+    "normalized_claim": "卢克空军基地部分飞行员已在日常工作中使用AI进行起草邮件、总结信息、分析数据等任务。",
+    "pending_g1_translation_review": true,
+    "pending_g1_visual_review": false,
+    "published_at": "2026-05-18",
+    "published_at_precision": "day",
+    "publisher": "U.S. Air Force",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DAF-007",
+    "source_locator": "web_paragraph_0005",
+    "title": "Luke AFB Airmen pioneer AI integration for daily operations",
+    "topics": [
+      "日常使用",
+      "任务应用"
+    ],
+    "url_or_path": "https://www.af.mil/News/Article-Display/Article/4495022/luke-afb-airmen-pioneer-ai-integration-for-daily-operations/",
+    "version": 1
+  },
+  {
+    "candidate_evidence_id": "CE-T1-4B93CEF5AF06CF13",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "application_maturity"
+    ],
+    "content_hash": "4b93cef5af06cf131c8df4fecacc179117e564fad687b68d3318cb3dcbae3855",
+    "evidence_nature": "test_event",
+    "excerpt_original": "Instead of just studying AI, the team decided to put it into practice. Members built tools, analyzed survey data and explored how emerging technology could support training, administration and decision-making processes.",
+    "excerpt_zh": "团队没有仅仅研究AI，而是决定将其付诸实践。成员们构建了工具，分析了调查数据，并探索了新兴技术如何支持训练、行政和决策过程。",
+    "extraction_run_id": "G4-P11-P12-20260827T051332Z-v1",
+    "normalized_claim": "卢克AI工作队的成员构建了工具并分析了调查数据，以探索AI在训练、行政和决策中的支持作用。",
+    "pending_g1_translation_review": true,
+    "pending_g1_visual_review": false,
+    "published_at": "2026-05-18",
+    "published_at_precision": "day",
+    "publisher": "U.S. Air Force",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DAF-007",
+    "source_locator": "web_paragraph_0007",
+    "title": "Luke AFB Airmen pioneer AI integration for daily operations",
+    "topics": [
+      "工具构建",
+      "实践探索"
+    ],
+    "url_or_path": "https://www.af.mil/News/Article-Display/Article/4495022/luke-afb-airmen-pioneer-ai-integration-for-daily-operations/",
+    "version": 1
+  },
+  {
+    "candidate_evidence_id": "CE-T1-B40332E796F16865",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "organizational_system_fit"
+    ],
+    "content_hash": "b40332e796f16865e63866e1afece0a359efdd605a7511c4a75dd7306bb3f758",
+    "evidence_nature": "goal",
+    "excerpt_original": "The team also explored how AI could help preserve institutional knowledge, capturing experience that is often lost as Airmen transition out of the service and preserving knowledge for the next generation of warfighters.",
+    "excerpt_zh": "团队还探索了AI如何帮助保存机构知识，捕捉飞行员退役时经常丢失的经验，并为下一代作战人员保留知识。",
+    "extraction_run_id": "G4-P11-P12-20260827T051332Z-v1",
+    "normalized_claim": "卢克AI工作队探索了AI在保存机构知识和经验方面的应用。",
+    "pending_g1_translation_review": true,
+    "pending_g1_visual_review": false,
+    "published_at": "2026-05-18",
+    "published_at_precision": "day",
+    "publisher": "U.S. Air Force",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DAF-007",
+    "source_locator": "web_paragraph_0007",
+    "title": "Luke AFB Airmen pioneer AI integration for daily operations",
+    "topics": [
+      "知识管理",
+      "机构记忆"
+    ],
+    "url_or_path": "https://www.af.mil/News/Article-Display/Article/4495022/luke-afb-airmen-pioneer-ai-integration-for-daily-operations/",
+    "version": 1
+  },
+  {
+    "candidate_evidence_id": "CE-T1-7239909FC989F79A",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "trust_governance_constraints"
+    ],
+    "content_hash": "7239909fc989f79a93021d1ec530c4e7b4af4324de3e2c7d2ae28a63195af999",
+    "evidence_nature": "goal",
+    "excerpt_original": "To address this, the group recommended expanding AI education, identifying trained advocates within units and improving awareness of approved platforms, with the goal of shifting from informal use to a deliberate, mission-focused approach.",
+    "excerpt_zh": "为了解决这个问题，该小组建议扩大AI教育，在单位内确定受过培训的倡导者，并提高对已批准平台的认识，目标是从非正式使用转变为有意的、以任务为中心的方法。",
+    "extraction_run_id": "G4-P11-P12-20260827T051332Z-v1",
+    "normalized_claim": "卢克AI工作队建议扩大AI教育、确定单位内受过培训的倡导者并提高对已批准平台的认识。",
+    "pending_g1_translation_review": true,
+    "pending_g1_visual_review": false,
+    "published_at": "2026-05-18",
+    "published_at_precision": "day",
+    "publisher": "U.S. Air Force",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DAF-007",
+    "source_locator": "web_paragraph_0007",
+    "title": "Luke AFB Airmen pioneer AI integration for daily operations",
+    "topics": [
+      "AI教育",
+      "培训",
+      "平台意识"
+    ],
+    "url_or_path": "https://www.af.mil/News/Article-Display/Article/4495022/luke-afb-airmen-pioneer-ai-integration-for-daily-operations/",
+    "version": 1
+  }
+]

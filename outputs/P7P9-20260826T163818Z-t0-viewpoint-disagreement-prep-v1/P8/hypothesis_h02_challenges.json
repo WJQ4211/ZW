@@ -1,0 +1,58 @@
+{
+  "challenges": [
+    {
+      "challenge_id": "CH-T0-TECH-01",
+      "target_viewpoint_id": "VP-T0-TECH-H02",
+      "target_field": "mechanism_claims[0]",
+      "challenge_type": "evidence_mismatch",
+      "challenge_statement": "该机制声称ACE成果'仅限于空战领域，未显示向其他任务领域迁移'，但所引用的EV-T0-DB4536B8270ECF58仅描述了ACE项目在空战测试中的成功，并未提供任何关于该技术是否尝试或未尝试向其他领域迁移的信息。'未显示迁移'被当作'未发生迁移'的证据，存在将证据缺失等同于否定性结论的逻辑跳跃。",
+      "evidence_ids": [
+        "EV-T0-DB4536B8270ECF58"
+      ],
+      "impact": "high",
+      "response_required": true
+    },
+    {
+      "challenge_id": "CH-T0-ENG-01",
+      "target_viewpoint_id": "VP-T0-ENG-H02",
+      "target_field": "key_assumptions[0]",
+      "challenge_type": "goal_result_confusion",
+      "challenge_statement": "该观点将DARPA项目（RACER、REMA）的'演示验证状态'直接等同于'尚未进入规模化采办'，但所引用的EV-T0-3FA6806CF267B04B和EV-T0-9C79EF2837BC80A2均为项目目标声明（evidence_nature: goal），而非采办状态报告。项目目标停留在演示验证阶段，与项目成果是否已进入或计划进入采办流程是两个不同的事实问题，不能从前者直接推导出后者。",
+      "evidence_ids": [
+        "EV-T0-3FA6806CF267B04B",
+        "EV-T0-9C79EF2837BC80A2"
+      ],
+      "impact": "high",
+      "response_required": true
+    },
+    {
+      "challenge_id": "CH-T0-OPS-01",
+      "target_viewpoint_id": "VP-T0-OPS-H02",
+      "target_field": "judgment",
+      "challenge_type": "counter_evidence_omitted",
+      "challenge_statement": "该观点在判断'部门级治理和共用平台尚未实质改变这一主导模式'时，仅引用了SP-008中关于集中平台意图的EV-T0-27370C837C885AEE作为限制条件，但未引用同一战略文件中关于'优先采用联合或部门赞助解决方案'的EV-T0-5EA556C2C939C121，以及关于'开展综合多边演习以支持企业级作战能力投资'的EV-T0-F8E3070F89D94D25。这两条证据表明体系化整合意图不仅存在于规划层面，还包含具体的采购优先序和演习验证路径，忽略它们可能高估了'规划未转化为行动'的程度。",
+      "evidence_ids": [
+        "EV-T0-5EA556C2C939C121",
+        "EV-T0-F8E3070F89D94D25"
+      ],
+      "impact": "medium",
+      "response_required": true
+    },
+    {
+      "challenge_id": "CH-T0-TRUST-01",
+      "target_viewpoint_id": "VP-T0-TRUST-H02",
+      "target_field": "boundary_conditions[0]",
+      "challenge_type": "scope_overreach",
+      "challenge_statement": "该边界条件声称判断'适用于2022-2024年间的公开证据'，但观点引用的支持证据中，EV-T0-3FA6806CF267B04B发布于2022-01-13，EV-T0-9C79EF2837BC80A2发布于2024-02-08，EV-T0-A8459E6E8776A15D发布于2024-10-09，EV-T0-F0773C8E2ECB5C8D发布于2023-01-09。这些证据在时间上覆盖了2022至2024年，但观点并未说明其结论在时间维度上的适用边界——即2024年12月31日之后的新进展是否可能改变判断。边界条件仅限定了'不排除后续出现跨项目整合'，但未明确该判断本身的时间有效性范围，存在范围界定模糊的问题。",
+      "evidence_ids": [
+        "EV-T0-3FA6806CF267B04B",
+        "EV-T0-9C79EF2837BC80A2",
+        "EV-T0-A8459E6E8776A15D",
+        "EV-T0-F0773C8E2ECB5C8D"
+      ],
+      "impact": "medium",
+      "response_required": true
+    }
+  ],
+  "rejected": []
+}

@@ -1,0 +1,42 @@
+{
+  "case_id": "us_military_ai_deployment",
+  "coding_dimensions": [
+    "engineering_resource_conditions",
+    "application_maturity"
+  ],
+  "content_hash": "90a27931067c9d49bd7623994eeb9e2117b99814fbe2b1c60a9bb20a95c7220c",
+  "correction_of_version": 1,
+  "correction_reason": "落实作者已授权的G1重点裁决：开发周期启动不是测试或演习事件",
+  "created_at": "2026-08-26T08:05:33Z",
+  "evidence_id": "EV-T0-3D9421B5DCC381FC",
+  "evidence_nature": "resource_input",
+  "excerpt": "The first development cycle, or “spiral challenge,” started in December 2023, is focused on developing platforms with agnostic autonomy features.",
+  "excerpt_original": "The first development cycle, or “spiral challenge,” started in December 2023, is focused on developing platforms with agnostic autonomy features.",
+  "excerpt_zh": "首个开发周期（spiral challenge）于2023年12月启动。",
+  "normalized_claim": "REMA项目首个开发周期于2023年12月启动。",
+  "page_or_section": "web_paragraph_0015",
+  "published_at": "2024-02-08",
+  "published_at_precision": "day",
+  "publisher": "Defense Advanced Research Projects Agency (DARPA)",
+  "review_mode": "authorized_g1_adjudication_correction",
+  "reviewed_by": "author_01",
+  "run_id": "G1-T0-C1-31F142A5227EA580-correction-v1",
+  "schema_version": "phase-a.1",
+  "snapshot_tag": "T0",
+  "source_grade": "A",
+  "source_id": "T0-PB-003",
+  "source_locator": "web_paragraph_0015",
+  "source_type": "official_program_news",
+  "status": "active",
+  "synthetic": false,
+  "title": "DARPA's REMA Program to Add Mission Autonomy to Commercial Drones",
+  "topics": [
+    "REMA项目",
+    "开发周期",
+    "螺旋挑战"
+  ],
+  "url_or_path": "https://www.darpa.mil/news/2024/mission-autonomy",
+  "valid_from": null,
+  "valid_to": null,
+  "version": 2
+}

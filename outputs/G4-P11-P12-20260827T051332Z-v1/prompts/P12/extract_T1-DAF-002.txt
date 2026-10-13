@@ -1,0 +1,27 @@
+T1证据候选抽取。只使用下面提供的T1原文，不使用外部知识。
+研究问题：以公开、非密材料为依据，研究2025年1月1日至2026年6月30日期间，美国军用人工智能能力形成、应用部署和体系化发展的公开可观察变化。
+来源ID：T1-DAF-002
+标题：DAF launches plan to bolster AI workforce
+发布日期：2026-04-28
+输出JSON数组；每条只表达一个可核查事实或明确主张。每条必须恰好包含以下8个字段：source_id, source_locator, excerpt_original, excerpt_zh, normalized_claim, evidence_nature, coding_dimensions, topics。不得输出其他字段；允许输出空数组；每份来源最多6条。source_id必须与给定来源一致；source_locator必须是给定定位。excerpt_original必须逐字连续来自给定段落；normalized_claim使用中文且不得扩大主体、行动、数字、范围或结果；excerpt_zh必须非空。evidence_nature只能使用单一枚举值，coding_dimensions和topics必须是字符串数组。不要把目标写成结果、把演示或试验写成部署、把预算或合同直接写成规模化能力。
+证据性质定义：
+- goal: 计划、目标、拟议能力或未来安排，不等于已经实现。
+- governance_event: 已经发生的政策、职责、指南或组织治理机制建立。
+- resource_input: 已经发生的预算、合同、采购、数据、人才或基础设施投入。
+- test_event: 测试、演示、演习或竞赛发生及其参与主体、配置。
+- test_result: 测试中明确观察到的功能、性能或结果。
+- deployment_event: 明确已经部署、实装、投入运行或持续使用。
+- constraint: 限制能力形成、部署或评估的已报告条件。
+- evaluation: 来源明确给出的评估、判断或评价，不改写为客观结果。
+编码维度定义：
+- integration_level: 跨项目、跨平台、跨军种或企业级系统集成的程度。
+- application_maturity: 从目标、演示、试验到部署和持续使用的应用成熟度。
+- human_machine_authority: 人机在任务中的权责、授权、监督与决策关系。
+- engineering_resource_conditions: 数据、算力、基础设施、人才、预算、采办和保障条件。
+- trust_governance_constraints: 可信性、安全、测试评估、责任、治理约束及制度落地。
+- organizational_system_fit: 组织运用、流程、任务适配和体系制度环境的匹配程度。
+原文段落：
+[web_paragraph_0001] DAF launches plan to bolster AI workforce
+[web_paragraph_0002] Published April 28, 2026
+[web_paragraph_0003] By the Office of the Chief Data and AI Officer
+[web_paragraph_0004] The Department of the Air Force approved a comprehensive strategy this month to aggressively recruit, train and retain top-tier artificial intelligence professionals, aiming to operationalize AI and maintain a decisive competitive advantage in an era of rapid technological change. This Total Force plan was developed in accordance with the Department of War’s AI Strategy directive and aligns with the department’s goal to enhance America’s AI dominance. "AI professionals have the skills, knowledge and ability to convert data into operational advantage," said Susan Davenport, DAF chief data and artificial intelligence officer. This expertise is crucial for ensuring the department is equipped with the necessary AI speed and capabilities to improve national security and maintain a global competitive advantage. "To ensure the department is poised to meet the escalating demand for these skill sets, we are launching a comprehensive strategy built upon three mutually reinforcing key result areas: recruiting top-tier talent; retaining our seasoned experts; and training our personnel for the future fight," Davenport said. To attract new talent, the plan directs the Department of the Air Force to streamline its hiring and accessions processes, remove bottlenecks and expedite hiring for essential AI positions. The initiative also includes identifying competitive financial incentives and a "Mission Matching Strategy" to align candidates with high-impact defense projects. On retention, the department aims to combat workforce complacency and minimize departure to industry by capitalizing on untapped talent already within the ranks. A key proposal is the creation of a Department of the Air Force Dual-Track Career Model which will pave the way for AI professionals, including those in the Guard and Reserve with specialized civilian experience, to advance as technical experts without being forced into traditional management roles. The training component of the strategy seeks to establish a baseline of AI literacy for all personnel, creating a "universally informed and responsibly engaged workforce prepared for an AI-integrated future.” The plan calls for a shift from simple course completion to a model that requires validation or proof of skill depending on whether you are in or vying for an AI-aligned role. The plan frames the initiative as essential for national security in a competitive global environment. "The successful implementation of this plan will ensure the department can attract, sustain and develop the necessary AI talent at the speed of industry, directly bolstering national security and maintaining a decisive competitive advantage in the global AI landscape," Davenport said. Through these efforts, the department will establish itself as a premier force in AI talent management, accelerating the deployment of game-changing capabilities of artificial intelligence in service of the mission. The Department of the Air Force AI Hiring and Talent Development Plan issued by the department's Chief Data and AI Office, and in coordination with related stakeholders across the DAF, details a multi-faceted approach to building a skilled workforce capable of harnessing AI for military superiority. The approval of the plan follows closely with the release of the newly signed DAF Data and AI Strategies which prioritize warfighter readiness and training for operational success.

@@ -1,0 +1,24 @@
+{
+  "affected_viewpoint_ids": [
+    "VP-T0-OPS-H02",
+    "VP-T0-STRAT-H01",
+    "VP-T0-STRAT-H02",
+    "VP-T0-TECH-H02",
+    "VP-T0-TECH-H03",
+    "VP-T0-TRUST-H03"
+  ],
+  "eligible_t1_change_signal_count": 38,
+  "excluded_evidence_ids": [
+    "CE-T1-1797A97EF532F332",
+    "CE-T1-1DB188A712B4C1C6",
+    "CE-T1-3DC907538A406628",
+    "CE-T1-4DB05E964D50AC61",
+    "CE-T1-6B7DB29A3B242353",
+    "CE-T1-9D61AF59EFDD3694"
+  ],
+  "historical_context_excluded_from_change_signal": true,
+  "t1_formal_evidence_count": 40,
+  "t1_snapshot_id": "SNAP-T1-US-MILITARY-AI-99A723BFBC6D273A",
+  "t1_snapshot_item_count": 125,
+  "truncated_id_forbidden": "CE-T1-AA937CC0AF5E237"
+}

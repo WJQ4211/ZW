@@ -1,0 +1,66 @@
+prompt_id: evidence_extract
+version: "1.0"
+purpose: "P3a-R real-model extraction of auditable evidence candidates from supplied T0 source text"
+research_question: "以公开、非密材料为依据，截至2024年12月31日，美军军用人工智能能力建设在2025—2027年更可能呈现何种主导部署形态？"
+allowed_input_fields:
+  - source_id
+  - source_locator
+  - source_text
+  - pdf_page_number
+  - printed_page_number
+  - section_title
+  - machine_extracted_anchor
+  - visual_review_required
+output_schema:
+  type: array
+  items:
+    type: object
+    additionalProperties: false
+    required:
+      - source_id
+      - source_locator
+      - excerpt_original
+      - excerpt_zh
+      - normalized_claim
+      - coding_dimensions
+      - evidence_nature
+      - topics
+    properties:
+      source_id: {type: string}
+      source_locator: {type: string}
+      excerpt_original: {type: string}
+      excerpt_zh: {type: string}
+      normalized_claim: {type: string}
+      coding_dimensions: {type: array, items: {type: string}}
+      evidence_nature: {type: string, enum: [goal, resource_input, test_event, test_result, deployment_event, governance_event, constraint, evaluation]}
+      topics: {type: array, items: {type: string}}
+coding_dimension_definitions:
+  integration_level: "能力集成层级：单工具、单任务、单平台、跨平台、跨任务或体系级集成。"
+  application_maturity: "应用成熟度：概念战略、研发、试验、试点、采购部署或持续运用。"
+  human_machine_authority: "人机权限关系：辅助决策、人在回路中、受监督自主或更高程度自主。"
+  engineering_resource_conditions: "工程与资源条件：数据、算力、模型、接口、供应链、预算、人才和保障。"
+  trust_governance_constraints: "可信与治理约束：安全、可靠性、测试评价、授权边界、责任与伦理。"
+  organizational_system_fit: "组织与体系适配：指挥流程、任务编组、跨平台协同、人员负荷和组织变革。"
+evidence_nature_definitions:
+  goal: "战略目标、计划或期望结果；不能写成已实现能力。"
+  resource_input: "预算、人才、数据、基础设施或其他投入。"
+  test_event: "仅证明测试或演习发生、参与主体和配置；不表示观察到的性能或功能结果。"
+  test_result: "证明测试中观察到的功能、性能或结果；演习发生或参与不自动满足此类。"
+  deployment_event: "已发生且可定位的采购、部署、推广或持续使用事件。"
+  governance_event: "已经发生的政策发布、机构职责确立、治理工具发布、标准指南采用或组织机制建立；不等于技术能力已经部署。"
+  constraint: "明确的限制、风险、缺口或适用边界。"
+  evaluation: "测试评价、验证、审计或评估活动及其明确结论。"
+forbidden:
+  - "不得输出evidence_id、case_id、snapshot_tag、title、publisher、source_grade、published_at、source_type、url_or_path、content_hash、reviewed_by或status。"
+  - "不得输出collector_run_id；运行标识由SchemaBase和程序注入。"
+  - "不得生成竞争性假设、观点、案例结论或2025—2027最终路线判断。"
+  - "不得把战略愿景或计划标为deployment_event或test_result。"
+  - "不得把演习参与写成已证明作战效能。"
+  - "不得使用伪连续定位；非连续摘录必须拆成不同证据。"
+  - "英文候选的excerpt_zh不得为空，且必须标记为pending_g1_translation_review。"
+  - "疑似AI/Al、DoD/OoD、RAI/RAJ等提取错误不得悄悄自动纠正。"
+  - "excerpt_original必须逐字来自指定source_locator中的文本。"
+  - "证据不足时少输出，不得为达到数量要求凑条目。"
+json_repair_prompt: "只修复JSON语法、缺失的允许字段或字段类型；不得补写事实、改写excerpt_original或新增确定性元数据。修复后仍只能输出严格JSON数组。"
+template_sha256: null
+template_hash_note: "The template hash is recorded in each P3a manifest to avoid a self-referential YAML hash."

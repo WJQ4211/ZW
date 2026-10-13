@@ -1,0 +1,90 @@
+/**
+ * External Link Check — uses data passed by wp_localize_script().
+ * - Prompts users before navigating to external (non-allow-listed) links.
+ * - Respects modified clicks (Ctrl/Cmd/Middle click).
+ * - Allows per-link bypass with data-external-check="ignore".
+ */
+
+(function () {
+  // Ensure localized data is present
+  if (typeof ExternalLinkCheck === 'undefined') {
+    console.warn('[ExternalLinkCheck] Config is missing. Check wp_localize_script().');
+    return;
+  }
+
+  const { siteHost, allowHosts, message } = ExternalLinkCheck;
+
+  // Defensive defaults if something is undefined
+  const SITE_HOST = (typeof siteHost === 'string' && siteHost.length) ? siteHost : location.hostname;
+  const ALLOW_HOSTS = Array.isArray(allowHosts) ? allowHosts : [];
+  const PROMPT_MESSAGE = (typeof message === 'string' && message.length)
+    ? message
+    : 'This link will take you away from this site.';
+
+  // Known protocols we should not warn about
+  const SAFE_PROTOCOLS = ['mailto:', 'tel:', 'javascript:'];
+
+  /**
+   * Determine if the anchor points to an external host (not same host, not allow-listed).
+   * @param {HTMLAnchorElement} anchor
+   * @returns {boolean}
+   */
+  function isExternal(anchor) {
+    try {
+      const href = anchor.getAttribute('href') || '';
+      // Skip safe protocols
+      if (SAFE_PROTOCOLS.some(p => href.toLowerCase().startsWith(p))) return false;
+
+      const url = new URL(href, location.href);
+      // Same host?
+      if (url.hostname === SITE_HOST) return false;
+
+      // =======================================================================
+      // MODIFIED LOGIC:
+      // Instead of an exact match with .includes(), we check if the link's
+      // hostname ENDS WITH an allow-listed domain. This handles subdomains.
+      // We also check for an exact match to handle cases like 'army.mil'.
+      // =======================================================================
+      if (ALLOW_HOSTS.some(allowedHost => 
+          url.hostname === allowedHost || url.hostname.endsWith('.' + allowedHost)
+      )) {
+          return false;
+      }
+      // =======================================================================
+
+      // Everything else is external
+      return true;
+    } catch (e) {
+      // Unparseable URLs (e.g., malformed) are treated as internal to avoid false positives
+      return false;
+    }
+  }
+
+
+  /**
+   * Event delegation — intercept clicks on ... elements.
+   * Use capture to run early; respect user intent (modified clicks).
+   */
+  document.addEventListener('click', function (evt) {
+    // Only left-clicks
+    if (evt.button !== 0) return;
+
+    // Respect modified clicks (open in new tab/window or download)
+    if (evt.metaKey || evt.ctrlKey || evt.shiftKey || evt.altKey) return;
+
+    const anchor = evt.target.closest('a[href]');
+    if (!anchor) return;
+
+    // Optional bypass on specific links
+    if (anchor.dataset.externalCheck === 'ignore') return;
+
+    // If external, prompt the user
+    if (isExternal(anchor)) {
+      const ok = window.confirm(PROMPT_MESSAGE);
+      if (!ok) {
+        evt.preventDefault();
+        evt.stopPropagation();
+      }
+    }
+  }, true);
+})();

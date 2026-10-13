@@ -1,0 +1,165 @@
+仅对下面生成器C的输出做格式或Evidence ID修复。不得改变任何假设的实质、支持/反驳证据含义、范围、条件或维度；不得新增实质判断。只返回符合原要求的JSON数组，不要Markdown围栏。原始输出：
+```json
+[
+  {
+    "candidate_id": "GEN-C-H01",
+    "generator_id": "C",
+    "hypothesis_statement": "美国军用人工智能在2022-2024年间主要处于从实验室能力验证向有限实战部署过渡的早期阶段，其主导路径是依托DARPA等机构的高风险技术演示项目（如ACE、RACER、REMA）和陆军AIDP等快速部署项目，但整体体系化整合仍受制于基础设施延迟和采办指导缺失。",
+    "scope": "2022-01-01至2024-12-31，美国国防部及军种层面的军用AI能力形成与应用扩展",
+    "supporting_evidence_ids": [
+      "EV-T0-DB4536B8270ECF58",
+      "EV-T0-A8459E6E8776A15D",
+      "EV-T0-B33EF9F7AA480E81",
+      "EV-T0-30E9B209F0439B21",
+      "EV-T0-7B65174669ACA9CE"
+    ],
+    "counter_evidence_ids": [
+      "EV-T0-51D65DEC82584BCD",
+      "EV-T0-A515E3B9391C51B4",
+      "EV-T0-8E35B508DF5C2E65"
+    ],
+    "key_assumptions": [
+      "DARPA演示项目的成功结果可代表军用AI技术成熟度的提升",
+      "AIDP的快速部署反映了从实验室到实战的转化路径",
+      "基础设施和采办指导的延迟是体系化发展的主要瓶颈"
+    ],
+    "falsification_conditions": [
+      "若在2024年底前出现多个军种大规模、常态化部署AI系统的证据，且不再依赖DARPA演示项目",
+      "若联合通用基金会达到全面作战能力且采办指导方针正式发布并实施",
+      "若AI系统在实战中承担核心决策任务且无需人类监督"
+    ],
+    "unresolved_questions": [
+      "DARPA演示项目成果向军种实际装备转化的具体时间表和规模",
+      "AIDP等快速部署项目是否具备可复制性并扩展到其他领域",
+      "基础设施延迟是否在2024年底前得到实质性解决"
+    ],
+    "covered_dimensions": [
+      "technical_engineering_maturity",
+      "testing_deployment_application",
+      "resource_conditions",
+      "strategic_governance"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "candidate_id": "GEN-C-H02",
+    "generator_id": "C",
+    "hypothesis_statement": "美国军用人工智能的发展在2022-2024年间呈现明显的'演示验证强、体系整合弱'的失衡状态：技术演示项目（如ACE、RACER、Triage Challenge）取得突破性进展，但国防部层面的统一基础设施（如联合通用基金会）和采办指导方针的推进严重滞后，导致能力形成呈现碎片化而非体系化路径。",
+    "scope": "2022-01-01至2024-12-31，美国国防部AI技术演示与体系化建设之间的对比",
+    "supporting_evidence_ids": [
+      "EV-T0-30E9B209F0439B21",
+      "EV-T0-DDA30BF3C0C38B0C",
+      "EV-T0-542BC468B66F4EB7",
+      "EV-T0-51D65DEC82584BCD",
+      "EV-T0-8E35B508DF5C2E65"
+    ],
+    "counter_evidence_ids": [
+      "EV-T0-DBEF932E1A5AD575",
+      "EV-T0-1D827623351A7C55"
+    ],
+    "key_assumptions": [
+      "技术演示项目的成功与体系化建设进度可以分别衡量",
+      "联合通用基金会的延迟反映了整体体系化建设的滞后",
+      "采办指导方针的缺失是体系化发展的关键障碍"
+    ],
+    "falsification_conditions": [
+      "若联合通用基金会在2024年底前达到全面作战能力且采办指导方针正式发布",
+      "若多个军种在2024年底前实现AI系统的标准化互操作部署",
+      "若国防部层面出现统一的AI测试与评估框架并实际应用于多个项目"
+    ],
+    "unresolved_questions": [
+      "技术演示项目的成果是否已通过正式采办程序进入装备序列",
+      "联合通用基金会的延迟是否在2024年底前得到解决",
+      "采办指导方针的缺失是否实际阻碍了AI能力的规模化部署"
+    ],
+    "covered_dimensions": [
+      "technical_engineering_maturity",
+      "testing_deployment_application",
+      "resource_conditions",
+      "strategic_governance",
+      "trust_organization_system_integration"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "candidate_id": "GEN-C-H03",
+    "generator_id": "C",
+    "hypothesis_statement": "美国军用人工智能在2022-2024年间的发展路径以'任务特定型自主能力'为主导，即针对具体作战场景（如空战、越野机动、无人机任务延续、医疗分诊）开发专用AI系统，而非追求通用型AI能力；这一路径在特定任务领域取得显著进展，但限制了跨领域的能力迁移和体系化整合。",
+    "scope": "2022-01-01至2024-12-31，美国军用AI的任务特定型发展路径",
+    "supporting_evidence_ids": [
+      "EV-T0-DB4536B8270ECF58",
+      "EV-T0-3FA6806CF267B04B",
+      "EV-T0-9C79EF2837BC80A2",
+      "EV-T0-E6EFA5142E5BA321",
+      "EV-T0-9263A423CF1D437F"
+    ],
+    "counter_evidence_ids": [
+      "EV-T0-7E37FBD511FC654E",
+      "EV-T0-B5B8C14BA4B90451"
+    ],
+    "key_assumptions": [
+      "DARPA各项目（ACE、RACER、REMA、Triage）代表了任务特定型发展路径",
+      "任务特定型路径与通用型AI发展路径存在明显区别",
+      "联合通用基金会等平台旨在推动通用化但尚未成功"
+    ],
+    "falsification_conditions": [
+      "若出现一个AI系统在多个不相关任务领域（如空战和医疗分诊）均达到实战标准",
+      "若联合通用基金会成功实现跨领域AI能力的共享和复用",
+      "若国防部发布明确的通用AI发展路线图并付诸实施"
+    ],
+    "unresolved_questions": [
+      "任务特定型AI系统之间的技术成果是否存在可迁移性",
+      "联合通用基金会是否在2024年底前实现了跨领域能力共享",
+      "任务特定型路径是否会导致重复投资和资源浪费"
+    ],
+    "covered_dimensions": [
+      "technical_engineering_maturity",
+      "testing_deployment_application",
+      "resource_conditions",
+      "trust_organization_system_integration"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "candidate_id": "GEN-C-H04",
+    "generator_id": "C",
+    "hypothesis_statement": "美国军用人工智能在2022-2024年间的发展受到'机载计算约束'的显著限制，导致AI能力的部署主要依赖后端计算支持，而真正意义上的边缘自主能力（onboard AI）仍处于早期探索阶段；这一约束可能成为未来能力形成的主要瓶颈，而非战略或组织因素。",
+    "scope": "2022-01-01至2024-12-31，美国军用AI的机载计算能力发展",
+    "supporting_evidence_ids": [
+      "EV-T0-AD4CCAC18E1BB26C",
+      "EV-T0-26CBA9EE14D71B2D",
+      "EV-T0-C13F259540C77BFA",
+      "EV-T0-850EF492D703EA37",
+      "EV-T0-F67161443E222AE4"
+    ],
+    "counter_evidence_ids": [
+      "EV-T0-30E9B209F0439B21",
+      "EV-T0-DDA30BF3C0C38B0C"
+    ],
+    "key_assumptions": [
+      "机载计算约束是军用AI部署的普遍性技术瓶颈",
+      "ACE和RACER等项目的成功不代表机载AI已克服计算限制",
+      "后端计算支持的依赖限制了AI在战场环境中的实时应用"
+    ],
+    "falsification_conditions": [
+      "若出现多个在无后端支持下实现实时决策的机载AI系统部署案例",
+      "若国防部发布机载AI计算能力突破的官方声明或技术报告",
+      "若机载AI在复杂战场环境中达到与后端支持相当的性能水平"
+    ],
+    "unresolved_questions": [
+      "机载计算约束在2024年底前是否得到实质性缓解",
+      "ACE和RACER等项目的成功是否依赖于后端计算支持",
+      "机载AI的性能差距是否限制了其在实战中的应用范围"
+    ],
+    "covered_dimensions": [
+      "technical_engineering_maturity",
+      "resource_conditions",
+      "testing_deployment_application"
+    ],
+    "confidence": "low"
+  }
+]
+```
+
+合法Evidence ID集合：["EV-T0-00FCD33BA877C8BA", "EV-T0-0405886E04C205A6", "EV-T0-04572D780936A8D6", "EV-T0-06EEB768196F287C", "EV-T0-09638BC4F3ECF82B", "EV-T0-0A73030BBF2649F9", "EV-T0-1C27CBB8A5A70420", "EV-T0-1D827623351A7C55", "EV-T0-1FAE455817C90E73", "EV-T0-26BA1F3EF919886B", "EV-T0-26CBA9EE14D71B2D", "EV-T0-27370C837C885AEE", "EV-T0-27EE6FA7DA2FADC0", "EV-T0-28FDEEB8519282B2", "EV-T0-2CF449726C937256", "EV-T0-2D9AD11D628EFF58", "EV-T0-2E42D28FCCBD88DD", "EV-T0-2EEA5ADBB7CFF58C", "EV-T0-30E9B209F0439B21", "EV-T0-34D72CBB40FC6006", "EV-T0-357C993D92C95187", "EV-T0-38BEC464961BAEA8", "EV-T0-3D9421B5DCC381FC", "EV-T0-3FA6806CF267B04B", "EV-T0-41C1E1300EA0D2D7", "EV-T0-4240F0405A11E43F", "EV-T0-425BAC0BC94181E0", "EV-T0-436559CE67256788", "EV-T0-451C2F294AC898A8", "EV-T0-48237E0AC6B28A09", "EV-T0-4AC04F3FF13BAF68", "EV-T0-51D65DEC82584BCD", "EV-T0-542BC468B66F4EB7", "EV-T0-54AE74809071D83B", "EV-T0-582B12D4B09F11B1", "EV-T0-5EA556C2C939C121", "EV-T0-5FA6E8C23AC72A82", "EV-T0-62B1ECDA7DF87F1A", "EV-T0-63E815AC3300FE8A", "EV-T0-6EAB90CE05FF523F", "EV-T0-6FE734DE05953A3C", "EV-T0-772E45D0B54BCC9C", "EV-T0-79B653E22A3D4EF4", "EV-T0-7B65174669ACA9CE", "EV-T0-7E37FBD511FC654E", "EV-T0-7E3F813822CB52F8", "EV-T0-7FD6156DA8592DF7", "EV-T0-8414D2FA3AA1A98D", "EV-T0-850EF492D703EA37", "EV-T0-8BF4D983A68CB422", "EV-T0-8E35B508DF5C2E65", "EV-T0-903F4A6639DA3CEC", "EV-T0-906DA9F52C0F15FA", "EV-T0-9263A423CF1D437F", "EV-T0-9C79EF2837BC80A2", "EV-T0-A42AF7A5AE2B6DAD", "EV-T0-A515E3B9391C51B4", "EV-T0-A72CF94353B280D6", "EV-T0-A8459E6E8776A15D", "EV-T0-AD4CCAC18E1BB26C", "EV-T0-B1673A0975D16CA9", "EV-T0-B33EF9F7AA480E81", "EV-T0-B3AD2B72573BBD49", "EV-T0-B5B8C14BA4B90451", "EV-T0-BD7126374D17DC2A", "EV-T0-C13F259540C77BFA", "EV-T0-C557AE16E4403328", "EV-T0-C86CE008843D093B", "EV-T0-CA999183D4D473C4", "EV-T0-CB164026EB3FFB62", "EV-T0-D047B38066F7D303", "EV-T0-D8B6CB4040AF1B5B", "EV-T0-DB4536B8270ECF58", "EV-T0-DBEF932E1A5AD575", "EV-T0-DD07FB77153E22F0", "EV-T0-DDA30BF3C0C38B0C", "EV-T0-E4EADC8D35D78E4A", "EV-T0-E6EFA5142E5BA321", "EV-T0-E7853897E7615DB9", "EV-T0-F0773C8E2ECB5C8D", "EV-T0-F67161443E222AE4", "EV-T0-F8E3070F89D94D25", "EV-T0-F92FA97C8B8A2E87", "EV-T0-FB39056D1BA1F579", "EV-T0-FDBC359DA612C0B4"]
+严格字段要求：每条恰好11个字段 candidate_id、generator_id、hypothesis_statement、scope、supporting_evidence_ids、counter_evidence_ids、key_assumptions、falsification_conditions、unresolved_questions、covered_dimensions、confidence；每份2至4条；所有数组字段为字符串数组；covered_dimensions只能使用：strategic_governance, technical_engineering_maturity, testing_deployment_application, resource_conditions, trust_organization_system_integration，不得使用organizational_system_fit等其他编码。

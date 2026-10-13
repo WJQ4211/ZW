@@ -1,0 +1,14 @@
+case_id: synthetic_military_ai
+case_name: "Synthetic military AI capability evolution"
+synthetic: true
+question: "在给定证据时点和三年观察窗内，军用人工智能能力建设主要呈现哪种能力形成与应用演进形态？"
+decision_dimension: "capability_formation_pattern"
+time_horizon: "synthetic 2025-2028"
+perspectives:
+  - perspective_id: technical
+    name: "技术能力视角"
+  - perspective_id: operations
+    name: "作战应用与体系视角"
+cutoffs:
+  t0: "2025-12-31T23:59:59+00:00"
+  t1: "2026-06-30T23:59:59+00:00"

@@ -1,0 +1,78 @@
+dimension,source_id,page_hits,coverage_status,notes
+deployment_fielding_operations,T0-SP-007,2;4;6,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+deployment_fielding_operations,T0-SP-008,5;6;7,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+deployment_fielding_operations,T0-IR-006,17;22;25,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+deployment_fielding_operations,T0-PB-007,7;9;10,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+deployment_fielding_operations,T0-IR-007,7;24,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+deployment_fielding_operations,T0-IR-008,9;11;14,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+adoption_scaling,T0-SP-007,8;9;11,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+adoption_scaling,T0-SP-008,1;2;3,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+adoption_scaling,T0-IR-006,2;10;17,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+adoption_scaling,T0-PB-007,5;12;14,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+adoption_scaling,T0-IR-007,14;20;23,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+adoption_scaling,T0-IR-008,2;3;21,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+acquisition_procurement,T0-SP-007,3;4;9,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+acquisition_procurement,T0-SP-008,14;15;18,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+acquisition_procurement,T0-IR-006,1;2;4,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+acquisition_procurement,T0-PB-007,1;2;3,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+acquisition_procurement,T0-IR-007,5;10;11,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+acquisition_procurement,T0-IR-008,2;5;6,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+test_evaluation,T0-SP-007,4;11;12,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+test_evaluation,T0-SP-008,9;10,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+test_evaluation,T0-IR-006,17;25;67,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+test_evaluation,T0-IR-007,40,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+test_evaluation,T0-IR-008,14,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+workforce_organization,T0-SP-007,3;8;9,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+workforce_organization,T0-SP-008,7;16;18,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+workforce_organization,T0-IR-006,8;12;22,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+workforce_organization,T0-PB-007,14;18;25,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+workforce_organization,T0-IR-007,1;2;3,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+workforce_organization,T0-IR-008,22;37,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+governance_trust_responsibility,T0-SP-007,2;3;4,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+governance_trust_responsibility,T0-SP-008,5;6;9,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+governance_trust_responsibility,T0-IR-006,4;9;11,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+governance_trust_responsibility,T0-PB-007,15;19;24,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+governance_trust_responsibility,T0-IR-007,2;11;13,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+governance_trust_responsibility,T0-IR-008,11;13;16,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+data_enterprise_collaboration,T0-SP-007,7;10;12,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+data_enterprise_collaboration,T0-SP-008,1;2;3,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+data_enterprise_collaboration,T0-IR-006,1;2;3,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+data_enterprise_collaboration,T0-PB-007,2;6;7,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+data_enterprise_collaboration,T0-IR-007,2;5;6,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+data_enterprise_collaboration,T0-IR-008,5;6;11,page_recall_only,Keyword recall only; P2 admission and formal Evidence are pending.
+application_maturity,T0-TD-007,not_available_external_page,metadata_only_pending_original_page,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+organizational_system_fit,T0-TD-007,not_available_external_page,metadata_only_pending_original_page,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+data_enterprise_collaboration,T0-TD-007,not_available_external_page,metadata_only_pending_original_page,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+application_maturity,T0-TD-008,not_available_external_page,metadata_only_pending_original_page,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+human_machine_authority,T0-TD-008,not_available_external_page,metadata_only_pending_original_page,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+organizational_system_fit,T0-TD-008,not_available_external_page,metadata_only_pending_original_page,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+governance,T0-CDAO-001,not_available_external_page,metadata_only_pending_original_page,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+application_maturity,T0-CDAO-001,not_available_external_page,metadata_only_pending_original_page,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+organizational_system_fit,T0-CDAO-001,not_available_external_page,metadata_only_pending_original_page,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+data_enterprise_collaboration,T0-ENT-001,not_available_external_page,metadata_only_pending_original_page,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+cross_component,T0-ENT-001,not_available_external_page,metadata_only_pending_original_page,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+organizational_system_fit,T0-ENT-001,not_available_external_page,metadata_only_pending_original_page,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+acquisition_procurement,T0-PB-008,not_available_external_page,metadata_only_pending_p2,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+engineering_resource_conditions,T0-PB-008,not_available_external_page,metadata_only_pending_p2,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+test_evaluation,T0-PB-008,not_available_external_page,metadata_only_pending_p2,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+acquisition_procurement,T0-IR-009,not_available_external_page,metadata_only_pending_p2,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+data_enterprise_collaboration,T0-IR-009,not_available_external_page,metadata_only_pending_p2,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+organizational_system_fit,T0-IR-009,not_available_external_page,metadata_only_pending_p2,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+application_maturity,T0-TD-007,not_available_external_page,metadata_only_pending_original_page,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+organizational_system_fit,T0-TD-007,not_available_external_page,metadata_only_pending_original_page,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+data_enterprise_collaboration,T0-TD-007,not_available_external_page,metadata_only_pending_original_page,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+application_maturity,T0-TD-008,not_available_external_page,metadata_only_pending_original_page,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+human_machine_authority,T0-TD-008,not_available_external_page,metadata_only_pending_original_page,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+organizational_system_fit,T0-TD-008,not_available_external_page,metadata_only_pending_original_page,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+governance,T0-CDAO-001,not_available_external_page,metadata_only_pending_original_page,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+application_maturity,T0-CDAO-001,not_available_external_page,metadata_only_pending_original_page,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+organizational_system_fit,T0-CDAO-001,not_available_external_page,metadata_only_pending_original_page,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+data_enterprise_collaboration,T0-ENT-001,not_available_external_page,metadata_only_pending_original_page,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+cross_component,T0-ENT-001,not_available_external_page,metadata_only_pending_original_page,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+organizational_system_fit,T0-ENT-001,not_available_external_page,metadata_only_pending_original_page,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+acquisition_procurement,T0-PB-008,not_available_external_page,metadata_only_pending_p2,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+engineering_resource_conditions,T0-PB-008,not_available_external_page,metadata_only_pending_p2,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+test_evaluation,T0-PB-008,not_available_external_page,metadata_only_pending_p2,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+acquisition_procurement,T0-IR-009,not_available_external_page,metadata_only_pending_p2,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+data_enterprise_collaboration,T0-IR-009,not_available_external_page,metadata_only_pending_p2,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."
+organizational_system_fit,T0-IR-009,not_available_external_page,metadata_only_pending_p2,"Candidate metadata only; no page index, Evidence, hypothesis, or conclusion was created."

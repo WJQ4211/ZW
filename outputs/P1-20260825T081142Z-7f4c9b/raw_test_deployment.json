@@ -1,0 +1,47 @@
+{
+  "run_id": "P1-20260825T081142Z-7f4c9b",
+  "case_id": "us_military_ai_deployment",
+  "stage": "P1",
+  "group": "test_deployment",
+  "raw_searches": [
+    {
+      "query_id": "P1-TD-DARPA-01",
+      "query_text": "RACER ACE autonomy test robotics",
+      "source_domain": "darpa.mil/api/search",
+      "raw_total": 747,
+      "page_size_saved": 10,
+      "results": [
+        {"title":"ACE Program Achieves World First for AI in Aerospace","url":"/news/2024/ace-ai-aerospace","type":"news","summary":"DARPA's Air Combat Evolution (ACE) program has achieved the first-ever in-air tests of AI algorithms autonomously flying an F-16 against a human-piloted F-16 in within-visual-range combat scenarios (sometimes referred to as \"dogfighting\")."},
+        {"title":"ACE Program’s AI Agents Transition from Simulation to Live Flight","url":"/news/2023/ace-program-transition","type":"news","summary":"In less than three years, artificial intelligence (AI) algorithms developed under DARPA&rsquo;s Air Combat Evolution (ACE) program have progressed from controlling simulated F-16s flying aerial dogfights on computer screens to controlling an actual F-16 in flight."},
+        {"title":"DARPA, U.S. Air Force fly AI-controlled F-16","url":"/news/2026/darpa-us-air-force-fly-ai-controlled-f-16","type":"news","summary":"Historic VENOM milestone demonstrates scalable AI development capabilities for the operational fleet."},
+        {"title":"ACE","url":"/research/programs/air-combat-evolution","type":"program","summary":"The Air Combat Evolution (ACE) program seeks to increase trust in combat autonomy by using human-machine collaborative dogfighting as its challenge problem."},
+        {"title":"Collaborative Air Combat Autonomy Program Makes Strides","url":"/news/2021/air-combat-autonomy-program","type":"news","summary":"DARPA&rsquo;s Air Combat Evolution (ACE) program is half way through Phase 1 and has notched several key accomplishments in anticipation of live subscale aircraft dogfights in Phase 2 later this year."},
+        {"title":"Chris Cotting","url":"/about/staff/chris-cotting","type":"staff","summary":"Chris \u201cDoc\u201d Cotting, Ph.D., has experience as a program manager, chief engineer, flight test lead, and guidance, navigation, and control lead for multiple aerospace vehicles."},
+        {"title":"ACE","url":"/about/innovation-timeline/ace","type":"timeline","summary":"The Air Combat Evolution program achieved the first-ever in-air tests of AI algorithms autonomously flying an F-16 against a human-piloted F-16 in within-visual-range combat scenarios."},
+        {"title":"Training AI to Win a Dogfight","url":"/news/2019/training-ai-dogfight","type":"news","summary":"As modern warfare evolves to incorporate more human-machine teaming, DARPA seeks to automate air-to-air combat, enabling reaction times at machine speeds and freeing pilots to concentrate on the larger air battle."},
+        {"title":"AIR","url":"/research/programs/artificial-intelligence-reinforcements","type":"program","summary":"The Artificial Intelligence Reinforcements (AIR) program is developing dominant, AI-driven tactical autonomy for multi-ship, beyond visual range (BVR) air combat missions."},
+        {"title":"DARPA Selects Teams to Further Advance Dogfighting Algorithms","url":"/news/2020/dogfighting-algorithms","type":"news","summary":"DARPA recently awarded contracts to five companies to develop algorithms enabling mixed teams of manned and unmanned combat aircraft to conduct aerial dogfighting autonomously."}
+      ]
+    },
+    {
+      "query_id": "P1-TD-CSET-01",
+      "query_text": "AI",
+      "source_domain": "cset.georgetown.edu/wp-json/wp/v2/document",
+      "raw_total": 10,
+      "page_size_saved": 10,
+      "results": [
+        {"id":20624,"date":"12/17/2024 00:42:42","title":"Identifying Emerging Technologies in Research","link":"https://cset.georgetown.edu/publication/identifying-emerging-technologies-in-research/","slug":"identifying-emerging-technologies-in-research"},
+        {"id":20613,"date":"12/16/2024 01:00:09","title":"AI and the Future of Workforce Training","link":"https://cset.georgetown.edu/publication/ai-and-the-future-of-workforce-training/","slug":"ai-and-the-future-of-workforce-training"},
+        {"id":20520,"date":"12/09/2024 00:01:00","title":"Staying Current with Emerging Technology Trends: Using Big Data to Inform Planning","link":"https://cset.georgetown.edu/publication/staying-current-with-emerging-technology-trends-using-big-data-to-inform-planning/","slug":"staying-current-with-emerging-technology-trends-using-big-data-to-inform-planning"},
+        {"id":20516,"date":"12/05/2024 16:13:37","title":"National Standard of the People&#8217;s Republic of China: Cybersecurity Technology &#8211; Basic Safety Requirements for Generative Artificial Intelligence Services (Draft for Feedback)","link":"https://cset.georgetown.edu/publication/china-gen-ai-safety-standard-draft/","slug":"china-gen-ai-safety-standard-draft"},
+        {"id":20492,"date":"12/03/2024 11:36:25","title":"RFI Response: Safety Considerations for Chemical and/or Biological AI Models","link":"https://cset.georgetown.edu/publication/rfi-response-safety-considerations-for-chemical-and-or-biological-ai-models/","slug":"rfi-response-safety-considerations-for-chemical-and-or-biological-ai-models"},
+        {"id":20479,"date":"12/03/2024 01:25:57","title":"Anticipating Biological Risk: A Toolkit for Strategic Biosecurity Policy","link":"https://cset.georgetown.edu/publication/anticipating-biological-risk-a-toolkit-for-strategic-biosecurity-policy/","slug":"anticipating-biological-risk-a-toolkit-for-strategic-biosecurity-policy"},
+        {"id":20358,"date":"11/20/2024 08:27:00","title":"Funding the AI Cloud — Amazon, Alphabet, and Microsoft&#8217;s Cloud Computing Investments, Part 3","link":"https://cset.georgetown.edu/publication/funding-the-ai-cloud-amazon-alphabet-and-microsofts-cloud-computing-investments-part-3/","slug":"funding-the-ai-cloud-amazon-alphabet-and-microsofts-cloud-computing-investments-part-3"},
+        {"id":20366,"date":"11/20/2024 06:00:00","title":"AI Safety and Automation Bias","link":"https://cset.georgetown.edu/publication/ai-safety-and-automation-bias/","slug":"ai-safety-and-automation-bias"},
+        {"id":20338,"date":"11/19/2024 08:48:36","title":"Acquiring AI Companies: Tracking U.S. AI Mergers and Acquisitions","link":"https://cset.georgetown.edu/publication/acquiring-ai-companies-tracking-u-s-ai-mergers-and-acquisitions/","slug":"acquiring-ai-companies-tracking-u-s-ai-mergers-and-acquisitions"},
+        {"id":20264,"date":"11/13/2024 09:20:10","title":"Funding the AI Cloud — Amazon, Alphabet, and Microsoft&#8217;s Cloud Computing Investments, Part 2","link":"https://cset.georgetown.edu/publication/funding-the-ai-cloud-amazon-alphabet-and-microsofts-cloud-computing-investments-part-2/","slug":"funding-the-ai-cloud-amazon-alphabet-and-microsofts-cloud-computing-investments-part-2"}
+      ]
+    }
+  ],
+  "raw_result_note": "Search-result fields are preserved as returned by the public search endpoints. They were used for discovery only; title/date/publisher verification was performed on original pages recorded in source_manifest_t0.csv."
+}

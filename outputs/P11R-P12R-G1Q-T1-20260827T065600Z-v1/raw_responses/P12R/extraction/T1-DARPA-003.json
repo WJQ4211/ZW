@@ -1,0 +1,25 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "```json\n[\n  {\n    \"source_id\": \"T1-DARPA-003\",\n    \"source_locator\": \"web_paragraph_0006\",\n    \"excerpt_original\": \"DARPA concluded the second year of the DARPA Triage Challenge on October 4, awarding top marks to DART and MSAI in Systems and Data competitions, respectively.\",\n    \"excerpt_zh\": \"DARPA于10月4日结束了DARPA分诊挑战赛的第二年，分别在系统竞赛和数据竞赛中授予DART和MSAI最高分。\",\n    \"normalized_claim\": \"DARPA于2025年10月4日结束了DARPA分诊挑战赛第二年。\",\n    \"evidence_nature\": \"test_event\",\n    \"coding_dimensions\": [\"application_maturity\"],\n    \"topics\": [\"DARPA Triage Challenge\", \"竞赛\"]\n  },\n  {\n    \"source_id\": \"T1-DARPA-003\",\n    \"source_locator\": \"web_paragraph_0010\",\n    \"excerpt_original\": \"In the Systems competition, held from Sept. 26, 2025 to Oct. 3, 2025, at Guardian Centers in Perry, Georgia, teams navigated courses modeled on a C-130 airplane crash and night ambush scenarios that were complicated by smoke, darkness, and visual obstructions.\",\n    \"excerpt_zh\": \"在2025年9月26日至10月3日于佐治亚州佩里市Guardian Centers举行的系统竞赛中，各团队在模拟C-130飞机坠毁和夜间伏击场景的场地上进行导航，这些场景因烟雾、黑暗和视觉障碍而变得复杂。\",\n    \"normalized_claim\": \"系统竞赛于2025年9月26日至10月3日在佐治亚州佩里市Guardian Centers举行。\",\n    \"evidence_nature\": \"test_event\",\n    \"coding_dimensions\": [\"application_maturity\"],\n    \"topics\": [\"DARPA Triage Challenge\", \"系统竞赛\"]\n  },\n  {\n    \"source_id\": \"T1-DARPA-003\",\n    \"source_locator\": \"web_paragraph_0010\",\n    \"excerpt_original\": \"Coordinated Robotics earned the top prize of $300,000, demonstrating robotic platforms that successfully detected vital signs and identified injury patterns despite impaired visibility and environmental complexity.\",\n    \"excerpt_zh\": \"Coordinated Robotics赢得了30万美元的最高奖金，展示了在能见度受损和环境复杂的情况下成功检测生命体征并识别损伤模式的机器人平台。\",\n    \"normalized_claim\": \"Coordinated Robotics在系统竞赛中展示了能检测生命体征和识别损伤模式的机器人平台。\",\n    \"evidence_nature\": \"test_result\",\n    \"coding_dimensions\": [\"application_maturity\"],\n    \"topics\": [\"DARPA Triage Challenge\", \"系统竞赛\", \"机器人\"]\n  },\n  {\n    \"source_id\": \"T1-DARPA-003\",\n    \"source_locator\": \"web_paragraph_0021\",\n    \"excerpt_original\": \"In the Data Competition, teams tackled DARPA-provided datasets of de-identified physiological data from trauma patients.\",\n    \"excerpt_zh\": \"在数据竞赛中，各团队处理了DARPA提供的来自创伤患者的去标识化生理数据集。\",\n    \"normalized_claim\": \"数据竞赛中团队使用了DARPA提供的去标识化创伤患者生理数据。\",\n    \"evidence_nature\": \"test_event\",\n    \"coding_dimensions\": [\"engineering_resource_conditions\"],\n    \"topics\": [\"DARPA Triage Challenge\", \"数据竞赛\", \"数据\"]\n  },\n  {\n    \"source_id\": \"T1-DARPA-003\",\n    \"source_locator\": \"web_paragraph_0028\",\n    \"excerpt_original\": \"Teams interested in participating in the final challenge event should note that qualification submissions for the final Systems and Data competitions are due Jan. 2, 2026.\",\n    \"excerpt_zh\": \"有兴趣参加最终挑战赛的团队应注意，最终系统竞赛和数据竞赛的资格提交截止日期为2026年1月2日。\",\n    \"normalized_claim\": \"最终系统竞赛和数据竞赛的资格提交截止日期为2026年1月2日。\",\n    \"evidence_nature\": \"goal\",\n    \"coding_dimensions\": [\"application_maturity\"],\n    \"topics\": [\"DARPA Triage Challenge\", \"未来计划\"]\n  },\n  {\n    \"source_id\": \"T1-DARPA-003\",\n    \"source_locator\": \"web_paragraph_0029\",\n    \"excerpt_original\": \"The DARPA Triage Challenge is strengthened by the contributions of government and industry partners, including the Naval Information Warfare Center, the Johns Hopkins University Applied Physics Laboratory, the US Army Institute of Surgical Research, the University of Maryland, Baltimore, and the University of Pittsburgh, who collectively provide data, independent verification and validation, and technical expertise to ensure rigorous evaluation of triage solutions.\",\n    \"excerpt_zh\": \"DARPA分诊挑战赛因政府和行业合作伙伴的贡献而得到加强，包括海军信息战中心、约翰霍普金斯大学应用物理实验室、美国陆军外科研究所、马里兰大学巴尔的摩分校和匹兹堡大学，他们共同提供数据、独立验证和确认以及技术专长，以确保对分诊解决方案进行严格评估。\",\n    \"normalized_claim\": \"多个政府和行业合作伙伴为DARPA分诊挑战赛提供数据、独立验证和技术专长。\",\n    \"evidence_nature\": \"resource_input\",\n    \"coding_dimensions\": [\"engineering_resource_conditions\", \"trust_governance_constraints\"],\n    \"topics\": [\"DARPA Triage Challenge\", \"合作伙伴\", \"资源投入\"]\n  }\n]\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1787813785,
+  "id": "chatcmpl-094bed4d-704c-46a5-a168-3612a38d4d5d",
+  "model": "deepseek-v4-flash-0731",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 1220,
+    "prompt_tokens": 1917,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3137
+  }
+}

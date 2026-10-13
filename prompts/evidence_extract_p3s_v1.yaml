@@ -1,0 +1,68 @@
+prompt_id: evidence_extract_p3s
+version: "1.2"
+purpose: "P3S supplementary candidate extraction from one frozen P2S source; candidates only"
+research_question: "Based only on public, non-classified material available through 2024-12-31, what dominant deployment form is more likely for U.S. military AI capability building in 2025-2027?"
+allowed_input_fields:
+  - source_id
+  - source_locator
+  - excerpt_source_text
+  - character_start
+  - character_end
+  - research_question
+  - field_definitions
+output_schema:
+  exact_fields:
+    - source_locator
+    - excerpt_original
+    - excerpt_zh
+    - normalized_claim
+    - evidence_nature
+    - coding_dimensions
+    - topics
+    - possible_corroboration_group
+  example:
+    - source_locator: "web_paragraph_NNNN"
+      excerpt_original: "[PLACEHOLDER_VERBATIM_SOURCE_TEXT]"
+      excerpt_zh: "[PLACEHOLDER_CHINESE_TRANSLATION]"
+      normalized_claim: "[PLACEHOLDER_ATOMIC_CHINESE_CLAIM]"
+      evidence_nature: "goal"
+      coding_dimensions: ["application_maturity"]
+      topics: ["[PLACEHOLDER_TOPIC]"]
+      possible_corroboration_group: ""
+  normalized_claim_language: zh-CN
+  excerpt_original_rule: "逐字复制一个连续正文片段；不得改写引号、标点、数字或单位"
+  source_locator_rule: "使用给定web_paragraph_NNNN，不创建伪连续定位"
+  evidence_nature_rule: "必须是协议枚举中的单一字符串"
+  coding_dimensions_rule: "必须是合法维度字符串数组"
+  topics_rule: "必须是字符串数组"
+  possible_corroboration_group_rule: "无内容时输出空字符串"
+  max_candidates_per_source: 6
+  empty_array_allowed: true
+  no_markdown_fence: true
+coding_dimensions:
+  integration_level: "能力集成层级：单工具、单任务、单平台、跨平台、跨任务或体系级集成。"
+  application_maturity: "应用成熟度：概念战略、研发、试验、试点、采购部署或持续运用。"
+  human_machine_authority: "人机权限关系：辅助决策、人在回路中、受监督自主或更高程度自主；普通协同、信息传输、培训或文档要求不足以支持此维度。"
+  engineering_resource_conditions: "工程与资源条件：数据、算力、模型、接口、供应链、预算、人才和保障。"
+  trust_governance_constraints: "可信与治理约束：安全、可靠性、测试评价、授权边界、责任与伦理。"
+  organizational_system_fit: "组织与体系适配：指挥流程、任务编组、跨平台协同、人员负荷和组织变革。"
+evidence_nature:
+  goal: "战略目标、愿景或计划方向；不能写成已实现结果。"
+  resource_input: "投入、资源、预算、数据、人才或基础设施条件。"
+  test_event: "测试或演习发生、参与主体或配置；不表示功能结果或作战效能。"
+  test_result: "测试中观察到的功能、性能或结果；必须由摘录直接说明。"
+  deployment_event: "部署、实装、现场运用或正式采用已经发生。"
+  governance_event: "已经发生的政策发布、机构职责确立、治理工具发布、标准指南采用或组织机制建立；不得据此推断技术部署。"
+  constraint: "限制、风险、障碍、依赖或边界条件。"
+  evaluation: "评价、审查、验证或评估结论。"
+prohibitions:
+  - "一条候选只表达一个可核查原子事实。"
+  - "不得把aim、seek、will、plan或未来活动写成已实现结果。"
+  - "不得把演示、竞赛或试验写成正式部署。"
+  - "不得把项目负责人陈述自动视为独立验证结果。"
+  - "不得新增摘录不存在的主体、行动、数字、范围或结果。"
+  - "不得生成假设、观点、案例结论或2025-2027路线判断。"
+  - "模型不得生成case_id、source_grade、published_at、publisher、title、url、evidence_id、version或content_hash。"
+  - "每份来源最多输出6条；证据不足时输出空数组。不得输出额外字段。"
+  - "不得使用Markdown代码围栏。"
+json_repair_prompt: "Return only one strict JSON array with exactly the eight candidate fields and no Markdown or commentary. source_id is injected by the program and must not be returned."

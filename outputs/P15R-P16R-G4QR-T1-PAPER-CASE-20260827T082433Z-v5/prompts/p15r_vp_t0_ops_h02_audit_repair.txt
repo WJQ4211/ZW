@@ -1,0 +1,295 @@
+你是P15R定向质量修补器。只修补同一观点的审计指出问题，不改变其专业视角、假设对象和T1时间边界。
+必须继续只使用下方提供的T1正式Evidence；不得读取其他视角、T0观点全文、网络或外部常识。
+不得引用六条排除Evidence或两条historical_context；不得引用T0 EV-T0-*；不得把goal、官方评价、test_event或局部案例写成全军部署/成熟度。
+所有引用Evidence ID必须来自本提示的T1 evidence_context，version必须为1。
+引用relation只能是support、challenge、limit、background，importance只能是high、medium、low；不得输出qualify、boundary_change或其他关系。
+修补后的judgment必须保持本视角差异：OPS=任务运用/持续使用/作战适配；STRAT=治理/资源/跨军种机制；TECH=成熟度/工程复用/性能边界；TRUST=可信性/验证/红队/治理条件。
+不得把‘未观察到’写成‘不存在’，不得把截至2026年6月30日写成被证据逐日覆盖；应明确材料覆盖范围和局限。
+输出严格JSON对象，字段恰好为：judgment、confidence、supporting_evidence、counter_evidence、mechanism_claims、key_assumptions、boundary_conditions、uncertainties、information_gaps、falsifiers、affected_fields、evidence_field_changes、update_rationale。不得输出Markdown围栏或额外字段。
+
+观点ID与专业信息：
+{"viewpoint_id": "VP-T0-OPS-H02", "perspective_id": "OPS", "hypothesis_id": "HYP-T0-02"}
+原始观点复评JSON：
+{
+  "judgment": "T1证据进一步显示具体任务试验、竞赛和局部使用仍是可观察的能力形成形态；这些信号支持任务分布牵引，但不能外推为全军规模化部署。",
+  "confidence": "high",
+  "supporting_evidence": [
+    {
+      "evidence_id": "CE-T1-AA937CC0AF5E2372",
+      "version": 1,
+      "target_field": "judgment",
+      "relation": "support",
+      "importance": "medium"
+    },
+    {
+      "evidence_id": "CE-T1-43B8C6F6E7B77F40",
+      "version": 1,
+      "target_field": "judgment",
+      "relation": "support",
+      "importance": "medium"
+    }
+  ],
+  "counter_evidence": [
+    {
+      "evidence_id": "CE-T1-6B02747FAF17B29F",
+      "version": 1,
+      "target_field": "boundary_conditions[0]",
+      "relation": "limit",
+      "importance": "medium"
+    },
+    {
+      "evidence_id": "CE-T1-95F7FE29CF48D86D",
+      "version": 1,
+      "target_field": "boundary_conditions[0]",
+      "relation": "limit",
+      "importance": "medium"
+    }
+  ],
+  "mechanism_claims": [
+    "卢克空军基地的AI工作队及其日常任务使用（邮件起草、信息摘要、数据分析）表明任务驱动的局部应用正在发生，但该使用局限于单一基地的日常行政任务，未显示跨军种通用部署（证据：CE-T1-AA937CC0AF5E2372、CE-T1-DCF49FC6CBC68958）。",
+    "DARPA Triage Challenge的竞赛结果展示了特定任务领域（创伤分诊）的技术能力，但竞赛环境中的表现不能直接等同于作战环境中的规模化部署（证据：CE-T1-43B8C6F6E7B77F40、CE-T1-C20674F2CA89D5C5）。",
+    "第732空中机动中队在北极桥演习中使用GenAI平台进行演习定制，表明部门级AI平台在局部演习场景中的应用，但该使用属于概念验证性质，未证明作战效能或跨单位推广（证据：CE-T1-6B02747FAF17B29F、CE-T1-BB675BA36EB74B19）。"
+  ],
+  "key_assumptions": [
+    "各项目的独立进展反映了任务驱动的分散发展模式。",
+    "体系整合的规划文件（如SP-008）和意图声明（如综合多边演习计划）尚未转化为实际的跨项目统一部署。",
+    "联合通用基金会的延迟表明体系化整合面临资源和技术挑战。",
+    "T1证据中涉及的局部使用和竞赛结果仅代表特定任务领域的应用，不代表全军通用能力。"
+  ],
+  "boundary_conditions": [
+    "若后续进展继续集中于军种或任务专属项目，则本假设增强。",
+    "若DARPA项目主要停留在演示验证而未转入规模化采办，则本假设增强。",
+    "若出现跨军种复用的统一平台、统一模型或统一工程流程，则本假设削弱。",
+    "若综合多边演习等体系化意图转化为实际的跨军种统一部署，则本假设削弱。",
+    "T1证据中涉及的局部使用（如卢克基地AI工作队、北极桥演习）和DARPA竞赛结果仅反映特定任务领域的应用，不构成全军规模化部署的证据。"
+  ],
+  "uncertainties": [
+    "AIDP的部署是否代表了陆军AI能力的普遍水平，还是仅限情报领域，尚不明确。",
+    "RACER和REMA等项目的技术成果是否已进入正式的采办或列装流程，缺乏公开证据。",
+    "综合多边演习计划的具体时间表和预期成果尚不明确，无法判断其是否能在短期内改变任务驱动的主导模式。",
+    "GenAI平台在北极桥演习中的使用是否代表部门级AI生态系统的实际推广，还是仅限于特定演习场景，尚不明确。"
+  ],
+  "information_gaps": [
+    "缺乏各项目之间是否存在数据共享或技术复用的直接证据。",
+    "缺乏SP-008战略实施后各项目整合进展的具体记录。",
+    "缺乏综合多边演习计划的具体实施方案和预期成果的公开信息。",
+    "缺乏GenAI平台在部门范围内实际使用范围和频率的数据。"
+  ],
+  "falsifiers": [
+    "若在2026年7月1日以后出现多个军种在作战演习中常态化使用同一套AI系统，且不依赖DARPA等专门项目支持，则本假设不成立。",
+    "若联合通用基金会达到全面作战能力并实现跨军种数据共享，则表明体系化能力已形成。",
+    "若GenAI平台在2026年7月1日以后被多个军种在作战任务中常态化使用，并形成统一的工程流程，则本假设需重新评估。"
+  ],
+  "affected_fields": [
+    "judgment",
+    "boundary_conditions[0]",
+    "mechanism_claims[0]"
+  ],
+  "evidence_field_changes": [
+    {
+      "target_field": "judgment",
+      "before": "T1证据进一步显示具体任务试验、竞赛和局部使用仍是可观察的能力形成形态；这些信号支持任务分布牵引，但不能外推为全军规模化部署。",
+      "after": "T1证据进一步显示具体任务试验、竞赛和局部使用仍是可观察的能力形成形态；这些信号支持任务分布牵引，但不能外推为全军规模化部署。新增的局部使用证据（卢克基地、北极桥演习）和DARPA竞赛结果进一步强化了任务驱动模式的观察，但均未显示跨军种通用部署。",
+      "new_evidence_ids": [
+        "CE-T1-AA937CC0AF5E2372",
+        "CE-T1-43B8C6F6E7B77F40",
+        "CE-T1-6B02747FAF17B29F",
+        "CE-T1-95F7FE29CF48D86D"
+      ],
+      "change_reason": "T1证据补充了局部使用和竞赛结果，进一步支持任务驱动模式，但未改变总体判断。"
+    },
+    {
+      "target_field": "boundary_conditions[0]",
+      "before": "若后续进展继续集中于军种或任务专属项目，则本假设增强。",
+      "after": "若后续进展继续集中于军种或任务专属项目，则本假设增强。T1证据中的局部使用（卢克基地、北极桥演习）和DARPA竞赛结果均属于任务专属项目，进一步支持该边界条件。",
+      "new_evidence_ids": [
+        "CE-T1-AA937CC0AF5E2372",
+        "CE-T1-6B02747FAF17B29F",
+        "CE-T1-95F7FE29CF48D86D"
+      ],
+      "change_reason": "T1证据中的局部使用和竞赛结果均属于任务专属项目，强化了该边界条件的适用性。"
+    },
+    {
+      "target_field": "mechanism_claims[0]",
+      "before": "RACER、REMA等DARPA项目通过技术演示和试验验证，在特定任务领域（越野自主、无人机任务自主）形成能力，但未进入规模化采办。",
+      "after": "RACER、REMA等DARPA项目通过技术演示和试验验证，在特定任务领域（越野自主、无人机任务自主）形成能力，但未进入规模化采办。T1证据补充了DARPA Triage Challenge竞赛结果和局部演习使用，进一步表明任务驱动的局部应用正在发生，但均未显示跨军种通用部署。",
+      "new_evidence_ids": [
+        "CE-T1-43B8C6F6E7B77F40",
+        "CE-T1-6B02747FAF17B29F",
+        "CE-T1-BB675BA36EB74B19"
+      ],
+      "change_reason": "T1证据补充了DARPA竞赛和局部演习使用，进一步支持任务驱动的局部应用观察。"
+    }
+  ],
+  "update_rationale": "T1证据中的局部使用（卢克基地AI工作队、北极桥演习）和DARPA竞赛结果进一步支持任务驱动模式，但均未显示跨军种通用部署。这些证据强化了原有判断，但未改变总体结论。边界条件中新增了对局部使用证据的考量，机制声明中补充了T1证据的具体内容。"
+}
+两次独立审计指出的具体问题：
+[
+  "Evidence CE-T1-AA937CC0AF5E2372 is a deployment_event at a single base (Luke AFB) and CE-T1-6B02747FAF17B29F is a test_event (Arctic Bridge exercise); both are local cases and cannot be extrapolated to '任务驱动模式' as a general capability formation. The judgment correctly notes no extrapolation to full-force deployment, but the mechanism_claims[0] and mechanism_claims[2] treat these local events as evidence of '任务驱动的局部应用正在发生' without acknowledging that these are isolated instances, not a pattern. Also, CE-T1-43B8C6F6E7B77F40 is a test_result from a DARPA competition, which is a test_event, not a deployment; the judgment uses it to support '任务分布牵引' but the evidence nature is test_result, not operational use. The boundary_conditions[0] change adds '卢克基地、北极桥演习' as supporting '任务专属项目' but these are single events, not a trend; the extrapolation from two local cases to a general boundary condition is overreach.",
+  "mechanism_claims[0]引用了CE-T1-DCF49FC6CBC68958，该证据性质为governance_event，且其内容为卢克基地AI工作队的基石，属于局部治理事件，被用于支持任务驱动局部应用，但该证据未显示部署结果，存在将局部治理事件外推为能力形成信号的嫌疑；同时evidence_field_changes中mechanism_claims[0]的new_evidence_ids包含CE-T1-BB675BA36EB74B19，该证据为test_event，用于支持局部演习使用，但未区分test_event与deployment_event，存在将测试事件视为能力形成证据的问题。"
+]
+可用T1 Evidence全文字段：
+{
+  "CE-T1-43B8C6F6E7B77F40": {
+    "candidate_evidence_id": "CE-T1-43B8C6F6E7B77F40",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "application_maturity"
+    ],
+    "content_hash": "43b8c6f6e7b77f40609df13ac083dc519040fbc2e79490048b55431ab24adae0",
+    "evidence_id": "CE-T1-43B8C6F6E7B77F40",
+    "evidence_nature": "test_result",
+    "excerpt_original": "Coordinated Robotics earned the top prize of $300,000, demonstrating robotic platforms that successfully detected vital signs and identified injury patterns despite impaired visibility and environmental complexity.",
+    "excerpt_zh": "Coordinated Robotics赢得了30万美元的最高奖金，展示了在能见度受损和环境复杂的情况下成功检测生命体征并识别损伤模式的机器人平台。",
+    "extraction_run_id": "P11R-P12R-G1Q-T1-20260827T065600Z-v1",
+    "g1_author_decision": "accept",
+    "human_reviewed": true,
+    "human_source_visual_review_count": 0,
+    "lineage": "p12r_supplemental_real_api",
+    "normalized_claim": "据DARPA竞赛环境中的官方披露结果，Coordinated Robotics展示了能够检测生命体征和识别损伤模式的机器人平台。",
+    "published_at": "2025-11-14",
+    "published_at_precision": "day",
+    "publisher": "DARPA",
+    "review_mode": "ai_preannotation_author_bulk_signoff_with_key_item_adjudication",
+    "reviewed_at": "2026-08-27T07:25:25Z",
+    "reviewer": "author_01",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DARPA-003",
+    "source_locator": "web_paragraph_0010",
+    "source_visual_review_claimed": false,
+    "status": "active",
+    "t1_change_signal_eligible": true,
+    "temporal_role": "current_t1_signal",
+    "title": "DART and MSAI triumph at DARPA Triage Challenge",
+    "topics": [
+      "DARPA Triage Challenge",
+      "系统竞赛",
+      "机器人"
+    ],
+    "url_or_path": "https://www.darpa.mil/news/2025/dart-msai-triumph-darpa-triage-challenge",
+    "version": 1
+  },
+  "CE-T1-6B02747FAF17B29F": {
+    "candidate_evidence_id": "CE-T1-6B02747FAF17B29F",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "engineering_resource_conditions",
+      "integration_level"
+    ],
+    "content_hash": "6b02747faf17b29fc089dd085b275ae84a6a86ec2ec765035b7ad73052d5fd87",
+    "evidence_id": "CE-T1-6B02747FAF17B29F",
+    "evidence_nature": "test_event",
+    "excerpt_original": "The 732nd AMS utilized Gemini through GenAI , an AI platform released by the Department of War in December 2025, that was built to provide a secure, department-wide generative AI ecosystem.",
+    "excerpt_zh": "第732空中机动中队通过GenAI使用了Gemini，GenAI是战争部于2025年12月发布的人工智能平台，旨在提供安全的、部门范围的生成式人工智能生态系统。",
+    "extraction_run_id": "G4-P11-P12-20260827T051332Z-v1",
+    "g1_author_decision": "accept",
+    "human_reviewed": true,
+    "human_source_visual_review_count": 0,
+    "lineage": "prior_p12_v1",
+    "normalized_claim": "第732空中机动中队使用了战争部2025年12月发布的GenAI平台上的Gemini。",
+    "published_at": "2026-06-04",
+    "published_at_precision": "day",
+    "publisher": "U.S. Air Force",
+    "review_mode": "ai_preannotation_author_bulk_signoff_with_key_item_adjudication",
+    "reviewed_at": "2026-08-27T07:25:25Z",
+    "reviewer": "author_01",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DAF-008",
+    "source_locator": "web_paragraph_0004",
+    "source_visual_review_claimed": false,
+    "status": "active",
+    "t1_change_signal_eligible": true,
+    "temporal_role": "current_t1_signal",
+    "title": "732nd AMS leverages artificial intelligence to enhance Arctic TTX",
+    "topics": [
+      "人工智能平台",
+      "GenAI",
+      "Gemini",
+      "部门级生态系统"
+    ],
+    "url_or_path": "https://www.af.mil/News/Article-Display/Article/4507566/732nd-ams-leverages-artificial-intelligence-to-enhance-arctic-ttx/",
+    "version": 1
+  },
+  "CE-T1-95F7FE29CF48D86D": {
+    "candidate_evidence_id": "CE-T1-95F7FE29CF48D86D",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "engineering_resource_conditions"
+    ],
+    "content_hash": "95f7fe29cf48d86d959bd95d1ed243f8e6f9176db74b3f54ce4db7b574d90f9f",
+    "evidence_id": "CE-T1-95F7FE29CF48D86D",
+    "evidence_nature": "constraint",
+    "excerpt_original": "the 15-year dataset in the US Joint Trauma System Department of Defense Trauma Registry (DoDTR) contains only 0.017 Gigabytes of data, despite including over 140,000 patient records",
+    "excerpt_zh": "美国联合创伤系统国防部创伤登记处（DoDTR）的15年数据集仅包含0.017 GB的数据，尽管包含超过14万份患者记录。",
+    "extraction_run_id": "P11R-P12R-G1Q-T1-20260827T065600Z-v1",
+    "g1_author_decision": "accept",
+    "human_reviewed": true,
+    "human_source_visual_review_count": 0,
+    "lineage": "p12r_supplemental_real_api",
+    "normalized_claim": "在作战医疗数据条件下，美国国防部创伤登记处15年数据集仅包含0.017 GB数据。",
+    "published_at": "2025-05-14",
+    "published_at_precision": "day",
+    "publisher": "Bioengineering (MDPI), peer-reviewed research",
+    "review_mode": "ai_preannotation_author_bulk_signoff_with_key_item_adjudication",
+    "reviewed_at": "2026-08-27T07:25:25Z",
+    "reviewer": "author_01",
+    "snapshot_tag": "T1",
+    "source_grade": "B",
+    "source_id": "T1-IR-001",
+    "source_locator": "web_paragraph_0049",
+    "source_visual_review_claimed": false,
+    "status": "active",
+    "t1_change_signal_eligible": true,
+    "temporal_role": "current_t1_signal",
+    "title": "Opportunities for Artificial Intelligence in Operational Medicine: Lessons from the United States Military",
+    "topics": [
+      "创伤登记",
+      "数据规模",
+      "AI训练限制"
+    ],
+    "url_or_path": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12108871/",
+    "version": 1
+  },
+  "CE-T1-AA937CC0AF5E2372": {
+    "candidate_evidence_id": "CE-T1-AA937CC0AF5E2372",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "application_maturity"
+    ],
+    "content_hash": "aa937cc0af5e2372f4328143bdae0ae5455da0667283ff1f33020062eb272ab1",
+    "evidence_id": "CE-T1-AA937CC0AF5E2372",
+    "evidence_nature": "deployment_event",
+    "excerpt_original": "Some Airmen are already using AI to draft emails, summarize information, analyze data and reduce repetitive administrative tasks, while others remain unsure what tools are authorized or how to apply them in a mission context.",
+    "excerpt_zh": "一些飞行员已经在使用AI起草电子邮件、总结信息、分析数据和减少重复性行政任务，而另一些人则不确定哪些工具是授权的，或如何在任务环境中应用它们。",
+    "extraction_run_id": "G4-P11-P12-20260827T051332Z-v1",
+    "g1_author_decision": "accept",
+    "human_reviewed": true,
+    "human_source_visual_review_count": 0,
+    "lineage": "prior_p12_v1",
+    "normalized_claim": "卢克空军基地部分人员在邮件起草、信息摘要和数据分析等日常任务中使用AI。",
+    "published_at": "2026-05-18",
+    "published_at_precision": "day",
+    "publisher": "U.S. Air Force",
+    "review_mode": "ai_preannotation_author_bulk_signoff_with_key_item_adjudication",
+    "reviewed_at": "2026-08-27T07:25:25Z",
+    "reviewer": "author_01",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DAF-007",
+    "source_locator": "web_paragraph_0005",
+    "source_visual_review_claimed": false,
+    "status": "active",
+    "t1_change_signal_eligible": true,
+    "temporal_role": "current_t1_signal",
+    "title": "Luke AFB Airmen pioneer AI integration for daily operations",
+    "topics": [
+      "日常使用",
+      "任务应用"
+    ],
+    "url_or_path": "https://www.af.mil/News/Article-Display/Article/4495022/luke-afb-airmen-pioneer-ai-integration-for-daily-operations/",
+    "version": 1
+  }
+}
+定向修补要求：删除与字段文字不匹配的引用；将仅表达目标/事件/资源的证据改作限定或背景；保留必要的局部范围限定；每个evidence_field_changes的new_evidence_ids必须直接服务其after字段；不要新增无法由上述Evidence支持的主体、结果、数字或范围。

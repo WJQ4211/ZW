@@ -1,0 +1,238 @@
+{
+  "base_revision_calls": 6,
+  "checkpoint_status": "completed",
+  "completed_batches": [
+    {
+      "batch_id": "p15r_vp_t0_ops_h02",
+      "metadata_path": "api_call_metadata/p15r_vp_t0_ops_h02.json",
+      "phase": "P15R_VIEWPOINT_REVISION",
+      "prompt_sha256": "f254623d0db087cfc26ca2d74bd44b05efb7437e10855c4429ffafd600285936",
+      "raw_path": "raw_model_outputs/p15r_vp_t0_ops_h02.json",
+      "response_sha256": "0f3b11b3efaa274cdb70a5120adb038120c95dcf1685cec2904cdd3b7a00e610",
+      "source_id": "VP-T0-OPS-H02"
+    },
+    {
+      "batch_id": "p15r_vp_t0_strat_h01",
+      "metadata_path": "api_call_metadata/p15r_vp_t0_strat_h01.json",
+      "phase": "P15R_VIEWPOINT_REVISION",
+      "prompt_sha256": "07c8f9c8edbe3c3ac188bd8edf3f3368531b9e8a27a7c5b712d07af41c1ce06e",
+      "raw_path": "raw_model_outputs/p15r_vp_t0_strat_h01.json",
+      "response_sha256": "7ac718ec4a68c91de05faf6068154fbc4a4267a51d4b539013cc362387f28888",
+      "source_id": "VP-T0-STRAT-H01"
+    },
+    {
+      "batch_id": "p15r_vp_t0_strat_h01_repair",
+      "metadata_path": "api_call_metadata/p15r_vp_t0_strat_h01_repair.json",
+      "phase": "P15R_VIEWPOINT_FORMAT_REPAIR",
+      "prompt_sha256": "427458671692011497a7b90823af0880531e1928cb75cdd9ba117bce51883c47",
+      "raw_path": "raw_model_outputs/p15r_vp_t0_strat_h01_repair.json",
+      "response_sha256": "35223529093531dd92a8498369857cfe2787c763825b9eab3eb554d6168cd364",
+      "source_id": "VP-T0-STRAT-H01"
+    },
+    {
+      "batch_id": "p15r_vp_t0_strat_h02",
+      "metadata_path": "api_call_metadata/p15r_vp_t0_strat_h02.json",
+      "phase": "P15R_VIEWPOINT_REVISION",
+      "prompt_sha256": "d422b38922c6e7e0c86c3650d2426068da5f6bd0d5e19cea1cd8e46d2917c97d",
+      "raw_path": "raw_model_outputs/p15r_vp_t0_strat_h02.json",
+      "response_sha256": "4207b2b547ac8a40ce1e90c3bbc068a614db31473a16b0f0414c568c37f55792",
+      "source_id": "VP-T0-STRAT-H02"
+    },
+    {
+      "batch_id": "p15r_vp_t0_strat_h02_repair",
+      "metadata_path": "api_call_metadata/p15r_vp_t0_strat_h02_repair.json",
+      "phase": "P15R_VIEWPOINT_FORMAT_REPAIR",
+      "prompt_sha256": "05b89c692336222168b17f8ff3724ae076d00e56ceecce5681a459456392045f",
+      "raw_path": "raw_model_outputs/p15r_vp_t0_strat_h02_repair.json",
+      "response_sha256": "de26304dd33ff5295279fcd4a34728dbd437ff187d5281139c4c44c8a3b590ba",
+      "source_id": "VP-T0-STRAT-H02"
+    },
+    {
+      "batch_id": "p15r_vp_t0_tech_h02",
+      "metadata_path": "api_call_metadata/p15r_vp_t0_tech_h02.json",
+      "phase": "P15R_VIEWPOINT_REVISION",
+      "prompt_sha256": "90e743ed8a4670211ee32759f68aa565168c2c93863ea960d1fd840b85aa7812",
+      "raw_path": "raw_model_outputs/p15r_vp_t0_tech_h02.json",
+      "response_sha256": "776711c35d9fbae61fd054287eb4faa14a015d0573b1b9bb9042720e5cf4b279",
+      "source_id": "VP-T0-TECH-H02"
+    },
+    {
+      "batch_id": "p15r_vp_t0_tech_h02_repair",
+      "metadata_path": "api_call_metadata/p15r_vp_t0_tech_h02_repair.json",
+      "phase": "P15R_VIEWPOINT_FORMAT_REPAIR",
+      "prompt_sha256": "6ac099dc4991fb96a649640b86fa63081412a1eaaec3776b899e1823d4c2c484",
+      "raw_path": "raw_model_outputs/p15r_vp_t0_tech_h02_repair.json",
+      "response_sha256": "46ff12dec23bbba2f2eb1072e092d274c306fa89cbd5022b9a076e1bedf4845e",
+      "source_id": "VP-T0-TECH-H02"
+    },
+    {
+      "batch_id": "p15r_vp_t0_tech_h03",
+      "metadata_path": "api_call_metadata/p15r_vp_t0_tech_h03.json",
+      "phase": "P15R_VIEWPOINT_REVISION",
+      "prompt_sha256": "cf2c58ff446f8b1bbcaa0da066323e578915a581e0804c83109cb72cb8cfe1b9",
+      "raw_path": "raw_model_outputs/p15r_vp_t0_tech_h03.json",
+      "response_sha256": "e81792d45ce731d9806934c403d1b7c9c544d9bc193c469c95a8272ff51279a0",
+      "source_id": "VP-T0-TECH-H03"
+    },
+    {
+      "batch_id": "p15r_vp_t0_tech_h03_repair",
+      "metadata_path": "api_call_metadata/p15r_vp_t0_tech_h03_repair.json",
+      "phase": "P15R_VIEWPOINT_FORMAT_REPAIR",
+      "prompt_sha256": "57b1a247110437ec6faf90fcbdb46b475e0ca20f15a31331dd0212d453d22a76",
+      "raw_path": "raw_model_outputs/p15r_vp_t0_tech_h03_repair.json",
+      "response_sha256": "44e946f5f9bbc9152fccb82e8374803e69bb52f4a6daabb02be92f1f649e2dc4",
+      "source_id": "VP-T0-TECH-H03"
+    },
+    {
+      "batch_id": "p15r_vp_t0_trust_h03",
+      "metadata_path": "api_call_metadata/p15r_vp_t0_trust_h03.json",
+      "phase": "P15R_VIEWPOINT_REVISION",
+      "prompt_sha256": "4779f694c053c66e9539a434f421f6bcb1e7f425aeb22cbcadb9fb0b0adb3677",
+      "raw_path": "raw_model_outputs/p15r_vp_t0_trust_h03.json",
+      "response_sha256": "734f40356b3aa8d94cf49bd6757a18b85659d15e808bb950f2e287aa49c3f876",
+      "source_id": "VP-T0-TRUST-H03"
+    },
+    {
+      "batch_id": "p15r_vp_t0_trust_h03_repair",
+      "metadata_path": "api_call_metadata/p15r_vp_t0_trust_h03_repair.json",
+      "phase": "P15R_VIEWPOINT_FORMAT_REPAIR",
+      "prompt_sha256": "edce74439894fea3de1ba6472edc7513f2a6db79890d6fdf29c91c7c1f34148d",
+      "raw_path": "raw_model_outputs/p15r_vp_t0_trust_h03_repair.json",
+      "response_sha256": "eccfe68a921a80e90040c043a8f626ed454f44b7864d40cfd636c29ab86d073e",
+      "source_id": "VP-T0-TRUST-H03"
+    },
+    {
+      "batch_id": "audit_evidence_scope_auditor",
+      "metadata_path": "api_call_metadata/audit_evidence_scope_auditor.json",
+      "phase": "P15R_INDEPENDENT_AUDIT",
+      "prompt_sha256": "1a22141bcf1e33639a3160a526ec61a40f440fd5f09483083e87c64b962dd508",
+      "raw_path": "raw_model_outputs/audit_evidence_scope_auditor.json",
+      "response_sha256": "f9efb543c3ce22ac202de42bb5b0c81b6f1f19cdde9a5d549c89ce1c699c07a0",
+      "source_id": "evidence_scope_auditor"
+    },
+    {
+      "batch_id": "audit_perspective_differentiation_auditor",
+      "metadata_path": "api_call_metadata/audit_perspective_differentiation_auditor.json",
+      "phase": "P15R_INDEPENDENT_AUDIT",
+      "prompt_sha256": "ac54b2c46e49fd45cb83a6aeb40e5dc552740e5c7f1f9cd8533da209c1ceadeb",
+      "raw_path": "raw_model_outputs/audit_perspective_differentiation_auditor.json",
+      "response_sha256": "8792929f8867334e8f34e8731b1045b96a0d7a1c7e32c7d27b86e2de26799336",
+      "source_id": "perspective_differentiation_auditor"
+    },
+    {
+      "batch_id": "p15r_vp_t0_ops_h02_audit_repair",
+      "metadata_path": "api_call_metadata/p15r_vp_t0_ops_h02_audit_repair.json",
+      "phase": "P15R_TARGETED_AUDIT_REPAIR",
+      "prompt_sha256": "766568feed7e9bca45465632077a50bbfef935d94b9d34dda427f2ee3eb417e1",
+      "raw_path": "raw_model_outputs/p15r_vp_t0_ops_h02_audit_repair.json",
+      "response_sha256": "55501bbb504c8efc0d2abca57cf6f96050414d3880d48c4f029822e228b26a17",
+      "source_id": "VP-T0-OPS-H02"
+    },
+    {
+      "batch_id": "p15r_vp_t0_strat_h01_audit_repair",
+      "metadata_path": "api_call_metadata/p15r_vp_t0_strat_h01_audit_repair.json",
+      "phase": "P15R_TARGETED_AUDIT_REPAIR",
+      "prompt_sha256": "20c069b0a66f92624cc26052aa5d717f57e38d4a91b9052c3d6876f8e2f25633",
+      "raw_path": "raw_model_outputs/p15r_vp_t0_strat_h01_audit_repair.json",
+      "response_sha256": "cee40a5031efc1efb82b3dc70892db4c8ab50f231d772dcdbabee8bb516c481d",
+      "source_id": "VP-T0-STRAT-H01"
+    },
+    {
+      "batch_id": "p15r_vp_t0_strat_h02_audit_repair",
+      "metadata_path": "api_call_metadata/p15r_vp_t0_strat_h02_audit_repair.json",
+      "phase": "P15R_TARGETED_AUDIT_REPAIR",
+      "prompt_sha256": "9c1777c2ad67210fbbd05176742467000e066a10a0445eb9e3d4e0453008b069",
+      "raw_path": "raw_model_outputs/p15r_vp_t0_strat_h02_audit_repair.json",
+      "response_sha256": "eb809acfa8f8a8b220f257a1bd6b6b2f515802adfacc7f7210d586c7bce800db",
+      "source_id": "VP-T0-STRAT-H02"
+    },
+    {
+      "batch_id": "p15r_vp_t0_tech_h02_audit_repair",
+      "metadata_path": "api_call_metadata/p15r_vp_t0_tech_h02_audit_repair.json",
+      "phase": "P15R_TARGETED_AUDIT_REPAIR",
+      "prompt_sha256": "48ba0773c9d0e733ab3fccab89b98b01db36eb041a50d6c381e7d183bd1cbe5a",
+      "raw_path": "raw_model_outputs/p15r_vp_t0_tech_h02_audit_repair.json",
+      "response_sha256": "24593b2c65ce04ced352fd02b974fc5d566e36b6d9befe1e794b033fed6cd92f",
+      "source_id": "VP-T0-TECH-H02"
+    },
+    {
+      "batch_id": "p15r_vp_t0_tech_h03_audit_repair",
+      "metadata_path": "api_call_metadata/p15r_vp_t0_tech_h03_audit_repair.json",
+      "phase": "P15R_TARGETED_AUDIT_REPAIR",
+      "prompt_sha256": "1e1f127958fdb094e341d43c1d4eec0c5d3df96458c5c4f1e8f77b1be6b320a7",
+      "raw_path": "raw_model_outputs/p15r_vp_t0_tech_h03_audit_repair.json",
+      "response_sha256": "d8d819ee762016688e0fbae6a10e99679ffa7693b098104346fd8339a5dbcaa5",
+      "source_id": "VP-T0-TECH-H03"
+    },
+    {
+      "batch_id": "p15r_vp_t0_trust_h03_audit_repair",
+      "metadata_path": "api_call_metadata/p15r_vp_t0_trust_h03_audit_repair.json",
+      "phase": "P15R_TARGETED_AUDIT_REPAIR",
+      "prompt_sha256": "af6d2b4f218201233ddf50bec1e882885a3a970fd8da10a4d577707ce6c7b705",
+      "raw_path": "raw_model_outputs/p15r_vp_t0_trust_h03_audit_repair.json",
+      "response_sha256": "3b3d7b8cefc016dc45661439ecba82eff152041a697442527b57a468ffce1ff2",
+      "source_id": "VP-T0-TRUST-H03"
+    }
+  ],
+  "corrective_calls": [
+    {
+      "reason": "unknown evidence id EV-T0-0A73030BBF2649F9",
+      "repair_batch_id": "p15r_vp_t0_strat_h01_repair",
+      "viewpoint_id": "VP-T0-STRAT-H01"
+    },
+    {
+      "reason": "unknown evidence id EV-T0-3FA6806CF267B04B",
+      "repair_batch_id": "p15r_vp_t0_strat_h02_repair",
+      "viewpoint_id": "VP-T0-STRAT-H02"
+    },
+    {
+      "reason": "unknown evidence id EV-T0-DB4536B8270ECF58",
+      "repair_batch_id": "p15r_vp_t0_tech_h02_repair",
+      "viewpoint_id": "VP-T0-TECH-H02"
+    },
+    {
+      "reason": "unknown evidence id EV-T0-AD4CCAC18E1BB26C",
+      "repair_batch_id": "p15r_vp_t0_tech_h03_repair",
+      "viewpoint_id": "VP-T0-TECH-H03"
+    },
+    {
+      "reason": "unknown evidence id EV-T0-0405886E04C205A6",
+      "repair_batch_id": "p15r_vp_t0_trust_h03_repair",
+      "viewpoint_id": "VP-T0-TRUST-H03"
+    },
+    {
+      "reason": "independent_audit_targeted_repair",
+      "repair_batch_id": "p15r_vp_t0_ops_h02_audit_repair",
+      "viewpoint_id": "VP-T0-OPS-H02"
+    },
+    {
+      "reason": "independent_audit_targeted_repair",
+      "repair_batch_id": "p15r_vp_t0_strat_h01_audit_repair",
+      "viewpoint_id": "VP-T0-STRAT-H01"
+    },
+    {
+      "reason": "independent_audit_targeted_repair",
+      "repair_batch_id": "p15r_vp_t0_strat_h02_audit_repair",
+      "viewpoint_id": "VP-T0-STRAT-H02"
+    },
+    {
+      "reason": "independent_audit_targeted_repair",
+      "repair_batch_id": "p15r_vp_t0_tech_h02_audit_repair",
+      "viewpoint_id": "VP-T0-TECH-H02"
+    },
+    {
+      "reason": "independent_audit_targeted_repair",
+      "repair_batch_id": "p15r_vp_t0_tech_h03_audit_repair",
+      "viewpoint_id": "VP-T0-TECH-H03"
+    },
+    {
+      "reason": "independent_audit_targeted_repair",
+      "repair_batch_id": "p15r_vp_t0_trust_h03_audit_repair",
+      "viewpoint_id": "VP-T0-TRUST-H03"
+    }
+  ],
+  "independent_audit_calls": 2,
+  "model_api_calls": 19,
+  "run_id": "P15R-P16R-G4QR-T1-PAPER-CASE-20260827T082433Z-v5",
+  "status": "completed"
+}

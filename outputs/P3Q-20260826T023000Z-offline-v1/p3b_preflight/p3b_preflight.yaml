@@ -1,0 +1,26 @@
+stage: P3b
+purpose: "Configuration prepared by P3Q only; P3b is not executed in this run"
+model_client:
+  transport: openai_compatible_api
+  base_url_env: P3_MODEL_BASE_URL
+  api_key_env: P3_MODEL_API_KEY
+  model_env: P3_MODEL_ID
+  requested_temperature: 0.0
+  provider_temperature: null
+  no_secret_logging: true
+  file_bridge_is_separate_transport: true
+source_scope:
+  source_selection: p2_author_include
+  evidence_prompt: prompts/evidence_extract_p3b_v2.yaml
+  semantic_prompt: prompts/same_model_separate_call_semantic_screening_v1.yaml
+quality_gates:
+  exact_quote_match_required: true
+  locator_must_exist: true
+  normalized_claim_language: zh-CN
+  human_review_required_for_visual_and_translation: true
+  formal_evidence_write: false
+  p4_g1_required_before_formal_evidence: true
+boundaries:
+  t1_read: false
+  hypotheses_generated: false
+  p3b_executed: false

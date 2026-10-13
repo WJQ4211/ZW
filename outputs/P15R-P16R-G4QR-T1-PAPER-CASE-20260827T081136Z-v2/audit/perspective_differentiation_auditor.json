@@ -1,0 +1,64 @@
+{
+  "audit_kind": "perspective_differentiation_auditor",
+  "failures": [
+    {
+      "reason": "evidence_field_changes中judgment的new_evidence_ids包含CE-T1-DCF49FC6CBC68958、CE-T1-B40332E796F16865、CE-T1-7239909FC989F79A、CE-T1-D0E7B9B8CC1298AB、CE-T1-BB675BA36EB74B19、CE-T1-CF7656CBCD8BBB03、CE-T1-6B02747FAF17B29F、CE-T1-F2BE64F4810C89EF、CE-T1-C20674F2CA89D5C5、CE-T1-12F70AE60CD787AA、CE-T1-45417DAD097210B1等，但judgment字段的after文本仅提及‘局部使用和演习证据（如卢克基地、北极桥演习）’，未提及竞赛类证据（如DARPA分诊挑战赛），且new_evidence_ids中包含了与judgment文本无关的CE-T1-F2BE64F4810C89EF、CE-T1-C20674F2CA89D5C5、CE-T1-12F70AE60CD787AA、CE-T1-45417DAD097210B1，存在字段与证据不匹配问题。此外，boundary_conditions[0]的new_evidence_ids仅包含CE-T1-6B02747FAF17B29F和CE-T1-95F7FE29CF48D86D，但after文本中提及‘GenAI平台在北极桥演习中的使用’（对应CE-T1-6B02747FAF17B29F）和‘作战医疗数据限制’（对应CE-T1-95F7FE29CF48D86D），但未提及CE-T1-95F7FE29CF48D86D与GenAI平台或北极桥演习的直接关联，且该证据性质为constraint，与边界条件中‘部门级平台局限性’的表述关联性不足。mechanism_claims[0]的new_evidence_ids包含CE-T1-DCF49FC6CBC68958、CE-T1-AA937CC0AF5E2372、CE-T1-D0E7B9B8CC1298AB、CE-T1-BB675BA36EB74B19、CE-T1-6B02747FAF17B29F、CE-T1-CF7656CBCD8BBB03，但after文本中提及‘卢克基地和北极桥演习’，其中CE-T1-DCF49FC6CBC68958和CE-T1-AA937CC0AF5E2372属于卢克基地，CE-T1-D0E7B9B8CC1298AB、CE-T1-BB675BA36EB74B19、CE-T1-6B02747FAF17B29F、CE-T1-CF7656CBCD8BBB03属于北极桥演习，但未提及CE-T1-6B02747FAF17B29F在机制中的具体作用，且该证据为test_event，与‘任务驱动机制’的关联性需明确。整体上，该viewpoint将局部案例（卢克基地、北极桥演习）外推为‘任务驱动模式’的强化证据，但未充分区分这些案例的层级（基地级、单一演习）与全军成熟度的差异，存在外推边界问题。",
+      "viewpoint_id": "VP-T0-OPS-H02"
+    },
+    {
+      "reason": "evidence_field_changes中judgment的new_evidence_ids包含CE-T1-02DFF1DCD73E8F93、CE-T1-050BC7E34C88F297、CE-T1-2995ED3DEF557C50、CE-T1-B5C396D3278023D1、CE-T1-CEACB21D2A3F685C、CE-T1-A66D49255D61B484，但after文本中提及‘部门战略目标、局部单位应用或组织建设举措’，其中CE-T1-02DFF1DCD73E8F93、CE-T1-050BC7E34C88F297、CE-T1-2995ED3DEF557C50、CE-T1-B5C396D3278023D1属于战略目标，CE-T1-CEACB21D2A3F685C、CE-T1-A66D49255D61B484属于组织建设举措，但未提及‘局部单位应用’对应的证据ID，且boundary_conditions[0]的new_evidence_ids包含CE-T1-DCF49FC6CBC68958、CE-T1-AA937CC0AF5E2372、CE-T1-B40332E796F16865、CE-T1-7239909FC989F79A，这些证据属于卢克基地的局部应用，但after文本中提及‘局部单位应用（如卢克空军基地）仅作为组织探索案例’，但未明确这些证据是否属于‘组织探索案例’而非‘治理目标’的范畴，存在证据性质与字段不匹配问题。此外，judgment的after文本中‘尚不足以证明跨军种共用底座已经形成或治理目标已转化为实质性牵引’属于对‘未观察到’的表述，但未区分‘未观察到’与‘不存在’的差异，且将局部案例（卢克基地）作为counter_evidence，但counter_evidence的importance为low，未充分说明其限制作用。整体上，该viewpoint将战略目标（goal性质）与局部应用（deployment_event/governance_event性质）混为一谈，未明确区分目标设定与部署结果，存在字段与证据性质不匹配问题。",
+      "viewpoint_id": "VP-T0-STRAT-H01"
+    },
+    {
+      "reason": "evidence_field_changes中judgment的before文本为‘T1证据进一步显示具体任务试验、竞赛和局部使用仍是可观察的能力形成形态；这些信号支持任务分布牵引，但不能外推为全军规模化部署。’但after文本完全重写为‘T1证据显示，截至2026年6月30日，美国空军部发布的数据与AI战略及AI人才计划仍处于目标设定与制度规划层面……’，前后判断内容不一致，且before文本属于OPS视角的表述，而该viewpoint为STRAT视角，存在视角混淆问题。此外，judgment的new_evidence_ids包含CE-T1-02DFF1DCD73E8F93、CE-T1-050BC7E34C88F297、CE-T1-2995ED3DEF557C50、CE-T1-B5C396D3278023D1、CE-T1-CEACB21D2A3F685C、CE-T1-A66D49255D61B484，但after文本中提及‘美国空军部发布的数据与AI战略及AI人才计划’，其中CE-T1-02DFF1DCD73E8F93、CE-T1-050BC7E34C88F297、CE-T1-2995ED3DEF557C50、CE-T1-B5C396D3278023D1属于战略文件，CE-T1-CEACB21D2A3F685C、CE-T1-A66D49255D61B484属于人才计划，但未提及这些证据是否属于‘目标设定与制度规划层面’，且boundary_conditions[0]的before文本为‘该判断适用于2022-2024年间的项目执行层面’，after文本为‘本判断适用于截至2026年6月30日的项目执行与治理层面’，时间范围从2022-2024年扩展至2026年6月30日，但未提供T1证据中支持该时间扩展的具体证据ID（new_evidence_ids仅包含战略文件相关证据，未包含任何2026年6月30日之后的证据），存在时间边界外推问题。此外，mechanism_claims中提及‘推断’但未明确区分‘推断’与‘已观察事实’，且将战略文件（goal性质）作为‘治理层面表达了意图’的依据，但未提供这些文件已转化为实际部署的证据，存在将官方目标写成部署结果的风险。",
+      "viewpoint_id": "VP-T0-STRAT-H02"
+    },
+    {
+      "reason": "evidence_field_changes中judgment的new_evidence_ids包含CE-T1-F2BE64F4810C89EF、CE-T1-C20674F2CA89D5C5、CE-T1-43B8C6F6E7B77F40、CE-T1-12F70AE60CD787AA、CE-T1-45417DAD097210B1，但after文本中提及‘DARPA分诊挑战赛等具体竞赛/测试活动’，其中CE-T1-F2BE64F4810C89EF和CE-T1-C20674F2CA89D5C5属于test_event，CE-T1-43B8C6F6E7B77F40属于test_result，CE-T1-12F70AE60CD787AA和CE-T1-45417DAD097210B1属于resource_input，但after文本中未提及resource_input证据（CE-T1-12F70AE60CD787AA、CE-T1-45417DAD097210B1）在判断中的具体作用，且boundary_conditions[0]的new_evidence_ids包含CE-T1-F2BE64F4810C89EF、CE-T1-C20674F2CA89D5C5、CE-T1-43B8C6F6E7B77F40、CE-T1-12F70AE60CD787AA、CE-T1-45417DAD097210B1，但after文本中提及‘DARPA分诊挑战赛等竞赛活动仍属于演示验证性质’，但未提及resource_input证据如何支持‘演示验证性质’的结论，存在字段与证据不匹配问题。此外，mechanism_claims中提及‘ACE项目通过X-62A测试飞机实现了AI自主空战’、‘RACER项目在越野自主驾驶上取得进展’、‘AIDP在陆军情报领域快速部署’，但这些内容未在supporting_evidence或new_evidence_ids中列出对应的T1证据ID，且这些项目属于T0证据（EV-T0-*），但该viewpoint的evidence_field_changes中未包含T0证据的引用，存在证据引用不完整问题。整体上，该viewpoint将竞赛/测试活动（test_event/test_result）作为‘能力形成形态’的证据，但未区分‘测试活动’与‘部署结果’的差异，且将resource_input证据（如数据提供）作为支持‘任务分布牵引’的依据，但resource_input属于资源投入而非能力形成，存在字段与证据性质不匹配问题。",
+      "viewpoint_id": "VP-T0-TECH-H02"
+    },
+    {
+      "reason": "evidence_field_changes中judgment的new_evidence_ids包含CE-T1-FE00C458FAADC5D8、CE-T1-11BBC2ABED0945C2、CE-T1-C4C1018771B30C5A、CE-T1-FA2B6E620D8DDBD2、CE-T1-E2F907CF4DA00903、CE-T1-95F7FE29CF48D86D，但after文本中提及‘作战化AI安全评估能力尚不成熟’、‘实验室到作战环境的转化边界’、‘局部数据条件（如作战医疗领域）’，其中CE-T1-FE00C458FAADC5D8、CE-T1-11BBC2ABED0945C2、CE-T1-C4C1018771B30C5A属于constraint，CE-T1-FA2B6E620D8DDBD2、CE-T1-E2F907CF4DA00903属于goal，CE-T1-95F7FE29CF48D86D属于constraint，但after文本中未提及goal证据（CE-T1-FA2B6E620D8DDBD2、CE-T1-E2F907CF4DA00903）在判断中的具体作用，且boundary_conditions[0]的new_evidence_ids仅包含CE-T1-95F7FE29CF48D86D，但after文本中提及‘作战医疗领域的数据条件（0.017GB）’，但未提及该证据是否属于‘局部数据条件’的实例，且该证据为constraint，与‘边界条件’的关联性需明确。此外，mechanism_claims中提及‘SABER计划的目标是建立示范性AI红队并执行高保真作战AI安全演习，但该计划仍处于目标阶段’，但CE-T1-FA2B6E620D8DDBD2和CE-T1-E2F907CF4DA00903的性质为goal，未提供这些目标已转化为部署的证据，存在将官方目标写成部署结果的风险。整体上，该viewpoint将实验室条件下的攻击演示（constraint）作为‘作战化评估能力不成熟’的证据，但未区分‘实验室条件’与‘作战环境’的差异，且将局部数据条件（作战医疗）外推为‘资源与治理瓶颈’的普遍约束，存在外推边界问题。",
+      "viewpoint_id": "VP-T0-TECH-H03"
+    },
+    {
+      "reason": "evidence_field_changes中judgment的new_evidence_ids包含CE-T1-FE00C458FAADC5D8、CE-T1-11BBC2ABED0945C2、CE-T1-C4C1018771B30C5A、CE-T1-FA2B6E620D8DDBD2、CE-T1-E2F907CF4DA00903，但after文本中提及‘可信治理与作战化评估能力仍存在实质性缺口’、‘SABER计划的目标和演习安排属于未来规划’，其中CE-T1-FE00C458FAADC5D8、CE-T1-11BBC2ABED0945C2、CE-T1-C4C1018771B30C5A属于constraint，CE-T1-FA2B6E620D8DDBD2、CE-T1-E2F907CF4DA00903属于goal，但after文本中未提及constraint证据（CE-T1-FE00C458FAADC5D8、CE-T1-11BBC2ABED0945C2、CE-T1-C4C1018771B30C5A）在判断中的具体作用，且boundary_conditions[0]的new_evidence_ids包含CE-T1-FE00C458FAADC5D8、CE-T1-11BBC2ABED0945C2、CE-T1-C4C1018771B30C5A、CE-T1-FA2B6E620D8DDBD2、CE-T1-E2F907CF4DA00903，但after文本中提及‘T1来源的任务、机构和公开披露范围被明确保留’，但未具体说明这些证据如何支持‘任务、机构和公开披露范围’的保留，存在字段与证据不匹配问题。此外，counter_evidence中CE-T1-FA2B6E620D8DDBD2和CE-T1-E2F907CF4DA00903被列为limit，但这两个证据的性质为goal，且after文本中明确‘SABER计划的目标和演习安排属于未来规划，不构成已实现部署’，但counter_evidence的relation为limit，未说明这些goal证据如何限制judgment，存在逻辑不一致问题。整体上，该viewpoint将constraint证据（如缺乏成熟能力）作为‘实质性缺口’的依据，但未区分‘未观察到’与‘不存在’的差异，且将goal证据（SABER计划）作为counter_evidence，但未明确其限制作用，存在字段与证据性质不匹配问题。",
+      "viewpoint_id": "VP-T0-TRUST-H03"
+    }
+  ],
+  "global_reason": "六条候选修订普遍存在以下问题：1) 证据ID与字段文本不匹配，部分new_evidence_ids包含与after文本无关的证据；2) 将局部案例（如卢克基地、北极桥演习、DARPA竞赛）外推为全军成熟度或任务驱动模式的证据，未充分区分‘未观察到’与‘不存在’；3) 将官方目标/评价/test_event（如SABER计划、战略文件、竞赛活动）写成部署结果或能力形成形态，未区分目标设定与已实现部署；4) 时间范围外推缺乏证据支持，如将2022-2024年扩展至2026年6月30日但未提供对应证据；5) 字段与证据性质不匹配，如将resource_input或goal证据作为支持‘能力形成’或‘部署结果’的依据。这些错误导致修订后的判断、边界条件和机制声明缺乏严谨性，需修正证据引用和表述边界。",
+  "metadata": {
+    "attempts": 1,
+    "batch_id": "audit_perspective_differentiation_auditor",
+    "endpoint": "https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "is_repair": false,
+    "latency_ms": 31132,
+    "logical_call": true,
+    "phase": "P15R_INDEPENDENT_AUDIT",
+    "prompt_sha256": "f9ecdf1d74277600bbd28817aec9356773a4677af86614953f4c945a7349def0",
+    "provider_cost": null,
+    "provider_metrics_status": "observed",
+    "provider_model_id": "deepseek-v4-flash-0731",
+    "provider_temperature": null,
+    "provider_token_usage": {
+      "completion_tokens": 3666,
+      "prompt_tokens": 12494,
+      "total_tokens": 16160
+    },
+    "request_parameters": {
+      "enable_thinking": false,
+      "max_tokens": 24000,
+      "temperature": 0.0
+    },
+    "request_started_at_utc": "2026-08-27T08:13:33Z",
+    "requested_model_id": "deepseek-v4-flash-0731",
+    "response_sha256": "e7a5839ed0862ea4ae7661b9faacfb311e85b7b11b2d46eff9ed10bbad23f33c",
+    "response_status_code": 200,
+    "retry_count": 0,
+    "source_id": "perspective_differentiation_auditor",
+    "transport": "openai_compatible_api"
+  },
+  "prompt_sha256": "f9ecdf1d74277600bbd28817aec9356773a4677af86614953f4c945a7349def0",
+  "response_sha256": "e7a5839ed0862ea4ae7661b9faacfb311e85b7b11b2d46eff9ed10bbad23f33c",
+  "status": "fail"
+}

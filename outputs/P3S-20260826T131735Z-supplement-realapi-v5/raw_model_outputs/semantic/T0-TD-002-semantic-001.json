@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-6b8245d9-964f-4100-aecc-fed284aba861",
+  "object": "chat.completion",
+  "created": 1787750311,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n  {\n    \"candidate_index\": 0,\n    \"status\": \"accept\",\n    \"reason\": \"Excerpt directly describes a test event with specific dates, participants, and configuration. Evidence nature 'test_event' is accurate. Coding dimensions 'application_maturity' (testing phase) and 'human_machine_authority' (safety operator oversight) are directly supported by the text.\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": {\n      \"application_maturity\": \"supported - testing phase explicitly mentioned\",\n      \"human_machine_authority\": \"supported - safety operator overseeing in chase vehicle indicates human oversight\"\n    },\n    \"revised_fields\": {}\n  },\n  {\n    \"candidate_index\": 1,\n    \"status\": \"accept\",\n    \"reason\": \"Excerpt describes a demonstration by Army Research Laboratory researchers and completion of project phase. Evidence nature 'test_event' is appropriate as it describes a demonstration activity. Coding dimensions 'application_maturity' (phase completion) and 'organizational_system_fit' (transition to services) are directly supported.\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": {\n      \"application_maturity\": \"supported - phase completion indicates development stage\",\n      \"organizational_system_fit\": \"supported - transition to services mentioned\"\n    },\n    \"revised_fields\": {}\n  },\n  {\n    \"candidate_index\": 2,\n    \"status\": \"accept\",\n    \"reason\": \"Excerpt provides specific quantitative results from the test. Evidence nature 'test_result' is accurate. Coding dimensions 'application_maturity' (testing phase) and 'engineering_resource_conditions' (fleet size, speed, distance) are directly supported by the data.\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": {\n      \"application_maturity\": \"supported - test results indicate testing phase\",\n      \"engineering_resource_conditions\": \"supported - fleet size and performance metrics are resource conditions\"\n    },\n    \"revised_fields\": {}\n  },\n  {\n    \"candidate_index\": 3,\n    \"status\": \"accept\",\n    \"reason\": \"Excerpt describes future plans for Phase 2. Evidence nature 'goal' is accurate as it states intentions and requirements. Coding dimensions 'application_maturity' (planned development) and 'engineering_resource_conditions' (platform requirements, speed targets) are directly supported.\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": {\n      \"application_maturity\": \"supported - describes planned phase 2 activities\",\n      \"engineering_resource_conditions\": \"supported - platform and speed requirements specified\"\n    },\n    \"revised_fields\": {}\n  },\n  {\n    \"candidate_index\": 4,\n    \"status\": \"accept\",\n    \"reason\": \"Excerpt contains a program manager's statement about test results. Evidence nature 'test_result' is appropriate as it reports observed improvements. Coding dimensions 'application_maturity' (testing phase) and 'human_machine_authority' (reduced interaction) are directly supported.\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": {\n      \"application_maturity\": \"supported - references experiment results\",\n      \"human_machine_authority\": \"supported - reduced interaction with vehicle indicates autonomy level\"\n    },\n    \"revised_fields\": {}\n  }\n]\n```"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1900,
+    "total_tokens": 2642,
+    "completion_tokens": 742,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

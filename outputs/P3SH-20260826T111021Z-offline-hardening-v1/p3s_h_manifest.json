@@ -1,0 +1,51 @@
+{
+  "run_id": "P3SH-20260826T111021Z-offline-hardening-v1",
+  "stage": "P3S-H",
+  "generation_mode": "offline_hardening_only",
+  "executed_at_utc": "2026-08-26T11:10:21Z",
+  "python_version": "3.12.13",
+  "implementation_sha256": "58fa87d26f568900d88334b5e4237c230dcbcdd92ea34e2c713dcca453f8f017",
+  "test_sha256": "9847109c58dbc0a4456f9b39650a978e6dd7fba9c11a1c8c4c6c6b4e2ca0522d",
+  "prompt_template_sha256": "efc43f4f5f14120a791ac53fdab480774f4c4338a92b657f05bb3301fb4c9b6e",
+  "schema_audit": {
+    "exact_fields": [
+      "source_locator",
+      "excerpt_original",
+      "excerpt_zh",
+      "normalized_claim",
+      "evidence_nature",
+      "coding_dimensions",
+      "topics",
+      "possible_corroboration_group"
+    ],
+    "expected_exact_fields": [
+      "source_locator",
+      "excerpt_original",
+      "excerpt_zh",
+      "normalized_claim",
+      "evidence_nature",
+      "coding_dimensions",
+      "topics",
+      "possible_corroboration_group"
+    ],
+    "field_count": 8,
+    "schema_matches": true,
+    "contains_ten_fields_wording": false,
+    "contains_markdown_fence_instruction": true,
+    "empty_array_allowed": true,
+    "max_candidates_per_source": 6
+  },
+  "historical_runs_marked_ineligible": [
+    "P3S-20260826T090131Z-supplement-realapi-v2",
+    "P3S-20260826T092410Z-supplement-realapi-v3",
+    "P3S-20260826T093410Z-supplement-realapi-v3"
+  ],
+  "model_api_calls": 0,
+  "evidence_inserted": 0,
+  "formal_g1_supplement_executed": false,
+  "p4_executed": false,
+  "snapshot_frozen": false,
+  "t1_read": false,
+  "api_key_written": false,
+  "hardcoded_case_evidence_used": false
+}

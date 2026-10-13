@@ -1,0 +1,232 @@
+{
+  "run_id": "P1B-20260825T140911Z-manual",
+  "p1_run_id": "P1-20260825T081142Z-7f4c9b",
+  "case_id": "us_military_ai_deployment",
+  "stage": "P1b",
+  "execution_date": "2026-08-25",
+  "executed_at_utc": "2026-08-25T14:26:45Z",
+  "code_version": "unverified_local_copy",
+  "code_version_note": "Workspace root has no readable Git commit.",
+  "config_path": "config/case_us_military_ai.yaml",
+  "collection_prompt_path": "prompts/luna_source_collection.txt",
+  "manual_input_dir": "data/staging/t0_candidates/manual",
+  "manual_pdf_count": 6,
+  "total_pdf_pages": 295,
+  "formal_t0_candidates_from_manual": 5,
+  "excluded_pre_window": 1,
+  "R45178_date": "2020-11-10",
+  "ocr_required": 0,
+  "input_pdf_inventory": [
+    {
+      "file_name": "2024-06-RAI-STRATEGY-IMPLEMENTATION-PATHWAY.pdf",
+      "file_sha256": "cb30090fa1f7da0e4e469de160fa72b08bf9d13025e22c8be76578509fe66197",
+      "file_size_bytes": 5427778,
+      "page_count": 47,
+      "pdf_open_status": "opened",
+      "encrypted": false,
+      "extraction_status": "extracted",
+      "ocr_required": 0
+    },
+    {
+      "file_name": "DOD_DATA_ANALYTICS_AI_ADOPTION_STRATEGY.pdf",
+      "file_sha256": "25f3c9d42d62da71f6942ebe592211e385a442bd8a012dd08d64fc4b27e37436",
+      "file_size_bytes": 13889886,
+      "page_count": 26,
+      "pdf_open_status": "opened",
+      "encrypted": false,
+      "extraction_status": "extracted",
+      "ocr_required": 0
+    },
+    {
+      "file_name": "gao-22-105834.pdf",
+      "file_sha256": "a6c19f20a264dff4a691d0235813c30bc155e680c6290b6e208b5c471a3eb6a2",
+      "file_size_bytes": 3949489,
+      "page_count": 89,
+      "pdf_open_status": "opened",
+      "encrypted": false,
+      "extraction_status": "extracted",
+      "ocr_required": 0
+    },
+    {
+      "file_name": "gao-23-105850.pdf",
+      "file_sha256": "cef3ddcfa6ccaaeaff8d4836cd45874e92a10944972b44ee0ffb185bf6fa5a0d",
+      "file_size_bytes": 4107287,
+      "page_count": 44,
+      "pdf_open_status": "opened",
+      "encrypted": false,
+      "extraction_status": "extracted",
+      "ocr_required": 0
+    },
+    {
+      "file_name": "gao-24-105645.pdf",
+      "file_sha256": "8cf1506c9d50482c36926c07245a6eb0d0aa7e2527bf33a2007a2c393790fd5f",
+      "file_size_bytes": 3889730,
+      "page_count": 46,
+      "pdf_open_status": "opened",
+      "encrypted": false,
+      "extraction_status": "extracted",
+      "ocr_required": 0
+    },
+    {
+      "file_name": "R45178.10.pdf",
+      "file_sha256": "4b4176781de4658543e0d5bade5003a88832c022cbeefecf7dde7d2774feb3e1",
+      "file_size_bytes": 1690382,
+      "page_count": 43,
+      "pdf_open_status": "opened",
+      "encrypted": false,
+      "extraction_status": "extracted",
+      "ocr_required": 0
+    }
+  ],
+  "new_candidates": [
+    {
+      "source_id": "T0-TD-007",
+      "title": "Cloud-based intel tool AIDP rolls out to Army units globally",
+      "published_at": "2024-10-09",
+      "p1b_group": "test_deployment",
+      "selection_status": "candidate",
+      "verification_status": "blocked_or_not_opened"
+    },
+    {
+      "source_id": "T0-TD-008",
+      "title": "IMSC Task Force Completes Maritime Exercise with Unmanned Systems, A.I.",
+      "published_at": "2023-09-01",
+      "p1b_group": "test_deployment",
+      "selection_status": "candidate",
+      "verification_status": "blocked_or_not_opened"
+    },
+    {
+      "source_id": "T0-CDAO-001",
+      "title": "The CDAO is at the Helm of the DoD's New Generative AI Task Force",
+      "published_at": "2023-08-10",
+      "p1b_group": "strategy_policy",
+      "selection_status": "candidate",
+      "verification_status": "blocked_or_not_opened"
+    },
+    {
+      "source_id": "T0-ENT-001",
+      "title": "Global Force Information Management kicks off Phase 2 of data platform development",
+      "published_at": "2022-10-07",
+      "p1b_group": "test_deployment",
+      "selection_status": "candidate",
+      "verification_status": "blocked_or_not_opened"
+    },
+    {
+      "source_id": "T0-PB-008",
+      "title": "AI Cyber Challenge Opens Registration, Adds $4 Million in Prizes, Shows Scoring Algorithm and Challenge Exemplar",
+      "published_at": "2023-12-14",
+      "p1b_group": "program_budget",
+      "selection_status": "candidate",
+      "verification_status": "verified_original_page"
+    },
+    {
+      "source_id": "T0-IR-009",
+      "title": "The DOD and the U.S. Tech Sector Relationship",
+      "published_at": "2022-08-31",
+      "p1b_group": "program_budget",
+      "selection_status": "candidate",
+      "verification_status": "verified_original_page"
+    }
+  ],
+  "supplement_candidate_count": 6,
+  "supplement_original_page_verified_count": 2,
+  "blocked_or_date_unverified_materials": [
+    {
+      "source_id": "T0-TD-007",
+      "title": "Cloud-based intel tool AIDP rolls out to Army units globally",
+      "original_source_domain": "cpeisw.army.mil",
+      "discovery_url": "https://news.google.com/rss/search?q=site%3Aarmy.mil%20AI%202024%20data%20platform&hl=en-US&gl=US&ceid=US%3Aen",
+      "reason": "Original page could not be opened and verified in this environment; RSS title/date are not treated as material evidence.",
+      "manual_action": "Open the original PEO IEW&S page and record its canonical URL and exact publication date before P2."
+    },
+    {
+      "source_id": "T0-TD-008",
+      "title": "IMSC Task Force Completes Maritime Exercise with Unmanned Systems, A.I.",
+      "original_source_domain": "dvidshub.net",
+      "discovery_url": "https://news.google.com/rss/search?q=site%3Advidshub.net%2Fnews%20artificial%20intelligence%20Navy%202023&hl=en-US&gl=US&ceid=US%3Aen",
+      "reason": "Original page could not be opened and verified in this environment; RSS title/date are not treated as material evidence.",
+      "manual_action": "Open the original DVIDS/NAVCENT page and capture page-level details; the RSS title/date is discovery metadata only."
+    },
+    {
+      "source_id": "T0-CDAO-001",
+      "title": "The CDAO is at the Helm of the DoD's New Generative AI Task Force",
+      "original_source_domain": "ai.mil",
+      "discovery_url": "https://news.google.com/rss/search?q=site%3Aai.mil%20CDAO%202024%20artificial%20intelligence&hl=en-US&gl=US&ceid=US%3Aen",
+      "reason": "Original page could not be opened and verified in this environment; RSS title/date are not treated as material evidence.",
+      "manual_action": "Open the original ai.mil article and verify the exact date and canonical URL before P2."
+    },
+    {
+      "source_id": "T0-ENT-001",
+      "title": "Global Force Information Management kicks off Phase 2 of data platform development",
+      "original_source_domain": "dvidshub.net",
+      "discovery_url": "https://news.google.com/rss/search?q=site%3Advidshub.net%2Fnews%20artificial%20intelligence%20Army%202023&hl=en-US&gl=US&ceid=US%3Aen",
+      "reason": "Original page could not be opened and verified in this environment; RSS title/date are not treated as material evidence.",
+      "manual_action": "Open the original DVIDS page and verify whether the item describes a DoD-wide or component-level rollout."
+    }
+  ],
+  "coverage_matrix_path": "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P1B-20260825T140911Z-manual\\coverage_matrix.csv",
+  "protected_p1_artifact_hashes_before": {
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\data\\curated\\source_manifest_t0.csv": "4adf69488227499a35a2bbd131bf878e8bcf2fc3ead72922fcd938d91397ef12",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\data\\curated\\search_log_t0.csv": "0a06409cc3d867273c416f50d2bc5b24c600550d91d59737bce1278bd17f014f",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P1-20260825T081142Z-7f4c9b\\p1_collection_manifest.json": "51d0202b605cf409634d59709228271456152b89b45ec685b05a5658aa4a372e",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P1-20260825T081142Z-7f4c9b\\raw_independent_review.json": "3a1a416ed55581675dbaa2293f96d053b5de0cee8ab82d1e58849e71a3377ed9",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P1-20260825T081142Z-7f4c9b\\raw_program_budget.json": "0a2a2d42090781f76e5059583c71fa092b1a473c3d9979abda766b39218cd4ec",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P1-20260825T081142Z-7f4c9b\\raw_strategy_policy.json": "1aaca86999797e6d5d074d9520803cba381686d2d24895f29019cab9971ddc85",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P1-20260825T081142Z-7f4c9b\\raw_test_deployment.json": "3a98ec4c564ac85fd215efacf5b30f04b9cd02bf932f043f2433cd603bd58885"
+  },
+  "protected_p1_artifact_hashes_after": {
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\data\\curated\\source_manifest_t0.csv": "4adf69488227499a35a2bbd131bf878e8bcf2fc3ead72922fcd938d91397ef12",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\data\\curated\\search_log_t0.csv": "0a06409cc3d867273c416f50d2bc5b24c600550d91d59737bce1278bd17f014f",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P1-20260825T081142Z-7f4c9b\\p1_collection_manifest.json": "51d0202b605cf409634d59709228271456152b89b45ec685b05a5658aa4a372e",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P1-20260825T081142Z-7f4c9b\\raw_independent_review.json": "3a1a416ed55581675dbaa2293f96d053b5de0cee8ab82d1e58849e71a3377ed9",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P1-20260825T081142Z-7f4c9b\\raw_program_budget.json": "0a2a2d42090781f76e5059583c71fa092b1a473c3d9979abda766b39218cd4ec",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P1-20260825T081142Z-7f4c9b\\raw_strategy_policy.json": "1aaca86999797e6d5d074d9520803cba381686d2d24895f29019cab9971ddc85",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P1-20260825T081142Z-7f4c9b\\raw_test_deployment.json": "3a98ec4c564ac85fd215efacf5b30f04b9cd02bf932f043f2433cd603bd58885"
+  },
+  "protected_p1_artifacts_unchanged": true,
+  "output_file_sha256": {
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\data\\curated\\source_manifest_t0_p1b.csv": "ea8d4c01c4655117c00cf251f34b4b6aa09ee592547b8c77624198b87256c45c",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\data\\curated\\search_log_t0_p1b.csv": "a2b18f18f94b84fa5203f7c1cff33716ea5fe1c80f6719f0953380f45f536f8f",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P1B-20260825T140911Z-manual\\document_inventory.json": "68aa9a6313331ca48ef2dd99f3f687b7f79e2132712b1a9b1dd173c89d94f914",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P1B-20260825T140911Z-manual\\coverage_matrix.csv": "7f0fbda0bc529cb55c99c1df2c5694f13134114c0409c83ed535d52ce8393a64",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P1B-20260825T140911Z-manual\\page_index\\T0-IR-006.jsonl": "170f1761708db8d2039f3d2ba57cfbb4eb675555949ab8318816d10852aa7f64",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P1B-20260825T140911Z-manual\\page_index\\T0-IR-007.jsonl": "355c27018a5db9244773b9f759b8f323bc7888ad56eafb7e7da1a8d04f78882b",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P1B-20260825T140911Z-manual\\page_index\\T0-IR-008.jsonl": "a961ffa6ff5d7950183e5154a7b8113c9b9905abb939ed9f99ad70a7e273d421",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P1B-20260825T140911Z-manual\\page_index\\T0-PB-007.jsonl": "1b47b81ba23ed1aae4565d2f90098855759d936793101781a7130886dd78e32d",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P1B-20260825T140911Z-manual\\page_index\\T0-SP-007.jsonl": "c808cdcd7af8a2c04d498bde392835d3caf54d3b7d29f88ecf783dbcc4d14d9e",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P1B-20260825T140911Z-manual\\page_index\\T0-SP-008.jsonl": "e5433abb34ee3ad0f422699fd8b4644fb1551563fda6c549b92de899405d3e33",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P1B-20260825T140911Z-manual\\document_cards\\T0-IR-006.json": "cf378eb3c6eaa31f69384b955575120f1c9647eab438eb62e38ff2f2da0370eb",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P1B-20260825T140911Z-manual\\document_cards\\T0-IR-007.json": "98d0e31299c2c58f9405bbad75aa3cdb66cae6ed7a7560f717f08196e6e41fe1",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P1B-20260825T140911Z-manual\\document_cards\\T0-IR-008.json": "84e0a2e0ab6184fc5826d16d3120a450db4b434a811152d49ae076a1f7023b37",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P1B-20260825T140911Z-manual\\document_cards\\T0-PB-007.json": "dbc09824dc1c748736a5baa8c163093ec58f04f4a0919c8e08db9c469933b3ea",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P1B-20260825T140911Z-manual\\document_cards\\T0-SP-007.json": "14247532b3b7b9ef5dbc7f171150a134469ac243725e92a6fd645f1b318cc218",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P1B-20260825T140911Z-manual\\document_cards\\T0-SP-008.json": "96a262fc5f36c583622022d9c5c19cbf5fbbb3f2acb4e30e9500dbebf89cf90d"
+  },
+  "boundary_declarations": {
+    "modelclient_called": false,
+    "modelclient_statement": "ModelClient was not called.",
+    "evidence_rows_added": 0,
+    "evidence_statement": "No Evidence table write and no formal Evidence extraction occurred.",
+    "t1_read": false,
+    "t1_statement": "T1 materials were not read; data/raw/t1_sealed was not accessed.",
+    "hypotheses_added": 0,
+    "competitive_hypotheses_generated": false,
+    "case_conclusion_formed": false,
+    "p2_executed": false,
+    "candidate_to_include_automation": false
+  },
+  "acceptance": {
+    "manual_pdf_count": 6,
+    "total_pdf_pages": 295,
+    "formal_t0_candidates_from_manual": 5,
+    "excluded_pre_window": 1,
+    "R45178_date": "2020-11-10",
+    "ocr_required": 0,
+    "evidence_rows_added": 0,
+    "hypotheses_added": 0,
+    "t1_read": false
+  },
+  "manifest_sha256": null,
+  "manifest_hash_note": "Self-hash is intentionally null to avoid a circular hash.",
+  "stop_condition": "P1b intake, page index, document cards, coverage supplement, and versioned manifests complete; stop before P2."
+}

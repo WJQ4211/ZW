@@ -1,0 +1,48 @@
+{
+  "artifact_hashes": {
+    "outputs\\phase-a-demo-20260825T072402Z-70e52b\\affected_system_candidates.json": "34f207a8eb7b453465035912d2a4bf2411dd6052be2e06c414c4dae8e7a00bc7",
+    "outputs\\phase-a-demo-20260825T072402Z-70e52b\\affected_viewpoints.json": "55892931ea899492df643ef44f55833c0c65392a60f4d15c724d8457ab53ff47",
+    "outputs\\phase-a-demo-20260825T072402Z-70e52b\\change_log.json": "5d3c1aeb9fb2f922b944bafe25b44103b83be6fd6b4973a49c9b27b1904bd2ae",
+    "outputs\\phase-a-demo-20260825T072402Z-70e52b\\delta_evidence_t1.jsonl": "be54e0fa41f5e60a2beedc4f3166a22d7b78ad64ddd69a3a547457b9b5a47e8c",
+    "outputs\\phase-a-demo-20260825T072402Z-70e52b\\report_t1.md": "2ffbca33b3cf6ac14a19402cfd164bdf8f2b67a31eecb49c8db3ad2303348493",
+    "outputs\\phase-a-demo-20260825T072402Z-70e52b\\viewpoints_t1.jsonl": "b3dcb29b608766a1b6e99f8a11efaa3f591808c42d1851c4cff17c70f556773e"
+  },
+  "artifacts": {
+    "affected_system_candidates": "outputs\\phase-a-demo-20260825T072402Z-70e52b\\affected_system_candidates.json",
+    "affected_viewpoints": "outputs\\phase-a-demo-20260825T072402Z-70e52b\\affected_viewpoints.json",
+    "change_log": "outputs\\phase-a-demo-20260825T072402Z-70e52b\\change_log.json",
+    "delta_evidence": "outputs\\phase-a-demo-20260825T072402Z-70e52b\\delta_evidence_t1.jsonl",
+    "report_t1": "outputs\\phase-a-demo-20260825T072402Z-70e52b\\report_t1.md",
+    "viewpoints_t1": "outputs\\phase-a-demo-20260825T072402Z-70e52b\\viewpoints_t1.jsonl"
+  },
+  "candidate_count": 4,
+  "case_id": "synthetic_military_ai",
+  "code_version": "workspace-source-4f53cda18c2baa0c",
+  "config_hash": "54c69b44bdf95d634117504ff4ebf1e74b47e82cb7d6d553bb1214adc0bfa895",
+  "gate": "G4_T1",
+  "input_files": {
+    "fixtures/update_t1.json": "4b02ecb4738526109c137db9c672f34d48ce13b9b6e8110f50535f64d14edf4b",
+    "outputs/phase-a-demo-20260825T072402Z-70e52b/affected_system_candidates.json": "34f207a8eb7b453465035912d2a4bf2411dd6052be2e06c414c4dae8e7a00bc7"
+  },
+  "manifest_version": "phase-a.1",
+  "mode": "synthetic_manual_json",
+  "model_client": null,
+  "no_viewpoint_update": false,
+  "reproducibility": {
+    "input_hash": "f1725dff5f3c5c6f8ebcc9c878a12c0367311d476073f15259e2c47e9133a0d3",
+    "llm_called": false,
+    "python": "3.11.7"
+  },
+  "run_id": "phase-a-demo-20260825T072402Z-70e52b",
+  "snapshot_hashes": {
+    "SNAP-synthetic_military_ai-T0-3db2ee3ae0bf": "3db2ee3ae0bf9f1c223ff20c03297e26bac5bd80ee25067e1bab482131c1bf7b",
+    "SNAP-synthetic_military_ai-T1-f97219be4909": "f97219be49098df50432d8cb4641aacb7027f9f755688cea41e721dce89e436f"
+  },
+  "snapshots": [
+    "SNAP-synthetic_military_ai-T0-3db2ee3ae0bf",
+    "SNAP-synthetic_military_ai-T1-f97219be4909"
+  ],
+  "stage": "A+",
+  "unchanged_count": 2,
+  "updated_count": 2
+}

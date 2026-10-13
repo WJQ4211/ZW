@@ -1,0 +1,70 @@
+{
+  "challenges": [
+    {
+      "challenge_id": "CHL-VP-T0-STRAT-H01-01",
+      "target_viewpoint_id": "VP-T0-STRAT-H01",
+      "target_field": "judgment",
+      "challenge_type": "goal_result_confusion",
+      "challenge_statement": "该观点将CDAO的设立和SP-008战略文件的存在视为统一治理架构的实质进展，但所引用的支持性证据（EV-T0-0A73030BBF2649F9、EV-T0-27EE6FA7DA2FADC0、EV-T0-7E37FBD511FC654E）均为治理授权或规划意图的声明，而非治理架构已产生实际牵引效果的成果记录。观点在判断中承认‘尚未形成对任务项目的实质性牵引’，却仍将‘建立统一治理架构’作为主要结论，混淆了治理目标的设定与治理结果的实现。",
+      "evidence_ids": [
+        "EV-T0-0A73030BBF2649F9",
+        "EV-T0-27EE6FA7DA2FADC0",
+        "EV-T0-7E37FBD511FC654E"
+      ],
+      "impact": "high",
+      "response_required": true
+    },
+    {
+      "challenge_id": "CHL-VP-T0-TECH-H01-01",
+      "target_viewpoint_id": "VP-T0-TECH-H01",
+      "target_field": "mechanism_claims",
+      "challenge_type": "mechanism_gap",
+      "challenge_statement": "该观点的两条机制声明（JCF设计目标与CDAO技术协调作用）均标注为model_inference，且未引用任何证据ID。机制声明中关于‘技术实现受预算和合同问题制约’的推断，实际可用的支持证据是EV-T0-51D65DEC82584BCD（JCF全面作战能力延迟）和EV-T0-A515E3B9391C51B4（路线图未定），但这两条证据在观点中被列为counter_evidence而非supporting_evidence。机制推断缺乏直接证据支撑，且与证据分类逻辑不一致。",
+      "evidence_ids": [
+        "EV-T0-51D65DEC82584BCD",
+        "EV-T0-A515E3B9391C51B4"
+      ],
+      "impact": "medium",
+      "response_required": true
+    },
+    {
+      "challenge_id": "CHL-VP-T0-ENG-H01-01",
+      "target_viewpoint_id": "VP-T0-ENG-H01",
+      "target_field": "boundary_conditions[0]",
+      "challenge_type": "scope_overreach",
+      "challenge_statement": "该观点的边界条件声称‘仅适用于JCF等集中化平台和CDAO等统一治理机制，不适用于AIDP等军种特定项目’，但判断中‘体系整合的牵引方向确实存在’这一结论是基于对JCF和CDAO的分析得出的。边界条件将适用范围限定于集中化平台，却未说明为何这些平台的延迟状态足以代表整个国防部体系整合的工程状态，存在将局部平台状态外推为整体工程判断的风险。",
+      "evidence_ids": [
+        "EV-T0-7E37FBD511FC654E",
+        "EV-T0-0A73030BBF2649F9"
+      ],
+      "impact": "medium",
+      "response_required": true
+    },
+    {
+      "challenge_id": "CHL-VP-T0-OPS-H01-01",
+      "target_viewpoint_id": "VP-T0-OPS-H01",
+      "target_field": "key_assumptions[1]",
+      "challenge_type": "assumption_risk",
+      "challenge_statement": "该观点的关键假设‘从采用到整合的转变是演进方向，但该转变需要以跨军种实际复用为证据’存在风险。观点引用的支持性证据EV-T0-5FA6E8C23AC72A82仅表明JAIC的工作重点从采用转向整合，这是战略意图的转变而非实际复用行为的证据。假设将‘意图转变’与‘实际复用’混为一谈，且未提供任何跨军种实际复用的证据来支撑判断中的‘尚未在跨军种任务中形成实际牵引力’结论。",
+      "evidence_ids": [
+        "EV-T0-5FA6E8C23AC72A82"
+      ],
+      "impact": "high",
+      "response_required": true
+    },
+    {
+      "challenge_id": "CHL-VP-T0-TRUST-H01-01",
+      "target_viewpoint_id": "VP-T0-TRUST-H01",
+      "target_field": "judgment",
+      "challenge_type": "counter_evidence_omitted",
+      "challenge_statement": "该观点判断‘统一治理和标准化流程尚未真正落地’，但未引用任何支持性证据来证明CDAO或JCF在2022-2024年间没有任何实质性进展。观点仅依赖三条限制性证据（EV-T0-51D65DEC82584BCD、EV-T0-8E35B508DF5C2E65、EV-T0-A515E3B9391C51B4）来否定整合状态，却未考虑这些证据的时间范围（2021-2023年）与假设时间范围（2022-2024年）的重叠与差异，存在选择性使用反证而忽略可能支持整合进展的其他证据的风险。",
+      "evidence_ids": [
+        "EV-T0-51D65DEC82584BCD",
+        "EV-T0-8E35B508DF5C2E65",
+        "EV-T0-A515E3B9391C51B4"
+      ],
+      "impact": "medium",
+      "response_required": true
+    }
+  ]
+}

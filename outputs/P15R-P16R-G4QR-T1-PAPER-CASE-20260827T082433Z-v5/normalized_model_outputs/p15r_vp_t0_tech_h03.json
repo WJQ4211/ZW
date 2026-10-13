@@ -1,0 +1,152 @@
+{
+  "affected_fields": [
+    "judgment",
+    "boundary_conditions[0]"
+  ],
+  "boundary_conditions": [
+    "若数据、边缘算力和共用基础设施瓶颈持续存在，则本假设增强。",
+    "若统一采办和测试评估制度仍未落地，则本假设增强。",
+    "若资源与治理瓶颈得到解决并伴随跨任务规模化部署，则本假设削弱。",
+    "T1证据中关于作战化AI安全评估能力缺失的约束，仅反映截至2026年6月30日的状态，不排除后续能力建设。"
+  ],
+  "confidence": "medium",
+  "counter_evidence": [
+    {
+      "evidence_id": "EV-T0-0405886E04C205A6",
+      "importance": "medium",
+      "relation": "limit",
+      "target_field": "boundary_conditions[0]",
+      "version": 1
+    },
+    {
+      "evidence_id": "EV-T0-FB39056D1BA1F579",
+      "importance": "medium",
+      "relation": "limit",
+      "target_field": "boundary_conditions[0]",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-95F7FE29CF48D86D",
+      "importance": "medium",
+      "relation": "limit",
+      "target_field": "boundary_conditions[0]",
+      "version": 1
+    }
+  ],
+  "evidence_field_changes": [
+    {
+      "after": "T1证据进一步确认了作战化AI安全评估能力缺失、实验室到作战环境的转化边界以及数据规模约束，这些均指向技术成熟度仍受制于工程验证和资源条件；SABER等计划仍处于目标设定阶段，未构成已实现部署，因此本假设在技术成熟度视角下继续成立。",
+      "before": "T1证据补充了作战化评估能力、数据条件和工程约束，表明资源与可信治理瓶颈仍影响应用扩展；局部结果不足以消除这一条件性判断。",
+      "change_reason": "T1证据提供了关于作战化AI安全评估能力缺失、实验室到作战环境转化边界以及数据规模约束的直接信息，强化了技术成熟度受限的判断；同时SABER计划的目标属性被明确为未实现部署，避免过度外推。",
+      "new_evidence_ids": [
+        "CE-T1-FE00C458FAADC5D8",
+        "CE-T1-11BBC2ABED0945C2",
+        "CE-T1-C4C1018771B30C5A",
+        "CE-T1-FA2B6E620D8DDBD2",
+        "CE-T1-E2F907CF4DA00903",
+        "CE-T1-95F7FE29CF48D86D"
+      ],
+      "target_field": "judgment"
+    },
+    {
+      "after": "若数据、边缘算力和共用基础设施瓶颈持续存在，则本假设增强；T1证据中关于作战医疗领域的数据规模（0.017GB）仅代表该特定领域，不能外推为全军AI数据条件的普遍状态。",
+      "before": "若数据、边缘算力和共用基础设施瓶颈持续存在，则本假设增强。",
+      "change_reason": "T1证据提供了作战医疗领域的数据规模约束，该约束被限定为局部条件，不改变主判断，但明确了外推边界。",
+      "new_evidence_ids": [
+        "CE-T1-95F7FE29CF48D86D"
+      ],
+      "target_field": "boundary_conditions[0]"
+    }
+  ],
+  "falsifiers": [
+    "若在2026年7月1日之后，出现多个军种在作战演习中常态化使用同一套AI系统，且不依赖DARPA等专门项目支持，则本假设不成立。",
+    "若在2026年7月1日之后，出现公开证据表明国防部已建立统一的AI采办指导方针并应用于多个军种，则本假设削弱。",
+    "若在2026年7月1日之后，SABER计划或其他类似项目公开报告已完成对已部署AI系统的作战漏洞评估并形成可复用流程，则本假设削弱。"
+  ],
+  "information_gaps": [
+    "缺乏关于机载AI处理速度限制在具体项目中的量化影响数据。",
+    "国防部采办指导方针的制定进展缺乏公开时间表。",
+    "处理速度限制与实时决策能力之间的因果关系缺乏直接证据。",
+    "缺乏关于SABER计划当前进展阶段（如是否已进行首次演习）的公开信息。"
+  ],
+  "judgment": "T1证据进一步确认了作战化AI安全评估能力、实验室到作战环境的转化边界以及数据规模约束，这些均指向技术成熟度仍受制于工程验证和资源条件；SABER等计划仍处于目标设定阶段，未构成已实现部署，因此本假设在技术成熟度视角下继续成立。",
+  "key_assumptions": [
+    "资源约束（如机载处理速度、数据质量、基础设施延迟）是能力形成的主要瓶颈。",
+    "预算投入（如2023财年11亿美元）和DARPA的数据收集（如100TB传感器数据）尚未完全解决这些瓶颈。",
+    "国防部层面的AI采办指导方针缺失是体系化发展的主要障碍。",
+    "T1证据中关于作战医疗领域的数据规模（0.017GB）仅代表该特定领域，不能外推为全军AI数据条件的普遍状态。"
+  ],
+  "mechanism_claims": [
+    "机载AI系统的主要限制因素是处理速度（依据EV-T0-AD4CCAC18E1BB26C，直接证据）。",
+    "处理速度限制可能影响实时决策能力——此为合理推断，但现有证据未直接量化该影响，需进一步验证（推断）。",
+    "缺乏基于经测试标准的组织化方法，导致数据质量难以满足AI需求（依据EV-T0-62B1ECDA7DF87F1A，直接证据）。",
+    "国防部尚未制定全部门范围的AI采办指导方针，导致各军种自行制定标准，缺乏统一协调（依据EV-T0-8E35B508DF5C2E65，直接证据）。",
+    "T1证据表明，对AI系统的攻击演示大多在实验室条件下进行，且缺乏对已部署AI战场系统进行作战漏洞评估的成熟能力和生态，这直接限制了技术成熟度的验证（依据CE-T1-FE00C458FAADC5D8、CE-T1-11BBC2ABED0945C2、CE-T1-C4C1018771B30C5A，直接证据）。",
+    "SABER计划的目标是建立示范性AI红队并执行高保真作战AI安全演习，但该计划仍处于目标设定阶段，未构成已实现部署，因此不能作为技术成熟度提升的证据（依据CE-T1-FA2B6E620D8DDBD2、CE-T1-E2F907CF4DA00903，直接证据）。"
+  ],
+  "supporting_evidence": [
+    {
+      "evidence_id": "EV-T0-AD4CCAC18E1BB26C",
+      "importance": "high",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "EV-T0-62B1ECDA7DF87F1A",
+      "importance": "high",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "EV-T0-8E35B508DF5C2E65",
+      "importance": "high",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-FE00C458FAADC5D8",
+      "importance": "high",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-11BBC2ABED0945C2",
+      "importance": "high",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-C4C1018771B30C5A",
+      "importance": "high",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-FA2B6E620D8DDBD2",
+      "importance": "medium",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-E2F907CF4DA00903",
+      "importance": "medium",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    }
+  ],
+  "uncertainties": [
+    "预算投入是否已有效转化为实际的技术能力提升，缺乏直接证据。",
+    "DARPA收集的100TB传感器数据是否已用于解决数据质量瓶颈，尚不明确。",
+    "处理速度限制对实时决策能力的具体影响程度缺乏量化数据。",
+    "SABER计划后续是否能够成功建立作战评估能力，以及其时间表，尚不明确。"
+  ],
+  "update_rationale": "T1证据中关于作战化AI安全评估能力缺失、实验室到作战环境转化边界以及数据规模约束的信息，均支持技术成熟度受限的判断；SABER计划的目标属性被明确为未实现部署，避免过度外推。因此，本假设在技术成熟度视角下继续成立，置信度维持medium。"
+}

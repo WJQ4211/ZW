@@ -1,0 +1,17 @@
+{
+  "invalid_evidence_reference_count": 0,
+  "excluded_evidence_reference_count": 0,
+  "historical_change_signal_reference_count": 0,
+  "evidence_branch_semantic_mismatch_count": 0,
+  "invalid_viewpoint_reference_count": 0,
+  "invalid_evidence_references": [],
+  "excluded_evidence_references": [],
+  "historical_change_signal_references": [],
+  "semantic_mismatch_references": [],
+  "invalid_viewpoint_references": [],
+  "latest_viewpoint_reference_check": true,
+  "checked_disagreements": 3,
+  "checked_needs": 3,
+  "checked_indicators": 4,
+  "checked_triggers": 8
+}

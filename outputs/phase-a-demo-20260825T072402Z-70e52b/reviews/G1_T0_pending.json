@@ -1,0 +1,11 @@
+{
+  "approved": true,
+  "artifact_hash": "dcf71f6527467f90f7ef22e513605e87b5ef828dee9bca15598c3d3198775117",
+  "artifact_path": "data/raw/t0",
+  "case_id": "synthetic_military_ai",
+  "created_at": "2026-08-25T07:24:02.682468+00:00",
+  "gate": "G1_T0",
+  "notes": "Synthetic fixture: T0 evidence membership and metadata reviewed.",
+  "reviewer": "synthetic-g1-reviewer",
+  "run_id": "phase-a-demo-20260825T072402Z-70e52b"
+}

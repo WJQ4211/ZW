@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-c27e58bb-9490-4a3a-b176-d844d91ebdbc",
+  "object": "chat.completion",
+  "created": 1787750270,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n  {\n    \"candidate_index\": 0,\n    \"status\": \"accept\",\n    \"reason\": \"Excerpt directly supports the claim about DARPA announcing the ITM program and its goal to evaluate and build trusted algorithmic decision-makers. The evidence nature 'goal' is accurate as the excerpt describes aims and objectives. The coding dimensions are relevant: 'application_maturity' captures the program's research/development stage, and 'human_machine_authority' is directly relevant to the focus on human-machine trust and algorithmic decision-makers. The excerpt is atomic, non-duplicative, and directly relevant to the research question on AI capability building.\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": {\n      \"application_maturity\": \"supported\",\n      \"human_machine_authority\": \"supported\"\n    },\n    \"revised_fields\": {}\n  },\n  {\n    \"candidate_index\": 1,\n    \"status\": \"accept\",\n    \"reason\": \"Excerpt directly supports the claim about ITM's four technical areas, including policy integration and ethical considerations. The evidence nature 'goal' is appropriate as the excerpt describes the program's planned structure and objectives. The coding dimensions are relevant: 'application_maturity' captures the program's development stage, and 'trust_governance_constraints' is directly supported by the mention of legal, moral, ethical expertise, and policy integration. The excerpt is atomic, non-duplicative, and relevant to the research question.\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": {\n      \"application_maturity\": \"supported\",\n      \"trust_governance_constraints\": \"supported\"\n    },\n    \"revised_fields\": {}\n  },\n  {\n    \"candidate_index\": 2,\n    \"status\": \"accept\",\n    \"reason\": \"Excerpt directly supports the claim about ITM's timeline and phases. The evidence nature 'goal' is appropriate as the excerpt describes the program's planned duration and structure. The coding dimension 'application_maturity' is relevant as it captures the program's development stage and timeline. The excerpt is atomic, non-duplicative, and relevant to the research question on AI capability building.\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": {\n      \"application_maturity\": \"supported\"\n    },\n    \"revised_fields\": {}\n  },\n  {\n    \"candidate_index\": 3,\n    \"status\": \"accept\",\n    \"reason\": \"Excerpt directly supports the claim about ITM's evaluation design with multiple decision-makers and scenarios. The evidence nature 'test_event' is accurate as the excerpt describes the planned evaluation process. The coding dimensions are relevant: 'application_maturity' captures the testing/evaluation stage, and 'human_machine_authority' is directly relevant to the comparison of human and algorithmic decision-makers. The excerpt is atomic, non-duplicative, and relevant to the research question.\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": {\n      \"application_maturity\": \"supported\",\n      \"human_machine_authority\": \"supported\"\n    },\n    \"revised_fields\": {}\n  },\n  {\n    \"candidate_index\": 4,\n    \"status\": \"accept\",\n    \"reason\": \"Excerpt directly supports the claim about the blinded evaluation method to measure trust in decision-makers. The evidence nature 'test_event' is accurate as the excerpt describes the evaluation procedure. The coding dimensions are relevant: 'human_machine_authority' is directly relevant to the delegation and trust in algorithmic decision-makers, and 'trust_governance_constraints' is supported by the focus on measuring trust. The excerpt is atomic, non-duplicative, and relevant to the research question.\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": {\n      \"human_machine_authority\": \"supported\",\n      \"trust_governance_constraints\": \"supported\"\n    },\n    \"revised_fields\": {}\n  }\n]\n```"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2119,
+    "total_tokens": 2994,
+    "completion_tokens": 875,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

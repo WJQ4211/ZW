@@ -1,0 +1,4 @@
+[
+  {"indicator_id":"IND-001","need_id":"NEED-001","name":"受约束自治联合任务试验","operational_definition":"从正式试验或演习材料中识别 bounded autonomy、联合任务序列和 operator handoff 是否同时出现。","source_types":["official_program","test_report"],"cadence":"event_driven","direction_a":"出现可重复的人机交接和任务边界扩大","direction_b":"出现边缘情形失败或逐项人工授权","affected_viewpoint_ids":["VP-TECH-A","VP-TECH-B"],"status":"draft"},
+  {"indicator_id":"IND-002","need_id":"NEED-002","name":"操作员负荷与授权变化","operational_definition":"从采购和授权文件中识别 operator workload evaluation 与正式授权范围是否变化。","source_types":["official_program","procurement_notice"],"cadence":"quarterly","direction_a":"负荷评估通过且授权扩大","direction_b":"负荷或授权约束保持不变","affected_viewpoint_ids":["VP-OPS-A","VP-OPS-B"],"status":"draft"}
+]

@@ -1,0 +1,158 @@
+{
+  "run_id": "P3A-20260825T161738Z-pilot",
+  "case_id": "us_military_ai_deployment",
+  "stage": "P3a",
+  "p2_run_id": "P2-20260825T154432Z-author-pilot",
+  "source_ids": [
+    "T0-SP-007",
+    "T0-TD-008"
+  ],
+  "executed_at_utc": "2026-08-25T16:20:02Z",
+  "git_head": "16ad94d65c6349b16532bcec06deae321165e574",
+  "git_head_short": "16ad94d65c63",
+  "git_root": "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\.github_upload_staging",
+  "transport": "codex_agent_file_bridge",
+  "model_id": "luna_file_bridge_pilot",
+  "provider_call_count": null,
+  "provider_call_count_status": "not_observable",
+  "logical_extraction_batch_count": 3,
+  "logical_batches": [
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P3A-20260825T161738Z-pilot\\prompt_packets\\T0-SP-007-batch-01.txt",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P3A-20260825T161738Z-pilot\\prompt_packets\\T0-SP-007-batch-02.txt",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P3A-20260825T161738Z-pilot\\prompt_packets\\T0-TD-008-batch-01.txt"
+  ],
+  "input_files": {
+    "p2_manifest": {
+      "path": "outputs/P2-20260825T154432Z-author-pilot/p2_manifest.json",
+      "sha256": "9c5e5e62e05d390b9f59c7ed3e314684f7dd8c0075b15014c5ba90e1a68e0821"
+    },
+    "p2_source_manifest": {
+      "path": "data/curated/source_manifest_t0_p2.csv",
+      "sha256": "afdb8661cfda4d0d3c86418c389b4844c0b7071b3026cbf2cc10dc7c758788fa"
+    },
+    "p2_selected_inventory": {
+      "path": "outputs/P2-20260825T154432Z-author-pilot/selected_source_inventory.csv",
+      "sha256": "2ec9a46afbdf41556340ea3e31e172a558a6765ccfcffb6b22918567a2ea2c3f"
+    },
+    "sources": {
+      "T0-SP-007": {
+        "path": "outputs/P1B-20260825T140911Z-manual/page_index/T0-SP-007.jsonl",
+        "sha256": "c808cdcd7af8a2c04d498bde392835d3caf54d3b7d29f88ecf783dbcc4d14d9e",
+        "content_hash_from_p2": "cb30090fa1f7da0e4e469de160fa72b08bf9d13025e22c8be76578509fe66197"
+      },
+      "T0-TD-008": {
+        "path": "outputs/P1C-20260825T152730Z-manual-web/web_text/T0-TD-008.txt",
+        "sha256": "54137701770dcbbe2e6aaa0e4abc7622ae682d7d18cc987270f6f2b446a7b8ce",
+        "content_hash_from_p2": "08fe714c34f25e0981f1b01da279f92d1ac139b108835c0cbe107ebcc003c38c"
+      }
+    }
+  },
+  "prompt_template": {
+    "path": "prompts/evidence_extract_v1.yaml",
+    "sha256": "ad18f9491be481b05efb3d35a124dcce8695af97cf959dfeb71806a2f928ad35",
+    "prompt_id": "evidence_extract",
+    "version": "1.0"
+  },
+  "bridge_calls": [
+    {
+      "transport": "codex_agent_file_bridge",
+      "prompt_path": "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P3A-20260825T161738Z-pilot\\prompt_packets\\T0-SP-007-batch-01.txt",
+      "response_path": "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P3A-20260825T161738Z-pilot\\raw_model_outputs\\T0-SP-007-batch-01.json",
+      "prompt_sha256": "a5b209ce50d9c36fc0de860007cd5d256417734ab881104796ecdb8ae15eecd5",
+      "response_sha256": "210059e39a2313a96f5b45f1786408e9dadfbf208b17f53cc9cb7725e26121ac",
+      "candidate_count": 6,
+      "provider_call_count": null,
+      "token_count": null,
+      "temperature": null,
+      "cost": null,
+      "provider_metrics_status": "not_observable"
+    },
+    {
+      "transport": "codex_agent_file_bridge",
+      "prompt_path": "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P3A-20260825T161738Z-pilot\\prompt_packets\\T0-SP-007-batch-02.txt",
+      "response_path": "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P3A-20260825T161738Z-pilot\\raw_model_outputs\\T0-SP-007-batch-02.json",
+      "prompt_sha256": "63efd3e0b2856e2b3dad03c103669ad7cebd74290236efd798456ca5285ce446",
+      "response_sha256": "9d309f2634e8aecc4da8233a1409ac8b6633759bbcdfb0610e7e0757510b0b4e",
+      "candidate_count": 1,
+      "provider_call_count": null,
+      "token_count": null,
+      "temperature": null,
+      "cost": null,
+      "provider_metrics_status": "not_observable"
+    },
+    {
+      "transport": "codex_agent_file_bridge",
+      "prompt_path": "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P3A-20260825T161738Z-pilot\\prompt_packets\\T0-TD-008-batch-01.txt",
+      "response_path": "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P3A-20260825T161738Z-pilot\\raw_model_outputs\\T0-TD-008-batch-01.json",
+      "prompt_sha256": "4f93cf922e2625d10eb4b7001fab6d65a4c626b6238c717333abd80d4d7910a5",
+      "response_sha256": "43b96919d4e1ff91dc98a676aa8420b1c56012db8f994c51c220ab33eb8bfbbe",
+      "candidate_count": 4,
+      "provider_call_count": null,
+      "token_count": null,
+      "temperature": null,
+      "cost": null,
+      "provider_metrics_status": "not_observable"
+    }
+  ],
+  "raw_candidate_count": 11,
+  "validated_candidate_count": 11,
+  "rejected_candidate_count": 0,
+  "rejected_reason_counts": {},
+  "exact_locator_quote_match_rate": 1.0,
+  "evidence_nature_counts": {
+    "goal": 6,
+    "evaluation": 1,
+    "test_result": 4
+  },
+  "coding_dimension_counts": {
+    "trust_governance_constraints": 6,
+    "application_maturity": 5,
+    "organizational_system_fit": 4,
+    "integration_level": 5,
+    "human_machine_authority": 1
+  },
+  "candidate_evidence_count": 11,
+  "formal_evidence_db_rows_added": 0,
+  "hypothesis_rows_added": 0,
+  "t1_read": false,
+  "p4_executed": false,
+  "snapshot_frozen": false,
+  "formal_evidence_extracted": false,
+  "output_file_sha256": {
+    "outputs/P3A-20260825T161738Z-pilot/evidence_candidates_pilot.jsonl": "f027095db7571165fef5319219d4722e8b6df23321366253fdec8b2feb52b461",
+    "outputs/P3A-20260825T161738Z-pilot/extraction_summary_by_source.csv": "a1534ab1fba67c3045a6e48250a517858a563685c940804b95ee2238f21165f6",
+    "outputs/P3A-20260825T161738Z-pilot/prompt_packets/T0-SP-007-batch-01.json": "b39edb1b5919e79db71d6c91b71efe1716f333a0d646740793f0ad0c433448e6",
+    "outputs/P3A-20260825T161738Z-pilot/prompt_packets/T0-SP-007-batch-01.txt": "a5b209ce50d9c36fc0de860007cd5d256417734ab881104796ecdb8ae15eecd5",
+    "outputs/P3A-20260825T161738Z-pilot/prompt_packets/T0-SP-007-batch-02.json": "3a467cc83c6a71c20eb7402eade9f37fcae84415bd5b6ac63d0ec80354d4e3a2",
+    "outputs/P3A-20260825T161738Z-pilot/prompt_packets/T0-SP-007-batch-02.txt": "63efd3e0b2856e2b3dad03c103669ad7cebd74290236efd798456ca5285ce446",
+    "outputs/P3A-20260825T161738Z-pilot/prompt_packets/T0-TD-008-batch-01.json": "18a0d7ba6a336550c563e60989af02ed625b177879d7be186e626ee3a8ac179e",
+    "outputs/P3A-20260825T161738Z-pilot/prompt_packets/T0-TD-008-batch-01.txt": "4f93cf922e2625d10eb4b7001fab6d65a4c626b6238c717333abd80d4d7910a5",
+    "outputs/P3A-20260825T161738Z-pilot/quote_validation.csv": "2108c2d9e7c5ee4ad12c918e1d7bac3e1d7f52998922337b17eedb00c401de3a",
+    "outputs/P3A-20260825T161738Z-pilot/raw_model_outputs/T0-SP-007-batch-01.json": "210059e39a2313a96f5b45f1786408e9dadfbf208b17f53cc9cb7725e26121ac",
+    "outputs/P3A-20260825T161738Z-pilot/raw_model_outputs/T0-SP-007-batch-01.meta.json": "e73cce5b4ac909c8bc7b33f2cc8a713167d52030a8234c827e9a332edffe71a8",
+    "outputs/P3A-20260825T161738Z-pilot/raw_model_outputs/T0-SP-007-batch-02.json": "9d309f2634e8aecc4da8233a1409ac8b6633759bbcdfb0610e7e0757510b0b4e",
+    "outputs/P3A-20260825T161738Z-pilot/raw_model_outputs/T0-SP-007-batch-02.meta.json": "db49eb8f9a326796e4ac57e9844dede5bad6ff3bd7e83eec27d25243f33c0268",
+    "outputs/P3A-20260825T161738Z-pilot/raw_model_outputs/T0-TD-008-batch-01.json": "43b96919d4e1ff91dc98a676aa8420b1c56012db8f994c51c220ab33eb8bfbbe",
+    "outputs/P3A-20260825T161738Z-pilot/raw_model_outputs/T0-TD-008-batch-01.meta.json": "f3ac3aae727c9a984be164501b22a2dd3f45def62cffa9d606e458254ec47028",
+    "outputs/P3A-20260825T161738Z-pilot/rejected_candidates.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "protected_p1_p1b_p1c_p2_unchanged": true,
+  "provider_metrics": {
+    "token_count": null,
+    "temperature": null,
+    "cost": null,
+    "status": "not_observable"
+  },
+  "boundary_declarations": {
+    "only_requested_sources_processed": true,
+    "other_seven_formal_sources_processed": false,
+    "modelclient_external_api_called": false,
+    "evidence_table_written": false,
+    "competitive_hypotheses_generated": false,
+    "case_conclusion_formed": false,
+    "t1_material_read": false
+  },
+  "manifest_sha256": null,
+  "manifest_hash_note": "Self-hash is intentionally null to avoid a circular hash.",
+  "stop_condition": "P3a pilot complete for T0-SP-007 and T0-TD-008; stop before P3b, P4, G1, snapshot freeze, hypotheses, and T1."
+}

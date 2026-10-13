@@ -1,0 +1,48 @@
+T1增量证据候选抽取。只使用提供的原文，不使用外部知识或其他运行输出。
+研究问题：以公开、非密材料为依据，研究2025年1月1日至2026年6月30日期间，美国军用人工智能能力形成、应用部署和体系化发展的公开可观察变化。
+来源ID：T1-DARPA-001
+标题：Sharpening AI warfighting advantage on the battlefield | DARPA
+发布日期：2025-03-17
+返回JSON数组，每条恰好包含8个字段：source_id、source_locator、excerpt_original、excerpt_zh、normalized_claim、evidence_nature、coding_dimensions、topics。不得输出额外字段，允许空数组，每份来源最多6条。
+source_id必须等于给定来源；source_locator必须是给定段落定位；excerpt_original必须逐字连续来自指定段落；excerpt_zh和normalized_claim必须使用中文；normalized_claim只能表达一个原子事实或主张，不增加主体、行动、数字、范围或结果。
+evidence_nature必须为单一枚举字符串；coding_dimensions和topics必须为字符串数组；不要把目标、计划或负责人判断写成已经实现的结果，不把演示、竞赛或试验写成部署，不把预算或合同写成规模化能力。
+性质定义：
+- goal: 计划、目标、拟议能力或未来安排，不等于已经实现。
+- governance_event: 已经发生的政策、职责、指南或组织治理机制建立。
+- resource_input: 已经发生的预算、合同、采购、数据、人才或基础设施投入。
+- test_event: 测试、演示、演习或竞赛发生及其参与主体、配置。
+- test_result: 测试中明确观察到的功能、性能或结果。
+- deployment_event: 明确已经部署、实装、投入运行或持续使用。
+- constraint: 限制能力形成、部署或评估的已报告条件。
+- evaluation: 来源明确给出的评估、判断或评价，不改写为客观结果。
+编码维度定义：
+- integration_level: 跨项目、跨平台、跨军种或企业级系统集成的程度。
+- application_maturity: 从目标、演示、试验到部署和持续使用的应用成熟度。
+- human_machine_authority: 人机在任务中的权责、授权、监督与决策关系。
+- engineering_resource_conditions: 数据、算力、基础设施、人才、预算、采办和保障条件。
+- trust_governance_constraints: 可信性、安全、测试评估、责任、治理约束及制度落地。
+- organizational_system_fit: 组织运用、流程、任务适配和体系制度环境的匹配程度。
+对SABER材料，若原文直接陈述当前缺少成熟的作战化AI红队能力及更广泛生态，应作为constraint或信息缺口候选，不作为项目成效。
+对DARPA挑战赛，分别区分竞赛发生(test_event)、明确公布的名次或结果(test_result)和官方评价(evaluation)。
+对同行评议论文，只提取能够直接支持AI应用条件、实施障碍、可信性或人机协同的陈述；不能支撑案例问题的医学细节不要纳入。
+原文段落：
+[web_paragraph_0001] Sharpening AI warfighting advantage on the battlefield | DARPA
+[web_paragraph_0002] Breadcrumb
+[web_paragraph_0003] Sharpening AI Warfighting Advantage On The Battlefield
+[web_paragraph_0004] Sharpening AI warfighting advantage on the battlefield
+[web_paragraph_0005] DARPA’s Securing Artificial Intelligence for Battlefield Effective Robustness (SABER) aims to fill critical gaps in the Defense Department’s understanding of operational systems enabled by AI
+[web_paragraph_0006] As artificial intelligence (AI) becomes increasingly integrated into modern warfare, ensuring its security and resilience is critical to national defense.
+[web_paragraph_0007] Like any new technology, AI has weaknesses. Researchers have demonstrated that AI-enabled systems can be tricked or manipulated via different "attacks." But even these demonstrations have mostly been done in lab conditions, where researchers have complete control over the data and access to the AI's inner workings. As a result, the findings don't necessarily reflect how well the attacks would work in real-world military operations. DARPA experts say we must remedy this lack of understanding to appropriately mitigate adverse downstream effects on operational systems.
+[web_paragraph_0008] "Our warfighters deserve to know the AI they're using is secure and resilient to adversarial threats," said Dr. Nathaniel D. Bastian, a lieutenant colonel in the U.S. Army and DARPA's program manager for Securing Artificial Intelligence for Battlefield Effective Robustness (SABER) . “We know there are different ways to attack AI-enabled systems to degrade performance and that AI itself has weaknesses that adversaries can exploit. But what we haven't fully explored is how an adversary can combine these things to cause real harm on the battlefield – and we certainly want to get in front of that issue."
+[web_paragraph_0009] Bastian says that no well-developed capability nor broader ecosystem exists to operationally assess currently deployed, AI-enabled battlefield systems for vulnerabilities. The SABER program seeks to develop a robust operational AI red-teaming framework to address this gap.
+[web_paragraph_0010] The National Institute of Standards and Technology defines a red team as a group of people authorized and organized to emulate a potential adversary's attack or exploitation capabilities against an enterprise's security posture. The red team's objective is to improve security by demonstrating the impacts of successful attacks and what works for the defenders (i.e., the blue team) in an operational environment.
+[web_paragraph_0011] SABER's goal is to build an exemplar AI red team capable of continuously integrating and employing emerging counter-AI techniques and tools to operationally assess AI-enabled battlefield systems. Bastian expects this work could establish a sustainable model for an operational AI red-teaming process.
+[web_paragraph_0012] The program will execute a series of high-fidelity operational AI security exercises for agile experimentation with continuous evaluations. These evaluations will iteratively assess (i.e., red team) already developed AI-enabled autonomous ground and aerial systems in battlefield environment settings, developing new techniques and tools to ensure the participating AI red teams meet expectations.
+[web_paragraph_0013] The operational AI security exercises will be more than just one-off verifications of systems. If successful, SABER would ultimately ensure that warfighters can trust the AI to complete their mission.
+[web_paragraph_0014] "We want to catalyze a Department of Defense (DOD)-wide operational AI red-teaming ecosystem that transforms warfighting across the DOD via the acquisition, testing, fielding, and sustainment of operationally risk-aware, secure AI-enabled systems," Bastian explained.
+[web_paragraph_0015] SABER is a single-phase, 24-month program with four key stages and experiments designed to gather baselines, experiment, and evaluate SABER research performers' techniques and tools. DARPA solicits ideas only for the selection, development, employment, and integration framework for techniques and tools to generate novel AI attack effects. The deadlines for submitting abstracts and proposals are March 31 and May 6, respectively.
+[web_paragraph_0016] For more information, visit the SABER program page or the Broad Agency Announcement on SAM.gov .
+[web_paragraph_0017] ###
+[web_paragraph_0018] Media with inquiries should contact DARPA Public Affairs at outreach@darpa.mil .
+[web_paragraph_0019] Program: SABER
+[web_paragraph_0020] Program Manager Nathaniel D. Bastian

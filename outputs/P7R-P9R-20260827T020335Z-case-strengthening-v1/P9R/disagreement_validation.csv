@@ -1,0 +1,4 @@
+﻿disagreement_id,type,decision_impact,resolvable_now,resolution_action,viewpoint_count,validation_passed,reason
+DISAG-T0-01,mechanism,high,False,evidence_check,3,True,
+DISAG-T0-02,mechanism,medium,False,evidence_check,4,True,
+DISAG-T0-03,scope,medium,False,scope_split,2,True,

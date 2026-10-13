@@ -1,0 +1,50 @@
+prompt_id: evidence_extract_p3b
+version: "2.0"
+purpose: "P3b evidence-candidate extraction from author-selected source text; not formal Evidence admission"
+research_question: "Based only on public, non-classified material available through 2024-12-31, what dominant deployment form is more likely for U.S. military AI capability building in 2025-2027?"
+allowed_input_fields:
+  - source_id
+  - source_locator
+  - excerpt_source_text
+  - pdf_page_number
+  - printed_page_number
+  - section_title
+  - machine_extracted_anchor
+  - research_question
+  - field_definitions
+output_schema:
+  exact_fields:
+    - source_id
+    - source_locator
+    - excerpt_original
+    - excerpt_zh
+    - normalized_claim
+    - coding_dimensions
+    - evidence_nature
+    - topics
+  normalized_claim_language: zh-CN
+  excerpt_original_rule: "逐字复制输入文本；不得静默纠正OCR或版式错误"
+coding_dimensions:
+  integration_level: "能力集成层级：单工具、单任务、单平台、跨平台、跨任务或体系级集成。"
+  application_maturity: "应用成熟度：概念战略、研发、试验、试点、采购部署或持续运用。"
+  human_machine_authority: "人机权限关系：辅助决策、人在回路中、受监督自主或更高程度自主；普通系统协同、信息传输、培训或文档要求本身不足以支持此维度。"
+  engineering_resource_conditions: "工程与资源条件：数据、算力、模型、接口、供应链、预算、人才和保障。"
+  trust_governance_constraints: "可信与治理约束：安全、可靠性、测试评价、授权边界、责任与伦理。"
+  organizational_system_fit: "组织与体系适配：指挥流程、任务编组、跨平台协同、人员负荷和组织变革。"
+evidence_nature:
+  goal: "战略目标、愿景或计划方向；不能写成已实现结果。"
+  resource_input: "投入、资源、预算、数据、人才或基础设施条件。"
+  test_event: "测试或演习发生、参与主体或配置；不表示功能结果或作战效能。"
+  test_result: "测试中观察到的功能、性能或结果；必须由摘录直接说明。"
+  deployment_event: "部署、实装、现场运用或正式采用已经发生。"
+  constraint: "限制、风险、障碍、依赖或边界条件。"
+  evaluation: "评价、审查、验证或评估结论。"
+prohibitions:
+  - "normalized_claim必须使用中文，只表达摘录直接支持的证据命题。"
+  - "normalized_claim不得加入本报告认为、某机构指出等来源归属前缀；来源由程序元数据表达。"
+  - "不得新增摘录不存在的主体、行动、数字、范围或结果。"
+  - "一条候选只表达一个可核查事实或明确主张。"
+  - "非连续摘录拆成多条；禁止伪连续定位。"
+  - "不得生成假设、观点、案例结论或2025-2027路线判断。"
+  - "不得生成evidence_id、case_id、snapshot_tag、title、publisher、source_grade、published_at、source_type、url_or_path、content_hash、reviewed_by或status。"
+json_repair_prompt: "Return one strict JSON array with exactly the eight output fields and no Markdown, commentary, metadata, or source-attribution prefix."

@@ -1,0 +1,33 @@
+Multiple factors limit the potential of modern autonomous systems (e.g., self-driving vehicles and uncrewed aircraft and watercraft).
+
+Autonomy is learned through modeling and simulation, given the expense of training in the real world. Generally, it goes like this:
+
+A model of the intended platform requiring autonomy is created.
+
+The model goes through various simulations in an environment as realistic as possible to generate the data that trains the autonomous system to make the right decisions.
+
+After sufficiently training the model, those learnings are transferred to a physical system and tested to ensure the training works.
+
+Training models in high-fidelity environments for Defense Department platforms can sometimes take months to even years. Furthermore, autonomy becomes vulnerable when faced with unknown situations/observations in the real world. This brittleness is known as the simulation-to-real (sim-to-real) gap. For example, a drone moving from a dense city to a coastal environment would encounter a dramatically different observation space.
+
+Unlike commercial autonomous systems, such as warehouse robotics or autonomous vehicles operating in a controlled environment using geofencing, military systems have far more unknown variables. For instance, flight dynamics could be off, the lighting conditions are likely to vary, and it’s often impossible to model an adversary precisely as they act in the real world.
+
+Contrary to the conventional wisdom of high-fidelity simulation, DARPA experts theorize that learning and transferring autonomy across diverse, low-fidelity simulations leveraging their shared semantics (e.g., rules of engagement) instead can lead to a more rapid transfer of autonomy from simulation to reality – perhaps even as early as the same-day versus weeks/months with traditional approaches. Moreover, moving from complex/realistic simulations to abstract and imprecise ones could allow systems to better adapt to the quick and inevitable changes in dynamic environments.
+
+The Transfer from Imprecise and Abstract Models to Autonomous Technologies program seeks proposals that put this theory to the test.
+
+Modeling everything in high fidelity makes it so the AI agent overfits to the dynamics of the simulation,” said Dr. Alvaro Velasquez, DARPA’s program manager for the effort. “When you go to the real world, nothing looks exactly like what you modeled/simulated. We want generalizable autonomy across a variety of platforms and domains.”
+
+Velasquez hypothesized that low-fidelity simulations would generate data at a much greater speed and scale, introducing the possibility of generalization rather than memorization.
+
+Our vision is to learn autonomy over very diverse and abstract simulations,” said Velasquez. “We’re going to transfer that autonomy to our diversity of platforms and environments, and we’re going to explore the reverse direction. Once we collect this real-world experience, we’ll explore how to refine our abstractions, models, simulations, and semantic representation to establish a feedback loop for more robust transfer learning.
+
+The program will feature sim-to-sim and sim-to-real competitions at the end of Phases 1 and 2, respectively, with the results of the first competition being used to down-select from six performers to three. (DARPA)
+
+The program is organized into two phases. Phase 1 is 18 months and will develop sim-to-sim autonomy transfer techniques and novel methods for automatically developing or refining low-fidelity models and simulations to be used for transfer. Phase 2 is 18 months and will develop sim-to-real autonomy transfer techniques and novel methods for automatically developing or refining low-fidelity models and simulations to be used for transfer. There will be two in-program competitions corresponding to the two phases of the program.
+
+For technical details and abstract and proposal instructions, visit the program solicitation at SAM.gov: https://sam.gov/opp/0399474725314fd58f34bc29849ce305/view . Abstracts are due October 17, 2023, by noon ET. While abstracts are strongly encouraged, they are not required to submit a proposal. Proposals are due December 20, 2023, by noon ET.
+
+The replay video of the program’s Proposers Day is available here: https://www.youtube.com/watch?v=KK2ubcDONRg
+
+Hear more from Velasquez from his November 2022 episode of Voices from DARPA: https://www.darpa.mil/news-events/2022-11-17

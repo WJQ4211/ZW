@@ -1,0 +1,14 @@
+{
+  "all_references_latest_view_versions": true,
+  "checked_disagreements": 3,
+  "checked_indicators": 4,
+  "checked_needs": 3,
+  "checked_triggers": 8,
+  "excluded_evidence_reference_count": 0,
+  "invalid_evidence_reference_count": 0,
+  "invalid_indicator_foreign_key_count": 0,
+  "invalid_need_foreign_key_count": 0,
+  "invalid_trigger_foreign_key_count": 0,
+  "invalid_viewpoint_reference_count": 0,
+  "truncated_evidence_id_count": 0
+}

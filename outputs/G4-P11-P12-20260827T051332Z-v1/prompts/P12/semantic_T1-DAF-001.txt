@@ -1,0 +1,140 @@
+T1候选证据语义筛选。只检查给定候选字段与其摘录之间的直接支持关系。不得引用或推断任何T0分析。
+研究问题：以公开、非密材料为依据，研究2025年1月1日至2026年6月30日期间，美国军用人工智能能力形成、应用部署和体系化发展的公开可观察变化。
+来源：T1-DAF-001
+每条返回一项review，字段为candidate_evidence_id、status、reason、claim_supported、nature_supported、dimension_reviews、revised_fields。status只能是accept、revise或reject；dimension_reviews必须是数组，每项包含dimension、supported、supporting_span、reason。只处理候选原本声明的维度；不得新增维度。若claim或nature无直接支持则reject；revise不得修改excerpt_original和source_locator。
+证据性质完整定义：
+- goal: 计划、目标、拟议能力或未来安排，不等于已经实现。
+- governance_event: 已经发生的政策、职责、指南或组织治理机制建立。
+- resource_input: 已经发生的预算、合同、采购、数据、人才或基础设施投入。
+- test_event: 测试、演示、演习或竞赛发生及其参与主体、配置。
+- test_result: 测试中明确观察到的功能、性能或结果。
+- deployment_event: 明确已经部署、实装、投入运行或持续使用。
+- constraint: 限制能力形成、部署或评估的已报告条件。
+- evaluation: 来源明确给出的评估、判断或评价，不改写为客观结果。
+编码维度完整定义：
+- integration_level: 跨项目、跨平台、跨军种或企业级系统集成的程度。
+- application_maturity: 从目标、演示、试验到部署和持续使用的应用成熟度。
+- human_machine_authority: 人机在任务中的权责、授权、监督与决策关系。
+- engineering_resource_conditions: 数据、算力、基础设施、人才、预算、采办和保障条件。
+- trust_governance_constraints: 可信性、安全、测试评估、责任、治理约束及制度落地。
+- organizational_system_fit: 组织运用、流程、任务适配和体系制度环境的匹配程度。
+候选：
+[
+  {
+    "candidate_evidence_id": "CE-T1-02DFF1DCD73E8F93",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "application_maturity",
+      "organizational_system_fit"
+    ],
+    "content_hash": "02dff1dcd73e8f936d1e6942abefc604550a2daa41bedd56b78f5564eea8bef3",
+    "evidence_nature": "goal",
+    "excerpt_original": "These strategies provide a strategic roadmap for the department to become an AI-first force, operationalizing data and AI as decisive force multipliers and strategic assets to maintain air and space dominance from the boardroom to the battlefield.",
+    "excerpt_zh": "这些战略为空军部成为一支AI优先部队提供了战略路线图，将数据和AI作为决定性力量倍增器和战略资产加以运用，以维持从会议室到战场的空中和太空优势。",
+    "extraction_run_id": "G4-P11-P12-20260827T051332Z-v1",
+    "normalized_claim": "《空军部数据和人工智能战略》为空军部成为AI优先部队提供了战略路线图。",
+    "pending_g1_translation_review": true,
+    "pending_g1_visual_review": false,
+    "published_at": "2026-04-22",
+    "published_at_precision": "day",
+    "publisher": "Department of the Air Force",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DAF-001",
+    "source_locator": "web_paragraph_0005",
+    "title": "DAF releases data, AI strategies to accelerate military dominance",
+    "topics": [
+      "战略目标",
+      "AI优先部队"
+    ],
+    "url_or_path": "https://www.af.mil/News/Article-Display/Article/4467267/daf-releases-data-ai-strategies-to-accelerate-military-dominance/",
+    "version": 1
+  },
+  {
+    "candidate_evidence_id": "CE-T1-050BC7E34C88F297",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "organizational_system_fit"
+    ],
+    "content_hash": "050bc7e34c88f297494ef8f945dfac6bbbbed0237d02a52942e01c91284cdd53",
+    "evidence_nature": "goal",
+    "excerpt_original": "The guiding documents establish AI priorities across several different mission areas, ranging from training and readiness to multi-domain operations.",
+    "excerpt_zh": "这些指导文件在多个不同任务领域确立了AI优先事项，范围从训练和战备到多域作战。",
+    "extraction_run_id": "G4-P11-P12-20260827T051332Z-v1",
+    "normalized_claim": "《空军部数据和人工智能战略》在训练、战备和多域作战等多个任务领域确立了AI优先事项。",
+    "pending_g1_translation_review": true,
+    "pending_g1_visual_review": false,
+    "published_at": "2026-04-22",
+    "published_at_precision": "day",
+    "publisher": "Department of the Air Force",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DAF-001",
+    "source_locator": "web_paragraph_0005",
+    "title": "DAF releases data, AI strategies to accelerate military dominance",
+    "topics": [
+      "任务领域",
+      "AI优先事项"
+    ],
+    "url_or_path": "https://www.af.mil/News/Article-Display/Article/4467267/daf-releases-data-ai-strategies-to-accelerate-military-dominance/",
+    "version": 1
+  },
+  {
+    "candidate_evidence_id": "CE-T1-2995ED3DEF557C50",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "engineering_resource_conditions"
+    ],
+    "content_hash": "2995ed3def557c50b4c609484b5df180c40dd370c52839a14c6bae060c01b657",
+    "evidence_nature": "goal",
+    "excerpt_original": "Recognizing that data is the ammunition of modern warfare, the strategies emphasize treating data as a strategic asset and by adopting a decentralized data architecture, the DAF provides warfighters with trusted data at the speed of mission.",
+    "excerpt_zh": "认识到数据是现代战争的弹药，这些战略强调将数据视为战略资产，并通过采用去中心化数据架构，空军部以任务速度向作战人员提供可信数据。",
+    "extraction_run_id": "G4-P11-P12-20260827T051332Z-v1",
+    "normalized_claim": "《空军部数据和人工智能战略》强调将数据视为战略资产，并采用去中心化数据架构。",
+    "pending_g1_translation_review": true,
+    "pending_g1_visual_review": false,
+    "published_at": "2026-04-22",
+    "published_at_precision": "day",
+    "publisher": "Department of the Air Force",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DAF-001",
+    "source_locator": "web_paragraph_0005",
+    "title": "DAF releases data, AI strategies to accelerate military dominance",
+    "topics": [
+      "数据战略",
+      "去中心化架构"
+    ],
+    "url_or_path": "https://www.af.mil/News/Article-Display/Article/4467267/daf-releases-data-ai-strategies-to-accelerate-military-dominance/",
+    "version": 1
+  },
+  {
+    "candidate_evidence_id": "CE-T1-B5C396D3278023D1",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "organizational_system_fit"
+    ],
+    "content_hash": "b5c396d3278023d127d0ab6b76c2df4867e07a2140a7119415f8506843744e7d",
+    "evidence_nature": "goal",
+    "excerpt_original": "The implementation of these strategies directly advances the CDAO’s FY2026 goal to institutionalize data and AI as core mission components.",
+    "excerpt_zh": "这些战略的实施直接推进了首席数据和AI办公室2026财年的目标，即将数据和AI制度化为核心任务组成部分。",
+    "extraction_run_id": "G4-P11-P12-20260827T051332Z-v1",
+    "normalized_claim": "《空军部数据和人工智能战略》的实施推进了首席数据和AI办公室2026财年将数据和AI制度化为核心任务组成部分的目标。",
+    "pending_g1_translation_review": true,
+    "pending_g1_visual_review": false,
+    "published_at": "2026-04-22",
+    "published_at_precision": "day",
+    "publisher": "Department of the Air Force",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DAF-001",
+    "source_locator": "web_paragraph_0005",
+    "title": "DAF releases data, AI strategies to accelerate military dominance",
+    "topics": [
+      "制度化",
+      "2026财年目标"
+    ],
+    "url_or_path": "https://www.af.mil/News/Article-Display/Article/4467267/daf-releases-data-ai-strategies-to-accelerate-military-dominance/",
+    "version": 1
+  }
+]

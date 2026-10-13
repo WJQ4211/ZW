@@ -1,0 +1,31 @@
+{
+  "attempts": 1,
+  "batch_id": "p15r_vp_t0_strat_h02_repair",
+  "endpoint": "https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "is_repair": false,
+  "latency_ms": 14065,
+  "logical_call": true,
+  "phase": "P15R_VIEWPOINT_FORMAT_REPAIR",
+  "prompt_sha256": "a5df231a99c672b6f9226ef6dce4eb453e99f1889265a878a1962ecf59cfcd53",
+  "provider_cost": null,
+  "provider_metrics_status": "observed",
+  "provider_model_id": "deepseek-v4-flash-0731",
+  "provider_temperature": null,
+  "provider_token_usage": {
+    "completion_tokens": 1909,
+    "prompt_tokens": 8975,
+    "total_tokens": 10884
+  },
+  "request_parameters": {
+    "enable_thinking": false,
+    "max_tokens": 24000,
+    "temperature": 0.0
+  },
+  "request_started_at_utc": "2026-08-27T08:21:10Z",
+  "requested_model_id": "deepseek-v4-flash-0731",
+  "response_sha256": "13e2844bfdfc7d2cd5ea0b7422a44e624d66836b8d290fbdc3eea6ef7624b6b9",
+  "response_status_code": 200,
+  "retry_count": 0,
+  "source_id": "VP-T0-STRAT-H02",
+  "transport": "openai_compatible_api"
+}

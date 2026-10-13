@@ -1,0 +1,771 @@
+PROMPT_ID: evidence_extract
+VERSION: 1.0
+TASK: Extract only auditable evidence candidates from the supplied source text.
+OUTPUT: strict JSON array; each object must contain exactly the eight allowed candidate fields.
+DO NOT output deterministic metadata; the program will inject it after validation.
+BATCH_ID: T0-SP-007-batch-02
+SOURCE_ID: T0-SP-007
+TITLE: Responsible AI Strategy and Implementation Pathway
+PUBLISHER: U.S. Department of Defense
+PUBLISHED_AT: 2022-06
+SOURCE_GRADE: A
+SOURCE_SEGMENTS:
+--- pdf_page_25 ---
+UNCL/\SSTFIE D 
+LOE 2.1.3: Create a test range enviro nment and central reposito ry of CDAO in coordination 
+tools for T&E of Al, linking lo exis ting and emerging equivalent with the DoD Test 
+DoD Compon ent environments , that enab les easy and continuous Resource Management 
+testing for DoD testers. Where appropr iate, tools that are housed in Center 
+this environment should com ply wit h DoD Enterpr ise DevSecOps 
+Refere nce Designs for porta bility across the Department. 
+LOE 2.1.4: Establis h best practices and requirements for utilizatio n OUSD (R&E) in 
+of the T &E Maste r Plan and test plan templates for AI and update coord ination with 
+appropriate DoD iss uances and Milit ary Standards (MTT .-STDs). CDAO;DOT&E 
+LOE 2.1.5: Reg ularly update the CDAO"s Human Systems CDAO in coordinat ion 
+Integration (HSI) Framework based on user feedback and provide with the Jou1t HSI 
+clear guidance on how and whe n the framework should be used to Steering Committee 
+help address system design. system perfo rmance, User 
+Experience /User Interface (UX/UI) , and user tra ining. 
+LOE 2.1.6 : Continue research into emerging Ar topics , such as: OUSD(R&E) in 
+a) HSI practices to the inform the desig n and deve lopme nts of coord ination with 
+CDAO and Military AI capabi lities that can be used cons istent wit h the DoD AI Serv ice Labs Ethical Principle s; 
+b) New methods for TEVV of Al; and 
+c) Al secur ity and defense to protect against adversar ial 
+attacks. 
+LOE 2.1.7 : Develop and distribute DoD-wide guidance for AI CDAO in coordi nation 
+security , leveraging existing best pract ices for risk manageme nt. with DoD CIO 
+supply chain security , and cyber secur ity. This guidance should be 
+updated as the field matures . 
+UNCLASS IFIED 23 
+--- pdf_page_26 ---
+UNCLASSIFIED 
+LOE 2.2: DEVELOP BEST PRACTICES TO INCORPORATE OPERATOR 
+AND SYSTEM FEEDBACK THROUGHOUT THE Al LIFECYCLE, ENSURE 
+ADEQUATE DOCUMENTATION AND TRAINING, AND DELINEATE CLEAR 
+ROLES AND RESPONSIBJLITIES FOR DEVELOPERS AND USERS OF TH E 
+Al CAPABILITY. 
+Lines of Effort 
+LOE 2.2.1: Requ ire A l vendor s and developer s to plan for, resource , 
+and provide appropriate training and documentation , such as user 
+manual s, to be used prior to capabil ity fielding in order to ensure 
+warfighters are equipped with an appropriate under standing of the 
+capability ' s func tion, risks, performance expectations, and potential 
+harm s. 
+LOE 2.2.2: Require AI vendors and develo pers who design syste ms 
+and crea te features with human-facing interfaces to provide traceable 
+feedback on systems status and clear procedur es to train ed operat ors 
+to activate and deactivate system funct ions. This information should 
+be used to update training , docum entation , interfaces , and/or other 
+compone nts as appropriate. 
+LOE 2.2.3: Promulgat e g uidance in accordance with LOE 3.1 .2 and 
+3.2.2 delineating respon sibilitie s and authorities for Program Office s 
+to: 
+a) Monitor perfo 1mance of their AJ systems after fielding 
+(including guidance on metric s for monitoring and system 
+instrumentation tool s to support this); and 
+b) Establis h processes for operators of Al-enab led capabilities 
+to notify and report changes in capabi lity performanc e, 
+outcomes , emergent behavior , and/or disengagem ent in 
+accordance with existing DoD processes. 
+UNC LASSIFIED 
+OPR 
+DoD Component RAJ 
+Leads 
+DoD Component RAI 
+Leads 
+PEOs; Program Offices ; 
+DoD Component s 
+24 
+--- pdf_page_27 ---
+UNCLASS IFIED 
+TENET 3: AI PRODUCT AND ACQUISITION LIFECYCLE 
+Description: Develop tools, policies, processes, system s, and guidance to sync hronize enterprise 
+RAl implementation fo r the Al product throughout the acquisition lifecycle through a systems 
+engineering and risk management appro ach, while enabling Al development at the pace the 
+Departm ent needs to meet the National Defense Strategy. 
+LOE 3.1: DEVELOP RAI-RELATED ACQUISITION RESOURCES AND 
+TOOLS, SUCH AS STANDARD LANGUAGE FOR ANNOUNCEMENTS AND 
+CONTRACTS, AND BEST PRACTICES THAT LEVERAGE THE D0D'S 
+ADAPTIVE ACQUISITION PATHWAYS AND ALLOW THE DOD TO 
+IDENTIFY AND MITIGATE RISKS THROUGHOUT THE ACQUISITION 
+AND SUSTAINMENT PROCESS . 
+Lines of Effort OPR 
+LOE 3.1.1: Develop an Acqu isition Toolkit that draws upon best CDAO in coord ination 
+prac tices and innova tive research from the DoD enterprise, industry , with OUS D(A&S) and 
+and the academic commun ity, as well as commercially avai lable OUS D(R&E) 
+technology where appropria te. The Toolkit will be made widely 
+avail able to DoD users and shall include: 
+a) Standard language in the initial announcement , request for 
+prop osal (RFP), and request for information (RF I) for AI 
+capabilities to provide gu idance on how vendors a nd 
+deve lope rs can meet the DoD Al Ethica l Principles ; 
+b) A set of RAI-related evaluation criter ia that are testable 
+and operation ally relevant ; 
+c) Standard AI contract language that provides clauses for: 
+independent gover nment T&E of AI capabi Jities, methods of 
+immediate remediation whe n the vendo r-provide d Al 
+capabilit ies cannot be used in accordance wit h the DoD A[ 
+Ethical Principles , requesting training and documentation 
+from vendors, performance monitoring of AI capabilities , and 
+appropriate data deliverables and rights; and 
+d) Any other resources as approp riate. 
+UNCLASS IFIED 25 
+--- pdf_page_28 ---
+UNCLASS IHED 
+LOE 3.1.2: Identify and develop approaches for continuous OUSD(A&S) in 
+engage ment of RAl expertise within the DoD 's six adaptive coordination with 
+acqu isitio n pathways (Urgen t Capa bility Acquisition, Middle Tie r of CDAO 
+Acquisition , Majo r Capabi lity Acqu isitio n, Software Acquis ition, 
+Defense Business Systems, and Acquisition of Serv ices) to address 
+RAI risk cons iderations. 
+LOE 3.1.3: Identify best practices related to strategies to preserve OUSD(A&S) in 
+governmen t intellectua l property (JP) in the acq uisition of Al and A l- coordination with 
+enabled systems in order to ensure open arc hitecture of secure data CDAO 
+deliverables and rig hts that support the protect ion of gove rnment IP, 
+best-value acquisit ion, avo idance of pro prietary lock-in , and 
+oversight of DoD use of A[ capab ilities and adherence to the DoD Al 
+Ethical Princ iples. 
+LO E 3.2: ADOPT IND UST RY BEST PRACTI CES FOR Al D EVEL OPMEN T 
+BY DEVE LOPI NG AND APPLYI NG TOOLS, TEC HNO LOGIES, AN D B EST 
+PRACTICES TO ID ENTI FY AND MITI GAT E RISKS AS T HE Y R ELATE TO 
+TH E Al CAPABILITY THRO UGHOUT TH E Al PROD UCT LIFECYCLE . 
+Lines of Effort OPR 
+LOE 3.2.1: Contin ue developi ng a Product Too lkit that draws upon CDAO; OUSD(R&E) 
+best practices and innovative resea rch from the DoD enterp rise, (for subtask a) 
+indus try, and the acade mic com munity , as well as commercially 
+availab le technology where appropriate. The Too lkit will be made 
+widely availab le to DoD users and shal l include: 
+a) Defense Innovation U nit's (DIU) RA[ Guidelines ; 
+b) Templates for A l project manageme nt with an emphasis on 
+ensur ing that developers have an understanding of user needs 
+and opera tional context; 
+c) Al Data Cards and Model Cards , and corresponding 
+catalogs , with detailed instructions ; and 
+d) Any othe r tools , guidance for syste m and project 
+documentation , or risk assessment framewor ks as appropriate. 
+UNCLASS IFIED 26 
+--- pdf_page_29 ---
+UNCLASSIF IED 
+LOE 3.2.2: Provide guidance on how and when the RAI Tools in CDAO in coordi nation 
+LOE 3.2.1 should be used across lhe AI Product Lifecycle, based on with DoD Componen t 
+an assessment of the AI tec hnolo gy' s level of technical manuity , RAJ Leads 
+project sensitivity , and ove rall risk. Such assessments of the AI 
+techno logy will be determined by DoD Compo nent RAJ Leads. 
+LOE 3.2.3: Use AI Data and Model Cards to publi sh Al data assets CDAO; DoD 
+in the DoD fede rated data catalog , in acco rdance with the Component CDOs 
+Department's Creating Data Advantage memorandum (May 5, 
+2021 ). 
+LOE 3.2.4: Fund the development and pi loting of new resources and CDAO ; M ilitary 
+tools that 1:1ugment the RAJ Toolk it. Departments 
+LOE 3.2.5: Publi sh best practices to preserve privacy and civil AT SD( PCLT) 
+liberties and to avoid unintende d bias in the design and develo pment 
+of Al capabil ities that involve the use of persona l informat ion. 
+LOE 3.2.6: Deve lop additi onal guidance for applying the RAI OUSD(R&E) and 
+Foundat ional Tenets to the early-stage AI resea rch and engineer ing CDAO in coordination 
+projec ts, such as those runded by Budget Activ ities I, 2, and 3. with DoD Component 
+RAJ Leads 
+UNC LASS JFJF.D 27 
+--- pdf_page_30 ---
+UNCLASSIFIED 
+TENET 4: REQUIREMENTS V ALlDATION 
+Description: Incorporate RAT into all applicable AI requirements , includingjo int performance 
+requi rements estab lished and approved by the Joint Requirements Oversight Council, to ensu re 
+RAl inclusion and approp riate DoD AI capabi lities. 
+LOE 4.1: INTEGRATE Al RISK CONSIDERATIONS fNTO THE DOD JOINT 
+PERFORMANCE REQUIREMENTS PROCESS BY IDENTIFYING 
+RESPONSIBILITIES, AUTHORITIES, AND RESO URCES WHEN UPDATING 
+OR DEVELOPI NG POLICIES AND PL ANS. 
+Lines of Effort OPR 
+LOE 4.1.1: Draft a JRO C Memorandum (JROCM) with changes that Joint Staff in 
+need to be made in requirement-setting proces ses to implement the coordination w ith 
+LOEs in Tenets 2 and 3. Make recomme ndations to the Vice USD(A&S), CDAO 
+Chairman of the Joint Chiefs of Staff (VCJCS) and the Deputy 
+Secreta ry of Defense (DSD) , as appropr iate. 
+LOE 4.2: DEVEL OP A TAILORABLE PROCESS THAT PROGRAMS CAN 
+FOLLOW TO WRIT E Al-RE LA TED REQ UIREMENTS THAT ARE 
+TESTABLE AND OPERATIONALLY RELEVANT . 
+Lines of Effort OPR 
+LOE 4.2.1: Create a repository of A I-related requirements for CDAO in coo rdinat ion 
+common use cases, mission domains , and system architectures to with DoD Component 
+faci litate reusability. RAJ Leads 
+LOE 4.2.2: Integrate and coordinate the A l requirem ents captured in CDAO in coordination 
+LOE 4.2.1 wit h the TEVV stra tegy to ensure that adequa te methods with OUSD(R&E) and 
+exist for con tinuous testing and valida tion of capabil ities developed , DoD Compone nt RAJ 
+consis tent with existing policies for iterative acquisition such as the Leads 
+DoDI 5000.87. 
+LOE 4.2.3: Produce guidance for Program Execu tive Offices and OUSD(A&S) in 
+Program Office s to app ly the resources from LOE 3.1 and write RAJ coordinat ion with 
+requi rements into future contracts , includin g for non-ACAT and non- CDAO; DOT&E; 
+MDA P systems. Operational Test 
+Agencies (OT As) 
+UNCLASS lFlED 28 
+--- pdf_page_31 ---
+UNCLASSIFlED 
+TENET 5: RESPONSIBLE AI ECOSYSTEM 
+Description: Build a robust national and global RAI ecosystem to improve intergovernmental , 
+academic, industry, and stakeholder collaboration , including cooperat ion wit h allies and coalition 
+partners, and to advance global norms grounded in shared value s. 
+LOE 5.1 COORDINATE AND COLLABORATE ACROSS DOD, THE 
+INTELLIGENCE COMMUNITY, AND OTHER U.S. GOVERNMENT 
+DEPARTMENTS AND AGENCIES ON THE RAI FOUNDATIONAL TENETS 
+AS WELL AS ON THE DOD AI ETHICAL PRINCIPLES. ENGAGE WITH 
+CONGRESS ON THE TENETS AND PRINCIPLES TO RAISE AWARENESS 
+AND SUPPORT APPROPRIATE CONGRESSIONAL OVERSIGHT OF DOD'S 
+RESPONSIBL E Al EFFORTS. 
+Lines of Effort OPR 
+LOE 5.1.1: Identify any gaps in pai1icipation in CDAO-led CDAO 
+governance bodies from DoD and IC Components and provide a plan 
+to recruit and maintain new member s. 
+LOE 5.J .2: Coordinate regularly w ith Office of the Director of CDAO ; DoD 
+Nat ional Intelligence (ODNI) Al ethics team to ensure Component RAT Leads; 
+interoperability and alignment on the opera tiona lization of the ATSD(PCLT) 
+Intelligence Community (JC) AI Eth ics Principles and the DoD AI 
+Ethical Principles. 
+LOE S.1.3: Coordinate regularly with approp riate Federal CDAO; DoD 
+inte ragency bodies such as those housed in the Executive Office of Component RAI Leads ; 
+the President , Office of Management and Budget , and the Genera l ATS D(PCLT ) 
+Serv ices Adm inistration on RAI. 
+LOE 5.1.4: Develop a legislative strategy and ensure the strategy is ASD(LA) in 
+clearly comm unicated across Department to ensure appro pri ate coordination with 
+engagement with the CDAO and cons istent messaging , technical CDAO 
+ass istance , and advocacy to Congress. 
+UNCLASSIFIED 29 
+--- pdf_page_32 ---
+UNCLASSIFIED 
+LOE 5.2: BUILD ENDURING ENGAGEMENTS AND COLLABO RATION 
+ACROSS INDUSTRY, ACADEMIA, AND CIVIL SOCIETY TO PROMOTE 
+DEVELOPMENT, ADOPTION, AND IMPLEMENTATION OF RAI. 
+Lines of Effort OPR 
+LOE 5.2.1: Provide a prioritized list of research gaps in RAI-related OUSD(R&E); CDAO 
+fields to the White House National Al Initiative Office to enco urage 
+funding by Department of Education , National Science Foundation , 
+and National Institute of Standards and Technology (NIST) as 
+authorized by the National Al Initiative Act. 
+LOE 5.2.2: Ensure RA.I expertise, includin g privacy, civil liberties, CDAO 
+and data ethics expertise, is represented on the AI Advisory Board as 
+authori zed by FY21 National Defense Authorization Act, Section 
+233. 
+LOE 5.2.3: Explore funding opportunities to establish a development OUSD(R&E) 
+program on RAJ tools with indust ry, academia and the Department. 
+LOE S.2.4: Deve lop and execute a public-affair s strategy for DoD ASD(PA) in 
+RAJ activit ies that is integrated across Department. This includes coordination with 
+coordination of communicat ions activit ies with the CDAO, regularly CDAO 
+communicating DoD 's RAJ implementation progress as appropriate 
+to through speak ing engagements , press releases and conferences, 
+blog posts , and op-eds. 
+LOE 5.2.5: Produce guidance on the sharing or publication of DoD ASD(PA) in 
+Al capabilities with entities outs ide the Department to preserve coordination with 
+operational security and preve nt unintended exposure. OUSD( I&S) and 
+CDAO 
+LOE 5.3: INTEGRATE RAI AS AN ELEMENT OF INTERNATIONAL 
+ENGAGEMENTS, TO ADVANCE SHARED VALUES, LESSONS LEARNED, 
+BEST PRACTICES, AND INTEROP ERABILITY GLOBALLY. 
+Lines of Effort OPR 
+LOE 5.3.J: Act ively seek opportunities to engage allies and partners OUSD(P) in 
+on RAI (including NA TO, Five Eyes, Quadrilateral Security coordination with 
+Dialogue, etc.) with particular emphas is on interoperability with CDAO 
+partners and allies with data, compute , and storage systems , software, 
+and schema. 
+UNCLASSIFIED 30 
+--- pdf_page_33 ---
+UNCLASSlFIED 
+LOE 5.3.2: Continue to commu nicate , promote, and educate tbe CDAO 
+DoD's Al Eth ical Principles and RAl implementation to partner s and 
+allies through the DoD AI Partnersh ip for Defense (Al Pill) as well 
+as bilate ral and multilateral engagements. 
+LOE 5.3.3: Organize a works hop with representatives from the CDAO 
+internationa l communi ty (academia, indu stry and governmen t) on Al 
+ethics, safety, and trust in defense in order to exchan ge best practices 
+and promote shared val ues. 
+TENET6:AIWORKFORCE 
+Description: Build , train , equ ip, and retain an RAT-ready workforce to ensure robust talent 
+planning , recruitment , and capac ity-building measure s, including workforce education and 
+training on RAI. 
+LOE 6.1: PARTICIPATE IN ONGOING EFFORTS TO DEVELOP THE D0D'S 
+AI TALENT MANAGEMENT FRAMEWORK TO SUPPORT THE 
+IDENTIFICATION, RECRUITMENT , ELEVATION, AND RETENTION OF 
+MILITARY AND CIVILIAN PERSONNEL NEEDED FOR 
+IMPLEMENTATION OF RAI. 
+Lines of Effort OPR 
+LOE 6.1.1: Develop a mechanism to identify and track AT expert ise OSD(P&R) ; 
+across the Department and the Military Departments and Services , OC P AS; Military 
+includin g the Acquisition Workforce , by a) leveraging existing Departments ; 
+coding efforts (e.g. , DoD C IO's Cyber Workforce Framework OSD(A&S); DoD CIO; 
+expans ion effort) and , if needed , developing new codes in CDAO 
+coordination with the Office of Personne l Management (OPM) ; and 
+b) developing standardized personnel coding mechanisms , 
+recogni zable by current and future civil ian and military Service 
+department personnel systems (e.g., Defense Civilian Human 
+Resources Management System (DCHRMS), military integrated 
+personnel systems). 
+LOE 6.1.2: Conduc t a gap ana lysis to determine whet her any CDAO in coordination 
+additional know ledge, skills, abi lities, and tasks are needed for the with DoD Component 
+six archetypes captured in the 2020 DoD AI Educatio n Strategy to RA! Leads 
+successfully impl ement RAI. 
+LOE 6.1.3: Develop career fields and pathways for military Military Department 
+personnel who perform Al work as a major portion of their job, RAl Leads in 
+incl uding promotion elig ibility. coordinat ion wit h 
+UNCLASSIFIE D 31 
+--- pdf_page_34 ---
+UNCLASSIFIED 
+CDAO and 
+OUSD(P&R) 
+LOE 6.1.4: Recommend to OUSD(P&R) and OPM career fields and CDAO in coordination 
+pathways for civilian personnel who perform AI work as a major with DoD Component 
+portion of their job. RAI Leads~ 
+OUSD(P&R) 
+LOE 6.1.5: Initiate workforce planning processes to attract, recruit, DoD Component RAJ 
+and maintain highly skilled experts to fill the gaps identified in LOE Leads in coordi.nation 
+6.1.2 to include (but not limited to) creating and reclassifying billets with OUSD(A&S) and 
+and adding AI positions in government performance of acquisition OUSD(P&R) 
+and requirements management functions. 
+LOE 6.2: SU PPLEM ENT E XISTING DOD AI TRAINING EFFORTS WITH 
+CU RRI CULA TH AT WILL ENABLE RAI IMPLEMENTATION. 
+Lines of Effort OPR 
+LOE 6.2.J: Develop and update DoD-wide standardized curricula CDAO in coordination 
+(covering topics such as AI benefits and limitations, risk factors, and with DoD Component 
+security) to be integrated into all AI education and training for the DoD RI\ I Leads 
+Al workforce, and ensure that it is appropriate for all levels of both 
+military and civilian seniority. 
+LOE 6.2.2: Integrate the cun-icula developed in LOE 6.2.1 in DoD Component RAl 
+Components' Al education and training programs (including initial and Leads 
+mission qualified training programs to build RAI skills capacity of 
+current workforce and pipeline). 
+LOE 6.2.3: Establish education, training, and experience standards DoD Component RA! 
+relevant to respective Al-related positions based on the level of Leads 
+complexity of duties for DoD Components. 
+LOE 6.2.4: Collaborate with the Defense Acquisition Workforce OUSD(A&S); DAU 
+Functional Managers to reshape the training, education, and experience 
+requirements for the Defense Acquisition Workforce to include Al 
+cWTicula as appropriate. This includes: a) potentially updating 
+Foundational and Practitioner Certifications; b) creating new Al 
+credentials for RAT implementation roles; and c) leveraging curricula 
+per LOE 6.2. l to existing traini,ng curricula available for the Defense 
+Acquisition Workforce. 
+UNCLASSIFIED 32 
+--- pdf_page_35 ---
+UN CLASS JFJ ED 
+LOE 6.2.5: Exp lore the need of an annual AT Ethics Awareness 
+training (similar to the annual Cyber Awareness LTaining) requirement 
+for DoD Al Workforce to promote awareness and application of the 
+DoD AI Ethical Princip les, as well as consi stency of understanding. 
+CDAO 
+LOE 6.3: BUILD DOD CAPACITY FO R RAJ THROUGH COMMUNITIES OF 
+INTEREST /PRACT ICE AND PROFESSIONAL DEVELOPMENT 
+OPPORTUNITIES. 
+Lines of Effort OPR 
+LOE 6.3.1: Deliver annua lly the RAT Champions Program CDAO 
+Oepai1ment-wide in order to build a network of RAI advocates and 
+experts in DoD Components. 
+LOE 6.3.2: Build R.Al DoD-wide communities of interest or practice, COAO 
+leveraging existing bodies to accelerate the ir establishmen t, such as the 
+RAJ Subcommittee. Scale the RAT Champions Training Program 
+through DoD (via Train the Trainer model) to create network of 
+champ ions who can paiticipate in these Commun ities of 
+Interes t/Co mmunities of Practice (COis /COPs) . 
+LOE 6.3.3: Identify funding or partnership opportunities for non-DoD DoD Component RAJ 
+tra ining on AI ethics in other agencies, academ ia, and industry. Leads 
+UNCLASSIFIED 33 
+--- pdf_page_36 ---
+UNCLASS IFIED 
+The Department's charge is to protect the American people through integrated deterrence and­
+when called upon - to fight and win our Nation' s wars. The future secur ity and prosperity of the 
+United States depend on the warfighters ' ability to effectively and responsibly wield Al-enab led 
+technologies. Additionally , maintaining trust with those external to the Department is equally 
+vital. 
+To achieve Lhis, it is not enough to communicate our values through the DoD AI Ethical 
+Principle s; we must also live by them . The articulation of the Principles was an essen tial 
+milestone for guiding the ethica l use of Al for military applications and repres ents the beginn.ing 
+of a broader effort around scali ng the imp lementation of RAI. 
+The implementation of DoD policies in the past has required tools and guides including manuals , 
+doctrine , and technical resource s. Simi larly, the DoD Al Ethical Principles will also require 
+implementat ion tools to prov ide concre te guidance on what the principles mean and how to apply 
+them in context. Such guidance wil l enable successful implementation of RAI pract ices by 
+providing tool s and best practice s-now and as they are developed. 
+furt hermore , incorporation of the Principles into the DoD 's culture and operat ional execution 
+does not rest upon any individual (e.g., a developer or user) or process (e.g. , TEVV or 
+acquisit ion) but is a collective effort that involves a mul titude of personnel. Appropria te 
+implementation of the Principles across the system ' s lifecycle will enable warfighters to achieve 
+their missions responsibly , effectively, and efficiently. 
+U ltimate ly, if AJ syste ms are not dcsig11cd and developed responsib ly, the Department stands to 
+lose trust , at home and abroad . RAT must become a core compone nt ofDoD 's Al transfonnation. 
+The DoD will continue to lead by example and promote a vision for ethical and safe military use 
+of AI, through the implementation of this RAI Strategy. 
+UNCLASSIFIED 34 
+--- pdf_page_37 ---
+UNCLJ\SSIFlED 
+Al>DITIONAL RESOURCES 
+The list of tools and additional resources that can be ulilized and/o r custo mized for use by the DoD 
+to implement this RAI S&l Pathway is not static. As too ls and resources are created, modified , or 
+adopt ed by the Departm ent, lhe RA.l Toolkit will change. 
+The C DAO, in coord ination DoD Component RAI Leads , shall make these resources widely and 
+easily available. 
+The RAI toolkit includes the followi ng available resources: 
+• DIU RAI Guidelines 
+• Template s for Al Project Management 
+• Al Data Card template 
+• Al Model Card template 
+• HSI Framework 
+Addit ional toolkit resources directed by this plan include: 
+• AI T &E Toolkit 
+o T &E Master Plan templat e for AI 
+o Library of T&E metrics, to include those used to assess trustworthin ess and 
+confidence 
+o Tools and technologies to detect both adversarial attacks on AI and natural 
+degradation of Al system performance 
+• Acquisition Toolk it 
+o Standard language in the initial announcement, RFP , and RFI for Al capabilitie s 
+o RAI-related evaluation crite ria that are testable and operationally releva nt 
+o S tandard Ar contract languag e 
+• Repository of Al-related requirements for common use cases, mission domains , and 
+system architectures to facilitate reusability 
+Neither of these lists is exhausti ve; however, DoD Component RAJ Leads should wide ly 
+promu lgate the existence of these resources within their DoD Components and provide easy- to­
+use mechanisms by which DoD personnel can gain access to any needed resources. 
+UNCLASS IFIED 35 
+--- pdf_page_38 ---
+UNC LASS IFIED 
+' ACRONYMS 
+Acronym Acron ym for 
+ACAT Acquisit ion Category 
+Al Artificia l Intelligence 
+Al/ML Artificia l Intelligence/Machine Learning 
+AI PID Al Partne rship for Defense 
+ASD(LA) Assistant Secretary of Defense for Legis lative Affairs 
+ASD(PA) Assistant Secreta ry of Defense for Public Affairs 
+ATSD(P CLT) Assistan t to the Secretary of Defense for Privacy, Civil Liberties , 
+and Transparency 
+CAPE Cost Assessment and P rogram Evaluation 
+CDAO Chief Digital and Artificial Intelligence Office r 
+CIO Chief Information Officer 
+COi Community oflnterest 
+COP Community of Practice 
+DAU Defense Acquisition University 
+DCHRM S Defense Civilian Human Resources Management System 
+DCPAS Defense Civilian Personnel Advisory Service 
+DIB Defense Innovation Board 
+DIU Defense innovation Unit 
+D,DTE&A Director for Deve lopmental Test, Evaluation, and Assessments 
+DoD Departme nt of Defense 
+DoDCDO Departme nt of Defense Chief Data Officer 
+DoD CIO Departme nt of Defense Chief Information Officer 
+DoDOG C Departme nt of Defense Office of General CoW1sel 
+DoDD Depar tment of Defense Directive 
+DOE Depart ment of Energy 
+DOT&E Direc tor, Operational Test and Evaluation 
+DSD Deputy Secretary of Defense 
+FCB Functional Capab ilities Board 
+FY Fiscal Year 
+FYDP Future Years Defense Program 
+GG Genera l Govern ment 
+HSI Human Systems Integratio n 
+IC Intelligence Community 
+IP Intellec tual Pro perty 
+.JCIDS Joint Capab ilities Integra tion and Development System 
+JCB Joint Capabilities Board 
+JRO C Joint Requirements Oversig ht Council 
+UNCLASS IFIED 36 
+--- pdf_page_39 ---
+UNCLASSIFlED 
+JROCM Joint Requirements Oversight Council Memorandum 
+KM/OS Knowledge Management/Decision Support (KM/OS) 
+KPP Key Performance Parameter 
+KSA Key System Attributes 
+LOE Line of Effort 
+MDAP Major Defense Acquis ition Program 
+MIL-STD United States Military Standard 
+MPRD Minimwn Product Requirement Document 
+NATO North Atlantic Treat y Organization 
+NIST NationaJ Institute of Standards and Technology 
+NSF National Science Foundation 
+OCDAO Office of the Chief Digita l and Artificial Intelligence Officer 
+ODNI Office of the Di_rector of National Intelligence 
+OPM Office of Personne l Management 
+OPR Office of Primary Responsibility 
+OSD Office of the Secretary of Defense 
+OTA Operationa l Test Agency 
+OUSD(A&S) Office of the Under Secretary of Defense for Acquisition and 
+Sustainme nt 
+OUSD(P) Office of the Under Secretary of Defense for Polic y 
+OUSD(P&R) Office of the Under Secretary of Defense for Personnel and 
+Readiness 
+OUSD(R&E) Office of the Under Secreta ry of Defense for Research and 
+Engineeri ng 
+PEO Program Executive Office 
+PM Program Manager 
+PSA Principal Staff Assistant 
+R&D Research and Development 
+RAI Responsible Artificia l Intel 1 i gence 
+RDT&E Research , Development , Test, and Evaluation 
+RFI Request for Infonnation 
+RFP Request for Proposal 
+S&I Strategy and Implementation 
+SBIR/STTR Small Business Innovation Research/Small Business Technology 
+Transfer 
+T&E Test and Evaluation 
+TEMP Test Evaluation Master Plan 
+TEVV Test, Evaluation, Verification , and Validation 
+TRMC Test Resource Management Center 
+U.S. United States 
+UNCLASSff IEO 37 
+--- pdf_page_40 ---
+UNC LASS IFIED 
+USSOCOM United States Special Ope rations Command 
+UX/Ul User Experience/User Interface 
+V&V Verification and Validation 
+VCJCS V ice Chairman of the Joint Chiefs of Staff 
+UNCLASSIFIE D 38 
+--- pdf_page_41 ---
+UNCLASS IFIED 
+GLOSSARY 
+Term Definition 
+Algorithm A method or set of rules or instruction to be 
+followed in calc ulations or other problem-
+source: DARPA solving operations, particular ly by a computer. 
+Artificial lnteUigence AI refers to tbe ability of machines to perform 
+tasks that normal ly require human intelligence 
+source: DoD Al Strategy (2018) - for example, recogniz ing patterns, learn ing 
+from exper ience, drawing conclusions , makin g 
+predictions, or taking action - whether 
+digitally or as the smart software behind 
+auto nomous physical systems. 
+Autonomy Autonomy refers to a system's ability to 
+accomp lish goals independently, or with 
+source: DARPA minimal supervisio n from human operators in 
+environments that are comp lex and 
+unpredictable. 
+Autonomous Weapon System A weapon system that, once activated , can 
+select and engage targets without further 
+source: DoDD 3000.09 intervention by a human operator. This 
+includes human -supervised autonomous 
+weapon syste ms that are designed to alJow 
+human operators to override operation of the 
+weapon system , but can select and engage 
+targets without further human input after 
+activatio n. 
+Data Card A document for a dataset that prov ides insight 
+into collect ion, processing , usage, and security 
+source : JAJC, now CDAO practices. 
+DoD Component Responsible Al Lead Individuals designated or hired by the C DAO 
+governi ng council member organizations to be 
+source : CDAO responsible for ensuring the adoption , 
+integration , and implementation of 
+Responsible Al programs and processes withi n 
+their respective Components. 
+Equitable DoD A[ Ethical Principles: The Department 
+will take deliberate steps to minim ize 
+unintended bias in Al capabilities 
+UNCLASS IFIED 39 
+--- pdf_page_42 ---
+lJNCLASSIFlED 
+source: DoD Memorandum, "Artificial 
+intelligence Elhicaf Principles fo r the 
+Department of Defense " (Feb 2020) 
+Explainability A characteristic of an AI system in which there 
+is provision of acco mpan ying evidenc e or 
+source_· NSCAI Final Report reasons for syste m output in a manner that is 
+meaningful or understandable to individual 
+users (as well as to developers and auditors) 
+and reflects the system's process for 
+genera ting the output (e.g ., wbat alternatives 
+were considere d, but not proposed, and why 
+not). 
+Gove rnab le DoD Al Etbical Principles: The Departmen t 
+will design and engi neer Al capabilities to 
+fulfill their intended functions while 
+source: DoD Memorandum , "Artificial possessing the ability to detect and avoid 
+Intelligence Ethical Principles for the unintend ed conseq uences, and the ability to 
+Department of Defense" (Feb 2020) disengage or deactivate deployed systems that 
+demonstrate uninte nded behavior 
+Harm Suffe ring, misfortune , or wrongdoing 
+(physica l or otherwise) as done to or suffered 
+source: DARPA by some person or thing; hurt, injury, damage , 
+or mischief; Lo do hann to or injure (physica lly 
+or othe rwise) ; to hurt, damage. 
+Human Systems Integration A comprehensive, interdisciplinary 
+management and tech nical approach applied to 
+source:OUSD(R&E ) system deve lopment and integrat ion as pru1 of 
+a wider systems engineering process to ensure 
+that human performance is optimized to 
+increase total system performa nce and 
+minimize total system ownership cos ts. 
+Key Performance Parameter Performance attrib ute of a system considered 
+critical or essential to the deve lopment of an 
+source: JCIDS Manual effective military capability. KPPs are 
+contained in the Capability Development 
+Document (CDD) and the updated COD and 
+are included ver batim in the Acquis ition 
+Program Baseline (APB). KPPs are expressed 
+in term of parameters which retlect Measures 
+of Performance (MOPs) using a 
+thresho ld/objective format. KPPs mus t be 
+UNCLASS IFIED 40 
+--- pdf_page_43 ---
+UNCLASSIFIED 
+measurable , testable , and support efficient and 
+effective Test and Evaluatio n (T &E). 
+Mandatory KPPs are specified in the .JClDS 
+Manual. 
+Military Department and Service RAJ Lead A subset of DoD Component RAJ Leads that 
+includ es the Military Departm ents 
+source: JAJC, now CDAO (Department of the Air Force. Depar1ment of 
+the Arm y, Department of the Nav y) and the 
+Military Services (Air Force, Space Force , 
+Am1y, Marine Corps, Navy, and Coast Guard). 
+Model Card A document that communicates the 
+development processes and limitations of a 
+source: JAJC. now CDAO model to enab le develop ers, policymaker s, and 
+users to understand aspec ts of trained mode ls . 
+Machine Learning The study or the application of comput er 
+algorithms that improve automatically throug h 
+source: NSCAJ Final Report experience. Machine learning algorithm s build 
+a model based on train ing data in order to 
+perfor m a specific task, like a iding in 
+prediction or decision-making processes , 
+without necessarily being exp licitly 
+programmed to do so 
+Reliable DoD Al Ethical Principles: The Department's 
+AI capab ilities will hav e explicit , well-defined 
+source: DoD Memorandum, ''Artificial uses, and the safety. sec urity , and effec tiveness 
+Intelligence Ethical Principle s for the of such capabilit ies will be subject to testing 
+Department of Defense" (Feb 2020) and assurance withi n those defined uses across 
+their entire life cycles 
+Respons ible DoD Al Ethical Principle s: DoD personne l 
+will exercis e appropria te levels of j udgme nt 
+source: DoD Memorandum. "Art[ficial and care , while remaining responsib le for the 
+Tntelligenc e Ethical Principles/or the development , depl oyment , and use of Al 
+Department of Defense " (Feb 2020) capa bilities 
+Responsible Al Respons ible Al is a dynamic approach to the 
+desig n, deve lopmen t, deployment , and use of 
+source: DoD Memorandum. "Implementing artific ial intelli gence systems that implem ents 
+Respon sible Artificial Jntelli~ence i.n the the DoD AI Ethical Principl es to advance the 
+Departm ent of Defense. , (May 2021) trustwo rthiness of such system s. 
+Responsible AI Champions A community of individ uals who are 
+knowled geable advocates of the DoD AI 
+source: JAJC, now CDAO Ethical Princip les who are able to help to 
+UNCLASS I FTED 41 
+--- pdf_page_44 ---
+UN CLASS IrIED 
+operatio nally define the ptinciples 
+substantive ly and tluough engine.ering 
+practices and who will engage in peer-to-peer 
+teaching within their areas. 
+Risk The potent ial for the use of a technology or 
+system to result in negative outcomes due to 
+source: .JAIC. now CDAO an impact on the organization , individuals, or 
+society. 
+Robust AI An Al system that is resilient in real-world 
+settings, such as an object-recogni tion 
+source: NIST application that is robust to significant change s 
+in lighting. The phrase also refers lo resi I ience 
+when it comes to adversaria l attacks on AI 
+components 
+Test and Evaluation , Verification and A framework for assess ing, incorporating 
+Validation methods and metrics to determine that a 
+technology or system 
+source: NSCAI Final Report satisfactor ily meets its design specifications 
+and requirements , and that it is sufficient for 
+its intended use. 
+Tes t & Evaluation Test & Evaluation (T&E) is the process by 
+which a system or compone nts are compared 
+against requirements and specifications 
+through testing . The resuJts are evaluated to 
+assess progress of des ign, performance , 
+source: DAU supportab ility, etc. Developmenta l test and 
+evaluation (OT &E) is an engineering tool used 
+to reduce risk throughout the acquisition cycle. 
+Operational test and evaluation (OT&E) is the 
+actual or simulated employment, by typical 
+users, of a system under realistic operational 
+condit ions. 
+Traceable DoD Al Ethical Principle s: The Department's 
+Al capa bibties will be developed and deployed 
+such that relevant personnel possess an 
+source: DoD Memorandum, 'Arrificia/ appropriate understanding of the technology, 
+Jnrelligence Ethical Principles.for rhe development processes , and operational 
+Department of Defense'' (Feb 2020) methods applicable to AI capabiliti es, 
+including with transparent and auditable 
+methodologies , data sources , and design 
+procedure and documentation 
+UNCLASSIFIED 42 
+--- pdf_page_45 ---
+UNCLASS ffIED 
+Trust Trus t is estab lished by ensuring that A I 
+syste ms arc cognizant of and are buill to align 
+source: NIST, IEEE, ISO with core values in society , and in ways which 
+minimize harm s to individuals, groups , 
+communities, and societie s at large. Defin ing 
+trustwo1thin ess in meaningful , actionable , and 
+testab le ways remain s a work in progress. In 
+pa1t, we rely on the practice of trustworthy 
+computing as adopted by some in computer 
+science and sys tem engineering fields-
+·'trustwo rthiness of a computer system suc h 
+that relianc e can be just ifiably placed on the 
+serv ice it delivers (IEEE) "; "of an item , ability 
+to perform as and when req uired 
+(lSO /JEC/TEEE)". On othe r hand, the Al user 
+trust decis ion, as other human trust decisions , 
+is a psycho logic al process. T here is currently 
+no method to meas ure use r trust in A l or 
+measure wha t factors intlu ence the users' trust 
+decisions. 
+Use Case A use case is a specific situa tion in which a 
+produ ct or service could potentially be used. 
+source: DARPA 
+UNCLASSIFIED 43 
+--- pdf_page_46 ---
+UNC LASSIFI ED 
+REFERENCES 
+(A) Department of Defen se. Autonomy in Weapon Systems. DoD Directive 3000.09. Washington , 
+DC: Department of Defense, 
+20 12. https ://www .esd. whs. mil/Porta ls/ 54/Documen ts/DD/issuances / dodd/3 00009p. pdf'?v 
+er-=2019-02-25-104306-377. 
+(B) Department of Defense. DoD Executive Agent for Non-Lethal Weapons (NLW), and NLW 
+Policy . DoD Directive 3000.03E. Washington. DC: Departmen t of Defense, 
+20 13. https://www.esd.whs.mil/Porta ls/54/Docurnents/DD /issuances/dodd/300003 p. pdf?v 
+er=2018- I0-24-112944-467. 
+(C) Department of Defe nse. Operation of the Adaptive Acquisition Framework. DoD Instruction 
+5000.02 . Washington , DC: Department of Defense , 
+2020. https ://www.esd.whs.mil/Po 11als/ 54/Docwnen ts/O D/issuances/ dodi/500002 p. pdf. 
+(D) Departm ent of Defense. Summa ry o,fthe 2018 Department of Defense Anijicia! Intelligence 
+Strategy. Washington, DC: Department of Defense, 
+2018.https: //media defe nse.gov/2019/Feb/12/2002088963/-1 /-1/ 1/SlJMMARY-OF­
+DOD-AI-STRATEGY. PDF. 
+(E) Department of Defense. System Safely. MJL-STD-88 2E. Washi ngton, DC: Department of 
+Defense , 
+20 12. https ://www.da u.edu/cop /armyeso h/DAU%20S ponsore d%20Doc urnents/MIL­
+STD-882E.pdf. 
+(F) Department of Defense . The Defens e Acquisition System. DoD Directive 5000.0 I. 
+Washing ton, DC: Depart ment of Defense, 
+2003. https: //www.esd.whs.mil/Porta ls/54/Document s/DD/issuances/dodd/50000 I p.pdf. 
+(G) Depa rtment of Defense. 2020 Department of Defense Artificial Intelligence Education 
+Strategy. Washington, DC: Departme nt of Defe nse, 
+2020. https://www.ai.mil/docs /2020_ DoD _Al_ Training_and_Education _Strategy_and_In 
+fographic _l 0_27 _20.pdf. 
+(H) Hicks , Kathleen. "Implementing Responsible Artificial Intelligence in the Department of 
+Defense ." Offic ial memorandum . Wa5hington , DC: Depart ment of Defense, 
+202 1. https://media.defense.gov /2021 /May/27 /2002730593 /-1 /-1 /0/IMPL EM ENTING­
+RESPONS IBLE-ARTIFICI AL-INTELL IGENCE- IN-THE-DE PARTMENT -OF­
+DEFENSE.PDF. 
+(I) Hicks, Kathlee n. "Establishment of the Chief Digital and ArtificiaJ Intelligence Officer ." 
+Official memorandu m. Washington, DC: Department of Defense, 
+202 1. https://media.defense .gov/202 l/Dec /08/2002906075 /-1 /-l / l/MEMORANDUM­
+ON-EST ABLJSHMENT-OF-T HE-CHIEF-DIGITAL -AND-ARTIFIC IAL­
+JNTELLIGE NCE-OFFICER. PDF. 
+(J) National Artificial Intelligence Initiative Act of 2020, Pub. L. No. 116-
+283 § 5001 (202 1 ). ht1ps://www.congress.gov / 116/crpt/hrpt617 /CRPT-
+1 l 6hrpt617 .pdf#page = l 2 l 0. 
+(K) William M. (Mac) Thornberry Nationa l Defense Authori zation Act for Fiscal Year 2021 , 
+Pub. L. No. 116-283 (202 1). https://www .congress.gov/ l l6/crpt/hrpt617 /CR.PT-
+116hrpt6 17.pdf. 
+UNC LASS IFIED 44 
+--- pdf_page_47 ---
+
+RULES:
+- excerpt_original must be verbatim from the named locator after only Unicode/whitespace normalization.
+- One checkable fact or explicit claim per candidate; output fewer candidates when evidence is insufficient.
+- Do not turn strategy goals into deployment_event or test_result.
+- Participation in an exercise is not proof of combat effectiveness.
+- Do not generate hypotheses, viewpoints, or a case conclusion.
+JSON_REPAIR: 只修复JSON语法、缺失的允许字段或字段类型；不得补写事实、改写excerpt_original或新增确定性元数据。修复后仍只能输出严格JSON数组。

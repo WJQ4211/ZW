@@ -1,0 +1,28 @@
+{
+  "artifacts": {
+    "affected_viewpoints": "outputs\\phase-a-demo-20260825T040301Z-68d2f1\\affected_viewpoints.json",
+    "change_log": "outputs\\phase-a-demo-20260825T040301Z-68d2f1\\change_log.json",
+    "delta_evidence": "outputs\\phase-a-demo-20260825T040301Z-68d2f1\\delta_evidence_t1.jsonl",
+    "report_t1": "outputs\\phase-a-demo-20260825T040301Z-68d2f1\\report_t1.md",
+    "viewpoints_t1": "outputs\\phase-a-demo-20260825T040301Z-68d2f1\\viewpoints_t1.jsonl"
+  },
+  "candidate_count": 4,
+  "case_id": "synthetic_military_ai",
+  "gate": "G4_T1",
+  "manifest_version": "phase-a.1",
+  "mode": "synthetic_manual_json",
+  "model_client": null,
+  "reproducibility": {
+    "input_hash": "037aa64dcc93e196802a91c7c8f3ab9cbe290b6d5de56847d5a7add50d1c6cb2",
+    "llm_called": false,
+    "python": "3.11.7"
+  },
+  "run_id": "phase-a-demo-20260825T040301Z-68d2f1",
+  "snapshots": [
+    "SNAP-synthetic_military_ai-T0-3db2ee3ae0bf",
+    "SNAP-synthetic_military_ai-T1-f97219be4909"
+  ],
+  "stage": "A",
+  "unchanged_count": 2,
+  "updated_count": 2
+}

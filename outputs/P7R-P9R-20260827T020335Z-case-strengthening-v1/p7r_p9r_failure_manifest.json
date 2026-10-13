@@ -1,0 +1,24 @@
+{
+  "run_id": "P7R-P9R-20260827T020335Z-case-strengthening-v1",
+  "failure_stage": "pipeline_consistency",
+  "source_id": null,
+  "exception_type": "P7P9Error",
+  "http_status_code": null,
+  "completed_logical_calls": 10,
+  "saved_batches": [
+    "p7_strat",
+    "p8r_challenges_h01",
+    "p8r_challenges_h02",
+    "p8r_challenges_h03",
+    "p8r_response_strat",
+    "p8r_response_tech",
+    "p8r_response_eng",
+    "p8r_response_ops",
+    "p8r_response_trust",
+    "p8r_response_citation_repair"
+  ],
+  "formal_evidence_inserted": 0,
+  "formal_g3_executed": false,
+  "formal_g4_t0_executed": false,
+  "t1_read": false
+}

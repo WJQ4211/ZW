@@ -1,0 +1,800 @@
+﻿/*! Copyright 2012, Ben Lin (http://dreamerslab.com/)
+ * Licensed under the MIT License (LICENSE.txt).
+ *
+ * Version: 1.0.19
+ *
+ * Requires: jQuery >= 1.2.3
+ */
+(function (a) {
+    if (typeof define === "function" && define.amd) {
+        define(["jquery"], a);
+    } else { a(jQuery); }
+}(function (a) {
+    a.fn.addBack = a.fn.addBack || a.fn.andSelf; a.fn.extend({
+        actual: function (b, l) {
+            if (!this[b]) {
+                throw '$.actual => The jQuery method "' + b + '" you called does not exist';
+            }
+            
+            var f = { absolute: false, clone: false, includeMargin: false, display: "block" };
+            var i = a.extend(f, l);
+            var e = this.eq(0);
+            var h, j;
+            
+            if (i.clone === true) {
+                h = function () {
+                    var m = "position: absolute !important; top: -1000 !important; ";
+                    e = e.clone().attr("style", m).appendTo("body");
+                };
+                j = function () { e.remove(); };
+            } else {
+                var g = [];
+                var d = "";
+                var c;
+                h = function () {
+                    c = e.parents().addBack().filter(":hidden");
+                    d += "visibility: hidden !important; display: " + i.display + " !important; ";
+                    
+                    if (i.absolute === true) {
+                        d += "position: absolute !important; ";
+                    }
+                    
+                    c.each(function () {
+                        var m = a(this);
+                        var n = m.attr("style");
+                        g.push(n);
+                        m.attr("style", n ? n + ";" + d : d);
+                    });
+                };
+                
+                j = function () {
+                    c.each(function (m) {
+                        var o = a(this);
+                        var n = g[m];
+                        if (n === undefined) {
+                            o.removeAttr("style");
+                        } else {
+                            o.attr("style", n);
+                        }
+                    });
+                };
+            }
+            h();
+            var k = /(outer)/.test(b) ? e[b](i.includeMargin) : e[b](); j();
+            return k;
+        }
+    });
+}));
+
+function initSkin() {
+    // user bar last login
+    if (skinvars.IsAuthenticated) {
+        if (skinvars.IsLastLoginFail) {
+            $(".skin-last-login-fail").fadeIn();
+            $(".skin-login").addClass("fail");
+            $(".skin-last-login-fail-time").each(function () {
+                $(this).html(skinvars.LastLogin);
+            });
+        } else {
+            if ($(".skin-last-login-good") != null) {
+                $(".skin-last-login-good").fadeIn();
+                $(".skin-last-login-good-time").each(function () {
+                    $(this).html(skinvars.LastLogin);
+                });
+            }
+        }
+    } else {
+        $(".skin-last-login-good").each(function () {
+            $(this).hide();
+        });
+        $(".skin-last-login-fail").each(function () {
+            $(this).hide();
+        });
+    }
+}
+
+// declare globally so we can access it in all functions
+var fiveMinuteSessionTimeoutWarning = null;
+var oneMinuteSessionTimeoutWarning = null;
+
+// timeout message 5 mins/1 min before session expiration
+function initLogoffWarnings(fiveMinuteWarningTime) {
+    if (skinvars.IsAuthenticated) {
+        setCookie("LastSessionActivity", new Date());
+        setCookie("LogoutWarningDisplayed", "false");
+        setCookie("FiveMinDisplayed", "false");
+        fiveMinuteSessionTimeoutWarning = setInterval(function () {
+            var msSinceLastActivity = getMSSinceLastActivity();
+            if (msSinceLastActivity != 0) {
+                var isWarnDisplayed = IsCookieTrue("LogoutWarningDisplayed");
+                var wasFiveMinDisplayed = IsCookieTrue("FiveMinDisplayed");
+
+                // Only show message if all browser tabs have been inactive for time specified and logout warning isn't displayed in another window
+                if (msSinceLastActivity >= fiveMinuteWarningTime && !isWarnDisplayed && !wasFiveMinDisplayed ) {
+                    setCookie("LogoutWarningDisplayed", "true");
+                    setCookie("FiveMinDisplayed", "true");
+                    // start timer for one minute warning
+                    initOneMinuteLogoffWarning(fiveMinuteWarningTime + (4 * 60 * 1000));
+
+                    if (confirm("You will be logged out in 5 minutes. Click OK to extend your session.") == true) {
+                        // session being renewed; don't need 1 minute timer
+                        clearTimeout(oneMinuteSessionTimeoutWarning);
+                        CallSkinHandlerToRenewSession();
+                    } else {
+                        setCookie("LogoutWarningDisplayed", "false");
+                        clearInterval(fiveMinuteSessionTimeoutWarning);
+                    }
+                }
+            } else {    // SecondsSinceLastActivity cookie doesn't exist = user is logged out, don't keep checking for session expiration
+                clearInterval(fiveMinuteSessionTimeoutWarning);
+            }
+        }, fiveMinuteWarningTime);
+    }
+}
+
+function initOneMinuteLogoffWarning(oneMinuteWarningTime){
+    oneMinuteSessionTimeoutWarning = setTimeout(function () {
+        var msSinceLastActivity = getMSSinceLastActivity();
+            
+        if (msSinceLastActivity != 0) {
+            var isWarnDisplayed = IsCookieTrue("LogoutWarningDisplayed");
+            // Only show message if all browser tabs have been inactive for time specified and logout warning isn't displayed in another window
+            if (msSinceLastActivity >= oneMinuteWarningTime && !isWarnDisplayed) {
+                setCookie("LogoutWarningDisplayed", "true");
+                if (confirm("You will be logged out in 1 minute. Click OK to extend your session.") == true) {
+                    CallSkinHandlerToRenewSession();
+                    // restart timer for 5-minute warning
+                    initLogoffWarnings(skinvars.LogoffTimeout);
+                } else {
+                    setCookie("LogoutWarningDisplayed", "false");
+                    clearTimeout(oneMinuteSessionTimeoutWarning);
+                }
+            }
+        } else {    // SecondsSinceLastActivity cookie doesn't exist = user is logged out, don't keep checking for session expiration
+            clearTimeout(oneMinuteSessionTimeoutWarning);
+        }
+    }, 4 * 60 * 1000);
+}
+
+function CallSkinHandlerToRenewSession() {
+    $.ajax({
+        url: "/DesktopModules/SharedLibrary/Common/Skin/SkinHandler.ashx?cmd=renewsession"
+    })
+    .done(function (result) {
+        setCookie("LogoutWarningDisplayed", "false");
+        setCookie("LastSessionActivity", new Date());
+        setCookie("FiveMinDisplayed", "false");
+
+        // session already expired
+        if (result !== "") {
+            setCookie("LastSessionActivity", "");
+            clearTimeout(oneMinuteSessionTimeoutWarning);
+            alert(result);
+        }
+    });
+
+}
+
+// Get last activity datetime from cookie that is shared among browser windows and subtract from current datetime
+function getMSSinceLastActivity() {
+    var lastActivityCookie = getCookie("LastSessionActivity");
+    if (lastActivityCookie.length > 0) {
+//        var lastActivityString = lastActivityCookie[0].split("=")[1];
+  //      if (lastActivityString !== "") {
+        return new Date() - new Date(lastActivityCookie);
+     //   } 
+    }
+    return 0;
+}
+
+// If logout warning is already displayed in another window, we don't want to open another one in this window
+function IsCookieTrue(c) {
+    var cookie = getCookie(c);
+    return cookie == "true";
+}
+
+function setCookie(cookieName, cookieValue) {
+    document.cookie = cookieName + "=" + cookieValue;
+}
+
+function getCookie2(cookieName) {
+    var cookieObject = $.grep(document.cookie.split(";"), function (c) {
+        return c.substring(1, cookieName.length + 1) == cookieName
+    });
+    // if that didn't work, try to get the cookie without a leading space
+    if (cookieObject.length == 0) {
+        cookieObject = $.grep(document.cookie.split(";"), function (c) {
+            return c.substring(0, cookieName.length + 1) == cookieName
+        });
+    }
+    return cookieObject;
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+    }
+    return "";
+}
+
+function initSearch() {
+    var searchPlaceholderText = "Search " + skinvars.SiteShortName;
+    var searchCurrentText = "";
+
+    if ($(".skin-search-input") != null) {
+        $(".skin-search-input").each(function () {
+            var me = $(this);
+            me.val(searchPlaceholderText);
+            // Add placeholder functionality
+            me.on("click", function () {
+                if (me.val() == searchPlaceholderText) {
+                    me.val("");
+                    searchCurrentText = "";
+                }
+            });
+            me.on("blur", function () {
+                searchCurrentText = me.val();
+                if (me.val() == "") {
+                    me.val(searchPlaceholderText);
+                    searchCurrentText = "";
+                }
+            });
+            me.on("keydown", function (evt) {
+                if (evt.which == 13) {
+                    searchCurrentText = me.val();
+                    var t = me.next('.skin-search-go');
+                    if (t != undefined) {
+                        t.trigger("click");
+                    }
+                    return false;
+                }
+                searchCurrentText = me.val();
+                return true;
+            });
+        });
+    }
+
+    // search input with placeholder (dgov)
+    if ($(".skin-search-input-ph") != null) {
+        $(".skin-search-input-ph").each(function () {
+            var me = $(this);
+            me.attr('placeholder', searchPlaceholderText);
+            // Add placeholder functionality
+            me.on("keydown", function (evt) {
+                if (evt.which == 13) {
+                    searchCurrentText = me.val();
+                    var t = me.next('.skin-search-go');
+                    if (t != undefined) {
+                        t.trigger("click");
+                    }
+                    return false;
+                }
+                searchCurrentText = me.val();
+                return true;
+            });
+        });
+    }
+
+    if ($(".mobile-search-popup") != null) {
+        $(".mobile-search-popup").each(function () {
+            $(this).hide();
+        });
+    }
+
+    if ($(".mobile-search-link") != null) {
+        $(".mobile-search-link").each(function () {
+            $(this).on("click", function () {
+                var t = $(this).next(".mobile-search-popup");
+                if (t != undefined) {
+                    t.slideToggle('fast');
+                }
+                $('.mobile-search-link > .search-icon').toggleClass('closed');
+                $('.mobile-search-link > .search-icon').toggleClass('open');
+                return false;
+            });
+        });
+    }
+
+    // 'esc' key
+    (function ($) {
+        $(document).keydown(function (e) {
+            var code = e.keyCode ? e.keyCode : e.which;
+            if (code == 27) {
+                $('.mobile-search-link > .search-icon').removeClass('open');
+                $(".mobile-search-popup").each(function () {
+                    $(this).hide();
+                });
+            }
+        });
+
+        $(document).on("click", function (e) {
+            if ($(e.target).hasClass('skin-search-input')) {
+                return true;
+            }
+            if ($('.mobile-search-link > .search-icon').hasClass('open')) {
+                $('.mobile-search-link > .search-icon').removeClass('open');
+                $('.mobile-search-link > .search-icon').addClass('closed');
+                $(".mobile-search-popup").each(function () {
+                    $(this).hide();
+                });
+            }
+            return true;
+        });
+    })(jQuery);
+
+    // search button
+    if ($(".skin-search-go") != null) {
+        $(".skin-search-go").each(function () {
+            var me = $(this);
+            me.on("click", function () {
+                if (searchPlaceholderText != "") {
+                    window.location = (("https:" == document.location.protocol) ? "https://" : "http://") + skinvars.SearchDomain + "/search?affiliate=" + skinvars.aid + "&query=" + encodeURIComponent(searchCurrentText);
+                }
+                return false;
+            });
+        });
+    }
+
+    // Add site subtitle
+    if ($(".skin-sub-title") != null) {
+        $(".skin-sub-title").each(function () {
+            $('this').html(skinvars.SiteSubtitle);
+        });
+    }
+}
+
+var _paq = _paq || [];
+function initPiwik() {
+    _paq.push(['setCustomUrl', location.href.toLowerCase()]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function () {
+        var u = (("https:" == document.location.protocol) ? "https" : "http") + "://stats.defense.gov/";
+        _paq.push(['setTrackerUrl', u + 'piwik.php']);
+        _paq.push(['setSiteId', skinvars.PiwikSiteID]);
+        var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0]; g.type = 'text/javascript';
+        g.defer = true; g.async = true; g.src = u + 'piwik.js'; s.parentNode.insertBefore(g, s);
+    })();
+}
+
+function initSkipNav() {
+    var target = $('#skip-target');
+    if (target != null) {
+        target.attr("innerText", "Start of main content");
+        target.attr("tabindex","-1");
+        target.attr("role", "button");
+        
+        var link = $('#skip-link');
+        if (link != null) {
+            link.click(function () {
+                $('#skip-target').focus();
+            });
+        }
+    }
+}
+
+function initializeSkin() {
+    initSkin();
+    initSearch();
+    initSkipNav();
+    initLogoffWarnings(skinvars.LogoffTimeout);
+    initMenu();
+
+    if (skinvars.IncludePiwik == true) {
+        initPiwik();
+    }
+}
+
+/**************** menu ****************/
+function initMenu() {
+    (function ($) {
+        // Mobile menu
+        $('header .nav-main span').click(function (e) {
+            if ($(e.target).parents(":eq(1)").hasClass('social-item')) {
+                return true;
+            }
+            $(e.target).fadeOut().fadeIn().next().fadeIn();
+            var n = $(e.target).parent().next();
+            if (n.hasClass('open')) {
+                n.fadeOut();
+                n.removeClass('open');
+            } else {
+                n.fadeIn();
+                n.addClass('open');
+            }
+            return false;
+        });
+
+        $(window).resize(function () {
+            if (window.innerWidth >= 767) {
+                $('header .nav-main .open').each(function () {
+                    $(this).hide();
+                    $(this).removeClass('open');
+                });
+            }
+            $.each($(".nav-main li"), function (idx, li) {
+                $(li).removeData("ww")
+            });
+        });
+
+        $('header .dropdown-menu li.active').parents('.top-level').addClass('parent');
+
+        // body click, close menus
+        $('html').click(function () {
+            $('header .nav-main .hover').removeClass('hover');
+            $('header .nav-main [aria-expanded="true"]').attr('aria-expanded', false);
+        });
+
+        var $menuContainer = $('.container.menu, .container-fluid.menu');
+
+        var setupNewMenu = function () {
+            var resetExpanded = function ($obj) {
+                var $li = $obj.parent();
+                var $siblings = $li.siblings('.dropdown');
+                $siblings.find('.hover').removeClass('hover');
+                $siblings.find('a[aria-expanded="true"]')
+                    .removeClass('kb-open')
+                    .attr('aria-expanded', false)
+                    .prop('expanded', false)
+                    .blur();
+            };
+
+            var setExpanded = function ($obj) {
+                resetExpanded($obj);
+
+                var $li = $obj.parent();
+                if ($li.is('.dropdown')) {
+                    $obj.attr('aria-expanded', true).prop('expanded', true).addClass('kb-open');
+                    $obj.next('.dropdown-menu').addClass('hover');
+                }
+            };
+
+            var setCollapsed = function ($obj) {
+                var $li = $obj.parent();
+                if ($li.is('.dropdown')) {
+                    $obj.attr('aria-expanded', false).prop('expanded', false).removeClass('kb-open');
+                    $obj.next('.dropdown-menu').removeClass('hover');
+                }
+            };
+
+            var useAutoExpandMenu = $menuContainer.is('[data-autoexpand="true"]');
+
+            $('header .nav-main').on('mouseleave', function () {
+                var $obj = $(this);
+                var $dropdown = $obj.find('.dropdown-menu');
+                var $a = $dropdown.parent().find('a');
+                setTimeout(function () {
+                    if ($dropdown.hasClass('hover')) {
+                        setCollapsed($a);
+                    }
+                }, 300);
+            });
+
+            $('header .nav-main a')
+                .on('mouseenter', function () {
+                    var $obj = $(this);
+                    setTimeout(function () {
+                        var isNavCollapsed = $(window).width() < 768;
+                        if (!isNavCollapsed) {
+                            setExpanded($obj);
+                        }
+                    }, 100);
+                })
+                .on('focus', function () {
+                    var $obj = $(this);
+                    var $li = $obj.parent();
+                    if ($li.is('.dropdown') && (useAutoExpandMenu || !$li.is('.top-level'))) {
+                        // in cases like mobile, touchscreens and screen readers,
+                        // we want focus to execute after click
+                        setTimeout(function () {
+                            setExpanded($obj);
+                        }, 100);
+                    } else {
+                        resetExpanded($obj);
+                    }
+                })
+                .on('click', function (e) {
+                    var $obj = $(this);
+                    var $li = $obj.parent();
+                    if ($li.is('.dropdown')) {
+                        var expanded = $obj.prop('expanded');
+    
+                        if (!expanded) {
+                            // if expanded is false at this point, it means no hover event was triggered
+                            // this usually means touch screen
+                            // so expand menu and redirect
+                            setExpanded($obj);
+            
+                            e.preventDefault();
+                            e.stopPropagation();
+                        }
+                    }
+                })
+                .on('keydown', function (e) {
+                    var $obj = $(this);
+                    var keyCode = e.keyCode || e.which;
+
+                    if (e.shiftKey && keyCode === 9 && $obj.parent().is('.dropdown:first-child')) { // shift+tab
+                        setCollapsed($obj);
+                    } else if (!useAutoExpandMenu) {
+                        // Updating condition from 32 - space
+                        if (keyCode === 32) {
+                            e.preventDefault(); // prevents page down behavior caused by space bar
+
+                            var expanded = $obj.prop('expanded');
+    
+                            if (expanded) {
+                                setCollapsed($obj);
+                            } else {
+                                setExpanded($obj);
+                            }
+                        }
+                    }
+                });
+
+            // collapse menu when leaving last menu item
+            // get last top level item
+            // this enables the ability to collapse everything even if focused on a sub item
+            var $lastMenuItem = $('header ul.nav-main li:last-child > a');
+            $('header ul.nav-main li:last-child > a, header ul.nav-main li:last-child > a a:last-child')
+                .on('blur', function () {
+                    if (!$(this).is('[aria-expanded="true"]')) {
+                        setCollapsed($lastMenuItem);
+                    }
+                });
+        };
+
+        var setupLegacyMenu = function () {
+            // main menu hover popups
+            $("header .dropdown, header .dropdownactive, header .dropdown-menu").hover(function () {
+                $(this).children(":first-child ul").addClass("hover");
+                $(this).children(":first-child a").attr('aria-expanded', 'true');
+                checkOffscreen($(this));
+            }, function () {
+                $(this).children(":first-child ul").removeClass("hover");
+                $(this).children(":first-child a").attr('aria-expanded', 'false');
+            });
+
+            // kb nav
+            $("header .nav-main").on("blur", function () {
+                if ($(this).parent().hasClass("top-level")) {
+                    $(this).parent().children(":first-child a").attr('aria-expanded', 'false');
+                    $("header .nav-main").find(".kb-open").removeClass("kb-open");
+                    $("header .nav-main").find(".hover").removeClass("hover");
+                }
+            });
+
+            var items = $("header .nav-main").find("a");
+            $.each(items, function (key, obj) {
+                var _hasChildren = $(obj).parent().children(".dropdown, .dropdownactive, .dropdown-menu").length > 0;
+                var _isLast = $(obj).parent().next().length == 0;
+                var _isFirst = $(obj).parent().prev().length == 0;
+                var _prevSibChild = $(obj).parent().prev().children(".dropdown, .dropdown-menu").length > 0;
+                var _isTop = $(obj).parent().parent().hasClass("top-level");
+                var _nextObj = key < items.length ? items[key + 1] : null;
+                var _prevObj = key > 0 ? items[key - 1] : null;
+    
+                //DEV-1760 - removing aria-expanded on elements with no dropdowns
+                //if ($(this).parent().hasClass("dropdown")) {
+                //    $(this).parent().children(":first-child a").attr('aria-expanded', 'false');
+                //}
+    
+                $(obj).on("focus", function (e) {
+                    if ($(this).parent().hasClass("top-level")) {
+                        $(this).parent().children(":first-child a").attr('aria-expanded', 'false');
+                        $("header .nav-main").find(".kb-open").removeClass("kb-open");
+                        $("header .nav-main").find(".hover").removeClass("hover");
+                    }
+                });
+
+                $(obj).on('keydown', { hasChild: _hasChildren, isLast: _isLast, isFirst: _isFirst, prevSibHasChild: _prevSibChild, isTop: _isTop, nextObj: _nextObj, prevObj: _prevObj }, function (e) {
+                    var keyCode = e.keyCode || e.which;
+    
+                    //Enter condition
+                    if (keyCode == 13) {
+                        if ($(obj).attr('href') == "javascript:void(0)") {
+                            e.preventDefault();
+                        }
+                    }
+
+                    //Updating condition from 32 - space
+                    if (keyCode == 32) {
+                        if (e.shiftKey) { // backwards
+                            if (keyCode == 32) {
+                                e.preventDefault();
+                            }
+
+                            if (e.data.isFirst) {
+                                $(this).parent().children(":first-child a").attr('aria-expanded', 'false');
+                                $(this).closest(".hover").removeClass("hover");
+                            }
+                        } else { // forward
+                            if (keyCode == 32) {
+                                e.preventDefault();
+                            }
+        
+                            // hover
+                            if (e.data.hasChild && $(this).parent().children(":first-child ul").hasClass("hover") == false) {
+                                $(this).parent().children(":first-child a").attr('aria-expanded', 'true').addClass("kb-open");
+                                $(this).parent().children(":first-child ul").addClass("hover");
+                                jQuery.event.trigger = "keydown";
+                            } else {
+                                $(this).parent().children(":first-child a").attr('aria-expanded', 'false').removeClass("kb-open");
+                                $(this).parent().children(":first-child ul").removeClass("hover");
+                                jQuery.event.trigger = "keydown";
+                            }
+        
+                            // if last item in menu and it doesn't have children, close previous hover
+                            if (e.data.isLast && !e.data.hasChild) {
+                                // close all parent hovers
+                                if (e.data.nextObj != null) {
+                                    var thisp = $(this).closest(".hover").not(".top-level");
+                                    var nextp = $(e.data.nextObj).parent().parent(".dropdown, .dropdown-menu");
+                                    while (thisp.length > 0) {
+                                        if (!$(thisp).is(nextp)) {
+                                            thisp.parent().children(":first-child a").attr('aria-expanded', 'false');
+                                            thisp.removeClass("hover");
+                                        } else {
+                                            break;
+                                        }
+
+                                        thisp = $(thisp).closest(".hover").not(".top-level");
+                                    }
+                                } else { // end of menu, close everything
+                                    $(this).parent().children(":first-child a").attr('aria-expanded', 'false');
+                                    $("header .nav-main").find(".hover").removeClass("hover");
+                                }
+                            }
+                        }
+                    }
+
+                    //condition from 9 - tab
+                    if (keyCode == 9) {
+                        if (e.shiftKey) { // backwards
+                            if (e.data.isFirst) {
+                                $(this).parent().children(":first-child a").attr('aria-expanded', 'false').removeClass("kb-open");
+                                $(this).closest(".hover").removeClass("hover");
+                            }
+
+                            if (e.data.hasChild) {
+                                $(this).parent().children(":first-child a").attr('aria-expanded', 'false').removeClass("kb-open");
+                                $(this).parent().children(":first-child ul.hover").removeClass("hover");
+                            }
+                        } else {
+                            if (e.data.isLast && !e.data.hasChild) {
+                                // close all parent hovers
+                                if (e.data.nextObj != null) {
+                                    var thisp = $(this).closest(".hover").not(".top-level");
+                                    var nextp = $(e.data.nextObj).parent().parent(".dropdown, .dropdown-menu");
+                                    while (thisp.length > 0) {
+                                        if (!$(thisp).is(nextp)) {
+                                            thisp.parent().children(":first-child a").attr('aria-expanded', 'false').removeClass("kb-open");
+                                            thisp.removeClass("hover");
+                                        } else {
+                                            break;
+                                        }
+                                        
+                                        thisp = $(thisp).closest(".hover").not(".top-level");
+                                    }
+                                } else { // end of menu, close everything
+                                    $(this).parent().children(":first-child a").attr('aria-expanded', 'false').removeClass("kb-open");
+                                    $("header .nav-main").find(".hover").removeClass("hover");
+                                    $("header .nav-main").find(".kb-open").removeClass("kb-open");
+                                }
+                            } else if (e.data.isLast && e.data.hasChild && $(this).parent().children(":first-child ul").hasClass("hover") == false) {
+                                if (e.data.nextObj != null) {
+                                    var thisp = $(this).closest(".hover").not(".top-level");
+                                    var nextp = $(e.data.nextObj).parent().parent(".dropdown, .dropdown-menu");
+                                    while (thisp.length > 0) {
+                                        if (!$(thisp).is(nextp)) {
+                                            thisp.parent().children(":first-child a").attr('aria-expanded', 'false').removeClass("kb-open");
+                                            thisp.removeClass("hover");
+                                        } else {
+                                            break;
+                                        }
+                                        thisp = $(thisp).closest(".hover").not(".top-level");
+                                    }
+                                } else { // end of menu, close everything
+                                    $(this).parent().children(":first-child a").attr('aria-expanded', 'false').removeClass("kb-open");
+                                    $("header .nav-main").find(".hover").removeClass("hover");
+                                }
+                            }
+                        }
+                    }
+                });
+            });
+        };
+
+        if ($menuContainer.is('.new-menu')) {
+            setupNewMenu();
+        } else {
+            setupLegacyMenu();
+        }
+    })(jQuery);
+}
+
+function hangLeft(obj, isTop) {
+//    console.log("left");
+    if (isTop)
+        $(obj).addClass('hang-left');
+    else {
+        $(obj).addClass('hang-left-sub');
+        $(obj).closest('li').addClass('hang-left');
+    }
+}
+function hangRight(obj, isTop) {
+//    console.log("right");
+    if (isTop)
+        $(obj).removeClass('hang-left');
+    else {
+        $(obj).removeClass('hang-left-sub');
+        $(obj).closest('li').removeClass('hang-left');
+    }
+}
+
+// see if the menu item wil be offscreen, if it is, change direction of the menu
+function checkOffscreen(obj) {
+    var windowWidth = $(window).width();
+    var subMenu = $(obj).find("ul").first();
+    if (subMenu === undefined)
+        subMenu = $(obj).find("li").first();
+    var subWidth = $(subMenu).actual('width');
+    var objLeft = $(obj).offset().left;
+    var objWidth = $(obj).width();
+    var parent = $(obj).closest("ul");
+    var isTop = $(obj).hasClass("top-level");
+    var goingLeft = $(parent).hasClass("hang-left-sub");
+
+//    console.log("objid:[" + $(obj).attr('id') + " subMenu[" + $(subMenu).attr('id') + " goingleft:[" + goingLeft + "] objleft[" + objLeft + "] objWdith[" + objWidth + "] windowWidth[" + windowWidth + "] subWidth[" + subWidth + "]")
+
+    if (isTop) {
+        if (objLeft + subWidth > windowWidth)
+            hangLeft(subMenu, true);
+        else
+            hangRight(subMenu, true);
+    }
+    else if (goingLeft) {
+        if (objLeft - subWidth < 0)
+            hangRight(subMenu, false);
+        else
+            hangLeft(subMenu, false);
+    }
+    else {
+        if (objLeft + objWidth + subWidth > windowWidth)
+            hangLeft(subMenu, false);
+        else
+            hangRight(subMenu, false);
+    }
+}
+
+
+(function (dma, $, undefined) {
+    //helper for grabbing querystring params
+    dma.getParameterByName = function (name, url) {
+        if (!url) url = window.location.search.substring(1);
+        var vars = url.split("&");
+        for (var i = 0; i < vars.length; i++) {
+            var pair = vars[i].split("=");
+            if (pair[0].toUpperCase() == name.toUpperCase()) { return pair[1]; }
+        }
+        return (false);
+    };
+
+    var g_md = new MobileDetect(window.navigator.userAgent);
+    dma.DeviceIsMobile = function () {
+        if (g_md.mobile())
+            return true;
+        else
+            return false;
+    }
+
+    dma.DeviceIsDesktop = function () {
+        return !dma.DeviceIsMobile();
+    };
+
+}(window.dma = window.dma || {}, jQuery));
+

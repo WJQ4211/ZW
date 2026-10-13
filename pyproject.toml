@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "disagreement-driven-intelligence-prototype"
+version = "0.1.0"
+description = "Phase A synthetic, auditable prototype for continuous intelligence assessment"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2,<3",
+    "PyYAML>=6,<7",
+    "pypdf>=6,<7",
+    "pdfplumber>=0.11,<1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7,<9"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.setuptools.packages.find]
+include = ["src*"]

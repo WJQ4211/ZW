@@ -1,0 +1,51 @@
+{
+  "run_id": "P1C-20260825T152730Z-manual-web",
+  "case_id": "us_military_ai_deployment",
+  "stage": "P1c",
+  "manual_web_dir": "data\\staging\\t0_candidates\\manual_web",
+  "manual_web_count": 2,
+  "archives": [
+    {
+      "source_id": "T0-TD-007",
+      "file_name": "Cloud-based intel tool AIDP rolls out to Army units globally - Capability Program Executive - Intelligence and Spectrum Warfare - CPE ISW.html",
+      "source_path": "data\\staging\\t0_candidates\\manual_web\\Cloud-based intel tool AIDP rolls out to Army units globally - Capability Program Executive - Intelligence and Spectrum Warfare - CPE ISW.html",
+      "file_sha256": "dc147ecc6cf63cefeb7a59c4a72233b675229eaaf38ab1e40f7bfc64d58ae56a",
+      "file_size_bytes": 392145,
+      "canonical_url": "https://cpeisw.army.mil/2024/10/09/277811/",
+      "capture_type": "html_saved_page_with_assets",
+      "text_path": "outputs\\P1C-20260825T152730Z-manual-web\\web_text\\T0-TD-007.txt",
+      "text_sha256": "64a8c3596d2642a93cef934c6e6abe5dd1e898086528f42d694cfe7e66bafb02",
+      "text_character_count": 5779,
+      "extraction_status": "visible_text_extracted_no_ocr_no_summary"
+    },
+    {
+      "source_id": "T0-TD-008",
+      "file_name": "IMSC Task Force Completes Maritime Exercise with Unmanned Systems, A.I. _ United States Navy _ News Stories.html",
+      "source_path": "data\\staging\\t0_candidates\\manual_web\\IMSC Task Force Completes Maritime Exercise with Unmanned Systems, A.I. _ United States Navy _ News Stories.html",
+      "file_sha256": "08fe714c34f25e0981f1b01da279f92d1ac139b108835c0cbe107ebcc003c38c",
+      "file_size_bytes": 360135,
+      "canonical_url": "https://www.navy.mil/Press-Office/News-Stories/Article/3262053/imsc-task-force-completes-maritime-exercise-with-unmanned-systems-ai/",
+      "capture_type": "html_saved_page_with_assets",
+      "text_path": "outputs\\P1C-20260825T152730Z-manual-web\\web_text\\T0-TD-008.txt",
+      "text_sha256": "54137701770dcbbe2e6aaa0e4abc7622ae682d7d18cc987270f6f2b446a7b8ce",
+      "text_character_count": 7885,
+      "extraction_status": "visible_text_extracted_no_ocr_no_summary"
+    }
+  ],
+  "direct_fetch": {
+    "source_id": "T0-ENT-001",
+    "url": "https://www.dvidshub.net/news/printable/430931",
+    "http_status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "raw_path": "outputs\\P1C-20260825T152730Z-manual-web\\web_raw\\T0-ENT-001.html",
+    "raw_sha256": "96a4a7417c6f513086009f9699d171ab6d8415c96cc628a0b55a7ab34824b3ec",
+    "raw_size_bytes": 4260,
+    "text_path": "outputs\\P1C-20260825T152730Z-manual-web\\web_text\\T0-ENT-001.txt",
+    "text_sha256": "e0d0980e176edb67099fa2a22ea2ccae36ceec89523c7836ba8caf5c9bbba58d",
+    "text_character_count": 3226,
+    "date_verified": true,
+    "published_at": "2022-10-07",
+    "capture_type": "direct_printable_html_fetch"
+  },
+  "original_html_archives_not_modified": true
+}

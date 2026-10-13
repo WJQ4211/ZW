@@ -1,0 +1,162 @@
+{
+  "run_id": "P3AR-20260826T010914-real-api-v6",
+  "case_id": "us_military_ai_deployment",
+  "stage": "P3a-R",
+  "executed_at_utc": "2026-08-25T17:18:53Z",
+  "git_head": {
+    "commit": "aa93cabe2a61c15bcb8e65832574acf2c6d2c844",
+    "short_commit": "aa93cabe2a61",
+    "git_root": "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\.github_upload_staging"
+  },
+  "p2_run_id": "P2-20260825T154432Z-author-pilot",
+  "source_ids": [
+    "T0-SP-007",
+    "T0-TD-008"
+  ],
+  "generation_mode": "real_model_api_extraction",
+  "real_model_extraction_executed": true,
+  "validation_scope": "structural_quote_presence_and_claim_evidence_semantic_review",
+  "result_not_eligible_for_g1": true,
+  "transport": "openai_compatible_api",
+  "requested_model_id": "deepseek-v4-flash-0731",
+  "provider_model_ids_observed": [
+    "deepseek-v4-flash-0731"
+  ],
+  "provider_call_count": 6,
+  "provider_call_count_status": "observed_network_attempts",
+  "provider_metrics": {
+    "temperature": null,
+    "cost": null,
+    "token_usage_recorded_per_call": true,
+    "status": "provider_temperature_and_cost_not_observable"
+  },
+  "logical_extraction_batch_count": 3,
+  "logical_semantic_review_batch_count": 3,
+  "api_key_written": false,
+  "file_bridge_calls_mixed": false,
+  "input_files": {
+    "p2_manifest": {
+      "path": "outputs/P2-20260825T154432Z-author-pilot/p2_manifest.json",
+      "sha256": "9c5e5e62e05d390b9f59c7ed3e314684f7dd8c0075b15014c5ba90e1a68e0821"
+    },
+    "p2_source_manifest": {
+      "path": "data/curated/source_manifest_t0_p2.csv",
+      "sha256": "afdb8661cfda4d0d3c86418c389b4844c0b7071b3026cbf2cc10dc7c758788fa"
+    },
+    "p2_selected_inventory": {
+      "path": "outputs/P2-20260825T154432Z-author-pilot/selected_source_inventory.csv",
+      "sha256": "2ec9a46afbdf41556340ea3e31e172a558a6765ccfcffb6b22918567a2ea2c3f"
+    },
+    "T0-SP-007": {
+      "path": "data/staging/t0_candidates/manual/2024-06-RAI-STRATEGY-IMPLEMENTATION-PATHWAY.pdf",
+      "sha256": "cb30090fa1f7da0e4e469de160fa72b08bf9d13025e22c8be76578509fe66197",
+      "file_name": "2024-06-RAI-STRATEGY-IMPLEMENTATION-PATHWAY.pdf",
+      "file_sha256": "cb30090fa1f7da0e4e469de160fa72b08bf9d13025e22c8be76578509fe66197",
+      "file_size_bytes": 5427778,
+      "pdf_page_count": 47,
+      "extraction_status": "ocr_pending",
+      "ocr_required": 1,
+      "extraction_method": "pdfplumber_page_extract_text_no_ocr"
+    },
+    "T0-TD-008": {
+      "path": "outputs/P1C-20260825T152730Z-manual-web/web_text/T0-TD-008.txt",
+      "sha256": "54137701770dcbbe2e6aaa0e4abc7622ae682d7d18cc987270f6f2b446a7b8ce",
+      "text_path": "outputs/P1C-20260825T152730Z-manual-web/web_text/T0-TD-008.txt",
+      "text_sha256": "54137701770dcbbe2e6aaa0e4abc7622ae682d7d18cc987270f6f2b446a7b8ce",
+      "text_character_count": 2209,
+      "paragraph_count": 9,
+      "extraction_status": "visible_text_cleaned_no_ocr_no_summary"
+    }
+  },
+  "prompt_template": {
+    "path": "prompts/evidence_extract_v1.yaml",
+    "sha256": "251e379bd8d0becb68609ca0f7a1f0f94ef7c6104f7684bda5db751ad3c56486",
+    "prompt_id": "evidence_extract",
+    "version": "1.0"
+  },
+  "raw_candidate_count": 21,
+  "structurally_valid_candidate_count": 12,
+  "candidate_evidence_count": 12,
+  "rejected_candidate_count": 9,
+  "rejected_reason_counts": {
+    "normalized_claim_adds_subject_or_entity_not_in_excerpt": 7,
+    "excerpt_not_found_at_specified_locator": 3
+  },
+  "quote_presence_match_rate": 0.8571428571428571,
+  "claim_quote_alignment_pass_rate": 1.0,
+  "nature_supported_rate": 1.0,
+  "dimension_supported_rate": 1.0,
+  "translation_nonempty_rate": 1.0,
+  "metric_definitions": {
+    "quote_presence_match_rate": "exact normalized excerpt match at the specified source locator divided by raw model candidates",
+    "claim_quote_alignment_pass_rate": "second-pass semantic status pass with claim_supported true divided by semantic reviews",
+    "nature_supported_rate": "second-pass nature_supported true divided by semantic reviews",
+    "dimension_supported_rate": "second-pass dimensions_supported true divided by semantic reviews",
+    "translation_nonempty_rate": "non-empty excerpt_zh divided by raw model candidates"
+  },
+  "evidence_nature_counts": {
+    "goal": 5,
+    "constraint": 1,
+    "resource_input": 1,
+    "test_event": 4,
+    "test_result": 1
+  },
+  "coding_dimension_counts": {
+    "integration_level": 6,
+    "engineering_resource_conditions": 4,
+    "human_machine_authority": 4,
+    "trust_governance_constraints": 3,
+    "organizational_system_fit": 5,
+    "application_maturity": 3
+  },
+  "formal_evidence_db_rows_added": 0,
+  "hypothesis_rows_added": 0,
+  "t1_read": false,
+  "p4_executed": false,
+  "g1_executed": false,
+  "snapshot_frozen": false,
+  "protected_p1_p1b_p1c_p2_unchanged": true,
+  "output_file_sha256": {
+    "outputs/P3AR-20260826T010914-real-api-v6/api_call_metadata/T0-SP-007-batch-01-semantic.json": "2114a87071a61f5043fc1de736695acaeda6ba6d6e31b6f231860f588ebb888c",
+    "outputs/P3AR-20260826T010914-real-api-v6/api_call_metadata/T0-SP-007-batch-01.json": "6ca0817587b7b17ff4d513f3f33182329d6efbcf401d6f2d2d7f9e55e0dc052b",
+    "outputs/P3AR-20260826T010914-real-api-v6/api_call_metadata/T0-SP-007-batch-02-semantic.json": "19ad55b47945882d4439d0767914582ad78b86885a5602d626af27e1cf1c3489",
+    "outputs/P3AR-20260826T010914-real-api-v6/api_call_metadata/T0-SP-007-batch-02.json": "242fccd84b00ff8d4855d53085a28b79f6ac3474ef3de989c03ada5eb39e2754",
+    "outputs/P3AR-20260826T010914-real-api-v6/api_call_metadata/T0-TD-008-batch-01-semantic.json": "ec2d8ae9f1bf3926ff65beea216f7cffd3e3b60c9fbdda5b54fa030328094907",
+    "outputs/P3AR-20260826T010914-real-api-v6/api_call_metadata/T0-TD-008-batch-01.json": "548ef78606ce4a84d1982537a7048c56d95b81e70f2ace051ca27076b5d5a04f",
+    "outputs/P3AR-20260826T010914-real-api-v6/evidence_candidates_p3ar.jsonl": "ae52e1f58950460ece0977ec2769e0598422e510f2c7fef2509e99f8a744a628",
+    "outputs/P3AR-20260826T010914-real-api-v6/execute_manifest.json": "e264cba75d1c561b0935999a9f6615945174f2f7ec85edef62c32db7a062d9d2",
+    "outputs/P3AR-20260826T010914-real-api-v6/extraction_summary_by_source.csv": "b3459654fa7db98826ff919a5235d1468a9d51be5b75adadb4dc0801860cf31b",
+    "outputs/P3AR-20260826T010914-real-api-v6/prepare_manifest.json": "badad8e7621e164aadb52df4ad58b2c7f33614c6281de3624014875968ce367e",
+    "outputs/P3AR-20260826T010914-real-api-v6/prompt_packets/extraction/T0-SP-007-batch-01.json": "3c9e50397641b95e37c56056192699242be770c04fb31b5ca2bb4eeec404c2f8",
+    "outputs/P3AR-20260826T010914-real-api-v6/prompt_packets/extraction/T0-SP-007-batch-01.txt": "a7d650551b1b6f83f2346abd90366f468deb67da6d578b9797328aa0864c69ae",
+    "outputs/P3AR-20260826T010914-real-api-v6/prompt_packets/extraction/T0-SP-007-batch-02.json": "20e692ee44a772b4feaf4f59bb8b38ceeab683f8b90bef764611fdc4393bf773",
+    "outputs/P3AR-20260826T010914-real-api-v6/prompt_packets/extraction/T0-SP-007-batch-02.txt": "233a26fea62fa30f7312a52986befeaa27681aeb843427f60fd94b8ada1d7c20",
+    "outputs/P3AR-20260826T010914-real-api-v6/prompt_packets/extraction/T0-TD-008-batch-01.json": "18e13655891739bd898c5b82cd6cf337933ab83dafd2cde4cdf7e5c57ef799e1",
+    "outputs/P3AR-20260826T010914-real-api-v6/prompt_packets/extraction/T0-TD-008-batch-01.txt": "048655cd037f62ac412804f296243c2525d254d5bd2ae863db606213c7662942",
+    "outputs/P3AR-20260826T010914-real-api-v6/prompt_packets/semantic_review/T0-SP-007-batch-01.txt": "5e04ca3ec0ec8a7a77ce69e4bdd4d3b52d664cd8e8fd89f1647ddf78938540ba",
+    "outputs/P3AR-20260826T010914-real-api-v6/prompt_packets/semantic_review/T0-SP-007-batch-02.txt": "b8c8a9afccc31bc296470d53f07fba436370c1abf0aa5015853d83e7ab2d576d",
+    "outputs/P3AR-20260826T010914-real-api-v6/prompt_packets/semantic_review/T0-TD-008-batch-01.txt": "9bc0c63db952337c6d0637d4277661386f341bd53853c310ad3596ca048eeda5",
+    "outputs/P3AR-20260826T010914-real-api-v6/quote_validation.csv": "433bc0ed035cb4dc7cd8d11f27012c8138807c9475e83a7a15744eb3270c1314",
+    "outputs/P3AR-20260826T010914-real-api-v6/raw_model_outputs/T0-SP-007-batch-01.json": "ad4dde699181f33e07f85fe91ed91294891c16475cb8ed6a0658cf56e4ce0ca1",
+    "outputs/P3AR-20260826T010914-real-api-v6/raw_model_outputs/T0-SP-007-batch-02.json": "cc49540579d5d95c523e3c26a28a160ecc5aeb2fcc20ece3f77ff3f87792623c",
+    "outputs/P3AR-20260826T010914-real-api-v6/raw_model_outputs/T0-TD-008-batch-01.json": "732f9f0f6e5d206c780697080a40ddd893e9a2ea7be0a7e3cb65a0657a4c1a8a",
+    "outputs/P3AR-20260826T010914-real-api-v6/raw_semantic_reviews/T0-SP-007-batch-01.json": "22b88c8f80c791733a51c7d7aaed251092a22dd3bdeefc57e3da3c94181efd55",
+    "outputs/P3AR-20260826T010914-real-api-v6/raw_semantic_reviews/T0-SP-007-batch-02.json": "db66efce5271dd4e3a8d5b983c87f1094e2040db01932f26c0ebbbae9284836f",
+    "outputs/P3AR-20260826T010914-real-api-v6/raw_semantic_reviews/T0-TD-008-batch-01.json": "ce42b25eab193be4e02a01a05ac59a150ebdd4fb184182008e71c9f1568bb9ce",
+    "outputs/P3AR-20260826T010914-real-api-v6/rejected_candidates.jsonl": "05a22e733be721a0079ffab0f1878efa1979bbc40e8d1b4e784b34ad25e5d06b",
+    "outputs/P3AR-20260826T010914-real-api-v6/semantic_review_results.jsonl": "e89b0919885141a46fd54027a5906bf91888effd6b3b0fa6700e91de86e1e9d9"
+  },
+  "boundary_declarations": {
+    "only_requested_sources_processed": true,
+    "old_p3a_candidates_used_as_model_input": false,
+    "formal_evidence_written": false,
+    "competitive_hypotheses_generated": false,
+    "case_conclusion_formed": false,
+    "t1_material_read": false,
+    "p3b_executed": false,
+    "p4_or_g1_executed": false
+  },
+  "stop_condition": "P3a-R complete for T0-SP-007 and T0-TD-008; stop before P3b, P4, G1, snapshot freeze, hypotheses, and T1.",
+  "manifest_sha256": null,
+  "manifest_hash_note": "Self-hash is intentionally null to avoid a circular hash."
+}

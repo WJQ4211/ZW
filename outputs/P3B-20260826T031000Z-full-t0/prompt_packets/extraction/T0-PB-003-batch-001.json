@@ -1,0 +1,211 @@
+{
+  "batch_id": "T0-PB-003-batch-001",
+  "source_id": "T0-PB-003",
+  "source_locator_count": 18,
+  "segments": [
+    {
+      "source_id": "T0-PB-003",
+      "source_locator": "web_paragraph_0001",
+      "text": "DARPA’s REMA Program to Add Mission Autonomy to Commercial Drones Skip to main content",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0001",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-PB-003",
+      "source_locator": "web_paragraph_0002",
+      "text": "Official websites use .mil A .mil website belongs to an official U.S. Department of War organization.",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0002",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-PB-003",
+      "source_locator": "web_paragraph_0003",
+      "text": "Secure .mil websites use HTTPS A lock ( ) or https:// means you’ve safely connected to the .mil website. Share sensitive information only on official, secure websites.",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0003",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-PB-003",
+      "source_locator": "web_paragraph_0004",
+      "text": "Breadcrumb",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0004",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-PB-003",
+      "source_locator": "web_paragraph_0005",
+      "text": "Home News DARPA’s REMA Program To Add Mission Autonomy To Commercial Drones",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0005",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-PB-003",
+      "source_locator": "web_paragraph_0006",
+      "text": "DARPA’s REMA Program to Add Mission Autonomy to Commercial Drones",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0006",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-PB-003",
+      "source_locator": "web_paragraph_0007",
+      "text": "From concept to contract in 70 business days: Companies collaborate to add capabilities for off-the-shelf drones to carry out predefined missions without need for operator connection",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0007",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-PB-003",
+      "source_locator": "web_paragraph_0008",
+      "text": "Feb. 8, 2024",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0008",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-PB-003",
+      "source_locator": "web_paragraph_0009",
+      "text": "Commercial drone technology is advancing rapidly, providing cost-effective and robust capabilities for a variety of civil and military missions. DARPA’s Rapid Experimental Missionized Autonomy (REMA) program aims to enable a drone to autonomously continue its predefined mission when connection to the operator is lost. The program is focused on constantly providing new agnostic drone autonomy capabilities for transition in one-month intervals to outpace adversarial countermeasures. REMA progressed from program announcement to contract awards in just 70 business days.",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0009",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-PB-003",
+      "source_locator": "web_paragraph_0010",
+      "text": "“REMA is the demonstrator for rapid ideation and tech development,” said Dr. Lael Rudd, REMA program manager. “The five performers under contract are working as a conglomerate without firewalls to create common solutions to achieve the program goals.”",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0010",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-PB-003",
+      "source_locator": "web_paragraph_0011",
+      "text": "As small aerial vehicles play increasingly important military roles on the battlefield, REMA will render ineffective adversaries’ electromagnetic countermeasures intended to disrupt communication links between operator and drone to abort missions and cause crashes.",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0011",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-PB-003",
+      "source_locator": "web_paragraph_0012",
+      "text": "“REMA is focused on creating autonomous solutions to maximize effectiveness of stock commercial and small military drones on the battlefield,” said Rudd. “Through creating an autonomy adapter that works with all commercial drones, regardless of manufacturer, and by developing mission-specific autonomy that is constantly refreshed and easy to upload prior to a mission, we aim to give drone operators the advantage in fast-paced combat operations.”",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0012",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-PB-003",
+      "source_locator": "web_paragraph_0013",
+      "text": "The 18-month, single-phase program is divided into two technical areas: 1) A drone-autonomy adapter interface and 2) mission-specific autonomy software. REMA will be able to agnostically detect the drone type when connected and apply autonomy to increase the drone’s capability. REMA will be completed in development cycles starting at three-month intervals and accelerating to one-month intervals, to repeatedly provide new and improved autonomy for direct transition.",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0013",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-PB-003",
+      "source_locator": "web_paragraph_0014",
+      "text": "Contracts for the drone-autonomy adapter interface technical area have been awarded to Anduril and RTX. Contracts for the mission-specific autonomy software technical area have been awarded to Leidos, Northrop Grumman, and SoarTech.",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0014",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-PB-003",
+      "source_locator": "web_paragraph_0015",
+      "text": "The first development cycle, or “spiral challenge,” started in December 2023, is focused on developing platforms with agnostic autonomy features. The performers are expected to demonstrate a full working solution to the first challenge in March 2024.",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0015",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-PB-003",
+      "source_locator": "web_paragraph_0016",
+      "text": "Office",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0016",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-PB-003",
+      "source_locator": "web_paragraph_0017",
+      "text": "Tactical Technology Office",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0017",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-PB-003",
+      "source_locator": "web_paragraph_0018",
+      "text": "Contact",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0018",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    }
+  ],
+  "source_raw_path": "outputs/P2-20260825T154432Z-author-pilot/source_raw/T0-PB-003.html",
+  "source_text_path": "outputs/P2-20260825T154432Z-author-pilot/source_text/T0-PB-003.txt",
+  "source_raw_sha256": "68420515e18e7e7c3bf023254b23e8ac96f277c2f59f950210a0ea2d5d3c3a16",
+  "source_text_sha256": "3cc2b4b6b92794235f8b47c616a8c0d091c3f14e81bab44fbbe3855335e86266",
+  "max_batch_chars": 45000,
+  "max_candidates": 5
+}

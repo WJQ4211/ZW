@@ -1,0 +1,16 @@
+{
+  "completed_sources": [
+    "T1-DAF-001",
+    "T1-DAF-002",
+    "T1-DAF-003",
+    "T1-DAF-004",
+    "T1-DAF-006",
+    "T1-DAF-007",
+    "T1-DAF-008",
+    "T1-DARPA-002"
+  ],
+  "extraction_logical_call_count": 8,
+  "run_id": "G4-P11-P12-20260827T051332Z-v1",
+  "semantic_logical_call_count": 8,
+  "status": "completed"
+}

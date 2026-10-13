@@ -1,0 +1,778 @@
+PROMPT_ID: evidence_extract
+VERSION: 1.0
+TASK: Extract only auditable evidence candidates from the supplied source text.
+OUTPUT: strict JSON array; each object must contain exactly the eight allowed candidate fields.
+DO NOT output deterministic metadata; the program will inject it after validation.
+BATCH_ID: T0-SP-007-batch-01
+SOURCE_ID: T0-SP-007
+TITLE: Responsible AI Strategy and Implementation Pathway
+PUBLISHER: U.S. Department of Defense
+PUBLISHED_AT: 2022-06
+SOURCE_GRADE: A
+SOURCE_SEGMENTS:
+--- pdf_page_1 ---
+UNCLASSIFIED 
+UNCLASSIFIED 1 
+U.S. DEPARTMENT OF DEFENSE 
+RESPONSIBLE ARTIFICIAL 
+INTELLIGENCE STRATEGY AND 
+IMPLEMENTATION PATHWAY 
+Prepared by the DoD Responsible AI Working Council in accordance with the memorandum 
+issued by Deputy Secretary of Defense Kathleen Hicks on May 26, 2021, Implementing 
+Responsible Artificial Intelligence in the Department of Defense. 
+June 2022
+r 
+--- pdf_page_2 ---
+UNCLASSTFfE D 
+FORF.WORI> 
+While artificia l intelligence (AI) is not new , technological break throu ghs in the last decade have 
+drastica lly c han ged the national security landscape . Our adversaries and co mpetito rs are 
+investing heavily in Al and AI-enabled capabilitie s in ways that threaten global security, peace , 
+and stabi lity. To mainta in our milita ry advantag e in a digitally com petitive world , the United 
+State s Depaiim ent of Defense (DoD) must embrace AI tech nologies to keep pace with these 
+evolving threats. Harnessing new technology in lawful , ethical, responsi ble, and accountab le 
+ways is core to our ethos. Those who depe nd on us will accept nothing Jess. 
+To ensur e that our citizens. warfighters. and lead ers can trust the outputs of DoD AJ capabilities, 
+DoD must demonstrat e that our military ' s steadfast commitment to lawful and eth ical behavio r 
+apply when designing, developin g, testi.ng, procuring, deploying , and us ing Al. The Responsible 
+AI (RA I) Strategy and Impl ementation (S&I) Pathwa y illuminate s our path forwa rd by defining 
+and com municating our framework for harnes sing AI. It helps to elim inate uncerta inty and 
+hesitancy - and enables us to move faster. Integrati ng ethics from the stait also empowers the 
+DoD to maintain the trust of our allies and coa lition partners as we work alongs ide the m to 
+promote democratic norm s and inlemational standards. 
+The RAJ S&J Pathwa y makes our RAI policy tractable for implem entation. lt directs the 
+Department 's strategic approach for ope rationa lizing the DoD Al Ethical Principle s and , more 
+broadly, advancing RAJ- all whi le ens uring opera tional agility , maintainin g speed of capab ility 
+deployment , providi ng scalability , and prio ritizing the efficient allocation of resources. This 
+document is a critica l step in our journey towards accelerating RAJ and fu1thers the 
+Department ' s comm itment to respons ible behavior , processes , and outcomes in the pursuil of /\l 
+technology. 
+Kath leen I I. lli cks 
+Deputy Secretary of D efense 
+UNCLASS lFI ED 
+--- pdf_page_3 ---
+UNCLASSlFIED 
+TABLF: OF CO!\ITF.NTS 
+EXECUTIVE SUMMA"R Y ............................................................... ..................................... .................... . 2 
+RAI STRATEGY 
+BACKGROUND .......................................................................................................................................... 4 
+RESPONSlBLE Al IN DEFENSE ............................................................................................................. 6 
+DESffi"ED END ST A TE .............................................................................................................................. 7 
+DOD RAI FOUNDATIONAL TENETS .................... ........... ...................... ........................................... ... 9 
+RA/ TMPLEMENTATION PATHWAY 
+OVERVIEW .............................................................................................................................................. 14 
+IlVIPLEMENT A TTON APPROACH ....................................................................................................... 16 
+IMPLEMENTATION LIN"ES OF EFFORT .......................................................................................... 19 
+TENET 1: RAI GOV ERNANCE ............................................................................................................................ 19 
+TENET 2: WAR FIGHTER TRUST ....................................................................................................................... 22 
+TENE T 3: Al PRODUCT AND ACQUISITION LI FECYCLE ............................................................................. 25 
+TENET 4: REQUlRE MENTS VALIDATI ON .................................................................................. ................. .... 28 
+TEN ET 5: RESPONS IBL E Al ECOSY STEM ....................................................................................................... 29 
+TENET 6: Al WORKFORCE ........ ........................................ ...................................................... ........... ................ 31 
+CONC LUSION ................ ...................................... ...................... ............................ .................................. 34 
+ADDITIONAL RESOU RCES ............................ ...................................................................................... 35 
+ACRONYMS ............................................................................................................................................. 36 
+GLOSSA RY ............... ......................................................................................... .......................... ............. 39 
+REFERENCES .......................................................................................................................................... 44 
+UNCL ASSIFIED 
+--- pdf_page_4 ---
+UNCLASSIFIE D 
+EXECl 1Tl\'E Sl l\lMARY 
+Advancements in AJ have demon strated the ability to transfo rm eve ry sector of modem soc iety. 
+These impact s extend to b usiness. finance, product ion, and soc ial behav iors. As the DoD 
+embraces Al, it remains focused on the impera tive of harn essi ng this technology in a manner 
+consistent with our national vaJucs, shared democratic ideals, and our milit ary·s steadfast 
+com mihn ent to lawful and ethical behavior. 
+In May 202 1, the Deputy Secretary of Defense issued a mem orandum ("RAI Memo '') that 
+established and direc ted the Depa rtment's holistic , integratcd1 and disciplined approac h to RAI. 
+This RAI Memo introdu ced the fol lowing founda tional tenets that serve as priority areas to guide 
+the implementa tion of RA1 across the Deprutment: RAJ Gove rnance, Warfig hter T rust, AI 
+Product and Acquisition Lifecycle, Requ irements Validation, Respo nsible A l Ecosystem , and Al 
+Workfor ce. 
+This resulting DoD RAJ S&l P athwa y is o rganized arou nd the six tenets and identifies lines of 
+effort to: 
+• Modern ize gove rnance structur es and processe s that allow for continuous overs ight of 
+DoD use of AL takin g into account the context in which the technology will be used; 
+• Achieve a standard level of techno logical fam iliarity and proficiency for system operator s 
+to achieve justified confidenc e in AL and Al-enabled systems: 
+• Exercise approp riate care in the Al product and acqu isition lifecyc le to ensure potential 
+Al risks are cons idered from the outset of an Al project , and efforts are taken to mitigate 
+or ameliorate such risks and reduce unintend ed consequences, while e nab ling Al 
+developme nt at the pace the Departm ent needs to meet the National Defense Stra tegy: 
+• Use the requ irements validation proce ss to ensure that capabilities that leverage Al are 
+aligned with operati onal needs while addressi ng relevant Al risks: 
+• Promote a shared understa nding of RAJ design, devel opment. deployment, and use 
+through dom estic and international engage ments; and 
+• Ensure that all DoD Al workfo rce members possess an approp riate unders tanding of the 
+technology, its development proce ss, and the operatio nal methods appl icab le to 
+implementin g RAJ comme nsurate with their dut ies within th e archetype roles outlined in 
+Lhe 2020 DoD A l Education Strategy. 
+By leading in military ethics and Al safety . the DoD will earn the trust o[ our Service member s, 
+civi lian personnel, and citizens. Our leader ship here also encourages RA! development an·d use 
+globally and streng thens our ability to solve modern defen se challe nges with allies and part ners 
+around the world. 
+UNCLAS SIFI ED 
+2 
+--- pdf_page_5 ---
+UNCLASSIFfED 
+DEPARTMENT OF DEFENSE 
+RESPONSIBLE ARTIFICIAL 
+INTELLIGENCE STRATEGY 
+UNCLASSIFIED 
+3 
+--- pdf_page_6 ---
+UNC LASSIFIE D 
+HA( ' I( c; 1{01 · :'1 D 
+In the past seve ral years, the DoD has made s ignificant progress in establishin g policy and 
+strategic guidance for the adoptio n of A l technology, as depicted ia the figure below. As part of 
+that effort , the Departm ent h as also matured its ethics framework to a<.:count for Al's uniqu e 
+characteristics and the potential for unintended conseq uences. This is most clearly articulated in 
+the Do D's ado ption of its AI Ethical Princi ples. 
+2019 2020 
+_ ...... ...... ... 
+N~:;:.rr)~!. 
+;.r,e:ZOll Odobfl 201, f~0~o 0<:obet 2o:IO M<ly 2021 
+OoO Al Slrcrl.g y 011 l•porl on th• Doi> Al fducollon l"'lt'l;:nlln11 lAI In 
+StJo,_gy 0w 0epa,lfn4tnl f_,lcal Use of Al Prindp l•s to, Al Slfo .. gy he DoDMemc:, 
+Memo 
+lhe S:e,c,e lury of rektoM:d on vnctourliee 11-, t>,,fe,,.., lf~~~~~,~~I The Deoutv Secrelarv ot 
+Defense ,ecog 1f2ttt """"""Vollhe'l018 lf\t'IOvotiQ,, 8oon;l noe 0o0 la,n ,nlly l)ew,se reaffirm, the 
+lhe impOt ltme& cl OoO N Slroiagy. wt1lch (D18) ~opo1e1 Al OOOP11 lveN overor ct,·~ OoO Al Elhic:ot P,inc;pk>I new or>d ,.,,,.,,g1no kicntlfiod one ot ib IN"• Ellies P<lnclP'"' fo, elhlcot pmdpkt, strof~ to cutt ate Qr'(t 6ect1 lhe JIJC 10 
+IOCt\l'IOIOQIOI pAa, a, "loading In OoO ror lho dologn ond~te< tho on Al-roOdy IOl'C0 10 coomlnote oc11ons to 
+including AJ. 01 wet mlla,y ethics and N dOvetopmom , JAJC 01 D'Heoo occoteroro 1ho acoetefOI9 the 
+o~ lhe ne8d to, ,ote ty" and pledged lo deployment. and fo, coordi notfon of odOolloo ol At odop""""'1d "rlgO<oully deliniog mlculat e 1u ~ ond Vie OI Al to, b()U, ()se,slghl OnQ .,_,_,,olioo of tno mllo,y pt()l), gvlOnO~eJ IOt con1b0t or>d on~~~?~~. Of ~e,r>oruil)je N , ram, onllc[poiod in v,lng A l In O towflli ond non<ombOt 
+luture c0'111ic1'(,I" et"1cal,..,,,,,., . PVIPOle, . 
+Fig ure l: Advance ments in DoD Al Strategy and Policy 
+These Prin cipJes were developed as part of a robust , inclusive, and transparent study conducte d 
+by the Defense Innovation Board (DJB) and are based on the existing ethical , legal, and policy 
+framework under whic h the DoD has operate d for decades. Essentia l foundations for the DoD Al 
+Ethical Principles include the U.S. Constitution, Title 10 of the U.S. Code , the Law of War, 
+privacy and civil liberties prot ections for individuals , and long-standin g jntemational norms and 
+values. The DoD Al Ethica l Principles do not substitute or deviate from the Department 's 
+existing framework. Rather , these Principles comp lement DoD' s existing framework by offer ing 
+Al-specific guidance and seeki ng to outline appropriat e safegu ards for a techno logy that 
+con tin ues to be subjec t to rapid developmen ts. 
+Recogn izing tbe need to address potentia l unintended consequences from evo lving Al 
+tec hnology, the DoD was the first mili tary in the world to publi sh Al ethics principles and 
+continue s to lead in the prom otion of global Al standard s and nonns through the impl ementation 
+of RAI. Sho rtly thereafter , the DoD released its RAI Memo , which out lined ''the Depart ment's 
+holistic, integrated, and discip lined approach for RAI" and directe d spec ific near-term steps for 
+implementati on. This memo reaffirme d the Departme nt's commitm ent to the DoD AJ Ethica l 
+Principles, estab lished the RAI Foundational Tenets , and directe d the creation of the Do D's RAl 
+Strat egy and Implementation Pathwa y. 
+UNCLAS SIFIED 
+4 
+--- pdf_page_7 ---
+UNC LASSIFIED 
+DOD AI ETIDCAL PRINCIPLES 
+These principle s apply to all DoD AI capabilities , encompassing both combat 
+and non-combat applications. 
+RESPONSIBLE: DoD personnel will exercise appropriate levels of judgment 
+and care, while remaining responsible for the development, deployment, and use 
+of Al capabilities. 
+EQUITABLE: The Department will take deliberate steps to minimize 
+unintended bias in Al capabilities. 
+TRACEABLE: The Department ' s AI capabilities will be developed and 
+deployed such that relevant personnel possess an appropriate understanding of 
+the technology , development processes , and operationa l methods applicable to 
+AI capabilities, including with transparent and auditable methodo logies, data 
+sources, and design procedures and documentation . 
+RELIABLE: The Department's Al capabilities will have explicit, well-defined 
+uses, and the safety, security, and effectiveness of such capabilities will be 
+subject to testing and assurance within those defined uses across their entire 
+life-cycle s. 
+GOVERNABLE: The Department will design and engineer AI capabil ities to 
+fulfill their intended functions while possessing the ability to detect and avoid 
+unintended consequence s, and the ability to disengage or deactivate deployed 
+systems that demonstrate unintended behavior. 
+Source: DoD Memorandum, "Artific ial Intelligen ce Ethical Principle s for the Depar tment of 
+• Defense" (Feb 2020) 
+UNCLASSIFIED 
+5 
+--- pdf_page_8 ---
+UNCLASSIFIED 
+RESPONSIBLE Al l:'J DEFENSE 
+The DoD has decades of experience integrating new technology into military operations, for 
+example, from the early passive acoustic homing torpedoes and computers used during World 
+War 11 to the multitude of sophisticated platforms, sensors , and weapon systems of today. [n 
+doing so, the Department bas consistent ly followed robust processes to develop and incorporate 
+new technologies in a sate and responsible manner. Our approach to AI must be no different. 
+WHAT DOES A RESPONSIBLE Al 
+APPROACH MEAN? 
+RAT is a journe y to trust. lt is an 
+approach to design, develop ment, 
+deployment , and use that ensures the 
+safety of our systems and their ethical 
+employment. RAI manifests itself in 
+ethica l guidelines, testing standards, 
+accountability checks , employment 
+guidance , human systems integration, 
+and safety considerations. 
+RA[ is a dynamic approach to the design , 
+development , deployment, and use of AI capa bilities 
+that implements DoD Al Ethical Principles to 
+advance the trustworthiness of Al capabilities. RAI 
+emphasizes the necessity for technical maturity to 
+build effective , resilient, robust, reliable, and 
+explainab leAI, while recogniz ing the value of 
+multidisciplinary teams to advise on ethics, 
+accou ntability, and risk. At the same time, it supports 
+AI development at the speed the necessary to meet 
+the National Defense Strategy. RAI is the approach 
+for how the Deprutment must conduct AI design, 
+development , deployment , and use. 
+RAJ should not be viewed as a static end-state where the use of an AI capability is designated as 
+"responsible" and never revisited. Instead, RAT centers around continuous oversight , moving 
+beyond traditional performance metrics to include the aspects of workforce , culture, 
+organization, and governance that affect how AI is implemented throughout the product 
+lifecycle. RAl may look different at each stage but manifests throughout, presenting guidance 
+and standards from prototype to production to use. 
+Effective RAI adoption requires an organizational culture that implements RAT as an enabler for 
+AI adoption, rather than a set of barriers. For example , when it corn.es to AI for military 
+applications , a frequently repeated concern is that we must move quickly or risk losing on the 
+battlefield. Assessing ethical impacts of employing AI techno logy, along with evaluatio ns on the 
+trustworthiness of Al systems results in lh.orough ly tested and justifiab ly trusted systems ; 
+development and fielding strategies must account for these attributes. This cultural approach 
+should enable program manage rs to view RAI as an integral, iterative, and enabling part of AI 
+development. 
+With RAI, the DoD is able to guard against AI capabili ties that a.re applied unethically or 
+irresponsibly , including in combat scenarios. This approach enables developers and users to have 
+appropriate levels of trust in the J\I system. This trust in turn enables rapid adoption ru1d 
+operationa lization of new technology , strengt hening the Department's competitive edge. 
+UNCLASSIFIED 
+6 
+--- pdf_page_9 ---
+UNCLASSIFIED 
+D ES IRED E~ l> STATE 
+The Department's desired end state for RAI is trust. Trust in DoD Al will enable the Department 
+to modernize its warfighting capability across a range of combat and non-combat applications , 
+taking into account the needs of those internal and external to the DoD. Without trust, 
+warfighters and leade rs will not employ Al effectively and the American people will not support 
+the contin ued use and adoption of such technolo gy. The DoD is taking its commitment to RAJ 
+seriou sly and is actively pursuing methods to make AI implementation safer and more effective. 
+0 
+V) RESPONSIBLE 
+law of Armed w @ z Conflict -I 
+000 <t'. Q., 
+-.. v> Just War Theory u ...I ~ 
+<t'. 0::: z 
+EQUITABLE 
+~ uo Defense Ethic 
+:c3: 
+Rules £t: 
+Q., 
+z 
+0 - RAI 
+~ Govemance 
+.... z w Warftghter Trust 
+~ w .... Al Product I. 1-W Weapons 
+w~ ..... TRACEABLE Review 
+<( ....i <t'. 
+I <t'. 0::: Legal u 
+A. Acquisition 
+TRUST ~ lhcycle 
+-
+0 LL Requirements 
+w ► :c _.u Moral I- RELIABLE 
+Imperatives w 
+0 0 :::i -zo <( Moral Agency 
+i= 0.. 
+C GOVERNABlE V) 
+- Human 
+0 X Judgment 
+11 w C 
+.a Requirements 
+► 
+VaHdatton 
+(!) 
+w Responsible Al 
+~ 
+Ecosystem 
+~ 
+.... 
+U') Al Workforce 
+-c( 
+~ 
+Figure 2: Overview Depicting RAl's Journey to Trnst 
+Through RAI, the DoD will work to ensure that trust in an AT capab ility is appropriate, taking 
+into acco unt the cond itions in which it is to be deployed , among other relevant factors. Ln doing 
+so, a comprehensive risk management app roach w ill be employed that addresses syste m-level, 
+institutional , and socio-technica l risks. This provides for multidimens ional and contextual 
+assessment of risk in the design, deployment, development, and use of AI capabilities across a 
+wide range of scenarios. 
+To achieve the des ired end state, the DoD cannot rely solely on technological advancements. 
+Key factors of trustworthiness also include the ability to demonstrate a reliable governance 
+UNC LASSIFIED 
+7 
+--- pdf_page_10 ---
+UNCLASS IFIED 
+structure , as well as the pro vision of adequate training and educatio n of the workforce. These 
+efforts will help foster appropr iate levels of trust, enablin g the workforce to move from viewing 
+Al as an enigmatic and incompreh ens ible tec hnolo gy to understanding the capabil ities and 
+limitation s of this widely adopted and accep ted technology . Additionall y, DoD Al developers 
+and users will have confidence that measure s are in place to implemen t the DoD Al Ethical 
+Prin ciples and to report potential concerns. 
+Trust is also critical to our relationships w ith like-mind ed nations. The DoD is expa nding its 
+partnerships to set new international norms for Al usage that respect democr atic values such as 
+privacy and civil liberties , while defending against aggression. Utilizing the RAJ Tenets and 
+DoD Al Ethical Princ iples promote s ope n dialogue and proper govern ance of the use of /\I 
+capabi lities, allowing for easier integrat ion and m inimization of any poten tial issues betwee n 
+allies. 
+Developing or employin g Al irresponsib ly would also result in tangib le risks . Adversaries may 
+seek to ex ploit supply chain vulnerabilities and inject themselves into critical Al trainfog, testing, 
+and updaLe cyc les, potentiall y introducing flawed or expl oitable capabilities into consequential 
+sys tems. For examp le, relying on exte rnal parti es to generate, clean, and update DoD ' s 
+foundational data pipelin es without rigorous overs ight introduces vulnerabi lities that must be 
+sys tematic ally cons idered in the supply chain risk assessme nt proc ess . If developed without 
+appropr iate safeg uard s, even seemin gly benjgn A l capabilities , like algo rithm s trained to inform 
+deci sions that affect warfighters' fitness or promotion, can lead to adverse outcomes . 
+Ultimately, DoD cannot maintain its competitiv e advantage without transformin g itself into an 
+AI-ready and data-c entric organization , wit h RAJ as a promin ent featur e. The United S tates must 
+continue to demonstrate that a principled approach to AI, rooted in democratic values, represents 
+a path to peace , securit y, and societal progress. While the Departm ent has recog nized the need to 
+make key investments in our digita l infra structur e to advance Al. spec ia l consideration must be 
+paid to non-techn ical enablers such as our guiding policies and principle s. It is imperative that 
+the DoD adopts responsible behavior , proce sses , and objectives and implement s them in a 
+manner that reflects the Departm ent's commitment to its Al Ethical Principl es. fi'ailure to adop t 
+AI responsib ly puts our warfighters , the public, and our partnerships at risk. 
+UNCLASS IFIED 
+8 
+--- pdf_page_11 ---
+UNCL/\SS lflED 
+DOD RAI FOllNDATIO!\AL TENETS 
+As directed in the Deputy Secretary of Defense ' s RAJ memorandum , the Department w ill 
+implement RAT in accordance with the following foundationa l tenets: 
+• RAJ Governance ; 
+• Warfighter Trust ; 
+• Al Product and Acquisition Lifecycle ; 
+• Requirements Validation; 
+• Responsible Al Ecosystem ; and 
+• Al Workforce. 
+Descrip tion s of each RAI Fow1dational Tenet are taken from the DoD RAI Memo and goals 
+have been added to communicate the desired result in each priority area. 
+TENETl:RAIGOVERNANCE 
+Description: Ensure disciplined governance structur e and processes at the Component and DoD­
+wide levels for oversight and accountabi lity and clear ly art iculate DoD guidelines and policies 
+on RAI and associated incentives to acce lerate adoption of RAT within the DoD. 
+Goal: Modernize gove rnance structures and processes that allow for continuous oversight 
+of DoD use of Al, taking into account the context in which the technology will be used. 
+Governance structures and processes will enab le the appropriate assessmen t of risks and the 
+mitigation of unintended consequences or bias in AI capabilities. Users or developers will also 
+have clear mechani sms to implement the DoD AT Ethical Principles and to report potential 
+concerns . 
+TENET 2: WARFIGHTER TRUST 
+Description: Ensure warfight er trust by providing educa tion and training , estab lishing a test and 
+evaluation and verification and validation (TEVV) framework that integrates real -time 
+monitoring , algorithm confidence metrics , and user feedback to ensure trusted and trnstworthy 
+AI capab ilities. 
+Goal: Achieve a standard level of technological familiarity and proficiency for system 
+operators to achieve justified confidence io Al capabilities and AT-enabled systems. 
+Trustwort hi_ness is bolstered by the app licatio n of TEVV framewo rks that allow for the 
+monitoring of system performance , reliabilit y, unintended behavior , and failure modes before 
+fielding the system and during opera tion. The combination of these factors contr ibut es to a 
+greater unde rstandin g of an Al's capabili ties and limitat ions, whfoh will be critical for the 
+development of an Al-ready force. 
+UNCLASSIFIED 
+9 
+--- pdf_page_12 ---
+UNCLASSIFIED 
+TENET 3: Al PRODUCT AND ACQUISITION LIFECYCLE 
+Description : Develop tools, polici es, processes, systems, and guidance to synchronize enterprise 
+RAf implementation for the A l product throughout the acquis ition lifecycle through a systems 
+engineering and risk managem ent approach. 
+Goal: Exercise appropriate care in the Al product and acquisition lifecycle to ensure 
+potential Al risks are considered from the outset of an Al project, and efforts are taken to 
+mitigate or ameliorate such risks and reduce the likelihood of unintended consequences 
+while enabling Al development at the pace the Department needs to meet the National 
+Defense Strategy. This includes robust documentation to unde rstand , test, and acl on infonned 
+risk assessments, recognizing that needs will vary based on the level of technical maturity, 
+sensit ivity, and context in which the Al capab ility will be used. 
+TENET 4: REQUIREMENTS VALIDATION 
+Description : Incorporate RAJ into aJI applicab le AL requirements. including joint performance 
+requ irements establis hed and approved by the Joint Requirements Oversight Council , to ensure 
+RAI inclusion in appropriate DoD AT capabil ities. 
+Goal: Use the requirements validation process to ensure that capabilitie s that leverage AI 
+are aligned with operati onal needs while addressing relevant Al risks. System performance 
+requirements validation increases the reliability and safety of systems prior to and during 
+deplo yment. A formalized requir ement s validation proc ess also provides for better traceabil ity, 
+accountab ility, and both internal and exte rnal oversight. 
+TENET 5: R ES PON SIBLE AI ECOS YSTEM 
+Description : Build a robust national and global RAl ecosys tem to impro ve intergovernmental , 
+academic, industry , and stakeho lder collaboration , including cooperation with allies and coalition 
+par tners, and to advance global norms grounded in shared values. 
+Goal: Promote a shared understanding of responsible AI design, development, deployment , 
+and use through domestic and international engagement s. Such engage ment s will facilitate 
+know ledge-sharing excha nges with intergove nunental stake holders as well as partners in 
+industry , acade mic institutio ns, and civil society. Through this, the DoD will colJaborate on 
+common challenges, advance shared interests , promote democratic norms and vaJues, and 
+increase interoperability with partners. 
+TENET 6: AI WORKFORCE 
+Description : Build , train, equip, and retain an RAI- ready workforce to ensure robust talent 
+planning, recruitment , and capacity-bui lding meas ures, including workforce educati on and 
+training on RAJ. 
+UNCLASS IFIED 
+--- pdf_page_13 ---
+UNCLASSIFIED 
+Goal: Ensure that all DoD AI workforce members possess an appropriate understanding of 
+the technology, its development process , and the operational methods applicable to 
+implementjng RAJ commensurate with their duties within the archetype roles outlined in 
+the 2020 DoD Al Education Strategy. DoD Af workforce education and training should 
+prom ote consistent understandin g across all DoD sta keholders and build a culture within the 
+DoD that enables RAI. Proper training and educatio n must be accompanie d with strateg ies to 
+recruit and retain the personnel whom the DoD trains and educates. 
+UNCLASS IFIBD 
+11 
+--- pdf_page_14 ---
+UNCLASSIFIED 
+"We have a principled approach to Al that anchors everything 
+that this Department does; we call this Responsible Al and 
+that is the only kind of Al that we do. " 
+- Secretary o_/Defense Lloyd Austin (202 I) 
+UNCLASSlFlED 
+12 
+--- pdf_page_15 ---
+DOD RESPONSIBLE ARTIFICIAL 
+INTELLIGENCE IMPLEMENTATION 
+PATHWAY 
+--- pdf_page_16 ---
+UNCLASSIFIE D 
+OVERVIF,\,\ ' 
+As set forth in the RAI Memo , the Department will implement the DoD Responsible Al Strategy 
+in acco rdan ce with the following RAI Foundationa l Tenels: RAl Governance , Warfi.ghter Trust, 
+Al Product and Acquis ition Lifecycle , Requirements Validation , Responsible Al Ecosystem , and 
+Al Workforce. 
+Many of the actions directed in this Pathway build upon lhe Do D's existing infrastructure fo r 
+technology development , acquisition , governance , and legal review. Implementing RAI is not 
+possib le withou t sound softwa re engi neeri ng pract ices or robus t data management , for instance . 
+This document offers Al-spec ific guidan ce to build upon the Department 's existing infrastructure 
+by leveraging best practices in industry and academia and lays out a compre hensive roadmap to 
+acce lerate RAJ. 
+Implementing RA l in the DoD will not succeed with a set of rigid, one-size -fits-all requirements . 
+A fle xible approach is required to foster innovative thinking , as needs and complexity will vary 
+based on factors such as technical maturity and context in which AI will be used. For examp le, 
+project needs will change as DoD Componen ts progress through the AI Produc t Lifecyc le's four 
+phases: design , develop , deploy , and use (as shown in the figure below). It may not be necessar y 
+or possible to conduct a full risk anal ysis for bas ic A l research projects without a pro posed 
+operat iona l use case; howeve r, an AJ capability that is ready to deplo y in an operatio nal system 
+must undergo processe s to demonstrate that it meets OoD standar ds for safety , security, and 
+more. The Department should continually strive to have the right balance between responsibility, 
+speed , and ease of implementation of RAI while removing barrier s to adoption and acce ss to the 
+data, talent, and com pute/infrastructure req uired. 
+[__ 
+lnlalCe 
+ldentltty use case and i ls 
+retotiom hip with existing 
+system/copobHIHes 
+Design 
+lcleallon 
+Derermlne model 
+porome too and 
+estobllsh Al model 
+performance baseline 
+angainst e~isttng systems 
+Develop business case 
+for product and 
+c onduct dol o a udit 
+Trained end user 
+monitors outputs 
+Develop 
+ri Acqum hon / 
+U Development 
+Figure 3: Al Product Lifecycle 
+Apply metrtcs a nd 
+standards to evalua te 
+stsyem pe,ro,monce 
+(on on ongoing bmls , if 
+necessary) 
+DeplOy Al system 
+within existing 
+erwironment and 
+provide necessary 
+training to end -user 
+(or op eration 
+For each RAT Foundational Tenet , lines of effort (LOEs) accompany each with overarching 
+goals , corresponding Office(s ) of Primary Responsibility (OPRs) , and the estimated time horizon 
+for implementation where known. Wher e not already indicated , OPRs will be responsible for 
+UNCLASS IFfED 14 
+--- pdf_page_17 ---
+UNCLASS IFIED 
+desi!:,'1lating such implementation deadlines. Together, these LO Es d irect action s to implement 
+industry best practices and standards for Al developm ent and where new approache s are 
+necessa ry, task the Departme nt to advance the enterprise RAl impl ementation in acco rdan ce with 
+the RAI Tenets. 
+finally , this document reflect s an enterp rise-wide approach and therefor e applies to the Office of 
+the Secreta ry of Defense (OSO), the Military Departme nts , the Office of the Chairman of the 
+Joint Chiefs of Staff and the Joint Staff, the Comba tant Commands, the Office of the Insp ector 
+General of the DoD , the Defe nse Agencies, the DoD Fie ld Activities, and all other organizat ional 
+entities with in the DoD (hereafter referred to collec tively as the ··ooD Componen ts"). 
+ROL E OF CDAO, DOD COMPONENTS, DOD COMPONENT RAI LEADS, 
+AND RAI WORKING COUNCIL 
+As outl ined in th e RAl Memo , the Offic e of the C hief Digital and Artific ial Intelli gence Officer 
+(CDAO), as the successor organ ization to the Joint Artificial Imelligence Cen ter (JAJC ), serves 
+as the Depaitment' s lead for coo rdinating the implementat ion and overs ight of guidance and 
+policy on Al, includi ng RAT and the DoD Al Ethical Principle s. The CDAO is respons ible for 
+enab ling, assessing, and tracki ng the implementation of a DoD RAI ecosyste m, with support 
+from the DoD Components. This includes the Office of the Assistant to the Secretary of Defense 
+for Privacy, Civi l Liberties , and Transparency (ATS O(PCL T)), and the Joint Staff, and M ilitary 
+Departments, all of whom are represented throug h the RAl Working Council. 
+The RAJ Worki ng Council was created via the RAI Memo as an initial working body to ensure 
+Departm ent-wide input and coordination on the deve lopment of trus RAI S&I Pathway . With the 
+chartering of the CDAO and its governing processes, the RAI Working Council will be a 
+permanen t work ing group that reports to tbe CDAO's gove rning council, a 4-star level 
+gove rnan ce body run by the CDAO to oversee all aspects of data, analytics, and AI for the 
+Depa1trnent. This Pathwa y directs member organizations that comprise the current RAJ Working 
+Counc il to designate or hire RAJ Lead s who will be responsible for implement ing this DoD RA I 
+S&l Pathway in their respective organ izat ions and provide reporting on such progress , and 
+releva nt barriers for removal , to the RAJ Working Council. and up to the Deputy Secretary of 
+Defen se, when nece ssa ry, through the CDAO governing counc il. The RAJ Working Council 
+should updat e its member ship to reflect the designated RAJ Leads, fonna lize its role through a 
+charter as approved by the CDAO, and ass ist the CDAO in repo rting on the progress ofDoD­
+wide RAl implementation . 
+As the DoD 's lead for AI, the CDAO is designated withi n this Pathwa y as the OPR for many 
+Department-wide Al activities , especially those that involve the crea tion of Al-enabling tools to 
+be used across the DoD in support of its RAJ approac h. The CDAO should leverage the existing 
+technica l foundation set by the Do D's R&D enterpri se and the commerc ial sector to the greatest 
+UNCLASS IFI ED 15 
+--- pdf_page_18 ---
+UNCLASSIFIED 
+extent possible as it continues to coordinate the development of these tools with DoD 
+Component end users. 
+All DoD Components must ensure that their Al capabil ities are in alignment with th e DoD 
+Ethical Principles, and that their policies and practices enable RAI impl eme ntation. The outputs 
+of this RA! S&l Pathway will. offer tools and guidance for DoD Components to accomp lish this 
+task. For the purpose of this Pathway, select DoD Components have been designated as OPRs to 
+serve as a lead coordinat ing entity for their respective LO Es. Many of the LO Es are complex , 
+cross -cutt ing, and invo lve multiple external stakeholders and effectively completing them will 
+require Department -wide input based on existing policy authorities, staffing requirements, and 
+well-founded subjec t matter expertise. Those LOEs have been designated to OPRs believed 
+appropr iate to execute such coord ination. 
+IMPl ,EMF:i\'TATl()N APPR()A( 'II 
+CONDUCT CENTRALIZED COORDINATION OF RAI POLICIES AND 
+GUIDANCE WITH DECENTRALIZ ED EXECUTION 
+Centralized, DoD-wide coordin ation of DoD RAI policies and guidance is critical to establi shing 
+interoperabil ity, cons isten t guidelines and approaches , sharing best practices , and identifying 
+opportunities for collaboration. At the same time , DoD Components must optimize integration of 
+RAI w ithin the context of their exist ing workflows , structu res, and processes. This approach of 
+top-down policy and coo rdin ation with bottom-up execution and innovation allows for tailoring 
+RAI integration to the uses and needs of eac h DoD Component while increasing overall adopt ion 
+rate. The act ions recommended in this Pathway identify OPRs to ensure adoption across the 
+Department at all levels. 
+UTLIZE A COMPREHENSIVE RISK MANAGEMENT APPROACH 
+Due to cont inuous advanceme nts in Al research and the dynamic nature of emerging Al 
+strateg ies, an approach to AT development that incorporates existing risk management best 
+practices affords the DoD the flexibility to leverage cutting-edge technology while adhering to 
+our standards for safety, reliability, and eth ics. This includes the continuo us identification , 
+evalua tion , and mitigation of risks- including risks from inact ion or oppo rtunity costs-across 
+the entire product lifecycle and well beyond dep loyment. Notably, this Pathway also recognizes 
+the importance of context when tailoring r isk mitigation actio ns and requesting accompanying 
+documentation. Data and mode l documentation , product risk reviews, and post-deployment 
+monitoring and training arc critical facto rs of RAJ; however, the level of attention and risk 
+mitigation efforts m ust be scalab le based on the level of technical maturity , sensitivity , or risk 
+associated with AI projects. 
+FOCUS ON RESOURCING 
+UNCLASSIFIED 16 
+--- pdf_page_19 ---
+UNCLASSIF IED 
+DoD Components w ill identify the resources as well. as the approp riate manpower - personnel , 
+expertise, and experience-to carry out fully the RAT activ ities identified in this Pathway. In 
+order to achieve enterpr ise-wide implementation, DoD Com ponents are responsible for 
+establi shing and maintaining the resources and manpower required to comp ly with these policies 
+and processes. A balanced approach is needed to ensure the long-term vision is achieved. the 
+near-term impact is delivered , and time is provided to program appropriate manpower and 
+financ ial resources. This approac h will enable alignme nt across the DoD, while increas ing the 
+RAI literacy of the total force, decreasing adoptio n barriers, and cata lyzing a broader cult ural 
+change. 
+MAINTAIN AN ITERATIVE APPROACH IN LINE WITH EMERGING 
+RESEARCH 
+This RAI Strategy and Implementation Pathway will require updating tools, method s, and best 
+practices to keep pace with state-of-the-art practices for Al development. As progress is made 
+along the identified lines of effort, iteration s of such resources should be expected in order for 
+the DoD to advance effective implementation of RAl and maintain its status as a globa l 
+democrat ic nonn -setter. The Department w ill continue its AI research agenda, drawing upon 
+advancements from industty and academ ic partners , to produce well-tested tools and 
+methodologies that actively advance RAI. Updates should be expec ted as advancement s in 
+research and technology emerge, changes in departme nt struct ures occur, and other 
+developments dictate. 
+UNCLASSIFIED 17 
+--- pdf_page_20 ---
+RESPONSIIII 
+-c( 
+ar: 
+0 II. EQUITABLE 
+Cl) 
+w .... 
+A. 
+-u TRACEABLE 
+z -ar: 
+A. 
+.... 
+c( 
+u 
+Rl!LIAILE 
+-:c ~ I-w 
+8 GOVERNAIL! 
+C 
+UNCLASSIF IED 
+Ensure warfighter trust by providing education and training, estab­
+lishing a test and evaluation and verification and validation 
+framework that integrates real-time monitoring , algorithm confi­
+dence metrics, and user feedback to ensure trusted and trust­
+worthy Al capabilities. 
+Incorporate RAI into all applicable Al requirements, including 
+joint performance requirements established and approved by 
+the Joint Requiremen ts Oversight Council , to ensure RAI inclusion 
+in appropria te DoD Al capabilities. 
+Build, train, equip, and retain an RAl-ready workforce to ensure 
+robust talent plann ing, recruitment. and capacity-building mea­
+sures, including workforce education and training on RAI. 
+Figure 4: Summary of the DoD Ethical Principles for AI and Responsible AI Tenets 
+UNCLASS IFIED 18 
+--- pdf_page_21 ---
+UNC LASS IFIED 
+IM PLE,·I EI\TATION LIN f.S OF F: FF ORT 
+TENETl:RA I GOVERNANCE 
+Description: Ensure disciplin ed governance structure and processes at the Component and DoD­
+w ide levels for oversight and accounta bility and clearly articulate DoD guidelines and policies 
+on RAI and associated incentives to accelerate RA I adoption w ithin the DoD. 
+LOE 1.1: BUILD ORGANIZATIONAL CAPACITY TO IMPROVE 
+OVERSIGHT AND ACCOUNTABILITY OF DOD AI. 
+Lines of Effort OPR 
+LOE 1.1.1: Fully staff the CDAO RAI Office wit h expert ise in Al CDAO 
+technology , policy , acquisition , work.force, and governance . 
+LOE l.1.2: RAI Working Counc il member organizations will RAI Working Council 
+designate or hire DoD Compo nent RAI Leads to lead the Members 
+implementatio n of this DoD RAJ S&I Path way with.in their 
+respective Components. DoD Component RAI Leads will be 
+provided with the adequat e authorities , staffing , and resotu-ces to 
+fulfill all relevant duties. 
+LOE 1.1.3: As part of DoD-wide metrics to measure Al CDAO 
+transformation , develop metrics to measure RAf adoption , includin g 
+progress on individual LOEs identified in th.is DoD RAl S&I 
+Pathway , and report progress as required to the CDAO governi ng 
+council. 
+LOE 1.1.4: Develop DoD Component-specific metrics as informed DoD Component RAI 
+by LOE l.1.3 to measure RAJ adoption , includin g progress on Leads 
+individual LOEs identified in th.is DoD RA.I S&T Pathway, and 
+estab lish repo rting mechanism s. 
+LOE 1.1.S: Appropr iately staff DoD- and Component -leve l internal DoD Inspector General; 
+oversight bodies to ensure appro priate expert ise is in place to conduc t ATSD(PCLT); DOT &E; 
+robust and effect ive ove rsight of Do D's use of AI under the is roles D,DTE&A 
+and authorities. 
+LOE 1.1.6: Identify methods for users and developers to report DoD Component RAJ 
+concerns about the impl eme ntation of the DoD Al Ethical Principles. Leads 
+Ensure such methods are clearly communicate d to users and 
+developers. 
+LOE 1.1.7: Update the Department ' s existing gove rnance framework CDAO 
+for Al development and delivery. 
+UNCLASSIFIED 19 
+--- pdf_page_22 ---
+UNCLASSIFIED 
+LOE 1.2: PROVIDE TOOL S AND RESO URCES TO SUPPORT A DOD-WID E 
+RAJ GOVERNANCE STRUCTU RE, INCL UDING THROUGH COORDINATED 
+AND R EGULAR KNOWLEDGE-SHARING. 
+Lines of Effort OPR 
+LOE 1.2.1: Report to the CDAO (no less than once per year) DoD Component RA [ 
+exemp lary Al use cases, identifying best practices, failure modes, and Leads 
+risk mitigation strateg ies, including after -action reports as 
+appropr iate. Identify capabili ty use cases , trai ning in system 
+capa bilities, and docwnentati on on how to employ and retire sys tems 
+responsibly , in order to supp011 the safe and responsib le employme nt 
+of AI capab ilities by operators. Includ e any reports of concerns per 
+LOE 1.1.6. 
+LOE 1.2.2: Create and maintain a DoD-wide central repository of CDAO 
+exemplary AI use cases and any supplementary information to 
+support coordinated and regular knowledge-shar ing of best pract ices 
+and risk mitigation. 
+LOE 1.2.3: Within six months of thjs Pathway·s approva l, report to DoD Compone nt RAl 
+the CDAO any perce ived signifi cant barr iers - including gaps in Leads 
+infrastructure required to support tracea bility, auditability , risk 
+analysis , and forensics , and recommen ded hardwa re, software , or 
+other infrastructure needs - necessary to fulfi ll RAI and AI 
+require ments and best pract ices. Update annua lly. 
+LOE 1.2.4: To maintain the DoD AI Inventory in accordance with DoD Compone nt RAJ 
+Public Law 116-260 House Report Divisio n C, identify and report all Leads in coord ination with 
+DoD AI activi ties to the CDAO, including program's appropriation , CDAO, OUSD(A&S) , and 
+project , and budget line numbe r; current and future years ' defense OUSD(R&E) 
+program funding; names of academ ic or industry mission partners, if 
+applicabl e; and any planned transition partners, if applicable . 
+LOE 1.3: ENSU RE THAT RAl IS INCOR PORA TED IN DOD 'S STRAT EGIC 
+PLANNING EFF ORTS. 
+Lines of Effort OPR 
+LOE 1.3.1: incorporate RAl and eleme nts of the DoD RAI S&l CDAO 
+Pathway as approp riate into the DoD strateg ies for data, analyti cs, 
+and Al adoption. 
+UNC LASSIF IED 20 
+--- pdf_page_23 ---
+UNCLASS IFIED 
+LOE 1.3.2: Ensure RAT is incorporated into the Defense Planning OUSD(P) 
+Guidance for resourcing planni ng pw-poses includin g but not limited 
+to manpower , too ls, education and training, and post-deployment 
+monitoring and retraining. 
+LOE 1.3.3: Identify implemen ting RAI as a priority in DoD Milita ry Military Department RAT 
+Depa11ment AI strategies and plans and incorporate Service-specific Leads 
+actions as appropriate. 
+LOE 1.4: UPDATE D0D'S REVIEW PROCESSES FOR WARFIGHTING 
+CAPA BILITI ES TO SUPPORT IMPL EMENTATI ON OF THE DOD AI 
+ETH ICAL PRIN CIPLES . 
+Lines of Effo rt OPR 
+LOE 1.4.1: Explore whether a review procedure is needed to ensuTe CDAO in coord ination 
+DoD warfighting capabilities will be consistent with the DoD AI with the Military 
+Ethical Principles. Provide a recom mendation to the Deputy Department RAT Leads , 
+Secretary of Defense on whether such a review procedure should be OUSD(P), and DoD OGC 
+created, identifying any gaps in exist ing processes, gaps in requisite 
+policies supplemen ting the DoD AI Ethical Principles , and potential 
+in1pacts on develo pment and fielding timelines if such review is 
+required. Exp lore whethe r or how Legal rev iew processes can support 
+implementation of the DoO Al Ethical Princip les, including the 
+review of the lega lity of weapons per DoDDs 2311.0 I, 5000.01 , 
+3000.03E, and 3000 .09. 
+LOE 1.4.2: Update or suppleme nt DoDD 3000.09 with guidance on OUSD(P) in coordination 
+the OoO A l Ethical P,i nciples. include any additional information withCDAO 
+requirements to fulfill tbe DoD Al Ethical Principles as part of the 
+senior review package . 
+UNCLASS IFIED 21 
+--- pdf_page_24 ---
+UNCLASSIFIE D 
+TENET 2: WARFIGHTER TRUST 
+Description: Ensure warfigh ter trust by providing educa tion and training , esta blishing a test and 
+eval uation and verification and validation framework that integrates real-time monitoring , 
+algorithm confidence metrics , and user feedback to ensure trusted and trustworthy AI 
+capabi lities. 
+LOE 2.1: BUILD A ROBUST TEVV ECOSYSTEM AND ACCOMPANYING 
+INFRASTRUCTURE TO DEVELOP AND FIELD AI CAPABILITIES SAFELY 
+AND SECURELY. 
+Lines of Effort OPR 
+LOE 2.1.1: Develop a TEW framework to articula te how test and CDAO in coordination 
+evaluat ion (T &E) should be intertwined across an Al capability's with OUSD(R&E) and 
+lifecycle and pathways for continuous testing and standards for DOT&E 
+documentation and reporting. Identify synergies between AI T &E 
+and traditional T&E (e.g. effectiveness, suitability, secur ity, safety) 
+to empowe r progra ms to streamline T&E efforts. Includ e guidance 
+for operational izing RAT principles into testable conjectures for 
+com mon technologies, mission domain s, and uses cases. 
+LOE 2.1.2 : Develop or acquire Al-related T&E tools to be used as a CDAO in coordination 
+resource for Al developers and testers. This AI T &E Toolkit shall with OUSD(R&E) and 
+draw upon best practices and innovative research from industry and DOT&E 
+the academ ic commun ity, as well as commercially availabl e 
+technology where approp riate. The Toolkit will be made widely 
+available to DoD users and shall include: 
+a) Tangible , concrete guidance for PMs, teste rs, and other 
+relevant T &E stakeho lders about how to implement RAJ T &E 
+throughout a capability 's lifecycle; 
+b) A T&E Master Plan temp late for A1 and a set of temp lates 
+for test plans; 
+c) A library of T &E metrics for AI system s, including metric s 
+for uustworthiness and confidence; and 
+d) Necessary tools and technologies required to detect both 
+natural degrada tion of and adversarial attacks on Al, 
+including those to detect vario us attacks on AI systems, and 
+that can noti fy testers or operators when such attacks are 
+occurring. 
+UNCLASS IFIED 22 
+RULES:
+- excerpt_original must be verbatim from the named locator after only Unicode/whitespace normalization.
+- One checkable fact or explicit claim per candidate; output fewer candidates when evidence is insufficient.
+- Do not turn strategy goals into deployment_event or test_result.
+- Participation in an exercise is not proof of combat effectiveness.
+- Do not generate hypotheses, viewpoints, or a case conclusion.
+JSON_REPAIR: 只修复JSON语法、缺失的允许字段或字段类型；不得补写事实、改写excerpt_original或新增确定性元数据。修复后仍只能输出严格JSON数组。

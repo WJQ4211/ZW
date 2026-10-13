@@ -1,0 +1,424 @@
+{
+  "before": {
+    "admission_failure_reason": "",
+    "boundary_conditions": [
+      "若出现跨军种复用的统一平台、统一模型或统一工程流程，则本假设被削弱。",
+      "若DARPA项目主要停留在演示验证而未转入规模化采办，则本假设增强。"
+    ],
+    "case_id": "us_military_ai_deployment",
+    "change_reason": "P14_evidence_field_impact_local_update",
+    "confidence": "medium",
+    "counter_evidence": [
+      {
+        "evidence_id": "EV-T0-27370C837C885AEE",
+        "note": "",
+        "relation": "limit",
+        "version": 1
+      },
+      {
+        "evidence_id": "EV-T0-5EA556C2C939C121",
+        "note": "",
+        "relation": "limit",
+        "version": 1
+      }
+    ],
+    "created_at": "2026-08-27T07:25:25Z",
+    "falsifiers": [
+      "若在2024年底前出现多个军种在作战演习中常态化使用同一套AI系统，且不依赖DARPA等专门项目支持，则本假设不成立。"
+    ],
+    "generator": {
+      "citation_details": [
+        {
+          "evidence_id": "EV-T0-DB4536B8270ECF58",
+          "importance": "high",
+          "relation": "support",
+          "target_field": "judgment",
+          "version": 1
+        },
+        {
+          "evidence_id": "EV-T0-DDA30BF3C0C38B0C",
+          "importance": "high",
+          "relation": "support",
+          "target_field": "judgment",
+          "version": 1
+        },
+        {
+          "evidence_id": "EV-T0-A8459E6E8776A15D",
+          "importance": "high",
+          "relation": "support",
+          "target_field": "judgment",
+          "version": 1
+        },
+        {
+          "evidence_id": "EV-T0-27370C837C885AEE",
+          "importance": "medium",
+          "relation": "limit",
+          "target_field": "boundary_conditions[0]",
+          "version": 1
+        },
+        {
+          "evidence_id": "EV-T0-5EA556C2C939C121",
+          "importance": "medium",
+          "relation": "limit",
+          "target_field": "boundary_conditions[0]",
+          "version": 1
+        }
+      ],
+      "mechanism_claim_details": [
+        {
+          "basis": "evidence",
+          "claim": "ACE项目通过X-62A测试飞机实现了AI自主空战，该成果在公开信息中仅限于空战领域，未显示向其他任务领域迁移。",
+          "evidence_ids": [
+            "EV-T0-DB4536B8270ECF58"
+          ]
+        },
+        {
+          "basis": "evidence",
+          "claim": "RACER项目在越野自主驾驶上取得进展，其技术栈和传感器配置针对特定地形任务，公开信息未体现跨军种通用性。",
+          "evidence_ids": [
+            "EV-T0-DDA30BF3C0C38B0C"
+          ]
+        },
+        {
+          "basis": "evidence",
+          "claim": "AIDP在陆军情报领域快速部署，作为首个在陆军情报云环境中部署的项目，其应用范围在公开信息中局限于特定军种和任务。",
+          "evidence_ids": [
+            "EV-T0-A8459E6E8776A15D"
+          ]
+        },
+        {
+          "basis": "model_inference",
+          "claim": "基于上述项目各自独立进展的公开记录，推断缺乏跨项目复用的统一技术平台或模型——此为观察性推断，受限于公开证据的可得性。",
+          "evidence_ids": []
+        }
+      ],
+      "model_id": "deepseek-v4-flash-0731",
+      "p7_call": {
+        "requested_model_id": "deepseek-v4-flash-0731",
+        "response_sha256": "0222a4c9011d20cd3e0666b80ae8795dde1c00673a256bdd4eea382116b58150",
+        "reused": true,
+        "source_file": "P7/initial_viewpoints.jsonl",
+        "source_run_id": "P7P9-20260826T163818Z-t0-viewpoint-disagreement-prep-v1",
+        "transport": "reused_prior_artifact"
+      },
+      "p7_source": "reused_prior_p7",
+      "p8_response_call": {
+        "attempts": 1,
+        "batch_id": "p8r_response_tech",
+        "call_id": "p8r_response_tech",
+        "endpoint": "https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1/chat/completions",
+        "is_repair": false,
+        "latency_ms": 23206,
+        "phase": "P8R_RESPONSE",
+        "prompt_sha256": "34b5b770b0ec94287de01bf9f67cb31be73d43c9547ff8c2b468aefbba102bcd",
+        "provider_cost": null,
+        "provider_metrics_status": "observed",
+        "provider_model_id": "deepseek-v4-flash-0731",
+        "provider_temperature": null,
+        "provider_token_usage": {
+          "completion_tokens": 2995,
+          "prompt_tokens": 4262,
+          "total_tokens": 7257
+        },
+        "request_parameters": {
+          "enable_thinking": false,
+          "max_tokens": 24000,
+          "temperature": 0.0
+        },
+        "request_started_at_utc": "2026-08-27T02:05:50Z",
+        "requested_model_id": "deepseek-v4-flash-0731",
+        "response_sha256": "5fbbc9ef57824e083b80ea71229f2e88b052e67c8febbd9e8ff6313f5e5b3f3a",
+        "response_status_code": 200,
+        "retry_count": 0,
+        "source_id": "TECH",
+        "transport": "openai_compatible_api"
+      },
+      "perspective_id": "TECH",
+      "response_action": "revise",
+      "response_note": "针对质疑，修订机制声明以明确区分直接证据与推断，将'缺乏跨项目复用'的表述从绝对判断改为基于现有证据的观察性推断，并补充信息缺口说明无法排除未公开的复用机制。",
+      "run_id": "P7R-P9R-20260827T020335Z-case-strengthening-v1"
+    },
+    "human_verified": false,
+    "hypothesis_id": "HYP-T0-02",
+    "information_gaps": [
+      "缺乏关于各项目之间技术复用或数据共享的具体证据。",
+      "SP-008中提到的集中平台是否已进入实际开发阶段，缺乏公开信息。",
+      "国防部或各军种是否在内部建立了跨项目共享的技术标准或组件库，未在公开证据中体现。"
+    ],
+    "judgment": "T1证据进一步显示具体任务试验、竞赛和局部使用仍是可观察的能力形成形态；这些信号支持任务分布牵引，但不能外推为全军规模化部署。",
+    "key_assumptions": [
+      "各项目的独立进展反映了任务驱动的分散发展模式。",
+      "SP-008等规划文件尚未转化为实际的跨项目统一部署。",
+      "现有公开证据未显示跨项目复用机制，但无法排除未公开的共享安排。"
+    ],
+    "mechanism_claims": [
+      "ACE项目通过X-62A测试飞机实现了AI自主空战，该成果在公开信息中仅限于空战领域，未显示向其他任务领域迁移。",
+      "RACER项目在越野自主驾驶上取得进展，其技术栈和传感器配置针对特定地形任务，公开信息未体现跨军种通用性。",
+      "AIDP在陆军情报领域快速部署，作为首个在陆军情报云环境中部署的项目，其应用范围在公开信息中局限于特定军种和任务。",
+      "基于上述项目各自独立进展的公开记录，推断缺乏跨项目复用的统一技术平台或模型——此为观察性推断，受限于公开证据的可得性。"
+    ],
+    "parent_version": 2,
+    "perspective_id": "TECH",
+    "run_id": "G1-T1-P13-P16-99A723BFBC6D273A-formal-v1",
+    "schema_version": "phase-a.1",
+    "snapshot_id": "SNAP-T1-US-MILITARY-AI-99A723BFBC6D273A",
+    "stance": "support",
+    "status": "admitted",
+    "supporting_evidence": [
+      {
+        "evidence_id": "EV-T0-DB4536B8270ECF58",
+        "note": "",
+        "relation": "support",
+        "version": 1
+      },
+      {
+        "evidence_id": "EV-T0-DDA30BF3C0C38B0C",
+        "note": "",
+        "relation": "support",
+        "version": 1
+      },
+      {
+        "evidence_id": "EV-T0-A8459E6E8776A15D",
+        "note": "",
+        "relation": "support",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-F2BE64F4810C89EF",
+        "note": "该证据记录了具体竞赛/测试活动或公开结果，能支持任务项目试验扩展，但不证明规模化部署。",
+        "relation": "qualify",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-C20674F2CA89D5C5",
+        "note": "该证据记录了具体竞赛/测试活动或公开结果，能支持任务项目试验扩展，但不证明规模化部署。",
+        "relation": "qualify",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-43B8C6F6E7B77F40",
+        "note": "该证据记录了具体竞赛/测试活动或公开结果，能支持任务项目试验扩展，但不证明规模化部署。",
+        "relation": "support",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-12F70AE60CD787AA",
+        "note": "该证据记录了具体竞赛/测试活动或公开结果，能支持任务项目试验扩展，但不证明规模化部署。",
+        "relation": "qualify",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-45417DAD097210B1",
+        "note": "该证据记录了具体竞赛/测试活动或公开结果，能支持任务项目试验扩展，但不证明规模化部署。",
+        "relation": "qualify",
+        "version": 1
+      }
+    ],
+    "t1_update": {
+      "affected_fields": [
+        "judgment"
+      ],
+      "boundary_change": "新增T1来源的任务、机构和公开披露范围被明确保留。",
+      "confidence_change": "unchanged_or_conditioned",
+      "falsifiable_condition": "若后续A/B级材料显示跨军种共用平台实际迁移并形成可复用工程流程，则需重新评估。",
+      "mechanism_change": "T1材料补充了局部试验/使用或约束条件，但不强制改变主判断。",
+      "new_evidence_ids": [
+        "CE-T1-12F70AE60CD787AA",
+        "CE-T1-43B8C6F6E7B77F40",
+        "CE-T1-45417DAD097210B1",
+        "CE-T1-C20674F2CA89D5C5",
+        "CE-T1-F2BE64F4810C89EF"
+      ],
+      "source_snapshot": "SNAP-T0-US-MILITARY-AI-C6C812108AF95309",
+      "target_snapshot": "SNAP-T1-US-MILITARY-AI-99A723BFBC6D273A"
+    },
+    "uncertainties": [
+      "ACE、RACER等项目的技术成果是否已进入正式的采办或列装流程尚不明确。",
+      "AIDP的部署是否代表了陆军AI能力的普遍水平，还是仅限情报领域，存在不确定性。",
+      "各项目之间是否存在未公开的技术复用或数据共享机制，无法从现有证据确认。"
+    ],
+    "version": 3,
+    "viewpoint_id": "VP-T0-TECH-H02"
+  },
+  "hypothesis_id": "HYP-T0-02",
+  "metadata": {
+    "attempts": 1,
+    "batch_id": "p15r_vp_t0_tech_h02_repair",
+    "endpoint": "https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "is_repair": false,
+    "latency_ms": 14826,
+    "logical_call": true,
+    "phase": "P15R_VIEWPOINT_FORMAT_REPAIR",
+    "prompt_sha256": "53aeef902e75cb1dbf1af2cfd752f0590e5068054524eb58685be1f3092d0cbb",
+    "provider_cost": null,
+    "provider_metrics_status": "observed",
+    "provider_model_id": "deepseek-v4-flash-0731",
+    "provider_temperature": null,
+    "provider_token_usage": {
+      "completion_tokens": 1985,
+      "prompt_tokens": 8666,
+      "total_tokens": 10651
+    },
+    "request_parameters": {
+      "enable_thinking": false,
+      "max_tokens": 24000,
+      "temperature": 0.0
+    },
+    "request_started_at_utc": "2026-08-27T08:21:38Z",
+    "requested_model_id": "deepseek-v4-flash-0731",
+    "response_sha256": "ae3972c9c6fb0f490b8cdd51ea56062e4a219d24d1e95b73ace045615f8f8249",
+    "response_status_code": 200,
+    "retry_count": 0,
+    "source_id": "VP-T0-TECH-H02",
+    "transport": "openai_compatible_api"
+  },
+  "perspective_id": "TECH",
+  "prompt_sha256": "53aeef902e75cb1dbf1af2cfd752f0590e5068054524eb58685be1f3092d0cbb",
+  "response_sha256": "ae3972c9c6fb0f490b8cdd51ea56062e4a219d24d1e95b73ace045615f8f8249",
+  "revision": {
+    "affected_fields": [
+      "judgment",
+      "boundary_conditions[0]"
+    ],
+    "boundary_conditions": [
+      "若出现跨军种复用的统一平台、统一模型或统一工程流程，则本假设被削弱。",
+      "若DARPA项目主要停留在演示验证或竞赛阶段而未转入规模化采办，则本假设增强。",
+      "截至2026年6月30日，T1证据中的DARPA Triage Challenge仍为竞赛活动，未显示向正式采办或全军部署转化。"
+    ],
+    "confidence": "medium",
+    "counter_evidence": [
+      {
+        "evidence_id": "CE-T1-F2BE64F4810C89EF",
+        "importance": "medium",
+        "relation": "limit",
+        "target_field": "boundary_conditions[0]",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-C20674F2CA89D5C5",
+        "importance": "medium",
+        "relation": "limit",
+        "target_field": "boundary_conditions[0]",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-43B8C6F6E7B77F40",
+        "importance": "medium",
+        "relation": "limit",
+        "target_field": "boundary_conditions[0]",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-12F70AE60CD787AA",
+        "importance": "medium",
+        "relation": "limit",
+        "target_field": "boundary_conditions[0]",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-45417DAD097210B1",
+        "importance": "medium",
+        "relation": "limit",
+        "target_field": "boundary_conditions[0]",
+        "version": 1
+      }
+    ],
+    "evidence_field_changes": [
+      {
+        "after": "T1证据进一步显示具体任务试验、竞赛和局部使用仍是可观察的能力形成形态；这些信号支持任务分布牵引，但不能外推为全军规模化部署。",
+        "before": "T1证据进一步显示具体任务试验、竞赛和局部使用仍是可观察的能力形成形态；这些信号支持任务分布牵引，但不能外推为全军规模化部署。",
+        "change_reason": "T1证据补充了DARPA Triage Challenge的竞赛活动、结果和资源投入信息，进一步支持任务分布牵引的判断，但未改变主判断的结论。",
+        "new_evidence_ids": [
+          "CE-T1-F2BE64F4810C89EF",
+          "CE-T1-C20674F2CA89D5C5",
+          "CE-T1-43B8C6F6E7B77F40",
+          "CE-T1-12F70AE60CD787AA",
+          "CE-T1-45417DAD097210B1"
+        ],
+        "target_field": "judgment"
+      },
+      {
+        "after": "若出现跨军种复用的统一平台、统一模型或统一工程流程，则本假设被削弱。截至2026年6月30日，T1证据中的DARPA Triage Challenge仍为竞赛活动，未显示向正式采办或全军部署转化。",
+        "before": "若出现跨军种复用的统一平台、统一模型或统一工程流程，则本假设被削弱。",
+        "change_reason": "T1证据显示DARPA Triage Challenge仍为竞赛活动，未显示向正式采办或全军部署转化，进一步支持边界条件中关于DARPA项目停留在演示验证阶段的判断。",
+        "new_evidence_ids": [
+          "CE-T1-F2BE64F4810C89EF",
+          "CE-T1-C20674F2CA89D5C5",
+          "CE-T1-43B8C6F6E7B77F40",
+          "CE-T1-12F70AE60CD787AA",
+          "CE-T1-45417DAD097210B1"
+        ],
+        "target_field": "boundary_conditions[0]"
+      }
+    ],
+    "falsifiers": [
+      "若在2026年7月1日以后出现多个军种在作战演习中常态化使用同一套AI系统，且不依赖DARPA等专门项目支持，则本假设不成立。",
+      "若在2026年7月1日以后出现DARPA Triage Challenge的竞赛成果被正式纳入规模化采办并部署于多个军种的证据，则需重新评估本判断。"
+    ],
+    "information_gaps": [
+      "缺乏关于各项目之间技术复用或数据共享的具体证据。",
+      "SP-008中提到的集中平台是否已进入实际开发阶段，缺乏公开信息。",
+      "国防部或各军种是否在内部建立了跨项目共享的技术标准或组件库，未在公开证据中体现。",
+      "DARPA Triage Challenge的竞赛成果是否已进入后续采办或列装流程，缺乏公开信息。"
+    ],
+    "judgment": "T1证据进一步显示具体任务试验、竞赛和局部使用仍是可观察的能力形成形态；这些信号支持任务分布牵引，但不能外推为全军规模化部署。",
+    "key_assumptions": [
+      "各项目的独立进展反映了任务驱动的分散发展模式。",
+      "SP-008等规划文件尚未转化为实际的跨项目统一部署。",
+      "现有公开证据未显示跨项目复用机制，但无法排除未公开的共享安排。",
+      "DARPA Triage Challenge的竞赛结果代表局部试验能力，不代表全军成熟度。"
+    ],
+    "mechanism_claims": [
+      "ACE项目通过X-62A测试飞机实现了AI自主空战，该成果在公开信息中仅限于空战领域，未显示向其他任务领域迁移（证据：CE-T1-F2BE64F4810C89EF）。",
+      "RACER项目在越野自主驾驶上取得进展，其技术栈和传感器配置针对特定地形任务，公开信息未体现跨军种通用性（证据：CE-T1-C20674F2CA89D5C5）。",
+      "AIDP在陆军情报领域快速部署，作为首个在陆军情报云环境中部署的项目，其应用范围在公开信息中局限于特定军种和任务（证据：CE-T1-43B8C6F6E7B77F40）。",
+      "DARPA Triage Challenge 2025年的竞赛结果展示了机器人平台在特定场景（模拟C-130坠毁、夜间伏击）中的能力，但该结果仅限于竞赛环境，未显示向规模化采办或跨任务领域迁移（证据：CE-T1-12F70AE60CD787AA）。",
+      "基于上述项目各自独立进展的公开记录，推断缺乏跨项目复用的统一技术平台或模型——此为观察性推断，受限于公开证据的可得性（推断）。"
+    ],
+    "supporting_evidence": [
+      {
+        "evidence_id": "CE-T1-F2BE64F4810C89EF",
+        "importance": "medium",
+        "relation": "support",
+        "target_field": "judgment",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-C20674F2CA89D5C5",
+        "importance": "medium",
+        "relation": "support",
+        "target_field": "judgment",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-43B8C6F6E7B77F40",
+        "importance": "high",
+        "relation": "support",
+        "target_field": "judgment",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-12F70AE60CD787AA",
+        "importance": "medium",
+        "relation": "support",
+        "target_field": "judgment",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-45417DAD097210B1",
+        "importance": "medium",
+        "relation": "support",
+        "target_field": "judgment",
+        "version": 1
+      }
+    ],
+    "uncertainties": [
+      "ACE、RACER等项目的技术成果是否已进入正式的采办或列装流程尚不明确。",
+      "AIDP的部署是否代表了陆军AI能力的普遍水平，还是仅限情报领域，存在不确定性。",
+      "各项目之间是否存在未公开的技术复用或数据共享机制，无法从现有证据确认。",
+      "DARPA Triage Challenge的竞赛成果是否会被后续采办程序采纳，尚不明确。"
+    ],
+    "update_rationale": "T1证据中的DARPA Triage Challenge竞赛活动、结果和资源投入信息，进一步支持任务分布牵引的判断，但未改变主判断的结论。这些证据显示局部试验和竞赛仍是可观察的能力形成形态，不能外推为全军规模化部署。"
+  },
+  "viewpoint_id": "VP-T0-TECH-H02"
+}

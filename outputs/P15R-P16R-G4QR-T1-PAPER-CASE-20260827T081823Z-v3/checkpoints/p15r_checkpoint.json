@@ -1,0 +1,45 @@
+{
+  "base_revision_calls": 3,
+  "completed_batches": [
+    {
+      "batch_id": "p15r_vp_t0_ops_h02",
+      "metadata_path": "api_call_metadata/p15r_vp_t0_ops_h02.json",
+      "phase": "P15R_VIEWPOINT_REVISION",
+      "prompt_sha256": "f254623d0db087cfc26ca2d74bd44b05efb7437e10855c4429ffafd600285936",
+      "raw_path": "raw_model_outputs/p15r_vp_t0_ops_h02.json",
+      "response_sha256": "4b626a58a8acd6302a03da837017cb118e207bb813985b1040a00eddc1e6a82b",
+      "source_id": "VP-T0-OPS-H02"
+    },
+    {
+      "batch_id": "p15r_vp_t0_strat_h01",
+      "metadata_path": "api_call_metadata/p15r_vp_t0_strat_h01.json",
+      "phase": "P15R_VIEWPOINT_REVISION",
+      "prompt_sha256": "07c8f9c8edbe3c3ac188bd8edf3f3368531b9e8a27a7c5b712d07af41c1ce06e",
+      "raw_path": "raw_model_outputs/p15r_vp_t0_strat_h01.json",
+      "response_sha256": "a1885a95473d39335781c8e27067fd5ebd3696a946f2545a08102d3612a73f06",
+      "source_id": "VP-T0-STRAT-H01"
+    },
+    {
+      "batch_id": "p15r_vp_t0_strat_h02",
+      "metadata_path": "api_call_metadata/p15r_vp_t0_strat_h02.json",
+      "phase": "P15R_VIEWPOINT_REVISION",
+      "prompt_sha256": "d422b38922c6e7e0c86c3650d2426068da5f6bd0d5e19cea1cd8e46d2917c97d",
+      "raw_path": "raw_model_outputs/p15r_vp_t0_strat_h02.json",
+      "response_sha256": "2383d2eac2316cf6e967c9bc18a2c95b2e7a4a0bf544818dc2eaa829f4f4dc71",
+      "source_id": "VP-T0-STRAT-H02"
+    },
+    {
+      "batch_id": "p15r_vp_t0_strat_h02_repair",
+      "metadata_path": "api_call_metadata/p15r_vp_t0_strat_h02_repair.json",
+      "phase": "P15R_VIEWPOINT_FORMAT_REPAIR",
+      "prompt_sha256": "3dd01855f26ff990c572c40fa2b43d54918624921769d138eec6a2ead4f95644",
+      "raw_path": "raw_model_outputs/p15r_vp_t0_strat_h02_repair.json",
+      "response_sha256": "c21e31f1714f3c7837c09fdce8f07ff0d6e442c9d39471d5db40f7185eb8f2ec",
+      "source_id": "VP-T0-STRAT-H02"
+    }
+  ],
+  "independent_audit_calls": 0,
+  "model_api_calls": 3,
+  "run_id": "P15R-P16R-G4QR-T1-PAPER-CASE-20260827T081823Z-v3",
+  "status": "running"
+}

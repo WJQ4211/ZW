@@ -1,0 +1,495 @@
+{
+  "before": {
+    "admission_failure_reason": "",
+    "boundary_conditions": [
+      "若后续进展继续集中于军种或任务专属项目，则本假设增强。",
+      "若DARPA项目主要停留在演示验证而未转入规模化采办，则本假设增强。",
+      "若出现跨军种复用的统一平台、统一模型或统一工程流程，则本假设削弱。",
+      "若综合多边演习等体系化意图转化为实际的跨军种统一部署，则本假设削弱。"
+    ],
+    "case_id": "us_military_ai_deployment",
+    "change_reason": "P14_evidence_field_impact_local_update",
+    "confidence": "high",
+    "counter_evidence": [
+      {
+        "evidence_id": "EV-T0-27370C837C885AEE",
+        "note": "",
+        "relation": "limit",
+        "version": 1
+      },
+      {
+        "evidence_id": "EV-T0-5EA556C2C939C121",
+        "note": "",
+        "relation": "limit",
+        "version": 1
+      },
+      {
+        "evidence_id": "EV-T0-F8E3070F89D94D25",
+        "note": "",
+        "relation": "limit",
+        "version": 1
+      }
+    ],
+    "created_at": "2026-08-27T07:25:25Z",
+    "falsifiers": [
+      "若在2024年底前出现多个军种在作战演习中常态化使用同一套AI系统，且不依赖DARPA等专门项目支持，则本假设不成立。",
+      "若联合通用基金会达到全面作战能力并实现跨军种数据共享，则表明体系化能力已形成。"
+    ],
+    "generator": {
+      "citation_details": [
+        {
+          "evidence_id": "EV-T0-3FA6806CF267B04B",
+          "importance": "high",
+          "relation": "support",
+          "target_field": "judgment",
+          "version": 1
+        },
+        {
+          "evidence_id": "EV-T0-9C79EF2837BC80A2",
+          "importance": "medium",
+          "relation": "support",
+          "target_field": "judgment",
+          "version": 1
+        },
+        {
+          "evidence_id": "EV-T0-A8459E6E8776A15D",
+          "importance": "high",
+          "relation": "support",
+          "target_field": "judgment",
+          "version": 1
+        },
+        {
+          "evidence_id": "EV-T0-F0773C8E2ECB5C8D",
+          "importance": "medium",
+          "relation": "support",
+          "target_field": "judgment",
+          "version": 1
+        },
+        {
+          "evidence_id": "EV-T0-27370C837C885AEE",
+          "importance": "medium",
+          "relation": "limit",
+          "target_field": "boundary_conditions[0]",
+          "version": 1
+        },
+        {
+          "evidence_id": "EV-T0-5EA556C2C939C121",
+          "importance": "medium",
+          "relation": "limit",
+          "target_field": "boundary_conditions[0]",
+          "version": 1
+        },
+        {
+          "evidence_id": "EV-T0-F8E3070F89D94D25",
+          "importance": "medium",
+          "relation": "limit",
+          "target_field": "boundary_conditions[1]",
+          "version": 1
+        }
+      ],
+      "mechanism_claim_details": [
+        {
+          "basis": "model_inference",
+          "claim": "RACER、REMA等DARPA项目通过技术演示和试验验证，在特定任务领域（越野自主、无人机任务自主）形成能力，但未进入规模化采办。",
+          "evidence_ids": []
+        },
+        {
+          "basis": "model_inference",
+          "claim": "AIDP作为陆军情报领域的部署案例，展示了任务驱动的快速部署路径，但其成功局限于情报领域，未扩展至其他军种或任务。",
+          "evidence_ids": []
+        },
+        {
+          "basis": "model_inference",
+          "claim": "IMSC的海上演习整合无人系统和AI，表明任务驱动的局部集成正在发生，但属于特定作战场景，未形成跨军种通用模式。",
+          "evidence_ids": []
+        },
+        {
+          "basis": "model_inference",
+          "claim": "国防部计划开展综合多边演习以支持'可互操作的企业级作战能力'，反映了向体系化方向发展的意图，但该意图尚未转化为实际的跨项目统一部署。",
+          "evidence_ids": []
+        }
+      ],
+      "model_id": "deepseek-v4-flash-0731",
+      "p7_call": {
+        "requested_model_id": "deepseek-v4-flash-0731",
+        "response_sha256": "0222a4c9011d20cd3e0666b80ae8795dde1c00673a256bdd4eea382116b58150",
+        "reused": true,
+        "source_file": "P7/initial_viewpoints.jsonl",
+        "source_run_id": "P7P9-20260826T163818Z-t0-viewpoint-disagreement-prep-v1",
+        "transport": "reused_prior_artifact"
+      },
+      "p7_source": "reused_prior_p7",
+      "p8_response_call": {
+        "attempts": 1,
+        "batch_id": "p8r_response_ops",
+        "call_id": "p8r_response_ops",
+        "endpoint": "https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1/chat/completions",
+        "is_repair": false,
+        "latency_ms": 30728,
+        "phase": "P8R_RESPONSE",
+        "prompt_sha256": "8b722305a3984bc84dcdcff7bdc60bc2d262ca5647e5a362f0e5dc97217d489b",
+        "provider_cost": null,
+        "provider_metrics_status": "observed",
+        "provider_model_id": "deepseek-v4-flash-0731",
+        "provider_temperature": null,
+        "provider_token_usage": {
+          "completion_tokens": 3859,
+          "prompt_tokens": 5283,
+          "total_tokens": 9142
+        },
+        "request_parameters": {
+          "enable_thinking": false,
+          "max_tokens": 24000,
+          "temperature": 0.0
+        },
+        "request_started_at_utc": "2026-08-27T02:06:35Z",
+        "requested_model_id": "deepseek-v4-flash-0731",
+        "response_sha256": "089ab9a4fb3ac83e28def3088d359e80a654a5c1a91cf54e103a088e06201e7f",
+        "response_status_code": 200,
+        "retry_count": 0,
+        "source_id": "OPS",
+        "transport": "openai_compatible_api"
+      },
+      "perspective_id": "OPS",
+      "response_action": "revise",
+      "response_note": "接受质疑。原观点将EV-T0-F8E3070F89D94D25仅列为低重要性限制条件，未充分评估其含义。该证据表明国防部计划开展'综合多边演习'以支持'可互操作的企业级作战能力'，这确实暗示存在向体系化方向发展的意图。虽然该证据不改变'任务驱动为主导模式'的总体判断，但需要在边界条件和不确定性中明确承认这一体系化意图的存在，并说明其尚未转化为实际部署。修订后的边界条件增加了对体系化意图证据的考量。",
+      "run_id": "P7R-P9R-20260827T020335Z-case-strengthening-v1"
+    },
+    "human_verified": false,
+    "hypothesis_id": "HYP-T0-02",
+    "information_gaps": [
+      "缺乏各项目之间是否存在数据共享或技术复用的直接证据。",
+      "缺乏SP-008战略实施后各项目整合进展的具体记录。",
+      "缺乏综合多边演习计划的具体实施方案和预期成果的公开信息。"
+    ],
+    "judgment": "T1证据进一步显示具体任务试验、竞赛和局部使用仍是可观察的能力形成形态；这些信号支持任务分布牵引，但不能外推为全军规模化部署。",
+    "key_assumptions": [
+      "各项目的独立进展反映了任务驱动的分散发展模式。",
+      "体系整合的规划文件（如SP-008）和意图声明（如综合多边演习计划）尚未转化为实际的跨项目统一部署。",
+      "联合通用基金会的延迟表明体系化整合面临资源和技术挑战。"
+    ],
+    "mechanism_claims": [
+      "RACER、REMA等DARPA项目通过技术演示和试验验证，在特定任务领域（越野自主、无人机任务自主）形成能力，但未进入规模化采办。",
+      "AIDP作为陆军情报领域的部署案例，展示了任务驱动的快速部署路径，但其成功局限于情报领域，未扩展至其他军种或任务。",
+      "IMSC的海上演习整合无人系统和AI，表明任务驱动的局部集成正在发生，但属于特定作战场景，未形成跨军种通用模式。",
+      "国防部计划开展综合多边演习以支持'可互操作的企业级作战能力'，反映了向体系化方向发展的意图，但该意图尚未转化为实际的跨项目统一部署。"
+    ],
+    "parent_version": 2,
+    "perspective_id": "OPS",
+    "run_id": "G1-T1-P13-P16-99A723BFBC6D273A-formal-v1",
+    "schema_version": "phase-a.1",
+    "snapshot_id": "SNAP-T1-US-MILITARY-AI-99A723BFBC6D273A",
+    "stance": "support",
+    "status": "admitted",
+    "supporting_evidence": [
+      {
+        "evidence_id": "EV-T0-3FA6806CF267B04B",
+        "note": "",
+        "relation": "support",
+        "version": 1
+      },
+      {
+        "evidence_id": "EV-T0-9C79EF2837BC80A2",
+        "note": "",
+        "relation": "support",
+        "version": 1
+      },
+      {
+        "evidence_id": "EV-T0-A8459E6E8776A15D",
+        "note": "",
+        "relation": "support",
+        "version": 1
+      },
+      {
+        "evidence_id": "EV-T0-F0773C8E2ECB5C8D",
+        "note": "",
+        "relation": "support",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-DCF49FC6CBC68958",
+        "note": "该材料涉及具体单位的局部使用或应用倡议，能改变局部任务运用的观察，但不等于跨军种普遍成熟。",
+        "relation": "qualify",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-AA937CC0AF5E2372",
+        "note": "该材料涉及具体单位的局部使用或应用倡议，能改变局部任务运用的观察，但不等于跨军种普遍成熟。",
+        "relation": "support",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-B40332E796F16865",
+        "note": "该材料涉及具体单位的局部使用或应用倡议，能改变局部任务运用的观察，但不等于跨军种普遍成熟。",
+        "relation": "qualify",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-7239909FC989F79A",
+        "note": "该材料涉及具体单位的局部使用或应用倡议，能改变局部任务运用的观察，但不等于跨军种普遍成熟。",
+        "relation": "qualify",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-D0E7B9B8CC1298AB",
+        "note": "演习或概念验证说明组织运用和配置发生，但不能单独证明作战效能或规模化部署。",
+        "relation": "qualify",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-BB675BA36EB74B19",
+        "note": "演习或概念验证说明组织运用和配置发生，但不能单独证明作战效能或规模化部署。",
+        "relation": "qualify",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-6B02747FAF17B29F",
+        "note": "演习或概念验证说明组织运用和配置发生，但不能单独证明作战效能或规模化部署。",
+        "relation": "qualify",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-CF7656CBCD8BBB03",
+        "note": "演习或概念验证说明组织运用和配置发生，但不能单独证明作战效能或规模化部署。",
+        "relation": "qualify",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-F2BE64F4810C89EF",
+        "note": "该证据与具体任务试验和项目实施有关，改变的是局部应用观察，不是全军通用能力判断。",
+        "relation": "qualify",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-C20674F2CA89D5C5",
+        "note": "该证据与具体任务试验和项目实施有关，改变的是局部应用观察，不是全军通用能力判断。",
+        "relation": "qualify",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-43B8C6F6E7B77F40",
+        "note": "该证据与具体任务试验和项目实施有关，改变的是局部应用观察，不是全军通用能力判断。",
+        "relation": "support",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-12F70AE60CD787AA",
+        "note": "该证据与具体任务试验和项目实施有关，改变的是局部应用观察，不是全军通用能力判断。",
+        "relation": "qualify",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-45417DAD097210B1",
+        "note": "该证据与具体任务试验和项目实施有关，改变的是局部应用观察，不是全军通用能力判断。",
+        "relation": "qualify",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-95F7FE29CF48D86D",
+        "note": "该证据显示特定任务领域存在应用或应用目标，只能限定为局部任务证据。",
+        "relation": "qualify",
+        "version": 1
+      }
+    ],
+    "t1_update": {
+      "affected_fields": [
+        "boundary_conditions[0]",
+        "judgment",
+        "mechanism_claims[0]"
+      ],
+      "boundary_change": "新增T1来源的任务、机构和公开披露范围被明确保留。",
+      "confidence_change": "unchanged_or_conditioned",
+      "falsifiable_condition": "若后续A/B级材料显示跨军种共用平台实际迁移并形成可复用工程流程，则需重新评估。",
+      "mechanism_change": "T1材料补充了局部试验/使用或约束条件，但不强制改变主判断。",
+      "new_evidence_ids": [
+        "CE-T1-12F70AE60CD787AA",
+        "CE-T1-43B8C6F6E7B77F40",
+        "CE-T1-45417DAD097210B1",
+        "CE-T1-6B02747FAF17B29F",
+        "CE-T1-7239909FC989F79A",
+        "CE-T1-95F7FE29CF48D86D",
+        "CE-T1-AA937CC0AF5E2372",
+        "CE-T1-B40332E796F16865",
+        "CE-T1-BB675BA36EB74B19",
+        "CE-T1-C20674F2CA89D5C5",
+        "CE-T1-CF7656CBCD8BBB03",
+        "CE-T1-D0E7B9B8CC1298AB",
+        "CE-T1-DCF49FC6CBC68958",
+        "CE-T1-F2BE64F4810C89EF"
+      ],
+      "source_snapshot": "SNAP-T0-US-MILITARY-AI-C6C812108AF95309",
+      "target_snapshot": "SNAP-T1-US-MILITARY-AI-99A723BFBC6D273A"
+    },
+    "uncertainties": [
+      "AIDP的部署是否代表了陆军AI能力的普遍水平，还是仅限情报领域，尚不明确。",
+      "RACER和REMA等项目的技术成果是否已进入正式的采办或列装流程，缺乏公开证据。",
+      "综合多边演习计划的具体时间表和预期成果尚不明确，无法判断其是否能在短期内改变任务驱动的主导模式。"
+    ],
+    "version": 3,
+    "viewpoint_id": "VP-T0-OPS-H02"
+  },
+  "hypothesis_id": "HYP-T0-02",
+  "metadata": {
+    "attempts": 1,
+    "batch_id": "p15r_vp_t0_ops_h02",
+    "endpoint": "https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "is_repair": false,
+    "latency_ms": 19302,
+    "logical_call": true,
+    "phase": "P15R_VIEWPOINT_REVISION",
+    "prompt_sha256": "e1791cd960067f01d092cb265c492194da4429357b4b8723b1d8a6e313c99753",
+    "provider_cost": null,
+    "provider_metrics_status": "observed",
+    "provider_model_id": "deepseek-v4-flash-0731",
+    "provider_temperature": null,
+    "provider_token_usage": {
+      "completion_tokens": 2136,
+      "prompt_tokens": 11296,
+      "total_tokens": 13432
+    },
+    "request_parameters": {
+      "enable_thinking": false,
+      "max_tokens": 24000,
+      "temperature": 0.0
+    },
+    "request_started_at_utc": "2026-08-27T08:01:14Z",
+    "requested_model_id": "deepseek-v4-flash-0731",
+    "response_sha256": "420bc4798930e3e4ffbff162fae38bd038a6d52740abb4c983d773ca4e7db2e9",
+    "response_status_code": 200,
+    "retry_count": 0,
+    "source_id": "VP-T0-OPS-H02",
+    "transport": "openai_compatible_api"
+  },
+  "perspective_id": "OPS",
+  "prompt_sha256": "e1791cd960067f01d092cb265c492194da4429357b4b8723b1d8a6e313c99753",
+  "response_sha256": "420bc4798930e3e4ffbff162fae38bd038a6d52740abb4c983d773ca4e7db2e9",
+  "revision": {
+    "affected_fields": [
+      "judgment",
+      "boundary_conditions[0]",
+      "mechanism_claims[0]"
+    ],
+    "boundary_conditions": [
+      "若后续进展继续集中于军种或任务专属项目，则本假设增强。",
+      "若DARPA项目主要停留在演示验证而未转入规模化采办，则本假设增强。",
+      "若出现跨军种复用的统一平台、统一模型或统一工程流程，则本假设削弱。",
+      "若综合多边演习等体系化意图转化为实际的跨军种统一部署，则本假设削弱。",
+      "T1证据中的局部使用（如卢克基地、第732中队）和DARPA竞赛属于任务驱动模式的具体表现，不构成跨军种普遍成熟。"
+    ],
+    "confidence": "high",
+    "counter_evidence": [
+      {
+        "evidence_id": "CE-T1-6B02747FAF17B29F",
+        "importance": "medium",
+        "relation": "limit",
+        "target_field": "boundary_conditions[0]",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-95F7FE29CF48D86D",
+        "importance": "medium",
+        "relation": "limit",
+        "target_field": "boundary_conditions[0]",
+        "version": 1
+      }
+    ],
+    "evidence_field_changes": [
+      {
+        "after": "T1证据进一步显示具体任务试验、竞赛和局部使用仍是可观察的能力形成形态；这些信号支持任务分布牵引，但不能外推为全军规模化部署。",
+        "before": "T1证据进一步显示具体任务试验、竞赛和局部使用仍是可观察的能力形成形态；这些信号支持任务分布牵引，但不能外推为全军规模化部署。",
+        "change_reason": "T1证据补充了局部使用、演习和竞赛的具体案例，强化了任务驱动模式的观察，但未改变总体判断。",
+        "new_evidence_ids": [
+          "CE-T1-DCF49FC6CBC68958",
+          "CE-T1-AA937CC0AF5E2372",
+          "CE-T1-B40332E796F16865",
+          "CE-T1-7239909FC989F79A",
+          "CE-T1-D0E7B9B8CC1298AB",
+          "CE-T1-BB675BA36EB74B19",
+          "CE-T1-6B02747FAF17B29F",
+          "CE-T1-CF7656CBCD8BBB03",
+          "CE-T1-F2BE64F4810C89EF",
+          "CE-T1-C20674F2CA89D5C5",
+          "CE-T1-43B8C6F6E7B77F40",
+          "CE-T1-12F70AE60CD787AA",
+          "CE-T1-45417DAD097210B1",
+          "CE-T1-95F7FE29CF48D86D"
+        ],
+        "target_field": "judgment"
+      },
+      {
+        "after": "若后续进展继续集中于军种或任务专属项目，则本假设增强。T1证据中的局部使用（如卢克基地、第732中队）和DARPA竞赛属于任务驱动模式的具体表现，不构成跨军种普遍成熟。",
+        "before": "若后续进展继续集中于军种或任务专属项目，则本假设增强。",
+        "change_reason": "T1证据显示特定任务领域存在应用或应用目标，只能限定为局部任务证据，因此边界条件明确排除这些证据作为体系化信号。",
+        "new_evidence_ids": [
+          "CE-T1-95F7FE29CF48D86D"
+        ],
+        "target_field": "boundary_conditions[0]"
+      },
+      {
+        "after": "RACER、REMA等DARPA项目通过技术演示和试验验证，在特定任务领域（越野自主、无人机任务自主）形成能力，但未进入规模化采办。T1证据中的DARPA Triage Challenge和演习使用进一步支持这一机制，但均属于演示验证或局部使用。",
+        "before": "RACER、REMA等DARPA项目通过技术演示和试验验证，在特定任务领域（越野自主、无人机任务自主）形成能力，但未进入规模化采办。",
+        "change_reason": "T1证据补充了DARPA竞赛和演习使用案例，进一步说明任务驱动模式下的技术演示和局部使用，但未改变机制判断。",
+        "new_evidence_ids": [
+          "CE-T1-F2BE64F4810C89EF",
+          "CE-T1-C20674F2CA89D5C5",
+          "CE-T1-43B8C6F6E7B77F40",
+          "CE-T1-12F70AE60CD787AA",
+          "CE-T1-45417DAD097210B1",
+          "CE-T1-D0E7B9B8CC1298AB",
+          "CE-T1-BB675BA36EB74B19",
+          "CE-T1-6B02747FAF17B29F",
+          "CE-T1-CF7656CBCD8BBB03"
+        ],
+        "target_field": "mechanism_claims[0]"
+      }
+    ],
+    "falsifiers": [
+      "若在2026年7月1日以后出现多个军种在作战演习中常态化使用同一套AI系统，且不依赖DARPA等专门项目支持，则本假设不成立。",
+      "若联合通用基金会达到全面作战能力并实现跨军种数据共享，则表明体系化能力已形成。",
+      "若GenAI平台被多个军种在作战任务中广泛使用并形成统一工程流程，则需重新评估。"
+    ],
+    "information_gaps": [
+      "缺乏各项目之间是否存在数据共享或技术复用的直接证据。",
+      "缺乏SP-008战略实施后各项目整合进展的具体记录。",
+      "缺乏综合多边演习计划的具体实施方案和预期成果的公开信息。",
+      "缺乏GenAI平台在各部门实际使用范围和频率的数据。"
+    ],
+    "judgment": "T1证据进一步显示具体任务试验、竞赛和局部使用仍是可观察的能力形成形态；这些信号支持任务分布牵引，但不能外推为全军规模化部署。",
+    "key_assumptions": [
+      "各项目的独立进展反映了任务驱动的分散发展模式。",
+      "体系整合的规划文件（如SP-008）和意图声明（如综合多边演习计划）尚未转化为实际的跨项目统一部署。",
+      "联合通用基金会的延迟表明体系化整合面临资源和技术挑战。",
+      "T1证据中的局部使用和演习属于任务驱动模式的具体表现，而非体系化能力的证据。"
+    ],
+    "mechanism_claims": [
+      "卢克空军基地的AI工作队和日常使用案例（CE-T1-DCF49FC6CBC68958、CE-T1-AA937CC0AF5E2372等）表明，任务驱动的局部应用正在发生，但仅限于单个基地的日常行政任务，未显示跨军种或规模化部署。",
+      "DARPA Triage Challenge的竞赛结果（CE-T1-F2BE64F4810C89EF、CE-T1-C20674F2CA89D5C5、CE-T1-43B8C6F6E7B77F40）展示了特定任务领域（作战医疗分诊）的技术能力，但属于演示验证性质，未进入采办或列装流程。",
+      "第732空中机动中队在北极桥演习中使用GenAI平台（CE-T1-D0E7B9B8CC1298AB、CE-T1-BB675BA36EB74B19、CE-T1-6B02747FAF17B29F、CE-T1-CF7656CBCD8BBB03）表明，局部演习中已使用部门级AI平台，但该使用属于概念验证，且平台本身是通用工具，不构成跨军种统一部署。",
+      "国防部创伤登记处数据规模限制（CE-T1-95F7FE29CF48D86D）表明，作战医疗AI的训练数据条件有限，进一步支持任务驱动模式受资源约束的判断。"
+    ],
+    "supporting_evidence": [
+      {
+        "evidence_id": "CE-T1-AA937CC0AF5E2372",
+        "importance": "medium",
+        "relation": "support",
+        "target_field": "judgment",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-43B8C6F6E7B77F40",
+        "importance": "medium",
+        "relation": "support",
+        "target_field": "mechanism_claims[0]",
+        "version": 1
+      }
+    ],
+    "uncertainties": [
+      "AIDP的部署是否代表了陆军AI能力的普遍水平，还是仅限情报领域，尚不明确。",
+      "RACER和REMA等项目的技术成果是否已进入正式的采办或列装流程，缺乏公开证据。",
+      "综合多边演习计划的具体时间表和预期成果尚不明确，无法判断其是否能在短期内改变任务驱动的主导模式。",
+      "GenAI平台在演习中的使用是否代表部门级通用能力的实际部署，还是仅限于特定场景，尚不明确。"
+    ],
+    "update_rationale": "T1证据中的局部使用、演习和竞赛案例进一步支持任务驱动模式，但均属于局部或演示性质，未显示跨军种统一部署。因此，维持原判断，并明确边界条件以排除这些证据作为体系化信号。"
+  },
+  "viewpoint_id": "VP-T0-OPS-H02"
+}

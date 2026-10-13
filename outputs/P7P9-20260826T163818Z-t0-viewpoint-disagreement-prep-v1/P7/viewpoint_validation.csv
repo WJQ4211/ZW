@@ -1,0 +1,13 @@
+﻿viewpoint_id,perspective_id,hypothesis_id,initial_validation_passed,initial_validation_errors,final_status,final_validation_errors,supporting_evidence_count,supporting_source_count
+VP-T0-TECH-H01,TECH,HYP-T0-01,True,[],suspended,response update failed deterministic validation,3,
+VP-T0-TECH-H02,TECH,HYP-T0-02,True,[],suspended,response update failed deterministic validation,3,
+VP-T0-TECH-H03,TECH,HYP-T0-03,True,[],suspended,response update failed deterministic validation,3,
+VP-T0-ENG-H01,ENG,HYP-T0-01,True,[],suspended,response update failed deterministic validation,3,
+VP-T0-ENG-H02,ENG,HYP-T0-02,True,[],suspended,response update failed deterministic validation,3,
+VP-T0-ENG-H03,ENG,HYP-T0-03,True,[],suspended,response update failed deterministic validation,3,
+VP-T0-OPS-H01,OPS,HYP-T0-01,True,[],suspended,response update failed deterministic validation,3,
+VP-T0-OPS-H02,OPS,HYP-T0-02,True,[],suspended,response update failed deterministic validation,4,
+VP-T0-OPS-H03,OPS,HYP-T0-03,True,[],suspended,response update failed deterministic validation,5,
+VP-T0-TRUST-H01,TRUST,HYP-T0-01,True,[],suspended,response update failed deterministic validation,3,
+VP-T0-TRUST-H02,TRUST,HYP-T0-02,True,[],suspended,response update failed deterministic validation,4,
+VP-T0-TRUST-H03,TRUST,HYP-T0-03,True,[],suspended,response update failed deterministic validation,6,

@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-5a3dcb21-02e7-47b9-bb10-1b799b9341b9",
+  "object": "chat.completion",
+  "created": 1787677821,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n  {\n    \"source_id\": \"T0-TD-008\",\n    \"source_locator\": \"article/paragraph-01\",\n    \"excerpt_original\": \"MANAMA, Bahrain - The International Maritime Security Construct (IMSC) completed a three-day maritime exercise in the Arabian Gulf, Jan. 9, integrating unmanned systems and artificial intelligence during a naval drill for the second time in six months.\",\n    \"excerpt_zh\": \"巴林麦纳麦——国际海事安全构架（IMSC）于1月9日在阿拉伯湾完成了一次为期三天的海上演习，这是六个月内第二次在海军演习中整合无人系统和人工智能。\",\n    \"normalized_claim\": \"IMSC于1月9日在阿拉伯湾完成了一次为期三天的海上演习，整合了无人系统和人工智能，这是六个月内第二次此类演习。\",\n    \"coding_dimensions\": [\"integration_level\", \"application_maturity\"],\n    \"evidence_nature\": \"test_event\",\n    \"topics\": [\"unmanned systems\", \"artificial intelligence\", \"maritime exercise\"]\n  },\n  {\n    \"source_id\": \"T0-TD-008\",\n    \"source_locator\": \"article/paragraph-02\",\n    \"excerpt_original\": \"IMSC’s operational task force, Coalition Task Force (CTF) Sentinel, completed exercise Sentinel Shield with U.S. Navy guided-missile destroyer USS Delbert D. Black (DDG 119) and two Saildrone Explorer unmanned surface vessels from U.S. 5th Fleet “We planned this exercise to demonstrate how artificial intelligence and unmanned systems effectively increase CTF Sentinel’s maritime domain awareness to maintain maritime security in Middle Eastern waters,” said Royal Saudi Navy Capt. Alamri Assem, CTF Sentinel’s director of plans.\",\n    \"excerpt_zh\": \"IMSC的作战特遣部队——联盟特遣部队（CTF）哨兵——与美国海军导弹驱逐舰“德尔伯特·D·布莱克”号（DDG 119）以及来自美国第五舰队的两艘Saildrone Explorer无人水面艇完成了“哨兵盾牌”演习。CTF哨兵计划主任、沙特皇家海军上校阿拉姆里·阿塞姆表示：“我们计划这次演习是为了展示人工智能和无人系统如何有效提升CTF哨兵的海上态势感知能力，以维护中东水域的海上安全。”\",\n    \"normalized_claim\": \"CTF Sentinel完成的Sentinel Shield演习包括美国海军驱逐舰DDG 119和两艘Saildrone Explorer无人水面艇，演习目的是展示人工智能和无人系统提升海上态势感知能力。\",\n    \"coding_dimensions\": [\"integration_level\", \"human_machine_authority\", \"organizational_system_fit\"],\n    \"evidence_nature\": \"test_event\",\n    \"topics\": [\"unmanned surface vessels\", \"artificial intelligence\", \"maritime domain awareness\"]\n  },\n  {\n    \"source_id\": \"T0-TD-008\",\n    \"source_locator\": \"article/paragraph-03\",\n    \"excerpt_original\": \"During the exercise, unmanned and artificial intelligence systems operated in conjunction with Delbert D. Black and CTF Sentinel’s command center ashore in Bahrain.\",\n    \"excerpt_zh\": \"演习期间，无人系统和人工智能系统与“德尔伯特·D·布莱克”号以及位于巴林岸上的CTF哨兵指挥中心协同运作。\",\n    \"normalized_claim\": \"演习期间，无人系统和人工智能系统与驱逐舰及岸上指挥中心协同运作。\",\n    \"coding_dimensions\": [\"integration_level\", \"human_machine_authority\"],\n    \"evidence_nature\": \"test_event\",\n    \"topics\": [\"unmanned systems\", \"artificial intelligence\", \"command and control\"]\n  },\n  {\n    \"source_id\": \"T0-TD-008\",\n    \"source_locator\": \"article/paragraph-04\",\n    \"excerpt_original\": \"The systems were able to help locate and identify objects in nearby waters and relay visual depictions to watchstanders.\",\n    \"excerpt_zh\": \"这些系统能够帮助定位和识别附近水域的物体，并将视觉图像传送给值班人员。\",\n    \"normalized_claim\": \"在演习中，无人和人工智能系统能够定位和识别附近水域物体，并向值班人员传送视觉图像。\",\n    \"coding_dimensions\": [\"integration_level\", \"application_maturity\", \"human_machine_authority\"],\n    \"evidence_nature\": \"test_result\",\n    \"topics\": [\"object detection\", \"visual relay\", \"watchstanding\"]\n  },\n  {\n    \"source_id\": \"T0-TD-008\",\n    \"source_locator\": \"article/paragraph-06\",\n    \"excerpt_original\": \"CTF Sentinel previously completed a similar exercise Aug. 23 when Royal Bahrain Naval Force ship RBNS Ahmed Al-Fateh (P20) and U.S. Coast Guard patrol boat USCGC Baranof (WPB 1318) participated with another Saildrone Explorer from U.S. 5th Fleet.\",\n    \"excerpt_zh\": \"CTF哨兵此前于8月23日完成了一次类似演习，当时巴林皇家海军舰艇RBNS艾哈迈德·法塔赫号（P20）和美国海岸警卫队巡逻艇USCGC巴拉诺夫号（WPB 1318）与来自美国第五舰队的另一艘Saildrone Explorer一同参加。\",\n    \"normalized_claim\": \"CTF Sentinel于8月23日完成了一次类似演习，参与者包括巴林皇家海军舰艇、美国海岸警卫队巡逻艇和另一艘Saildrone Explorer。\",\n    \"coding_dimensions\": [\"integration_level\", \"organizational_system_fit\"],\n    \"evidence_nature\": \"test_event\",\n    \"topics\": [\"unmanned surface vessels\", \"multinational exercise\", \"maritime security\"]\n  }\n]\n```"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1547,
+    "total_tokens": 2797,
+    "completion_tokens": 1250,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

@@ -1,0 +1,896 @@
+PROMPT_ID: evidence_extract_p3b
+VERSION: 2.0
+BATCH_ID: T0-PB-007-batch-001
+SOURCE_DOCUMENT_ID: T0-PB-007
+RESEARCH_QUESTION: Based only on public, non-classified material available through 2024-12-31, what dominant deployment form is more likely for U.S. military AI capability building in 2025-2027?
+TASK: Extract at most five auditable evidence candidates from these source segments. Output zero candidates when the supplied text contains insufficient directly relevant evidence.
+INPUT LIMIT: Use only the source segments and definitions supplied here. Do not use prior runs, other sources, or outside knowledge.
+OUTPUT: strict JSON array; each object must contain exactly the eight model fields in the schema.
+normalized_claim must be Chinese only, state one evidence proposition, and contain no source-attribution prefix such as 本报告认为 or 某机构指出. Source metadata is supplied by the program.
+coding_dimensions must be a JSON array of zero or more exact dimension key strings, never an object/map and never Chinese descriptions or maturity labels. Allowed keys: integration_level, application_maturity, human_machine_authority, engineering_resource_conditions, trust_governance_constraints, organizational_system_fit.
+excerpt_original must be copied verbatim from one exact source_locator. Do not silently repair OCR, spelling, or layout extraction.
+If an English excerpt is returned, excerpt_zh must be non-empty and remains pending G1 translation review.
+Use goal for strategy/vision/plan; test_event only for a test or exercise occurrence, participants, or configuration; test_result only for an explicitly observed function, performance, or result; deployment_event only for deployment, fielding, adoption, or sustained use that has already occurred.
+Ordinary coordination, information transfer, training, or documentation does not automatically support human_machine_authority.
+Do not add subjects, actions, numbers, scope, or results absent from the excerpt. Do not generate hypotheses, viewpoints, conclusions, or a 2025-2027 route judgment.
+Do not use pseudo-continuous locators. One candidate expresses one checkable fact. Do not duplicate an equivalent excerpt within this source.
+CANDIDATE_LIMIT: 5
+SOURCE_SEGMENTS:
+--- pdf_page_1 ---
+pdf_page_number: 1
+printed_page_number: None
+section_title: ARTIFICIAL
+machine_extracted_anchor: pdf_page_1|printed_page_pending|section_ARTIFICIAL
+visual_review_required: true
+United States Government Accountability Office
+Report to the Committee on Armed
+Services, U.S. Senate
+June 2023
+ARTIFICIAL
+INTELLIGENCE
+DOD Needs
+Department-Wide
+Guidance to Inform
+Acquisitions
+GAO-23-105850
+--- pdf_page_2 ---
+pdf_page_number: 2
+printed_page_number: None
+section_title: ARTIFICIAL INTELLIGENCE
+machine_extracted_anchor: pdf_page_2|printed_page_pending|section_ARTIFICIAL_INTELLIGENCE
+visual_review_required: false
+June 2023
+ARTIFICIAL INTELLIGENCE
+DOD Needs Department-Wide Guidance to Inform
+Acquisitions
+Highlights of GAO-23-105850, a report to the
+Committee on Armed Services, U.S. Senate
+Why GAO Did This Study What GAO Found
+DOD has begun to pursue increasingly The Department of Defense (DOD) designated artificial intelligence (AI) a top
+advanced AI capabilities. DOD has modernization area and is allocating considerable spending to develop AI tools
+historically struggled to acquire and capabilities. AI refers to computer systems designed to replicate a range of
+weapon systems software, and AI human functions and continually get better at their assigned tasks. DOD AI
+acquisitions pose additional capabilities could be used in various ways, for example in identifying potential
+challenges. In February 2022, GAO threats or targets on the battlefield.
+described the status of DOD’s efforts
+to develop and acquire AI for weapon GAO obtained information from 13 private sector companies about how they
+systems. successfully acquire AI capabilities. Elements of these categories, shown below,
+are also reflected in GAO’s June 2021 AI Accountability Framework report (GAO-
+Senate Report 116-236 accompanying
+21-519SP).
+the National Defense Authorization Act
+for Fiscal Year 2021 includes a
+Categories of Factors Selected Companies Reported Considering When Acquiring Artificial
+provision for GAO to review DOD’s AI Intelligence Capabilities
+acquisition efforts. This is the second
+report in response to that provision.
+This report examines (1) key factors
+that selected private companies
+reported considering when acquiring AI
+capabilities, and (2) the extent to which
+DOD has department-wide AI
+acquisition guidance and how, if at all,
+this guidance reflects key factors
+identified by private sector companies.
+GAO analyzed information provided by
+13 private companies with expertise in
+designing, developing, and deploying
+AI systems in various sectors to
+determine the key factors. GAO also
+analyzed DOD documentation and
+compared it with the key factors, and
+Although numerous entities across DOD are acquiring, developing, or already
+interviewed DOD officials.
+using AI, DOD has not issued department-wide guidance for how its components
+What GAO Recommends should approach acquiring AI. DOD is in the process of planning to develop such
+guidance, but it has not defined concrete plans and has no timeline to do so. The
+GAO is making four recommendations
+military services also lack AI acquisition-specific guidance, though military
+for DOD and the three military
+officials noted that such guidance would be helpful to navigate the AI acquisition
+departments to develop guidance on
+process. Without department-wide and tailored service-level guidance, DOD is
+acquiring AI capabilities, leveraging
+missing an opportunity to ensure that it is consistently acquiring AI capabilities in
+private company factors as
+a manner that accounts for the unique challenges associated with AI.
+appropriate. DOD concurred with the
+recommendations. Various DOD components and military services have individually developed or
+plan to develop their own informal AI acquisition resources. Some of these
+resources reflect key factors identified by private companies for AI acquisition.
+For example, DOD’s Chief Digital and AI Officer oversees an AI marketplace
+known as Tradewind, which is designed to expedite the procurement of AI
+capabilities. Several Tradewind resources emphasize the need to consider
+View GAO-23-105850. For more information,
+contact Jon Ludwigson at (202) 512-4841 or intellectual property and data rights concerns when negotiating contracts for AI
+ludwigsonj@gao.gov. capabilities, a key factor identified by the companies GAO interviewed.
+United States Government Accountability Office
+--- pdf_page_3 ---
+pdf_page_number: 3
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_3|printed_page_pending|section_pending
+visual_review_required: true
+Contents
+Letter 1
+Background 3
+Company Representatives Identified a Variety of Key Factors
+They Consider when Acquiring AI Capabilities 11
+DOD Has Not Issued Department-Wide Guidance for AI
+Acquisitions, Though Aspects of Company Key Factors Are
+Reflected in Some Resources 21
+Conclusions 27
+Recommendations for Executive Action 27
+Agency Comments 28
+Appendix I Objectives, Scope, and Methodology 29
+Appendix II Overview of GAO’s Artificial Intelligence
+Accountability Framework 32
+Appendix III Key Factors Selected Companies Reported Considering
+When Acquiring and Managing Artificial Intelligence 34
+Appendix IV Comments from the Department of Defense 36
+Appendix V GAO Contact and Staff Acknowledgments 37
+Related GAO Products 38
+Table
+Table 1: Key Factors and Subfactors Considered by Companies in
+GAO’s Review Related to Artificial Intelligence (AI)
+Capability Acquisitions and Management 34
+Page i GAO-23-105850 Artificial Intelligence
+--- pdf_page_4 ---
+pdf_page_number: 4
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_4|printed_page_pending|section_pending
+visual_review_required: true
+Figures
+Figure 1: Phases of the Artificial Intelligence (AI) Life Cycle 4
+Figure 2: Adaptive Acquisition Framework Pathways 7
+Figure 3: Entities Involved in Developing, Transitioning, and Using
+AI for DOD, as of January 2023 9
+Figure 4: Categories of Factors Selected Companies Reported
+Considering when Acquiring Artificial Intelligence
+Capabilities 12
+Figure 5: Key Factors Related to Understanding Mission Need 13
+Figure 6: Key Factors Related to Making a Business Case 14
+Figure 7: Key Factors Related to Tailoring Contracting Approach 17
+Figure 8: Key Factors Related to Testing and Evaluation of
+Proposed Solutions 18
+Figure 9: Key Factors Related to Planning Future Efforts 20
+Figure 10: Artificial Intelligence (AI) Accountability Framework 33
+Abbreviations
+AI artificial intelligence
+DOD Department of Defense
+This is a work of the U.S. government and is not subject to copyright protection in the
+United States. The published product may be reproduced and distributed in its entirety
+without further permission from GAO. However, because this work may contain
+copyrighted images or other material, permission from the copyright holder may be
+necessary if you wish to reproduce this material separately.
+Page ii GAO-23-105850 Artificial Intelligence
+--- pdf_page_5 ---
+pdf_page_number: 5
+printed_page_number: None
+section_title: 441 G St. N.W
+machine_extracted_anchor: pdf_page_5|printed_page_pending|section_441_G_St_N_W
+visual_review_required: false
+Letter
+441 G St. N.W.
+Washington, DC 20548
+June 29, 2023
+The Honorable Jack Reed
+Chairman
+The Honorable Roger Wicker
+Ranking Member
+Committee on Armed Services
+United States Senate
+The Department of Defense (DOD) has noted that artificial intelligence
+(AI) technology is poised to transform the future of warfare because AI-
+enabled machines can potentially maneuver and change tactics at
+speeds that human operators cannot.1 The department has designated it
+a top modernization area and plans to spend $16.5 billion on science and
+technology programs, including $1.1 billion to directly support its AI
+efforts, in fiscal year 2023.2 DOD AI capabilities could be used in various
+ways, for example, in identifying potential threats or targets on the
+battlefield.
+The National Security Commission on Artificial Intelligence—established
+by law in 2018 to consider ways to advance the development of AI to
+address U.S. national security and defense needs—concluded in its
+March 2021 report that the U.S. is not prepared to defend itself in the AI
+era, and must act quickly to enable AI-readiness by 2025.3 The
+commission further concluded that ensuring DOD has the necessary
+infrastructure, including tools and talent, in place will be essential to
+developing, acquiring, and scaling AI for weapon systems quickly and
+effectively.
+1For the purposes of this report, AI refers to machine learning capabilities, unless
+otherwise noted.
+2Office of the Under Secretary of Defense (Comptroller) / Chief Financial Officer, Defense
+Budget Overview; United States Department of Defense, Fiscal Year 2023 Budget
+Request (April 2022).
+3John S. McCain National Defense Authorization Act for Fiscal Year 2019, Pub. L. No.
+115-232, § 1051 (2018). The National Security Commission on Artificial Intelligence, “Final
+Report” (March 1, 2021), accessed March 3, 2022,
+https://www.nscai.gov/2021-final-report/.
+Page 1 GAO-23-105850 Artificial Intelligence
+--- pdf_page_6 ---
+pdf_page_number: 6
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_6|printed_page_pending|section_pending
+visual_review_required: false
+We have reported for decades on DOD’s challenges in acquiring
+software-intensive weapon systems.4 In February 2022, we found that in
+addition to these challenges, DOD faces AI-specific challenges, including
+having usable data available to train the AI, because AI typically requires
+accurately labeled historical data to train the system so it can learn to
+accurately predict certain outcomes.5
+Though DOD has recently begun to pursue increasingly advanced AI
+capabilities, the private sector has been acquiring and developing such
+capabilities for years.6 Our prior work has demonstrated that, while
+structural differences between the private sector and government can
+affect outcomes, key principles from the private sector can be thoughtfully
+applied to government acquisition to improve outcomes, even with the
+different cultures and incentives.7
+Given the growing significance of AI to DOD’s acquisition goals, the
+Senate Report accompanying S. 4049, a bill for the National Defense
+Authorization Act for Fiscal Year 2021, includes a provision for GAO to
+review DOD AI acquisition-related efforts.8 This is our second report in
+response to that provision.9 This report examines (1) key factors that
+selected private sector companies reported considering when acquiring
+AI capabilities, and (2) the extent to which DOD’s AI acquisition guidance,
+if any, reflects key factors identified by private sector companies.
+To answer the first objective, we analyzed information obtained from a
+nongeneralizable selection of 13 companies with expertise in designing,
+developing, and deploying AI systems in a variety of business sectors,
+such as defense, banking, healthcare, and pharmaceutical, among
+others. We identified these companies through analysis of open source
+4For example, see GAO, DOD Space Acquisitions: Including Users Early and Often in
+Software Development Could Benefit Programs, GAO-19-136 (Washington, D.C.: Mar. 18,
+2019). A list of related GAO products is provided at the end of this report.
+5GAO, Artificial Intelligence: Status of Developing and Acquiring Capabilities for Weapon
+Systems, GAO-22-104765 (Washington, D.C.: Feb. 17, 2022).
+6In this report, we use the term private sector or private sector company to indicate
+nongovernment commercial entities.
+7GAO, Leading Practices: Agency Acquisition Policies Could Better Implement Key
+Product Development Principles, GAO-22-104513 (Washington, D.C.: Mar. 10, 2022).
+8S. Rep. No. 116-236, at 131 (2020).
+9GAO-22-104765.
+Page 2 GAO-23-105850 Artificial Intelligence
+--- pdf_page_7 ---
+pdf_page_number: 7
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_7|printed_page_pending|section_pending
+visual_review_required: false
+information and in consultation with internal subject matter experts. To
+answer the second objective, we interviewed DOD officials and analyzed
+available AI-specific DOD documentation to compare the results with the
+key factors identified by companies. For more details on our scope and
+methodology, see appendix I.
+We conducted this performance audit from February 2022 to June 2023
+in accordance with generally accepted government auditing standards.
+Those standards require that we plan and perform the audit to obtain
+sufficient, appropriate evidence to provide a reasonable basis for our
+findings and conclusions based on our audit objectives. We believe that
+the evidence obtained provides a reasonable basis for our findings and
+conclusions based on our audit objectives.
+Background
+The Typical AI Life Cycle While there are various definitions of AI, in general, AI refers to computer
+systems that are able to solve problems and perform tasks that have
+traditionally required human intelligence and that continually get better at
+their assigned tasks.10 We previously reported in our 2021 AI
+Accountability Framework that the life cycle of an AI system can involve
+several phases: design, development, deployment, and continuous
+monitoring, which are often iterative and are not necessarily sequential.11
+As shown in figure 1, the various phases involve, among other steps,
+articulating the system’s concepts in design; collecting and processing
+data, building one or more models, and validating the system in
+development; piloting and ensuring regulatory compliance in deployment;
+and continuously assessing the system’s impact and, if necessary,
+retiring an AI system from production in monitoring.
+10GAO-22-104765.
+11GAO, Artificial Intelligence: An Accountability Framework for Federal Agencies and
+Other Entities, GAO-21-519SP (Washington, D.C.: June 2021). This framework provides
+key principles and practices for federal agencies and other entities that are considering,
+selecting, and implementing AI systems throughout each phase of the life cycle. This work
+applies many of the framework’s concepts. For more information on this framework, see
+appendix II.
+Page 3 GAO-23-105850 Artificial Intelligence
+--- pdf_page_8 ---
+pdf_page_number: 8
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_8|printed_page_pending|section_pending
+visual_review_required: false
+Figure 1: Phases of the Artificial Intelligence (AI) Life Cycle
+Page 4 GAO-23-105850 Artificial Intelligence
+--- pdf_page_9 ---
+pdf_page_number: 9
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_9|printed_page_pending|section_pending
+visual_review_required: false
+Differences between AI In February 2022, we reported on the differences between AI and
+and Traditional Software traditional software, which DOD has historically faced challenges in
+developing, procuring, and deploying.12 We reported that although AI is a
+software-centric capability, DOD recognized that developing and using it
+is different from traditional software in key ways.13 Software is
+programmed to perform tasks based on static instructions written as
+code, producing the same result based on the instructions coded into the
+system. By contrast, AI is software that is programmed with general
+parameters for performing the applicable task (referred to as algorithms)
+so that the AI model can learn to perform the task and improve over time.
+For example, training an AI model to recognize a submarine from a video
+feed requires exposing the system to images labeled as submarines,
+potentially from different viewing angles. Staff involved in the training
+validate when the AI model identifies a submarine correctly and when it
+does not in order to improve the model’s performance. In addition, data
+and computing power, among other things, are especially important for AI
+compared to traditional software.
+Further, while various DOD officials generally agree that AI development
+should leverage Agile software development principles to keep pace with
+rapidly changing technologies, there are likely to be aspects of Agile that
+may look different for AI. For example, Agile software development
+focuses on fielding the most basic version of a program that adds value
+quickly followed by iterative product development to field improvements.
+Yet, since AI typically requires vast amounts of data to learn a function
+and can behave differently or unexpectedly once deployed, officials from
+the Joint AI Center and DOD’s Defense Digital Service previously
+cautioned against rushing to a proof of concept or minimum viable
+product for AI capabilities that support warfighting operations. Given the
+need for data, training, and testing for operational usefulness, it may take
+longer to get to a minimally viable product for AI than for traditional
+software Agile projects. Once deployed, the AI capability should continue
+to get better at its task as it is exposed to more data, but needs to be
+continuously monitored to ensure the new data are not negatively
+affecting performance.
+12GAO-22-104765.
+13For the purposes of this report, we use the term traditional software to mean computer
+programs, procedures, rules, and possibly documentation and data pertaining to the
+operation of the computer system. Some examples of traditional software include
+enterprise systems, business systems, and combat systems.
+Page 5 GAO-23-105850 Artificial Intelligence
+--- pdf_page_10 ---
+pdf_page_number: 10
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_10|printed_page_pending|section_pending
+visual_review_required: false
+Available AI Acquisition DOD’s traditional acquisition processes were designed for hardware
+Pathways intensive systems and were typically linear and time-consuming. In July
+2017, we reported that the complexity and length of DOD’s acquisition
+process was an impediment for industry to work with DOD on software
+development, among other things.14 Similarly, in 2019, the Defense
+Innovation Board’s Software Acquisition and Practices study highlighted
+DOD’s lack of fast, Agile acquisition processes that incorporate
+cybersecurity, cross-service digital infrastructure, and pathways for
+cultivating digital talent as impediments to modern software.15 The
+National Security Commission on AI also reported and industry group
+officials told us that this process is not well-suited to AI procurement and
+deployment.16
+In January 2020, in part to address additional reforms directed by
+legislation, DOD reissued and updated its foundational acquisition
+guidance. It established the Adaptive Acquisition Framework, which
+includes six acquisition pathways based on the characteristics and risk
+profile of the system being acquired.17 The National Security Commission
+on AI recognized this framework as a positive step for DOD’s ability to
+acquire digital technologies, and recommended that DOD scale these
+structures, among others, to better support delivery of digitally enabled
+capabilities like AI. An official from the Office of the Under Secretary of
+Defense for Acquisition and Sustainment stated that the Software
+Acquisition Pathway is the preferred pathway for AI capabilities.18 Figure
+14GAO, Military Acquisitions: DOD Is Taking Steps to Address Challenges Faced by
+Certain Companies, GAO-17-644 (Washington, D.C.: July 20, 2017).
+15Defense Innovation Board, Software Is Never Done: Refactoring the Acquisition Code
+for Competitive Advantage (May 2019).
+16National Security Commission on Artificial Intelligence, “Final Report.” GAO-22-104765.
+17DOD’s general acquisition processes for weapon systems are described in Department
+of Defense Directive 5000.01, The Defense Acquisition System (Sept. 9, 2020)
+(incorporating change 1, July 28, 2022); and Department of Defense Instruction 5000.02,
+Operation of the Adaptive Acquisition Framework (Jan. 23, 2020) (incorporating change 1,
+June 8, 2022).
+18Department of Defense Instruction 5000.87, Operation of the Software Acquisition
+Pathway (Oct. 2, 2020). This pathway is designed for software-intensive systems to
+facilitate the rapid and iterative delivery of software capability to the user. It integrates
+modern software development practices with a focus on active user engagement.
+According to officials from the Office of the Under Secretary of Defense for Acquisition and
+Sustainment, 21 programs were using the software acquisition pathway as of July 2021.
+See GAO-22-104765.
+Page 6 GAO-23-105850 Artificial Intelligence
+--- pdf_page_11 ---
+pdf_page_number: 11
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_11|printed_page_pending|section_pending
+visual_review_required: false
+2 shows the Adaptive Acquisition Framework, highlighting the Software
+Acquisition Pathway.
+Figure 2: Adaptive Acquisition Framework Pathways
+Page 7 GAO-23-105850 Artificial Intelligence
+--- pdf_page_12 ---
+pdf_page_number: 12
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_12|printed_page_pending|section_pending
+visual_review_required: false
+DOD Entities Involved with In December 2021, the Deputy Secretary of Defense issued a
+AI memorandum establishing, effective February 1, 2022, a new position,
+the Chief Digital and AI Officer, to serve as DOD’s AI focal point.19 The
+Chief Digital and AI Officer is responsible for leading and overseeing
+DOD’s strategy development and policy formulation for data, analytics,
+and AI, and breaking down barriers to AI adoption, among other things.
+For the purposes of this report, guidance refers to policy and procedure
+documents such as DOD instructions or directives. Resources refer to
+informal, internal documents that may assist components in their work
+such as guidebooks or checklists. The Office of the Chief Digital and AI
+Officer is the successor organization to the Joint AI Center and integrated
+several previous DOD components, including the Defense Digital Service.
+The Chief Digital and AI Officer reports directly to the Deputy Secretary of
+Defense and has similar acquisition authority as previously granted to the
+Joint AI Center.
+Additionally, various DOD entities such as the Defense Advanced
+Research Projects Agency, as well as academia and the private sector,
+are involved in the development, transition, and deployment of AI across
+the department, while the military services and major commands are the
+primary users of AI. The relationship of the Chief Digital and AI Officer to
+the various entities contributing to DOD’s AI efforts is depicted in figure 3.
+19Deputy Secretary of Defense, Establishment of the Chief Digital and Artificial
+Intelligence Officer, Memorandum (Dec. 8, 2021).
+Page 8 GAO-23-105850 Artificial Intelligence
+--- pdf_page_13 ---
+pdf_page_number: 13
+printed_page_number: None
+section_title: 20GAO-22-104765
+machine_extracted_anchor: pdf_page_13|printed_page_pending|section_20GAO_22_104765
+visual_review_required: false
+Figure 3: Entities Involved in Developing, Transitioning, and Using AI for DOD, as of January 2023
+The Chief Digital and AI Officer oversees an AI marketplace known as
+Tradewind, which brings together DOD end users, private sector
+companies, and academia to expedite the procurement of AI capabilities.
+As we reported in February 2022, Tradewind serves as a new acquisition
+business model for AI. Its processes are intended to enable the
+department to quickly award Federal Acquisition Regulation-based
+contracts and other transaction agreements for prototypes with language
+suited to the unique aspects of AI, such as addressing intellectual
+property concerns and training data needs.20 According to an official from
+the Office of the Under Secretary of Defense for Acquisition and
+Sustainment, the first agreements under Tradewind were awarded in
+early 2021, and the department expects to make dozens of awards via
+Tradewind in fiscal year 2023.
+In March 2022, we found that while DOD is making organizational
+changes and investing billions of dollars to incorporate AI technology, the
+20GAO-22-104765.
+Page 9 GAO-23-105850 Artificial Intelligence
+--- pdf_page_14 ---
+pdf_page_number: 14
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_14|printed_page_pending|section_pending
+visual_review_required: true
+department risked a fragmented approach that could lead to unnecessary
+duplication and overlap in the future, among other things, unless it
+collaborated effectively across the AI landscape.21 We recommended,
+among other things, that the Deputy Secretary of Defense issue guidance
+that defines outcomes and monitors accountability for AI-related activities,
+and includes AI key performance indicators. DOD concurred with all
+seven recommendations, but has not yet completed actions to implement
+them.
+DOD AI Strategies DOD has released several strategies that outline its broader approach,
+education plan, and responsibilities for AI. These strategies include the
+following:
+• In February 2019, DOD issued a summary of the 2018 DOD AI
+Strategy, which directed DOD to accelerate the adoption of AI and
+emphasized that a strong, technologically advanced department was
+essential for protecting the security of the nation.22 This strategy
+includes initiatives such as cultivating a leading AI workforce and
+leading in military ethics and AI safety. According to an official from
+the Office of the Under Secretary of Defense for Acquisition and
+Sustainment, DOD plans to publicly release a Data, Analytics, and AI
+Strategy in the spring of 2023, following the release of the 2022
+National Defense Strategy.
+• In 2020, the Joint AI Center published the DOD AI Education
+Strategy, which focused on modernizing DOD with an AI-ready
+workforce that will be able to quickly adopt AI.23 The Joint AI Center
+developed this strategy to address several concerns, such as DOD’s
+obstacles to hiring large numbers of AI experts and its lack of AI-ready
+infrastructure spread across a wide range of missions.
+• In February 2020, the department released its Ethical Principles for
+AI, which apply to both warfighting and non-warfighting AI
+21GAO, Artificial Intelligence: DOD Should Improve Strategies, Inventory Process, and
+Collaboration Guidance, GAO-22-105834 (Washington, D.C.: Mar. 30, 2022).
+22The 2018 DOD AI Strategy is an annex to the 2018 National Defense Strategy, which
+underpins DOD’s planned budgets for fiscal years 2019 through 2023, including
+accelerating modernization programs such as AI-related applications. The summary of the
+National Defense Strategy states that, “The Department will invest broadly in military
+application of autonomy, artificial intelligence, and machine learning, including rapid
+application of commercial breakthroughs, to gain competitive military advantages.”
+23Department of Defense, 2020 DOD Artificial Intelligence Education Strategy (2020).
+Page 10 GAO-23-105850 Artificial Intelligence
+--- pdf_page_15 ---
+pdf_page_number: 15
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_15|printed_page_pending|section_pending
+visual_review_required: false
+capabilities.24 According to this guidance, the department was
+committed to AI that incorporates five ethical principles: responsible,
+equitable, traceable, reliable, and governable.
+• In May 2021, the Deputy Secretary of Defense issued a memorandum
+that established and directed the department’s approach to
+responsible AI. The Deputy Secretary of Defense then published the
+Responsible Artificial Intelligence Strategy and Implementation
+Pathway in June 2022, which called for the Chief Digital and AI
+Officer, among others, to develop tools and guidance to synchronize
+responsible AI implementation for the department across the
+acquisition life cycle.25 This strategy is organized around six lines of
+effort, such as modernizing governance structures and processes that
+allow for continuous oversight of DOD use of AI, among others.26
+Representatives from the 13 companies with AI expertise across various
+Company
+business sectors that we reviewed identified numerous key factors
+Representatives
+garnered from their experiences in acquiring AI capabilities and managing
+them throughout the AI life cycle. Based on our analysis of the data
+Identified a Variety of
+collected from these representatives, we identified 31 unique factors that
+Key Factors They
+companies consider. We generally grouped these factors into five
+categories, shown in figure 4. For the complete list of factors identified
+Consider when
+from our analysis, see appendix III.
+Acquiring AI
+Capabilities
+24Department of Defense, DOD Adopts Ethical Principles for Artificial Intelligence (Feb.
+24, 2020), accessed March 23, 2023,
+https://www.defense.gov/News/Releases/Release/Article/2091996/dod-adopts-ethical-prin
+ciples-for-artificial-intelligence/.
+25Department of Defense, Responsible Artificial Intelligence Strategy and Implementation
+Pathway (June 2022).
+26DOD, Responsible Artificial Intelligence Strategy and Implementation Pathway.
+Page 11 GAO-23-105850 Artificial Intelligence
+--- pdf_page_16 ---
+pdf_page_number: 16
+printed_page_number: None
+section_title: 27GAO-21-519SP
+machine_extracted_anchor: pdf_page_16|printed_page_pending|section_27GAO_21_519SP
+visual_review_required: false
+Figure 4: Categories of Factors Selected Companies Reported Considering when Acquiring Artificial Intelligence Capabilities
+Each of these categories and several of the factors within them are also
+reflected in our AI Accountability Framework.27 See figures 5-9 below for
+a depiction of each of the five categories and a summary of the factors
+within each. Below each figure, we discuss a few corresponding
+examples from our discussions with representatives from private sector
+companies.
+27GAO-21-519SP.
+Page 12 GAO-23-105850 Artificial Intelligence
+--- pdf_page_17 ---
+pdf_page_number: 17
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_17|printed_page_pending|section_pending
+visual_review_required: false
+Applying AI to Meet
+Figure 5: Key Factors Related to Understanding Mission Need
+Specific Mission Needs
+• Can AI solve the problem faster? Representatives from each of the
+13 companies we contacted described various mission needs and
+requirements that led them to conclude AI was an appropriate solution
+for a specific task or purpose. Representatives from several
+companies told us that they consider whether AI could be appropriate
+given the specific business or organizational problem the AI is meant
+to address. For example, representatives from one defense company
+told us that AI-enabled systems can relieve the burden of “dull, dirty,
+and dangerous” tasks like monitoring cameras, watching the skies for
+enemy drones, examining imagery, certain forms of signal processing,
+and more. Another company’s representatives noted that AI helps
+them identify acute pathologies in CT scans, such as strokes or brain
+bleeds, to alert physicians to facilitate faster care for time-critical
+findings. Representatives from two banking companies told us that
+they use AI to extract large amounts of loan data to facilitate quicker
+analysis or to examine vast amounts of transaction data to detect
+fraudulent activity. Our AI Accountability Framework notes that it is
+important to define clear goals and objectives for the AI system to
+ensure its intended outcomes are achieved.28 Further, it states that an
+entity should assess whether outputs are appropriate for the
+operational context in which the AI system is being used. Company
+representatives noted several examples where the use of an AI
+solution would not be appropriate, such as when only a small quantity
+of data needs to be analyzed, or might not be appropriate absent a
+human oversight mechanism, such as when the problem requires
+making human or moral decisions about a course of action.
+Representatives from one company noted that AI could be used to
+more rapidly and effectively detect and confirm a potential threat,
+28GAO-21-519SP.
+Page 13 GAO-23-105850 Artificial Intelligence
+--- pdf_page_18 ---
+pdf_page_number: 18
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_18|printed_page_pending|section_pending
+visual_review_required: false
+while a “human on the loop” would then confirm and enable the
+response.
+• Can the capability be expanded in the future? Representatives
+from several companies noted they look to pursue systems where a
+capability could have an initial valuable contribution and also be
+expanded over time, such as when security threats change or one
+banking company’s document processing solution that can work in
+additional business areas.
+• Does the workforce have applicable skillsets? Lastly, company
+representatives told us they consider the skillsets the workforce has to
+broadly work with AI systems, when assessing whether to pursue an
+AI solution. For example, one company’s representatives noted that it
+is important to have talent that can take the steps to clean the data—
+i.e., prepare the data to make them usable—where possible and
+analyze them in a way that includes proper controls to address their
+limitations, such as potential biases.
+Developing Business
+Figure 6: Key Factors Related to Making a Business Case
+Cases for Using AI
+• Is it preferable to buy or build a capability? Company
+representatives we spoke with described several factors that they
+consider when determining whether to build their own internal AI
+solution or pursue a commercially available solution.29 This can be
+described as developing a sound business case for the solution,
+which requires balance between the concept selected to satisfy
+operator needs and the resources—knowledge, funding, and time—
+needed to transform the concept into a product. For example, some
+29Of the 13 companies we contacted, three told us they build their AI capabilities in-house
+and do not procure AI from commercial vendors.
+Page 14 GAO-23-105850 Artificial Intelligence
+--- pdf_page_19 ---
+pdf_page_number: 19
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_19|printed_page_pending|section_pending
+visual_review_required: false
+representatives noted they may prefer to build their own solution if a
+commercial solution is not readily available or if they want to create or
+maintain a competitive advantage. Alternatively, companies might opt
+to pursue a commercial solution if one is readily available, or is
+expected to be less expensive or faster to obtain. One company’s
+representatives noted that, as part of the decision to build versus buy,
+it is important to clearly define responsibility for ongoing monitoring,
+maintenance, improvement, and delivery. If a third party is
+responsible, it is paramount to make sure it has the necessary
+experience and resources. If the buying company is responsible, it is
+important to plan the handover of the training and evaluation
+infrastructure and data so that AI models can be further maintained by
+the buyer.
+• Are there available, suitable, clean data? Most company
+representatives we spoke with generally noted that having available,
+suitable, and adequately clean data as a key input to an AI model—
+where the type of data may define the need for a particular type of AI
+technology—is critical for the success of the model. For example,
+representatives from one company told us that a lack of unified
+policies for data sharing and data governance frequently results in
+inconsistent data availability and usability. Since developing and using
+AI requires substantial amounts of data, these obstacles can
+represent a significant impediment to AI adoption. We previously
+reported that DOD faces a lack of available, usable data, such as
+accurately labeled historical data, among other challenges.30 Our AI
+Accountability Framework also notes that, when developing an AI
+model, entities should document origins and sources of data, ensure
+the data’s reliability, and assess the data’s attributes, variability, and
+to what extent they have been enhanced or augmented to ensure that
+they are appropriate for the intended use.31
+• What technical resources are available? Representatives from
+several companies noted that they consider their available technical
+resources when integrating AI capabilities into their existing physical
+infrastructure. For example, representatives from one company noted
+that understanding the system the AI will be integrated with will inform
+the hardware specifications that must be met and how much memory
+space is required. Additionally, according to representatives from
+another company, computer processing capabilities are another
+30GAO-22-104765.
+31GAO-21-519SP.
+Page 15 GAO-23-105850 Artificial Intelligence
+--- pdf_page_20 ---
+pdf_page_number: 20
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_20|printed_page_pending|section_pending
+visual_review_required: false
+important consideration. We previously reported that DOD faces
+difficulties integrating trained AI into existing weapon systems that
+were not initially designed for it.32 As such, the ability of buyers to use
+and understand a capability that requires these infrastructure-related
+resources are important factors of the business case.
+• What performance metrics will be used? Several company
+representatives recommended considering any AI-specific
+requirements and performance metrics. Representatives from one
+company told us that identifying performance metrics is dependent on
+factors such as the AI use case, the importance of the task, and the
+overarching business objectives. Frequently used metrics could
+include those to measure the ability to explain an AI algorithm, the
+degree of an algorithm’s bias, representativeness of training and test
+data, and performance against quantified risk management standards
+established by the buyer or vendor, among other things. Another
+critical performance metric, according to these representatives, is how
+productive an AI capability is in delivering predictions and outputs
+relative to the existing practices the capability is replacing.
+• What will the system cost? Some company representatives also
+discussed the importance of having an adequate understanding of the
+estimated cost of building or buying the AI capability. In particular, for
+an AI capability, company representatives told us that costs for data
+computation, which can be significant, should be factored into the cost
+estimate. One company’s representatives told us that the main
+distinction between AI and traditional software is that AI has compute
+costs that greatly overshadow the cost of storage, as compute power
+is extremely expensive. They noted that one potential approach for
+reducing compute costs is to use a digital AI platform, which would
+also include tools that reduce the need for specialized expertise and
+thus reduce potentially high personnel costs as well. Representatives
+from several companies also described purchasing certain types of
+necessary AI capability on a “software-as-a-service” or subscription
+basis, and said that such models provide more flexibility to scale the
+capability up or down or to replace it with another when it becomes
+clear that one technology is outpacing another.
+32GAO-22-104765.
+Page 16 GAO-23-105850 Artificial Intelligence
+--- pdf_page_21 ---
+pdf_page_number: 21
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_21|printed_page_pending|section_pending
+visual_review_required: false
+Tailoring Contracting
+Figure 7: Key Factors Related to Tailoring Contracting Approach
+Approaches for AI
+• Is there too much dependence on a single vendor?
+Representatives from several companies noted that it is important to
+create strategies to avoid “vendor lock-in,” or dependence on a single
+supplier. For example, they suggested holding regular competitions
+for a particular service, maintaining alternative vendors to the extent
+possible, and limiting the use of proprietary software. Specifically,
+representatives from one company told us that to avoid vendor lock-
+in, they ensure there is at least one other alternative vendor capable
+of providing any AI solution they pursue. They stated that they are
+very cautious not to select an AI capability that only works on a single
+cloud infrastructure to avoid being locked into that vendor’s
+infrastructure.
+• Does contract language protect interests and access to systems
+and data appropriately? Company representatives also
+recommended including specific contract language in AI acquisitions.
+For example, representatives of four of the 13 companies we
+contacted told us that they include specific contract language such as
+“escrow clauses” to ensure access to the AI model’s source code if
+the vendor goes bankrupt.
+• Have intellectual property and data rights concerns been
+addressed? Representatives from several companies noted that it is
+important to carefully consider a vendor’s intellectual property and that
+handling such concerns should be done on a case-by-case basis as
+each vendor and each AI solution is unique. In addition, purchasing AI
+systems should take into account data rights, and, according to
+representatives from one company, ownership of data is complicated
+and the legal staff should be equipped to address these matters.
+Additionally, another company’s representatives noted that the use of
+alternative contract structures, such as subscription-based structures,
+is often useful to address intellectual property concerns, as well as to
+Page 17 GAO-23-105850 Artificial Intelligence
+--- pdf_page_22 ---
+pdf_page_number: 22
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_22|printed_page_pending|section_pending
+visual_review_required: false
+facilitate rapid AI procurement. Our AI Accountability Framework adds
+that in the case of entities procuring AI systems from vendors,
+contracts should include provisions for appropriate access to data,
+models, and parameters to enable sufficient oversight and auditing.33
+• Is the appropriate expertise in place? Lastly, representatives from
+several companies discussed the need to involve cross-functional or
+multidisciplinary teams—including subject matter experts from
+business, finance, legal, and relevant technical disciplines such as
+data scientists—in the buying process. Representatives from one
+company told us that there is often a need for more than one type of
+expert to provide guidance to buyers of AI, such as privacy experts to
+ensure that personal information is obscured and the system works in
+an ethical manner, among others. Another stated that requirements
+should be developed through cross-organizational stakeholder
+engagement and brainstorming, to identify potential use cases and
+ensure that the specific organizational needs and constraints, as well
+as relevant regulations and guidance, are considered. The AI
+Accountability Framework also encourages users to obtain diverse
+perspectives from a community of stakeholders throughout the AI life
+cycle to mitigate risks.34
+Building in Testing and
+Figure 8: Key Factors Related to Testing and Evaluation of Proposed Solutions
+Evaluation of AI Solutions
+• How much failure is tolerable? Representatives from several
+companies we spoke with discussed the need to have a high
+tolerance for failure, meaning to accept that some solutions will
+naturally fail or not deliver the desired result. In these instances where
+failure is unavoidable, they noted that it is preferable to fail quickly
+33GAO-21-519SP.
+34GAO-21-519SP.
+Page 18 GAO-23-105850 Artificial Intelligence
+--- pdf_page_23 ---
+pdf_page_number: 23
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_23|printed_page_pending|section_pending
+visual_review_required: false
+(i.e., before significant funds have been invested) in order to quickly
+move on to another possible solution.
+• Is the concept proven? According to representatives from some
+companies, requiring vendors to demonstrate a proof of concept
+before committing to a solution is another method to limit overly
+investing in an unproven solution. For example, representatives from
+one company told us that proofs of concept are important to helping a
+prospective buyer budget for the AI capability as it gives an
+understanding of what the AI capability might be able to do and how
+much of it they might need moving forward. Additionally, two
+companies’ representatives noted that they do not always initially
+share the performance metrics with vendors during the proof of
+concept stage; rather, they have company experts examine the test
+results independently.
+• How will risk be assessed and monitored? Performing risk
+assessments as part of the acquisition to identify limitations in building
+or buying a new product is also advisable, according to several
+companies’ representatives. Another noted that when planning testing
+during the acquisition process, managers should consider cost and
+effort involved in retraining an algorithm due to drift (i.e., when AI
+predictions become less reliable over time because data inputs
+encountered by the algorithm differ from the original training data).
+These representatives said post-deployment testing of the model is
+useful to preserve accuracy and that buyers may periodically consider
+whether a capability continues to be cost effective and productive, and
+under what performance and risk conditions retirement should be
+considered.
+• Is the system ethical and responsible? Representatives from
+several companies we spoke with also emphasized understanding the
+responsible AI and ethical considerations necessary to implement a
+system. For example, representatives from one company told us that
+limited explanation of a system’s algorithms introduces difficult ethical,
+accountability, and bias considerations; thus, algorithms that cannot
+be fully explained may not be appropriate for sensitive business
+problems and use cases. However, representatives from another
+company said that for certain business functions, such as for a human
+resources function, as long as the technology is proven and privacy
+concerns are addressed, more limited explanations can be
+acceptable. Representatives from a third company noted that in
+regard to automation bias—the over-reliance on and over-acceptance
+of suggestions from systems that are automated—raising awareness
+of the potential bias among users of the capability may lead to better
+Page 19 GAO-23-105850 Artificial Intelligence
+--- pdf_page_24 ---
+pdf_page_number: 24
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_24|printed_page_pending|section_pending
+visual_review_required: false
+outcomes as the user may pause to consider whether they trust the
+machine more than their own judgement. Additionally, these
+representatives noted that it is incumbent on users of AI to ensure that
+there is a human oversight mechanism to continuously monitor the
+ethical considerations of a capability.
+Our AI Accountability Framework also notes the need to pay particular
+attention to ethical considerations when monitoring a system’s
+performance.35 Specifically, the framework notes that entities should
+identify potential biases and develop procedures for human
+supervision of the AI system. This helps ensure the system will
+produce results that are consistent with the intended program
+objectives. Additionally, the framework notes that when determining
+performance metrics, a program manager should consider the extent
+to which the metrics are consistent with system goals, objectives, and
+constraints, including ethical considerations.
+Planning for Initial AI Uses
+Figure 9: Key Factors Related to Planning Future Efforts
+with Eye on Future
+Improvements
+• Will the capability be useful in the future? Representatives from
+each of the companies we spoke with told us that they work to
+consider how AI can be integrated into future systems and its
+adaptability by considering potential future use cases. Several further
+noted that, when looking into AI solutions, they prefer to invest in
+adaptable solutions that maximize interoperability. This enables
+companies to adapt the systems to future use cases without having to
+make significant new investments. For example, representatives from
+one company told us that they build modular systems that can be
+expanded to add future capabilities and emphasized that they look for
+configurable solutions to fit these systems. The AI Accountability
+35GAO-21-519SP.
+Page 20 GAO-23-105850 Artificial Intelligence
+FIELD_DEFINITIONS:
+{"coding_dimensions_allowed_values": ["integration_level", "application_maturity", "human_machine_authority", "engineering_resource_conditions", "trust_governance_constraints", "organizational_system_fit"], "exact_fields": ["source_id", "source_locator", "excerpt_original", "excerpt_zh", "normalized_claim", "coding_dimensions", "evidence_nature", "topics"], "excerpt_original_rule": "逐字复制输入文本；不得静默纠正OCR或版式错误", "field_types": {"coding_dimensions": "array of zero or more exact dimension key strings", "evidence_nature": "string", "excerpt_original": "string", "excerpt_zh": "string", "normalized_claim": "string", "source_id": "string", "source_locator": "string", "topics": "array of strings"}, "normalized_claim_language": "zh-CN"}
+{"application_maturity": "应用成熟度：概念战略、研发、试验、试点、采购部署或持续运用。", "engineering_resource_conditions": "工程与资源条件：数据、算力、模型、接口、供应链、预算、人才和保障。", "human_machine_authority": "人机权限关系：辅助决策、人在回路中、受监督自主或更高程度自主；普通系统协同、信息传输、培训或文档要求本身不足以支持此维度。", "integration_level": "能力集成层级：单工具、单任务、单平台、跨平台、跨任务或体系级集成。", "organizational_system_fit": "组织与体系适配：指挥流程、任务编组、跨平台协同、人员负荷和组织变革。", "trust_governance_constraints": "可信与治理约束：安全、可靠性、测试评价、授权边界、责任与伦理。"}
+{"constraint": "限制、风险、障碍、依赖或边界条件。", "deployment_event": "部署、实装、现场运用或正式采用已经发生。", "evaluation": "评价、审查、验证或评估结论。", "goal": "战略目标、愿景或计划方向；不能写成已实现结果。", "resource_input": "投入、资源、预算、数据、人才或基础设施条件。", "test_event": "测试或演习发生、参与主体或配置；不表示功能结果或作战效能。", "test_result": "测试中观察到的功能、性能或结果；必须由摘录直接说明。"}
+JSON_REPAIR: Return one strict JSON array with exactly the eight output fields and no Markdown, commentary, metadata, or source-attribution prefix.

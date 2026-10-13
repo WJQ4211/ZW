@@ -1,0 +1,365 @@
+你是P15R定向质量修补器。只修补同一观点的审计指出问题，不改变其专业视角、假设对象和T1时间边界。
+必须继续只使用下方提供的T1正式Evidence；不得读取其他视角、T0观点全文、网络或外部常识。
+不得引用六条排除Evidence或两条historical_context；不得引用T0 EV-T0-*；不得把goal、官方评价、test_event或局部案例写成全军部署/成熟度。
+所有引用Evidence ID必须来自本提示的T1 evidence_context，version必须为1。
+引用relation只能是support、challenge、limit、background，importance只能是high、medium、low；不得输出qualify、boundary_change或其他关系。
+修补后的judgment必须保持本视角差异：OPS=任务运用/持续使用/作战适配；STRAT=治理/资源/跨军种机制；TECH=成熟度/工程复用/性能边界；TRUST=可信性/验证/红队/治理条件。
+不得把‘未观察到’写成‘不存在’，不得把截至2026年6月30日写成被证据逐日覆盖；应明确材料覆盖范围和局限。
+输出严格JSON对象，字段恰好为：judgment、confidence、supporting_evidence、counter_evidence、mechanism_claims、key_assumptions、boundary_conditions、uncertainties、information_gaps、falsifiers、affected_fields、evidence_field_changes、update_rationale。不得输出Markdown围栏或额外字段。
+
+观点ID与专业信息：
+{"viewpoint_id": "VP-T0-TECH-H02", "perspective_id": "TECH", "hypothesis_id": "HYP-T0-02"}
+原始观点复评JSON：
+{
+  "judgment": "T1证据进一步显示DARPA分诊挑战赛等具体任务竞赛和测试活动仍是可观察的能力形成形态；这些信号支持任务分布牵引，但不能外推为全军规模化部署。",
+  "confidence": "medium",
+  "supporting_evidence": [
+    {
+      "evidence_id": "CE-T1-F2BE64F4810C89EF",
+      "version": 1,
+      "target_field": "judgment",
+      "relation": "support",
+      "importance": "high"
+    },
+    {
+      "evidence_id": "CE-T1-C20674F2CA89D5C5",
+      "version": 1,
+      "target_field": "judgment",
+      "relation": "support",
+      "importance": "high"
+    },
+    {
+      "evidence_id": "CE-T1-43B8C6F6E7B77F40",
+      "version": 1,
+      "target_field": "judgment",
+      "relation": "support",
+      "importance": "high"
+    },
+    {
+      "evidence_id": "CE-T1-12F70AE60CD787AA",
+      "version": 1,
+      "target_field": "judgment",
+      "relation": "support",
+      "importance": "medium"
+    },
+    {
+      "evidence_id": "CE-T1-45417DAD097210B1",
+      "version": 1,
+      "target_field": "judgment",
+      "relation": "support",
+      "importance": "medium"
+    }
+  ],
+  "counter_evidence": [
+    {
+      "evidence_id": "CE-T1-F2BE64F4810C89EF",
+      "version": 1,
+      "target_field": "boundary_conditions[0]",
+      "relation": "limit",
+      "importance": "medium"
+    },
+    {
+      "evidence_id": "CE-T1-C20674F2CA89D5C5",
+      "version": 1,
+      "target_field": "boundary_conditions[0]",
+      "relation": "limit",
+      "importance": "medium"
+    },
+    {
+      "evidence_id": "CE-T1-43B8C6F6E7B77F40",
+      "version": 1,
+      "target_field": "boundary_conditions[0]",
+      "relation": "limit",
+      "importance": "medium"
+    },
+    {
+      "evidence_id": "CE-T1-12F70AE60CD787AA",
+      "version": 1,
+      "target_field": "boundary_conditions[0]",
+      "relation": "limit",
+      "importance": "medium"
+    },
+    {
+      "evidence_id": "CE-T1-45417DAD097210B1",
+      "version": 1,
+      "target_field": "boundary_conditions[0]",
+      "relation": "limit",
+      "importance": "medium"
+    }
+  ],
+  "mechanism_claims": [
+    "ACE项目通过X-62A测试飞机实现了AI自主空战，该成果在公开信息中仅限于空战领域，未显示向其他任务领域迁移（证据）。",
+    "RACER项目在越野自主驾驶上取得进展，其技术栈和传感器配置针对特定地形任务，公开信息未体现跨军种通用性（证据）。",
+    "AIDP在陆军情报领域快速部署，作为首个在陆军情报云环境中部署的项目，其应用范围在公开信息中局限于特定军种和任务（证据）。",
+    "DARPA分诊挑战赛作为竞赛活动，展示了机器人平台在特定场景下的能力，但属于测试事件，不构成规模化采办或部署（证据）。",
+    "基于上述项目各自独立进展的公开记录，推断缺乏跨项目复用的统一技术平台或模型——此为观察性推断，受限于公开证据的可得性（推断）。"
+  ],
+  "key_assumptions": [
+    "各项目的独立进展反映了任务驱动的分散发展模式。",
+    "SP-008等规划文件尚未转化为实际的跨项目统一部署。",
+    "现有公开证据未显示跨项目复用机制，但无法排除未公开的共享安排。",
+    "DARPA分诊挑战赛的竞赛结果仅代表特定测试环境下的表现，不代表作战环境下的成熟度。"
+  ],
+  "boundary_conditions": [
+    "若出现跨军种复用的统一平台、统一模型或统一工程流程，则本假设被削弱。",
+    "若DARPA项目主要停留在演示验证或竞赛测试而未转入规模化采办，则本假设增强。",
+    "截至2026年6月30日，T1证据中的DARPA分诊挑战赛属于竞赛测试活动，未显示向全军部署转化。"
+  ],
+  "uncertainties": [
+    "ACE、RACER等项目的技术成果是否已进入正式的采办或列装流程尚不明确。",
+    "AIDP的部署是否代表了陆军AI能力的普遍水平，还是仅限情报领域，存在不确定性。",
+    "各项目之间是否存在未公开的技术复用或数据共享机制，无法从现有证据确认。",
+    "DARPA分诊挑战赛的后续转化路径（如是否进入采办）不明确。"
+  ],
+  "information_gaps": [
+    "缺乏关于各项目之间技术复用或数据共享的具体证据。",
+    "SP-008中提到的集中平台是否已进入实际开发阶段，缺乏公开信息。",
+    "国防部或各军种是否在内部建立了跨项目共享的技术标准或组件库，未在公开证据中体现。",
+    "DARPA分诊挑战赛的竞赛成果是否被军方采纳或进入后续开发，缺乏公开信息。"
+  ],
+  "falsifiers": [
+    "若在2026年7月1日以后出现多个军种在作战演习中常态化使用同一套AI系统，且不依赖DARPA等专门项目支持，则本假设不成立。",
+    "若在2026年7月1日以后出现DARPA分诊挑战赛成果直接转化为全军采办项目并形成统一工程流程的A/B级证据，则需重新评估。"
+  ],
+  "affected_fields": [
+    "judgment",
+    "boundary_conditions[0]"
+  ],
+  "evidence_field_changes": [
+    {
+      "target_field": "judgment",
+      "before": "T1证据进一步显示具体任务试验、竞赛和局部使用仍是可观察的能力形成形态；这些信号支持任务分布牵引，但不能外推为全军规模化部署。",
+      "after": "T1证据进一步显示DARPA分诊挑战赛等具体任务竞赛和测试活动仍是可观察的能力形成形态；这些信号支持任务分布牵引，但不能外推为全军规模化部署。",
+      "new_evidence_ids": [
+        "CE-T1-F2BE64F4810C89EF",
+        "CE-T1-C20674F2CA89D5C5",
+        "CE-T1-43B8C6F6E7B77F40",
+        "CE-T1-12F70AE60CD787AA",
+        "CE-T1-45417DAD097210B1"
+      ],
+      "change_reason": "T1证据具体化了任务竞赛和测试活动的实例（DARPA分诊挑战赛），强化了任务分布牵引的判断，同时明确其竞赛测试性质，不构成规模化部署证据。"
+    },
+    {
+      "target_field": "boundary_conditions[0]",
+      "before": "若出现跨军种复用的统一平台、统一模型或统一工程流程，则本假设被削弱。",
+      "after": "若出现跨军种复用的统一平台、统一模型或统一工程流程，则本假设被削弱；截至2026年6月30日，T1证据中的DARPA分诊挑战赛属于竞赛测试活动，未显示向全军部署转化。",
+      "new_evidence_ids": [
+        "CE-T1-F2BE64F4810C89EF",
+        "CE-T1-C20674F2CA89D5C5",
+        "CE-T1-43B8C6F6E7B77F40",
+        "CE-T1-12F70AE60CD787AA",
+        "CE-T1-45417DAD097210B1"
+      ],
+      "change_reason": "T1证据补充了具体竞赛测试活动的实例，进一步明确其未转化为全军部署，强化了边界条件的适用性。"
+    }
+  ],
+  "update_rationale": "T1证据（DARPA分诊挑战赛）属于竞赛测试活动，支持任务分布牵引的判断，但不构成规模化部署证据；因此维持原判断方向，仅将判断中的'具体任务试验、竞赛和局部使用'具体化为'DARPA分诊挑战赛等具体任务竞赛和测试活动'，并更新边界条件以明确其竞赛测试性质。"
+}
+两次独立审计指出的具体问题：
+[
+  "The judgment states 'T1证据进一步显示DARPA分诊挑战赛等具体任务竞赛和测试活动仍是可观察的能力形成形态' but the supporting evidence includes CE-T1-F2BE64F4810C89EF (test_event), CE-T1-C20674F2CA89D5C5 (test_event), CE-T1-43B8C6F6E7B77F40 (test_result), CE-T1-12F70AE60CD787AA (resource_input), CE-T1-45417DAD097210B1 (resource_input). These are test events/results, not deployment. The judgment correctly notes '不能外推为全军规模化部署', but the mechanism_claims[3] states 'DARPA分诊挑战赛作为竞赛活动，展示了机器人平台在特定场景下的能力，但属于测试事件，不构成规模化采办或部署' which is correct. However, the boundary_conditions[0] change adds '截至2026年6月30日，T1证据中的DARPA分诊挑战赛属于竞赛测试活动，未显示向全军部署转化' which is accurate, but the judgment's claim that these '支持任务分布牵引' is an extrapolation from test events to a general pattern; the evidence only shows a single competition, not a trend. The affected_fields include 'mechanism_claims[0]' but the evidence_field_changes do not update mechanism_claims[0] directly; the mechanism_claims[0] mentions ACE project but no new evidence is cited for it, so the change is not supported by the listed evidence.",
+  "judgment中称'DARPA分诊挑战赛等具体任务竞赛和测试活动仍是可观察的能力形成形态'，但supporting_evidence中CE-T1-F2BE64F4810C89EF和CE-T1-C20674F2CA89D5C5均为test_event性质，CE-T1-43B8C6F6E7B77F40为test_result，CE-T1-12F70AE60CD787AA和CE-T1-45417DAD097210B1为resource_input，这些证据均未显示能力形成或部署结果，将test_event和test_result直接视为'能力形成形态'存在将测试事件等同于能力形成的错误；boundary_conditions[0]的after中称'截至2026年6月30日，T1证据中的DARPA分诊挑战赛属于竞赛测试活动，未显示向全军部署转化'，但该边界条件仅基于DARPA竞赛，未考虑其他T1证据（如CE-T1-AA937CC0AF5E2372的deployment_event），存在局部外推问题。"
+]
+可用T1 Evidence全文字段：
+{
+  "CE-T1-12F70AE60CD787AA": {
+    "candidate_evidence_id": "CE-T1-12F70AE60CD787AA",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "engineering_resource_conditions"
+    ],
+    "content_hash": "12f70ae60cd787aa7d9ff4253c06b5aa1159fa69983c9f3120d7cdc73e8145d4",
+    "evidence_id": "CE-T1-12F70AE60CD787AA",
+    "evidence_nature": "resource_input",
+    "excerpt_original": "In the Data Competition, teams tackled DARPA-provided datasets of de-identified physiological data from trauma patients.",
+    "excerpt_zh": "在数据竞赛中，各团队处理了DARPA提供的来自创伤患者的去标识化生理数据集。",
+    "extraction_run_id": "P11R-P12R-G1Q-T1-20260827T065600Z-v1",
+    "g1_author_decision": "accept",
+    "human_reviewed": true,
+    "human_source_visual_review_count": 0,
+    "lineage": "p12r_supplemental_real_api",
+    "normalized_claim": "数据竞赛中团队使用了DARPA提供的去标识化创伤患者生理数据。",
+    "published_at": "2025-11-14",
+    "published_at_precision": "day",
+    "publisher": "DARPA",
+    "review_mode": "ai_preannotation_author_bulk_signoff_with_key_item_adjudication",
+    "reviewed_at": "2026-08-27T07:25:25Z",
+    "reviewer": "author_01",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DARPA-003",
+    "source_locator": "web_paragraph_0021",
+    "source_visual_review_claimed": false,
+    "status": "active",
+    "t1_change_signal_eligible": true,
+    "temporal_role": "current_t1_signal",
+    "title": "DART and MSAI triumph at DARPA Triage Challenge",
+    "topics": [
+      "DARPA Triage Challenge",
+      "数据竞赛",
+      "数据"
+    ],
+    "url_or_path": "https://www.darpa.mil/news/2025/dart-msai-triumph-darpa-triage-challenge",
+    "version": 1
+  },
+  "CE-T1-43B8C6F6E7B77F40": {
+    "candidate_evidence_id": "CE-T1-43B8C6F6E7B77F40",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "application_maturity"
+    ],
+    "content_hash": "43b8c6f6e7b77f40609df13ac083dc519040fbc2e79490048b55431ab24adae0",
+    "evidence_id": "CE-T1-43B8C6F6E7B77F40",
+    "evidence_nature": "test_result",
+    "excerpt_original": "Coordinated Robotics earned the top prize of $300,000, demonstrating robotic platforms that successfully detected vital signs and identified injury patterns despite impaired visibility and environmental complexity.",
+    "excerpt_zh": "Coordinated Robotics赢得了30万美元的最高奖金，展示了在能见度受损和环境复杂的情况下成功检测生命体征并识别损伤模式的机器人平台。",
+    "extraction_run_id": "P11R-P12R-G1Q-T1-20260827T065600Z-v1",
+    "g1_author_decision": "accept",
+    "human_reviewed": true,
+    "human_source_visual_review_count": 0,
+    "lineage": "p12r_supplemental_real_api",
+    "normalized_claim": "据DARPA竞赛环境中的官方披露结果，Coordinated Robotics展示了能够检测生命体征和识别损伤模式的机器人平台。",
+    "published_at": "2025-11-14",
+    "published_at_precision": "day",
+    "publisher": "DARPA",
+    "review_mode": "ai_preannotation_author_bulk_signoff_with_key_item_adjudication",
+    "reviewed_at": "2026-08-27T07:25:25Z",
+    "reviewer": "author_01",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DARPA-003",
+    "source_locator": "web_paragraph_0010",
+    "source_visual_review_claimed": false,
+    "status": "active",
+    "t1_change_signal_eligible": true,
+    "temporal_role": "current_t1_signal",
+    "title": "DART and MSAI triumph at DARPA Triage Challenge",
+    "topics": [
+      "DARPA Triage Challenge",
+      "系统竞赛",
+      "机器人"
+    ],
+    "url_or_path": "https://www.darpa.mil/news/2025/dart-msai-triumph-darpa-triage-challenge",
+    "version": 1
+  },
+  "CE-T1-45417DAD097210B1": {
+    "candidate_evidence_id": "CE-T1-45417DAD097210B1",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "engineering_resource_conditions",
+      "trust_governance_constraints"
+    ],
+    "content_hash": "45417dad097210b146d1fe083eba2790f605b8e6307c18ec72f656fbf0cc39fd",
+    "evidence_id": "CE-T1-45417DAD097210B1",
+    "evidence_nature": "resource_input",
+    "excerpt_original": "The DARPA Triage Challenge is strengthened by the contributions of government and industry partners, including the Naval Information Warfare Center, the Johns Hopkins University Applied Physics Laboratory, the US Army Institute of Surgical Research, the University of Maryland, Baltimore, and the University of Pittsburgh, who collectively provide data, independent verification and validation, and technical expertise to ensure rigorous evaluation of triage solutions.",
+    "excerpt_zh": "DARPA分诊挑战赛因政府和行业合作伙伴的贡献而得到加强，包括海军信息战中心、约翰霍普金斯大学应用物理实验室、美国陆军外科研究所、马里兰大学巴尔的摩分校和匹兹堡大学，他们共同提供数据、独立验证和确认以及技术专长，以确保对分诊解决方案进行严格评估。",
+    "extraction_run_id": "P11R-P12R-G1Q-T1-20260827T065600Z-v1",
+    "g1_author_decision": "accept",
+    "human_reviewed": true,
+    "human_source_visual_review_count": 0,
+    "lineage": "p12r_supplemental_real_api",
+    "normalized_claim": "多个政府和行业合作伙伴为DARPA分诊挑战赛提供数据、独立验证和技术专长。",
+    "published_at": "2025-11-14",
+    "published_at_precision": "day",
+    "publisher": "DARPA",
+    "review_mode": "ai_preannotation_author_bulk_signoff_with_key_item_adjudication",
+    "reviewed_at": "2026-08-27T07:25:25Z",
+    "reviewer": "author_01",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DARPA-003",
+    "source_locator": "web_paragraph_0029",
+    "source_visual_review_claimed": false,
+    "status": "active",
+    "t1_change_signal_eligible": true,
+    "temporal_role": "current_t1_signal",
+    "title": "DART and MSAI triumph at DARPA Triage Challenge",
+    "topics": [
+      "DARPA Triage Challenge",
+      "合作伙伴",
+      "资源投入"
+    ],
+    "url_or_path": "https://www.darpa.mil/news/2025/dart-msai-triumph-darpa-triage-challenge",
+    "version": 1
+  },
+  "CE-T1-C20674F2CA89D5C5": {
+    "candidate_evidence_id": "CE-T1-C20674F2CA89D5C5",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "application_maturity"
+    ],
+    "content_hash": "c20674f2ca89d5c5826de233d8c4f73e69477284b1aae9871132e6bb239c0343",
+    "evidence_id": "CE-T1-C20674F2CA89D5C5",
+    "evidence_nature": "test_event",
+    "excerpt_original": "In the Systems competition, held from Sept. 26, 2025 to Oct. 3, 2025, at Guardian Centers in Perry, Georgia, teams navigated courses modeled on a C-130 airplane crash and night ambush scenarios that were complicated by smoke, darkness, and visual obstructions.",
+    "excerpt_zh": "在2025年9月26日至10月3日于佐治亚州佩里市Guardian Centers举行的系统竞赛中，各团队在模拟C-130飞机坠毁和夜间伏击场景的场地上进行导航，这些场景因烟雾、黑暗和视觉障碍而变得复杂。",
+    "extraction_run_id": "P11R-P12R-G1Q-T1-20260827T065600Z-v1",
+    "g1_author_decision": "accept",
+    "human_reviewed": true,
+    "human_source_visual_review_count": 0,
+    "lineage": "p12r_supplemental_real_api",
+    "normalized_claim": "系统竞赛于2025年9月26日至10月3日在佐治亚州佩里市Guardian Centers举行。",
+    "published_at": "2025-11-14",
+    "published_at_precision": "day",
+    "publisher": "DARPA",
+    "review_mode": "ai_preannotation_author_bulk_signoff_with_key_item_adjudication",
+    "reviewed_at": "2026-08-27T07:25:25Z",
+    "reviewer": "author_01",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DARPA-003",
+    "source_locator": "web_paragraph_0010",
+    "source_visual_review_claimed": false,
+    "status": "active",
+    "t1_change_signal_eligible": true,
+    "temporal_role": "current_t1_signal",
+    "title": "DART and MSAI triumph at DARPA Triage Challenge",
+    "topics": [
+      "DARPA Triage Challenge",
+      "系统竞赛"
+    ],
+    "url_or_path": "https://www.darpa.mil/news/2025/dart-msai-triumph-darpa-triage-challenge",
+    "version": 1
+  },
+  "CE-T1-F2BE64F4810C89EF": {
+    "candidate_evidence_id": "CE-T1-F2BE64F4810C89EF",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "application_maturity"
+    ],
+    "content_hash": "f2be64f4810c89efb2b9e4fd954d19a10ae9222a7bb2b4f69a340abfc6c5e980",
+    "evidence_id": "CE-T1-F2BE64F4810C89EF",
+    "evidence_nature": "test_event",
+    "excerpt_original": "DARPA concluded the second year of the DARPA Triage Challenge on October 4, awarding top marks to DART and MSAI in Systems and Data competitions, respectively.",
+    "excerpt_zh": "DARPA于10月4日结束了DARPA分诊挑战赛的第二年，分别在系统竞赛和数据竞赛中授予DART和MSAI最高分。",
+    "extraction_run_id": "P11R-P12R-G1Q-T1-20260827T065600Z-v1",
+    "g1_author_decision": "accept",
+    "human_reviewed": true,
+    "human_source_visual_review_count": 0,
+    "lineage": "p12r_supplemental_real_api",
+    "normalized_claim": "DARPA于2025年10月4日结束了DARPA分诊挑战赛第二年。",
+    "published_at": "2025-11-14",
+    "published_at_precision": "day",
+    "publisher": "DARPA",
+    "review_mode": "ai_preannotation_author_bulk_signoff_with_key_item_adjudication",
+    "reviewed_at": "2026-08-27T07:25:25Z",
+    "reviewer": "author_01",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DARPA-003",
+    "source_locator": "web_paragraph_0006",
+    "source_visual_review_claimed": false,
+    "status": "active",
+    "t1_change_signal_eligible": true,
+    "temporal_role": "current_t1_signal",
+    "title": "DART and MSAI triumph at DARPA Triage Challenge",
+    "topics": [
+      "DARPA Triage Challenge",
+      "竞赛"
+    ],
+    "url_or_path": "https://www.darpa.mil/news/2025/dart-msai-triumph-darpa-triage-challenge",
+    "version": 1
+  }
+}
+定向修补要求：删除与字段文字不匹配的引用；将仅表达目标/事件/资源的证据改作限定或背景；保留必要的局部范围限定；每个evidence_field_changes的new_evidence_ids必须直接服务其after字段；不要新增无法由上述Evidence支持的主体、结果、数字或范围。

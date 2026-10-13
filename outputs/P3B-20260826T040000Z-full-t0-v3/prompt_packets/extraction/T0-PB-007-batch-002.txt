@@ -1,0 +1,760 @@
+PROMPT_ID: evidence_extract_p3b
+VERSION: 2.0
+BATCH_ID: T0-PB-007-batch-002
+SOURCE_DOCUMENT_ID: T0-PB-007
+RESEARCH_QUESTION: Based only on public, non-classified material available through 2024-12-31, what dominant deployment form is more likely for U.S. military AI capability building in 2025-2027?
+TASK: Extract at most five auditable evidence candidates from these source segments. Output zero candidates when the supplied text contains insufficient directly relevant evidence.
+INPUT LIMIT: Use only the source segments and definitions supplied here. Do not use prior runs, other sources, or outside knowledge.
+OUTPUT: strict JSON array; each object must contain exactly the eight model fields in the schema.
+normalized_claim must be Chinese only, state one evidence proposition, and contain no source-attribution prefix such as 本报告认为 or 某机构指出. Source metadata is supplied by the program.
+coding_dimensions must be a JSON array of zero or more exact dimension key strings, never an object/map and never Chinese descriptions or maturity labels. Allowed keys: integration_level, application_maturity, human_machine_authority, engineering_resource_conditions, trust_governance_constraints, organizational_system_fit.
+excerpt_original must be copied verbatim from one exact source_locator. Do not silently repair OCR, spelling, or layout extraction.
+If an English excerpt is returned, excerpt_zh must be non-empty and remains pending G1 translation review.
+Use goal for strategy/vision/plan; test_event only for a test or exercise occurrence, participants, or configuration; test_result only for an explicitly observed function, performance, or result; deployment_event only for deployment, fielding, adoption, or sustained use that has already occurred.
+Ordinary coordination, information transfer, training, or documentation does not automatically support human_machine_authority.
+Do not add subjects, actions, numbers, scope, or results absent from the excerpt. Do not generate hypotheses, viewpoints, conclusions, or a 2025-2027 route judgment.
+Do not use pseudo-continuous locators. One candidate expresses one checkable fact. Do not duplicate an equivalent excerpt within this source.
+CANDIDATE_LIMIT: 5
+SOURCE_SEGMENTS:
+--- pdf_page_25 ---
+pdf_page_number: 25
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_25|printed_page_pending|section_pending
+visual_review_required: false
+Framework echoes that entities should identify conditions under which
+the AI system may be scaled or expanded beyond its current use.36
+• Are the workforce and business infrastructure ready? In addition,
+representatives from companies we spoke with discussed the need to
+have a business culture that is supportive of AI, including a clear
+understanding by leadership of the purpose and potential uses of AI
+and enterprise-wide readiness for it through acceptance and
+corresponding business infrastructure. This includes implementing AI
+and capability-specific training for users, leadership, and talent
+managers. For example, one company’s representatives told us their
+frameworks are designed to assist procurement staff with non-
+technical considerations of how prospective AI solutions integrate with
+existing business processes. Similarly, the AI Accountability
+Framework notes the need for a competent workforce, specifically one
+with multidisciplinary skills and experiences in design, development,
+deployment, assessment, and monitoring of AI systems.37
+Although numerous DOD components are acquiring, developing, or
+DOD Has Not Issued
+already using AI, DOD has not issued comprehensive department-wide
+Department-Wide
+guidance for AI acquisitions. Similarly, the military services have not
+issued service-specific guidance that is tailored to their individual needs.
+Guidance for AI
+This lack of guidance could result in acquisition of AI capabilities across
+Acquisitions, Though
+the services that does not consistently address the unique challenges
+associated with AI or the specific needs of the acquiring service. To fill
+Aspects of Company
+this gap, various military services and other DOD components have
+Key Factors Are
+individually developed or plan to develop their own informal AI acquisition
+resources. Some of these DOD component resources reflect key factors
+Reflected in Some
+also identified by the selected companies for AI acquisitions.
+Resources
+DOD Has Not Issued Currently, there is no comprehensive, DOD-wide guidance specific to AI
+Department-Wide AI acquisitions. In addition, the department has not updated existing
+acquisition guidance to account for the emergence of AI acquisitions.
+Acquisition Guidance
+According to many officials from the DOD components that we
+interviewed, authoritative AI acquisition guidance would be helpful to
+navigate the AI acquisition process.
+According to an official from the Office of the Under Secretary of Defense
+for Acquisition and Sustainment, the standing up of the Office of the Chief
+36GAO-21-519SP.
+37GAO-21-519SP.
+Page 21 GAO-23-105850 Artificial Intelligence
+--- pdf_page_26 ---
+pdf_page_number: 26
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_26|printed_page_pending|section_pending
+visual_review_required: false
+Digital and AI Officer paused the development of department-wide AI
+acquisition guidance until the Chief Digital and AI Officer has a clear plan
+for concentrating their efforts. We reported in February 2022 that the
+Office of the Under Secretary of Defense for Acquisition and Sustainment
+was working to adjust the Software Acquisition Pathway for AI and issue
+updated guidance to DOD components as it becomes available.38 This
+guidance has not been issued as of December 2022. Officials from that
+office stated that they are now working in collaboration with the Office of
+the Chief Digital and AI Officer to develop this guidance, which will be
+incorporated into Adaptive Acquisition Framework best practices specific
+to AI projects. The Office of the Chief Digital and AI Officer is also in the
+process of planning to develop AI acquisition guidance and standing up
+an acquisition policy office to do so, but has not yet defined concrete
+plans.39 An official from that office stated that there is no timeline for this
+effort.
+The Deputy Secretary of Defense stated in the February 2022
+memorandum that the Chief Digital and AI Officer will lead and oversee
+DOD’s strategy development and policy formulation for data, analytics,
+and AI. Further, this memorandum states that the Chief Digital and AI
+Officer is responsible for creating an enabling digital infrastructure and
+services that support components’ development and deployment of data,
+analytics, AI, and digital-enabled solutions. In addition, our AI
+Accountability Framework includes governance as a main principle,
+stating that entities should promote accountability by establishing
+processes to manage, operate, and oversee implementation of AI. This
+principle also includes having clear goals, as well as defined roles and
+responsibilities.40
+38GAO-22-104765.
+39The AI in Government Act of 2020 required the Office of Management and Budget to
+establish guidance that would inform agencies’ guidance on acquisition and use of AI.
+Consolidated Appropriations Act, 2021, Pub. L. No. 116-260, Div. U. Title I, §104, 134
+Stat. 2288-89 (Dec. 27, 2020). We have ongoing work looking at whether agencies,
+including the Office of Management and Budget, have fulfilled requirements related to AI,
+but as of March 2023, the Office of Management and Budget has not issued any
+guidance. According to an official from the Office of the Chief Digital and AI Officer, the
+Office of the Under Secretary of Defense for Acquisition and Sustainment has requested
+that the Chief Digital and AI Officer develop AI-specific guidance, but they do not yet have
+a specific timeline for this effort.
+40GAO-21-519SP.
+Page 22 GAO-23-105850 Artificial Intelligence
+--- pdf_page_27 ---
+pdf_page_number: 27
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_27|printed_page_pending|section_pending
+visual_review_required: false
+Until DOD establishes department-wide guidance to act as a framework,
+it cannot ensure that its components are acquiring AI capabilities in a
+manner that accounts for the unique challenges and considerations
+associated with AI as they navigate the acquisition process. Additionally,
+given that DOD is investing considerable effort and funds toward
+developing and acquiring AI tools and capabilities and requested $1.1
+billion for core AI in fiscal year 2023, establishing guidance would better
+position DOD to effectively spend funds on AI acquisitions consistently
+across its components. This guidance could, as appropriate, leverage key
+private company observations identified earlier.
+The Military Services Have In the absence of department-wide guidance, the military services have
+Not Issued Service- not issued service-specific implementing guidance tailored to their unique
+needs. Officials from each of the military services told us that they fill
+Specific AI Acquisition
+these gaps through their own or other services’ resources:
+Guidance
+• An official from the Army told us that DOD-wide guidance would be
+helpful to streamline the AI acquisition process. An Army official
+shared that DOD-wide or service-level guidance for AI acquisition that
+clearly lays out the steps to add an AI capability to a platform or
+mission would be useful. This official stated that in lieu of such
+guidance, Army commands can approach procurement as they see fit,
+which can create challenges when fitting AI into existing acquisition
+pathways.
+• A Navy official told us that the Chief Digital and AI Officer has been
+helpful in promoting engagement with AI capabilities, but that they do
+not depend on support from this office. Marine Corps officials stated
+that DOD guidance would be helpful for the AI acquisition process and
+explained that having headquarters-level AI acquisition guidance
+standards is critical to get ahead of this new technology. In the
+absence of such guidance, these officials told us that they look to
+other military departments and their work, as they benefit from others’
+lessons learned.
+• According to Air Force officials, because of these gaps in guidance,
+the Air Force-Massachusetts Institute of Technology AI Accelerator
+developed its own guidebook with subject matter experts to compile
+lessons learned.41 Space Force officials told us that they leverage Air
+Force resources and do not have their own guidance or resources.
+41Department of the Air Force-Massachusetts Institute of Technology AI Accelerator,
+Artificial Intelligence Acquisition Guidebook (Cambridge, MA: Feb. 14, 2022).
+Page 23 GAO-23-105850 Artificial Intelligence
+--- pdf_page_28 ---
+pdf_page_number: 28
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_28|printed_page_pending|section_pending
+visual_review_required: false
+Our prior work in weapon systems cybersecurity, another emerging
+technology area, found that while departmental policies and guidance set
+broad expectations for acquisition practices and objectives, service-level
+implementing guidance was also important to provide more detail tailored
+to the types of systems each service acquires.42 We reported that while
+DOD policies broadly define weapon systems acquisition practices and
+objectives for cybersecurity, the services have a role in developing and
+issuing complementary guidance, as needed, for implementation within
+their service acquisition community.43 We also stated that the timing of
+service-level guidance is significant because some service acquisition
+officials reported implementing DOD guidance only after receiving the
+service level instructions and guidance. Guidance tailored to the types of
+capabilities each service acquires could include, for example, a decision-
+support AI capability to help operators plan and execute Navy undersea
+warfare missions, or a target-detection capability using satellite imagery.
+Service-specific guidance would better position each service to acquire AI
+capabilities in a manner that incorporates and balances department
+priorities with service-specific needs. This service-level guidance could,
+as appropriate, leverage key private company observations identified
+earlier. Our AI Accountability Framework states as part of its governance
+principle that entities should promote accountability by establishing
+processes to manage, operate, and oversee implementation of AI, as well
+as have clear goals.44
+Various DOD Components While DOD and the military services have not issued guidance on AI
+Created Informal AI acquisitions, some DOD components have developed informal AI
+acquisition-related resources that can assist their approach to AI
+Acquisition Resources,
+acquisitions. Some of these resources created by DOD components
+Some of Which Reflect
+incorporate the key factors identified by companies from the five broad
+Key Factors for Acquiring categories we previously discussed (see appendix III for a full list of
+AI Selected Companies categories and factors for this analysis). These resources, which are
+informal and internal documents that may assist components in their work
+Identified
+as defined above, do not constitute guidance that establishes component-
+wide policy. For example, at the Office of the Secretary of Defense level,
+the Office of the Chief Digital and AI Officer has developed various
+42GAO, Weapon Systems Cybersecurity: Guidance Would Help DOD Programs Better
+Communicate Requirements to Contractors, GAO-21-179 (Washington, D.C.: Mar. 4,
+2021).
+43GAO-21-179.
+44GAO-21-519SP.
+Page 24 GAO-23-105850 Artificial Intelligence
+--- pdf_page_29 ---
+pdf_page_number: 29
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_29|printed_page_pending|section_pending
+visual_review_required: false
+resources for AI acquisitions. In particular, Tradewind—the AI acquisition
+marketplace for users—provides the Tradewind AI Projects User Guide,
+which includes a process to help DOD personnel understand their
+problem statement, the capability needs, and the context of the issue.
+The Chief Digital and AI Officer also gives Tradewind users access to
+resources such as the Intellectual Property and Data Rights Related
+Customer Questions for Project Planning, and Tradewind Request for
+Discussion and Initial Proposal Template to help others plan their AI
+projects, proposals, capabilities, and developments.
+Officials from the Office of the Chief Digital and AI Officer told us that they
+made some of their resources related to various aspects of AI acquisition
+available to other DOD components. According to officials from the Office
+of the Under Secretary of Defense for Acquisition and Sustainment, they
+are partnering with a private consulting company to build a catalog of
+Chief Digital and AI Officer acquisition services.
+The Defense Innovation Unit created several AI worksheets that walk
+developers through questions to help them align their AI projects with
+DOD’s ethical AI principles. Officials from the Defense Innovation Unit
+told us that when DOD released its ethical AI principles in 2020, they
+received numerous questions from vendors on how to align their
+proposals. This led the Defense Innovation Unit to seek feedback from
+industry, academia, and government, which influenced the development
+of these worksheets.45
+Of the five military services, the Air Force has published AI-specific
+acquisition resources—specifically, the Air Force-Massachusetts Institute
+of Technology AI Acquisition Guidebook.46 Air Force officials called the
+guidebook an acquisition resource that they developed based on internal
+subject matter expertise to address a gap in AI acquisition guidance and
+resources. These officials described the guidebook as a living document,
+which they will continue to update so that it has the most relevant
+information. Air Force officials told us they shared this guidebook through
+their available channels, including online and to the acquisition
+community, and have briefed it to the highest levels of the department.
+45Defense Innovation Unit, Phase I: Planning Worksheet for DIU AI Guidelines
+(Washington, D.C.).
+46Department of the Air Force-Massachusetts Institute of Technology AI Accelerator,
+Artificial Intelligence Acquisition Guidebook.
+Page 25 GAO-23-105850 Artificial Intelligence
+--- pdf_page_30 ---
+pdf_page_number: 30
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_30|printed_page_pending|section_pending
+visual_review_required: true
+Our review of these resources indicates that several of them contain
+elements of the five categories of factors selected private companies
+reported considering when acquiring AI. For example, the private
+companies we reviewed noted that it was important to Tailor Contracting
+Approach when acquiring AI. Consistent with this factor, several
+Tradewind resources emphasize the need to consider intellectual
+property and data rights concerns when negotiating contracts for AI.
+Similarly, the Defense Innovation Unit Worksheets include a discussion
+on the importance of providing for access to data in contract language.
+Lastly, the Air Force Acquisition Guidebook notes the importance of
+creating a diverse integrated product team when developing a contracting
+strategy.
+Several DOD components discussed their plans for developing additional
+resources for AI. They said that these resources should assist
+components in AI acquisitions, but the resources will not constitute formal
+department-wide guidance. For example, officials from the Office of the
+Chief Digital and AI Officer told us that, among other initiatives, they are
+planning to publish lessons learned in Tradewind, which will focus on how
+to acquire AI using available acquisition pathways. Officials from the
+Intellectual Property Cadre shared their plans to publish an Intellectual
+Property Guidebook that will be applicable, but not specific, to AI
+acquisitions.47 Defense Acquisition University officials told us that they
+plan to provide commercial AI training to their own acquisition workforce,
+including plans to develop several AI-focused courses on AI reliability and
+system safety. Air Force officials told us they plan to add a course for
+acquisition personnel on building and designing AI applications, as well
+as a class for field grade officers and senior noncommissioned officers.
+47The Intellectual Property Cadre leads a coordinated DOD-wide effort to modernize
+intellectual property policies, culture, and best practices to maximize the return on DOD
+technology investments, reduce program sustainment costs, and better enable the
+delivery of cutting-edge technology advantage to the warfighter at scale, faster. According
+to the cadre, in cases when AI vendors are concerned about protecting their intellectual
+property from competitors or third parties, the need to adapt their customary practices to
+meet certain DOD software requirements may be a disincentive to partner with DOD. To
+better incentivize AI vendors to collaborate with DOD, cadre officials noted that DOD
+buyers should develop acquisition strategies that seek to align their requirements with AI
+vendor business models. For example, according to the cadre, for agreements or
+instruments other than procurement contracts, such as Other Transaction agreements, the
+Defense Federal Acquisition Regulation Supplement data rights rules do not apply, and
+the parties generally have even greater flexibility to negotiate specialized or tailored
+license agreements.
+Page 26 GAO-23-105850 Artificial Intelligence
+--- pdf_page_31 ---
+pdf_page_number: 31
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_31|printed_page_pending|section_pending
+visual_review_required: false
+Officials from the Navy also shared their plans to create the Naval AI
+Accelerator, a training and education Center of Excellence.
+Because of the opportunities AI presents, efforts to acquire AI tools or
+Conclusions
+integrate AI into DOD weapon systems are poised for rapid growth—
+growth that could outpace DOD’s efforts to develop appropriate and
+sufficiently broad guidance for those acquisitions. AI offers the potential
+for broad application across the military services and joint acquisition
+programs to significantly enhance capabilities available to the warfighter.
+However, DOD has not issued department-wide guidance to provide a
+framework to ensure that acquisition of AI is consistent across the
+department and accounts for the unique challenges associated with AI.
+It is especially important that DOD and the military services issue
+guidance to provide critical oversight, resources, and provisions for
+acquiring AI given that the U.S. will face AI-enabled adversaries in the
+future. Without such guidance, DOD is at risk of expending funds on AI
+technologies that do not consistently address the unique challenges
+associated with AI and are not tailored to each service’s specific needs.
+The private company observations previously discussed offer numerous
+considerations DOD may wish to leverage in guidance, as appropriate, as
+it continues to pursue AI-enabled capabilities.
+We are making a total of four recommendations, including one to DOD,
+Recommendations for
+one to the Army, one to the Navy, and one to the Air Force.
+Executive Action
+The Secretary of Defense should ensure that the Chief Digital and AI
+Officer, in conjunction with other DOD acquisition policy offices as
+appropriate, prioritize establishing department-wide AI acquisition
+guidance, including leveraging key private company factors, as
+appropriate. (Recommendation 1)
+After DOD issues department-wide AI acquisition guidance, the Secretary
+of the Army should establish service-specific AI acquisition guidance that
+includes oversight processes and clear goals for these acquisitions, and
+leverages key private company factors, as appropriate.
+(Recommendation 2)
+After DOD issues department-wide AI acquisition guidance, the Secretary
+of the Navy should establish service-specific AI acquisition guidance that
+includes oversight processes and clear goals for these acquisitions, and
+leverages key private company factors, as appropriate.
+(Recommendation 3)
+Page 27 GAO-23-105850 Artificial Intelligence
+--- pdf_page_32 ---
+pdf_page_number: 32
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_32|printed_page_pending|section_pending
+visual_review_required: true
+After DOD issues department-wide AI acquisition guidance, the Secretary
+of the Air Force should establish service-specific AI acquisition guidance
+that includes oversight processes and clear goals for these acquisitions,
+and leverages key private company factors, as appropriate.
+(Recommendation 4)
+We provided a draft of this report to DOD for review and comment. DOD’s
+Agency Comments
+response is reproduced in appendix IV. Subsequently, an official from the
+Office of the Under Secretary of Defense for Acquisition and Sustainment
+confirmed via email that DOD concurred with all four recommendations.
+We are sending copies of this report to the appropriate congressional
+committees, the Secretary of Defense, the Under Secretary of Defense
+for Acquisition and Sustainment, and the Chief Digital and AI Officer. In
+addition, the report is available at no charge on GAO’s website at
+http://www.gao.gov.
+If you or your staff have any questions about this report, please contact
+Jon Ludwigson at (202) 512-4841 or ludwigsonj@gao.gov. Contact points
+for our Offices of Congressional Relations and Public Affairs may be
+found on the last page of this report. GAO staff who made key
+contributions to this report are listed in appendix V.
+Jon Ludwigson
+Director, Contracting and National Security Acquisitions
+Page 28 GAO-23-105850 Artificial Intelligence
+--- pdf_page_33 ---
+pdf_page_number: 33
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_33|printed_page_pending|section_pending
+visual_review_required: true
+Appendix I: ObjAeppecndixt Ii: Ovbjeectivses, ,Sc oSpe, acnd ope, and
+Methodology
+Methodology
+The Senate Report accompanying a bill authorizing fiscal year 2021
+appropriations includes a provision for GAO to review the Department of
+Defense’s (DOD) artificial intelligence (AI) acquisition-related efforts.1
+This report examines (1) the key factors that selected private sector
+companies reported considering when acquiring AI capabilities, and (2)
+the extent to which DOD’s AI acquisition guidance, if any, reflects key
+factors identified by private sector companies.
+To conduct our work, we conducted outreach to, interviews with, or
+obtained written responses from the following organizations:
+• Office of the Secretary of Defense organizations and other key DOD
+entities: Office of the Chief Digital and AI Officer; Office of the Under
+Secretary of Defense for Acquisition and Sustainment; Defense
+Pricing and Contracting; the Intellectual Property Cadre; Defense
+Acquisition University; and Defense Innovation Unit.
+• Military service entities: Army AI Integration Center; Office of the
+Deputy Assistant Secretary of the Army (Procurement); Department of
+the Air Force Chief Data and AI Office; Office of the Assistant
+Secretary of the Air Force (Acquisition, Technology, and Logistics);
+Department of the Air Force-Massachusetts Institute of Technology AI
+Accelerator; Air Force Office of the Deputy Assistant Secretary
+(Contracting); Office of the Chief of Naval Operations; Office of the
+Assistant Secretary of the Navy (Research, Development and
+Acquisition); Marine Corps Systems Command; and Office of the
+Assistant Secretary of the Air Force for Space Acquisition and
+Integration.
+To identify the key factors that selected private sector companies
+reported considering when acquiring AI capabilities, we conducted semi-
+structured interviews with or requested written responses to the same
+semi-structured questions from senior management and other
+representatives knowledgeable about AI procurement from leading
+companies across a variety of business sectors.2 We selected these
+companies by compiling a list of publicly identified AI companies across a
+variety of sectors, in consultation with our internal subject matter experts.
+1S. Rep. No. 116-236, at 131 (2020).
+2We requested responses from approximately 90 companies. We received written
+responses from six companies and conducted interviews with seven companies based on
+sector and availability.
+Page 29 GAO-23-105850 Artificial Intelligence
+--- pdf_page_34 ---
+pdf_page_number: 34
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_34|printed_page_pending|section_pending
+visual_review_required: false
+Appendix I: Objectives, Scope, and
+Methodology
+We contacted each of the companies on the list, and of those, conducted
+oral interviews with a smaller nongeneralizable sample based on sector
+and availability. These 13 companies included the following:
+• Amazon; Amgen Inc.; Anduril Industries; Bank of America; Deloitte
+Consulting LLP; Google Cloud; Johnson & Johnson; PNC Financial
+Services Group, Inc.; Scale; Tamr; Uber Technologies Inc; U.S. Bank;
+and Viz.ai, Inc.
+With representatives from each of these 13 companies, we discussed (1)
+buying versus building AI in-house, (2) procuring and developing AI
+capabilities, and (3) risk tolerance, funding, and long-term planning. We
+conducted a content analysis, using the oral and written responses
+received from the companies. The primary component of this analysis
+was coding of the responses and documentation to identify common
+themes, which we defined as topics or concepts discussed by five or
+more companies. We then grouped similar themes to establish the five
+key areas of consideration and associated examples discussed in the
+report. To validate our data collection, we shared the company
+summaries with company representatives, solicited their feedback, and,
+to the extent possible, confirmed their agreement with how we
+characterized their responses.
+To analyze the extent to which DOD’s approach to AI acquisition
+incorporates key factors identified by companies, we reviewed DOD
+documentation and AI acquisition resources, which for the purposes of
+this report refer to user manuals, guidebooks, and trainings. We obtained
+this documentation and resources based on any such information
+identified in interviews with relevant DOD officials. These acquisition
+resources included DOD’s AI acquisition marketplace (Tradewind) and
+the U.S. Air Force-Massachusetts Institute of Technology AI Accelerator
+AI Acquisition Guidebook, among others. We also reviewed information
+and documentation provided by the Defense Innovation Unit and Defense
+Acquisition University. We compared these documents to the key
+considerations identified by the selected companies by searching each
+document for each key consideration.
+We also interviewed relevant officials from the Office of the Chief Digital
+and AI Officer, Office of the Under Secretary of Defense for Acquisition
+and Sustainment, Defense Pricing and Contracting, the Intellectual
+Property Cadre, and the military services to discuss these resources and
+documents and identify any key areas of consideration for these DOD
+components.
+Page 30 GAO-23-105850 Artificial Intelligence
+--- pdf_page_35 ---
+pdf_page_number: 35
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_35|printed_page_pending|section_pending
+visual_review_required: false
+Appendix I: Objectives, Scope, and
+Methodology
+We conducted this performance audit from February 2022 to June 2023
+in accordance with generally accepted government auditing standards.
+Those standards require that we plan and perform the audit to obtain
+sufficient, appropriate evidence to provide a reasonable basis for our
+findings and conclusions based on our audit objectives. We believe that
+the evidence obtained provides a reasonable basis for our findings and
+conclusions based on our audit objectives.
+Page 31 GAO-23-105850 Artificial Intelligence
+--- pdf_page_36 ---
+pdf_page_number: 36
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_36|printed_page_pending|section_pending
+visual_review_required: true
+Appendix II: OvAepperndvix IIi: Oeverwview oof GAfO ’sG ArtifiAcial O’s Artificial
+Intelligence Accountability Framework
+Intelligence Acc ountability Framework
+In June 2021, we published an artificial intelligence (AI) accountability
+framework that identifies key practices to help ensure accountability and
+responsible use of AI by federal agencies and other entities involved in
+the design, development, deployment, and continuous monitoring of AI
+systems.1 The framework is organized around four complementary
+principles addressing governance, data, performance, and monitoring.
+For each principle, the framework describes key practices for federal
+agencies and other entities that are considering, selecting, and
+implementing AI systems. Each practice includes a set of questions for
+entities, auditors, and third-party assessors to consider, as well as
+procedures for auditors and third-party assessors. Figure 10 illustrates
+the key points of each principle.
+1GAO, Artificial Intelligence: An Accountability Framework for Federal Agencies and Other
+Entities, GAO-21-519SP (Washington, D.C.: June 2021).
+Page 32 GAO-23-105850 Artificial Intelligence
+--- pdf_page_37 ---
+pdf_page_number: 37
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_37|printed_page_pending|section_pending
+visual_review_required: false
+Appendix II: Overview of GAO’s Artificial
+Intelligence Accountability Framework
+Figure 10: Artificial Intelligence (AI) Accountability Framework
+Page 33 GAO-23-105850 Artificial Intelligence
+--- pdf_page_38 ---
+pdf_page_number: 38
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_38|printed_page_pending|section_pending
+visual_review_required: true
+Appendix III: KeAppyen diFx III: aKeyc Facttoors Srelsect edS Comepanliees cted
+Reported Considering When Acquiring and
+Managing Artificial Intelligence
+Companies Rep orted Considering When
+Acquiring and Managing Artificial Intelligence
+Table 1: Key Factors and Subfactors Considered by Companies in GAO’s Review Related to Artificial Intelligence (AI)
+Capability Acquisitions and Management
+Understand Mission Need: analyze the problem to decide whether AI is the appropriate solution, such as determining the problem
+can be solved at a higher speed using AI.
+• Solving the problem with data or automation, including having a large volume of data necessary for AI training
+• Having applicable available skillsets among developers and users
+• Solving the problem at a higher speed with AI
+• Considering if AI is appropriate given the business or organizational problem the AI is meant to address and the intended
+consumer
+• Starting with a narrowly-defined need and building out over time/scalability of a capability
+Make a Business Case: justify a proposed AI solution, including having available, suitable, clean data as a key input in the AI model.
+• Building when:
+• Building internally would provide a better understanding of the AI capabilities (including the inputs and code used)
+• Necessary inputs to build internally, like data and open-source code, are available
+• Building would provide or leverage a competitive advantage
+• Off-the-shelf AI capabilities may not fit the need
+• Buying when:
+• Outside vendors could move faster (timing)
+• The AI capability sought is generic or widely available
+• Cost estimating may include compute costs for data as a consideration or software-as-a-service model
+• Having available, suitable, clean data as a key input in an AI model, where the type of data may define the need for the
+technology
+• Having specific procedures for AI and performance metrics
+• Considering resources available in systems for integration, like heat, space, and power, and ensuring buyers can use and
+understand a capability with these resources
+• Having a technology roadmap for AI depends on end-user needs
+Tailor Contracting Approach: when contracting with vendors for AI capabilities, take steps to protect access to data and systems,
+such as using specific contract language to ensure access if the vendor goes out of business, and careful consideration of intellectual
+property concerns.
+• Avoiding vendor lock-in by holding regular competitions/having alternative vendors, and limiting the use of proprietary software
+• Handling intellectual property for AI on a case-by-case basis when buying AI, but building AI in-house can avoid intellectual
+property and enterprise agreement challenges
+• Buying AI should take into account data rights
+• Including contract language such as specific language to ensure access to proprietary data if company goes bankrupt, and using
+alternative contract structures to facilitate rapid AI procurement
+• Involving cross-functional teams, including, for example, subject matter experts, data scientists, legal representatives, contracting
+officials, and others in the buying process
+Page 34 GAO-23-105850 Artificial Intelligence
+--- pdf_page_39 ---
+pdf_page_number: 39
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_39|printed_page_pending|section_pending
+visual_review_required: false
+Appendix III: Key Factors Selected Companies
+Reported Considering When Acquiring and
+Managing Artificial Intelligence
+• Prioritizing system security and regulatory compliance in the procurement process
+Test and Evaluate Proposed Solutions: have a high tolerance for failure, try a technology before committing to ensure functionality
+and minimize unnecessary losses, and conduct oversight and monitoring to ensure consistent and ethical AI model performance.
+• Having a high tolerance for failure and (when failure is unavoidable) the ability to demonstrate failure quickly in order to move
+forward with alternatives
+• Trying before buying to ensure functionality and prevent unnecessary losses; starting with proofs of concept
+• Performing risk assessment to identify limitations in building or buying a new product
+• Prioritizing explainability of the model as important to the model’s function
+• Understanding the system and including ethics and responsible AI
+Plan Future Efforts: forecast future AI capabilities that may be of value, including by building IT systems to maximize interoperability of
+capabilities over time.
+• Budgeting for AI is not different from other types of capabilities
+• Building IT systems and platforms to maximize interoperability, and considering future use cases, integration into systems, and
+adaptability
+• Offering AI-specific training for users, leaders, and talent managers
+• Having a culture supportive of AI, including a clear understanding by leadership of purpose and use of AI and enterprise-wide
+readiness through acceptance and corresponding infrastructure
+Source: GAO analysis of private sector information. | GAO-23-105850
+Page 35 GAO-23-105850 Artificial Intelligence
+--- pdf_page_40 ---
+pdf_page_number: 40
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_40|printed_page_pending|section_pending
+visual_review_required: true
+Appendix IV: CoAppmendix mIV: Coemmnentst fsrom thfer Doeparmtment the
+of Defense
+Departmen t of Defense
+Page 36 GAO-23-105850 Artificial Intelligence
+--- pdf_page_41 ---
+pdf_page_number: 41
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_41|printed_page_pending|section_pending
+visual_review_required: true
+Appendix V: GAAppOendix VC: GAoO Cnontatcta andc Sttaf f and Staff
+Acknowledgments
+Acknowledgme nts
+Jon Ludwigson, (202) 512-4841 or ludwigsonj@gao.gov
+GAO Contact
+In addition to the contact named above, Raj Chitikila (Assistant Director),
+Staff
+Erin Carr and Megan Stewart (Analysts-in-Charge), Lori Fields, Laura
+Acknowledgments
+Greifner, Amanda Parker, and Carrie Rogers were principal contributors.
+In addition, the following people made contributions to this report: Victoria
+Adofoli, Jennifer Andreone, John Bornmann, Penney Harwell Caramia,
+Farahnaaz Khakoo-Mausel, Joshua Leiling, Sean Manzano, Miranda
+Riemer, Andrew Stavisky, Pamela Snedden, Jessica Steele, Anne Louise
+Taylor, Alyssa Weir, and Candice Wright.
+Page 37 GAO-23-105850 Artificial Intelligence
+--- pdf_page_42 ---
+pdf_page_number: 42
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_42|printed_page_pending|section_pending
+visual_review_required: false
+Related GAO PRerlaoted dGAOu Procdutctss
+Artificial Intelligence in Health Care: Benefits and Challenges of Machine
+Learning Technologies for Medical Diagnostics. GAO-22-104629.
+Washington, D.C.: September 29, 2022.
+Artificial Intelligence: DOD Should Improve Strategies, Inventory Process,
+and Collaboration Guidance. GAO-22-105834. Washington, D.C.: March
+30, 2022.
+Artificial Intelligence: Status of Developing and Acquiring Capabilities for
+Weapon Systems. GAO-22-104765. Washington, D.C.: February 17,
+2022.
+Artificial Intelligence: DOD Should Improve Strategies, Inventory Process,
+and Collaboration Guidance. GAO-22-104516SU. Washington, D.C.:
+February 16, 2022.
+Artificial Intelligence: An Accountability Framework for Federal Agencies
+and Other Entities. GAO-21-519SP. Washington, D.C.: June 30, 2021.
+Weapon Systems Annual Assessment: Updated Program Oversight
+Approach Needed. GAO-21-222. Washington, D.C.: June 8, 2021.
+High-Risk Series: Federal Government Needs to Urgently Pursue Critical
+Actions to Address Major Cybersecurity Challenges. GAO-21-288.
+Washington, D.C.: March 24, 2021.
+Artificial Intelligence in Health Care: Benefits and Challenges of
+Technologies to Augment Patient Care. GAO-21-7SP. Washington, D.C.:
+November 30, 2020.
+Agile Assessment Guide: Best Practices for Agile Adoption and
+Implementation. GAO-20-590G. Washington, D.C.: September 28, 2020.
+Science & Tech Spotlight: Agile Software Development. GAO-20-713SP.
+Washington, D.C.: September 29, 2020.
+Defense Science and Technology: Opportunities to Better Integrate
+Industry Independent Research and Development into DOD Planning.
+GAO-20-578. Washington, D.C.: September 3, 2020.
+Science & Tech Spotlight: Deepfakes. GAO-20-379SP. Washington,
+D.C.: February 20, 2020.
+Page 38 GAO-23-105850 Artificial Intelligence
+--- pdf_page_43 ---
+pdf_page_number: 43
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_43|printed_page_pending|section_pending
+visual_review_required: false
+Related GAO Products
+Weapon Systems Cybersecurity: DOD Just Beginning to Grapple with
+Scale of Vulnerabilities. GAO-19-128. Washington, D.C.: October 9,
+2018.
+Artificial Intelligence: Emerging Opportunities, Challenges, and
+Implications for Policy and Research. GAO-18-644T. Washington, D.C.:
+June 26, 2018.
+Technology Assessment: Artificial Intelligence: Emerging Opportunities,
+Challenges, and Implications. GAO-18-142SP. Washington, D.C.: March
+28, 2018.
+Military Acquisitions: DOD Is Taking Steps to Address Challenges Faced
+by Certain Companies. GAO-17-644. Washington, D.C.: July 20, 2017.
+Defense Science and Technology: Adopting Best Practices Can Improve
+Innovation Investments and Management. GAO-17-499. Washington,
+D.C.: June 29, 2017.
+Weapon Systems: Prototyping Has Benefited Acquisition Programs, but
+More Can Be Done to Support Innovation Initiatives. GAO-17-309.
+Washington, D.C.: June 27, 2017.
+Defense Advanced Research Projects Agency: Key Factors Drive
+Transition of Technologies, but Better Training and Data Dissemination
+Can Increase Success. GAO-16-5. Washington, D.C.: November 18,
+2015.
+Page 39 GAO-23-105850 Artificial Intelligence
+--- pdf_page_44 ---
+pdf_page_number: 44
+printed_page_number: None
+section_title: TDD (202) 512-2537
+machine_extracted_anchor: pdf_page_44|printed_page_pending|section_TDD_202_512_2537
+visual_review_required: false
+The Government Accountability Office, the audit, evaluation, and investigative
+GAO’s Mission
+arm of Congress, exists to support Congress in meeting its constitutional
+responsibilities and to help improve the performance and accountability of the
+federal government for the American people. GAO examines the use of public
+funds; evaluates federal programs and policies; and provides analyses,
+recommendations, and other assistance to help Congress make informed
+oversight, policy, and funding decisions. GAO’s commitment to good government
+is reflected in its core values of accountability, integrity, and reliability.
+The fastest and easiest way to obtain copies of GAO documents at no cost is
+Obtaining Copies of
+through our website. Each weekday afternoon, GAO posts on its website newly
+GAO Reports and released reports, testimony, and correspondence. You can also subscribe to
+GAO’s email updates to receive notification of newly posted products.
+Testimony
+Order by Phone The price of each GAO publication reflects GAO’s actual cost of production and
+distribution and depends on the number of pages in the publication and whether
+the publication is printed in color or black and white. Pricing and ordering
+information is posted on GAO’s website, https://www.gao.gov/ordering.htm.
+Place orders by calling (202) 512-6000, toll free (866) 801-7077, or
+TDD (202) 512-2537.
+Orders may be paid for using American Express, Discover Card, MasterCard,
+Visa, check, or money order. Call for additional information.
+Connect with GAO on Facebook, Flickr, Twitter, and YouTube.
+Connect with GAO
+Subscribe to our RSS Feeds or Email Updates. Listen to our Podcasts.
+Visit GAO on the web at https://www.gao.gov.
+Contact FraudNet:
+To Report Fraud,
+Website: https://www.gao.gov/about/what-gao-does/fraudnet
+Waste, and Abuse in
+Automated answering system: (800) 424-5454 or (202) 512-7700
+Federal Programs
+A. Nicole Clowers, Managing Director, ClowersA@gao.gov, (202) 512-4400, U.S.
+Congressional
+Government Accountability Office, 441 G Street NW, Room 7125, Washington,
+Relations DC 20548
+Chuck Young, Managing Director, youngc1@gao.gov, (202) 512-4800
+Public Affairs
+U.S. Government Accountability Office, 441 G Street NW, Room 7149
+Washington, DC 20548
+Stephen J. Sanford, Managing Director, spel@gao.gov, (202) 512-4707
+Strategic Planning and
+U.S. Government Accountability Office, 441 G Street NW, Room 7814,
+External Liaison Washington, DC 20548
+Please Print on Recycled Paper.
+FIELD_DEFINITIONS:
+{"coding_dimensions_allowed_values": ["integration_level", "application_maturity", "human_machine_authority", "engineering_resource_conditions", "trust_governance_constraints", "organizational_system_fit"], "exact_fields": ["source_id", "source_locator", "excerpt_original", "excerpt_zh", "normalized_claim", "coding_dimensions", "evidence_nature", "topics"], "excerpt_original_rule": "逐字复制输入文本；不得静默纠正OCR或版式错误", "field_types": {"coding_dimensions": "array of zero or more exact dimension key strings", "evidence_nature": "string", "excerpt_original": "string", "excerpt_zh": "string", "normalized_claim": "string", "source_id": "string", "source_locator": "string", "topics": "array of strings"}, "normalized_claim_language": "zh-CN"}
+{"application_maturity": "应用成熟度：概念战略、研发、试验、试点、采购部署或持续运用。", "engineering_resource_conditions": "工程与资源条件：数据、算力、模型、接口、供应链、预算、人才和保障。", "human_machine_authority": "人机权限关系：辅助决策、人在回路中、受监督自主或更高程度自主；普通系统协同、信息传输、培训或文档要求本身不足以支持此维度。", "integration_level": "能力集成层级：单工具、单任务、单平台、跨平台、跨任务或体系级集成。", "organizational_system_fit": "组织与体系适配：指挥流程、任务编组、跨平台协同、人员负荷和组织变革。", "trust_governance_constraints": "可信与治理约束：安全、可靠性、测试评价、授权边界、责任与伦理。"}
+{"constraint": "限制、风险、障碍、依赖或边界条件。", "deployment_event": "部署、实装、现场运用或正式采用已经发生。", "evaluation": "评价、审查、验证或评估结论。", "goal": "战略目标、愿景或计划方向；不能写成已实现结果。", "resource_input": "投入、资源、预算、数据、人才或基础设施条件。", "test_event": "测试或演习发生、参与主体或配置；不表示功能结果或作战效能。", "test_result": "测试中观察到的功能、性能或结果；必须由摘录直接说明。"}
+JSON_REPAIR: Return one strict JSON array with exactly the eight output fields and no Markdown, commentary, metadata, or source-attribution prefix.

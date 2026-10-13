@@ -1,0 +1,26 @@
+{
+  "citation_repairs": [
+    {
+      "issue_id": "CIT-001",
+      "perspective_id": "TECH",
+      "viewpoint_id": "VP-T0-TECH-H01",
+      "field": "supporting_evidence",
+      "index": 3,
+      "evidence_id": "EV-T0-51D65DEC82584BCD",
+      "relation": "limit",
+      "target_field": "supporting_evidence",
+      "importance": "required"
+    },
+    {
+      "issue_id": "CIT-002",
+      "perspective_id": "TECH",
+      "viewpoint_id": "VP-T0-TECH-H01",
+      "field": "supporting_evidence",
+      "index": 4,
+      "evidence_id": "EV-T0-A515E3B9391C51B4",
+      "relation": "limit",
+      "target_field": "supporting_evidence",
+      "importance": "required"
+    }
+  ]
+}

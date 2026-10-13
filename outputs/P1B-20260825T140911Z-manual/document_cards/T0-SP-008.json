@@ -1,0 +1,104 @@
+{
+  "document_metadata": {
+    "source_id": "T0-SP-008",
+    "title": "Data, Analytics, and Artificial Intelligence Adoption Strategy",
+    "publisher": "U.S. Department of Defense",
+    "document_date": "2023-06-27",
+    "public_release_date": "2023-11-02",
+    "published_at": "2023-06-27",
+    "source_grade": "A",
+    "material_type": "official_strategy",
+    "temporal_status": "within_t0",
+    "date_note": "Document date and public release date are recorded separately.",
+    "case_id": "us_military_ai_deployment",
+    "file_name": "DOD_DATA_ANALYTICS_AI_ADOPTION_STRATEGY.pdf",
+    "file_sha256": "25f3c9d42d62da71f6942ebe592211e385a442bd8a012dd08d64fc4b27e37436",
+    "file_size_bytes": 13889886,
+    "pdf_page_count": 26,
+    "pdf_metadata": {
+      "/Author": "DoD CDAO",
+      "/ContentTypeId": "0x010100AFAFE03135675242B476283758442D03",
+      "/CreationDate": "D:20230817134702-04'00'",
+      "/Creator": "Acrobat PDFMaker 23 for PowerPoint",
+      "/Keywords": "DoD, Department of Defense, Data, Analytics, Artificial Inteligence, AI, Strategy, Decision Advantage",
+      "/ModDate": "D:20231102153242-04'00'",
+      "/Producer": "Adobe PDF Library 23.1.175",
+      "/Subject": "Accelerating Decision Advantage",
+      "/Title": "2023 Data, Analytics, and Artificial Intelligence Adoption Strategy"
+    },
+    "pdf_open_status": "opened",
+    "extraction_status": "extracted"
+  },
+  "cover_page": [
+    {
+      "pdf_page": 1,
+      "printed_page_or_section": "page_pending_review",
+      "text_raw": "DEPARTMENT OF DEFENSE\nData, Analytics, and Artificial \nIntelligence Adoption Strategy\nAccelerating Decision Advantage\nCleared for open publication ▪ June 27, 2023, ▪ Department of Defense ▪ Office of Prepublication and Security Review \n",
+      "text_normalized": "department of defense data, analytics, and artificial intelligence adoption strategy accelerating decision advantage cleared for open publication ▪ june 27, 2023, ▪ department of defense ▪ office of prepublication and security review",
+      "character_count": 236,
+      "extraction_status": "extracted"
+    }
+  ],
+  "executive_summary_or_gao_highlights": [],
+  "table_of_contents": [
+    {
+      "pdf_page": 2,
+      "text_raw": "TABLE OF\nCONTENTS\nDOD DATA, ANALYTICS, AND ARTIFICIAL INTELLIGENCE ADOPTION STRATEGY"
+    }
+  ],
+  "conclusions_or_recommendations": [
+    {
+      "pdf_page": 3,
+      "text_raw": "FOREWORD \nSTRATEGIC ENVIRONMENT\nKEY OUTCOMES\nSTRATEGIC GOALS\nIMPLEMENTATION\nCONCLUSION\nAPPENDIX A: QUALITY DATA\nDOD DATA, ANALYTICS, AND ARTIFICIAL INTELLIGENCE ADOPTION STRATEGY\n2 \n3\n5\n7\n14\n17\n19"
+    },
+    {
+      "pdf_page": 20,
+      "text_raw": "CONCLUSION\nDOD DATA, ANALYTICS, AND ARTIFICIAL INTELLIGENCE ADOPTION STRATEGY 17"
+    }
+  ],
+  "dimension_hits": {
+    "deployment_fielding_operations": [
+      5,
+      6,
+      7
+    ],
+    "adoption_scaling": [
+      1,
+      2,
+      3
+    ],
+    "acquisition_procurement": [
+      14,
+      15,
+      18
+    ],
+    "test_evaluation": [
+      9,
+      10
+    ],
+    "workforce_organization": [
+      7,
+      16,
+      18
+    ],
+    "governance_trust_responsibility": [
+      5,
+      6,
+      9
+    ],
+    "data_enterprise_collaboration": [
+      1,
+      2,
+      3
+    ]
+  },
+  "neutral_relevance_note": "Deterministic keyword recall found pages in 7 research dimensions; this card contains no semantic summary or P2 admission decision.",
+  "possible_information_increment": [
+    "Adds a manually supplied primary or oversight document to the P1b coverage map.",
+    "May provide page-locatable material for later human P2 review in the dimensions listed above."
+  ],
+  "p2_admission_pending": true,
+  "formal_evidence_created": false,
+  "competitive_hypotheses_created": false,
+  "case_conclusion_created": false
+}

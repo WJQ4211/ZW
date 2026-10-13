@@ -1,0 +1,58 @@
+{
+  "run_id": "G1-T0-C1-31F142A5227EA580-correction-v1",
+  "case_id": "us_military_ai_deployment",
+  "stage": "G1-T0-C1",
+  "executed_at_utc": "2026-08-26T08:05:33Z",
+  "correction_sha256": "31f142a5227ea5800011535007fc3650f9b81e0849e2e0e1028291c46a792c96",
+  "input_g1_run_id": "G1-T0-1AE10600ABA2B674-formal-v1",
+  "input_p3br2a_run_id": "P3BR2A-20260826T063553Z-content-completeness-v1",
+  "input_p3br2a_hashes": {
+    "outputs/P3BR2A-20260826T063553Z-content-completeness-v1/ai_visual_pre_review_log_p3br2a.jsonl": "7bf784a9587e0a6cb755d20874a0d0decb440a682e7fca448d12e637caf0bb4d",
+    "outputs/P3BR2A-20260826T063553Z-content-completeness-v1/g1_author_decision_sheet_p3br2a.csv": "9d9993bef30adeaf4d064a10dc8ca558c331ddf0c5d8eccb2822d01fc39158f3",
+    "outputs/P3BR2A-20260826T063553Z-content-completeness-v1/g1_author_signoff_summary.md": "bdfe6602cacb2617e3db153ed8b682afd324a29a70514f21f6d669f7c4ef2794",
+    "outputs/P3BR2A-20260826T063553Z-content-completeness-v1/p3br2a_manifest.json": "537fd755c483daf4bf8043bbd7a1215f8bac0b5829fd6bfb5e95e37237ab8177",
+    "outputs/P3BR2A-20260826T063553Z-content-completeness-v1/p3br2a_quality_report.md": "1109a0ce23bb1c29e1f487c66ca072c245134364fe1749109f7fc104beaab55c",
+    "outputs/P3BR2A-20260826T063553Z-content-completeness-v1/split_child_proposals_p3br2a.jsonl": "164c674af1ec711631ce188ab60c9d6b91077ea1aeb1daa24bffb2887c6dffa4"
+  },
+  "protected_prior_outputs_unchanged": true,
+  "protected_outputs_before_digest": "0617b6d7271b32557353b2bd17e6a49369753aa39923b37d38c7a68c7cf50bcd",
+  "protected_outputs_after_digest": "0617b6d7271b32557353b2bd17e6a49369753aa39923b37d38c7a68c7cf50bcd",
+  "git_head": "unavailable_not_a_git_repository",
+  "python_version": "3.12.13",
+  "implementation_file_hashes": {
+    "src/g1_t0_c1.py": "0746886d64c7b67e34dbf979cc930536b3dcdab5aa0b670806df2bd2a3c10b72",
+    "scripts/17_run_g1_t0_c1.py": "b959da48645f54480a66baac8b679ae747f05f4bd81a549dee42342746b4884d",
+    "tests/test_g1_t0_c1.py": "d42119cd31a66fcd6a17067ff380cc6c1ba972ab987e0d08c7a172e8fc03b693"
+  },
+  "physical_t0_evidence_rows_before": 60,
+  "physical_t0_evidence_rows_after": 61,
+  "physical_t1_evidence_rows_for_case": 0,
+  "logical_evidence_id_count": 60,
+  "latest_version_counts": {
+    "1": 59,
+    "2": 1
+  },
+  "target_latest_version": "2",
+  "target_v1_content_hash_before": "90a27931067c9d49bd7623994eeb9e2117b99814fbe2b1c60a9bb20a95c7220c",
+  "target_v1_unchanged": true,
+  "formal_evidence_db_rows_added": 1,
+  "hypothesis_rows_added": 0,
+  "t1_read": false,
+  "p4_executed": false,
+  "snapshot_frozen": false,
+  "model_api_call_count": 0,
+  "api_key_written": false,
+  "canonical_count": 60,
+  "canonical_ids_unique": true,
+  "canonical_no_composite_nature": true,
+  "canonical_no_replacement_character": true,
+  "canonical_created_at_from_db": true,
+  "canonical_field_diff_count": 0,
+  "output_file_hashes": {
+    "g1_t0_c1_corrected_evidence_v2.json": "f3748209e90b510eb9183804dc6db325a11682ecc096f116c4e00bb90f48f151",
+    "g1_t0_c1_correction_audit.json": "8c54d9a4ffe70a9a397942b9e5cd0fe4c674adf7475f9f539d81bc760853f946",
+    "g1_t0_c1_db_export_comparison.md": "84b00a912407041f516651c245969ac2ba41877df859878b3c1b2c425598286d",
+    "g1_t0_c1_latest_evidence_canonical.jsonl": "ac307f553614bd4b6114ecb117d7e2516b91a5e28ae2884c44a14043b4a0900c"
+  },
+  "manifest_self_hash_excluded_from_output_file_hashes": true
+}

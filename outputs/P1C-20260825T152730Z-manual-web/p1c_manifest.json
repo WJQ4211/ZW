@@ -1,0 +1,211 @@
+{
+  "run_id": "P1C-20260825T152730Z-manual-web",
+  "p1_run_id": "P1-20260825T081142Z-7f4c9b",
+  "inherited_p1b_run_id": "P1B-20260825T140911Z-manual",
+  "case_id": "us_military_ai_deployment",
+  "stage": "P1c",
+  "execution_date": "2026-08-25",
+  "executed_at_utc": "2026-08-25T15:27:36Z",
+  "code_version": "unverified_local_copy",
+  "code_version_note": "Workspace root has no readable Git commit.",
+  "input_files": {
+    "manual_web_archives": [
+      {
+        "path": "data\\staging\\t0_candidates\\manual_web\\Cloud-based intel tool AIDP rolls out to Army units globally - Capability Program Executive - Intelligence and Spectrum Warfare - CPE ISW.html",
+        "sha256": "dc147ecc6cf63cefeb7a59c4a72233b675229eaaf38ab1e40f7bfc64d58ae56a",
+        "size_bytes": 392145
+      },
+      {
+        "path": "data\\staging\\t0_candidates\\manual_web\\IMSC Task Force Completes Maritime Exercise with Unmanned Systems, A.I. _ United States Navy _ News Stories.html",
+        "sha256": "08fe714c34f25e0981f1b01da279f92d1ac139b108835c0cbe107ebcc003c38c",
+        "size_bytes": 360135
+      }
+    ],
+    "direct_ent_response": {
+      "path": "outputs\\P1C-20260825T152730Z-manual-web\\web_raw\\T0-ENT-001.html",
+      "sha256": "96a4a7417c6f513086009f9699d171ab6d8415c96cc628a0b55a7ab34824b3ec",
+      "size_bytes": 4260
+    },
+    "inherited_p1b_source_manifest_sha256": "ea8d4c01c4655117c00cf251f34b4b6aa09ee592547b8c77624198b87256c45c",
+    "inherited_p1b_search_log_sha256": "a2b18f18f94b84fa5203f7c1cff33716ea5fe1c80f6719f0953380f45f536f8f"
+  },
+  "inherited_p1b_pdf_inputs": [
+    {
+      "file_name": "2024-06-RAI-STRATEGY-IMPLEMENTATION-PATHWAY.pdf",
+      "file_sha256": "cb30090fa1f7da0e4e469de160fa72b08bf9d13025e22c8be76578509fe66197",
+      "file_size_bytes": 5427778,
+      "page_count": 47,
+      "pdf_open_status": "opened",
+      "encrypted": false,
+      "extraction_status": "extracted",
+      "ocr_required": 0
+    },
+    {
+      "file_name": "DOD_DATA_ANALYTICS_AI_ADOPTION_STRATEGY.pdf",
+      "file_sha256": "25f3c9d42d62da71f6942ebe592211e385a442bd8a012dd08d64fc4b27e37436",
+      "file_size_bytes": 13889886,
+      "page_count": 26,
+      "pdf_open_status": "opened",
+      "encrypted": false,
+      "extraction_status": "extracted",
+      "ocr_required": 0
+    },
+    {
+      "file_name": "gao-22-105834.pdf",
+      "file_sha256": "a6c19f20a264dff4a691d0235813c30bc155e680c6290b6e208b5c471a3eb6a2",
+      "file_size_bytes": 3949489,
+      "page_count": 89,
+      "pdf_open_status": "opened",
+      "encrypted": false,
+      "extraction_status": "extracted",
+      "ocr_required": 0
+    },
+    {
+      "file_name": "gao-23-105850.pdf",
+      "file_sha256": "cef3ddcfa6ccaaeaff8d4836cd45874e92a10944972b44ee0ffb185bf6fa5a0d",
+      "file_size_bytes": 4107287,
+      "page_count": 44,
+      "pdf_open_status": "opened",
+      "encrypted": false,
+      "extraction_status": "extracted",
+      "ocr_required": 0
+    },
+    {
+      "file_name": "gao-24-105645.pdf",
+      "file_sha256": "8cf1506c9d50482c36926c07245a6eb0d0aa7e2527bf33a2007a2c393790fd5f",
+      "file_size_bytes": 3889730,
+      "page_count": 46,
+      "pdf_open_status": "opened",
+      "encrypted": false,
+      "extraction_status": "extracted",
+      "ocr_required": 0
+    },
+    {
+      "file_name": "R45178.10.pdf",
+      "file_sha256": "4b4176781de4658543e0d5bade5003a88832c022cbeefecf7dde7d2774feb3e1",
+      "file_size_bytes": 1690382,
+      "page_count": 43,
+      "pdf_open_status": "opened",
+      "encrypted": false,
+      "extraction_status": "extracted",
+      "ocr_required": 0
+    }
+  ],
+  "archive_records": [
+    {
+      "source_id": "T0-TD-007",
+      "file_name": "Cloud-based intel tool AIDP rolls out to Army units globally - Capability Program Executive - Intelligence and Spectrum Warfare - CPE ISW.html",
+      "source_path": "data\\staging\\t0_candidates\\manual_web\\Cloud-based intel tool AIDP rolls out to Army units globally - Capability Program Executive - Intelligence and Spectrum Warfare - CPE ISW.html",
+      "file_sha256": "dc147ecc6cf63cefeb7a59c4a72233b675229eaaf38ab1e40f7bfc64d58ae56a",
+      "file_size_bytes": 392145,
+      "canonical_url": "https://cpeisw.army.mil/2024/10/09/277811/",
+      "capture_type": "html_saved_page_with_assets",
+      "text_path": "outputs\\P1C-20260825T152730Z-manual-web\\web_text\\T0-TD-007.txt",
+      "text_sha256": "64a8c3596d2642a93cef934c6e6abe5dd1e898086528f42d694cfe7e66bafb02",
+      "text_character_count": 5779,
+      "extraction_status": "visible_text_extracted_no_ocr_no_summary"
+    },
+    {
+      "source_id": "T0-TD-008",
+      "file_name": "IMSC Task Force Completes Maritime Exercise with Unmanned Systems, A.I. _ United States Navy _ News Stories.html",
+      "source_path": "data\\staging\\t0_candidates\\manual_web\\IMSC Task Force Completes Maritime Exercise with Unmanned Systems, A.I. _ United States Navy _ News Stories.html",
+      "file_sha256": "08fe714c34f25e0981f1b01da279f92d1ac139b108835c0cbe107ebcc003c38c",
+      "file_size_bytes": 360135,
+      "canonical_url": "https://www.navy.mil/Press-Office/News-Stories/Article/3262053/imsc-task-force-completes-maritime-exercise-with-unmanned-systems-ai/",
+      "capture_type": "html_saved_page_with_assets",
+      "text_path": "outputs\\P1C-20260825T152730Z-manual-web\\web_text\\T0-TD-008.txt",
+      "text_sha256": "54137701770dcbbe2e6aaa0e4abc7622ae682d7d18cc987270f6f2b446a7b8ce",
+      "text_character_count": 7885,
+      "extraction_status": "visible_text_extracted_no_ocr_no_summary"
+    }
+  ],
+  "ent_record": {
+    "source_id": "T0-ENT-001",
+    "url": "https://www.dvidshub.net/news/printable/430931",
+    "http_status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "raw_path": "outputs\\P1C-20260825T152730Z-manual-web\\web_raw\\T0-ENT-001.html",
+    "raw_sha256": "96a4a7417c6f513086009f9699d171ab6d8415c96cc628a0b55a7ab34824b3ec",
+    "raw_size_bytes": 4260,
+    "text_path": "outputs\\P1C-20260825T152730Z-manual-web\\web_text\\T0-ENT-001.txt",
+    "text_sha256": "e0d0980e176edb67099fa2a22ea2ccae36ceec89523c7836ba8caf5c9bbba58d",
+    "text_character_count": 3226,
+    "date_verified": true,
+    "published_at": "2022-10-07",
+    "capture_type": "direct_printable_html_fetch"
+  },
+  "date_revision": {
+    "source_id": "T0-TD-008",
+    "old_value": "2023-09-01",
+    "new_value": "2023-01-09",
+    "reason": "The received official Navy HTML archive states the exercise date as Jan. 9; the previous 2023-09-01 value came from unverified discovery metadata and is superseded."
+  },
+  "cdao_record": {
+    "source_id": "T0-CDAO-001",
+    "verification_status": "blocked_original_page",
+    "p2_eligibility": "false",
+    "manual_followup_required": false
+  },
+  "verification_normalization": {
+    "old_p1_candidate_count": 23,
+    "old_p1_statuses": {
+      "verification_status": [
+        "metadata_verified_original_page"
+      ],
+      "full_text_status": [
+        "not_captured_p1"
+      ],
+      "hash_scope": [
+        "source_response_metadata_only"
+      ]
+    },
+    "all_rows_have_verification_status": true,
+    "all_rows_have_full_text_status": true,
+    "all_rows_have_hash_scope": true
+  },
+  "output_file_sha256": {
+    "data\\curated\\source_manifest_t0_p1c.csv": "ffd79aa01090aa3a50bca1c29bcdc9c46bf359079591500389c1647bbf49ef0d",
+    "data\\curated\\p2_review_template.csv": "33cc1ff83737ed46fa57ce95ccc52a098e6deab55f652924122e240422a809fd",
+    "outputs/P1C-20260825T152730Z-manual-web/web_archive_inventory.json": "a03d9d7ceecdec61e578648deab69938c964fbbb1a361b24f9732d555e689feb",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P1C-20260825T152730Z-manual-web\\web_text\\T0-TD-007.txt": "64a8c3596d2642a93cef934c6e6abe5dd1e898086528f42d694cfe7e66bafb02",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P1C-20260825T152730Z-manual-web\\web_text\\T0-TD-008.txt": "54137701770dcbbe2e6aaa0e4abc7622ae682d7d18cc987270f6f2b446a7b8ce",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P1C-20260825T152730Z-manual-web\\web_text\\T0-ENT-001.txt": "e0d0980e176edb67099fa2a22ea2ccae36ceec89523c7836ba8caf5c9bbba58d",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P1C-20260825T152730Z-manual-web\\web_raw\\T0-ENT-001.html": "96a4a7417c6f513086009f9699d171ab6d8415c96cc628a0b55a7ab34824b3ec"
+  },
+  "protected_artifacts_unchanged": true,
+  "protected_p1_hashes_after": {
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\data\\curated\\source_manifest_t0.csv": "4adf69488227499a35a2bbd131bf878e8bcf2fc3ead72922fcd938d91397ef12",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\data\\curated\\search_log_t0.csv": "0a06409cc3d867273c416f50d2bc5b24c600550d91d59737bce1278bd17f014f"
+  },
+  "protected_p1b_hashes_after": {
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\data\\curated\\source_manifest_t0_p1b.csv": "ea8d4c01c4655117c00cf251f34b4b6aa09ee592547b8c77624198b87256c45c",
+    "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\data\\curated\\search_log_t0_p1b.csv": "a2b18f18f94b84fa5203f7c1cff33716ea5fe1c80f6719f0953380f45f536f8f"
+  },
+  "boundary_declarations": {
+    "modelclient_called": false,
+    "evidence_rows_added": 0,
+    "t1_read": false,
+    "p2_executed": false,
+    "p3_executed": false,
+    "hypotheses_added": 0,
+    "case_conclusion_formed": false,
+    "candidate_to_include_exclude_automation": false,
+    "search_result_summary_used_for_ent": false,
+    "formal_evidence_extracted": false
+  },
+  "acceptance": {
+    "manual_web_count": 2,
+    "formal_t0_rows_inherited": 35,
+    "date_revision_old": "2023-09-01",
+    "date_revision_new": "2023-01-09",
+    "cdao_p2_eligibility": false,
+    "ent_date": "2022-10-07",
+    "p2_review_decisions_populated": false,
+    "evidence_rows_added": 0,
+    "modelclient_called": false,
+    "t1_read": false
+  },
+  "manifest_sha256": null,
+  "manifest_hash_note": "Self-hash is intentionally null to avoid a circular hash.",
+  "stop_condition": "Simplified P1c web archive intake and P2 template complete; stop before P2/P3."
+}

@@ -1,0 +1,36 @@
+{
+  "base_revision_calls": 2,
+  "completed_batches": [
+    {
+      "batch_id": "p15r_vp_t0_ops_h02",
+      "metadata_path": "api_call_metadata/p15r_vp_t0_ops_h02.json",
+      "phase": "P15R_VIEWPOINT_REVISION",
+      "prompt_sha256": "e1791cd960067f01d092cb265c492194da4429357b4b8723b1d8a6e313c99753",
+      "raw_path": "raw_model_outputs/p15r_vp_t0_ops_h02.json",
+      "response_sha256": "420bc4798930e3e4ffbff162fae38bd038a6d52740abb4c983d773ca4e7db2e9",
+      "source_id": "VP-T0-OPS-H02"
+    },
+    {
+      "batch_id": "p15r_vp_t0_strat_h01",
+      "metadata_path": "api_call_metadata/p15r_vp_t0_strat_h01.json",
+      "phase": "P15R_VIEWPOINT_REVISION",
+      "prompt_sha256": "3a4d73ecab55e4678c9b2aacd5405764ee3b1a04413a616ab61d1d24eeed4009",
+      "raw_path": "raw_model_outputs/p15r_vp_t0_strat_h01.json",
+      "response_sha256": "c59ce2bddde3295b7a9f6f011c437ef4a9974dda5ef7ebe7c99a2f45dc85202b",
+      "source_id": "VP-T0-STRAT-H01"
+    },
+    {
+      "batch_id": "p15r_vp_t0_strat_h01_repair",
+      "metadata_path": "api_call_metadata/p15r_vp_t0_strat_h01_repair.json",
+      "phase": "P15R_VIEWPOINT_FORMAT_REPAIR",
+      "prompt_sha256": "7c5357057ff63fa7392d19fe9f3b6c985b0a39adfe33d82eccf413f53c872a8a",
+      "raw_path": "raw_model_outputs/p15r_vp_t0_strat_h01_repair.json",
+      "response_sha256": "a6dc864ea42d4b385550c7d676f79377beccd740aede33e756742c27a49afffc",
+      "source_id": "VP-T0-STRAT-H01"
+    }
+  ],
+  "independent_audit_calls": 0,
+  "model_api_calls": 2,
+  "run_id": "P15R-P16R-G4QR-T1-PAPER-CASE-20260827T080112Z-v1",
+  "status": "running"
+}

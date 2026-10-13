@@ -1,0 +1,17 @@
+{
+  "completed_stages": [
+    "G1-T1",
+    "P13",
+    "P14",
+    "P15",
+    "P16",
+    "G3Q/G4Q-T1_PREP"
+  ],
+  "formal_g3_t1_executed": false,
+  "formal_g4_t1_signed": false,
+  "model_api_calls": 0,
+  "run_id": "G1-T1-P13-P16-99A723BFBC6D273A-formal-v1",
+  "t1_read": true,
+  "t1_snapshot_frozen": true,
+  "viewpoint_update_executed": true
+}

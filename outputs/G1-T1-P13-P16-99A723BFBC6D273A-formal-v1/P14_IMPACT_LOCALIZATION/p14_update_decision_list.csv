@@ -1,0 +1,16 @@
+﻿viewpoint_id,decision,reason,new_evidence_count
+VP-T0-OPS-H02,update,P14 field-level impact edge exists,14
+VP-T0-STRAT-H01,update,P14 field-level impact edge exists,10
+VP-T0-STRAT-H02,update,P14 field-level impact edge exists,6
+VP-T0-TECH-H02,update,P14 field-level impact edge exists,5
+VP-T0-TECH-H03,update,P14 field-level impact edge exists,6
+VP-T0-TRUST-H03,update,P14 field-level impact edge exists,5
+VP-T0-ENG-H01,retain,no P14 evidence-to-field edge,0
+VP-T0-ENG-H02,retain,no P14 evidence-to-field edge,0
+VP-T0-ENG-H03,retain,no P14 evidence-to-field edge,0
+VP-T0-OPS-H01,retain,no P14 evidence-to-field edge,0
+VP-T0-OPS-H03,retain,no P14 evidence-to-field edge,0
+VP-T0-STRAT-H03,retain,no P14 evidence-to-field edge,0
+VP-T0-TECH-H01,retain,no P14 evidence-to-field edge,0
+VP-T0-TRUST-H01,retain,no P14 evidence-to-field edge,0
+VP-T0-TRUST-H02,retain,no P14 evidence-to-field edge,0

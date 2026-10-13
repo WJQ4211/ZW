@@ -1,0 +1,35 @@
+{
+  "transport": "openai_compatible_api",
+  "request_started_at_utc": "2026-08-26T04:19:19Z",
+  "endpoint": "https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "requested_model_id": "deepseek-v4-flash-0731",
+  "provider_model_id": "deepseek-v4-flash-0731",
+  "request_parameters": {
+    "temperature": 0.0,
+    "enable_thinking": false,
+    "max_tokens": 800
+  },
+  "attempts": 1,
+  "retry_count": 0,
+  "latency_ms": 1626,
+  "response_sha256": "909a821e0123d7aac9b3bb691ade6c1effec5e4ca2bed8d78627de2ff921bf7e",
+  "provider_token_usage": {
+    "prompt_tokens": 234,
+    "completion_tokens": 32,
+    "total_tokens": 266
+  },
+  "provider_metrics_status": "observed",
+  "provider_temperature": null,
+  "provider_cost": null,
+  "response_status_code": 200,
+  "phase": "p3br_normalized_claim_repair",
+  "logical_call_type": "normalized_claim_repair",
+  "repair_index": 1,
+  "prompt_path": "outputs/P3BR-20260826T061500Z-recovery-v2/prompt_packets/claim_repair/claim-repair-01.txt",
+  "prompt_sha256": "5a5d706397deca782931a1da7ba9cf6bc4a287cc8627848db0f55e2dfab7a762",
+  "raw_response_path": "outputs/P3BR-20260826T061500Z-recovery-v2/raw_model_outputs/claim_repair/claim-repair-01.json",
+  "raw_response_sha256": "bc700b3913e1f35f017c6b44619cbc3247a456b0471bf6c966935fb1be970beb",
+  "response_content_sha256": "1fbdd8953ca6a1b16e72ace690f5cf2dcbc872cdf17673911be990a53fec94c2",
+  "requested_temperature": 0.0,
+  "provider_echoed_temperature": null
+}

@@ -1,0 +1,22 @@
+{
+  "case_id": "synthetic_military_ai",
+  "created_at": "2026-08-25T07:24:04.390629+00:00",
+  "cutoff_time": "2026-06-30T23:59:59+00:00",
+  "evidence_versions": [
+    "EV-T0-001:1",
+    "EV-T0-002:1",
+    "EV-T0-003:1",
+    "EV-T0-004:1",
+    "EV-T1-001:1",
+    "EV-T1-002:1",
+    "EV-T1-003:1"
+  ],
+  "frozen": true,
+  "frozen_at": "2026-08-25T07:24:04.391629",
+  "frozen_by": "synthetic-g1-reviewer",
+  "manifest_hash": "f97219be49098df50432d8cb4641aacb7027f9f755688cea41e721dce89e436f",
+  "phase": "T1",
+  "run_id": "phase-a-demo-20260825T072402Z-70e52b",
+  "schema_version": "phase-a.1",
+  "snapshot_id": "SNAP-synthetic_military_ai-T1-f97219be4909"
+}

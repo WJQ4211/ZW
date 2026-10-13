@@ -1,0 +1,664 @@
+/*jQuery.noConflict();
+jQuery(document).ready(function(){
+jQuery("#btn").colorbox({ opacity:.5, inline: true, href: "#daEmail" });
+});*/
+
+function da_OpenEmail() {
+    var dlg = jQuery("#daEmail");
+    dlg.dialog({
+        modal: true,
+        autoOpen: false,
+        resizable: false,
+        width: 500,
+        overlay: { opacity: 0.2, background: "cyan" }
+
+    });
+    dlg.dialog('open');
+
+    dlg.parent().appendTo(jQuery("form:first"));
+}
+
+
+$(document).ready(function () {
+    var check = window.location.href.toLowerCase();
+    if (check.indexOf("/search") != -1 || check.indexOf("/page") != -1 || check.indexOf("/sort") != -1 || check.indexOf("/custom") != -1
+        || check.indexOf("/index") != -1) {
+        jQuery("#ScrollTop").val(0);
+        var element = document.getElementById("clear");
+        if (element != null)
+            element.scrollIntoView(true);
+    }
+
+    setupCalendarResize();
+    setupEditMode();
+});
+
+function setupEditMode() {
+    var check = window.location.href.toLowerCase();
+    if (check.indexOf("/externalpreview/") != -1 || check.indexOf("externalpreview=1") != -1)
+      $('head').append('<style>h1.maintitle a[title="Edit"], div.skin-login { display: none }</style>')
+}
+
+/// dashboard tagit
+function InitAdvancedSearchTagit(id) {
+    var target = id ? id:"[id*=tag]";
+    $(target).tagit({
+        select: true, requireAutocomplete: true, singleField: true, allowSpaces: true,
+        tagSource: function (request, showChoices) {
+            var that = this;
+            $.ajax({
+                type: "POST",
+                url: "/DesktopModules/ArticleCS/TagHandler.ashx?search=" + request.term + '&contenttype=' + DashboardVars.ContentTypeID + '&site=' + DashboardVars.SiteID,
+                data: request,
+                dataType: 'json',
+                contentType: "application/json",
+                success: function (choices) {
+                    showChoices(that._subtractArray(choices, that.assignedTags()));
+                }
+            })
+        }
+    });
+    $("input.ui-widget-content").attr("aria-labelledby", id.replace('#', ''));
+}
+
+
+
+/// ajax loading
+function LoadDashboardAJAX(modid, dest, qs) {
+
+    var baseUrl = $.ServicesFramework(modid).getServiceRoot('ArticleCS');
+    $.ajax({
+        type: "GET",
+        url: baseUrl + "Public/GetDashboard?moduleID=" + modid + qs,
+        success: function (data) {
+            $(dest).html(DOMPurify.sanitize(data));
+        },
+        error: function () {
+            $(dest).html("Error loading dashboard");
+        }
+    });
+}
+
+function LoadListAJAX(modid, page, qs, loadFunc, doneFunc) {
+
+    var baseUrl = $.ServicesFramework(modid).getServiceRoot('ArticleCS');
+    $.ajax({
+        type: "GET",
+        url: baseUrl + "Public/GetList?moduleID=" + modid + "&dpage=" + page + qs,
+        success: function (data) {
+            if (loadFunc !== null)
+                loadFunc(data);
+            UpdateArticleDisplay();
+            if( typeof(addthis) !== "undefined" )
+                addthis.toolbox('.addthis_toolbox');
+            if (doneFunc !== null && data.done === true)
+                doneFunc(data);
+        },
+        error: function () {
+            var data;
+            data.data = "Error loading data";
+            loadFunc(data);
+        }
+    });
+}
+
+// .alist-more-here.  Put this class on the div receiving the next page
+// .alist-more-button  Button when clicked is disabled when loading, hidden when reach end of list
+// the below 2 functions are the "base" implementation, you can create your own implementation which calls LoadListAJAX()
+function LoadListAJAXHelper(modid, page, qs, dest, button, callbacks) {
+    // 'cbs' is "callbacks" ensured to be an object (to simplify should-call checks)
+    let DEBUG = page == modid; // this should be 'false' but sonarqube doesn't like that... :( it's wrong
+
+    const cbs = callbacks ? callbacks : {};
+    $(button).addClass('disabled');
+    if (DEBUG) console.log("aCS100: page", page, modid);   
+    LoadListAJAX(modid, page, qs,
+        function (data) {
+            if (DEBUG) console.log("ac106: data", data);
+            if (page === 0) {
+                // first page, overwrite whatever is coming from server
+                let inject = data.data;
+                if (cbs.transformData) {
+                    inject = cbs.transformData(inject, modid, page);
+                }
+
+                $(dest).html(inject);
+
+                if (cbs.afterInject) {
+                    cbs.afterInject(modid, page);
+                }
+            }
+            else {
+                let inject = data.data;
+                if (cbs.transformData) {
+                    inject = cbs.transformData(inject, modid, page);
+                }
+
+                $(dest).append(inject);
+
+                if (cbs.afterInject) {
+                    cbs.afterInject(modid, page);
+                }
+                
+            }
+            $(button).removeClass('disabled');
+            if (DEBUG) console.log("acs132: data.done", data.done);
+            if (data.data == "") $(button).hide();
+        },
+        function (data) {
+            $(button).hide();
+        }
+    );
+}
+/* Helper for InitLoadMore
+ * - acs_curPages keeps track by module id of current page.
+ * - the helpers target "alist-more-here"
+ * - want to inject html
+ * - you can pass callbacks
+ *   - transformData: given the string returned from the server (html-like)
+ *   - afterInject: after the server data (possibly transformed above) event 
+ *   
+ *   NOTE: the callbacks allow wrapping the returned items in a layout component
+ *   as well as the after even to do any needed action, e.g. compile with Vue
+ *   to support Vue components when available.
+*/
+var acs_curPages = {};
+function InitLoadMore(modid, qs, callbacks) {
+    // callbacks is extension to pass in events to customize
+    // as opposed to parrallel helpers.
+
+    acs_curPages[modid] = 0;
+    if (dma.DeviceIsMobile()) {
+        $('.number-pager').hide();
+        const pageParam = dma.getParameterByName("page");
+        if (pageParam && pageParam !== "")  // if not on the first page, load the first page
+            LoadListAJAXHelper(modid, 0, qs,
+                '.alist-more-here', '.alist-more-button', callbacks);
+
+        $('.alist-more-button').click(function (evt) {
+            LoadListAJAXHelper(modid, ++acs_curPages[modid], qs,
+                '.alist-more-here', '.alist-more-button', callbacks);
+            return false;
+        });
+    }
+    else {
+        $('.alist-more-button').hide();
+    }
+}
+
+
+function SaveRelatedOrder(relatedIDs) {
+    var baseUrl = $.ServicesFramework(relatedIDs).getServiceRoot('ArticleCSScope');
+    $.ajax({
+        type: "GET",
+        url: baseUrl + "ArticleCS/SaveRelatedOrder",
+        data: { relatedIDs: relatedIDs }
+    });
+}
+
+function SaveSelectedMedia(ids, isdoc, isAudio, statusids, keyEdit, moduleId) {
+
+    var baseUrl = $.ServicesFramework(ids).getServiceRoot('ArticleCSScope');
+    $.ajax({
+        type: "GET",
+        url: baseUrl + "ArticleCS/SaveSelectedMedia",
+        data: { ids: ids, isdoc: isdoc, isAudio: isAudio, statusids: statusids, keyEdit: keyEdit, moduleId: moduleId }
+    });
+}
+
+
+function UpdateArticleDisplay() {
+    DateAgo();
+    EllipsisText();
+}
+
+$(document).ready(function () {
+
+    UpdateArticleDisplay();
+
+});
+
+$(window).resize(function () {
+    EllipsisText();
+});
+
+
+
+function DateAgo() {
+    $('[data-dateago]').each(function () {
+        var pub = new moment.tz($(this).data("dateago"), "America/New_York");
+        var now = new moment();
+        var diff = now.diff(pub);
+        diff = Math.round(diff / 1000 / 60);  // minutes
+        var dateString = "";
+        var isYesterday = pub.date() === now.subtract('1', 'days').date() && pub.month() === now.month() && pub.year() === now.year();
+
+        if (diff < 60)
+            dateString = diff + " min ago";
+        else if (diff < 1440) {
+            var hrs = Math.round(diff / 60);
+            if (hrs === 1)
+                dateString = "1 hour ago";
+            else if (hrs == 24)
+                // possible b/c we round the hrs.
+                dateString = "yesterday";
+            else
+                dateString = hrs + " hours ago";
+        }
+        else if (isYesterday)
+            dateString = "yesterday";
+        else
+            dateString = $(this).data("dateap");
+
+        $(this).html(dateString);
+    }
+    );
+}
+
+function EllipsisText() {
+    $('.ellipsis-bound').each(function () {
+        var base = $(this);
+        var el = base.find('.ellipsis-text');
+        var text = el.data('title');
+        el.html(text);
+        var wordArray = text.split(' ');
+        while (base.prop('scrollHeight') > base.prop('offsetHeight')) {
+            wordArray.pop();
+            el.html(wordArray.join(' ') + '...');
+            if (wordArray.length === 0)
+                break;
+        }
+    });
+
+}
+
+function FadeIt() {
+    $('main').addClass('fadeit');
+}
+function FadeItDark() {
+    $('main').addClass('fadeit-dark');
+    $('body').css('background-color', '#242424');
+}
+
+function GetNextAndPreviousArticles(modid, currentArticleId) {
+    var baseUrl = $.ServicesFramework(modid).getServiceRoot('ArticleCS');
+    var retData = null;
+    $.ajax({
+        type: "GET",
+        url: baseUrl + "Public/GetNextAndPreviousList?moduleID=" + modid + "&currentArtId=" + currentArticleId,
+        data: { moduleID: modid, currentArtId: currentArticleId },
+        async: false,
+        success: function (data) {
+            retData = data;
+        },
+        error: function (jqXHR, exception) {
+            if (DEBUG) console.error("Unable to display previous and next buttons for articles");
+        }
+    });
+
+    return retData;
+}
+
+function DisplayNextPreviousNav(moduleId, articleId, loggedIn) {
+
+    if (loggedIn)
+        $('.article-navbtn.bx-prev').addClass('logged-in');
+
+    $('body').append("<div id='footerExtender' style='height:0px;'></div>");
+
+    $('.article-navbtn').addClass('artnav-flex');
+
+    var articleId = articleId;
+    var moduleId = moduleId;
+
+    var nextPrevData = GetNextAndPreviousArticles(moduleId, articleId);
+
+    if (nextPrevData !== undefined && nextPrevData !== null) {
+        if (nextPrevData.nextArticle.length > 0) {
+
+            for (var count = 0; count < nextPrevData.nextArticle.length; count++) {
+                var nextarticletitleclean = $('<div/>').text(nextPrevData.nextArticle[count].articletitle).html();
+                if (count == 0) {
+                    $('.article-navbtn.bx-next .headline').prepend(nextarticletitleclean);
+
+                    if (nextPrevData.nextArticle[count].thumbnailurl != null)
+                        $('.article-navbtn.bx-next .thumbnail .image').attr('src', nextPrevData.nextArticle[count].thumbnailurl);
+
+                    $('.article-navbtn.bx-next a').attr('href', nextPrevData.nextArticle[count].articleurl);
+                    $('.bottomNavContainer .artNextBottomNav a').attr('href', nextPrevData.nextArticle[count].articleurl);
+                    $('.article-navbtn.bx-next .headline .pubDate').html(nextPrevData.nextArticle[count].publishDate);
+                    $('#NavBtnLinkNext').attr('aria-label', nextarticletitleclean);
+                    $('#NavBtnLinkNext').addClass('artnav-flex');
+                }
+                else {                
+                    var $articleAppendLink = $('<a></a>');
+                    $articleAppendLink.addClass('moreNavArticle');
+                    $articleAppendLink.attr('href', nextPrevData.nextArticle[count].articleurl);
+                    $articleAppendLink.attr('aria-label', nextarticletitleclean);
+                    var $articleAppendHeadLine = $('<div></div>');
+                    $articleAppendHeadLine.css({ 'text-align': 'left', 'flex': '1 1 60%', 'padding-top': '5px'});
+                    $articleAppendHeadLine.html(nextarticletitleclean);
+                    var $articleAppendPublishDate = $('<div></div>');
+                    $articleAppendPublishDate.css({ 'text-align': 'right', 'flex': '1 1 40%', 'padding-top': '5px'  });
+                    $articleAppendPublishDate.html(nextPrevData.nextArticle[count].publishDate);
+                    $articleAppendLink.append($articleAppendHeadLine);
+                    $articleAppendLink.append($articleAppendPublishDate);
+                    $('#ArticleNavNext .navbtn-link').append($articleAppendLink);
+                }
+            }
+        }
+        else {
+            $('.article-navbtn.artnav-flex.bx-next').hide();
+            $('.artNextBottomNav.col').hide();
+        }
+
+        if (nextPrevData.prevArticle.length > 0) {
+
+            for (var count = 0; count < nextPrevData.prevArticle.length; count++) {
+                var prevarticletitleclean = $('<div/>').text(nextPrevData.prevArticle[count].articletitle).html();             
+                if (count == 0) {                  
+                    $('.article-navbtn.bx-prev .headline').prepend(prevarticletitleclean);
+
+                    if (nextPrevData.prevArticle[count].thumbnailurl != null)
+                        $('.article-navbtn.bx-prev .thumbnail .image').attr('src', nextPrevData.prevArticle[count].thumbnailurl);
+
+                    $('.article-navbtn.bx-prev a').attr('href', nextPrevData.prevArticle[count].articleurl);
+                    $('.bottomNavContainer .artPrevBottomNav a').attr('href', nextPrevData.prevArticle[count].articleurl);
+                    $('.article-navbtn.bx-prev .headline .pubDate').html(nextPrevData.prevArticle[count].publishDate);                 
+                    $('#NavBtnLinkPrev').attr('aria-label', prevarticletitleclean);
+                    $('#NavBtnLinkPrev').addClass('artnav-flex');
+                }
+                else {
+                    var $articleAppendLink = $('<a></a>');
+                    $articleAppendLink.addClass('moreNavArticle');
+                    $articleAppendLink.attr('href', nextPrevData.prevArticle[count].articleurl);
+                    $articleAppendLink.attr('aria-label', prevarticletitleclean);
+                    var $articleAppendHeadLine = $('<div></div>');
+                    $articleAppendHeadLine.css({ 'text-align': 'left', 'flex': '1 1 60%', 'padding-top': '5px' });
+                    $articleAppendHeadLine.html(prevarticletitleclean);
+                    var $articleAppendPublishDate = $('<div></div>');
+                    $articleAppendPublishDate.css({ 'text-align': 'right', 'flex': '1 1 40%', 'padding-top': '5px'  });
+                    $articleAppendPublishDate.html(nextPrevData.prevArticle[count].publishDate);
+                    $articleAppendLink.append($articleAppendHeadLine);
+                    $articleAppendLink.append($articleAppendPublishDate);
+                    $('#ArticleNavPrev .navbtn-link').append($articleAppendLink);
+                }
+            }
+        }
+        else {
+            $('.article-navbtn.artnav-flex.bx-prev').hide();
+            $('.artPrevBottomNav.col').hide();
+        }
+    }
+}
+
+function LoadRangeSlider() {
+    var wrapperHook = document.querySelectorAll('[dinfos-range-slider-wrapper-hook]'); // loop through hook matches to attach functionality to child elements
+
+    wrapperHook.forEach(function (element) {
+        var minInputElement = element.querySelector('[dinfos-range-slider-min-directive]');
+        var maxInputElement = element.querySelector('[dinfos-range-slider-max-directive]');
+        var leftTrack = element.querySelector('[dinfos-range-slider-left-track-hook]');
+        var middleTrack = element.querySelector('[dinfos-range-slider-middle-track-hook]');
+        var rightTrack = element.querySelector('[dinfos-range-slider-right-track-hook]'); // container events
+
+        element.addEventListener("mouseenter", function (event) {
+            return findNearestThumb(event, element);
+        });
+        element.addEventListener("mousemove", function (event) {
+            return findNearestThumb(event, element);
+        });
+        element.addEventListener("mouseleave", function () {
+            return removeMouseMoveEvent(element, findNearestThumb);
+        }); // minInput events
+        // minInputElement.addEventListener("change", minRangeHandler);
+
+        $(minInputElement).on('change', minRangeHandler);
+        minInputElement.addEventListener("mousedown", function () {
+            return minMouseDown();
+        });
+        minInputElement.addEventListener("mouseup", function () {
+            return removeMouseMoveEvent(minInputElement, minDragHandler);
+        }); // maxInput events
+        // maxInputElement.addEventListener("change", maxRangeHandler);
+
+        $(maxInputElement).on('change', maxRangeHandler);
+        maxInputElement.addEventListener("mousedown", function () {
+            return maxMouseDown();
+        });
+        maxInputElement.addEventListener("mouseup", function () {
+            return removeMouseMoveEvent(maxInputElement, maxDragHandler);
+        });
+
+        function removeMouseMoveEvent(elementParam, elementFunction) {
+            elementParam.removeEventListener('mousemove', elementFunction);
+        }
+
+        function findNearestThumb(e, element) {
+            var cursorLocation = e.pageX - $(element).offset().left;
+            var ticWidth = element.offsetWidth / maxInputElement.max;
+            var minValueWidth = ticWidth * minInputElement.value;
+            var maxValueWidth = ticWidth * maxInputElement.value;
+            var calcMinValue = cursorLocation - minValueWidth;
+            var calcMaxValue = cursorLocation - maxValueWidth;
+            var valuesArray = [0]; // Initial values are the same. 
+            // Set min value +1 to allow maxInput to be the intial selectable element
+
+            if (calcMaxValue === calcMinValue) {
+                calcMinValue = calcMinValue + 1;
+            }
+
+            if (!Math.sign) {
+                Math.sign = function (x) {
+                    return (x > 0) - (x < 0) || +x;
+                };
+            }
+
+            if (Math.sign(calcMinValue) == -1) {
+                calcMinValue = calcMinValue * -1;
+            }
+
+            if (Math.sign(calcMaxValue) == -1) {
+                calcMaxValue = calcMaxValue * -1;
+            } // push both values to an array and then sort for comparison
+
+
+            valuesArray.push(calcMinValue, calcMaxValue);
+            valuesArray.sort(function (a, b) {
+                return b - a;
+            });
+
+            if (valuesArray[1] == calcMinValue) {
+                minInputElement.style.zIndex = "3";
+                maxInputElement.style.zIndex = "1";
+            } else {
+                maxInputElement.style.zIndex = "3";
+                minInputElement.style.zIndex = "1";
+            }
+        }
+
+        function minRangeHandler() {
+            minInputElement.value = Math.min(minInputElement.value, maxInputElement.value - 1);
+            var value = 100 / (parseInt(minInputElement.max) - parseInt(minInputElement.min)) * parseInt(minInputElement.value) - 100 / (parseInt(minInputElement.max) - parseInt(minInputElement.min)) * parseInt(minInputElement.min);
+            var difference = parseInt(maxInputElement.value) - parseInt(minInputElement.value);
+            var minInputElementWidth = 100 / parseInt(minInputElement.max);
+
+            if (parseInt(minInputElement.value) < parseInt(maxInputElement.value)) {
+                leftTrack.style.width = value + '%';
+                middleTrack.style.left = value + '%';
+                middleTrack.style.width = minInputElementWidth * difference + '%';
+                highlightRuler();
+            }
+        }
+
+        function maxRangeHandler() {
+            if (minInputElement.value > 0) {
+                maxInputElement.value = Math.max(maxInputElement.value, minInputElement.value - -1);
+            } else {
+                maxInputElement.value = Math.max(maxInputElement.value, minInputElement.value);
+            }
+
+            var value = 100 / (parseInt(maxInputElement.max) - parseInt(maxInputElement.min)) * parseInt(maxInputElement.value) - 100 / (parseInt(maxInputElement.max) - parseInt(maxInputElement.min)) * parseInt(maxInputElement.min);
+            var difference = parseInt(maxInputElement.value) - parseInt(minInputElement.value);
+            var maxInputElementWidth = 100 / parseInt(maxInputElement.max);
+            rightTrack.style.width = 100 - value + '%';
+            middleTrack.style.right = 100 - value + '%';
+            middleTrack.style.width = maxInputElementWidth * difference + '%';
+            highlightRuler();
+        }
+
+        function highlightRuler() {
+            wrapperHook.forEach(function (wrapperItem) {
+                var rulerContainers = wrapperItem.querySelectorAll('[dinfos-range-ruler-container-hook]');
+
+                if (rulerContainers) {
+                    rulerContainers.forEach(function (rulerItems) {
+                        var oneToRuleThemAll = rulerItems.querySelectorAll('div');
+                        oneToRuleThemAll.forEach(function (ruler, index) {
+                            // multi inputs
+                            if (minInputElement && maxInputElement) {
+                                if (parseInt(maxInputElement.value) >= index && parseInt(minInputElement.value) <= index) {
+                                    ruler.classList.add('dinfos--highlight-color');
+                                } else {
+                                    ruler.classList.remove('dinfos--highlight-color');
+                                }
+                            }
+                        });
+                    });
+                }
+            });
+        }
+
+        function minMouseDown() {
+            minInputElement.addEventListener("mousemove", minDragHandler);
+        }
+
+        function maxMouseDown() {
+            maxInputElement.addEventListener("mousemove", maxDragHandler);
+        }
+
+        function minDragHandler() {
+            minRangeHandler();
+        }
+
+        function maxDragHandler() {
+            maxRangeHandler();
+        }
+
+        function onFormReset() {
+            $(minInputElement).closest('form').on('reset', function () {
+                // trigger change event on multi slider range inputs
+                setTimeout(function () {
+                    $(minInputElement).trigger('change');
+                    $(minInputElement).trigger('change');
+                }, 1);
+            });
+        }
+
+        onFormReset();
+        minRangeHandler();
+        maxRangeHandler();
+    });
+}
+
+function setupCalendarResize() {
+    //dgov2-calendar class used to ensure that this is only applied to DGOV2
+    window.onresize = function(event) {
+        var picker = $('.RadCalendarPopup.RadCalendarPopupShadows:visible').find('.RadCalendar.dgov2-calendar')[0];
+        if (picker) {
+            var pickerID = picker.id.replace('_calendar', '');
+            if (pickerID) {
+                CalendarPopupBelow(event, pickerID);
+            }
+        }
+    };
+}
+
+
+function CalendarPopupBelow(e, pickerID) {
+    //this function is only applied to DGOV2 via the setup in C#  - ApplyDGOV2CalendarEnhancement()
+    var datePicker = $find(pickerID);
+    var textBox = datePicker.get_textBox();
+    var popupElement = datePicker.get_popupContainer();
+    var dimensions = datePicker.getElementDimensions(popupElement);
+    var position = datePicker.getElementPosition(textBox);
+
+    if (datePicker.isPopupVisible() && e.target.id && e.target.id.indexOf('_popupButton') > 0) {
+        datePicker.hidePopup();
+        return;
+    }
+
+    var calendarWidth = reduceCalendarWidthOnMobile();
+    var rightAlign = true;
+    if ((position.x < 150 && window.innerWidth > 991) || window.innerWidth < 358) {
+        //popup will be too far left if we right align
+        rightAlign = false;
+    }
+
+    var wrapperId = pickerID + '_wrapper';
+    var calButtonIcon = $('#' + wrapperId + ' .rcCalPopup');
+    var offset = calButtonIcon.offset();
+    var xPosition = offset.left + calButtonIcon.outerWidth();
+    var fullLeftOffset = xPosition - dimensions.width + 3;
+    if (!rightAlign) {
+        fullLeftOffset = position.x - 2;
+    }
+    
+    //if left side of calendar is still < 0, then need to center the calendar
+    if (fullLeftOffset < 0) {
+        fullLeftOffset = 0;
+        if (window.innerWidth > 357) {
+            fullLeftOffset = 7;
+        }
+    }
+
+    //prevent calendar from being displayed off the right size of the screen on mobile
+    var calendarRightXPosition = parseInt(fullLeftOffset) + parseInt(calendarWidth);
+    if ((calendarRightXPosition - 2) > window.innerWidth) {
+        if ((fullLeftOffset + calendarWidth) > window.innerWidth) {
+            fullLeftOffset = 0;
+        }
+    }
+
+    datePicker.hidePopup(); 
+    datePicker.showPopup(fullLeftOffset, position.y + 47);
+} 
+
+function reduceCalendarWidthOnMobile() {
+    var calendar = $('.RadCalendar.dgov2-calendar');
+    var pageWidth = window.innerWidth;
+    if (pageWidth < 358) {
+        $(calendar).css('width', pageWidth + 3);
+    }
+    var calendarWidth = $(calendar).css('width').replace("px","");
+    return calendarWidth;
+}
+
+function getPathVariable(variable) {
+    var search = window.location.search;
+    var value = 0;
+
+    if (search && search != "") {
+        var results = new RegExp('[\?&]' + variable + '=([^&#]*)').exec(window.location.href);
+        if (results != null) {
+            value = results[1] || 0;
+        }
+    }
+    if (value == 0) {
+        var path = window.location.href.replace(baseURL, '');
+
+        var parts = path.split('/');
+
+        if (parts && parts.length > 0) {
+            if (parts[0] == "") {
+                parts.shift();
+            }
+        }
+
+        while (parts.length) {
+            if (parts.shift() === variable) value = parts.shift();
+        }
+    }
+
+    return value;
+}

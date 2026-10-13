@@ -1,0 +1,102 @@
+PROMPT_ID: same_model_separate_call_semantic_screening
+VERSION: 1.0
+BATCH_ID: T0-SP-008-batch-001
+TASK: In a separate model call, screen whether each candidate claim and evidence nature are directly supported by its own excerpt, and review every declared coding dimension separately.
+INPUT LIMIT: Use only the candidate fields below. Do not use source metadata, other candidates, prior runs, or outside knowledge.
+OUTPUT: strict JSON array. Each item must contain exactly candidate_index, status, reason, claim_supported, nature_supported, dimension_reviews.
+dimension_reviews must contain one object for every declared dimension, each with exactly dimension, supported, supporting_span, reason. Do not rewrite the candidate.
+status must be pass, revise, or reject. Reject claims that add a subject, action, number, scope, or result absent from the excerpt, or that are only glossary/general definitions unrelated to the research question.
+A test/exercise occurrence is test_event, not test_result unless the excerpt explicitly reports an observed function, performance, or result. Do not treat ordinary coordination as human_machine_authority; information delivered to watchstanders can support an auxiliary relationship; training or documentation alone does not establish authority allocation.
+CODING_DIMENSION_DEFINITIONS: {"application_maturity": "应用成熟度：概念战略、研发、试验、试点、采购部署或持续运用。", "engineering_resource_conditions": "工程与资源条件：数据、算力、模型、接口、供应链、预算、人才和保障。", "human_machine_authority": "人机权限关系：辅助决策、人在回路中、受监督自主或更高程度自主；普通系统协同、信息传输、培训或文档要求本身不足以支持此维度。", "integration_level": "能力集成层级：单工具、单任务、单平台、跨平台、跨任务或体系级集成。", "organizational_system_fit": "组织与体系适配：指挥流程、任务编组、跨平台协同、人员负荷和组织变革。", "trust_governance_constraints": "可信与治理约束：安全、可靠性、测试评价、授权边界、责任与伦理。"}
+[
+  {
+    "candidate_index": 0,
+    "normalized_claim": "国防部各组成部门将集中某些AI开发平台，用于持续实验和部署，并最大化采用负责任的AI共享服务。",
+    "evidence_nature": "goal",
+    "topics": [
+      "AI基础设施",
+      "共享服务",
+      "集中化"
+    ],
+    "source_locator": "pdf_page_14",
+    "source_id": "T0-SP-008",
+    "excerpt_zh": "因此，国防部各组成部门将寻求集中某些AI开发平台，以进行持续实验和部署，然后最大限度地采用负责任的AI共享服务。",
+    "coding_dimensions": [
+      "engineering_resource_conditions",
+      "organizational_system_fit"
+    ],
+    "excerpt_original": "Thus, DoD Components will seek to centralize certain AI development platforms for continuous experimentation and deployment, and then maximize the adoption of responsible AI shared services."
+  },
+  {
+    "candidate_index": 1,
+    "normalized_claim": "国防部将开展持续实验和综合多边演习，以支持可互操作的企业级作战能力的投资决策。",
+    "evidence_nature": "goal",
+    "topics": [
+      "实验",
+      "演习",
+      "联合作战能力"
+    ],
+    "source_locator": "pdf_page_12",
+    "source_id": "T0-SP-008",
+    "excerpt_zh": "该部门将开展持续实验，以及针对高影响力联合作战用例的综合多边演习，这些演习可为可互操作的企业级作战能力的额外投资提供信息。",
+    "coding_dimensions": [
+      "integration_level",
+      "application_maturity"
+    ],
+    "excerpt_original": "The Department will conduct continuous experiments, and integrated multi-lateral exercises with high-impact Joint Force use cases that can inform additional investments in interoperable enterprise-level, warfighting capabilities."
+  },
+  {
+    "candidate_index": 2,
+    "normalized_claim": "经过严格测试被认为成功的能力将获得明确的维持和大规模采用途径。",
+    "evidence_nature": "goal",
+    "topics": [
+      "测试",
+      "能力采用",
+      "维持"
+    ],
+    "source_locator": "pdf_page_12",
+    "source_id": "T0-SP-008",
+    "excerpt_zh": "经过严格测试被认为成功的能力将获得明确的维持和大规模采用途径。",
+    "coding_dimensions": [
+      "application_maturity",
+      "trust_governance_constraints"
+    ],
+    "excerpt_original": "Capabilities deemed successful after rigorous testing will receive clear pathways to sustainment and wide-scale adoption."
+  },
+  {
+    "candidate_index": 3,
+    "normalized_claim": "国防部将投资于充足、灵活、安全且可联合互操作的基础设施。",
+    "evidence_nature": "goal",
+    "topics": [
+      "基础设施",
+      "投资",
+      "互操作性"
+    ],
+    "source_locator": "pdf_page_13",
+    "source_id": "T0-SP-008",
+    "excerpt_zh": "该部门将投资于充足、灵活、安全且可联合互操作的基础设施，以满足用户的可扩展需求。",
+    "coding_dimensions": [
+      "engineering_resource_conditions",
+      "integration_level"
+    ],
+    "excerpt_original": "The Department will invest in abundant, flexible, secure, and jointly interoperable infrastructure that is scalable for the needs of users."
+  },
+  {
+    "candidate_index": 4,
+    "normalized_claim": "国防部领导人将优先采用已由联合或部门赞助的解决方案，其次才考虑公开市场能力。",
+    "evidence_nature": "goal",
+    "topics": [
+      "采办策略",
+      "解决方案采用",
+      "市场"
+    ],
+    "source_locator": "pdf_page_15",
+    "source_id": "T0-SP-008",
+    "excerpt_zh": "国防部领导人将首先寻求采用已由联合或部门赞助的解决方案，然后再探索公开市场上可用的能力。",
+    "coding_dimensions": [
+      "engineering_resource_conditions",
+      "organizational_system_fit"
+    ],
+    "excerpt_original": "DoD leaders will first seek to adopt solutions that are already Joint- or Component-sponsored before exploring capabilities available on the open market."
+  }
+]

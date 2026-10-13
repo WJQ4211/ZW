@@ -1,0 +1,376 @@
+你是P15R定向质量修补器。只修补同一观点的审计指出问题，不改变其专业视角、假设对象和T1时间边界。
+必须继续只使用下方提供的T1正式Evidence；不得读取其他视角、T0观点全文、网络或外部常识。
+不得引用六条排除Evidence或两条historical_context；不得引用T0 EV-T0-*；不得把goal、官方评价、test_event或局部案例写成全军部署/成熟度。
+所有引用Evidence ID必须来自本提示的T1 evidence_context，version必须为1。
+引用relation只能是support、challenge、limit、background，importance只能是high、medium、low；不得输出qualify、boundary_change或其他关系。
+修补后的judgment必须保持本视角差异：OPS=任务运用/持续使用/作战适配；STRAT=治理/资源/跨军种机制；TECH=成熟度/工程复用/性能边界；TRUST=可信性/验证/红队/治理条件。
+不得把‘未观察到’写成‘不存在’，不得把截至2026年6月30日写成被证据逐日覆盖；应明确材料覆盖范围和局限。
+输出严格JSON对象，字段恰好为：judgment、confidence、supporting_evidence、counter_evidence、mechanism_claims、key_assumptions、boundary_conditions、uncertainties、information_gaps、falsifiers、affected_fields、evidence_field_changes、update_rationale。不得输出Markdown围栏或额外字段。
+
+观点ID与专业信息：
+{"viewpoint_id": "VP-T0-TECH-H03", "perspective_id": "TECH", "hypothesis_id": "HYP-T0-03"}
+原始观点复评JSON：
+{
+  "judgment": "T1证据进一步确认了作战化AI安全评估能力缺失、实验室到作战环境的转化边界以及数据规模约束，这些均指向技术成熟度仍受制于工程验证和资源条件；SABER等计划仍处于目标设定阶段，未构成已实现部署，因此本假设在技术成熟度视角下继续成立。",
+  "confidence": "medium",
+  "supporting_evidence": [
+    {
+      "evidence_id": "CE-T1-FE00C458FAADC5D8",
+      "version": 1,
+      "target_field": "judgment",
+      "relation": "support",
+      "importance": "high"
+    },
+    {
+      "evidence_id": "CE-T1-11BBC2ABED0945C2",
+      "version": 1,
+      "target_field": "judgment",
+      "relation": "support",
+      "importance": "high"
+    },
+    {
+      "evidence_id": "CE-T1-C4C1018771B30C5A",
+      "version": 1,
+      "target_field": "judgment",
+      "relation": "support",
+      "importance": "high"
+    },
+    {
+      "evidence_id": "CE-T1-FA2B6E620D8DDBD2",
+      "version": 1,
+      "target_field": "judgment",
+      "relation": "support",
+      "importance": "medium"
+    },
+    {
+      "evidence_id": "CE-T1-E2F907CF4DA00903",
+      "version": 1,
+      "target_field": "judgment",
+      "relation": "support",
+      "importance": "medium"
+    }
+  ],
+  "counter_evidence": [
+    {
+      "evidence_id": "CE-T1-95F7FE29CF48D86D",
+      "version": 1,
+      "target_field": "boundary_conditions[0]",
+      "relation": "limit",
+      "importance": "medium"
+    }
+  ],
+  "mechanism_claims": [
+    "机载AI系统的主要限制因素是处理速度（依据EV-T0-AD4CCAC18E1BB26C，直接证据）。",
+    "处理速度限制可能影响实时决策能力——此为合理推断，但现有证据未直接量化该影响，需进一步验证（推断）。",
+    "缺乏基于经测试标准的组织化方法，导致数据质量难以满足AI需求（依据EV-T0-62B1ECDA7DF87F1A，直接证据）。",
+    "国防部尚未制定全部门范围的AI采办指导方针，导致各军种自行制定标准，缺乏统一协调（依据EV-T0-8E35B508DF5C2E65，直接证据）。",
+    "T1证据表明，对AI系统的攻击演示大多在实验室条件下进行，且缺乏对已部署AI战场系统进行作战漏洞评估的成熟能力和生态，这直接限制了技术成熟度的验证（依据CE-T1-FE00C458FAADC5D8、CE-T1-11BBC2ABED0945C2、CE-T1-C4C1018771B30C5A，直接证据）。",
+    "SABER计划的目标是建立示范性AI红队并执行高保真作战AI安全演习，但该计划仍处于目标设定阶段，未构成已实现部署，因此不能作为技术成熟度提升的证据（依据CE-T1-FA2B6E620D8DDBD2、CE-T1-E2F907CF4DA00903，直接证据）。"
+  ],
+  "key_assumptions": [
+    "资源约束（如机载处理速度、数据质量、基础设施延迟）是能力形成的主要瓶颈。",
+    "预算投入（如2023财年11亿美元）和DARPA的数据收集（如100TB传感器数据）尚未完全解决这些瓶颈。",
+    "国防部层面的AI采办指导方针缺失是体系化发展的主要障碍。",
+    "T1证据中关于作战医疗领域的数据规模（0.017GB）仅代表该特定领域，不能外推为全军AI数据条件的普遍状态。"
+  ],
+  "boundary_conditions": [
+    "若数据、边缘算力和共用基础设施瓶颈持续存在，则本假设增强。",
+    "若统一采办和测试评估制度仍未落地，则本假设增强。",
+    "若资源与治理瓶颈得到解决并伴随跨任务规模化部署，则本假设削弱。",
+    "T1证据中关于作战化AI安全评估能力缺失的约束，仅反映截至2026年6月30日的状态，不排除后续能力建设。"
+  ],
+  "uncertainties": [
+    "预算投入是否已有效转化为实际的技术能力提升，缺乏直接证据。",
+    "DARPA收集的100TB传感器数据是否已用于解决数据质量瓶颈，尚不明确。",
+    "处理速度限制对实时决策能力的具体影响程度缺乏量化数据。",
+    "SABER计划后续是否能够成功建立作战评估能力，以及其时间表，尚不明确。"
+  ],
+  "information_gaps": [
+    "缺乏关于机载AI处理速度限制在具体项目中的量化影响数据。",
+    "国防部采办指导方针的制定进展缺乏公开时间表。",
+    "处理速度限制与实时决策能力之间的因果关系缺乏直接证据。",
+    "缺乏关于SABER计划当前进展阶段（如是否已进行首次演习）的公开信息。"
+  ],
+  "falsifiers": [
+    "若在2026年7月1日之后，出现多个军种在作战演习中常态化使用同一套AI系统，且不依赖DARPA等专门项目支持，则本假设不成立。",
+    "若在2026年7月1日之后，出现公开证据表明国防部已建立统一的AI采办指导方针并应用于多个军种，则本假设削弱。",
+    "若在2026年7月1日之后，SABER计划或其他类似项目公开报告已完成对已部署AI系统的作战漏洞评估并形成可复用流程，则本假设削弱。"
+  ],
+  "affected_fields": [
+    "judgment",
+    "boundary_conditions[0]"
+  ],
+  "evidence_field_changes": [
+    {
+      "target_field": "judgment",
+      "before": "T1证据补充了作战化评估能力、数据条件和工程约束，表明资源与可信治理瓶颈仍影响应用扩展；局部结果不足以消除这一条件性判断。",
+      "after": "T1证据进一步确认了作战化AI安全评估能力缺失、实验室到作战环境的转化边界以及数据规模约束，这些均指向技术成熟度仍受制于工程验证和资源条件；SABER等计划仍处于目标设定阶段，未构成已实现部署，因此本假设在技术成熟度视角下继续成立。",
+      "new_evidence_ids": [
+        "CE-T1-FE00C458FAADC5D8",
+        "CE-T1-11BBC2ABED0945C2",
+        "CE-T1-C4C1018771B30C5A",
+        "CE-T1-FA2B6E620D8DDBD2",
+        "CE-T1-E2F907CF4DA00903"
+      ],
+      "change_reason": "T1证据提供了关于作战化AI安全评估能力缺失、实验室到作战环境转化边界以及数据规模约束的直接信息，强化了技术成熟度受限的判断；同时SABER计划的目标属性被明确为未实现部署，避免过度外推。"
+    },
+    {
+      "target_field": "boundary_conditions[0]",
+      "before": "若数据、边缘算力和共用基础设施瓶颈持续存在，则本假设增强。",
+      "after": "若数据、边缘算力和共用基础设施瓶颈持续存在，则本假设增强；T1证据中关于作战医疗领域的数据规模（0.017GB）仅代表该特定领域，不能外推为全军AI数据条件的普遍状态。",
+      "new_evidence_ids": [
+        "CE-T1-95F7FE29CF48D86D"
+      ],
+      "change_reason": "T1证据提供了作战医疗领域的数据规模约束，该约束被限定为局部条件，不改变主判断，但明确了外推边界。"
+    }
+  ],
+  "update_rationale": "T1证据中关于作战化AI安全评估能力缺失、实验室到作战环境转化边界以及数据规模约束的信息，均支持技术成熟度受限的判断；SABER计划的目标属性被明确为未实现部署，避免过度外推。因此，本假设在技术成熟度视角下继续成立，置信度维持medium。"
+}
+两次独立审计指出的具体问题：
+[
+  "The judgment states 'T1证据进一步确认了作战化AI安全评估能力缺失、实验室到作战环境的转化边界以及数据规模约束' but the supporting evidence includes CE-T1-FE00C458FAADC5D8 (constraint), CE-T1-11BBC2ABED0945C2 (constraint), CE-T1-C4C1018771B30C5A (constraint), CE-T1-FA2B6E620D8DDBD2 (goal), CE-T1-E2F907CF4DA00903 (goal). The constraints are correctly used, but the goals (SABER) are used to support the judgment that 'SABER等计划仍处于目标设定阶段，未构成已实现部署' which is correct, but the judgment says '这些均指向技术成熟度仍受制于工程验证和资源条件' which is an inference from constraints, not directly stated. The boundary_conditions[0] change adds 'T1证据中关于作战医疗领域的数据规模（0.017GB）仅代表该特定领域，不能外推为全军AI数据条件的普遍状态' which is correct, but the evidence CE-T1-95F7FE29CF48D86D is a constraint, and the change correctly limits it. However, the judgment's confidence is 'medium' and the mechanism_claims include 'SABER计划的目标是建立示范性AI红队并执行高保真作战AI安全演习，但该计划仍处于目标设定阶段，未构成已实现部署' which is accurate, but the judgment's overall claim that '本假设在技术成熟度视角下继续成立' is supported by constraints, but the goals are not deployment results, so the distinction is clear. The issue is that the judgment uses '未观察到' (no evidence of deployment) to conclude '不存在' (absence of capability), which is a logical leap; the evidence only shows lack of evidence, not proof of absence.",
+  "judgment中称'SABER等计划仍处于目标设定阶段，未构成已实现部署'，但supporting_evidence中CE-T1-FA2B6E620D8DDBD2和CE-T1-E2F907CF4DA00903均为goal性质，该表述正确；但boundary_conditions[0]的after中称'T1证据中关于作战医疗领域的数据规模（0.017GB）仅代表该特定领域，不能外推为全军AI数据条件的普遍状态'，该证据CE-T1-95F7FE29CF48D86D为constraint性质，但该约束仅来自单一来源（T1-IR-001），且未说明该数据规模是否代表作战医疗领域的全部或部分，存在外推边界不明确问题；此外，mechanism_claims中'机载AI系统的主要限制因素是处理速度'引用了EV-T0-AD4CCAC18E1BB26C，但该证据不在T1证据列表中，存在引用非T1证据的问题。"
+]
+可用T1 Evidence全文字段：
+{
+  "CE-T1-11BBC2ABED0945C2": {
+    "candidate_evidence_id": "CE-T1-11BBC2ABED0945C2",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "trust_governance_constraints"
+    ],
+    "content_hash": "11bbc2abed0945c285452805ccce75b32638f6988d2dffcc138e802d0b973774",
+    "evidence_id": "CE-T1-11BBC2ABED0945C2",
+    "evidence_nature": "constraint",
+    "excerpt_original": "the findings don't necessarily reflect how well the attacks would work in real-world military operations.",
+    "excerpt_zh": "这些发现不一定能反映攻击在真实军事行动中的效果。",
+    "extraction_run_id": "P11R-P12R-G1Q-T1-20260827T065600Z-v1",
+    "g1_author_decision": "accept",
+    "human_reviewed": true,
+    "human_source_visual_review_count": 0,
+    "lineage": "p12r_supplemental_real_api",
+    "normalized_claim": "实验室攻击演示结果不一定反映真实军事行动中的效果。",
+    "published_at": "2025-03-17",
+    "published_at_precision": "day",
+    "publisher": "DARPA",
+    "review_mode": "ai_preannotation_author_bulk_signoff_with_key_item_adjudication",
+    "reviewed_at": "2026-08-27T07:25:25Z",
+    "reviewer": "author_01",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DARPA-001",
+    "source_locator": "web_paragraph_0007",
+    "source_visual_review_claimed": false,
+    "status": "active",
+    "t1_change_signal_eligible": true,
+    "temporal_role": "current_t1_signal",
+    "title": "Sharpening AI warfighting advantage on the battlefield",
+    "topics": [
+      "AI安全",
+      "作战适用性"
+    ],
+    "url_or_path": "https://www.darpa.mil/news/2025/saber-warfighter-ai",
+    "version": 1
+  },
+  "CE-T1-95F7FE29CF48D86D": {
+    "candidate_evidence_id": "CE-T1-95F7FE29CF48D86D",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "engineering_resource_conditions"
+    ],
+    "content_hash": "95f7fe29cf48d86d959bd95d1ed243f8e6f9176db74b3f54ce4db7b574d90f9f",
+    "evidence_id": "CE-T1-95F7FE29CF48D86D",
+    "evidence_nature": "constraint",
+    "excerpt_original": "the 15-year dataset in the US Joint Trauma System Department of Defense Trauma Registry (DoDTR) contains only 0.017 Gigabytes of data, despite including over 140,000 patient records",
+    "excerpt_zh": "美国联合创伤系统国防部创伤登记处（DoDTR）的15年数据集仅包含0.017 GB的数据，尽管包含超过14万份患者记录。",
+    "extraction_run_id": "P11R-P12R-G1Q-T1-20260827T065600Z-v1",
+    "g1_author_decision": "accept",
+    "human_reviewed": true,
+    "human_source_visual_review_count": 0,
+    "lineage": "p12r_supplemental_real_api",
+    "normalized_claim": "在作战医疗数据条件下，美国国防部创伤登记处15年数据集仅包含0.017 GB数据。",
+    "published_at": "2025-05-14",
+    "published_at_precision": "day",
+    "publisher": "Bioengineering (MDPI), peer-reviewed research",
+    "review_mode": "ai_preannotation_author_bulk_signoff_with_key_item_adjudication",
+    "reviewed_at": "2026-08-27T07:25:25Z",
+    "reviewer": "author_01",
+    "snapshot_tag": "T1",
+    "source_grade": "B",
+    "source_id": "T1-IR-001",
+    "source_locator": "web_paragraph_0049",
+    "source_visual_review_claimed": false,
+    "status": "active",
+    "t1_change_signal_eligible": true,
+    "temporal_role": "current_t1_signal",
+    "title": "Opportunities for Artificial Intelligence in Operational Medicine: Lessons from the United States Military",
+    "topics": [
+      "创伤登记",
+      "数据规模",
+      "AI训练限制"
+    ],
+    "url_or_path": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12108871/",
+    "version": 1
+  },
+  "CE-T1-C4C1018771B30C5A": {
+    "candidate_evidence_id": "CE-T1-C4C1018771B30C5A",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "engineering_resource_conditions",
+      "trust_governance_constraints"
+    ],
+    "content_hash": "c4c1018771b30c5a09d7f04bc743a6f250cb1680f9344c79d1e7f662e50c26d0",
+    "evidence_id": "CE-T1-C4C1018771B30C5A",
+    "evidence_nature": "constraint",
+    "excerpt_original": "no well-developed capability nor broader ecosystem exists to operationally assess currently deployed, AI-enabled battlefield systems for vulnerabilities.",
+    "excerpt_zh": "目前不存在成熟的能力或更广泛的生态系统来对已部署的AI赋能战场系统进行漏洞作战评估。",
+    "extraction_run_id": "P11R-P12R-G1Q-T1-20260827T065600Z-v1",
+    "g1_author_decision": "accept",
+    "human_reviewed": true,
+    "human_source_visual_review_count": 0,
+    "lineage": "p12r_supplemental_real_api",
+    "normalized_claim": "当前缺乏对已部署AI战场系统进行作战漏洞评估的成熟能力和生态。",
+    "published_at": "2025-03-17",
+    "published_at_precision": "day",
+    "publisher": "DARPA",
+    "review_mode": "ai_preannotation_author_bulk_signoff_with_key_item_adjudication",
+    "reviewed_at": "2026-08-27T07:25:25Z",
+    "reviewer": "author_01",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DARPA-001",
+    "source_locator": "web_paragraph_0009",
+    "source_visual_review_claimed": false,
+    "status": "active",
+    "t1_change_signal_eligible": true,
+    "temporal_role": "current_t1_signal",
+    "title": "Sharpening AI warfighting advantage on the battlefield",
+    "topics": [
+      "AI安全",
+      "作战评估",
+      "能力缺口"
+    ],
+    "url_or_path": "https://www.darpa.mil/news/2025/saber-warfighter-ai",
+    "version": 1
+  },
+  "CE-T1-E2F907CF4DA00903": {
+    "candidate_evidence_id": "CE-T1-E2F907CF4DA00903",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "application_maturity"
+    ],
+    "content_hash": "e2f907cf4da00903ea2fb53165a170022dfb68ab079f933bc774e7796f73160e",
+    "evidence_id": "CE-T1-E2F907CF4DA00903",
+    "evidence_nature": "goal",
+    "excerpt_original": "The program will execute a series of high-fidelity operational AI security exercises for agile experimentation with continuous evaluations.",
+    "excerpt_zh": "该项目将执行一系列高保真度的作战AI安全演习，以进行持续评估的敏捷实验。",
+    "extraction_run_id": "P11R-P12R-G1Q-T1-20260827T065600Z-v1",
+    "g1_author_decision": "accept",
+    "human_reviewed": true,
+    "human_source_visual_review_count": 0,
+    "lineage": "p12r_supplemental_real_api",
+    "normalized_claim": "SABER计划将执行一系列高保真作战AI安全演习。",
+    "published_at": "2025-03-17",
+    "published_at_precision": "day",
+    "publisher": "DARPA",
+    "review_mode": "ai_preannotation_author_bulk_signoff_with_key_item_adjudication",
+    "reviewed_at": "2026-08-27T07:25:25Z",
+    "reviewer": "author_01",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DARPA-001",
+    "source_locator": "web_paragraph_0012",
+    "source_visual_review_claimed": false,
+    "status": "active",
+    "t1_change_signal_eligible": true,
+    "temporal_role": "current_t1_signal",
+    "title": "Sharpening AI warfighting advantage on the battlefield",
+    "topics": [
+      "AI安全演习",
+      "SABER计划"
+    ],
+    "url_or_path": "https://www.darpa.mil/news/2025/saber-warfighter-ai",
+    "version": 1
+  },
+  "CE-T1-FA2B6E620D8DDBD2": {
+    "candidate_evidence_id": "CE-T1-FA2B6E620D8DDBD2",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "application_maturity",
+      "integration_level"
+    ],
+    "content_hash": "fa2b6e620d8ddbd2a7950dbfbaf158c7e2828d60a9e45fa0faffb2542d5b9166",
+    "evidence_id": "CE-T1-FA2B6E620D8DDBD2",
+    "evidence_nature": "goal",
+    "excerpt_original": "SABER's goal is to build an exemplar AI red team capable of continuously integrating and employing emerging counter-AI techniques and tools to operationally assess AI-enabled battlefield systems.",
+    "excerpt_zh": "SABER的目标是建立一个示范性AI红队，能够持续整合和应用新兴的反AI技术与工具，对AI赋能战场系统进行作战评估。",
+    "extraction_run_id": "P11R-P12R-G1Q-T1-20260827T065600Z-v1",
+    "g1_author_decision": "accept",
+    "human_reviewed": true,
+    "human_source_visual_review_count": 0,
+    "lineage": "p12r_supplemental_real_api",
+    "normalized_claim": "SABER计划目标是建立示范性AI红队。",
+    "published_at": "2025-03-17",
+    "published_at_precision": "day",
+    "publisher": "DARPA",
+    "review_mode": "ai_preannotation_author_bulk_signoff_with_key_item_adjudication",
+    "reviewed_at": "2026-08-27T07:25:25Z",
+    "reviewer": "author_01",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DARPA-001",
+    "source_locator": "web_paragraph_0011",
+    "source_visual_review_claimed": false,
+    "status": "active",
+    "t1_change_signal_eligible": true,
+    "temporal_role": "current_t1_signal",
+    "title": "Sharpening AI warfighting advantage on the battlefield",
+    "topics": [
+      "AI红队",
+      "SABER计划",
+      "作战评估"
+    ],
+    "url_or_path": "https://www.darpa.mil/news/2025/saber-warfighter-ai",
+    "version": 1
+  },
+  "CE-T1-FE00C458FAADC5D8": {
+    "candidate_evidence_id": "CE-T1-FE00C458FAADC5D8",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "trust_governance_constraints"
+    ],
+    "content_hash": "fe00c458faadc5d8153655c36ec71644b2cc90335179732e5c3900c8fe42014c",
+    "evidence_id": "CE-T1-FE00C458FAADC5D8",
+    "evidence_nature": "constraint",
+    "excerpt_original": "Researchers have demonstrated that AI-enabled systems can be tricked or manipulated via different \"attacks.\" But even these demonstrations have mostly been done in lab conditions, where researchers have complete control over the data and access to the AI's inner workings.",
+    "excerpt_zh": "研究人员已经证明，人工智能系统可以通过不同的“攻击”被欺骗或操纵。但即使是这些演示也大多是在实验室条件下进行的，研究人员可以完全控制数据并访问人工智能的内部运作。",
+    "extraction_run_id": "P11R-P12R-G1Q-T1-20260827T065600Z-v1",
+    "g1_author_decision": "accept",
+    "human_reviewed": true,
+    "human_source_visual_review_count": 0,
+    "lineage": "p12r_supplemental_real_api",
+    "normalized_claim": "对AI系统的攻击演示大多在实验室条件下进行。",
+    "published_at": "2025-03-17",
+    "published_at_precision": "day",
+    "publisher": "DARPA",
+    "review_mode": "ai_preannotation_author_bulk_signoff_with_key_item_adjudication",
+    "reviewed_at": "2026-08-27T07:25:25Z",
+    "reviewer": "author_01",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DARPA-001",
+    "source_locator": "web_paragraph_0007",
+    "source_visual_review_claimed": false,
+    "status": "active",
+    "t1_change_signal_eligible": true,
+    "temporal_role": "current_t1_signal",
+    "title": "Sharpening AI warfighting advantage on the battlefield",
+    "topics": [
+      "AI安全",
+      "测试评估"
+    ],
+    "url_or_path": "https://www.darpa.mil/news/2025/saber-warfighter-ai",
+    "version": 1
+  }
+}
+定向修补要求：删除与字段文字不匹配的引用；将仅表达目标/事件/资源的证据改作限定或背景；保留必要的局部范围限定；每个evidence_field_changes的new_evidence_ids必须直接服务其after字段；不要新增无法由上述Evidence支持的主体、结果、数字或范围。

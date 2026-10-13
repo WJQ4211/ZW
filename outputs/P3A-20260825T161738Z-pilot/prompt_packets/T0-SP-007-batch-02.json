@@ -1,0 +1,33 @@
+{
+  "batch_id": "T0-SP-007-batch-02",
+  "source_id": "T0-SP-007",
+  "source_locators": [
+    "pdf_page_25",
+    "pdf_page_26",
+    "pdf_page_27",
+    "pdf_page_28",
+    "pdf_page_29",
+    "pdf_page_30",
+    "pdf_page_31",
+    "pdf_page_32",
+    "pdf_page_33",
+    "pdf_page_34",
+    "pdf_page_35",
+    "pdf_page_36",
+    "pdf_page_37",
+    "pdf_page_38",
+    "pdf_page_39",
+    "pdf_page_40",
+    "pdf_page_41",
+    "pdf_page_42",
+    "pdf_page_43",
+    "pdf_page_44",
+    "pdf_page_45",
+    "pdf_page_46",
+    "pdf_page_47"
+  ],
+  "prompt_path": "outputs/P3A-20260825T161738Z-pilot/prompt_packets/T0-SP-007-batch-02.txt",
+  "prompt_sha256": "63efd3e0b2856e2b3dad03c103669ad7cebd74290236efd798456ca5285ce446",
+  "template_sha256": "ad18f9491be481b05efb3d35a124dcce8695af97cf959dfeb71806a2f928ad35",
+  "transport": "codex_agent_file_bridge"
+}

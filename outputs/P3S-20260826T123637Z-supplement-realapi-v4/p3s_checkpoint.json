@@ -1,0 +1,195 @@
+{
+  "checkpoint_identity": {
+    "run_id": "P3S-20260826T123637Z-supplement-realapi-v4",
+    "source_text_sha256": {
+      "T0-SP-001": "d4bed3c4fbc38d68ec1f6d82d6366070d25359ab2337102c6c204a4c50cdffa2",
+      "T0-TD-001": "1894ac2e81a8325375c0dc78a236accdc14c423224cc8310a185de8f53f365fa",
+      "T0-TD-002": "919672a05758a2da7b4bd8a127048aab310c88028834256c5e6c844eefa3d681",
+      "T0-TD-003": "fc84e740084c06e35d8f5a95a50fcdb8ab2e46e49c4a590d24dcf92c246eba28",
+      "T0-TD-005": "5a59f334f0286fc44bc5797cd00351131bdd2786853bef2defb8351245b4ff72"
+    },
+    "extraction_prompt_template_sha256": "be4719059a430ff7b9fa5c35cea23caaaa85eff2c57e1fa41d7a0fb2537429f6",
+    "semantic_prompt_template_sha256": "12aef8edf3aa39773da09472497805877440c00b69bb8921c7f12ae7f5dbc430"
+  },
+  "prompt_sha256_by_batch": {
+    "T0-SP-001-extract-001": "6870f4b9e6d2834f9d76d96507bcb83c23487a840c4412e219b11cd30bb0acd7",
+    "T0-TD-001-extract-001": "d4b97024f60347e2bdb79992fb661941a5613c874c93d40ed39b300b706d7d82",
+    "T0-TD-002-extract-001": "46cd77bab04066b0293b5371496bcf2c114c8fbec1005be06c807a3aeff32bef",
+    "T0-TD-003-extract-001": "76fd8866f8e76c1825404c85b0234fba9306a855e683b017dea79c1149deb2f5",
+    "T0-TD-005-extract-001": "302dd7f62ea009e4838582eb15683d1898303a192b3063088872bc038223eee8"
+  },
+  "status": "completed",
+  "completed_batches": [
+    "T0-SP-001-extract-001",
+    "T0-SP-001-semantic-001",
+    "T0-TD-001-extract-001",
+    "T0-TD-001-semantic-001",
+    "T0-TD-002-extract-001",
+    "T0-TD-002-semantic-001",
+    "T0-TD-003-extract-001",
+    "T0-TD-003-semantic-001",
+    "T0-TD-005-extract-001",
+    "T0-TD-005-semantic-001"
+  ],
+  "completed_stages": [
+    "extraction",
+    "semantic_skipped_no_valid_candidates"
+  ],
+  "call_records": {
+    "T0-SP-001-extract-001": {
+      "transport": "openai_compatible_api",
+      "request_started_at_utc": "2026-08-26T12:36:40Z",
+      "endpoint": "https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1/chat/completions",
+      "requested_model_id": "deepseek-v4-flash-0731",
+      "provider_model_id": "deepseek-v4-flash-0731",
+      "request_parameters": {
+        "temperature": 0.0,
+        "enable_thinking": false,
+        "max_tokens": 6000
+      },
+      "attempts": 1,
+      "retry_count": 0,
+      "latency_ms": 8725,
+      "response_sha256": "419b304b02ce4dbb078d79fa84c5a4ac22328e90b5f9160f252268fa3aa6faa8",
+      "provider_token_usage": {
+        "prompt_tokens": 2061,
+        "completion_tokens": 984,
+        "total_tokens": 3045
+      },
+      "provider_metrics_status": "observed",
+      "provider_temperature": null,
+      "provider_cost": null,
+      "response_status_code": 200,
+      "reused_from_checkpoint": false,
+      "logical_call_executed": true,
+      "phase": "extraction",
+      "logical_batch_id": "T0-SP-001-extract-001",
+      "prompt_sha256": "6870f4b9e6d2834f9d76d96507bcb83c23487a840c4412e219b11cd30bb0acd7",
+      "response_content_sha256": "f7e16f28c031c478ece32ff4a3f80ce9fdaf63393522f26e82d9ce4b6482002f"
+    },
+    "T0-TD-001-extract-001": {
+      "transport": "openai_compatible_api",
+      "request_started_at_utc": "2026-08-26T12:36:49Z",
+      "endpoint": "https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1/chat/completions",
+      "requested_model_id": "deepseek-v4-flash-0731",
+      "provider_model_id": "deepseek-v4-flash-0731",
+      "request_parameters": {
+        "temperature": 0.0,
+        "enable_thinking": false,
+        "max_tokens": 6000
+      },
+      "attempts": 1,
+      "retry_count": 0,
+      "latency_ms": 40158,
+      "response_sha256": "89b0d151031d41f3d80df98af22d1f19daf4eb0c6c807112332286ce45a49516",
+      "provider_token_usage": {
+        "prompt_tokens": 1954,
+        "completion_tokens": 5500,
+        "total_tokens": 7454
+      },
+      "provider_metrics_status": "observed",
+      "provider_temperature": null,
+      "provider_cost": null,
+      "response_status_code": 200,
+      "reused_from_checkpoint": false,
+      "logical_call_executed": true,
+      "phase": "extraction",
+      "logical_batch_id": "T0-TD-001-extract-001",
+      "prompt_sha256": "d4b97024f60347e2bdb79992fb661941a5613c874c93d40ed39b300b706d7d82",
+      "response_content_sha256": "5f9d1e397b69de1588ba18f85ac6f4e2807f10f12e45307b068a874666f72c52"
+    },
+    "T0-TD-002-extract-001": {
+      "transport": "openai_compatible_api",
+      "request_started_at_utc": "2026-08-26T12:37:29Z",
+      "endpoint": "https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1/chat/completions",
+      "requested_model_id": "deepseek-v4-flash-0731",
+      "provider_model_id": "deepseek-v4-flash-0731",
+      "request_parameters": {
+        "temperature": 0.0,
+        "enable_thinking": false,
+        "max_tokens": 6000
+      },
+      "attempts": 1,
+      "retry_count": 0,
+      "latency_ms": 38294,
+      "response_sha256": "2b49bfaddf911321797b692eea14f5b2fd09fc38d32e1fb26f994e9a349a1391",
+      "provider_token_usage": {
+        "prompt_tokens": 1737,
+        "completion_tokens": 5264,
+        "total_tokens": 7001
+      },
+      "provider_metrics_status": "observed",
+      "provider_temperature": null,
+      "provider_cost": null,
+      "response_status_code": 200,
+      "reused_from_checkpoint": false,
+      "logical_call_executed": true,
+      "phase": "extraction",
+      "logical_batch_id": "T0-TD-002-extract-001",
+      "prompt_sha256": "46cd77bab04066b0293b5371496bcf2c114c8fbec1005be06c807a3aeff32bef",
+      "response_content_sha256": "0ba794b9a3f11faeed1f03d0a2de7e18f03800f3ba3399508b0af6345bb581b4"
+    },
+    "T0-TD-003-extract-001": {
+      "transport": "openai_compatible_api",
+      "request_started_at_utc": "2026-08-26T12:38:07Z",
+      "endpoint": "https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1/chat/completions",
+      "requested_model_id": "deepseek-v4-flash-0731",
+      "provider_model_id": "deepseek-v4-flash-0731",
+      "request_parameters": {
+        "temperature": 0.0,
+        "enable_thinking": false,
+        "max_tokens": 6000
+      },
+      "attempts": 1,
+      "retry_count": 0,
+      "latency_ms": 19022,
+      "response_sha256": "44373bb0912e537bc73d8f42f0f33fd0b27e919f4b5b40dd7b9cc93a3d4efaa7",
+      "provider_token_usage": {
+        "prompt_tokens": 2077,
+        "completion_tokens": 2457,
+        "total_tokens": 4534
+      },
+      "provider_metrics_status": "observed",
+      "provider_temperature": null,
+      "provider_cost": null,
+      "response_status_code": 200,
+      "reused_from_checkpoint": false,
+      "logical_call_executed": true,
+      "phase": "extraction",
+      "logical_batch_id": "T0-TD-003-extract-001",
+      "prompt_sha256": "76fd8866f8e76c1825404c85b0234fba9306a855e683b017dea79c1149deb2f5",
+      "response_content_sha256": "a907fc1b192b29072109cb384704ccb1376a2da607bbe844511892176aaf21db"
+    },
+    "T0-TD-005-extract-001": {
+      "transport": "openai_compatible_api",
+      "request_started_at_utc": "2026-08-26T12:38:26Z",
+      "endpoint": "https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1/chat/completions",
+      "requested_model_id": "deepseek-v4-flash-0731",
+      "provider_model_id": "deepseek-v4-flash-0731",
+      "request_parameters": {
+        "temperature": 0.0,
+        "enable_thinking": false,
+        "max_tokens": 6000
+      },
+      "attempts": 1,
+      "retry_count": 0,
+      "latency_ms": 19146,
+      "response_sha256": "bbf1e631ee813d2c8975bcdb0f99d01e974e15eead83dcec501c5d40e3693e38",
+      "provider_token_usage": {
+        "prompt_tokens": 1719,
+        "completion_tokens": 2552,
+        "total_tokens": 4271
+      },
+      "provider_metrics_status": "observed",
+      "provider_temperature": null,
+      "provider_cost": null,
+      "response_status_code": 200,
+      "reused_from_checkpoint": false,
+      "logical_call_executed": true,
+      "phase": "extraction",
+      "logical_batch_id": "T0-TD-005-extract-001",
+      "prompt_sha256": "302dd7f62ea009e4838582eb15683d1898303a192b3063088872bc038223eee8",
+      "response_content_sha256": "dcf799468146fac1ae3055e18e5193e2017c42c5b3e9e072b5cd15a1fbbc2bb7"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "status": "signed",
+  "snapshot_id": "SNAP-T1-US-MILITARY-AI-99A723BFBC6D273A",
+  "reviewer": "author_01",
+  "review_mode": "ai_pre_review_and_reassessment_plus_author_bulk_signoff_with_key_disagreement_adjudication",
+  "signed_at": "2026-08-27T11:23:49.209914+00:00",
+  "authorization_sha256": "0168641acc42d8df525b4e1e3082b460464425603520bc0ebc70c7c3f618859a",
+  "statement": "截至2026年6月30日，美国军用人工智能的发展呈现局部任务应用和组织化试验扩展、部门级体系整合意图增强并存的状态。现有公开证据尚不足以确认跨军种、跨任务的通用能力体系已经形成；资源、数据、作战化验证和可信治理条件仍造成能力发展与应用扩展不均衡。因此，T1并未推翻T0判断，而是形成了‘局部扩展信号增强、体系整合仍待实际复用验证、约束条件进一步显化’的条件化修订。"
+}

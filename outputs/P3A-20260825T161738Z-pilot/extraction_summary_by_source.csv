@@ -1,0 +1,3 @@
+source_id,raw_candidate_count,validated_candidate_count,rejected_candidate_count,source_locator_match_rate
+T0-SP-007,7,7,0,1.0
+T0-TD-008,4,4,0,1.0

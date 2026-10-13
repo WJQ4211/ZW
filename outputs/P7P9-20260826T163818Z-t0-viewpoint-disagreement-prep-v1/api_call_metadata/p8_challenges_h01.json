@@ -1,0 +1,31 @@
+{
+  "transport": "openai_compatible_api",
+  "request_started_at_utc": "2026-08-26T16:41:13Z",
+  "endpoint": "https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "requested_model_id": "deepseek-v4-flash-0731",
+  "provider_model_id": "deepseek-v4-flash-0731",
+  "request_parameters": {
+    "temperature": 0.0,
+    "enable_thinking": false,
+    "max_tokens": 16000
+  },
+  "attempts": 1,
+  "retry_count": 0,
+  "latency_ms": 12122,
+  "response_sha256": "fc19fcb82f0bb58f654de947e6efa768731fc2f970c19275f43bd973595808af",
+  "provider_token_usage": {
+    "prompt_tokens": 7343,
+    "completion_tokens": 797,
+    "total_tokens": 8140
+  },
+  "provider_metrics_status": "observed",
+  "provider_temperature": null,
+  "provider_cost": null,
+  "response_status_code": 200,
+  "batch_id": "p8_challenges_h01",
+  "call_id": "p8_challenges_h01",
+  "phase": "P8_CHALLENGE",
+  "source_id": "HYP-T0-01",
+  "prompt_sha256": "160905d843fd2ae2bd4b92a83457dddcff62d892d176a40dca75b8f025aed50d",
+  "is_repair": false
+}

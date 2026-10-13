@@ -1,0 +1,5 @@
+﻿category,candidate_count,full_text_count,source_ids,coverage_status
+independent_review_research,1,0,,not_covered
+program_budget_acquisition,3,3,T1-DAF-003;T1-DAF-004;T1-DARPA-002,covered
+strategy_policy_governance,2,2,T1-DAF-001;T1-DAF-002,covered
+test_deployment_organization,6,3,T1-DAF-006;T1-DAF-007;T1-DAF-008,covered

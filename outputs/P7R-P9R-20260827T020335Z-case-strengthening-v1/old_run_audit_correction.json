@@ -1,0 +1,8 @@
+{
+  "actual_admitted_viewpoints": 0,
+  "actual_dependency_edges": 0,
+  "manifest_declared_field_level_dependencies_complete": true,
+  "corrected_field_level_dependencies_complete": false,
+  "old_p9_g3_eligible": false,
+  "reason": "old P8 response citation-location gate suspended all 12 views; old P9 outputs used suspended views and were not eligible for formal G3"
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "source_id": "T0-TD-008",
+    "source_locator": "td008/article/paragraph-01",
+    "excerpt_original": "MANAMA, Bahrain - The International Maritime Security Construct (IMSC) completed a three-day maritime exercise in the Arabian Gulf, Jan. 9, integrating unmanned systems and artificial intelligence during a naval drill for the second time in six months.",
+    "excerpt_zh": "",
+    "normalized_claim": "The official report states that IMSC completed a three-day Arabian Gulf exercise integrating unmanned systems and artificial intelligence.",
+    "coding_dimensions": [
+      "application_maturity",
+      "integration_level"
+    ],
+    "evidence_nature": "test_result",
+    "topics": [
+      "exercise",
+      "unmanned_systems",
+      "artificial_intelligence"
+    ]
+  },
+  {
+    "source_id": "T0-TD-008",
+    "source_locator": "td008/article/paragraph-04",
+    "excerpt_original": "During the exercise, unmanned and artificial intelligence systems operated in conjunction with Delbert D. Black and CTF Sentinel’s command center ashore in Bahrain. The systems were able to help locate and identify objects in nearby waters and relay visual depictions to watchstanders.",
+    "excerpt_zh": "",
+    "normalized_claim": "The report states that the exercise involved a destroyer and unmanned surface vessels and records a stated aim of increasing maritime domain awareness.",
+    "coding_dimensions": [
+      "integration_level",
+      "organizational_system_fit"
+    ],
+    "evidence_nature": "test_result",
+    "topics": [
+      "maritime_domain_awareness",
+      "task_force"
+    ]
+  },
+  {
+    "source_id": "T0-TD-008",
+    "source_locator": "td008/article/paragraph-06--08",
+    "excerpt_original": "CTF Sentinel previously completed a similar exercise Aug. 23 when Royal Bahrain Naval Force ship RBNS Ahmed Al-Fateh (P20) and U.S. Coast Guard patrol boat USCGC Baranof (WPB 1318) participated with another Saildrone Explorer from U.S. 5th Fleet. IMSC was formed in July 2019 in response to increased threats to freedom of navigation for merchant mariners transiting international waters in the Middle East.",
+    "excerpt_zh": "",
+    "normalized_claim": "The report states that unmanned and artificial-intelligence systems operated with the destroyer and the ashore command center, and that the systems helped locate and identify nearby objects and relay visual depictions.",
+    "coding_dimensions": [
+      "integration_level",
+      "human_machine_authority",
+      "application_maturity"
+    ],
+    "evidence_nature": "test_result",
+    "topics": [
+      "system_integration",
+      "watchstanders"
+    ]
+  },
+  {
+    "source_id": "T0-TD-008",
+    "source_locator": "td008/article/paragraph-07",
+    "excerpt_original": "The late-summer event was the first time IMSC planners specifically designed a Sentinel Shield exercise to integrate unmanned systems.",
+    "excerpt_zh": "",
+    "normalized_claim": "The report identifies the late-summer event as the first Sentinel Shield exercise specifically designed by IMSC planners to integrate unmanned systems.",
+    "coding_dimensions": [
+      "organizational_system_fit",
+      "integration_level"
+    ],
+    "evidence_nature": "test_result",
+    "topics": [
+      "organizational_design",
+      "exercise_integration"
+    ]
+  }
+]

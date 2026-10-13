@@ -1,0 +1,11 @@
+{
+  "approved": true,
+  "artifact_hash": "dbc62bcbca2e42e918816ff91d31d739d69b90d1fa04ff7666ad32a5bed37a00",
+  "artifact_path": "fixtures/hypotheses_t0.json",
+  "case_id": "synthetic_military_ai",
+  "created_at": "2026-08-25T07:24:03.081858+00:00",
+  "gate": "G2",
+  "notes": "Synthetic fixture: two same-dimension, distinguishable and testable hypotheses frozen.",
+  "reviewer": "synthetic-g2-reviewer",
+  "run_id": "phase-a-demo-20260825T072402Z-70e52b"
+}

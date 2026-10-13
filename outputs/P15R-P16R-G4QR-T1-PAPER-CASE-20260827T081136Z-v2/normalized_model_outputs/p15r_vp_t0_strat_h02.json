@@ -1,0 +1,146 @@
+{
+  "affected_fields": [
+    "judgment",
+    "boundary_conditions[0]"
+  ],
+  "boundary_conditions": [
+    "本判断适用于截至2026年6月30日的项目执行与治理层面，仅评估现有证据所能支持的程度。T1证据（美国空军部战略文件与人才计划）属于目标设定与制度规划，不评估其长期影响，也不排除这些目标已产生部分影响但未被现有证据捕捉的可能性。本判断不涉及对战略规划文件本身质量的评价。"
+  ],
+  "confidence": "medium",
+  "counter_evidence": [
+    {
+      "evidence_id": "EV-T0-27370C837C885AEE",
+      "importance": "medium",
+      "relation": "limit",
+      "target_field": "boundary_conditions[0]",
+      "version": 1
+    },
+    {
+      "evidence_id": "EV-T0-5EA556C2C939C121",
+      "importance": "medium",
+      "relation": "limit",
+      "target_field": "boundary_conditions[0]",
+      "version": 1
+    }
+  ],
+  "evidence_field_changes": [
+    {
+      "after": "T1证据显示，截至2026年6月30日，美国空军部发布的数据与AI战略及AI人才计划仍处于目标设定与制度规划层面，其内容覆盖多个任务领域并涉及数据架构、人才招聘与职业发展等治理安排，但未提供这些战略目标已转化为跨军种统一平台、统一模型或统一工程流程部署的证据。因此，从STRAT视角看，任务分布牵引的分散发展模式仍是当前可观察的主要形态，部门级整合意图已通过正式文件明确表达，但其对具体项目方向的实质性影响缺乏可验证证据。",
+      "before": "T1证据进一步显示具体任务试验、竞赛和局部使用仍是可观察的能力形成形态；这些信号支持任务分布牵引，但不能外推为全军规模化部署。",
+      "change_reason": "T1证据补充了美国空军部战略文件与人才计划，这些证据属于目标设定与制度规划层面，进一步支持了任务分布牵引的判断，同时明确了部门级整合意图已通过正式文件表达，但未提供其转化为实际部署的证据。",
+      "new_evidence_ids": [
+        "CE-T1-02DFF1DCD73E8F93",
+        "CE-T1-050BC7E34C88F297",
+        "CE-T1-2995ED3DEF557C50",
+        "CE-T1-B5C396D3278023D1",
+        "CE-T1-CEACB21D2A3F685C",
+        "CE-T1-A66D49255D61B484"
+      ],
+      "target_field": "judgment"
+    },
+    {
+      "after": "本判断适用于截至2026年6月30日的项目执行与治理层面，仅评估现有证据所能支持的程度。T1证据（美国空军部战略文件与人才计划）属于目标设定与制度规划，不评估其长期影响，也不排除这些目标已产生部分影响但未被现有证据捕捉的可能性。本判断不涉及对战略规划文件本身质量的评价。",
+      "before": "该判断适用于2022-2024年间的项目执行层面，仅评估现有证据所能支持的程度，不评估战略规划文件的长期影响，也不排除SP-008目标已产生部分影响但未被现有证据捕捉的可能性。",
+      "change_reason": "T1证据将时间边界从2022-2024年扩展至截至2026年6月30日，并明确了T1证据属于目标设定与制度规划层面，不评估其长期影响。",
+      "new_evidence_ids": [
+        "CE-T1-02DFF1DCD73E8F93",
+        "CE-T1-050BC7E34C88F297",
+        "CE-T1-2995ED3DEF557C50",
+        "CE-T1-B5C396D3278023D1",
+        "CE-T1-CEACB21D2A3F685C",
+        "CE-T1-A66D49255D61B484"
+      ],
+      "target_field": "boundary_conditions[0]"
+    }
+  ],
+  "falsifiers": [
+    "若在2026年7月1日以后出现跨军种复用的统一平台、统一模型或统一工程流程的部署证据，则本观点不成立。",
+    "若出现SP-008或T1战略文件整合目标已对具体项目方向产生可验证影响的成果记录，则本观点不成立。",
+    "若出现美国空军部战略文件中的制度安排（如双轨职业模型、去中心化数据架构）已实际运行并改变项目资源配置的证据，则本观点需重新评估。"
+  ],
+  "information_gaps": [
+    "缺乏各项目在2023-2026年间向统一平台迁移或复用的具体案例数据。",
+    "缺乏SP-008及T1战略文件整合目标对具体项目方向产生影响的评估报告或成果记录。",
+    "缺乏跨军种治理机制（如联合AI中心、统一采购流程）实际运行情况的证据。"
+  ],
+  "judgment": "T1证据显示，截至2026年6月30日，美国空军部发布的数据与AI战略及AI人才计划仍处于目标设定与制度规划层面，其内容覆盖多个任务领域并涉及数据架构、人才招聘与职业发展等治理安排，但未提供这些战略目标已转化为跨军种统一平台、统一模型或统一工程流程部署的证据。因此，从STRAT视角看，任务分布牵引的分散发展模式仍是当前可观察的主要形态，部门级整合意图已通过正式文件明确表达，但其对具体项目方向的实质性影响缺乏可验证证据。",
+  "key_assumptions": [
+    "各项目（RACER、REMA、AIDP、IMSC）的独立进展反映了任务驱动的分散发展模式。",
+    "T1证据中美国空军部发布的战略文件和人才计划属于目标设定与制度规划层面，其内容不能直接等同于已实现的部署或工程复用。",
+    "截至2026年6月30日，未观察到跨军种统一平台、统一模型或统一工程流程的部署证据，但此未观察不等于不存在。"
+  ],
+  "mechanism_claims": [
+    "基于T1证据（CE-T1-02DFF1DCD73E8F93、CE-T1-050BC7E34C88F297、CE-T1-2995ED3DEF557C50、CE-T1-B5C396D3278023D1、CE-T1-CEACB21D2A3F685C、CE-T1-A66D49255D61B484）推断：美国空军部通过发布战略文件和人才计划，在治理层面表达了将数据和AI制度化为核心任务组成部分的意图，并规划了去中心化数据架构、跨任务领域优先事项及AI人才双轨职业模型等制度安排。但这些文件的性质是目标设定，未提供这些制度安排已对具体项目方向产生实质性改变的证据，因此该机制判断属于推断而非已观察事实。"
+  ],
+  "supporting_evidence": [
+    {
+      "evidence_id": "EV-T0-3FA6806CF267B04B",
+      "importance": "high",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "EV-T0-9C79EF2837BC80A2",
+      "importance": "high",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "EV-T0-A8459E6E8776A15D",
+      "importance": "high",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-02DFF1DCD73E8F93",
+      "importance": "medium",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-050BC7E34C88F297",
+      "importance": "medium",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-2995ED3DEF557C50",
+      "importance": "medium",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-B5C396D3278023D1",
+      "importance": "medium",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-CEACB21D2A3F685C",
+      "importance": "medium",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-A66D49255D61B484",
+      "importance": "medium",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    }
+  ],
+  "uncertainties": [
+    "美国空军部战略文件与人才计划在2026年6月30日之后的执行情况未知。",
+    "SP-008及T1战略文件中集中平台、优先采用联合解决方案等目标是否已对具体项目方向产生部分影响，缺乏直接证据。",
+    "T1证据仅覆盖美国空军部，其他军种及DARPA的治理整合情况未在本次T1证据中体现。"
+  ],
+  "update_rationale": "T1证据补充了美国空军部战略文件与人才计划，这些证据属于目标设定与制度规划层面，进一步支持了任务分布牵引的判断，同时明确了部门级整合意图已通过正式文件表达，但未提供其转化为实际部署的证据。因此，判断维持条件化立场，时间边界扩展至2026年6月30日，并保留对SP-008及T1战略目标可能产生部分影响的边界条件。"
+}

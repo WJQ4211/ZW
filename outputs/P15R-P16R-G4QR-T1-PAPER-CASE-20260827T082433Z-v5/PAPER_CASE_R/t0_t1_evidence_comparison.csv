@@ -1,0 +1,3 @@
+﻿set,logical_evidence,physical_evidence_rows,snapshot_items,grade_A,grade_B,grade_D,nature_counts
+T0,85,86,85,56,29,0,"{""resource_input"": 10, ""goal"": 37, ""governance_event"": 6, ""evaluation"": 3, ""deployment_event"": 4, ""constraint"": 12, ""test_event"": 9, ""test_result"": 4}"
+T1_increment,40,40,125,38,2,0,"{""constraint"": 4, ""goal"": 11, ""test_result"": 6, ""resource_input"": 2, ""test_event"": 10, ""evaluation"": 1, ""governance_event"": 5, ""deployment_event"": 1}"

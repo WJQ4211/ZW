@@ -1,0 +1,121 @@
+仅对下面生成器A的输出做格式或Evidence ID修复。不得改变任何假设的实质、支持/反驳证据含义、范围、条件或维度；不得新增实质判断。只返回符合原要求的JSON数组，不要Markdown围栏。原始输出：
+[
+  {
+    "candidate_id": "GEN-A-H01",
+    "generator_id": "A",
+    "hypothesis_statement": "在2022-2024年间，美国军用人工智能的发展轨迹是从分散的、以项目为中心的AI能力采用，转向由中央机构（CDAO）主导的、强调持续实验和体系整合的演进路径，其标志是战略治理、资源投入和试验活动均围绕“整合”而非“孤立部署”展开。",
+    "scope": "2022-01-01至2024-12-31，美国国防部整体AI发展路径，涵盖战略、项目、试验和部署事件。",
+    "supporting_evidence_ids": [
+      "EV-T0-5FA6E8C23AC72A82",
+      "EV-T0-0A73030BBF2649F9",
+      "EV-T0-27EE6FA7DA2FADC0",
+      "EV-T0-27370C837C885AEE",
+      "EV-T0-F8E3070F89D94D25"
+    ],
+    "counter_evidence_ids": [
+      "EV-T0-51D65DEC82584BCD",
+      "EV-T0-A515E3B9391C51B4"
+    ],
+    "key_assumptions": [
+      "CDAO作为中央协调机构，其战略和政策制定能力在2022-2024年间得到有效执行。",
+      "国防部各组成部门愿意遵循中央协调，并优先采用联合或部门赞助的解决方案。",
+      "持续实验和整合演习是衡量体系化发展的主要指标。"
+    ],
+    "falsification_conditions": [
+      "如果2022-2024年间，国防部AI项目仍以各军种或部门独立开发为主，且没有出现明显的中央协调或整合事件，则该假设不成立。",
+      "如果CDAO未能发布或实施任何新的战略或政策，或其协调作用被削弱，则该假设不成立。",
+      "如果试验活动（如RACER、ACE）没有向体系整合方向推进，而是停留在孤立的技术演示，则该假设不成立。"
+    ],
+    "unresolved_questions": [
+      "CDAO在2022-2024年间实际发布的战略和政策文件的具体内容及执行力度如何？",
+      "各军种在多大程度上遵循了CDAO的协调，是否存在明显的抵制或偏离？",
+      "持续实验和整合演习是否真正影响了后续的投资决策和采办流程？"
+    ],
+    "covered_dimensions": [
+      "strategic_governance",
+      "organizational_system_fit",
+      "testing_deployment_application"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "candidate_id": "GEN-A-H02",
+    "generator_id": "A",
+    "hypothesis_statement": "在2022-2024年间，美国军用人工智能的发展轨迹表现为从实验室和模拟环境中的技术验证，加速向真实世界、作战相关场景的部署和试验转移，其主导路径是通过一系列高可见度的项目（如ACE、RACER、AIDP）在特定领域实现能力突破，但整体体系化集成仍受限于数据、算力和组织协调等资源条件。",
+    "scope": "2022-01-01至2024-12-31，聚焦于技术成熟度、试验活动和部署事件，以及资源约束。",
+    "supporting_evidence_ids": [
+      "EV-T0-DB4536B8270ECF58",
+      "EV-T0-30E9B209F0439B21",
+      "EV-T0-A8459E6E8776A15D",
+      "EV-T0-B3AD2B72573BBD49",
+      "EV-T0-DDA30BF3C0C38B0C"
+    ],
+    "counter_evidence_ids": [
+      "EV-T0-850EF492D703EA37",
+      "EV-T0-AD4CCAC18E1BB26C",
+      "EV-T0-62B1ECDA7DF87F1A"
+    ],
+    "key_assumptions": [
+      "ACE、RACER、AIDP等项目的试验和部署事件代表了美国军用AI发展的主要方向。",
+      "从模拟到现实的转移是衡量技术成熟度的关键指标。",
+      "资源条件（如数据质量、算力限制）是制约体系化发展的主要瓶颈。"
+    ],
+    "falsification_conditions": [
+      "如果2022-2024年间，AI项目主要停留在实验室或模拟阶段，没有出现向真实场景部署的显著案例，则该假设不成立。",
+      "如果资源条件（如数据、算力）没有成为项目推进的主要障碍，或者这些障碍被轻易克服，则该假设不成立。",
+      "如果试验活动没有展示出从模拟到现实的进步，而是反复在模拟环境中循环，则该假设不成立。"
+    ],
+    "unresolved_questions": [
+      "ACE和RACER等项目的试验结果在多大程度上被转化为实际的作战能力或采办决策？",
+      "AIDP的快速部署是否具有普遍性，还是仅适用于特定领域（如情报）？",
+      "资源条件（如数据质量、算力）在多大程度上限制了AI能力的规模化部署？"
+    ],
+    "covered_dimensions": [
+      "technical_engineering_maturity",
+      "testing_deployment_application",
+      "resource_conditions"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "candidate_id": "GEN-A-H03",
+    "generator_id": "A",
+    "hypothesis_statement": "在2022-2024年间，美国军用人工智能的发展轨迹呈现出一种“双轨并行”的演进状态：一方面，通过DARPA等机构的前沿项目（如ACE、RACER、ITM）在特定作战领域追求技术突破和自主性提升；另一方面，通过CDAO和JAIC等机构推动基础设施（如JCF、Tradewind）和治理框架（如RAI）的建设，以支撑更广泛的体系化应用，但两条轨道之间的整合尚不充分。",
+    "scope": "2022-01-01至2024-12-31，涵盖前沿技术项目与基础设施/治理建设两条路径。",
+    "supporting_evidence_ids": [
+      "EV-T0-1FAE455817C90E73",
+      "EV-T0-3FA6806CF267B04B",
+      "EV-T0-7E37FBD511FC654E",
+      "EV-T0-357C993D92C95187",
+      "EV-T0-903F4A6639DA3CEC"
+    ],
+    "counter_evidence_ids": [
+      "EV-T0-451C2F294AC898A8",
+      "EV-T0-5EA556C2C939C121"
+    ],
+    "key_assumptions": [
+      "DARPA项目（如ACE、RACER、ITM）和CDAO/JAIC的基础设施建设（如JCF、Tradewind）是两条相对独立的路径。",
+      "前沿技术项目的成果需要通过基础设施和治理框架才能实现体系化应用。",
+      "两条轨道之间的整合程度可以通过项目成果向基础设施的转移或采纳来衡量。"
+    ],
+    "falsification_conditions": [
+      "如果DARPA项目成果直接且迅速地转化为体系化应用，而没有依赖CDAO/JAIC的基础设施，则该假设不成立。",
+      "如果CDAO/JAIC的基础设施建设直接推动了前沿技术项目的进展，表明两条轨道高度整合，则该假设不成立。",
+      "如果不存在明显的“双轨”结构，即所有项目都在同一框架下推进，则该假设不成立。"
+    ],
+    "unresolved_questions": [
+      "DARPA项目（如RACER）的成果在多大程度上被转移到了军种或CDAO的体系中？",
+      "JCF和Tradewind等基础设施在多大程度上被DARPA项目或军种项目所使用？",
+      "RAI治理框架是否对前沿技术项目的设计和试验产生了实质性影响？"
+    ],
+    "covered_dimensions": [
+      "technical_engineering_maturity",
+      "trust_organization_system_integration",
+      "resource_conditions"
+    ],
+    "confidence": "low"
+  }
+]
+
+合法Evidence ID集合：["EV-T0-00FCD33BA877C8BA", "EV-T0-0405886E04C205A6", "EV-T0-04572D780936A8D6", "EV-T0-06EEB768196F287C", "EV-T0-09638BC4F3ECF82B", "EV-T0-0A73030BBF2649F9", "EV-T0-1C27CBB8A5A70420", "EV-T0-1D827623351A7C55", "EV-T0-1FAE455817C90E73", "EV-T0-26BA1F3EF919886B", "EV-T0-26CBA9EE14D71B2D", "EV-T0-27370C837C885AEE", "EV-T0-27EE6FA7DA2FADC0", "EV-T0-28FDEEB8519282B2", "EV-T0-2CF449726C937256", "EV-T0-2D9AD11D628EFF58", "EV-T0-2E42D28FCCBD88DD", "EV-T0-2EEA5ADBB7CFF58C", "EV-T0-30E9B209F0439B21", "EV-T0-34D72CBB40FC6006", "EV-T0-357C993D92C95187", "EV-T0-38BEC464961BAEA8", "EV-T0-3D9421B5DCC381FC", "EV-T0-3FA6806CF267B04B", "EV-T0-41C1E1300EA0D2D7", "EV-T0-4240F0405A11E43F", "EV-T0-425BAC0BC94181E0", "EV-T0-436559CE67256788", "EV-T0-451C2F294AC898A8", "EV-T0-48237E0AC6B28A09", "EV-T0-4AC04F3FF13BAF68", "EV-T0-51D65DEC82584BCD", "EV-T0-542BC468B66F4EB7", "EV-T0-54AE74809071D83B", "EV-T0-582B12D4B09F11B1", "EV-T0-5EA556C2C939C121", "EV-T0-5FA6E8C23AC72A82", "EV-T0-62B1ECDA7DF87F1A", "EV-T0-63E815AC3300FE8A", "EV-T0-6EAB90CE05FF523F", "EV-T0-6FE734DE05953A3C", "EV-T0-772E45D0B54BCC9C", "EV-T0-79B653E22A3D4EF4", "EV-T0-7B65174669ACA9CE", "EV-T0-7E37FBD511FC654E", "EV-T0-7E3F813822CB52F8", "EV-T0-7FD6156DA8592DF7", "EV-T0-8414D2FA3AA1A98D", "EV-T0-850EF492D703EA37", "EV-T0-8BF4D983A68CB422", "EV-T0-8E35B508DF5C2E65", "EV-T0-903F4A6639DA3CEC", "EV-T0-906DA9F52C0F15FA", "EV-T0-9263A423CF1D437F", "EV-T0-9C79EF2837BC80A2", "EV-T0-A42AF7A5AE2B6DAD", "EV-T0-A515E3B9391C51B4", "EV-T0-A72CF94353B280D6", "EV-T0-A8459E6E8776A15D", "EV-T0-AD4CCAC18E1BB26C", "EV-T0-B1673A0975D16CA9", "EV-T0-B33EF9F7AA480E81", "EV-T0-B3AD2B72573BBD49", "EV-T0-B5B8C14BA4B90451", "EV-T0-BD7126374D17DC2A", "EV-T0-C13F259540C77BFA", "EV-T0-C557AE16E4403328", "EV-T0-C86CE008843D093B", "EV-T0-CA999183D4D473C4", "EV-T0-CB164026EB3FFB62", "EV-T0-D047B38066F7D303", "EV-T0-D8B6CB4040AF1B5B", "EV-T0-DB4536B8270ECF58", "EV-T0-DBEF932E1A5AD575", "EV-T0-DD07FB77153E22F0", "EV-T0-DDA30BF3C0C38B0C", "EV-T0-E4EADC8D35D78E4A", "EV-T0-E6EFA5142E5BA321", "EV-T0-E7853897E7615DB9", "EV-T0-F0773C8E2ECB5C8D", "EV-T0-F67161443E222AE4", "EV-T0-F8E3070F89D94D25", "EV-T0-F92FA97C8B8A2E87", "EV-T0-FB39056D1BA1F579", "EV-T0-FDBC359DA612C0B4"]
+严格字段要求：每条恰好11个字段 candidate_id、generator_id、hypothesis_statement、scope、supporting_evidence_ids、counter_evidence_ids、key_assumptions、falsification_conditions、unresolved_questions、covered_dimensions、confidence；每份2至4条；所有数组字段为字符串数组。

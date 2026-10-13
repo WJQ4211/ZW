@@ -1,0 +1,15 @@
+﻿metric,value,interpretation
+t0_snapshot_items,85,T0冻结逻辑Evidence
+t1_snapshot_items_cumulative,125,T1累积快照项
+t1_new_formal_evidence,40,正式T1 Evidence
+t1_change_signals,38,变化信号
+p14_impact_edges,46,影响边
+latest_viewpoints,15,最新观点
+updated_viewpoints,6,局部更新
+unchanged_viewpoints,9,保持观点
+local_update_rate,40%,结构指标，不是准确率
+unchanged_rate,60%,结构指标，不是准确率
+formal_g3_t1_disagreements,3,正式G3-T1分歧
+formal_g3_t1_needs,3,正式判别性需求
+formal_g3_t1_indicators,4,正式监测指标
+formal_g3_t1_triggers,8,正式触发规则

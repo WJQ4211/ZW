@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-c4c8fa19-cf8a-4d77-9bd6-eda9a1c2251d",
+  "object": "chat.completion",
+  "created": 1787736301,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "[]"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 548,
+    "total_tokens": 549,
+    "completion_tokens": 1,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

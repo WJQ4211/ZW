@@ -1,0 +1,25 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "```json\n[\n  {\n    \"source_id\": \"T1-DAF-002\",\n    \"source_locator\": \"web_paragraph_0004\",\n    \"excerpt_original\": \"The Department of the Air Force approved a comprehensive strategy this month to aggressively recruit, train and retain top-tier artificial intelligence professionals, aiming to operationalize AI and maintain a decisive competitive advantage in an era of rapid technological change.\",\n    \"excerpt_zh\": \"美国空军部本月批准了一项全面战略，旨在积极招募、培训和保留顶尖人工智能专业人员，以实现AI的作战化运用，并在快速技术变革时代保持决定性竞争优势。\",\n    \"normalized_claim\": \"美国空军部于2026年4月批准了一项全面战略，以招募、培训和保留顶尖人工智能专业人员。\",\n    \"evidence_nature\": \"governance_event\",\n    \"coding_dimensions\": [\"engineering_resource_conditions\", \"organizational_system_fit\"],\n    \"topics\": [\"AI人才战略\", \"组织治理\"]\n  },\n  {\n    \"source_id\": \"T1-DAF-002\",\n    \"source_locator\": \"web_paragraph_0004\",\n    \"excerpt_original\": \"This Total Force plan was developed in accordance with the Department of War’s AI Strategy directive and aligns with the department’s goal to enhance America’s AI dominance.\",\n    \"excerpt_zh\": \"这项全员计划是根据战争部AI战略指令制定的，并与该部门增强美国AI主导地位的目标保持一致。\",\n    \"normalized_claim\": \"该全员计划依据战争部AI战略指令制定，并与增强美国AI主导地位的目标一致。\",\n    \"evidence_nature\": \"governance_event\",\n    \"coding_dimensions\": [\"organizational_system_fit\", \"trust_governance_constraints\"],\n    \"topics\": [\"AI战略协调\", \"组织治理\"]\n  },\n  {\n    \"source_id\": \"T1-DAF-002\",\n    \"source_locator\": \"web_paragraph_0004\",\n    \"excerpt_original\": \"To attract new talent, the plan directs the Department of the Air Force to streamline its hiring and accessions processes, remove bottlenecks and expedite hiring for essential AI positions.\",\n    \"excerpt_zh\": \"为吸引新人才，该计划指示美国空军部简化招聘和入伍流程，消除瓶颈，并加快关键AI职位的招聘。\",\n    \"normalized_claim\": \"该计划指示美国空军部简化招聘流程并加快关键AI职位的招聘。\",\n    \"evidence_nature\": \"goal\",\n    \"coding_dimensions\": [\"engineering_resource_conditions\", \"organizational_system_fit\"],\n    \"topics\": [\"AI人才招聘\", \"流程优化\"]\n  },\n  {\n    \"source_id\": \"T1-DAF-002\",\n    \"source_locator\": \"web_paragraph_0004\",\n    \"excerpt_original\": \"A key proposal is the creation of a Department of the Air Force Dual-Track Career Model which will pave the way for AI professionals, including those in the Guard and Reserve with specialized civilian experience, to advance as technical experts without being forced into traditional management roles.\",\n    \"excerpt_zh\": \"一项关键提议是创建美国空军部双轨职业模型，为AI专业人员（包括具有专业文职经验的国民警卫队和预备役人员）开辟技术专家晋升路径，而不必被迫进入传统管理岗位。\",\n    \"normalized_claim\": \"该计划提议创建美国空军部双轨职业模型，以支持AI专业人员的技术专家晋升路径。\",\n    \"evidence_nature\": \"goal\",\n    \"coding_dimensions\": [\"engineering_resource_conditions\", \"organizational_system_fit\"],\n    \"topics\": [\"AI人才保留\", \"职业发展模型\"]\n  },\n  {\n    \"source_id\": \"T1-DAF-002\",\n    \"source_locator\": \"web_paragraph_0004\",\n    \"excerpt_original\": \"The training component of the strategy seeks to establish a baseline of AI literacy for all personnel, creating a \\\"universally informed and responsibly engaged workforce prepared for an AI-integrated future.\\\"\",\n    \"excerpt_zh\": \"该战略的培训部分旨在为所有人员建立AI素养基线，打造“普遍知情、负责任参与、为AI融合未来做好准备的工作人员队伍”。\",\n    \"normalized_claim\": \"该战略的培训部分旨在为所有人员建立AI素养基线。\",\n    \"evidence_nature\": \"goal\",\n    \"coding_dimensions\": [\"engineering_resource_conditions\", \"organizational_system_fit\"],\n    \"topics\": [\"AI培训\", \"人才素养\"]\n  },\n  {\n    \"source_id\": \"T1-DAF-002\",\n    \"source_locator\": \"web_paragraph_0004\",\n    \"excerpt_original\": \"The approval of the plan follows closely with the release of the newly signed DAF Data and AI Strategies which prioritize warfighter readiness and training for operational success.\",\n    \"excerpt_zh\": \"该计划的批准紧随新签署的DAF数据和AI战略发布之后，这些战略优先考虑作战人员的战备状态和作战成功的训练。\",\n    \"normalized_claim\": \"该计划的批准紧随新签署的DAF数据和AI战略发布之后。\",\n    \"evidence_nature\": \"governance_event\",\n    \"coding_dimensions\": [\"organizational_system_fit\", \"trust_governance_constraints\"],\n    \"topics\": [\"AI战略发布\", \"组织治理\"]\n  }\n]\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1787812090,
+  "id": "chatcmpl-f221f1a7-4a30-42a5-a155-299b0314c80a",
+  "model": "deepseek-v4-flash-0731",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 1153,
+    "prompt_tokens": 1198,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2351
+  }
+}

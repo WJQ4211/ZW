@@ -1,0 +1,12 @@
+{
+  "authorization_text": "作者已审阅P3S-v5-R的G1补充审核建议，同意19项直接接受、6项按建议修订后接受、2项排除；授权以“AI预标注＋作者批量签核、重点项逐条裁决”的方式执行正式G1-T0补充审核。\n\n直接接受：06EEB768、1FAE4558、38BEC464、425BAC0B、436559CE、451C2F29、48237E0A、542BC468、54AE7480、6EAB90CE、7E3F8138、906DA9F5、B3AD2B72、D047B380、DDA30BF3、E6EFA514、E7853897、FB39056D、FDBC359D。\n\n修订：28FDEEB8、2CF44972、3FA6806C、4240F040、8414D2FA、8BF4D983。\n\n排除：AD3ED980、F29EEF2C。",
+  "authorization_sha256": "b9d958364fda6e0b9044cabd1b60849e2dffb2e959913bcf3d9e17918cb13ed7",
+  "reviewer_id": "author_01",
+  "review_mode": "ai_preannotation_author_batch_signoff_with_focus_adjudication",
+  "author_signoff_count": 27,
+  "direct_accept_count": 19,
+  "revised_accept_count": 6,
+  "exclusion_count": 2,
+  "signed_at_utc": "2026-08-26T14:07:43Z",
+  "human_reviewed_semantics": "作者确认AI预标注和最终决定；不表示逐条阅读全部原始材料。"
+}

@@ -1,0 +1,25 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "```json\n[\n  {\n    \"source_id\": \"T1-DAF-004\",\n    \"source_locator\": \"web_paragraph_0005\",\n    \"excerpt_original\": \"To secure mission dominance in a future, contested environment, the Joint Force must make decisions faster than any adversary. This imperative was the driving force behind the Multi-Decision Advantage Sprint for Human-Machine Teaming, or MASH, a complex, two-week experiment recently hosted in Las Vegas.\",\n    \"excerpt_zh\": \"为了在未来的对抗环境中确保任务优势，联合部队必须比任何对手更快地做出决策。这一要求是最近在拉斯维加斯举办的为期两周的复杂实验——人机编队多决策优势冲刺（MASH）背后的驱动力。\",\n    \"normalized_claim\": \"美国空军在拉斯维加斯举办了一次为期两周的名为MASH的人机编队多决策优势冲刺实验。\",\n    \"evidence_nature\": \"test_event\",\n    \"coding_dimensions\": [\"application_maturity\", \"organizational_system_fit\"],\n    \"topics\": [\"MASH实验\", \"人机编队\", \"实验活动\"]\n  },\n  {\n    \"source_id\": \"T1-DAF-004\",\n    \"source_locator\": \"web_paragraph_0006\",\n    \"excerpt_original\": \"For the first time, U.S. Space Force Guardians joined Airmen to work side-by-side with software developers, evaluating how these disparate tools can effectively integrate to solve complex problems across the air, space, cyber, maritime and ground domains.\",\n    \"excerpt_zh\": \"美国太空军卫士首次与空军士兵并肩工作，与软件开发者一起评估这些不同工具如何有效集成，以解决跨空中、太空、网络、海上和地面领域的复杂问题。\",\n    \"normalized_claim\": \"美国太空军人员首次参加MASH实验，与空军人员及软件开发者共同评估工具集成。\",\n    \"evidence_nature\": \"test_event\",\n    \"coding_dimensions\": [\"integration_level\", \"organizational_system_fit\"],\n    \"topics\": [\"太空军参与\", \"跨域集成\", \"MASH实验\"]\n  },\n  {\n    \"source_id\": \"T1-DAF-004\",\n    \"source_locator\": \"web_paragraph_0008\",\n    \"excerpt_original\": \"Conducted within a dedicated Shadow Operations Center-Nellis facility in Las Vegas, the MASH experiment set the stage for this strategic collaboration, led by the Department of the Air Force’s Advanced Battle Management System Cross-Functional Team. The experiment was executed in partnership with the Air Force Research Lab , U.S. Space Force, and the 805th Combat Training Squadron , also known as the ShOC-N\",\n    \"excerpt_zh\": \"MASH实验在拉斯维加斯一个专门的影子作战中心-内利斯设施内进行，由空军部先进战斗管理系统跨职能团队领导，并与空军研究实验室、美国太空军以及第805战斗训练中队（又称ShOC-N）合作执行。\",\n    \"normalized_claim\": \"MASH实验由空军部ABMS跨职能团队领导，与空军研究实验室、太空军和第805战斗训练中队合作执行。\",\n    \"evidence_nature\": \"test_event\",\n    \"coding_dimensions\": [\"organizational_system_fit\", \"integration_level\"],\n    \"topics\": [\"MASH实验\", \"组织合作\", \"ABMS\"]\n  },\n  {\n    \"source_id\": \"T1-DAF-004\",\n    \"source_locator\": \"web_paragraph_0010\",\n    \"excerpt_original\": \"A defining feature of the multi-decision sprint was the active participation of Space Force Guardians. Moving beyond observational roles, Guardians were \\\"in the seat,\\\" directly influencing the development of battle management tools that encompass the space domain.\",\n    \"excerpt_zh\": \"多决策冲刺的一个显著特征是太空军卫士的积极参与。卫士们超越了观察角色，直接参与并影响了涵盖太空领域的战斗管理工具的开发。\",\n    \"normalized_claim\": \"在MASH实验中，太空军卫士直接参与并影响了涵盖太空领域的战斗管理工具开发。\",\n    \"evidence_nature\": \"test_event\",\n    \"coding_dimensions\": [\"human_machine_authority\", \"organizational_system_fit\"],\n    \"topics\": [\"太空军参与\", \"战斗管理工具\", \"人机协作\"]\n  },\n  {\n    \"source_id\": \"T1-DAF-004\",\n    \"source_locator\": \"web_paragraph_0027\",\n    \"excerpt_original\": \"A major breakthrough of the event was the successful integration of these disparate vendor tools.\",\n    \"excerpt_zh\": \"该活动的一个重大突破是成功集成了这些不同的供应商工具。\",\n    \"normalized_claim\": \"MASH实验的一个重大突破是成功集成了不同的供应商工具。\",\n    \"evidence_nature\": \"test_result\",\n    \"coding_dimensions\": [\"integration_level\", \"application_maturity\"],\n    \"topics\": [\"工具集成\", \"MASH实验\", \"技术突破\"]\n  },\n  {\n    \"source_id\": \"T1-DAF-004\",\n    \"source_locator\": \"web_paragraph_0033\",\n    \"excerpt_original\": \"“A week ago, it took my team and me 50 minutes to an hour to get one tasking done. With the help of the tool, we were able to get five or six taskings done,” said U.S. Air Force Capt. Adam Sochia, 552nd Operations Support Squadron ABM.\",\n    \"excerpt_zh\": \"“一周前，我和我的团队完成一项任务需要50分钟到一个小时。在工具的帮助下，我们能够完成五六项任务，”美国空军第552作战支援中队ABM上尉亚当·索奇亚说。\",\n    \"normalized_claim\": \"在MASH实验中，一名空军上尉报告称，使用工具后，完成的任务数量从一项增加到五六项。\",\n    \"evidence_nature\": \"test_result\",\n    \"coding_dimensions\": [\"application_maturity\", \"human_machine_authority\"],\n    \"topics\": [\"任务效率\", \"工具效果\", \"MASH实验\"]\n  }\n]\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1787812136,
+  "id": "chatcmpl-72f57d81-779c-4917-bd61-a3220ba82680",
+  "model": "deepseek-v4-flash-0731",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 1315,
+    "prompt_tokens": 2995,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 4310
+  }
+}

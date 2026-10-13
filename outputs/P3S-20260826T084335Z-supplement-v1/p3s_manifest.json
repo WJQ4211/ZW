@@ -1,0 +1,58 @@
+{
+  "run_id": "P3S-20260826T084335Z-supplement-v1",
+  "case_id": "us_military_ai_deployment",
+  "stage": "P3S",
+  "executed_at_utc": "2026-08-26T08:43:56Z",
+  "p2s_run_id": "P4Q-P2S-20260826T082341Z-v1",
+  "source_ids": [
+    "T0-SP-001",
+    "T0-TD-001",
+    "T0-TD-002",
+    "T0-TD-003",
+    "T0-TD-005"
+  ],
+  "source_count": 5,
+  "source_text_sha256": {
+    "T0-SP-001": "d4bed3c4fbc38d68ec1f6d82d6366070d25359ab2337102c6c204a4c50cdffa2",
+    "T0-TD-001": "1894ac2e81a8325375c0dc78a236accdc14c423224cc8310a185de8f53f365fa",
+    "T0-TD-002": "919672a05758a2da7b4bd8a127048aab310c88028834256c5e6c844eefa3d681",
+    "T0-TD-003": "fc84e740084c06e35d8f5a95a50fcdb8ab2e46e49c4a590d24dcf92c246eba28",
+    "T0-TD-005": "5a59f334f0286fc44bc5797cd00351131bdd2786853bef2defb8351245b4ff72"
+  },
+  "canonical_path": "outputs/G1-T0-C1-31F142A5227EA580-correction-v1/g1_t0_c1_latest_evidence_canonical.jsonl",
+  "canonical_sha256": "ac307f553614bd4b6114ecb117d7e2516b91a5e28ae2884c44a14043b4a0900c",
+  "expected_canonical_sha256": "ac307f553614bd4b6114ecb117d7e2516b91a5e28ae2884c44a14043b4a0900c",
+  "extraction_prompt_template_sha256": "846184665918a7ac5126f3ede7c125733aacae4764435aa4522b140f41484388",
+  "semantic_prompt_template_sha256": "12aef8edf3aa39773da09472497805877440c00b69bb8921c7f12ae7f5dbc430",
+  "prompt_packet_count": 5,
+  "logical_extraction_batch_count": 5,
+  "logical_semantic_screen_batch_count": 5,
+  "missing_model_environment_variables": [
+    "MODEL_API_BASE_URL",
+    "MODEL_API_KEY",
+    "MODEL_ID"
+  ],
+  "prepare_completed": true,
+  "p3s_executed": false,
+  "formal_g1_supplement_executed": false,
+  "evidence_inserted": 0,
+  "hypothesis_inserted": 0,
+  "p4_executed": false,
+  "snapshot_frozen": false,
+  "p5_executed": false,
+  "t1_read": false,
+  "author_actual_review_count": 0,
+  "model_api_calls": 0,
+  "provider_call_count": 0,
+  "physical_retry_count": 0,
+  "api_key_written": false,
+  "git_head": "unavailable_not_a_git_repository",
+  "python_version": "3.12.13",
+  "protected_prior_outputs_unchanged": true,
+  "stop_reason": "model_api_unavailable_at_prepare_stage",
+  "api_unavailable_missing_names_only": [
+    "MODEL_API_BASE_URL",
+    "MODEL_API_KEY",
+    "MODEL_ID"
+  ]
+}

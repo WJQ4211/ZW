@@ -1,0 +1,21 @@
+{
+  "artifacts": {
+    "hypotheses": "outputs\\phase-a-demo-20260825T040155Z-9fd1db\\hypotheses_frozen.json"
+  },
+  "case_id": "synthetic_military_ai",
+  "gate": "G2",
+  "hypothesis_count": 2,
+  "manifest_version": "phase-a.1",
+  "mode": "synthetic_manual_json",
+  "model_client": null,
+  "reproducibility": {
+    "input_hash": "83591c9a04ea89e7d42b2a1efe080cd0bd152b97ce2b5914e3213894fda37604",
+    "llm_called": false,
+    "python": "3.11.7"
+  },
+  "run_id": "phase-a-demo-20260825T040155Z-9fd1db",
+  "snapshots": [
+    "SNAP-synthetic_military_ai-T0-3db2ee3ae0bf"
+  ],
+  "stage": "A"
+}

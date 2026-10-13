@@ -1,0 +1,5 @@
+﻿claim_id,claim_type,claim,evidence_ids,hypothesis_ids,verification_status
+G4-C01,fact,T0证据覆盖若干特定任务的试验验证和有限部署,"[""EV-T0-DB4536B8270ECF58"",""EV-T0-30E9B209F0439B21"",""EV-T0-06EEB768196F287C""]",,frozen_evidence
+G4-C02,model_inference,当前状态的主要解释是任务需求牵引的分散试验、演示和局部部署,[],"[""HYP-T0-02""]",conditional_synthesis
+G4-C03,model_inference,资源与治理约束解释能力形成缓慢和应用不均衡,[],"[""HYP-T0-03""]",conditional_synthesis
+G4-C04,monitor_condition,跨军种共用平台、统一标准和跨任务复用将触发当前判断重评,[],"[""HYP-T0-01"",""HYP-T0-02""]",unverified_t1_condition

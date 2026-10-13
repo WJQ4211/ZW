@@ -1,0 +1,9 @@
+{
+  "original_field": "historical_artifacts_modified",
+  "original_value": true,
+  "original_expression": "protected_before == protected_after",
+  "correct_interpretation": "historical_artifacts_unchanged=true",
+  "corrected_historical_artifacts_modified": false,
+  "database_history_unchanged_excluding_new": true,
+  "historical_files_modified_count": 0
+}

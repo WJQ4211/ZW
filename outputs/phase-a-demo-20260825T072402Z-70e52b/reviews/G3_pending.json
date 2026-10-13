@@ -1,0 +1,11 @@
+{
+  "approved": true,
+  "artifact_hash": "ae2f3fbcb65ee5ea8c7515fd8b50b40dcb22e93cd23bf93c9309356b8d80f3d6",
+  "artifact_path": "fixtures/analysis_t0",
+  "case_id": "synthetic_military_ai",
+  "created_at": "2026-08-25T07:24:03.408502+00:00",
+  "gate": "G3",
+  "notes": "Synthetic fixture: high-impact disagreements, discriminative needs and trigger directions reviewed.",
+  "reviewer": "synthetic-g3-reviewer",
+  "run_id": "phase-a-demo-20260825T072402Z-70e52b"
+}

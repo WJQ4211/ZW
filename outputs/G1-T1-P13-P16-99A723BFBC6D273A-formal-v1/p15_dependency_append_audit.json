@@ -1,0 +1,11 @@
+{
+  "dependency_rows_added": 46,
+  "evidence_rows_changed": 0,
+  "formal_g3_t1_executed": false,
+  "formal_g4_t1_signed": false,
+  "model_api_calls": 0,
+  "repair_type": "append_p15_t1_evidence_dependencies",
+  "run_id": "G1-T1-P13-P16-99A723BFBC6D273A-formal-v1",
+  "t1_read": true,
+  "viewpoint_rows_changed": 0
+}

@@ -1,0 +1,1527 @@
+{
+  "author_authorization_sha256": "b4c5dab485bb5e2f41da49f42500cdd3bc492039152ed0aef30f8e6e76e98d29",
+  "author_decision_fields_empty": true,
+  "author_signoff_count": 1,
+  "case_id": "us_military_ai_deployment",
+  "conditional_main_judgment": "截至2024年底，美国军用人工智能能力形成仍主要表现为由具体任务需求牵引的分散试验、技术演示和局部部署；统一治理方向已明确但实际复用证据不足。",
+  "database_writes": 0,
+  "dependency_count": 94,
+  "disagreements": [
+    {
+      "author_authorization_sha256": "f30219fa0bfd415c811cb3c557c4fe5219d12611363299077c1ccab534ad31d5",
+      "branch_a": {
+        "claim": "CDAO、JCF和统一治理文件的形成可视为体系整合的领先信号，虽然工程与运行效果尚未完全显现，但可能表明演进方向正在改变。",
+        "created_at": "2026-08-27T03:47:33.811031+00:00",
+        "evidence": [
+          {
+            "created_at": "2026-08-27T03:47:33.810027+00:00",
+            "evidence_id": "EV-T0-0A73030BBF2649F9",
+            "note": "",
+            "relation": "support",
+            "run_id": "RUN-ec8324d31158",
+            "schema_version": "phase-a.1",
+            "version": 1
+          },
+          {
+            "created_at": "2026-08-27T03:47:33.810027+00:00",
+            "evidence_id": "EV-T0-27EE6FA7DA2FADC0",
+            "note": "",
+            "relation": "support",
+            "run_id": "RUN-5d43dc315753",
+            "schema_version": "phase-a.1",
+            "version": 1
+          },
+          {
+            "created_at": "2026-08-27T03:47:33.810027+00:00",
+            "evidence_id": "EV-T0-7E37FBD511FC654E",
+            "note": "",
+            "relation": "support",
+            "run_id": "RUN-bbd4f63edc48",
+            "schema_version": "phase-a.1",
+            "version": 1
+          },
+          {
+            "created_at": "2026-08-27T03:47:33.811031+00:00",
+            "evidence_id": "EV-T0-51D65DEC82584BCD",
+            "note": "",
+            "relation": "support",
+            "run_id": "RUN-677f1baf823d",
+            "schema_version": "phase-a.1",
+            "version": 1
+          },
+          {
+            "created_at": "2026-08-27T03:47:33.811031+00:00",
+            "evidence_id": "EV-T0-A515E3B9391C51B4",
+            "note": "",
+            "relation": "support",
+            "run_id": "RUN-2a5e7da2b40b",
+            "schema_version": "phase-a.1",
+            "version": 1
+          }
+        ],
+        "expected_observables": [],
+        "run_id": "RUN-d4d44ab7dbf5",
+        "schema_version": "phase-a.1"
+      },
+      "branch_b": {
+        "claim": "只有形成跨军种共用平台、统一工程流程或跨任务实际复用，才能认为体系整合已成为主导路径；当前任务驱动的分散试验和局部部署仍是可观察的主要形态。",
+        "created_at": "2026-08-27T03:47:33.812028+00:00",
+        "evidence": [
+          {
+            "created_at": "2026-08-27T03:47:33.811031+00:00",
+            "evidence_id": "EV-T0-3FA6806CF267B04B",
+            "note": "",
+            "relation": "support",
+            "run_id": "RUN-3096b6cfe7c1",
+            "schema_version": "phase-a.1",
+            "version": 1
+          },
+          {
+            "created_at": "2026-08-27T03:47:33.811031+00:00",
+            "evidence_id": "EV-T0-9C79EF2837BC80A2",
+            "note": "",
+            "relation": "support",
+            "run_id": "RUN-4880b1defa34",
+            "schema_version": "phase-a.1",
+            "version": 1
+          },
+          {
+            "created_at": "2026-08-27T03:47:33.811031+00:00",
+            "evidence_id": "EV-T0-A8459E6E8776A15D",
+            "note": "",
+            "relation": "support",
+            "run_id": "RUN-b6fe45872029",
+            "schema_version": "phase-a.1",
+            "version": 1
+          },
+          {
+            "created_at": "2026-08-27T03:47:33.812028+00:00",
+            "evidence_id": "EV-T0-F0773C8E2ECB5C8D",
+            "note": "",
+            "relation": "support",
+            "run_id": "RUN-949ec194e947",
+            "schema_version": "phase-a.1",
+            "version": 1
+          }
+        ],
+        "expected_observables": [],
+        "run_id": "RUN-a30e8707e635",
+        "schema_version": "phase-a.1"
+      },
+      "contested_node": "判断体系整合是否已经成为主导演进方向时，应以组织、制度和共用平台建设作为领先指标，还是必须以跨军种、跨任务的实际复用作成立判据。",
+      "created_at": "2026-08-27T03:47:33.812028+00:00",
+      "decision_impact": "high",
+      "disagreement_id": "DISAG-T0-01",
+      "formal_resolution_reason": "两条机制解释均有合法观点和证据引用，但当前公开T0材料不足以直接核查治理领先信号是否已转化为实际复用。",
+      "human_verified": true,
+      "resolution_action": "monitor",
+      "resolvable_now": false,
+      "review_mode": "ai_preannotation_plus_author_batch_signoff",
+      "reviewed_at": "2026-08-27T03:47:33+00:00",
+      "reviewed_by": "author_01",
+      "run_id": "RUN-0ba79104e021",
+      "schema_version": "phase-a.1",
+      "snapshot_id": "SNAP-T0-US-MILITARY-AI-C6C812108AF95309",
+      "source_candidate_disagreement": {
+        "branch_a": {
+          "claim": "统一治理架构（CDAO/JCF/SP-008）已发布并设立，但仅处于规划与建设阶段，其实际牵引效果缺乏成果记录，治理目标的设定与治理结果的实现之间存在明确落差，不能将前者视为后者的证据。",
+          "evidence_ids": [
+            "EV-T0-0A73030BBF2649F9",
+            "EV-T0-27EE6FA7DA2FADC0",
+            "EV-T0-7E37FBD511FC654E",
+            "EV-T0-51D65DEC82584BCD",
+            "EV-T0-A515E3B9391C51B4"
+          ],
+          "viewpoint_refs": [
+            {
+              "field": "judgment",
+              "version": 1,
+              "viewpoint_id": "VP-T0-STRAT-H01"
+            },
+            {
+              "field": "mechanism_claims[0]",
+              "version": 1,
+              "viewpoint_id": "VP-T0-STRAT-H01"
+            }
+          ]
+        },
+        "branch_b": {
+          "claim": "各军种和DARPA根据各自任务需求独立推进AI项目（RACER、REMA、AIDP、IMSC），通过试验和局部部署逐步扩展能力，部门级治理和共用平台的整合意图已通过SP-008等文件明确表达，但现有证据不足以证明这些整合意图已对项目方向产生实质性改变。",
+          "evidence_ids": [
+            "EV-T0-3FA6806CF267B04B",
+            "EV-T0-9C79EF2837BC80A2",
+            "EV-T0-A8459E6E8776A15D",
+            "EV-T0-F0773C8E2ECB5C8D"
+          ],
+          "viewpoint_refs": [
+            {
+              "field": "judgment",
+              "version": 2,
+              "viewpoint_id": "VP-T0-TECH-H02"
+            },
+            {
+              "field": "judgment",
+              "version": 2,
+              "viewpoint_id": "VP-T0-OPS-H02"
+            },
+            {
+              "field": "mechanism_claims[3]",
+              "version": 2,
+              "viewpoint_id": "VP-T0-TECH-H02"
+            }
+          ]
+        },
+        "contested_node": "系统整合牵引与战略方向：统一治理架构（CDAO/JCF/SP-008）是否已对项目层面产生实质性牵引，还是仅停留在规划目标层面",
+        "decision_impact": "high",
+        "diagnosis_reason": "实质冲突：STRAT-H01强调治理架构的规划性质与目标-结果落差，而TECH-H02和OPS-H02强调任务驱动的分散发展模式，两者对'统一治理是否已产生实质性牵引'这一核心机制存在相反判断。该冲突直接影响总体研判（体系整合是主导方向还是分散发展是主导模式），但当前缺乏CDAO治理对具体任务项目产生可验证影响的成果记录，无法立即核查。",
+        "disagreement_id": "DISAG-T0-01",
+        "resolution_action": "evidence_check",
+        "resolvable_now": false,
+        "snapshot_id": "SNAP-T0-US-MILITARY-AI-C6C812108AF95309",
+        "status": "candidate",
+        "type": "mechanism",
+        "viewpoint_refs": [
+          {
+            "field": "judgment",
+            "version": 1,
+            "viewpoint_id": "VP-T0-STRAT-H01"
+          },
+          {
+            "field": "mechanism_claims[0]",
+            "version": 1,
+            "viewpoint_id": "VP-T0-STRAT-H01"
+          },
+          {
+            "field": "judgment",
+            "version": 2,
+            "viewpoint_id": "VP-T0-TECH-H02"
+          },
+          {
+            "field": "mechanism_claims[3]",
+            "version": 2,
+            "viewpoint_id": "VP-T0-TECH-H02"
+          },
+          {
+            "field": "judgment",
+            "version": 2,
+            "viewpoint_id": "VP-T0-OPS-H02"
+          }
+        ]
+      },
+      "status": "conditionally_retained",
+      "type": "mechanism",
+      "viewpoint_field_refs": [
+        {
+          "field": "judgment",
+          "version": 1,
+          "viewpoint_id": "VP-T0-STRAT-H01"
+        },
+        {
+          "field": "mechanism_claims[0]",
+          "version": 1,
+          "viewpoint_id": "VP-T0-STRAT-H01"
+        },
+        {
+          "field": "judgment",
+          "version": 2,
+          "viewpoint_id": "VP-T0-TECH-H02"
+        },
+        {
+          "field": "mechanism_claims[3]",
+          "version": 2,
+          "viewpoint_id": "VP-T0-TECH-H02"
+        },
+        {
+          "field": "judgment",
+          "version": 2,
+          "viewpoint_id": "VP-T0-OPS-H02"
+        },
+        {
+          "field": "judgment",
+          "version": 2,
+          "viewpoint_id": "VP-T0-TECH-H01"
+        },
+        {
+          "field": "judgment",
+          "version": 2,
+          "viewpoint_id": "VP-T0-ENG-H01"
+        },
+        {
+          "field": "judgment",
+          "version": 2,
+          "viewpoint_id": "VP-T0-OPS-H01"
+        },
+        {
+          "field": "judgment",
+          "version": 2,
+          "viewpoint_id": "VP-T0-TRUST-H01"
+        },
+        {
+          "field": "judgment",
+          "version": 1,
+          "viewpoint_id": "VP-T0-STRAT-H02"
+        },
+        {
+          "field": "judgment",
+          "version": 2,
+          "viewpoint_id": "VP-T0-ENG-H02"
+        },
+        {
+          "field": "judgment",
+          "version": 2,
+          "viewpoint_id": "VP-T0-TRUST-H02"
+        }
+      ],
+      "viewpoint_refs": [
+        "VP-T0-STRAT-H01:1",
+        "VP-T0-TECH-H02:2",
+        "VP-T0-OPS-H02:2",
+        "VP-T0-TECH-H01:2",
+        "VP-T0-ENG-H01:2",
+        "VP-T0-OPS-H01:2",
+        "VP-T0-TRUST-H01:2",
+        "VP-T0-STRAT-H02:1",
+        "VP-T0-ENG-H02:2",
+        "VP-T0-TRUST-H02:2"
+      ]
+    },
+    {
+      "author_authorization_sha256": "f30219fa0bfd415c811cb3c557c4fe5219d12611363299077c1ccab534ad31d5",
+      "branch_a": {
+        "claim": "资源和治理瓶颈是造成能力形成缓慢与应用不均衡的主要机制；瓶颈缓解应带来更广泛的部署和复用。",
+        "created_at": "2026-08-27T03:47:33.814031+00:00",
+        "evidence": [
+          {
+            "created_at": "2026-08-27T03:47:33.813031+00:00",
+            "evidence_id": "EV-T0-AD4CCAC18E1BB26C",
+            "note": "",
+            "relation": "support",
+            "run_id": "RUN-8757e2184363",
+            "schema_version": "phase-a.1",
+            "version": 1
+          },
+          {
+            "created_at": "2026-08-27T03:47:33.813031+00:00",
+            "evidence_id": "EV-T0-62B1ECDA7DF87F1A",
+            "note": "",
+            "relation": "support",
+            "run_id": "RUN-0764ff9a88a0",
+            "schema_version": "phase-a.1",
+            "version": 1
+          },
+          {
+            "created_at": "2026-08-27T03:47:33.813031+00:00",
+            "evidence_id": "EV-T0-8E35B508DF5C2E65",
+            "note": "",
+            "relation": "support",
+            "run_id": "RUN-714e1b8e7922",
+            "schema_version": "phase-a.1",
+            "version": 1
+          },
+          {
+            "created_at": "2026-08-27T03:47:33.813031+00:00",
+            "evidence_id": "EV-T0-51D65DEC82584BCD",
+            "note": "",
+            "relation": "support",
+            "run_id": "RUN-a3c0cb65c1c8",
+            "schema_version": "phase-a.1",
+            "version": 1
+          }
+        ],
+        "expected_observables": [],
+        "run_id": "RUN-1fc62373ae8d",
+        "schema_version": "phase-a.1"
+      },
+      "branch_b": {
+        "claim": "任务差异本身足以使项目保持分布式发展；即使资源条件改善，也不必然形成统一平台或跨任务复用。",
+        "created_at": "2026-08-27T03:47:33.814031+00:00",
+        "evidence": [
+          {
+            "created_at": "2026-08-27T03:47:33.814031+00:00",
+            "evidence_id": "EV-T0-0405886E04C205A6",
+            "note": "",
+            "relation": "support",
+            "run_id": "RUN-320105ed45c5",
+            "schema_version": "phase-a.1",
+            "version": 1
+          },
+          {
+            "created_at": "2026-08-27T03:47:33.814031+00:00",
+            "evidence_id": "EV-T0-FB39056D1BA1F579",
+            "note": "",
+            "relation": "support",
+            "run_id": "RUN-215fcdc6724a",
+            "schema_version": "phase-a.1",
+            "version": 1
+          },
+          {
+            "created_at": "2026-08-27T03:47:33.814031+00:00",
+            "evidence_id": "EV-T0-425BAC0BC94181E0",
+            "note": "",
+            "relation": "support",
+            "run_id": "RUN-a67da00baf08",
+            "schema_version": "phase-a.1",
+            "version": 1
+          }
+        ],
+        "expected_observables": [],
+        "run_id": "RUN-5c46364facb2",
+        "schema_version": "phase-a.1"
+      },
+      "contested_node": "任务分散和应用不均衡主要是数据、算力、基础设施、采办及测试治理瓶颈造成的过渡状态，还是适应任务差异的常态化发展形态。",
+      "created_at": "2026-08-27T03:47:33.815029+00:00",
+      "decision_impact": "medium",
+      "disagreement_id": "DISAG-T0-02",
+      "formal_resolution_reason": "资源与治理瓶颈解释和任务差异解释均有合法引用，当前材料不足以直接判定资源改善是否改变分布式模式。",
+      "human_verified": true,
+      "resolution_action": "monitor",
+      "resolvable_now": false,
+      "review_mode": "ai_preannotation_plus_author_batch_signoff",
+      "reviewed_at": "2026-08-27T03:47:33+00:00",
+      "reviewed_by": "author_01",
+      "run_id": "RUN-251005505a52",
+      "schema_version": "phase-a.1",
+      "snapshot_id": "SNAP-T0-US-MILITARY-AI-C6C812108AF95309",
+      "source_candidate_disagreement": {
+        "branch_a": {
+          "claim": "资源约束（机载处理速度、数据质量、基础设施延迟）和治理缺口（缺乏统一采办指导、缺乏基于经测试标准的组织化方法）共同导致能力形成缓慢且应用扩展不均衡，战略目标与实施能力之间存在显著落差。",
+          "evidence_ids": [
+            "EV-T0-AD4CCAC18E1BB26C",
+            "EV-T0-62B1ECDA7DF87F1A",
+            "EV-T0-8E35B508DF5C2E65",
+            "EV-T0-51D65DEC82584BCD"
+          ],
+          "viewpoint_refs": [
+            {
+              "field": "judgment",
+              "version": 1,
+              "viewpoint_id": "VP-T0-STRAT-H03"
+            },
+            {
+              "field": "judgment",
+              "version": 2,
+              "viewpoint_id": "VP-T0-TECH-H03"
+            },
+            {
+              "field": "judgment",
+              "version": 2,
+              "viewpoint_id": "VP-T0-ENG-H03"
+            }
+          ]
+        },
+        "branch_b": {
+          "claim": "2023财年11亿美元预算和DARPA的100TB传感器数据收集表明资源投入正在增加，但这些投入是否已有效缓解数据质量和机载处理瓶颈，缺乏直接证据，可能正在产生缓解效应。",
+          "evidence_ids": [
+            "EV-T0-0405886E04C205A6",
+            "EV-T0-FB39056D1BA1F579",
+            "EV-T0-425BAC0BC94181E0"
+          ],
+          "viewpoint_refs": [
+            {
+              "field": "mechanism_claims[4]",
+              "version": 2,
+              "viewpoint_id": "VP-T0-OPS-H03"
+            },
+            {
+              "field": "boundary_conditions[0]",
+              "version": 2,
+              "viewpoint_id": "VP-T0-OPS-H03"
+            },
+            {
+              "field": "uncertainties[3]",
+              "version": 2,
+              "viewpoint_id": "VP-T0-OPS-H03"
+            }
+          ]
+        },
+        "contested_node": "资源技术约束与采办标准组织治理：资源约束（处理速度、数据质量、基础设施延迟）与治理缺口（采办指导缺失、测试标准不统一）是能力形成的主要瓶颈，但资源投入（11亿美元预算、100TB数据）是否已产生缓解效应",
+        "decision_impact": "medium",
+        "diagnosis_reason": "实质冲突：branch_a断言资源约束和治理缺口是主要瓶颈且未解决，branch_b指出资源投入可能正在产生缓解效应但缺乏直接证据。两者对'资源投入是否已缓解瓶颈'存在相反判断。该冲突影响对瓶颈持续性的评估，但当前缺乏预算投入实际使用效果和瓶颈缓解效果的具体评估报告，无法立即核查。",
+        "disagreement_id": "DISAG-T0-02",
+        "resolution_action": "evidence_check",
+        "resolvable_now": false,
+        "snapshot_id": "SNAP-T0-US-MILITARY-AI-C6C812108AF95309",
+        "status": "candidate",
+        "type": "mechanism",
+        "viewpoint_refs": [
+          {
+            "field": "judgment",
+            "version": 1,
+            "viewpoint_id": "VP-T0-STRAT-H03"
+          },
+          {
+            "field": "judgment",
+            "version": 2,
+            "viewpoint_id": "VP-T0-TECH-H03"
+          },
+          {
+            "field": "judgment",
+            "version": 2,
+            "viewpoint_id": "VP-T0-ENG-H03"
+          },
+          {
+            "field": "mechanism_claims[4]",
+            "version": 2,
+            "viewpoint_id": "VP-T0-OPS-H03"
+          },
+          {
+            "field": "boundary_conditions[0]",
+            "version": 2,
+            "viewpoint_id": "VP-T0-OPS-H03"
+          },
+          {
+            "field": "uncertainties[3]",
+            "version": 2,
+            "viewpoint_id": "VP-T0-OPS-H03"
+          }
+        ]
+      },
+      "status": "conditionally_retained",
+      "type": "risk_weight",
+      "viewpoint_field_refs": [
+        {
+          "field": "judgment",
+          "version": 1,
+          "viewpoint_id": "VP-T0-STRAT-H03"
+        },
+        {
+          "field": "judgment",
+          "version": 2,
+          "viewpoint_id": "VP-T0-TECH-H03"
+        },
+        {
+          "field": "judgment",
+          "version": 2,
+          "viewpoint_id": "VP-T0-ENG-H03"
+        },
+        {
+          "field": "mechanism_claims[4]",
+          "version": 2,
+          "viewpoint_id": "VP-T0-OPS-H03"
+        },
+        {
+          "field": "boundary_conditions[0]",
+          "version": 2,
+          "viewpoint_id": "VP-T0-OPS-H03"
+        },
+        {
+          "field": "uncertainties[3]",
+          "version": 2,
+          "viewpoint_id": "VP-T0-OPS-H03"
+        }
+      ],
+      "viewpoint_refs": [
+        "VP-T0-STRAT-H03:1",
+        "VP-T0-TECH-H03:2",
+        "VP-T0-ENG-H03:2",
+        "VP-T0-OPS-H03:2"
+      ]
+    },
+    {
+      "author_authorization_sha256": "f30219fa0bfd415c811cb3c557c4fe5219d12611363299077c1ccab534ad31d5",
+      "branch_a": {
+        "claim": "治理架构建立反映组织、制度和治理目标已经形成，但不等同于运行整合已经实现。",
+        "created_at": "2026-08-27T03:47:33.817027+00:00",
+        "evidence": [
+          {
+            "created_at": "2026-08-27T03:47:33.816034+00:00",
+            "evidence_id": "EV-T0-0A73030BBF2649F9",
+            "note": "",
+            "relation": "support",
+            "run_id": "RUN-0856c4b16caa",
+            "schema_version": "phase-a.1",
+            "version": 1
+          },
+          {
+            "created_at": "2026-08-27T03:47:33.816034+00:00",
+            "evidence_id": "EV-T0-27EE6FA7DA2FADC0",
+            "note": "",
+            "relation": "support",
+            "run_id": "RUN-c210383258b6",
+            "schema_version": "phase-a.1",
+            "version": 1
+          },
+          {
+            "created_at": "2026-08-27T03:47:33.816034+00:00",
+            "evidence_id": "EV-T0-51D65DEC82584BCD",
+            "note": "",
+            "relation": "support",
+            "run_id": "RUN-a8cdf44933ca",
+            "schema_version": "phase-a.1",
+            "version": 1
+          },
+          {
+            "created_at": "2026-08-27T03:47:33.817027+00:00",
+            "evidence_id": "EV-T0-A515E3B9391C51B4",
+            "note": "",
+            "relation": "support",
+            "run_id": "RUN-73185c1bb398",
+            "schema_version": "phase-a.1",
+            "version": 1
+          }
+        ],
+        "expected_observables": [],
+        "run_id": "RUN-532ff55b9ff2",
+        "schema_version": "phase-a.1"
+      },
+      "branch_b": {
+        "claim": "运行整合应以跨军种共用平台、统一标准和跨任务实际复用为判据，不能由治理机制的存在直接替代。",
+        "created_at": "2026-08-27T03:47:33.817027+00:00",
+        "evidence": [
+          {
+            "created_at": "2026-08-27T03:47:33.817027+00:00",
+            "evidence_id": "EV-T0-51D65DEC82584BCD",
+            "note": "",
+            "relation": "support",
+            "run_id": "RUN-796549b3e650",
+            "schema_version": "phase-a.1",
+            "version": 1
+          },
+          {
+            "created_at": "2026-08-27T03:47:33.817027+00:00",
+            "evidence_id": "EV-T0-8E35B508DF5C2E65",
+            "note": "",
+            "relation": "support",
+            "run_id": "RUN-ef17739a8d56",
+            "schema_version": "phase-a.1",
+            "version": 1
+          },
+          {
+            "created_at": "2026-08-27T03:47:33.817027+00:00",
+            "evidence_id": "EV-T0-A515E3B9391C51B4",
+            "note": "",
+            "relation": "support",
+            "run_id": "RUN-07364f032366",
+            "schema_version": "phase-a.1",
+            "version": 1
+          }
+        ],
+        "expected_observables": [],
+        "run_id": "RUN-26a22c7b3473",
+        "schema_version": "phase-a.1"
+      },
+      "contested_node": "治理架构建立与运行整合实现是同一判断层次，还是需要分开观察的两个层次。",
+      "created_at": "2026-08-27T03:47:33.818073+00:00",
+      "decision_impact": "medium",
+      "disagreement_id": "DISAG-T0-03",
+      "formal_resolution_reason": "按作者授权将治理架构建立与运行整合实现拆分；现有证据支持前者，但不足以证明后者。",
+      "human_verified": true,
+      "resolution_action": "scope_split",
+      "resolvable_now": true,
+      "review_mode": "ai_preannotation_plus_author_batch_signoff",
+      "reviewed_at": "2026-08-27T03:47:33+00:00",
+      "reviewed_by": "author_01",
+      "run_id": "RUN-3391fa1cd5a9",
+      "schema_version": "phase-a.1",
+      "snapshot_id": "SNAP-T0-US-MILITARY-AI-C6C812108AF95309",
+      "source_candidate_disagreement": {
+        "branch_a": {
+          "claim": "CDAO的设立和JCF的规划文件代表了统一治理目标的设定，而非治理结果的实现。JCF的延迟和路线图未定表明统一平台尚未达到全面作战能力，治理目标尚未转化为实际牵引。",
+          "evidence_ids": [
+            "EV-T0-0A73030BBF2649F9",
+            "EV-T0-27EE6FA7DA2FADC0",
+            "EV-T0-51D65DEC82584BCD",
+            "EV-T0-A515E3B9391C51B4"
+          ],
+          "viewpoint_refs": [
+            {
+              "field": "key_assumptions[0]",
+              "version": 1,
+              "viewpoint_id": "VP-T0-STRAT-H01"
+            },
+            {
+              "field": "judgment",
+              "version": 1,
+              "viewpoint_id": "VP-T0-STRAT-H01"
+            }
+          ]
+        },
+        "branch_b": {
+          "claim": "现有反证证据（EV-T0-51D65DEC82584BCD、EV-T0-8E35B508DF5C2E65、EV-T0-A515E3B9391C51B4）的时间范围主要覆盖2021-2023年，对于2024年内可能发生的治理进展，公开证据覆盖不足，因此本判断仅能确认'截至2023年底及2024年部分可验证时段内未形成统一体系'，而非对2024全年整合进展的全面否定。",
+          "evidence_ids": [
+            "EV-T0-51D65DEC82584BCD",
+            "EV-T0-8E35B508DF5C2E65",
+            "EV-T0-A515E3B9391C51B4"
+          ],
+          "viewpoint_refs": [
+            {
+              "field": "judgment",
+              "version": 2,
+              "viewpoint_id": "VP-T0-TRUST-H01"
+            },
+            {
+              "field": "uncertainties[2]",
+              "version": 2,
+              "viewpoint_id": "VP-T0-TRUST-H01"
+            }
+          ]
+        },
+        "contested_node": "治理机制建立是否等于跨军种实际共用：CDAO的设立和JCF的规划是否构成'统一治理架构已建立'的证据，还是仅代表治理目标的设定",
+        "decision_impact": "medium",
+        "diagnosis_reason": "实质冲突：branch_a将治理架构的建立视为目标设定而非结果实现，branch_b指出证据时间范围限制可能导致对2024年进展的低估。两者对'治理机制建立是否可视为已实现'存在范围界定上的分歧。该冲突影响对治理进展的评估精度，但当前缺乏2024年内JCF实际运行状态和CDAO治理效果的公开数据，无法立即核查。",
+        "disagreement_id": "DISAG-T0-03",
+        "resolution_action": "scope_split",
+        "resolvable_now": false,
+        "snapshot_id": "SNAP-T0-US-MILITARY-AI-C6C812108AF95309",
+        "status": "candidate",
+        "type": "scope",
+        "viewpoint_refs": [
+          {
+            "field": "key_assumptions[0]",
+            "version": 1,
+            "viewpoint_id": "VP-T0-STRAT-H01"
+          },
+          {
+            "field": "judgment",
+            "version": 1,
+            "viewpoint_id": "VP-T0-STRAT-H01"
+          },
+          {
+            "field": "judgment",
+            "version": 2,
+            "viewpoint_id": "VP-T0-TRUST-H01"
+          },
+          {
+            "field": "uncertainties[2]",
+            "version": 2,
+            "viewpoint_id": "VP-T0-TRUST-H01"
+          }
+        ]
+      },
+      "status": "resolved",
+      "type": "scope",
+      "viewpoint_field_refs": [
+        {
+          "field": "key_assumptions[0]",
+          "version": 1,
+          "viewpoint_id": "VP-T0-STRAT-H01"
+        },
+        {
+          "field": "judgment",
+          "version": 1,
+          "viewpoint_id": "VP-T0-STRAT-H01"
+        },
+        {
+          "field": "judgment",
+          "version": 2,
+          "viewpoint_id": "VP-T0-TRUST-H01"
+        },
+        {
+          "field": "uncertainties[2]",
+          "version": 2,
+          "viewpoint_id": "VP-T0-TRUST-H01"
+        }
+      ],
+      "viewpoint_refs": [
+        "VP-T0-STRAT-H01:1",
+        "VP-T0-TRUST-H01:2"
+      ]
+    }
+  ],
+  "evidence_claims": {
+    "facts": "基于冻结Evidence",
+    "model_inference": "基于假设、观点与条件化综合",
+    "unverified_conditions": "由监测需求保留"
+  },
+  "formal_g4_t0_executed": true,
+  "frozen_evidence_count": 85,
+  "hypotheses": [
+    {
+      "author_authorization_sha256": "1b8d6a450720f0419c8d88fa3e74e41719a7f5702b01466997bfa81c2b3fb672",
+      "author_decision_count": 5,
+      "author_signoff_count": 1,
+      "case_id": "us_military_ai_deployment",
+      "conversion_criteria": [
+        "若跨军种共用AI平台达到实际运行能力，并出现多个项目迁移、复用或共享数据，增强本假设；",
+        "若统一采办、测试评估和负责任AI流程在多个军种落地，增强本假设；",
+        "若共用平台持续停留在规划或延迟状态，各项目仍主要独立发展，削弱本假设。"
+      ],
+      "counter_evidence_ids": [
+        "EV-T0-51D65DEC82584BCD",
+        "EV-T0-A515E3B9391C51B4",
+        "EV-T0-8E35B508DF5C2E65"
+      ],
+      "covered_dimensions": [
+        "strategic_governance",
+        "trust_organization_system_integration"
+      ],
+      "decision": "revise_and_accept",
+      "decision_dimension": "military_ai_capability_deployment_form",
+      "falsification_conditions": [
+        "如果2024年底前JCF达到全面作战能力且采办指导方针已发布，则本假设可能被削弱。",
+        "如果出现多个军种独立发展且无统一协调的证据，则体系化整合判断不成立。"
+      ],
+      "frozen": true,
+      "hypothesis_content_authorized": true,
+      "hypothesis_id": "HYP-T0-01",
+      "key_assumptions": [
+        "集中化平台（如JCF）和统一治理（如CDAO）是实现体系化整合的主要标志。",
+        "从采用到整合的转变是演进的主要方向，而非简单的技术升级。"
+      ],
+      "raw_source_visual_review_claimed": false,
+      "review_mode": "ai_preannotation_plus_author_batch_signoff",
+      "reviewed_by": "author_01",
+      "run_id": "G2-T0-1B8D6A450720F041-formal-v1",
+      "schema_version": "phase-a.1",
+      "scope": "美国国防部整体AI发展，时间范围2022-01-01至2024-12-31，涵盖战略、项目、试验和部署事件。",
+      "snapshot_id": "SNAP-T0-US-MILITARY-AI-C6C812108AF95309",
+      "source_candidate_ids": [
+        "G2-H01"
+      ],
+      "source_p5_candidate_ids": [
+        "GEN-A-H01"
+      ],
+      "statement": "截至2024年底，美国军用人工智能已进入由部门级统一治理、共用能力平台和标准化流程牵引的体系整合过渡期；任务项目仍呈分散状态，但统一能力底座正在成为其主要演进方向。",
+      "status": "active",
+      "supporting_evidence_ids": [
+        "EV-T0-5FA6E8C23AC72A82",
+        "EV-T0-7E37FBD511FC654E",
+        "EV-T0-27370C837C885AEE",
+        "EV-T0-0A73030BBF2649F9",
+        "EV-T0-27EE6FA7DA2FADC0"
+      ],
+      "time_horizon": "2022-01-01 to 2024-12-31",
+      "unresolved_questions": [
+        "JCF全面作战能力的具体时间表是否在2024年后确定？",
+        "CDAO在整合各军种AI项目中的实际权限和执行力如何？"
+      ]
+    },
+    {
+      "author_authorization_sha256": "1b8d6a450720f0419c8d88fa3e74e41719a7f5702b01466997bfa81c2b3fb672",
+      "author_decision_count": 5,
+      "author_signoff_count": 1,
+      "case_id": "us_military_ai_deployment",
+      "conversion_criteria": [
+        "若后续进展继续集中于军种或任务专属项目，增强本假设；",
+        "若DARPA项目主要停留在演示验证而未转入规模化采办，增强本假设；",
+        "若出现跨军种复用的统一平台、统一模型或统一工程流程，削弱本假设。"
+      ],
+      "counter_evidence_ids": [
+        "EV-T0-27370C837C885AEE",
+        "EV-T0-5EA556C2C939C121",
+        "EV-T0-F8E3070F89D94D25"
+      ],
+      "covered_dimensions": [
+        "testing_deployment_application",
+        "trust_organization_system_integration",
+        "resource_conditions"
+      ],
+      "decision": "revise_and_accept",
+      "decision_dimension": "military_ai_capability_deployment_form",
+      "falsification_conditions": [
+        "若在2024年底前出现一个统一的AI开发平台被多个军种同时用于不同任务，且该平台已实现全面作战能力，则本假设不成立。",
+        "若国防部发布并实施统一的AI测试评估框架，且各项目均遵循该框架，则表明体系化路径已形成。"
+      ],
+      "frozen": true,
+      "hypothesis_content_authorized": true,
+      "hypothesis_id": "HYP-T0-02",
+      "key_assumptions": [
+        "各项目（RACER、REMA、AIDP、IMSC）的独立进展反映了任务驱动的分散发展模式。",
+        "体系整合的规划文件（如SP-008）尚未转化为实际的跨项目统一部署。",
+        "联合通用基金会的延迟表明体系化整合面临资源和技术挑战。"
+      ],
+      "raw_source_visual_review_claimed": false,
+      "review_mode": "ai_preannotation_plus_author_batch_signoff",
+      "reviewed_by": "author_01",
+      "run_id": "G2-T0-1B8D6A450720F041-formal-v1",
+      "schema_version": "phase-a.1",
+      "scope": "2022-01-01至2024-12-31，美国国防部各组成部门（DARPA、陆军、海军）的AI任务应用与体系集成关系。",
+      "snapshot_id": "SNAP-T0-US-MILITARY-AI-C6C812108AF95309",
+      "source_candidate_ids": [
+        "G2-H03"
+      ],
+      "source_p5_candidate_ids": [
+        "GEN-B-H02"
+      ],
+      "statement": "截至2024年底，美国军用人工智能的实际能力形成仍主要由具体任务需求牵引，通过分散的项目试验、技术演示和局部部署逐步扩展；部门级治理与共用平台尚未实质改变这一主导模式。",
+      "status": "active",
+      "supporting_evidence_ids": [
+        "EV-T0-3FA6806CF267B04B",
+        "EV-T0-9C79EF2837BC80A2",
+        "EV-T0-9263A423CF1D437F",
+        "EV-T0-79B653E22A3D4EF4",
+        "EV-T0-F0773C8E2ECB5C8D",
+        "EV-T0-C557AE16E4403328"
+      ],
+      "time_horizon": "2022-01-01 to 2024-12-31",
+      "unresolved_questions": [
+        "各项目之间的技术成果是否存在共享或复用机制？",
+        "CDAO的协调作用是否已实际影响各军种的AI项目执行？"
+      ]
+    },
+    {
+      "author_authorization_sha256": "1b8d6a450720f0419c8d88fa3e74e41719a7f5702b01466997bfa81c2b3fb672",
+      "author_decision_count": 5,
+      "author_signoff_count": 1,
+      "case_id": "us_military_ai_deployment",
+      "conversion_criteria": [
+        "若数据、边缘算力和共用基础设施瓶颈持续存在，增强本假设；",
+        "若统一采办和测试评估制度仍未落地，增强本假设；",
+        "若资源与治理瓶颈得到解决并伴随跨任务规模化部署，削弱本假设。"
+      ],
+      "counter_evidence_ids": [
+        "EV-T0-0405886E04C205A6",
+        "EV-T0-FB39056D1BA1F579",
+        "EV-T0-425BAC0BC94181E0",
+        "EV-T0-00FCD33BA877C8BA",
+        "EV-T0-27EE6FA7DA2FADC0",
+        "EV-T0-357C993D92C95187"
+      ],
+      "covered_dimensions": [
+        "resource_conditions",
+        "technical_engineering_maturity",
+        "strategic_governance",
+        "trust_organization_system_integration",
+        "testing_deployment_application"
+      ],
+      "decision": "merge_and_accept",
+      "decision_dimension": "military_ai_capability_deployment_form",
+      "falsification_conditions": [
+        "若在2024年底前，机载AI系统在实战环境中达到与后端计算相当的性能，且联合通用基金会达到全面作战能力，则本假设不成立。",
+        "若国防部发布并实施统一的数据质量标准，且各军种AI项目均达到该标准，则表明资源瓶颈已缓解。",
+        "若国防部在2024年底前发布全部门范围的AI采办指导方针并明确时间表，则本假设不成立。",
+        "若出现跨军种统一的AI测试评估标准和采办流程的公开证据，则表明体系化路径已形成。",
+        "若CDAO成功整合各军种AI项目并形成统一的战略执行报告，则战略落差判断需修正。"
+      ],
+      "frozen": true,
+      "hypothesis_content_authorized": true,
+      "hypothesis_id": "HYP-T0-03",
+      "key_assumptions": [
+        "资源约束（如机载处理速度、数据质量、基础设施延迟）是能力形成的主要瓶颈。",
+        "预算投入（如2023财年11亿美元）和DARPA的数据收集（如100TB传感器数据）尚未完全解决这些瓶颈。",
+        "战略规划（如SP-008）中的资源投资目标尚未完全实现。",
+        "国防部层面的AI采办指导方针缺失是体系化发展的主要障碍。",
+        "各军种自行制定采办指南（如空军）表明缺乏统一协调。",
+        "负责任AI的灵活方法可能导致标准不一致和执行困难。"
+      ],
+      "merge_target": "HYP-T0-03",
+      "raw_source_visual_review_claimed": false,
+      "review_mode": "ai_preannotation_plus_author_batch_signoff",
+      "reviewed_by": "author_01",
+      "run_id": "G2-T0-1B8D6A450720F041-formal-v1",
+      "schema_version": "phase-a.1",
+      "scope": "2022-01-01至2024-12-31，美国国防部军用AI能力形成与应用扩展，涵盖战略实施、资源条件、工程成熟度、采办测试与部署扩展之间的关系。",
+      "snapshot_id": "SNAP-T0-US-MILITARY-AI-C6C812108AF95309",
+      "source_candidate_ids": [
+        "G2-H04",
+        "G2-H05"
+      ],
+      "source_p5_candidate_ids": [
+        "GEN-B-H03",
+        "GEN-C-H02",
+        "GEN-C-H03"
+      ],
+      "statement": "截至2024年底，美国军用人工智能的战略牵引尚未充分转化为稳定的体系化能力，数据、算力、基础设施、采办和测试评估等约束共同造成能力形成缓慢且应用扩展不均衡。",
+      "status": "active",
+      "supporting_evidence_ids": [
+        "EV-T0-62B1ECDA7DF87F1A",
+        "EV-T0-AD4CCAC18E1BB26C",
+        "EV-T0-26CBA9EE14D71B2D",
+        "EV-T0-850EF492D703EA37",
+        "EV-T0-51D65DEC82584BCD",
+        "EV-T0-A515E3B9391C51B4",
+        "EV-T0-8E35B508DF5C2E65",
+        "EV-T0-2E42D28FCCBD88DD",
+        "EV-T0-6FE734DE05953A3C",
+        "EV-T0-903F4A6639DA3CEC",
+        "EV-T0-582B12D4B09F11B1"
+      ],
+      "time_horizon": "2022-01-01 to 2024-12-31",
+      "unresolved_questions": [
+        "国防部在算力基础设施（如云、边缘计算）上的实际投资是否足以支撑大规模AI部署？",
+        "数据质量问题的具体影响程度是否因军种或任务领域而异？",
+        "CDAO在2023-2024年间是否发布了新的战略或政策文件，证据中未提及。",
+        "Tradewind市场的实际采购规模和效果缺乏量化数据。",
+        "各军种AI项目之间的协调机制和冲突解决方式不明确。"
+      ]
+    }
+  ],
+  "indicators": [
+    {
+      "affected_viewpoint_ids": [
+        "VP-T0-STRAT-H01",
+        "VP-T0-STRAT-H02",
+        "VP-T0-TECH-H01",
+        "VP-T0-TECH-H02",
+        "VP-T0-ENG-H01",
+        "VP-T0-ENG-H02",
+        "VP-T0-OPS-H01",
+        "VP-T0-OPS-H02",
+        "VP-T0-TRUST-H01",
+        "VP-T0-TRUST-H02"
+      ],
+      "author_authorization_sha256": "f30219fa0bfd415c811cb3c557c4fe5219d12611363299077c1ccab534ad31d5",
+      "cadence": "quarterly",
+      "created_at": "2026-08-27T03:47:33.820212+00:00",
+      "direction_a": "跨军种实际采用增强HYP-T0-01；独立平台经完整检索确认增强HYP-T0-02",
+      "direction_b": "独立平台经完整检索确认削弱HYP-T0-01并增强HYP-T0-02",
+      "human_verified": true,
+      "indicator_id": "IND-T0-01",
+      "name": "共用平台与统一标准的跨军种实际采用",
+      "need_id": "NEED-T0-01",
+      "observation_window": "2025-01-01/2026-06-30",
+      "operational_definition": "观察不同军种、不同任务是否在公开材料中被确认实际采用同一平台、统一数据或接口标准、统一工程流程；规划发布不计为实际采用。",
+      "review_mode": "ai_preannotation_plus_author_batch_signoff",
+      "run_id": "RUN-28c4430d0359",
+      "schema_version": "phase-a.1",
+      "source_types": [
+        "A/B级国防部和CDAO官方材料",
+        "A/B级军种项目与采办状态材料"
+      ],
+      "status": "approved"
+    },
+    {
+      "affected_viewpoint_ids": [
+        "VP-T0-STRAT-H01",
+        "VP-T0-STRAT-H02",
+        "VP-T0-TECH-H01",
+        "VP-T0-TECH-H02",
+        "VP-T0-ENG-H01",
+        "VP-T0-ENG-H02",
+        "VP-T0-OPS-H01",
+        "VP-T0-OPS-H02",
+        "VP-T0-TRUST-H01",
+        "VP-T0-TRUST-H02"
+      ],
+      "author_authorization_sha256": "f30219fa0bfd415c811cb3c557c4fe5219d12611363299077c1ccab534ad31d5",
+      "cadence": "quarterly",
+      "created_at": "2026-08-27T03:47:33.820212+00:00",
+      "direction_a": "跨任务或跨军种复用增强HYP-T0-01；任务专属转化增强HYP-T0-02",
+      "direction_b": "任务专属转化削弱HYP-T0-01；明确约束下继续演示增强HYP-T0-03",
+      "human_verified": true,
+      "indicator_id": "IND-T0-02",
+      "name": "任务项目的转化路径",
+      "need_id": "NEED-T0-02",
+      "observation_window": "2025-01-01/2026-06-30",
+      "operational_definition": "观察任务项目是否从演示转入任务专属采办/部署、跨任务或跨军种复用，或因明确约束继续停留在演示。",
+      "review_mode": "ai_preannotation_plus_author_batch_signoff",
+      "run_id": "RUN-c899c2de3698",
+      "schema_version": "phase-a.1",
+      "source_types": [
+        "A/B级DARPA、军种项目状态材料",
+        "A/B级采办、部署和试验文件"
+      ],
+      "status": "approved"
+    },
+    {
+      "affected_viewpoint_ids": [
+        "VP-T0-STRAT-H02",
+        "VP-T0-STRAT-H03",
+        "VP-T0-TECH-H02",
+        "VP-T0-TECH-H03",
+        "VP-T0-ENG-H02",
+        "VP-T0-ENG-H03",
+        "VP-T0-OPS-H02",
+        "VP-T0-OPS-H03",
+        "VP-T0-TRUST-H02",
+        "VP-T0-TRUST-H03"
+      ],
+      "author_authorization_sha256": "f30219fa0bfd415c811cb3c557c4fe5219d12611363299077c1ccab534ad31d5",
+      "cadence": "quarterly",
+      "created_at": "2026-08-27T03:47:33.820212+00:00",
+      "direction_a": "瓶颈缓解支持对HYP-T0-03的重评",
+      "direction_b": "瓶颈持续增强HYP-T0-03",
+      "human_verified": true,
+      "indicator_id": "IND-T0-03",
+      "name": "资源与治理瓶颈状态",
+      "need_id": "NEED-T0-03",
+      "observation_window": "2025-01-01/2026-06-30",
+      "operational_definition": "观察数据质量、边缘算力、基础设施、采办指导和测试评估标准的公开状态变化；未检索到材料不直接解释为未发生。",
+      "review_mode": "ai_preannotation_plus_author_batch_signoff",
+      "run_id": "RUN-7f924738aacc",
+      "schema_version": "phase-a.1",
+      "source_types": [
+        "A/B级预算、数据战略和基础设施材料",
+        "A/B级GAO/CRS及治理文件"
+      ],
+      "status": "approved"
+    },
+    {
+      "affected_viewpoint_ids": [
+        "VP-T0-STRAT-H02",
+        "VP-T0-STRAT-H03",
+        "VP-T0-TECH-H02",
+        "VP-T0-TECH-H03",
+        "VP-T0-ENG-H02",
+        "VP-T0-ENG-H03",
+        "VP-T0-OPS-H02",
+        "VP-T0-OPS-H03",
+        "VP-T0-TRUST-H02",
+        "VP-T0-TRUST-H03"
+      ],
+      "author_authorization_sha256": "f30219fa0bfd415c811cb3c557c4fe5219d12611363299077c1ccab534ad31d5",
+      "cadence": "quarterly",
+      "created_at": "2026-08-27T03:47:33.821208+00:00",
+      "direction_a": "跨任务或跨军种扩展增强HYP-T0-01并促使三项假设重评",
+      "direction_b": "瓶颈缓解但应用仍分布式增强HYP-T0-02",
+      "human_verified": true,
+      "indicator_id": "IND-T0-04",
+      "name": "瓶颈变化后的应用广度",
+      "need_id": "NEED-T0-03",
+      "observation_window": "2025-01-01/2026-06-30",
+      "operational_definition": "在确认资源或治理条件变化后，观察应用是否扩展至更多任务、平台或军种；应用范围变化需由公开原始材料支持。",
+      "review_mode": "ai_preannotation_plus_author_batch_signoff",
+      "run_id": "RUN-8deaf3537263",
+      "schema_version": "phase-a.1",
+      "source_types": [
+        "A/B级军种项目和部署材料",
+        "A/B级国防部跨项目、跨军种状态材料"
+      ],
+      "status": "approved"
+    }
+  ],
+  "model_api_calls": 0,
+  "needs": [
+    {
+      "author_authorization_sha256": "f30219fa0bfd415c811cb3c557c4fe5219d12611363299077c1ccab534ad31d5",
+      "created_at": "2026-08-27T03:47:33.819211+00:00",
+      "disagreement_id": "DISAG-T0-01",
+      "discriminativeness": 5,
+      "favours_if": {
+        "outcome_1": "增强HYP-T0-01，削弱HYP-T0-02",
+        "outcome_2": "增强HYP-T0-02"
+      },
+      "feasibility": "medium",
+      "human_verified": true,
+      "need_id": "NEED-T0-01",
+      "observation_window": "2025-01-01/2026-06-30",
+      "possible_outcomes": [
+        "官方可核验的跨军种、跨任务实际采用",
+        "经完整检索和人工确认仍主要使用独立平台和流程"
+      ],
+      "question": "在2025年1月1日至2026年6月30日期间，共用AI平台、统一数据或接口标准以及统一工程流程是否被不同军种、不同任务实际采用？",
+      "review_mode": "ai_preannotation_plus_author_batch_signoff",
+      "run_id": "RUN-9cd5ba9d11aa",
+      "schema_version": "phase-a.1",
+      "source_plan": [
+        "A/B级国防部、CDAO和军种官方材料",
+        "A/B级预算、采办与项目状态材料",
+        "完整检索日志与人工确认用于否定性判断"
+      ],
+      "status": "approved"
+    },
+    {
+      "author_authorization_sha256": "f30219fa0bfd415c811cb3c557c4fe5219d12611363299077c1ccab534ad31d5",
+      "created_at": "2026-08-27T03:47:33.819211+00:00",
+      "disagreement_id": "DISAG-T0-01",
+      "discriminativeness": 5,
+      "favours_if": {
+        "outcome_1": "增强HYP-T0-02",
+        "outcome_2": "增强HYP-T0-01",
+        "outcome_3": "增强HYP-T0-03"
+      },
+      "feasibility": "medium",
+      "human_verified": true,
+      "need_id": "NEED-T0-02",
+      "observation_window": "2025-01-01/2026-06-30",
+      "possible_outcomes": [
+        "转入单一军种或任务专属采办、部署",
+        "形成跨任务或跨军种复用的模型、平台、接口或工程流程",
+        "继续停留在演示阶段且官方材料明确指出资源或治理约束"
+      ],
+      "question": "DARPA等任务项目在后续观察窗口内以何种方式由演示验证转入后续应用？",
+      "review_mode": "ai_preannotation_plus_author_batch_signoff",
+      "run_id": "RUN-058c12d52ae7",
+      "schema_version": "phase-a.1",
+      "source_plan": [
+        "A/B级DARPA、军种和作战单位项目状态材料",
+        "A/B级采办、部署和试验转化文件",
+        "项目原始公告与后续官方状态核验"
+      ],
+      "status": "approved"
+    },
+    {
+      "author_authorization_sha256": "f30219fa0bfd415c811cb3c557c4fe5219d12611363299077c1ccab534ad31d5",
+      "created_at": "2026-08-27T03:47:33.820212+00:00",
+      "disagreement_id": "DISAG-T0-02",
+      "discriminativeness": 5,
+      "favours_if": {
+        "outcome_1": "增强HYP-T0-03",
+        "outcome_2": "增强HYP-T0-02并削弱约束唯一主因解释",
+        "outcome_3": "触发HYP-T0-01、HYP-T0-02和HYP-T0-03共同重评"
+      },
+      "feasibility": "medium",
+      "human_verified": true,
+      "need_id": "NEED-T0-03",
+      "observation_window": "2025-01-01/2026-06-30",
+      "possible_outcomes": [
+        "瓶颈持续且应用仍不均衡",
+        "瓶颈缓解但项目仍保持任务专属、分布式发展",
+        "瓶颈缓解并伴随跨任务或跨军种规模化应用"
+      ],
+      "question": "资源和治理瓶颈在观察窗口内是否得到实质缓解，以及缓解后是否出现应用范围扩大？",
+      "review_mode": "ai_preannotation_plus_author_batch_signoff",
+      "run_id": "RUN-38617756f5ce",
+      "schema_version": "phase-a.1",
+      "source_plan": [
+        "A/B级预算执行、数据战略和基础设施材料",
+        "A/B级采办、测试评估和治理文件",
+        "GAO/CRS等A/B级监督材料与完整检索日志"
+      ],
+      "status": "approved"
+    }
+  ],
+  "raw_source_visual_review_claimed": false,
+  "report_content_authorized": true,
+  "report_version": 2,
+  "review_mode": "author_batch_signoff",
+  "reviewer": "author_01",
+  "revision_basis": "G3-T0-20260827T-formal-offline-v5/G4_DRAFT/g4_t0_report_draft.md",
+  "shared_baseline": {
+    "author_authorization_sha256": "1b8d6a450720f0419c8d88fa3e74e41719a7f5702b01466997bfa81c2b3fb672",
+    "author_signoff_count": 1,
+    "baseline_id": "BASE-T0-01",
+    "baseline_type": "shared_fact",
+    "case_id": "us_military_ai_deployment",
+    "counter_evidence_ids": [
+      "EV-T0-51D65DEC82584BCD",
+      "EV-T0-A515E3B9391C51B4",
+      "EV-T0-8E35B508DF5C2E65"
+    ],
+    "covered_dimensions": [
+      "technical_engineering_maturity",
+      "testing_deployment_application",
+      "resource_conditions"
+    ],
+    "falsification_conditions": [
+      "若在2024年底前出现多个军种在作战演习中常态化使用同一套AI系统，且该系统的部署不依赖DARPA等专门项目支持，则本假设不成立。",
+      "若联合通用基金会达到全面作战能力并实现跨军种数据共享，则表明体系化能力已形成，而非仅限特定任务。"
+    ],
+    "formal_hypothesis": false,
+    "key_assumptions": [
+      "DARPA项目（如ACE、RACER）的成功演示代表了技术成熟度的提升，但尚未转化为大规模列装。",
+      "AIDP的快速部署是情报领域特定用例的成功，不代表所有军种或任务领域均达到同等水平。",
+      "联合通用基金会等基础设施的延迟表明体系化能力形成仍受资源条件制约。"
+    ],
+    "review_mode": "ai_preannotation_plus_author_batch_signoff",
+    "reviewed_by": "author_01",
+    "scope": "2022-01-01至2024-12-31，美国国防部及其下属机构（DARPA、陆军、JAIC/CDAO）的军用AI能力形成过程，聚焦技术成熟度、任务应用和部署状态。",
+    "snapshot_id": "SNAP-T0-US-MILITARY-AI-C6C812108AF95309",
+    "source_candidate_ids": [
+      "G2-H02"
+    ],
+    "source_p5_candidate_ids": [
+      "GEN-A-H02",
+      "GEN-B-H01",
+      "GEN-C-H01"
+    ],
+    "statement": "截至2024年底，美国军用人工智能已在若干特定任务中由技术原型走向试验验证和有限部署，但尚未形成成熟的跨军种、跨任务通用能力体系。",
+    "supporting_evidence_ids": [
+      "EV-T0-DB4536B8270ECF58",
+      "EV-T0-30E9B209F0439B21",
+      "EV-T0-A8459E6E8776A15D",
+      "EV-T0-B33EF9F7AA480E81",
+      "EV-T0-06EEB768196F287C",
+      "EV-T0-DDA30BF3C0C38B0C"
+    ],
+    "unresolved_questions": [
+      "ACE和RACER等项目的技术成果是否已进入正式的采办或列装流程？",
+      "AIDP的部署是否代表了陆军AI能力的普遍水平，还是仅限情报领域？"
+    ]
+  },
+  "signed_at": "2026-08-27T05:14:06Z",
+  "signed_report_sha256": "4250bb274a4430194008e0914b9bb92a959117f01cf31be4a2cfcdedfcecea01",
+  "snapshot_id": "SNAP-T0-US-MILITARY-AI-C6C812108AF95309",
+  "source_draft_sha256": "15dd27078f2289217cdbb9ad72a46eee5fdceb1c364b21432cb08bd25fbd48b4",
+  "status": "signed",
+  "t1_read": false,
+  "triggers": [
+    {
+      "action": "review_viewpoints",
+      "affected_viewpoint_ids": [
+        "VP-T0-STRAT-H01",
+        "VP-T0-STRAT-H02",
+        "VP-T0-TECH-H01",
+        "VP-T0-TECH-H02",
+        "VP-T0-ENG-H01",
+        "VP-T0-ENG-H02",
+        "VP-T0-OPS-H01",
+        "VP-T0-OPS-H02",
+        "VP-T0-TRUST-H01",
+        "VP-T0-TRUST-H02"
+      ],
+      "author_authorization_sha256": "f30219fa0bfd415c811cb3c557c4fe5219d12611363299077c1ccab534ad31d5",
+      "created_at": "2026-08-27T03:47:33.821208+00:00",
+      "human_approval_required": true,
+      "human_verified": true,
+      "indicator_id": "IND-T0-01",
+      "observation_window": "2025-01-01/2026-06-30",
+      "predicate": {
+        "condition": "官方材料确认共用平台、统一数据/接口标准或统一工程流程被至少两个军种实际采用。",
+        "observation_window": "2025-01-01/2026-06-30",
+        "strengthens_branch": "增强HYP-T0-01",
+        "weakens_branch": "削弱HYP-T0-02"
+      },
+      "predicate_type": "event_match",
+      "required_source_grade": [
+        "A",
+        "B"
+      ],
+      "review_mode": "ai_preannotation_plus_author_batch_signoff",
+      "run_id": "RUN-fd2d6b78e638",
+      "schema_version": "phase-a.1",
+      "status": "approved",
+      "trigger_id": "TRG-T0-01"
+    },
+    {
+      "action": "review_viewpoints",
+      "affected_viewpoint_ids": [
+        "VP-T0-STRAT-H01",
+        "VP-T0-STRAT-H02",
+        "VP-T0-TECH-H01",
+        "VP-T0-TECH-H02",
+        "VP-T0-ENG-H01",
+        "VP-T0-ENG-H02",
+        "VP-T0-OPS-H01",
+        "VP-T0-OPS-H02",
+        "VP-T0-TRUST-H01",
+        "VP-T0-TRUST-H02"
+      ],
+      "author_authorization_sha256": "f30219fa0bfd415c811cb3c557c4fe5219d12611363299077c1ccab534ad31d5",
+      "created_at": "2026-08-27T03:47:33.821208+00:00",
+      "human_approval_required": true,
+      "human_verified": true,
+      "indicator_id": "IND-T0-01",
+      "observation_window": "2025-01-01/2026-06-30",
+      "predicate": {
+        "condition": "完整检索并经人工确认仍主要使用相互独立的平台和流程；不得以未检索到材料单独作出否定判断。",
+        "observation_window": "2025-01-01/2026-06-30",
+        "strengthens_branch": "增强HYP-T0-02",
+        "weakens_branch": "削弱HYP-T0-01"
+      },
+      "predicate_type": "expert_confirmed",
+      "required_source_grade": [
+        "A",
+        "B"
+      ],
+      "review_mode": "ai_preannotation_plus_author_batch_signoff",
+      "run_id": "RUN-f5e9cfe331f0",
+      "schema_version": "phase-a.1",
+      "status": "approved",
+      "trigger_id": "TRG-T0-02"
+    },
+    {
+      "action": "review_viewpoints",
+      "affected_viewpoint_ids": [
+        "VP-T0-STRAT-H01",
+        "VP-T0-STRAT-H02",
+        "VP-T0-TECH-H01",
+        "VP-T0-TECH-H02",
+        "VP-T0-ENG-H01",
+        "VP-T0-ENG-H02",
+        "VP-T0-OPS-H01",
+        "VP-T0-OPS-H02",
+        "VP-T0-TRUST-H01",
+        "VP-T0-TRUST-H02"
+      ],
+      "author_authorization_sha256": "f30219fa0bfd415c811cb3c557c4fe5219d12611363299077c1ccab534ad31d5",
+      "created_at": "2026-08-27T03:47:33.821208+00:00",
+      "human_approval_required": true,
+      "human_verified": true,
+      "indicator_id": "IND-T0-02",
+      "observation_window": "2025-01-01/2026-06-30",
+      "predicate": {
+        "condition": "任务项目进入单一军种或任务专属采办、部署或持续使用。",
+        "observation_window": "2025-01-01/2026-06-30",
+        "strengthens_branch": "增强HYP-T0-02",
+        "weakens_branch": "削弱HYP-T0-01"
+      },
+      "predicate_type": "status_change",
+      "required_source_grade": [
+        "A",
+        "B"
+      ],
+      "review_mode": "ai_preannotation_plus_author_batch_signoff",
+      "run_id": "RUN-aef808dc369f",
+      "schema_version": "phase-a.1",
+      "status": "approved",
+      "trigger_id": "TRG-T0-03"
+    },
+    {
+      "action": "review_viewpoints",
+      "affected_viewpoint_ids": [
+        "VP-T0-STRAT-H01",
+        "VP-T0-STRAT-H02",
+        "VP-T0-TECH-H01",
+        "VP-T0-TECH-H02",
+        "VP-T0-ENG-H01",
+        "VP-T0-ENG-H02",
+        "VP-T0-OPS-H01",
+        "VP-T0-OPS-H02",
+        "VP-T0-TRUST-H01",
+        "VP-T0-TRUST-H02"
+      ],
+      "author_authorization_sha256": "f30219fa0bfd415c811cb3c557c4fe5219d12611363299077c1ccab534ad31d5",
+      "created_at": "2026-08-27T03:47:33.822214+00:00",
+      "human_approval_required": true,
+      "human_verified": true,
+      "indicator_id": "IND-T0-02",
+      "observation_window": "2025-01-01/2026-06-30",
+      "predicate": {
+        "condition": "官方材料确认任务项目形成跨任务或跨军种复用的平台、模型、接口或工程流程。",
+        "observation_window": "2025-01-01/2026-06-30",
+        "strengthens_branch": "增强HYP-T0-01",
+        "weakens_branch": "削弱HYP-T0-02"
+      },
+      "predicate_type": "event_match",
+      "required_source_grade": [
+        "A",
+        "B"
+      ],
+      "review_mode": "ai_preannotation_plus_author_batch_signoff",
+      "run_id": "RUN-8d27dda3c017",
+      "schema_version": "phase-a.1",
+      "status": "approved",
+      "trigger_id": "TRG-T0-04"
+    },
+    {
+      "action": "review_viewpoints",
+      "affected_viewpoint_ids": [
+        "VP-T0-STRAT-H01",
+        "VP-T0-STRAT-H02",
+        "VP-T0-TECH-H01",
+        "VP-T0-TECH-H02",
+        "VP-T0-ENG-H01",
+        "VP-T0-ENG-H02",
+        "VP-T0-OPS-H01",
+        "VP-T0-OPS-H02",
+        "VP-T0-TRUST-H01",
+        "VP-T0-TRUST-H02"
+      ],
+      "author_authorization_sha256": "f30219fa0bfd415c811cb3c557c4fe5219d12611363299077c1ccab534ad31d5",
+      "created_at": "2026-08-27T03:47:33.822214+00:00",
+      "human_approval_required": true,
+      "human_verified": true,
+      "indicator_id": "IND-T0-02",
+      "observation_window": "2025-01-01/2026-06-30",
+      "predicate": {
+        "condition": "官方材料明确说明资源或治理约束使项目继续停留在演示阶段。",
+        "observation_window": "2025-01-01/2026-06-30",
+        "strengthens_branch": "增强HYP-T0-03",
+        "weakens_branch": "削弱HYP-T0-02"
+      },
+      "predicate_type": "expert_confirmed",
+      "required_source_grade": [
+        "A",
+        "B"
+      ],
+      "review_mode": "ai_preannotation_plus_author_batch_signoff",
+      "run_id": "RUN-c64382b970fd",
+      "schema_version": "phase-a.1",
+      "status": "approved",
+      "trigger_id": "TRG-T0-05"
+    },
+    {
+      "action": "review_viewpoints",
+      "affected_viewpoint_ids": [
+        "VP-T0-STRAT-H02",
+        "VP-T0-STRAT-H03",
+        "VP-T0-TECH-H02",
+        "VP-T0-TECH-H03",
+        "VP-T0-ENG-H02",
+        "VP-T0-ENG-H03",
+        "VP-T0-OPS-H02",
+        "VP-T0-OPS-H03",
+        "VP-T0-TRUST-H02",
+        "VP-T0-TRUST-H03"
+      ],
+      "author_authorization_sha256": "f30219fa0bfd415c811cb3c557c4fe5219d12611363299077c1ccab534ad31d5",
+      "created_at": "2026-08-27T03:47:33.822214+00:00",
+      "human_approval_required": true,
+      "human_verified": true,
+      "indicator_id": "IND-T0-03",
+      "observation_window": "2025-01-01/2026-06-30",
+      "predicate": {
+        "condition": "数据、算力、基础设施、采办或测试评估瓶颈在公开材料中持续存在。",
+        "observation_window": "2025-01-01/2026-06-30",
+        "strengthens_branch": "增强HYP-T0-03",
+        "weakens_branch": "削弱资源投入已充分缓解瓶颈的解释"
+      },
+      "predicate_type": "status_change",
+      "required_source_grade": [
+        "A",
+        "B"
+      ],
+      "review_mode": "ai_preannotation_plus_author_batch_signoff",
+      "run_id": "RUN-c7943248ad60",
+      "schema_version": "phase-a.1",
+      "status": "approved",
+      "trigger_id": "TRG-T0-06"
+    },
+    {
+      "action": "review_viewpoints",
+      "affected_viewpoint_ids": [
+        "VP-T0-STRAT-H02",
+        "VP-T0-STRAT-H03",
+        "VP-T0-TECH-H02",
+        "VP-T0-TECH-H03",
+        "VP-T0-ENG-H02",
+        "VP-T0-ENG-H03",
+        "VP-T0-OPS-H02",
+        "VP-T0-OPS-H03",
+        "VP-T0-TRUST-H02",
+        "VP-T0-TRUST-H03"
+      ],
+      "author_authorization_sha256": "f30219fa0bfd415c811cb3c557c4fe5219d12611363299077c1ccab534ad31d5",
+      "created_at": "2026-08-27T03:47:33.822214+00:00",
+      "human_approval_required": true,
+      "human_verified": true,
+      "indicator_id": "IND-T0-04",
+      "observation_window": "2025-01-01/2026-06-30",
+      "predicate": {
+        "condition": "资源或治理条件出现缓解，但公开材料显示应用仍以任务专属、分布式方式扩展。",
+        "observation_window": "2025-01-01/2026-06-30",
+        "strengthens_branch": "增强HYP-T0-02",
+        "weakens_branch": "削弱HYP-T0-03作为唯一主因的解释"
+      },
+      "predicate_type": "event_match",
+      "required_source_grade": [
+        "A",
+        "B"
+      ],
+      "review_mode": "ai_preannotation_plus_author_batch_signoff",
+      "run_id": "RUN-a025861c8dd0",
+      "schema_version": "phase-a.1",
+      "status": "approved",
+      "trigger_id": "TRG-T0-07"
+    },
+    {
+      "action": "review_viewpoints",
+      "affected_viewpoint_ids": [
+        "VP-T0-STRAT-H02",
+        "VP-T0-STRAT-H03",
+        "VP-T0-TECH-H02",
+        "VP-T0-TECH-H03",
+        "VP-T0-ENG-H02",
+        "VP-T0-ENG-H03",
+        "VP-T0-OPS-H02",
+        "VP-T0-OPS-H03",
+        "VP-T0-TRUST-H02",
+        "VP-T0-TRUST-H03"
+      ],
+      "author_authorization_sha256": "f30219fa0bfd415c811cb3c557c4fe5219d12611363299077c1ccab534ad31d5",
+      "created_at": "2026-08-27T03:47:33.822214+00:00",
+      "human_approval_required": true,
+      "human_verified": true,
+      "indicator_id": "IND-T0-04",
+      "observation_window": "2025-01-01/2026-06-30",
+      "predicate": {
+        "condition": "资源或治理条件出现缓解，并出现跨任务或跨军种应用扩展。",
+        "observation_window": "2025-01-01/2026-06-30",
+        "strengthens_branch": "增强HYP-T0-01并触发三项假设共同重评",
+        "weakens_branch": "削弱当前分散模式或约束锁定的单一路径解释"
+      },
+      "predicate_type": "event_match",
+      "required_source_grade": [
+        "A",
+        "B"
+      ],
+      "review_mode": "ai_preannotation_plus_author_batch_signoff",
+      "run_id": "RUN-98dbfa23609c",
+      "schema_version": "phase-a.1",
+      "status": "approved",
+      "trigger_id": "TRG-T0-08"
+    }
+  ],
+  "viewpoint_count": 15
+}

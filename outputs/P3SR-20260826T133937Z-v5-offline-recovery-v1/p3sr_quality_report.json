@@ -1,0 +1,29 @@
+{
+  "source_count": 5,
+  "deterministic_input_candidates": 28,
+  "semantic_accept_count": 27,
+  "semantic_reject_count": 1,
+  "recovered_g1_candidate_count": 27,
+  "unsupported_dimension_removal_count": 0,
+  "revised_fields_null_treated_as_empty_noop_count": 12,
+  "rejection_reason_counts": {
+    "semantic_claim_nature_or_relevance_reject": 1
+  },
+  "candidates_by_source": {
+    "T0-TD-002": 5,
+    "T0-SP-001": 5,
+    "T0-TD-001": 6,
+    "T0-TD-003": 6,
+    "T0-TD-005": 5
+  },
+  "candidates_by_evidence_nature": {
+    "test_result": 3,
+    "goal": 13,
+    "resource_input": 3,
+    "test_event": 6,
+    "constraint": 1,
+    "governance_event": 1
+  },
+  "high_risk_count": 9,
+  "author_actual_review_count": 0
+}

@@ -1,0 +1,60 @@
+prompt_id: same_model_separate_call_semantic_screening_p3s
+version: "1.0"
+purpose: "P3S isolated second-call semantic screen; never replaces G1"
+allowed_input_fields:
+  - candidate_index
+  - source_locator
+  - excerpt_original
+  - normalized_claim
+  - excerpt_zh
+  - evidence_nature
+  - coding_dimensions
+  - topics
+  - possible_corroboration_group
+output_schema:
+  exact_fields:
+    - candidate_index
+    - status
+    - reason
+    - claim_supported
+    - nature_supported
+    - dimension_reviews
+    - revised_fields
+  status_values:
+    - accept
+    - revise
+    - reject
+  dimension_review_fields:
+    - dimension
+    - supported
+    - supporting_span
+    - reason
+  revised_fields_allowed:
+    - normalized_claim
+    - excerpt_zh
+    - evidence_nature
+    - coding_dimensions
+    - topics
+coding_dimensions:
+  integration_level: "单工具、单任务、单平台、跨平台、跨任务或体系级集成；泛称协同不能自动证明更高集成层级。"
+  application_maturity: "概念战略、研发、试验、试点、采购部署或持续运用；计划不能作为已完成部署。"
+  human_machine_authority: "辅助决策、人在回路中、受监督自主或更高程度自主；普通系统协同不自动等于该维度，培训和文档要求不自动等于权限分配。"
+  engineering_resource_conditions: "数据、算力、模型、接口、供应链、预算、人才和保障。"
+  trust_governance_constraints: "安全、可靠性、测试评价、授权边界、责任与伦理。"
+  organizational_system_fit: "指挥流程、任务编组、跨平台协同、人员负荷和组织变革。"
+evidence_nature:
+  goal: "目标、愿景或计划方向"
+  resource_input: "资源或投入条件"
+  test_event: "测试或演习发生、参与主体或配置"
+  test_result: "测试中观察到的功能、性能或结果"
+  deployment_event: "部署、实装、现场运用或正式采用已发生"
+  governance_event: "已经发生的政策发布、机构职责确立、治理工具发布、标准指南采用或组织机制建立；不等于技术能力已经部署"
+  constraint: "限制、风险、障碍、依赖或边界"
+  evaluation: "评价、审查、验证或评估结论"
+rules:
+  - "只判断摘录直接支持的命题、性质、维度、原子性、重复性和研究相关性。"
+  - "不得看到第一轮模型理由、数量门槛或预期结论。"
+  - "不得修改excerpt_original或source_locator。"
+  - "若status为revise，只能在revised_fields中修改允许字段。"
+  - "演习发生不自动等于test_result；试验不自动等于deployment_event。"
+  - "同模型隔离筛选不能替代作者G1审核。"

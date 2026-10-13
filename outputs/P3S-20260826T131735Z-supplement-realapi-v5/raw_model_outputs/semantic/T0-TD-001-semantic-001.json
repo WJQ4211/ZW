@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-e8f7df7a-33f5-42e3-acb9-e5994d739c7a",
+  "object": "chat.completion",
+  "created": 1787750290,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n  {\n    \"candidate_index\": 0,\n    \"status\": \"accept\",\n    \"reason\": \"The excerpt directly states the program's goal to develop and demonstrate autonomy technologies for UGVs in off-road terrain. This is a clear goal statement relevant to U.S. military AI capability building. The coding dimensions are appropriate: application_maturity (goal for development/demonstration) and human_machine_authority (autonomy technologies).\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": {\n      \"application_maturity\": \"supported - explicitly a goal for developing and demonstrating autonomy technologies\",\n      \"human_machine_authority\": \"supported - explicitly about autonomy technologies for UGVs\"\n    },\n    \"revised_fields\": null\n  },\n  {\n    \"candidate_index\": 1,\n    \"status\": \"accept\",\n    \"reason\": \"The excerpt is a direct quote from the program manager stating the goal to advance integration and fielding of autonomy for robotic combat vehicles into specific military branches. This is a goal statement relevant to the research question. The coding dimensions are appropriate: application_maturity (goal for integration/fielding) and organizational_system_fit (integration into Army, Marine Corps, Special Forces).\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": {\n      \"application_maturity\": \"supported - explicitly a goal for integration and fielding\",\n      \"organizational_system_fit\": \"supported - explicitly mentions integration into specific military communities\"\n    },\n    \"revised_fields\": null\n  },\n  {\n    \"candidate_index\": 2,\n    \"status\": \"accept\",\n    \"reason\": \"The excerpt provides specific factual information about vehicle deliveries and planned construction, which constitutes a resource input. The coding dimension engineering_resource_conditions is appropriate as it relates to hardware resources. The claim is directly supported by the excerpt.\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": {\n      \"engineering_resource_conditions\": \"supported - describes hardware resource availability and delivery\"\n    },\n    \"revised_fields\": null\n  },\n  {\n    \"candidate_index\": 3,\n    \"status\": \"accept\",\n    \"reason\": \"The excerpt describes the data collection capability of the sensor system, which is a resource input for AI/ML development. The coding dimension engineering_resource_conditions is appropriate as it relates to data resources. The claim is directly supported.\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": {\n      \"engineering_resource_conditions\": \"supported - describes data collection capability as a resource\"\n    },\n    \"revised_fields\": null\n  },\n  {\n    \"candidate_index\": 4,\n    \"status\": \"accept\",\n    \"reason\": \"The excerpt describes additional data collection efforts to support software development, which is a resource input. The coding dimension engineering_resource_conditions is appropriate. The claim is directly supported by the excerpt.\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": {\n      \"engineering_resource_conditions\": \"supported - describes data resources collected for software development\"\n    },\n    \"revised_fields\": null\n  },\n  {\n    \"candidate_index\": 5,\n    \"status\": \"accept\",\n    \"reason\": \"The excerpt states future program activities including continuation into Phase 2 with a more representative vehicle. This is a goal/plan statement. The coding dimension application_maturity is appropriate as it relates to program development stages. The claim is directly supported.\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": {\n      \"application_maturity\": \"supported - describes planned future program activities\"\n    },\n    \"revised_fields\": null\n  }\n]\n```"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2062,
+    "total_tokens": 2885,
+    "completion_tokens": 823,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

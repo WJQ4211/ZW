@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-ebb4249a-63fa-42ce-8018-e17eab1d25b0",
+  "object": "chat.completion",
+  "created": 1787712689,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n  {\n    \"candidate_index\": 0,\n    \"status\": \"pass\",\n    \"reason\": \"The claim accurately restates the excerpt's assertion about the challenges of achieving data quality without an organized approach based on tested criteria. The evidence nature 'evaluation' is supported as the excerpt presents an assessment of a condition. The declared dimension is correctly identified.\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": [\n      {\n        \"dimension\": \"engineering_resource_conditions\",\n        \"supported\": true,\n        \"supporting_span\": \"Absent an organized approach based on tested criteria, Components will face significant challenges developing the level of data quality required to address analytics and artificial intelligence requirements.\",\n        \"reason\": \"The excerpt directly addresses data quality as a resource condition required for AI, and the claim's focus on this condition aligns with the dimension definition.\"\n      }\n    ]\n  }\n]\n```"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 667,
+    "total_tokens": 867,
+    "completion_tokens": 200,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

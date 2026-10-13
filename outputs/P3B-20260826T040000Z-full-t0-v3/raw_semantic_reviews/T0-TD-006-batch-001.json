@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-91a2d7ea-339b-4c75-a0a4-3cb4ad16e4f2",
+  "object": "chat.completion",
+  "created": 1787712729,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n  {\n    \"candidate_index\": 0,\n    \"status\": \"pass\",\n    \"reason\": \"The claim accurately restates the definition of onboard AI provided in the excerpt. The evidence nature 'goal' is supported as the excerpt describes the challenge/goal of running AI directly on a device. The dimension reviews confirm support for both declared dimensions.\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": [\n      {\n        \"dimension\": \"integration_level\",\n        \"supported\": true,\n        \"supporting_span\": \"running AI directly on a device or system without additional backend compute support\",\n        \"reason\": \"The excerpt describes a single-device/system deployment, which aligns with the 'single tool/task/platform' level of integration.\"\n      },\n      {\n        \"dimension\": \"engineering_resource_conditions\",\n        \"supported\": true,\n        \"supporting_span\": \"without additional backend compute support\",\n        \"reason\": \"The excerpt explicitly mentions the absence of backend compute, which is a resource condition for the AI system.\"\n      }\n    ]\n  },\n  {\n    \"candidate_index\": 1,\n    \"status\": \"pass\",\n    \"reason\": \"The claim directly states that processing speed is the primary constraint, which is explicitly mentioned in the excerpt. The evidence nature 'constraint' is supported. The dimension review confirms support for the declared dimension.\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": [\n      {\n        \"dimension\": \"engineering_resource_conditions\",\n        \"supported\": true,\n        \"supporting_span\": \"the primary factor is processing speed\",\n        \"reason\": \"Processing speed is a computational resource constraint, directly relevant to engineering resource conditions.\"\n      }\n    ]\n  },\n  {\n    \"candidate_index\": 2,\n    \"status\": \"pass\",\n    \"reason\": \"The claim accurately states that onboard AI systems need substantial working memory, which is directly mentioned in the excerpt. The evidence nature 'constraint' is supported. The dimension review confirms support for the declared dimension.\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": [\n      {\n        \"dimension\": \"engineering_resource_conditions\",\n        \"supported\": true,\n        \"supporting_span\": \"need substantial working memory\",\n        \"reason\": \"Working memory is a hardware resource requirement, directly relevant to engineering resource conditions.\"\n      }\n    ]\n  },\n  {\n    \"candidate_index\": 3,\n    \"status\": \"pass\",\n    \"reason\": \"The claim accurately states that constraints are influenced by size, weight, and power limitations, which is directly mentioned in the excerpt. The evidence nature 'constraint' is supported. The dimension review confirms support for the declared dimension.\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": [\n      {\n        \"dimension\": \"engineering_resource_conditions\",\n        \"supported\": true,\n        \"supporting_span\": \"influenced by the size, weight, and power limitations of many systems\",\n        \"reason\": \"Size, weight, and power are physical resource constraints, directly relevant to engineering resource conditions.\"\n      }\n    ]\n  },\n  {\n    \"candidate_index\": 4,\n    \"status\": \"pass\",\n    \"reason\": \"The claim accurately states that onboard AI will be inferior to state-of-the-art models in many cases, which is directly mentioned in the excerpt. The evidence nature 'constraint' is supported. The dimension reviews confirm support for both declared dimensions.\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": [\n      {\n        \"dimension\": \"application_maturity\",\n        \"supported\": true,\n        \"supporting_span\": \"inferior to the state-of-the-art models that grab headlines or achieve high-level performance on benchmarks\",\n        \"reason\": \"The comparison to state-of-the-art models implies a maturity gap, indicating that onboard AI is at a less mature stage of application.\"\n      },\n      {\n        \"dimension\": \"engineering_resource_conditions\",\n        \"supported\": true,\n        \"supporting_span\": \"inferior to the state-of-the-art models\",\n        \"reason\": \"The inferiority is implied to be due to resource constraints, which is a key aspect of engineering resource conditions.\"\n      }\n    ]\n  }\n]\n```"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1311,
+    "total_tokens": 2251,
+    "completion_tokens": 940,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

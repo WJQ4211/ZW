@@ -1,0 +1,4 @@
+﻿disagreement_id,type,decision_impact,resolution_action,resolvable_now,state
+DISAG-T1R-01,mechanism,high,conditional_retain,False,candidate_after_P16R
+DISAG-T1R-02,risk_weight,high,monitor,False,candidate_after_P16R
+DISAG-T1R-03,scope,medium,scope_split,True,candidate_after_P16R

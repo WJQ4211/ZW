@@ -1,0 +1,13 @@
+{
+  "g1_t1_and_p13_valid": true,
+  "old_manifest_snapshot": {
+    "formal_t1_evidence_count": 40,
+    "t1_snapshot_logical_item_count": 125,
+    "updated_viewpoint_count": 6
+  },
+  "old_run_hash": "3ddd919a94803de518fdbe7eb6f85b2318408a933c18cf0b87f6f7c4fb87de42",
+  "p14_impact_edges_usable_as_review_input": true,
+  "p15_viewpoint_content_status": "deterministic_template_draft",
+  "p16_and_g4q_status": "not_eligible_for_formal_signoff_due_to_invalid_evidence_reference_and_template_viewpoints",
+  "source_run_id": "G1-T1-P13-P16-99A723BFBC6D273A-formal-v1"
+}

@@ -1,0 +1,76 @@
+[
+  {
+    "after": {
+      "judgment": "新增采购要求把操作员负荷评估置于更宽授权之前，模块化辅助仍是当前基线，但体系化扩展存在条件性迹象。",
+      "stance": "conditional",
+      "uncertainties[0]": "T1 procurement material identifies a workload gate, but the result of the evaluation is not yet public"
+    },
+    "before": {
+      "judgment": "治理和授权要求使人工监督下的模块化辅助更符合当前体系运用条件。",
+      "stance": "support",
+      "uncertainties[0]": "synthetic procurement information is not yet available at T0"
+    },
+    "change_reason": "T1 合成采购材料命中操作员负荷与授权监测指标，改变了对扩展条件的表述，但没有证明授权已经扩大。",
+    "changed_fields": [
+      "stance",
+      "judgment",
+      "uncertainties[0]"
+    ],
+    "impact_classification": "system_candidate",
+    "new_version": 2,
+    "old_version": 1,
+    "status_transition": "admitted->admitted",
+    "trigger_evidence": [
+      "EV-T1-002:1"
+    ],
+    "trigger_relations": [
+      {
+        "changed_fields": [
+          "stance",
+          "judgment",
+          "uncertainties[0]"
+        ],
+        "evidence_ref": "EV-T1-002:1",
+        "relation": "limit"
+      }
+    ],
+    "viewpoint_id": "VP-OPS-B"
+  },
+  {
+    "after": {
+      "judgment": "新增试验使受约束自治的可行性更有支撑，但授权和边缘情形仍需继续验证。",
+      "key_assumptions[0]": "bounded autonomy can preserve operator handoff under edge cases and the new joint task result is repeatable",
+      "stance": "conditional"
+    },
+    "before": {
+      "judgment": "受约束自治已有技术试验与名义条件测试支撑，但边界条件仍限制外推。",
+      "key_assumptions[0]": "bounded autonomy can preserve operator handoff under edge cases",
+      "stance": "support"
+    },
+    "change_reason": "T1 合成试验命中受约束自治监测指标，补充了联合任务与人机交接信号，但尚未消除边缘情形和授权不确定性。",
+    "changed_fields": [
+      "stance",
+      "judgment",
+      "key_assumptions[0]"
+    ],
+    "impact_classification": "system_candidate",
+    "new_version": 2,
+    "old_version": 1,
+    "status_transition": "admitted->admitted",
+    "trigger_evidence": [
+      "EV-T1-001:1"
+    ],
+    "trigger_relations": [
+      {
+        "changed_fields": [
+          "stance",
+          "judgment",
+          "key_assumptions[0]"
+        ],
+        "evidence_ref": "EV-T1-001:1",
+        "relation": "support"
+      }
+    ],
+    "viewpoint_id": "VP-TECH-A"
+  }
+]

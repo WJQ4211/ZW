@@ -1,0 +1,84 @@
+case_id: us_military_ai_deployment
+case_name: "U.S. military artificial intelligence capability deployment forms"
+synthetic: false
+question: "以公开、非密材料为依据，截至2024年12月31日，美军军用人工智能能力建设在2025—2027年更可能呈现何种主导部署形态？不同判断分别依赖哪些关键条件；2025年1月1日至2026年6月30日出现的新证据，是否触发对初始判断的局部修订？"
+analysis_unit: "军用人工智能能力的部署与组织形态"
+decision_dimension: "military_ai_capability_deployment_form"
+time_horizon: "2025-01-01 to 2027-12-31"
+cutoffs:
+  t0: "2024-12-31T23:59:59+00:00"
+  t1: "2026-06-30T23:59:59+00:00"
+evidence_windows:
+  t0:
+    start: "2022-01-01"
+    end: "2024-12-31"
+    sealed_path: "data/raw/t0"
+  t1:
+    start: "2025-01-01"
+    end: "2026-06-30"
+    sealed_path: "data/raw/t1_sealed"
+coding_dimensions:
+  integration_level:
+    - single_tool
+    - single_task
+    - single_platform
+    - cross_platform
+    - cross_task
+    - system_level
+  application_maturity:
+    - concept_strategy
+    - research_development
+    - test
+    - pilot
+    - procurement_deployment
+    - sustained_use
+  human_machine_authority:
+    - decision_support
+    - human_in_the_loop
+    - supervised_autonomy
+    - higher_degree_autonomy
+  engineering_resource_conditions:
+    - data
+    - compute
+    - model
+    - interface
+    - supply_chain
+    - budget
+    - workforce
+    - sustainment
+  trust_governance_constraints:
+    - safety
+    - reliability
+    - test_evaluation
+    - authorization_boundary
+    - responsibility
+    - ethics
+  organizational_system_fit:
+    - command_process
+    - mission_organization
+    - cross_platform_coordination
+    - personnel_load
+    - organizational_change
+source_grades:
+  A:
+    definition: "一手官方材料"
+    examples: [strategy, budget, program_announcement, procurement, official_test, deployment]
+    use: "可直接支持事实主张，但仍需核对适用范围"
+  B:
+    definition: "独立官方监督或高质量研究"
+    examples: [audit, legislative_study, government_research, peer_reviewed_paper]
+    use: "可支持、限制或反驳官方主张"
+  C:
+    definition: "可靠专业媒体或机构分析"
+    examples: [professional_reporting, research_brief]
+    use: "主要用于线索发现，关键结论回溯A/B来源"
+  D:
+    definition: "评论、自媒体、来源不明转载"
+    examples: [commentary, social_media, aggregator]
+    use: "不进入正式证据快照，只保留搜索线索"
+source_manifest_paths:
+  t0: data/curated/source_manifest_t0.csv
+  t1: data/curated/source_manifest_t1.csv
+search_log_paths:
+  t0: data/curated/search_log_t0.csv
+  t1: data/curated/search_log_t1.csv

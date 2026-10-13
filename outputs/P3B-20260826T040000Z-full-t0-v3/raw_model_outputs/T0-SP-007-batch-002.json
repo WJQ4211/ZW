@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-78917392-8963-4aad-9cf8-f3178f1f08df",
+  "object": "chat.completion",
+  "created": 1787712625,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n  {\n    \"source_id\": \"T0-SP-007\",\n    \"source_locator\": \"pdf_page_24\",\n    \"excerpt_original\": \"LOE 2.1.1: Develop a TEW framework to articulate how test and CDAO in coordination evaluation (T& E) should be intertwined across an Al capability's with OUSD(R&E) and lifecycle and pathways for continuous testing and standards for DOT&E documentation and reporting.\",\n    \"excerpt_zh\": \"LOE 2.1.1：制定TEW框架，阐明测试与评估（T&E）应如何贯穿AI能力的生命周期，并建立持续测试的路径和文档与报告的标准化。\",\n    \"normalized_claim\": \"美国国防部计划制定一个测试与评估框架，将测试与评估贯穿AI能力生命周期，并建立持续测试的路径和文档报告标准。\",\n    \"coding_dimensions\": [\"trust_governance_constraints\"],\n    \"evidence_nature\": \"goal\",\n    \"topics\": [\"测试评估框架\", \"AI生命周期\", \"持续测试\"]\n  },\n  {\n    \"source_id\": \"T0-SP-007\",\n    \"source_locator\": \"pdf_page_24\",\n    \"excerpt_original\": \"LOE 2.1.2: Develop or acquire Al-related T&E tools to be used as a CDAO in coordination resource for Al developers and testers. This AI T &E Toolkit shall with OUSD(R&E) and draw upon best practices and innovative research from industry and DOT&E the academic community, as well as commercially available technology where appropriate.\",\n    \"excerpt_zh\": \"LOE 2.1.2：开发或采购AI相关的测试与评估工具，作为AI开发者和测试者的资源。该AI测试与评估工具包应借鉴工业界和学术界的创新研究及商业可用技术。\",\n    \"normalized_claim\": \"美国国防部计划开发或采购AI测试与评估工具包，供AI开发者和测试者使用，并借鉴工业界和学术界的创新研究。\",\n    \"coding_dimensions\": [\"engineering_resource_conditions\", \"trust_governance_constraints\"],\n    \"evidence_nature\": \"goal\",\n    \"topics\": [\"测试评估工具\", \"工具包开发\", \"资源建设\"]\n  },\n  {\n    \"source_id\": \"T0-SP-007\",\n    \"source_locator\": \"pdf_page_25\",\n    \"excerpt_original\": \"LOE 2.1.3: Create a test range environment and central repository of CDAO in coordination tools for T&E of Al, linking lo existing and emerging equivalent with the DoD Test environments, that enables easy and continuous Resource Management testing for DoD testers.\",\n    \"excerpt_zh\": \"LOE 2.1.3：创建一个测试靶场环境和AI测试与评估工具中央存储库，与国防部现有和新兴的等效环境连接，使国防部测试人员能够轻松进行持续测试。\",\n    \"normalized_claim\": \"美国国防部计划创建一个AI测试与评估的测试靶场环境和中央工具存储库，并与现有和新兴的国防部环境连接。\",\n    \"coding_dimensions\": [\"engineering_resource_conditions\", \"trust_governance_constraints\"],\n    \"evidence_nature\": \"goal\",\n    \"topics\": [\"测试靶场\", \"工具存储库\", \"测试环境\"]\n  },\n  {\n    \"source_id\": \"T0-SP-007\",\n    \"source_locator\": \"pdf_page_26\",\n    \"excerpt_original\": \"LOE 2.2.1: Require Al vendors and developers to plan for, resource, DoD Component RAJ and provide appropriate training and documentation, such as user Leads manuals, to be used prior to capability fielding in order to e ns ure warfighters are equipped with a n appropriate understanding of the capability' s function, risks, performance expectations, and potential harms.\",\n    \"excerpt_zh\": \"LOE 2.2.1：要求AI供应商和开发者在能力部署前规划、提供适当的培训和文档（如用户手册），以确保作战人员对能力的功能、风险、性能预期和潜在危害有适当的理解。\",\n    \"normalized_claim\": \"美国国防部计划要求AI供应商和开发者在能力部署前提供适当的培训和文档，以确保作战人员理解能力的功能、风险、性能预期和潜在危害。\",\n    \"coding_dimensions\": [\"trust_governance_constraints\"],\n    \"evidence_nature\": \"goal\",\n    \"topics\": [\"培训要求\", \"文档要求\", \"部署前准备\"]\n  },\n  {\n    \"source_id\": \"T0-SP-007\",\n    \"source_locator\": \"pdf_page_27\",\n    \"excerpt_original\": \"LOE 3.1.1: Develop an Acquisitio n Toolkit that draws upon best CDAO in coordination practices and innovative research from the DoD enterprise, industry, with OUSD(A&S) and and the academic community, as well as commercially avai lable OUSD(R&E) technology where appropriate.\",\n    \"excerpt_zh\": \"LOE 3.1.1：制定一个采办工具包，借鉴国防部企业、工业界和学术界的创新研究以及商业可用技术。\",\n    \"normalized_claim\": \"美国国防部计划制定一个采办工具包，借鉴国防部企业、工业界和学术界的创新研究及商业可用技术。\",\n    \"coding_dimensions\": [\"engineering_resource_conditions\"],\n    \"evidence_nature\": \"goal\",\n    \"topics\": [\"采办工具包\", \"采办流程\", \"资源建设\"]\n  }\n]\n```"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 12177,
+    "total_tokens": 13380,
+    "completion_tokens": 1203,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

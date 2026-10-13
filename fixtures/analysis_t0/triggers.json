@@ -1,0 +1,4 @@
+[
+  {"trigger_id":"TRG-001","indicator_id":"IND-001","predicate_type":"event_match","predicate":{"event_terms":["bounded autonomy","joint task integration"]},"required_source_grade":["A","B"],"action":"review_viewpoints","affected_viewpoint_ids":["VP-TECH-A","VP-TECH-B"],"human_approval_required":true,"status":"draft"},
+  {"trigger_id":"TRG-002","indicator_id":"IND-002","predicate_type":"event_match","predicate":{"event_terms":["operator workload","authorization review"]},"required_source_grade":["A","B"],"action":"review_viewpoints","affected_viewpoint_ids":["VP-OPS-A","VP-OPS-B"],"human_approval_required":true,"status":"draft"}
+]

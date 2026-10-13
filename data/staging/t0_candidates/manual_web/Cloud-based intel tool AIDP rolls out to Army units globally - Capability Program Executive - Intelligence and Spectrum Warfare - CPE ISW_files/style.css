@@ -1,0 +1,623 @@
+/*remove default 11px padding on each side of list items*/
+
+.pa-vertical-menu .et-menu > li {
+	padding-left: 0px;
+	padding-right: 0px;
+	}
+	
+	
+	/*make the menu items fullwidth and add space between them*/
+	
+	.pa-vertical-menu .et_pb_menu__menu nav ul li {
+	display: block;
+	width: 100%;
+	margin: 2px 0;
+	}
+	
+	
+	/*style the menu items*/
+	
+	.pa-vertical-menu .et_pb_menu__menu nav ul li a {
+	padding: 10px!important;
+	background: #39b54a;
+	border-radius: 0px;
+	}
+	
+	
+	/*style the menu items on hover*/
+	
+	.pa-vertical-menu .et_pb_menu__menu nav ul li a:hover {
+	opacity: 1!important;
+	color: #ffffff;
+	background: #2d933d;
+	border-color: #00d263;
+	}
+	
+	
+	/*style the active menu item*/
+	
+	.pa-vertical-menu .et_pb_menu__menu nav ul li.current-menu-item a {
+	opacity: 1!important;
+	color: #ffffff;
+	background: #39b54a;
+	border-color: #00d263;
+	}
+	
+	
+	/*style the arrow icon if there are submenus*/
+	
+	.pa-vertical-menu .et_pb_menu__menu .menu-item-has-children>a:first-child:after {
+	content: "5" !important;
+	/*change arrow icon for submenu*/
+	padding: 8px;
+	font-size: 24px;
+	}
+	
+	
+	/*style the arrow icon if there are submenus to submenus*/
+	
+	.pa-vertical-menu .et_pb_menu__menu .menu-item-has-children .menu-item-has-children>a:first-child:after {
+	padding: 4px !important;
+	right: 0px !important;
+	}
+	
+	
+	/*make the submenu align directly to the right of the menu item instead of below*/
+	
+	.pa-vertical-menu .et_pb_menu__menu nav ul li ul {
+	top: 0!important;
+	}
+	
+	
+	/*align submenu to the right of menu link*/
+	
+	.pa-vertical-menu .et_pb_menu__menu nav li ul {
+	left: 100%!important;
+	}
+	
+	
+	/*add an icon to the left of each menu item link*/
+	
+	/*
+	.pa-vertical-menu ul li a:before {
+	font-family: 'ETMODULES';
+	content: '\24';
+	text-align: center;
+	vertical-align: middle;
+	margin-right: 8px;
+	margin-left: 0px;
+	color: #00d263;
+	font-size: 1.3em;
+	transition: all .75s ease;
+	}
+	*/
+	
+	/*style the menu items icon*/
+	
+	.pa-vertical-menu ul li a:hover:before {
+	margin-left: 7px;
+	color: white!important;
+	transition: all .75s ease;
+	}
+	
+	
+	/*style the active menu item icon*/
+	
+	.pa-vertical-menu ul li.current-menu-item a:before {
+	margin-left: 7px;
+	color: #ffffff!important;
+	}
+	
+	@media (max-width: 980px) {
+	/*open the mobile menu up and use on all devices*/
+	.et-db #et-boc .et-l .pa-vertical-menu .et_pb_menu__menu {
+	display: flex;
+	}
+	/*hide the hamburger icon*/
+	.et-db #et-boc .et-l .pa-vertical-menu .et_mobile_nav_menu {
+	display: none;
+	}
+	}
+	
+	/*style the contact form success message text*/
+	.et-pb-contact-message p {
+	  font-size: 20px;
+	  line-height: 1.7em;
+	  color: #ffffff;
+	  text-align: center;
+	  font-weight: bold;
+	  padding: 5px!important;
+	  border: 2px solid #000000;
+	  border-radius: 5px;
+	  background: #000000;
+	}
+	
+	
+	
+	/*style the contact form Error message text*/
+	.et-pb-contact-message li {
+	  font-size: 15px;
+	  line-height: 1 em;
+	  color: #ffffff;
+	  text-align: left;
+	  font-weight: bold;
+	  padding: 5px!important;
+	  border: 0px solid #000000;
+	  border-radius: 5px;
+	  background: #000000;
+	}
+	
+	
+	/* Style the Divi Form Error Message */
+	.et-pb-contact-message li {
+	color:red;
+	font-weight:700;
+	font-size:17px;
+	}
+	
+	
+	/* Places check mark on bullet list on careers page */
+	
+	.pa-bullet-list-1 ul {
+	list-style-type: none!important;
+	}
+	.pa-bullet-list-1 ul li:before {
+	content: '\e052'!important;
+	color: #a6ce39;
+	font-family: 'ETMODULES'!important;
+	}
+	
+	.et_pb_menu .et_pb_menu__search-input {
+	color:#A6CE39;
+	}
+	
+	/* Places padding around ordered and bullet lists */
+	.entry-content ol, .entry-content ul {
+		padding: 5px 0px 20px 50px;
+		list-style-position: outside;
+		line-height: 1.2;
+	
+	}
+	 
+	.entry-content ol li, .entry-content ul li {
+		margin-bottom: 10px;
+	}
+	
+	
+	
+	/* Places a second line on the toggle title on all PM pages */
+	
+	/* PM EW&C */
+	.pa-toggle-second-line-ewc-pm .et_pb_toggle_title:after {
+	content: "PROJECT MANAGER, PM EW&C";
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 1.7em;
+	}
+	.pa-toggle-second-line-ewc-dpm .et_pb_toggle_title:after {
+	content: "DEPUTY PROJECT MANAGER, PM EW&C";
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 1.7em;
+	}
+	/* PM TS */
+	.pa-toggle-second-line-ts-pm .et_pb_toggle_title:after {
+	content: "PROJECT MANAGER, PM TS";
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 1.7em;
+	}
+	.pa-toggle-second-line-ts-dpm .et_pb_toggle_title:after {
+	content: "DEPUTY PROJECT MANAGER, PM TS";
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 1.7em;
+	}
+	
+	/* PM ASE */
+	.pa-toggle-second-line-ase-pm .et_pb_toggle_title:after {
+	content: "PROJECT MANAGER, PM ASE";
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 1.7em;
+	}
+	.pa-toggle-second-line-ase-dpm .et_pb_toggle_title:after {
+	content: "DEPUTY PROJECT MANAGER, PM ASE";
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 1.7em;
+	}
+	
+	/* PM ISA */
+	.pa-toggle-second-line-isa-pm .et_pb_toggle_title:after {
+	content: "PROJECT MANAGER, PM IS&A";
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 1.7em;
+	}
+	.pa-toggle-second-line-isa-dpm .et_pb_toggle_title:after {
+	content: "DEPUTY PROJECT MANAGER, PM IS&A";
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 1.7em;
+	}
+	/* PM SAI */
+	.pa-toggle-second-line-sai-pm .et_pb_toggle_title:after {
+	content: "PROJECT MANAGER, PM SAI";
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 1.7em;
+	}
+	.pa-toggle-second-line-sai-dpm .et_pb_toggle_title:after {
+	content: "DEPUTY PROJECT MANAGER, PM SAI";
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 1.7em;
+	}
+	
+	
+	
+	/* PdM TENCAP */
+	.pa-toggle-second-line-tencap-pm .et_pb_toggle_title:after {
+	content: "PRODUCT MANAGER, PdM TENCAP";
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 1.7em;
+	}
+	.pa-toggle-second-line-tencap-dpm .et_pb_toggle_title:after {
+	content: "DEPUTY PRODUCT MANAGER, PdM TENCAP";
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 1.7em;
+	}
+	
+	/* PM PNT */
+	.pa-toggle-second-line-pnt-pm .et_pb_toggle_title:after {
+	content: "PROJECT MANAGER, PM PNT";
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 1.7em;
+	}
+	.pa-toggle-second-line-pnt-dpm .et_pb_toggle_title:after {
+	content: "DEPUTY PROJECT MANAGER, PM PNT";
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 1.7em;
+	}
+	
+	/* PM C&S */
+	.pa-toggle-second-line-cs-pm .et_pb_toggle_title:after {
+	content: "PROJECT MANAGER, PM C&S";
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 1.7em;
+	}
+	.pa-toggle-second-line-cs-dpm .et_pb_toggle_title:after {
+	content: "DEPUTY PROJECT MANAGER, PM C&S";
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 1.7em;
+	}
+	
+	
+	
+	/* PEO Integration Directorate*/
+	.pa-toggle-second-line-id-pm .et_pb_toggle_title:after {
+	content: "DIRECTOR, PEO Intergration Directorate";
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 1.7em;
+	}
+	.pa-toggle-second-line-id-dpm .et_pb_toggle_title:after {
+	content: "DEPUTY PROGRAM MANAGER, PEO Intergration Directorate";
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 1.7em;
+	}
+	
+	/* PEO DCO*/
+	.pa-toggle-second-line-dco-pm .et_pb_toggle_title:after {
+	content: "PROJECT MANAGER, PM DCO";
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 1.7em;
+	}
+	.pa-toggle-second-line-dco-dpm .et_pb_toggle_title:after {
+	content: "DEPUTY PROJECT MANAGER, PM DCO";
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 1.7em;
+	}
+	
+	
+	
+	/* KS STYLES */
+	#page-title h2.et_pb_slide_title {
+	background:rgba(0,0,0,.25);
+	border: 2px solid #ffffff;
+	padding: 25px;
+	}
+	
+	.et_pb_text_overlay_wrapper {
+		border: 2px solid #ffffff;
+	}
+	
+	.midflex {
+	margin-top: auto;
+	margin-bottom: auto;
+	}
+	
+	.df-equal-height .df-post-inner-wrap, .df-equal-height .df-post-outer-wrap {
+		height: auto;
+		min-height: 246px;
+	}
+	
+	.df-pagination.pagination.clearfix {
+		padding-top: 20px;
+	}
+	
+	@media only screen and (min-width: 1350px) {
+	#blogcontent .et_pb_section {
+		padding: 0px 0 !important;
+	}
+	}
+	
+	.nav li li {
+		line-height: 150%;
+		padding-bottom: 5px;
+	}
+	
+	/**** BUTTONS ON SAME LINE START ****/
+	.pa-inline-buttons .et_pb_button_module_wrapper {
+		display: inline-block;
+	}
+	.pa-inline-buttons {
+		text-align: center !important;
+	}
+	/**** BUTTONS ON SAME LINE END ****/
+	
+	div#archives-2 {margin-bottom:0px;}
+	
+	/**** POST NAV START ****/
+	.et_pb_posts_nav .nav-previous { float: right; } 
+	.et_pb_posts_nav .nav-next { float: left; } 
+	.et_pb_posts_nav .meta-nav { display: none; } 
+	.et_pb_posts_nav .nav-next a:before { content: '← '; } 
+	.et_pb_posts_nav .nav-previous a:after { content: ' →'; }
+	/**** POST NAV END ****/
+	
+	/**** FULL WIDTH CONTENT START ****/
+	@media only screen and (min-width: 1750px) {
+	#blogcontent .et_pb_row {
+	max-width: 100% !important;
+		width: 100% !important;
+	}
+	}
+	/**** FULL WIDTH CONTENT END ****/
+	
+	/*** 3-COLUMN BLOG START ***/
+	@media (min-width: 980px) {
+	.cu-blog .et_pb_salvattore_content[data-columns]::before {
+	content: '3 .column.size-1of3' !important;
+	}
+	@media only screen and ( min-width: 981px ) {
+	.cu-blog .column.size-1of3 {
+		width: 32%!important;
+		margin-right: 1%;
+	}
+	}}
+	/*** 3-COLUMN BLOG END ***/
+	
+	@media screen and (min-width: 981px) {
+	.et_pb_module.et_pb_blog_grid_wrapper .more-link {
+	position: absolute;
+	bottom: 20px;
+	margin: auto;
+	}
+	.et_pb_module.et_pb_blog_grid_wrapper .et_pb_post {
+	position: relative;
+	}
+	.et_pb_module.et_pb_blog_grid_wrapper .post-content {
+	padding-bottom: 40px !important;
+	}
+	}
+	
+	.et_pb_post {
+		margin-bottom: 15px;
+	}
+	.et_blog_grid_equal_height article {
+	overflow: hidden;
+	}
+	
+	#powerTip h4 {
+	font-size: 16px;
+	color: #ffffff;
+	text-align:center;
+	}
+	
+	#powerTip p {
+	font-size: 12px;
+	line-height:150%;
+	text-align:center;
+	color: #ffffff;
+	}
+	
+	ul#mobile_menu3 {
+		width: 210px;
+	}
+	
+	
+	
+	
+	/* Button Slider */
+	
+	 .bttnb {
+	 background:#a6ce39;
+	 color:#2e3f54;
+	 padding: 5px 10px;
+	 font-size:16px;
+	 border-radius:3px;
+	 transition-duration:0.8s;
+	 margin:20px;
+	 } 
+	
+	
+	
+	
+	/*remove default 11px padding on each side of list items*/
+	
+	.pa-vertical-menu-fms .et-menu > li {
+	padding-left: 0px;
+	padding-right: 0px;
+	}
+	
+	
+	/*make the menu items fullwidth and add space between them*/
+	
+	.pa-vertical-menu-fms .et_pb_menu__menu nav ul li {
+	display: block;
+	width: 100%;
+	margin: 2px 0;
+	}
+	
+	
+	/*style the menu items*/
+	
+	.pa-vertical-menu-fms .et_pb_menu__menu nav ul li a {
+	padding: 10px!important;
+	background: #2e3f54;
+	border-radius: 0px;
+	}
+	
+	
+	/*style the menu items on hover*/
+	
+	.pa-vertical-menu-fms .et_pb_menu__menu nav ul li a:hover {
+	opacity: 1!important;
+	color: #ffffff;
+	background: #222f3f;
+	border-color: #00d263;
+	}
+	
+	
+	/*style the active menu item*/
+	
+	.pa-vertical-menu-fms .et_pb_menu__menu nav ul li.current-menu-item a {
+	opacity: 1!important;
+	color: #ffffff;
+	background: #39b54a;
+	border-color: #00d263;
+	}
+	
+	
+	/*style the arrow icon if there are submenus*/
+	
+	.pa-vertical-menu-fms .et_pb_menu__menu .menu-item-has-children>a:first-child:after {
+	content: "5" !important;
+	/*change arrow icon for submenu*/
+	padding: 8px;
+	font-size: 24px;
+	}
+	
+	
+	/*style the arrow icon if there are submenus to submenus*/
+	
+	.pa-vertical-menu-fms .et_pb_menu__menu .menu-item-has-children .menu-item-has-children>a:first-child:after {
+	padding: 4px !important;
+	right: 0px !important;
+	}
+	
+	
+	/*make the submenu align directly to the right of the menu item instead of below*/
+	
+	.pa-vertical-menu-fms .et_pb_menu__menu nav ul li ul {
+	top: 0!important;
+	}
+	
+	
+	/*align submenu to the right of menu link*/
+	
+	.pa-vertical-menu-fms .et_pb_menu__menu nav li ul {
+	left: 100%!important;
+	}
+	
+	
+	/*add an icon to the left of each menu item link*/
+	
+	/*
+	.pa-vertical-menu-fms ul li a:before {
+	font-family: 'ETMODULES';
+	content: '\24';
+	text-align: center;
+	vertical-align: middle;
+	margin-right: 8px;
+	margin-left: 0px;
+	color: #00d263;
+	font-size: 1.3em;
+	transition: all .75s ease;
+	}
+	*/
+	
+	/*style the menu items icon*/
+	
+	.pa-vertical-menu-fms ul li a:hover:before {
+	margin-left: 7px;
+	color: white!important;
+	transition: all .75s ease;
+	}
+	
+	
+	/*style the active menu item icon*/
+	
+	.pa-vertical-menu-fms ul li.current-menu-item a:before {
+	margin-left: 7px;
+	color: #ffffff!important;
+	}
+	
+	@media (max-width: 980px) {
+	/*open the mobile menu up and use on all devices*/
+	.et-db #et-boc .et-l .pa-vertical-menu-fms .et_pb_menu__menu {
+	display: flex;
+	}
+	/*hide the hamburger icon*/
+	.et-db #et-boc .et-l .pa-vertical-menu-fms .et_mobile_nav_menu {
+	display: none;
+	}
+}
+
+/*add peoiews pagelist hyperlink style*/
+ul.peoiews-sitemap li {
+    color: #000;
+}
+ul.peoiews-sitemap li a {
+    color: #333;
+}
+ul.peoiews-sitemap li a:hover,
+ul.peoiews-sitemap li a:active,
+ul.peoiews-sitemap li a:focus {
+    color: rgb(12, 75, 247);
+}
+
+	
+	
+	

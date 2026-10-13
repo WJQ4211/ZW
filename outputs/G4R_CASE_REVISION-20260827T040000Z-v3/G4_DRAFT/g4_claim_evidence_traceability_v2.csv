@@ -1,0 +1,5 @@
+﻿claim_id,claim,evidence_ids,viewpoint_refs,disagreement_refs,inference_level,paper_usage
+G4-C01,特定任务已经出现试验验证和有限部署,"[""EV-T0-DB4536B8270ECF58"", ""EV-T0-A8459E6E8776A15D"", ""EV-T0-F0773C8E2ECB5C8D""]","[""VP-T0-OPS-H02:2"", ""VP-T0-TECH-H02:2""]",[],frozen_fact,代表性事实与证据性质
+G4-C02,任务驱动的分散试验、演示和局部部署是当前主要可观察形态,"[""EV-T0-DB4536B8270ECF58"", ""EV-T0-DDA30BF3C0C38B0C"", ""EV-T0-A8459E6E8776A15D"", ""EV-T0-F0773C8E2ECB5C8D""]","[""VP-T0-TECH-H02:2"", ""VP-T0-OPS-H02:2"", ""VP-T0-TRUST-H02:2""]","[""DISAG-T0-01""]",conditional_synthesis,当前条件化综合
+G4-C03,资源和治理约束解释能力形成缓慢与应用扩展不均衡,"[""EV-T0-AD4CCAC18E1BB26C"", ""EV-T0-62B1ECDA7DF87F1A"", ""EV-T0-8E35B508DF5C2E65"", ""EV-T0-A515E3B9391C51B4""]","[""VP-T0-TECH-H03:2"", ""VP-T0-ENG-H03:2"", ""VP-T0-STRAT-H03:1""]","[""DISAG-T0-02""]",conditional_synthesis,约束机制解释
+G4-C04,体系整合具有治理与规划依据，但跨军种实际复用仍是待验证条件,"[""EV-T0-0A73030BBF2649F9"", ""EV-T0-7E37FBD511FC654E"", ""EV-T0-51D65DEC82584BCD"", ""EV-T0-A515E3B9391C51B4""]","[""VP-T0-STRAT-H01:1"", ""VP-T0-TECH-H01:2"", ""VP-T0-OPS-H01:2""]","[""DISAG-T0-01"", ""DISAG-T0-03""]",conditional_synthesis,体系整合备择与转换条件

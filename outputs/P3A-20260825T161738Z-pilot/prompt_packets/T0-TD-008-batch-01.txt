@@ -1,0 +1,39 @@
+PROMPT_ID: evidence_extract
+VERSION: 1.0
+TASK: Extract only auditable evidence candidates from the supplied source text.
+OUTPUT: strict JSON array; each object must contain exactly the eight allowed candidate fields.
+DO NOT output deterministic metadata; the program will inject it after validation.
+BATCH_ID: T0-TD-008-batch-01
+SOURCE_ID: T0-TD-008
+TITLE: IMSC Task Force Completes Maritime Exercise with Unmanned Systems, A.I.
+PUBLISHER: International Maritime Security Construct / U.S. Naval Forces Central Command
+PUBLISHED_AT: 2023-01-09
+SOURCE_GRADE: A
+SOURCE_SEGMENTS:
+--- td008/article/paragraph-01 ---
+MANAMA, Bahrain - The International Maritime Security Construct (IMSC) completed a three-day maritime exercise in the Arabian Gulf, Jan. 9, integrating unmanned systems and artificial intelligence during a naval drill for the second time in six months.
+--- td008/article/paragraph-02 ---
+IMSC’s operational task force, Coalition Task Force (CTF) Sentinel, completed exercise Sentinel Shield with U.S. Navy guided-missile destroyer USS Delbert D. Black (DDG 119) and two Saildrone Explorer unmanned surface vessels from U.S. 5th Fleet
+--- td008/article/paragraph-03 ---
+“We planned this exercise to demonstrate how artificial intelligence and unmanned systems effectively increase CTF Sentinel’s maritime domain awareness to maintain maritime security in Middle Eastern waters,” said Royal Saudi Navy Capt. Alamri Assem, CTF Sentinel’s director of plans.
+--- td008/article/paragraph-04 ---
+During the exercise, unmanned and artificial intelligence systems operated in conjunction with Delbert D. Black and CTF Sentinel’s command center ashore in Bahrain. The systems were able to help locate and identify objects in nearby waters and relay visual depictions to watchstanders.
+--- td008/article/paragraph-05 ---
+“Saildrones transmitted information on contacts of interest and our watch officers coordinated with the destroyer for further monitoring,” said U.S. Navy Capt. Brian Granger, CTF Sentinel’s deputy commander.
+--- td008/article/paragraph-06 ---
+CTF Sentinel previously completed a similar exercise Aug. 23 when Royal Bahrain Naval Force ship RBNS Ahmed Al-Fateh (P20) and U.S. Coast Guard patrol boat USCGC Baranof (WPB 1318) participated with another Saildrone Explorer from U.S. 5th Fleet.
+--- td008/article/paragraph-07 ---
+The late-summer event was the first time IMSC planners specifically designed a Sentinel Shield exercise to integrate unmanned systems.
+--- td008/article/paragraph-08 ---
+IMSC was formed in July 2019 in response to increased threats to freedom of navigation for merchant mariners transiting international waters in the Middle East.
+--- td008/article/paragraph-09 ---
+IMSC’s operational arm, CTF Sentinel, was established four months later to deter state-sponsored malign activity and reassure the merchant shipping industry in the Bab al-Mandeb and Strait of Hormuz.
+--- td008/article/paragraph-10 ---
+IMSC membership currently includes 11 nations: Albania, Bahrain, Estonia, Latvia, Lithuania, Romania, Saudi Arabia, Seychelles, United Arab Emirates, United Kingdom, and the United States.
+RULES:
+- excerpt_original must be verbatim from the named locator after only Unicode/whitespace normalization.
+- One checkable fact or explicit claim per candidate; output fewer candidates when evidence is insufficient.
+- Do not turn strategy goals into deployment_event or test_result.
+- Participation in an exercise is not proof of combat effectiveness.
+- Do not generate hypotheses, viewpoints, or a case conclusion.
+JSON_REPAIR: 只修复JSON语法、缺失的允许字段或字段类型；不得补写事实、改写excerpt_original或新增确定性元数据。修复后仍只能输出严格JSON数组。

@@ -1,0 +1,12 @@
+{
+  "case_id": "us_military_ai_deployment",
+  "changed_rows": 20,
+  "evidence_inserted": 0,
+  "model_api_calls": 0,
+  "p12_outputs_changed": false,
+  "repair_type": "p11_manifest_case_binding_only",
+  "run_id": "G4-P11-P12-20260827T051332Z-v1",
+  "source_content_changed": false,
+  "t1_read": true,
+  "t1_snapshot_frozen": false
+}

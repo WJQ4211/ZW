@@ -1,0 +1,25 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "```json\n[\n  {\n    \"candidate_evidence_id\": \"CE-T1-C06BCFD9C4907B64\",\n    \"status\": \"reject\",\n    \"reason\": \"摘录仅陈述了DASH 2实验的地点、主办方和牵头团队，未涉及组织运用、流程、任务适配或体系制度环境等organizational_system_fit维度的直接支持信息。\",\n    \"claim_supported\": false,\n    \"nature_supported\": true,\n    \"dimension_reviews\": [\n      {\n        \"dimension\": \"organizational_system_fit\",\n        \"supported\": false,\n        \"supporting_span\": \"\",\n        \"reason\": \"摘录仅描述实验活动本身，未提供任何关于组织运用、流程适配或体系制度环境的信息。\"\n      }\n    ],\n    \"revised_fields\": null\n  },\n  {\n    \"candidate_evidence_id\": \"CE-T1-7AB164824EAAD82A\",\n    \"status\": \"accept\",\n    \"reason\": \"摘录直接描述了DASH 2实验中机器在速度和选项生成方面的初步结果，属于测试中明确观察到的功能或性能，直接支持test_result性质。\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": [\n      {\n        \"dimension\": \"application_maturity\",\n        \"supported\": true,\n        \"supporting_span\": \"Initial results showed that machines produced recommendations in less than ten seconds and generated 30 times more options than human-only teams.\",\n        \"reason\": \"摘录明确描述了实验中的性能结果，属于从演示到部署成熟度过程中的测试阶段，直接支持application_maturity维度。\"\n      }\n    ],\n    \"revised_fields\": null\n  },\n  {\n    \"candidate_evidence_id\": \"CE-T1-11BE4D003ECA817F\",\n    \"status\": \"accept\",\n    \"reason\": \"摘录直接描述了DASH 2实验中两家供应商的产出结果，属于测试中明确观察到的功能或性能，直接支持test_result性质。\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": [\n      {\n        \"dimension\": \"application_maturity\",\n        \"supported\": true,\n        \"supporting_span\": \"Two vendors each produced more than 6,000 solutions for roughly 20 problems in just one hour.\",\n        \"reason\": \"摘录明确描述了实验中的性能结果，属于从演示到部署成熟度过程中的测试阶段，直接支持application_maturity维度。\"\n      }\n    ],\n    \"revised_fields\": null\n  },\n  {\n    \"candidate_evidence_id\": \"CE-T1-06554E1EE0D2B6C0\",\n    \"status\": \"accept\",\n    \"reason\": \"摘录直接描述了DASH 2实验中软件准确性的测试结果，属于测试中明确观察到的功能或性能，直接支持test_result性质。\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": [\n      {\n        \"dimension\": \"application_maturity\",\n        \"supported\": true,\n        \"supporting_span\": \"The software’s accuracy was on par with human performance, despite only two weeks of development.\",\n        \"reason\": \"摘录明确描述了实验中的性能结果，属于从演示到部署成熟度过程中的测试阶段，直接支持application_maturity维度。\"\n      }\n    ],\n    \"revised_fields\": null\n  },\n  {\n    \"candidate_evidence_id\": \"CE-T1-BA0073FF99C5719B\",\n    \"status\": \"reject\",\n    \"reason\": \"摘录仅陈述了DASH 2的参与团队构成，未涉及组织运用、流程、任务适配或体系制度环境等organizational_system_fit维度的直接支持信息。\",\n    \"claim_supported\": false,\n    \"nature_supported\": true,\n    \"dimension_reviews\": [\n      {\n        \"dimension\": \"organizational_system_fit\",\n        \"supported\": false,\n        \"supporting_span\": \"\",\n        \"reason\": \"摘录仅描述实验参与团队，未提供任何关于组织运用、流程适配或体系制度环境的信息。\"\n      }\n    ],\n    \"revised_fields\": null\n  }\n]\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1787812170,
+  "id": "chatcmpl-8247a2cb-90f3-49e7-82d4-8892fe23e996",
+  "model": "deepseek-v4-flash-0731",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 926,
+    "prompt_tokens": 2663,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3589
+  }
+}

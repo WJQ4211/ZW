@@ -1,0 +1,11 @@
+{
+  "approved": true,
+  "artifact_hash": "2ffbca33b3cf6ac14a19402cfd164bdf8f2b67a31eecb49c8db3ad2303348493",
+  "artifact_path": "outputs/phase-a-demo-20260825T072402Z-70e52b/report_t1.md",
+  "case_id": "synthetic_military_ai",
+  "created_at": "2026-08-25T07:24:04.808310+00:00",
+  "gate": "G4_T1_REPORT",
+  "notes": "Synthetic fixture: T1 field-level change log and unchanged viewpoint set reviewed.",
+  "reviewer": "synthetic-g4-reviewer",
+  "run_id": "phase-a-demo-20260825T072402Z-70e52b"
+}

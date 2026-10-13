@@ -1,0 +1,22 @@
+batch_id,candidate_index,source_id,source_locator,quote_presence_match,semantic_review_status,semantic_claim_supported,semantic_nature_supported,semantic_dimensions_supported,accepted,failure_reasons
+T0-SP-007-batch-01,0,T0-SP-007,pdf_page_16,True,pass,True,True,True,False,normalized_claim_adds_subject_or_entity_not_in_excerpt
+T0-SP-007-batch-01,1,T0-SP-007,pdf_page_16,True,pass,True,True,True,False,normalized_claim_adds_subject_or_entity_not_in_excerpt
+T0-SP-007-batch-01,2,T0-SP-007,pdf_page_18,True,pass,True,True,True,False,normalized_claim_adds_subject_or_entity_not_in_excerpt
+T0-SP-007-batch-01,3,T0-SP-007,pdf_page_18,False,pass,True,True,True,False,excerpt_not_found_at_specified_locator
+T0-SP-007-batch-01,4,T0-SP-007,pdf_page_18,True,pass,True,True,True,False,normalized_claim_adds_subject_or_entity_not_in_excerpt
+T0-SP-007-batch-01,5,T0-SP-007,pdf_page_18,True,pass,True,True,True,False,normalized_claim_adds_subject_or_entity_not_in_excerpt
+T0-SP-007-batch-01,6,T0-SP-007,pdf_page_18,True,pass,True,True,True,False,normalized_claim_adds_subject_or_entity_not_in_excerpt
+T0-SP-007-batch-01,7,T0-SP-007,pdf_page_19,False,pass,True,True,True,False,excerpt_not_found_at_specified_locator; normalized_claim_adds_subject_or_entity_not_in_excerpt
+T0-SP-007-batch-02,0,T0-SP-007,pdf_page_25,True,pass,True,True,True,True,
+T0-SP-007-batch-02,1,T0-SP-007,pdf_page_25,False,pass,True,True,True,False,excerpt_not_found_at_specified_locator
+T0-SP-007-batch-02,2,T0-SP-007,pdf_page_26,True,pass,True,True,True,True,
+T0-SP-007-batch-02,3,T0-SP-007,pdf_page_27,True,pass,True,True,True,True,
+T0-SP-007-batch-02,4,T0-SP-007,pdf_page_28,True,pass,True,True,True,True,
+T0-SP-007-batch-02,5,T0-SP-007,pdf_page_29,True,pass,True,True,True,True,
+T0-SP-007-batch-02,6,T0-SP-007,pdf_page_30,True,pass,True,True,True,True,
+T0-SP-007-batch-02,7,T0-SP-007,pdf_page_37,True,pass,True,True,True,True,
+T0-TD-008-batch-01,0,T0-TD-008,article/paragraph-01,True,pass,True,True,True,True,
+T0-TD-008-batch-01,1,T0-TD-008,article/paragraph-02,True,pass,True,True,True,True,
+T0-TD-008-batch-01,2,T0-TD-008,article/paragraph-03,True,pass,True,True,True,True,
+T0-TD-008-batch-01,3,T0-TD-008,article/paragraph-04,True,pass,True,True,True,True,
+T0-TD-008-batch-01,4,T0-TD-008,article/paragraph-06,True,pass,True,True,True,True,

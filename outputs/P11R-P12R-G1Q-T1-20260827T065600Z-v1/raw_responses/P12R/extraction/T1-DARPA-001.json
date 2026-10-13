@@ -1,0 +1,25 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "```json\n[\n  {\n    \"source_id\": \"T1-DARPA-001\",\n    \"source_locator\": \"web_paragraph_0007\",\n    \"excerpt_original\": \"Researchers have demonstrated that AI-enabled systems can be tricked or manipulated via different \\\"attacks.\\\" But even these demonstrations have mostly been done in lab conditions, where researchers have complete control over the data and access to the AI's inner workings.\",\n    \"excerpt_zh\": \"研究人员已经证明，人工智能系统可以通过不同的“攻击”被欺骗或操纵。但即使是这些演示也大多是在实验室条件下进行的，研究人员可以完全控制数据并访问人工智能的内部运作。\",\n    \"normalized_claim\": \"对AI系统的攻击演示大多在实验室条件下进行。\",\n    \"evidence_nature\": \"constraint\",\n    \"coding_dimensions\": [\"trust_governance_constraints\"],\n    \"topics\": [\"AI安全\", \"测试评估\"]\n  },\n  {\n    \"source_id\": \"T1-DARPA-001\",\n    \"source_locator\": \"web_paragraph_0007\",\n    \"excerpt_original\": \"the findings don't necessarily reflect how well the attacks would work in real-world military operations.\",\n    \"excerpt_zh\": \"这些发现不一定能反映攻击在真实军事行动中的效果。\",\n    \"normalized_claim\": \"实验室攻击演示结果不一定反映真实军事行动中的效果。\",\n    \"evidence_nature\": \"constraint\",\n    \"coding_dimensions\": [\"trust_governance_constraints\"],\n    \"topics\": [\"AI安全\", \"作战适用性\"]\n  },\n  {\n    \"source_id\": \"T1-DARPA-001\",\n    \"source_locator\": \"web_paragraph_0009\",\n    \"excerpt_original\": \"no well-developed capability nor broader ecosystem exists to operationally assess currently deployed, AI-enabled battlefield systems for vulnerabilities.\",\n    \"excerpt_zh\": \"目前不存在成熟的能力或更广泛的生态系统来对已部署的AI赋能战场系统进行漏洞作战评估。\",\n    \"normalized_claim\": \"当前缺乏对已部署AI战场系统进行作战漏洞评估的成熟能力和生态。\",\n    \"evidence_nature\": \"constraint\",\n    \"coding_dimensions\": [\"trust_governance_constraints\", \"engineering_resource_conditions\"],\n    \"topics\": [\"AI安全\", \"作战评估\", \"能力缺口\"]\n  },\n  {\n    \"source_id\": \"T1-DARPA-001\",\n    \"source_locator\": \"web_paragraph_0011\",\n    \"excerpt_original\": \"SABER's goal is to build an exemplar AI red team capable of continuously integrating and employing emerging counter-AI techniques and tools to operationally assess AI-enabled battlefield systems.\",\n    \"excerpt_zh\": \"SABER的目标是建立一个示范性AI红队，能够持续整合和应用新兴的反AI技术与工具，对AI赋能战场系统进行作战评估。\",\n    \"normalized_claim\": \"SABER计划目标是建立示范性AI红队。\",\n    \"evidence_nature\": \"goal\",\n    \"coding_dimensions\": [\"application_maturity\", \"integration_level\"],\n    \"topics\": [\"AI红队\", \"SABER计划\", \"作战评估\"]\n  },\n  {\n    \"source_id\": \"T1-DARPA-001\",\n    \"source_locator\": \"web_paragraph_0012\",\n    \"excerpt_original\": \"The program will execute a series of high-fidelity operational AI security exercises for agile experimentation with continuous evaluations.\",\n    \"excerpt_zh\": \"该项目将执行一系列高保真度的作战AI安全演习，以进行持续评估的敏捷实验。\",\n    \"normalized_claim\": \"SABER计划将执行一系列高保真作战AI安全演习。\",\n    \"evidence_nature\": \"goal\",\n    \"coding_dimensions\": [\"application_maturity\"],\n    \"topics\": [\"AI安全演习\", \"SABER计划\"]\n  },\n  {\n    \"source_id\": \"T1-DARPA-001\",\n    \"source_locator\": \"web_paragraph_0015\",\n    \"excerpt_original\": \"SABER is a single-phase, 24-month program with four key stages and experiments designed to gather baselines, experiment, and evaluate SABER research performers' techniques and tools.\",\n    \"excerpt_zh\": \"SABER是一个单阶段、为期24个月的项目，包含四个关键阶段和实验，旨在收集基线、进行实验并评估SABER研究执行者的技术和工具。\",\n    \"normalized_claim\": \"SABER是单阶段、为期24个月的项目。\",\n    \"evidence_nature\": \"goal\",\n    \"coding_dimensions\": [\"engineering_resource_conditions\"],\n    \"topics\": [\"SABER计划\", \"项目结构\"]\n  }\n]\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1787813766,
+  "id": "chatcmpl-0063b616-d755-4faf-9223-787bb961216c",
+  "model": "deepseek-v4-flash-0731",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 1019,
+    "prompt_tokens": 1626,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2645
+  }
+}

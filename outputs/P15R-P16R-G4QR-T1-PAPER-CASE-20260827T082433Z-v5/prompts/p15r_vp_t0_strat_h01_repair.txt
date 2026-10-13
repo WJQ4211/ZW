@@ -1,0 +1,901 @@
+只修正上一轮P15R输出的格式/枚举/无效Evidence引用错误，不改变观点的专业视角、实质时间范围或原文事实边界。
+上一轮失败原因：unknown evidence id EV-T0-0A73030BBF2649F9
+上一轮JSON：
+{
+  "judgment": "T1证据继续支持治理与整合目标存在，但新增材料主要是战略目标、局部运用和测试约束，尚不足以证明跨军种共用底座已经形成。",
+  "confidence": "medium",
+  "supporting_evidence": [
+    {
+      "evidence_id": "EV-T0-0A73030BBF2649F9",
+      "version": 1,
+      "target_field": "judgment",
+      "relation": "support",
+      "importance": "high"
+    },
+    {
+      "evidence_id": "EV-T0-27EE6FA7DA2FADC0",
+      "version": 1,
+      "target_field": "judgment",
+      "relation": "support",
+      "importance": "high"
+    },
+    {
+      "evidence_id": "EV-T0-7E37FBD511FC654E",
+      "version": 1,
+      "target_field": "judgment",
+      "relation": "support",
+      "importance": "medium"
+    },
+    {
+      "evidence_id": "CE-T1-02DFF1DCD73E8F93",
+      "version": 1,
+      "target_field": "judgment",
+      "relation": "support",
+      "importance": "medium"
+    },
+    {
+      "evidence_id": "CE-T1-050BC7E34C88F297",
+      "version": 1,
+      "target_field": "judgment",
+      "relation": "support",
+      "importance": "medium"
+    },
+    {
+      "evidence_id": "CE-T1-2995ED3DEF557C50",
+      "version": 1,
+      "target_field": "judgment",
+      "relation": "support",
+      "importance": "medium"
+    },
+    {
+      "evidence_id": "CE-T1-B5C396D3278023D1",
+      "version": 1,
+      "target_field": "judgment",
+      "relation": "support",
+      "importance": "medium"
+    },
+    {
+      "evidence_id": "CE-T1-CEACB21D2A3F685C",
+      "version": 1,
+      "target_field": "judgment",
+      "relation": "support",
+      "importance": "medium"
+    },
+    {
+      "evidence_id": "CE-T1-A66D49255D61B484",
+      "version": 1,
+      "target_field": "judgment",
+      "relation": "support",
+      "importance": "medium"
+    }
+  ],
+  "counter_evidence": [
+    {
+      "evidence_id": "EV-T0-51D65DEC82584BCD",
+      "version": 1,
+      "target_field": "boundary_conditions[0]",
+      "relation": "limit",
+      "importance": "high"
+    },
+    {
+      "evidence_id": "EV-T0-A515E3B9391C51B4",
+      "version": 1,
+      "target_field": "boundary_conditions[0]",
+      "relation": "limit",
+      "importance": "high"
+    },
+    {
+      "evidence_id": "CE-T1-DCF49FC6CBC68958",
+      "version": 1,
+      "target_field": "boundary_conditions[0]",
+      "relation": "limit",
+      "importance": "low"
+    },
+    {
+      "evidence_id": "CE-T1-AA937CC0AF5E2372",
+      "version": 1,
+      "target_field": "boundary_conditions[0]",
+      "relation": "limit",
+      "importance": "low"
+    },
+    {
+      "evidence_id": "CE-T1-B40332E796F16865",
+      "version": 1,
+      "target_field": "boundary_conditions[0]",
+      "relation": "limit",
+      "importance": "low"
+    },
+    {
+      "evidence_id": "CE-T1-7239909FC989F79A",
+      "version": 1,
+      "target_field": "boundary_conditions[0]",
+      "relation": "limit",
+      "importance": "low"
+    }
+  ],
+  "mechanism_claims": [
+    "CDAO作为继任机构，通过发布战略文件和建立平台来推动统一治理，但该机制受制于资源约束和合同问题，尚未形成对任务项目的有效牵引。治理目标的设定与治理结果的实现之间存在明确落差。"
+  ],
+  "key_assumptions": [
+    "CDAO的设立和JCF的规划文件代表了统一治理目标的设定，而非治理结果的实现。",
+    "JCF的延迟和路线图未定表明统一平台尚未达到全面作战能力，治理目标尚未转化为实际牵引。",
+    "T1新增的部门战略和局部单位应用属于治理目标或局部试验，不能直接外推为跨军种共用底座已形成。"
+  ],
+  "boundary_conditions": [
+    "该判断适用于2022-2026年6月间的战略规划与组织建设阶段，仅评估治理架构的规划与建设状态，不评估具体任务项目的技术成熟度，也不将治理目标的设定视为治理结果的实现。",
+    "T1新增的部门战略目标、局部单位应用和测试约束仅用于限定判断范围，不构成跨军种共用底座已形成的证据。"
+  ],
+  "uncertainties": [
+    "JCF的全面作战能力时间表未确定，其实际运行效果未知。",
+    "CDAO治理架构在2024年后是否产生实质性牵引效果尚无法评估。",
+    "T1新增的部门战略和局部应用在2026年6月后的实际推进程度未知。"
+  ],
+  "information_gaps": [
+    "缺乏JCF在2023-2026年间运行状态和用户使用情况的具体数据。",
+    "缺乏CDAO治理对具体任务项目产生实际影响的成果记录或评估报告。",
+    "缺乏跨军种共用平台实际迁移和形成可复用工程流程的证据。"
+  ],
+  "falsifiers": [
+    "若在2026年12月前JCF达到全面作战能力并实现跨军种数据共享，则本观点不成立。",
+    "若出现CDAO治理已对具体任务项目产生可验证的实质性牵引（如项目方向调整、资源重新分配）的成果记录，则本观点不成立。",
+    "若后续A/B级材料显示跨军种共用平台实际迁移并形成可复用工程流程，则需重新评估。"
+  ],
+  "affected_fields": [
+    "judgment",
+    "boundary_conditions[0]"
+  ],
+  "evidence_field_changes": [
+    {
+      "target_field": "judgment",
+      "before": "T1证据继续支持治理与整合目标存在，但新增材料主要是战略目标、局部运用和测试约束，尚不足以证明跨军种共用底座已经形成。",
+      "after": "T1证据继续支持治理与整合目标存在，但新增材料主要是战略目标、局部运用和测试约束，尚不足以证明跨军种共用底座已经形成。",
+      "new_evidence_ids": [
+        "CE-T1-02DFF1DCD73E8F93",
+        "CE-T1-050BC7E34C88F297",
+        "CE-T1-2995ED3DEF557C50",
+        "CE-T1-B5C396D3278023D1",
+        "CE-T1-CEACB21D2A3F685C",
+        "CE-T1-A66D49255D61B484"
+      ],
+      "change_reason": "T1新增的部门战略目标证据进一步确认治理目标存在，但未改变判断核心，仅强化了目标层面的支持。"
+    },
+    {
+      "target_field": "boundary_conditions[0]",
+      "before": "该判断适用于2022-2024年间的战略规划与组织建设阶段，仅评估治理架构的规划与建设状态，不评估具体任务项目的技术成熟度，也不将治理目标的设定视为治理结果的实现。",
+      "after": "该判断适用于2022-2026年6月间的战略规划与组织建设阶段，仅评估治理架构的规划与建设状态，不评估具体任务项目的技术成熟度，也不将治理目标的设定视为治理结果的实现。T1新增的部门战略目标、局部单位应用和测试约束仅用于限定判断范围，不构成跨军种共用底座已形成的证据。",
+      "new_evidence_ids": [
+        "CE-T1-DCF49FC6CBC68958",
+        "CE-T1-AA937CC0AF5E2372",
+        "CE-T1-B40332E796F16865",
+        "CE-T1-7239909FC989F79A"
+      ],
+      "change_reason": "T1新增的局部单位应用证据显示层级差异，用于限定体系整合外推边界，时间范围扩展至2026年6月。"
+    }
+  ],
+  "update_rationale": "T1新增证据均为部门战略目标或局部单位应用，属于治理目标或局部试验层面，不构成跨军种共用底座已形成的直接证据。判断核心维持不变，仅将时间边界扩展至2026年6月，并明确局部应用证据仅用于限定外推边界。"
+}
+
+原始任务提示（仅用于保持字段定义）：
+你是P15R观点复评器。只处理一个观点位置。
+
+严格边界：只使用本提示提供的旧观点、P14影响边和T1正式Evidence；不得读取其他视角输出、其他观点的修订结论、T0假设全文、T0分歧内容或外部常识。不得引用六条排除T1 Evidence，也不得把两条historical_context当作T1变化信号。战略目标、官方评价和test_event不能写成已实现部署；局部空军、DARPA竞赛或作战医疗材料不能外推为全军成熟度。所有时间判断必须以截至2026年6月30日为当前边界，未来可证伪条件从2026年7月1日以后表述。
+
+专业差异必须保持：OPS只从任务运用/持续使用/作战适配出发；STRAT只从治理、资源配置、跨军种机制出发；TECH只从成熟度、工程复用、性能边界出发；TRUST只从可信性、验证、红队和治理条件出发。不得复制其他观点的judgment。
+
+每条判断必须说明证据范围，不能把‘未观察到’写成‘不存在’。引用对象的relation只能是support、challenge、limit、background，禁止使用qualify、boundary_change或其他值；importance只能是high、medium、low。只输出一个JSON对象，不要Markdown围栏，不要额外字段。输出字段必须恰好为：judgment、confidence、supporting_evidence、counter_evidence、mechanism_claims、key_assumptions、boundary_conditions、uncertainties、information_gaps、falsifiers、affected_fields、evidence_field_changes、update_rationale。supporting_evidence和counter_evidence为引用对象数组；evidence_field_changes必须逐字段说明before/after及new_evidence_ids。
+
+本次输入JSON：
+{
+  "perspective_id": "STRAT",
+  "perspective_responsibility": "组织治理、资源配置、跨军种机制与制度落地",
+  "hypothesis_id": "HYP-T0-01",
+  "previous_latest_viewpoint": {
+    "admission_failure_reason": "",
+    "boundary_conditions": [
+      "该判断适用于2022-2024年间的战略规划与组织建设阶段，仅评估治理架构的规划与建设状态，不评估具体任务项目的技术成熟度，也不将治理目标的设定视为治理结果的实现。"
+    ],
+    "case_id": "us_military_ai_deployment",
+    "change_reason": "P14_evidence_field_impact_local_update",
+    "confidence": "medium",
+    "counter_evidence": [
+      {
+        "evidence_id": "EV-T0-51D65DEC82584BCD",
+        "note": "",
+        "relation": "limit",
+        "version": 1
+      },
+      {
+        "evidence_id": "EV-T0-A515E3B9391C51B4",
+        "note": "",
+        "relation": "limit",
+        "version": 1
+      }
+    ],
+    "created_at": "2026-08-27T07:25:25Z",
+    "falsifiers": [
+      "若在2024年底前JCF达到全面作战能力并实现跨军种数据共享，则本观点不成立。",
+      "若出现CDAO治理已对具体任务项目产生可验证的实质性牵引（如项目方向调整、资源重新分配）的成果记录，则本观点不成立。"
+    ],
+    "generator": {
+      "citation_details": [
+        {
+          "evidence_id": "EV-T0-0A73030BBF2649F9",
+          "importance": "high",
+          "relation": "support",
+          "target_field": "judgment",
+          "version": 1
+        },
+        {
+          "evidence_id": "EV-T0-27EE6FA7DA2FADC0",
+          "importance": "high",
+          "relation": "support",
+          "target_field": "judgment",
+          "version": 1
+        },
+        {
+          "evidence_id": "EV-T0-7E37FBD511FC654E",
+          "importance": "medium",
+          "relation": "support",
+          "target_field": "judgment",
+          "version": 1
+        },
+        {
+          "evidence_id": "EV-T0-51D65DEC82584BCD",
+          "importance": "high",
+          "relation": "limit",
+          "target_field": "boundary_conditions[0]",
+          "version": 1
+        },
+        {
+          "evidence_id": "EV-T0-A515E3B9391C51B4",
+          "importance": "high",
+          "relation": "limit",
+          "target_field": "boundary_conditions[0]",
+          "version": 1
+        }
+      ],
+      "mechanism_claim_details": [
+        {
+          "basis": "model_inference",
+          "claim": "CDAO作为继任机构，通过发布战略文件和建立平台来推动统一治理，但该机制受制于资源约束和合同问题，尚未形成对任务项目的有效牵引。治理目标的设定与治理结果的实现之间存在明确落差。",
+          "evidence_ids": []
+        }
+      ],
+      "model_id": "deepseek-v4-flash-0731",
+      "p7_call": {
+        "attempts": 1,
+        "batch_id": "p7_strat",
+        "call_id": "p7_strat",
+        "endpoint": "https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1/chat/completions",
+        "is_repair": false,
+        "latency_ms": 20890,
+        "phase": "P7R",
+        "prompt_sha256": "fc3f2b71c133abfa34e4d7f51fb6ebb20ea50cae95d4537c6bf59c24d38e028e",
+        "provider_cost": null,
+        "provider_metrics_status": "observed",
+        "provider_model_id": "deepseek-v4-flash-0731",
+        "provider_temperature": null,
+        "provider_token_usage": {
+          "completion_tokens": 2440,
+          "prompt_tokens": 22279,
+          "total_tokens": 24719
+        },
+        "request_parameters": {
+          "enable_thinking": false,
+          "max_tokens": 24000,
+          "temperature": 0.0
+        },
+        "request_started_at_utc": "2026-08-27T02:04:30Z",
+        "requested_model_id": "deepseek-v4-flash-0731",
+        "response_sha256": "157eabd858b503c72a527672e02eee3988bbfafc59e83441044e43955e0a5a3c",
+        "response_status_code": 200,
+        "retry_count": 0,
+        "source_id": "STRAT",
+        "transport": "openai_compatible_api"
+      },
+      "p7_source": "p7r_strat_model_call",
+      "p8_response_call": {
+        "attempts": 1,
+        "batch_id": "p8r_response_strat",
+        "call_id": "p8r_response_strat",
+        "endpoint": "https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1/chat/completions",
+        "is_repair": false,
+        "latency_ms": 23941,
+        "phase": "P8R_RESPONSE",
+        "prompt_sha256": "539b383a089358d19e44ed7c8751bc1f300b2af9539ffca7336a59fc5a2c961b",
+        "provider_cost": null,
+        "provider_metrics_status": "observed",
+        "provider_model_id": "deepseek-v4-flash-0731",
+        "provider_temperature": null,
+        "provider_token_usage": {
+          "completion_tokens": 2803,
+          "prompt_tokens": 4057,
+          "total_tokens": 6860
+        },
+        "request_parameters": {
+          "enable_thinking": false,
+          "max_tokens": 24000,
+          "temperature": 0.0
+        },
+        "request_started_at_utc": "2026-08-27T02:05:26Z",
+        "requested_model_id": "deepseek-v4-flash-0731",
+        "response_sha256": "ef1a6263ebdad778fcdef64700964d4c44aebc4730d2ff40a633877d1a1a87aa",
+        "response_status_code": 200,
+        "retry_count": 0,
+        "source_id": "STRAT",
+        "transport": "openai_compatible_api"
+      },
+      "perspective_id": "STRAT",
+      "response_action": "revise",
+      "response_note": "接受质疑。原观点将治理架构的建立与治理效果的实现混为一谈，判断中承认'尚未形成实质性牵引'却仍以'建立统一治理架构'为主要结论，存在目标与结果混淆。修订后，将判断重心从'架构已建立'转向'架构处于规划建设阶段且牵引效果未验证'，明确区分治理目标的设定与治理结果的实现，并将'统一治理架构已建立'降级为边界条件而非核心结论。",
+      "run_id": "P7R-P9R-20260827T020335Z-case-strengthening-v1"
+    },
+    "human_verified": false,
+    "hypothesis_id": "HYP-T0-01",
+    "information_gaps": [
+      "缺乏JCF在2023-2024年间运行状态和用户使用情况的具体数据。",
+      "缺乏CDAO治理对具体任务项目产生实际影响的成果记录或评估报告。"
+    ],
+    "judgment": "T1证据继续支持治理与整合目标存在，但新增材料主要是战略目标、局部运用和测试约束，尚不足以证明跨军种共用底座已经形成。",
+    "key_assumptions": [
+      "CDAO的设立和JCF的规划文件代表了统一治理目标的设定，而非治理结果的实现。",
+      "JCF的延迟和路线图未定表明统一平台尚未达到全面作战能力，治理目标尚未转化为实际牵引。"
+    ],
+    "mechanism_claims": [
+      "CDAO作为继任机构，通过发布战略文件和建立平台来推动统一治理，但该机制受制于资源约束和合同问题，尚未形成对任务项目的有效牵引。治理目标的设定与治理结果的实现之间存在明确落差。"
+    ],
+    "parent_version": 1,
+    "perspective_id": "STRAT",
+    "run_id": "G1-T1-P13-P16-99A723BFBC6D273A-formal-v1",
+    "schema_version": "phase-a.1",
+    "snapshot_id": "SNAP-T1-US-MILITARY-AI-99A723BFBC6D273A",
+    "stance": "conditional",
+    "status": "admitted",
+    "supporting_evidence": [
+      {
+        "evidence_id": "EV-T0-0A73030BBF2649F9",
+        "note": "",
+        "relation": "support",
+        "version": 1
+      },
+      {
+        "evidence_id": "EV-T0-27EE6FA7DA2FADC0",
+        "note": "",
+        "relation": "support",
+        "version": 1
+      },
+      {
+        "evidence_id": "EV-T0-7E37FBD511FC654E",
+        "note": "",
+        "relation": "support",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-02DFF1DCD73E8F93",
+        "note": "该证据是部门战略或治理目标，说明制度牵引存在，但不直接证明共用平台已经运行，因此仅限定判断范围。",
+        "relation": "qualify",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-050BC7E34C88F297",
+        "note": "该证据是部门战略或治理目标，说明制度牵引存在，但不直接证明共用平台已经运行，因此仅限定判断范围。",
+        "relation": "qualify",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-2995ED3DEF557C50",
+        "note": "该证据是部门战略或治理目标，说明制度牵引存在，但不直接证明共用平台已经运行，因此仅限定判断范围。",
+        "relation": "qualify",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-B5C396D3278023D1",
+        "note": "该证据是部门战略或治理目标，说明制度牵引存在，但不直接证明共用平台已经运行，因此仅限定判断范围。",
+        "relation": "qualify",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-CEACB21D2A3F685C",
+        "note": "该证据是部门战略或治理目标，说明制度牵引存在，但不直接证明共用平台已经运行，因此仅限定判断范围。",
+        "relation": "qualify",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-A66D49255D61B484",
+        "note": "该证据是部门战略或治理目标，说明制度牵引存在，但不直接证明共用平台已经运行，因此仅限定判断范围。",
+        "relation": "qualify",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-DCF49FC6CBC68958",
+        "note": "局部单位应用与部门战略目标之间尚有层级差异，因此用于限定体系整合外推边界。",
+        "relation": "qualify",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-AA937CC0AF5E2372",
+        "note": "局部单位应用与部门战略目标之间尚有层级差异，因此用于限定体系整合外推边界。",
+        "relation": "qualify",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-B40332E796F16865",
+        "note": "局部单位应用与部门战略目标之间尚有层级差异，因此用于限定体系整合外推边界。",
+        "relation": "qualify",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-7239909FC989F79A",
+        "note": "局部单位应用与部门战略目标之间尚有层级差异，因此用于限定体系整合外推边界。",
+        "relation": "qualify",
+        "version": 1
+      }
+    ],
+    "t1_update": {
+      "affected_fields": [
+        "boundary_conditions[0]",
+        "judgment"
+      ],
+      "boundary_change": "新增T1来源的任务、机构和公开披露范围被明确保留。",
+      "confidence_change": "unchanged_or_conditioned",
+      "falsifiable_condition": "若后续A/B级材料显示跨军种共用平台实际迁移并形成可复用工程流程，则需重新评估。",
+      "mechanism_change": "T1材料补充了局部试验/使用或约束条件，但不强制改变主判断。",
+      "new_evidence_ids": [
+        "CE-T1-02DFF1DCD73E8F93",
+        "CE-T1-050BC7E34C88F297",
+        "CE-T1-2995ED3DEF557C50",
+        "CE-T1-7239909FC989F79A",
+        "CE-T1-A66D49255D61B484",
+        "CE-T1-AA937CC0AF5E2372",
+        "CE-T1-B40332E796F16865",
+        "CE-T1-B5C396D3278023D1",
+        "CE-T1-CEACB21D2A3F685C",
+        "CE-T1-DCF49FC6CBC68958"
+      ],
+      "source_snapshot": "SNAP-T0-US-MILITARY-AI-C6C812108AF95309",
+      "target_snapshot": "SNAP-T1-US-MILITARY-AI-99A723BFBC6D273A"
+    },
+    "uncertainties": [
+      "JCF的全面作战能力时间表未确定，其实际运行效果未知。",
+      "CDAO治理架构在2024年后是否产生实质性牵引效果尚无法评估。"
+    ],
+    "version": 2,
+    "viewpoint_id": "VP-T0-STRAT-H01"
+  },
+  "assigned_p14_impact_edges": [
+    {
+      "confidence": "medium",
+      "evidence_id": "CE-T1-02DFF1DCD73E8F93",
+      "evidence_version": 1,
+      "hypothesis_id": "HYP-T0-01",
+      "rationale": "该证据是部门战略或治理目标，说明制度牵引存在，但不直接证明共用平台已经运行，因此仅限定判断范围。",
+      "relation": "qualify",
+      "t1_change_signal_eligible": true,
+      "target_field": "judgment",
+      "viewpoint_id": "VP-T0-STRAT-H01",
+      "viewpoint_version": 1
+    },
+    {
+      "confidence": "medium",
+      "evidence_id": "CE-T1-050BC7E34C88F297",
+      "evidence_version": 1,
+      "hypothesis_id": "HYP-T0-01",
+      "rationale": "该证据是部门战略或治理目标，说明制度牵引存在，但不直接证明共用平台已经运行，因此仅限定判断范围。",
+      "relation": "qualify",
+      "t1_change_signal_eligible": true,
+      "target_field": "judgment",
+      "viewpoint_id": "VP-T0-STRAT-H01",
+      "viewpoint_version": 1
+    },
+    {
+      "confidence": "medium",
+      "evidence_id": "CE-T1-2995ED3DEF557C50",
+      "evidence_version": 1,
+      "hypothesis_id": "HYP-T0-01",
+      "rationale": "该证据是部门战略或治理目标，说明制度牵引存在，但不直接证明共用平台已经运行，因此仅限定判断范围。",
+      "relation": "qualify",
+      "t1_change_signal_eligible": true,
+      "target_field": "judgment",
+      "viewpoint_id": "VP-T0-STRAT-H01",
+      "viewpoint_version": 1
+    },
+    {
+      "confidence": "medium",
+      "evidence_id": "CE-T1-B5C396D3278023D1",
+      "evidence_version": 1,
+      "hypothesis_id": "HYP-T0-01",
+      "rationale": "该证据是部门战略或治理目标，说明制度牵引存在，但不直接证明共用平台已经运行，因此仅限定判断范围。",
+      "relation": "qualify",
+      "t1_change_signal_eligible": true,
+      "target_field": "judgment",
+      "viewpoint_id": "VP-T0-STRAT-H01",
+      "viewpoint_version": 1
+    },
+    {
+      "confidence": "medium",
+      "evidence_id": "CE-T1-CEACB21D2A3F685C",
+      "evidence_version": 1,
+      "hypothesis_id": "HYP-T0-01",
+      "rationale": "该证据是部门战略或治理目标，说明制度牵引存在，但不直接证明共用平台已经运行，因此仅限定判断范围。",
+      "relation": "qualify",
+      "t1_change_signal_eligible": true,
+      "target_field": "judgment",
+      "viewpoint_id": "VP-T0-STRAT-H01",
+      "viewpoint_version": 1
+    },
+    {
+      "confidence": "medium",
+      "evidence_id": "CE-T1-A66D49255D61B484",
+      "evidence_version": 1,
+      "hypothesis_id": "HYP-T0-01",
+      "rationale": "该证据是部门战略或治理目标，说明制度牵引存在，但不直接证明共用平台已经运行，因此仅限定判断范围。",
+      "relation": "qualify",
+      "t1_change_signal_eligible": true,
+      "target_field": "judgment",
+      "viewpoint_id": "VP-T0-STRAT-H01",
+      "viewpoint_version": 1
+    },
+    {
+      "confidence": "low",
+      "evidence_id": "CE-T1-DCF49FC6CBC68958",
+      "evidence_version": 1,
+      "hypothesis_id": "HYP-T0-01",
+      "rationale": "局部单位应用与部门战略目标之间尚有层级差异，因此用于限定体系整合外推边界。",
+      "relation": "qualify",
+      "t1_change_signal_eligible": true,
+      "target_field": "boundary_conditions[0]",
+      "viewpoint_id": "VP-T0-STRAT-H01",
+      "viewpoint_version": 1
+    },
+    {
+      "confidence": "low",
+      "evidence_id": "CE-T1-AA937CC0AF5E2372",
+      "evidence_version": 1,
+      "hypothesis_id": "HYP-T0-01",
+      "rationale": "局部单位应用与部门战略目标之间尚有层级差异，因此用于限定体系整合外推边界。",
+      "relation": "qualify",
+      "t1_change_signal_eligible": true,
+      "target_field": "boundary_conditions[0]",
+      "viewpoint_id": "VP-T0-STRAT-H01",
+      "viewpoint_version": 1
+    },
+    {
+      "confidence": "low",
+      "evidence_id": "CE-T1-B40332E796F16865",
+      "evidence_version": 1,
+      "hypothesis_id": "HYP-T0-01",
+      "rationale": "局部单位应用与部门战略目标之间尚有层级差异，因此用于限定体系整合外推边界。",
+      "relation": "qualify",
+      "t1_change_signal_eligible": true,
+      "target_field": "boundary_conditions[0]",
+      "viewpoint_id": "VP-T0-STRAT-H01",
+      "viewpoint_version": 1
+    },
+    {
+      "confidence": "low",
+      "evidence_id": "CE-T1-7239909FC989F79A",
+      "evidence_version": 1,
+      "hypothesis_id": "HYP-T0-01",
+      "rationale": "局部单位应用与部门战略目标之间尚有层级差异，因此用于限定体系整合外推边界。",
+      "relation": "qualify",
+      "t1_change_signal_eligible": true,
+      "target_field": "boundary_conditions[0]",
+      "viewpoint_id": "VP-T0-STRAT-H01",
+      "viewpoint_version": 1
+    }
+  ],
+  "t1_evidence_full_fields": [
+    {
+      "evidence_id": "CE-T1-02DFF1DCD73E8F93",
+      "version": 1,
+      "source_id": "T1-DAF-001",
+      "source_locator": "web_paragraph_0005",
+      "title": "DAF releases data, AI strategies to accelerate military dominance",
+      "publisher": "Department of the Air Force",
+      "source_grade": "A",
+      "published_at": "2026-04-22",
+      "published_at_precision": "day",
+      "evidence_nature": "goal",
+      "coding_dimensions": [
+        "application_maturity",
+        "organizational_system_fit"
+      ],
+      "excerpt_original": "These strategies provide a strategic roadmap for the department to become an AI-first force, operationalizing data and AI as decisive force multipliers and strategic assets to maintain air and space dominance from the boardroom to the battlefield.",
+      "excerpt_zh": "这些战略为空军部成为一支AI优先部队提供了战略路线图，将数据和AI作为决定性力量倍增器和战略资产加以运用，以维持从会议室到战场的空中和太空优势。",
+      "normalized_claim": "《空军部数据和人工智能战略》为空军部成为AI优先部队提供了战略路线图。",
+      "topics": [
+        "战略目标",
+        "AI优先部队"
+      ],
+      "t1_change_signal_eligible": true,
+      "temporal_role": "current_t1_signal"
+    },
+    {
+      "evidence_id": "CE-T1-050BC7E34C88F297",
+      "version": 1,
+      "source_id": "T1-DAF-001",
+      "source_locator": "web_paragraph_0005",
+      "title": "DAF releases data, AI strategies to accelerate military dominance",
+      "publisher": "Department of the Air Force",
+      "source_grade": "A",
+      "published_at": "2026-04-22",
+      "published_at_precision": "day",
+      "evidence_nature": "goal",
+      "coding_dimensions": [
+        "organizational_system_fit"
+      ],
+      "excerpt_original": "The guiding documents establish AI priorities across several different mission areas, ranging from training and readiness to multi-domain operations.",
+      "excerpt_zh": "这些指导文件在多个不同任务领域确立了AI优先事项，范围从训练和战备到多域作战。",
+      "normalized_claim": "《空军部数据和人工智能战略》在训练、战备和多域作战等多个任务领域确立了AI优先事项。",
+      "topics": [
+        "任务领域",
+        "AI优先事项"
+      ],
+      "t1_change_signal_eligible": true,
+      "temporal_role": "current_t1_signal"
+    },
+    {
+      "evidence_id": "CE-T1-2995ED3DEF557C50",
+      "version": 1,
+      "source_id": "T1-DAF-001",
+      "source_locator": "web_paragraph_0005",
+      "title": "DAF releases data, AI strategies to accelerate military dominance",
+      "publisher": "Department of the Air Force",
+      "source_grade": "A",
+      "published_at": "2026-04-22",
+      "published_at_precision": "day",
+      "evidence_nature": "goal",
+      "coding_dimensions": [
+        "engineering_resource_conditions"
+      ],
+      "excerpt_original": "Recognizing that data is the ammunition of modern warfare, the strategies emphasize treating data as a strategic asset and by adopting a decentralized data architecture, the DAF provides warfighters with trusted data at the speed of mission.",
+      "excerpt_zh": "认识到数据是现代战争的弹药，这些战略强调将数据视为战略资产，并通过采用去中心化数据架构，空军部以任务速度向作战人员提供可信数据。",
+      "normalized_claim": "《空军部数据和人工智能战略》强调将数据视为战略资产，并采用去中心化数据架构。",
+      "topics": [
+        "数据战略",
+        "去中心化架构"
+      ],
+      "t1_change_signal_eligible": true,
+      "temporal_role": "current_t1_signal"
+    },
+    {
+      "evidence_id": "CE-T1-B5C396D3278023D1",
+      "version": 1,
+      "source_id": "T1-DAF-001",
+      "source_locator": "web_paragraph_0005",
+      "title": "DAF releases data, AI strategies to accelerate military dominance",
+      "publisher": "Department of the Air Force",
+      "source_grade": "A",
+      "published_at": "2026-04-22",
+      "published_at_precision": "day",
+      "evidence_nature": "goal",
+      "coding_dimensions": [
+        "organizational_system_fit"
+      ],
+      "excerpt_original": "The implementation of these strategies directly advances the CDAO’s FY2026 goal to institutionalize data and AI as core mission components.",
+      "excerpt_zh": "这些战略的实施直接推进了首席数据和AI办公室2026财年的目标，即将数据和AI制度化为核心任务组成部分。",
+      "normalized_claim": "《空军部数据和人工智能战略》的实施推进了首席数据和AI办公室2026财年将数据和AI制度化为核心任务组成部分的目标。",
+      "topics": [
+        "制度化",
+        "2026财年目标"
+      ],
+      "t1_change_signal_eligible": true,
+      "temporal_role": "current_t1_signal"
+    },
+    {
+      "evidence_id": "CE-T1-CEACB21D2A3F685C",
+      "version": 1,
+      "source_id": "T1-DAF-002",
+      "source_locator": "web_paragraph_0004",
+      "title": "DAF launches plan to bolster AI workforce",
+      "publisher": "Department of the Air Force",
+      "source_grade": "A",
+      "published_at": "2026-04-28",
+      "published_at_precision": "day",
+      "evidence_nature": "goal",
+      "coding_dimensions": [
+        "engineering_resource_conditions",
+        "organizational_system_fit"
+      ],
+      "excerpt_original": "To attract new talent, the plan directs the Department of the Air Force to streamline its hiring and accessions processes, remove bottlenecks and expedite hiring for essential AI positions.",
+      "excerpt_zh": "为吸引新人才，该计划指示美国空军部简化招聘和入伍流程，消除瓶颈，并加快关键AI职位的招聘。",
+      "normalized_claim": "该计划指示美国空军部简化招聘流程并加快关键AI职位的招聘。",
+      "topics": [
+        "AI人才招聘",
+        "流程优化"
+      ],
+      "t1_change_signal_eligible": true,
+      "temporal_role": "current_t1_signal"
+    },
+    {
+      "evidence_id": "CE-T1-A66D49255D61B484",
+      "version": 1,
+      "source_id": "T1-DAF-002",
+      "source_locator": "web_paragraph_0004",
+      "title": "DAF launches plan to bolster AI workforce",
+      "publisher": "Department of the Air Force",
+      "source_grade": "A",
+      "published_at": "2026-04-28",
+      "published_at_precision": "day",
+      "evidence_nature": "goal",
+      "coding_dimensions": [
+        "engineering_resource_conditions",
+        "organizational_system_fit"
+      ],
+      "excerpt_original": "A key proposal is the creation of a Department of the Air Force Dual-Track Career Model which will pave the way for AI professionals, including those in the Guard and Reserve with specialized civilian experience, to advance as technical experts without being forced into traditional management roles.",
+      "excerpt_zh": "一项关键提议是创建美国空军部双轨职业模型，为AI专业人员（包括具有专业文职经验的国民警卫队和预备役人员）开辟技术专家晋升路径，而不必被迫进入传统管理岗位。",
+      "normalized_claim": "该计划提议创建美国空军部双轨职业模型，以支持AI专业人员的技术专家晋升路径。",
+      "topics": [
+        "AI人才保留",
+        "职业发展模型"
+      ],
+      "t1_change_signal_eligible": true,
+      "temporal_role": "current_t1_signal"
+    },
+    {
+      "evidence_id": "CE-T1-DCF49FC6CBC68958",
+      "version": 1,
+      "source_id": "T1-DAF-007",
+      "source_locator": "web_paragraph_0005",
+      "title": "Luke AFB Airmen pioneer AI integration for daily operations",
+      "publisher": "U.S. Air Force",
+      "source_grade": "A",
+      "published_at": "2026-05-18",
+      "published_at_precision": "day",
+      "evidence_nature": "governance_event",
+      "coding_dimensions": [
+        "organizational_system_fit"
+      ],
+      "excerpt_original": "The effort became the foundation of Luke's AI Task Force, a team built to explore how artificial intelligence could reshape daily operations, preserve institutional knowledge and give Airmen more time to focus on the human elements of the mission.",
+      "excerpt_zh": "这项工作成为卢克AI工作队的基石，该团队旨在探索人工智能如何重塑日常运营、保存机构知识，并让飞行员有更多时间专注于任务中的人为因素。",
+      "normalized_claim": "卢克空军基地的这项工作成为该基地AI工作队的基石，该团队旨在探索AI在基地日常运营中的应用。",
+      "topics": [
+        "AI任务部队",
+        "组织建设"
+      ],
+      "t1_change_signal_eligible": true,
+      "temporal_role": "current_t1_signal"
+    },
+    {
+      "evidence_id": "CE-T1-AA937CC0AF5E2372",
+      "version": 1,
+      "source_id": "T1-DAF-007",
+      "source_locator": "web_paragraph_0005",
+      "title": "Luke AFB Airmen pioneer AI integration for daily operations",
+      "publisher": "U.S. Air Force",
+      "source_grade": "A",
+      "published_at": "2026-05-18",
+      "published_at_precision": "day",
+      "evidence_nature": "deployment_event",
+      "coding_dimensions": [
+        "application_maturity"
+      ],
+      "excerpt_original": "Some Airmen are already using AI to draft emails, summarize information, analyze data and reduce repetitive administrative tasks, while others remain unsure what tools are authorized or how to apply them in a mission context.",
+      "excerpt_zh": "一些飞行员已经在使用AI起草电子邮件、总结信息、分析数据和减少重复性行政任务，而另一些人则不确定哪些工具是授权的，或如何在任务环境中应用它们。",
+      "normalized_claim": "卢克空军基地部分人员在邮件起草、信息摘要和数据分析等日常任务中使用AI。",
+      "topics": [
+        "日常使用",
+        "任务应用"
+      ],
+      "t1_change_signal_eligible": true,
+      "temporal_role": "current_t1_signal"
+    },
+    {
+      "evidence_id": "CE-T1-B40332E796F16865",
+      "version": 1,
+      "source_id": "T1-DAF-007",
+      "source_locator": "web_paragraph_0007",
+      "title": "Luke AFB Airmen pioneer AI integration for daily operations",
+      "publisher": "U.S. Air Force",
+      "source_grade": "A",
+      "published_at": "2026-05-18",
+      "published_at_precision": "day",
+      "evidence_nature": "goal",
+      "coding_dimensions": [
+        "organizational_system_fit"
+      ],
+      "excerpt_original": "The team also explored how AI could help preserve institutional knowledge, capturing experience that is often lost as Airmen transition out of the service and preserving knowledge for the next generation of warfighters.",
+      "excerpt_zh": "团队还探索了AI如何帮助保存机构知识，捕捉飞行员退役时经常丢失的经验，并为下一代作战人员保留知识。",
+      "normalized_claim": "卢克AI工作队探索了AI在保存机构知识和经验方面的应用。",
+      "topics": [
+        "知识管理",
+        "机构记忆"
+      ],
+      "t1_change_signal_eligible": true,
+      "temporal_role": "current_t1_signal"
+    },
+    {
+      "evidence_id": "CE-T1-7239909FC989F79A",
+      "version": 1,
+      "source_id": "T1-DAF-007",
+      "source_locator": "web_paragraph_0007",
+      "title": "Luke AFB Airmen pioneer AI integration for daily operations",
+      "publisher": "U.S. Air Force",
+      "source_grade": "A",
+      "published_at": "2026-05-18",
+      "published_at_precision": "day",
+      "evidence_nature": "goal",
+      "coding_dimensions": [
+        "trust_governance_constraints"
+      ],
+      "excerpt_original": "To address this, the group recommended expanding AI education, identifying trained advocates within units and improving awareness of approved platforms, with the goal of shifting from informal use to a deliberate, mission-focused approach.",
+      "excerpt_zh": "为了解决这个问题，该小组建议扩大AI教育，在单位内确定受过培训的倡导者，并提高对已批准平台的认识，目标是从非正式使用转变为有意的、以任务为中心的方法。",
+      "normalized_claim": "卢克AI工作队建议扩大AI教育、确定单位内受过培训的倡导者并提高对已批准平台的认识。",
+      "topics": [
+        "AI教育",
+        "培训",
+        "平台意识"
+      ],
+      "t1_change_signal_eligible": true,
+      "temporal_role": "current_t1_signal"
+    }
+  ],
+  "time_boundary": {
+    "t0_end": "2024-12-31",
+    "t1_end": "2026-06-30",
+    "future_condition_boundary": "2026-07-01 onward"
+  }
+}
+
+占位结构示例（不得照抄占位符作为事实）：
+{
+  "judgment": "[中文、面向本视角的条件化判断]",
+  "confidence": "medium",
+  "supporting_evidence": [
+    {
+      "evidence_id": "CE-T1-PLACEHOLDER",
+      "version": 1,
+      "target_field": "judgment",
+      "relation": "support",
+      "importance": "medium"
+    }
+  ],
+  "counter_evidence": [
+    {
+      "evidence_id": "CE-T1-PLACEHOLDER",
+      "version": 1,
+      "target_field": "boundary_conditions[0]",
+      "relation": "limit",
+      "importance": "medium"
+    }
+  ],
+  "mechanism_claims": [
+    "[一个机制判断，明确标记为证据或推断]"
+  ],
+  "key_assumptions": [
+    "[关键假设]"
+  ],
+  "boundary_conditions": [
+    "[适用边界，使用截至2026年6月30日的口径]"
+  ],
+  "uncertainties": [
+    "[不确定性]"
+  ],
+  "information_gaps": [
+    "[信息缺口]"
+  ],
+  "falsifiers": [
+    "[2026年7月1日以后可观察的可证伪条件]"
+  ],
+  "affected_fields": [
+    "judgment",
+    "boundary_conditions[0]"
+  ],
+  "evidence_field_changes": [
+    {
+      "target_field": "judgment",
+      "before": "[旧字段摘要]",
+      "after": "[新字段摘要]",
+      "new_evidence_ids": [
+        "CE-T1-PLACEHOLDER"
+      ],
+      "change_reason": "[证据指向的变化]"
+    }
+  ],
+  "update_rationale": "[简明理由，不输出隐藏思维链]"
+}
+再次确认：只返回上述13个字段；不改变excerpt_original或source_locator；不生成假设、结论或建议。
+
+硬约束：这是T1观点追加版本；supporting_evidence、counter_evidence以及evidence_field_changes的new_evidence_ids只能使用下列38个eligible T1 Evidence ID，不得保留任何EV-T0-*、排除ID或historical_context ID：
+["CE-T1-02DFF1DCD73E8F93", "CE-T1-050BC7E34C88F297", "CE-T1-06554E1EE0D2B6C0", "CE-T1-0BF350B1F14580F5", "CE-T1-11BBC2ABED0945C2", "CE-T1-11BE4D003ECA817F", "CE-T1-12F70AE60CD787AA", "CE-T1-13704D059FDF383D", "CE-T1-2995ED3DEF557C50", "CE-T1-2EC1A86FF3D5DEEF", "CE-T1-43B8C6F6E7B77F40", "CE-T1-45417DAD097210B1", "CE-T1-4DBD99A761CDD8A5", "CE-T1-6B02747FAF17B29F", "CE-T1-6B0D6E320A21509E", "CE-T1-6C755FA494AD4E9A", "CE-T1-6FA016A513CC103A", "CE-T1-7239909FC989F79A", "CE-T1-7AB164824EAAD82A", "CE-T1-8FF394626242D949", "CE-T1-95F7FE29CF48D86D", "CE-T1-9865C47D4C68375C", "CE-T1-A66D49255D61B484", "CE-T1-AA937CC0AF5E2372", "CE-T1-B40332E796F16865", "CE-T1-B5C396D3278023D1", "CE-T1-BB675BA36EB74B19", "CE-T1-C20674F2CA89D5C5", "CE-T1-C4C1018771B30C5A", "CE-T1-C631674EB5FED17F", "CE-T1-CEACB21D2A3F685C", "CE-T1-CF7656CBCD8BBB03", "CE-T1-D0E7B9B8CC1298AB", "CE-T1-DCF49FC6CBC68958", "CE-T1-E2F907CF4DA00903", "CE-T1-F2BE64F4810C89EF", "CE-T1-FA2B6E620D8DDBD2", "CE-T1-FE00C458FAADC5D8"]
+relation只能是support、challenge、limit、background，禁止qualify和boundary_change；importance只能是high、medium、low。只返回严格JSON对象，字段恰好为原始任务规定的13个字段。

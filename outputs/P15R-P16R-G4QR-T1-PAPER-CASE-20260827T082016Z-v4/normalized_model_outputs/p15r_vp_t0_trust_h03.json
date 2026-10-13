@@ -1,0 +1,120 @@
+{
+  "affected_fields": [
+    "judgment",
+    "boundary_conditions[0]"
+  ],
+  "boundary_conditions": [
+    "该判断适用于截至2026年6月30日的公开证据，不排除后续资源投入和治理改进带来能力提升。",
+    "关于负责任AI灵活方法潜在影响的推断，需在获得更多直接证据后重新评估。",
+    "T1来源的任务、机构和公开披露范围被明确保留，SABER计划的目标设定不构成已实现部署。"
+  ],
+  "confidence": "medium",
+  "counter_evidence": [
+    {
+      "evidence_id": "CE-T1-FA2B6E620D8DDBD2",
+      "importance": "medium",
+      "relation": "limit",
+      "target_field": "boundary_conditions[0]",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-E2F907CF4DA00903",
+      "importance": "medium",
+      "relation": "limit",
+      "target_field": "boundary_conditions[0]",
+      "version": 1
+    }
+  ],
+  "evidence_field_changes": [
+    {
+      "after": "T1证据进一步确认，截至2026年6月30日，可信治理与作战化评估能力仍处于缺口状态，SABER计划仅处于目标设定阶段，尚未形成成熟能力或生态，因此资源与可信治理瓶颈对AI应用扩展的限制性判断继续成立。",
+      "before": "T1证据补充了作战化评估能力、数据条件和工程约束，表明资源与可信治理瓶颈仍影响应用扩展；局部结果不足以消除这一条件性判断。",
+      "change_reason": "T1证据将可信治理与作战化评估能力的缺口从一般目标表述强化为约束性边界，并明确了SABER计划的目标设定状态。",
+      "new_evidence_ids": [
+        "CE-T1-FE00C458FAADC5D8",
+        "CE-T1-11BBC2ABED0945C2",
+        "CE-T1-C4C1018771B30C5A",
+        "CE-T1-FA2B6E620D8DDBD2",
+        "CE-T1-E2F907CF4DA00903"
+      ],
+      "target_field": "judgment"
+    },
+    {
+      "after": "该判断适用于截至2026年6月30日的公开证据，不排除后续资源投入和治理改进带来能力提升；T1来源的任务、机构和公开披露范围被明确保留，SABER计划的目标设定不构成已实现部署。",
+      "before": "该判断适用于2022-2024年间的公开证据，不排除后续资源投入和治理改进带来能力提升。",
+      "change_reason": "T1证据将时间边界从2022-2024年扩展至2026年6月30日，并明确了SABER计划的目标设定状态。",
+      "new_evidence_ids": [
+        "CE-T1-FE00C458FAADC5D8",
+        "CE-T1-11BBC2ABED0945C2",
+        "CE-T1-C4C1018771B30C5A",
+        "CE-T1-FA2B6E620D8DDBD2",
+        "CE-T1-E2F907CF4DA00903"
+      ],
+      "target_field": "boundary_conditions[0]"
+    }
+  ],
+  "falsifiers": [
+    "若2026年7月1日后出现A/B级材料显示SABER计划已形成成熟作战评估能力并实际部署，则本观点不成立。",
+    "若出现跨军种共用平台实际迁移并形成可复用工程流程的证据，则需重新评估。",
+    "若出现负责任AI灵活方法导致标准不一致的直接证据，则相关机制声明可升级为证据支持。"
+  ],
+  "information_gaps": [
+    "缺乏关于SABER计划实际执行进度和成果的后续数据。",
+    "缺乏关于作战评估能力建设在2026年7月1日后是否取得突破的直接证据。",
+    "缺乏关于各军种采办指南执行情况和统一指导方针制定进展的详细信息。"
+  ],
+  "judgment": "T1证据进一步确认，截至2026年6月30日，可信治理与作战化评估能力仍处于缺口状态，SABER计划仅处于目标设定阶段，尚未形成成熟能力或生态，因此资源与可信治理瓶颈对AI应用扩展的限制性判断继续成立。",
+  "key_assumptions": [
+    "SABER计划的目标表述（CE-T1-FA2B6E620D8DDBD2、CE-T1-E2F907CF4DA00903）不代表已实现部署，仅代表规划意图。",
+    "实验室条件下的攻击演示结果（CE-T1-FE00C458FAADC5D8、CE-T1-11BBC2ABED0945C2）不能直接外推至真实军事行动效果。",
+    "缺乏作战评估能力（CE-T1-C4C1018771B30C5A）是当前可信治理约束的核心表现。"
+  ],
+  "mechanism_claims": [
+    "证据（推断）：SABER计划的目标设定（CE-T1-FA2B6E620D8DDBD2、CE-T1-E2F907CF4DA00903）表明作战评估能力建设仍处于规划阶段，尚未形成成熟能力或生态，因此不能视为已实现部署。",
+    "证据（推断）：实验室条件下的攻击演示结果（CE-T1-FE00C458FAADC5D8、CE-T1-11BBC2ABED0945C2）与真实军事行动效果之间存在差距，说明可信性验证在作战环境中的适用性仍受限制。",
+    "证据（推断）：缺乏对已部署AI战场系统进行作战漏洞评估的成熟能力和生态（CE-T1-C4C1018771B30C5A），进一步强化了可信治理与作战化评估能力缺口作为约束性边界的判断。"
+  ],
+  "supporting_evidence": [
+    {
+      "evidence_id": "CE-T1-FE00C458FAADC5D8",
+      "importance": "high",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-11BBC2ABED0945C2",
+      "importance": "high",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-C4C1018771B30C5A",
+      "importance": "high",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-FA2B6E620D8DDBD2",
+      "importance": "medium",
+      "relation": "support",
+      "target_field": "boundary_conditions[0]",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-E2F907CF4DA00903",
+      "importance": "medium",
+      "relation": "support",
+      "target_field": "boundary_conditions[0]",
+      "version": 1
+    }
+  ],
+  "uncertainties": [
+    "SABER计划在2026年7月1日后的实际进展和成果尚不明确。",
+    "实验室攻击演示结果（CE-T1-FE00C458FAADC5D8、CE-T1-11BBC2ABED0945C2）在真实军事行动中的适用性缺乏直接验证。",
+    "负责任AI的灵活方法是否实际导致标准不一致或执行困难，缺乏直接证据。"
+  ],
+  "update_rationale": "T1证据（CE-T1-FE00C458FAADC5D8、CE-T1-11BBC2ABED0945C2、CE-T1-C4C1018771B30C5A、CE-T1-FA2B6E620D8DDBD2、CE-T1-E2F907CF4DA00903）进一步确认了可信治理与作战化评估能力的缺口，SABER计划仅处于目标设定阶段，未形成成熟能力或生态，因此维持原判断并强化边界条件。"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-a4d856d3-f2aa-4d40-b972-052b79b24ad7",
+  "object": "chat.completion",
+  "created": 1787712576,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n  {\n    \"source_id\": \"T0-PB-007\",\n    \"source_locator\": \"pdf_page_25\",\n    \"excerpt_original\": \"Although numerous DOD components are acquiring, developing, or already using AI, DOD has not issued comprehensive department-wide guidance for AI acquisitions.\",\n    \"excerpt_zh\": \"尽管许多国防部组成机构正在采购、开发或已经使用人工智能，但国防部尚未发布全面的部门范围内的人工智能采办指南。\",\n    \"normalized_claim\": \"截至报告所述期间，国防部尚未发布全面的部门范围内的人工智能采办指南。\",\n    \"coding_dimensions\": [\"trust_governance_constraints\"],\n    \"evidence_nature\": \"evaluation\",\n    \"topics\": [\"AI采办指南\", \"国防部\"]\n  },\n  {\n    \"source_id\": \"T0-PB-007\",\n    \"source_locator\": \"pdf_page_26\",\n    \"excerpt_original\": \"The Deputy Secretary of Defense stated in the February 2022 memorandum that the Chief Digital and AI Officer will lead and oversee DOD’s strategy development and policy formulation for data, analytics, and AI.\",\n    \"excerpt_zh\": \"国防部副部长在2022年2月的备忘录中表示，首席数字与人工智能官将领导和监督国防部数据、分析和人工智能的战略制定与政策拟定。\",\n    \"normalized_claim\": \"国防部副部长在2022年2月的备忘录中指定首席数字与人工智能官负责领导和监督国防部数据、分析和人工智能的战略制定与政策拟定。\",\n    \"coding_dimensions\": [\"organizational_system_fit\"],\n    \"evidence_nature\": \"goal\",\n    \"topics\": [\"首席数字与人工智能官\", \"战略制定\", \"政策拟定\"]\n  },\n  {\n    \"source_id\": \"T0-PB-007\",\n    \"source_locator\": \"pdf_page_27\",\n    \"excerpt_original\": \"given that DOD is investing considerable effort and funds toward developing and acquiring AI tools and capabilities and requested $1.1 billion for core AI in fiscal year 2023\",\n    \"excerpt_zh\": \"鉴于国防部正在投入大量精力和资金用于开发和采购人工智能工具与能力，并在2023财年为核心人工智能申请了11亿美元。\",\n    \"normalized_claim\": \"国防部在2023财年为核心人工智能申请了11亿美元预算。\",\n    \"coding_dimensions\": [\"engineering_resource_conditions\"],\n    \"evidence_nature\": \"resource_input\",\n    \"topics\": [\"人工智能预算\", \"2023财年\"]\n  },\n  {\n    \"source_id\": \"T0-PB-007\",\n    \"source_locator\": \"pdf_page_29\",\n    \"excerpt_original\": \"The Defense Innovation Unit created several AI worksheets that walk developers through questions to help them align their AI projects with DOD’s ethical AI principles.\",\n    \"excerpt_zh\": \"国防创新单元创建了多份人工智能工作表，引导开发者通过一系列问题，帮助其人工智能项目与国防部的伦理人工智能原则保持一致。\",\n    \"normalized_claim\": \"国防创新单元创建了多份人工智能工作表，以帮助开发者使其项目符合国防部的伦理人工智能原则。\",\n    \"coding_dimensions\": [\"trust_governance_constraints\"],\n    \"evidence_nature\": \"deployment_event\",\n    \"topics\": [\"国防创新单元\", \"伦理人工智能原则\", \"工作表\"]\n  },\n  {\n    \"source_id\": \"T0-PB-007\",\n    \"source_locator\": \"pdf_page_29\",\n    \"excerpt_original\": \"Of the five military services, the Air Force has published AI-specific acquisition resources—specifically, the Air Force-Massachusetts Institute of Technology AI Acquisition Guidebook.\",\n    \"excerpt_zh\": \"在五个军种中，空军发布了针对人工智能的采办资源——具体而言，即空军-麻省理工学院人工智能采办指南。\",\n    \"normalized_claim\": \"在五个军种中，空军发布了针对人工智能的采办资源，即空军-麻省理工学院人工智能采办指南。\",\n    \"coding_dimensions\": [\"organizational_system_fit\"],\n    \"evidence_nature\": \"deployment_event\",\n    \"topics\": [\"空军\", \"人工智能采办指南\"]\n  }\n]\n```"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10113,
+    "total_tokens": 11024,
+    "completion_tokens": 911,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

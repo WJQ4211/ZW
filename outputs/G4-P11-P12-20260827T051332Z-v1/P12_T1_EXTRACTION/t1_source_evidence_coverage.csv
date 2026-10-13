@@ -1,0 +1,9 @@
+﻿source_id,title,source_grade,category,paragraph_count,processed_paragraph_count,raw_candidate_count,deterministic_gate_pass_count,final_candidate_count,pending_visual_review_count,blank_or_non_text_paragraph_count
+T1-DAF-001,"DAF releases data, AI strategies to accelerate military dominance",A,strategy_policy_governance,5,5,6,4,4,0,0
+T1-DAF-002,DAF launches plan to bolster AI workforce,A,strategy_policy_governance,4,4,6,5,3,0,0
+T1-DAF-003,Air Force advances secure AI capabilities with IL5 approval for VIA’s,A,program_budget_acquisition,9,9,6,6,4,0,0
+T1-DAF-004,Space Force integrates with Air Force in AI sprint to ensure mission d,A,program_budget_acquisition,40,40,6,6,6,0,0
+T1-DAF-006,"Air Force experiments with AI, boosts battle management speed, accurac",A,test_deployment_organization,24,24,6,5,3,0,0
+T1-DAF-007,Luke AFB Airmen pioneer AI integration for daily operations,A,test_deployment_organization,8,8,6,6,4,0,0
+T1-DAF-008,732nd AMS leverages artificial intelligence to enhance Arctic TTX,A,test_deployment_organization,6,6,6,6,6,0,0
+T1-DARPA-002,Closing the integration gap for molecules and microsystems | DARPA,A,program_budget_acquisition,14,14,5,5,0,0,0

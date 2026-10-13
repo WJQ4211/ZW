@@ -1,0 +1,13 @@
+﻿source_id,gap_area,planned_coverage_role,selection_basis,p3s_eligibility,duplicate_check_status,evidence_created
+T0-SP-001,human_machine_collaboration,supplement candidate; no formal Evidence extracted,A-grade official first-party source within T0 window,eligible_for_p3s_review,no_exact_duplicate_in_existing_local_archive,0
+T0-SP-001,trust_governance_constraints,supplement candidate; no formal Evidence extracted,A-grade official first-party source within T0 window,eligible_for_p3s_review,no_exact_duplicate_in_existing_local_archive,0
+T0-TD-001,test_activity,supplement candidate; no formal Evidence extracted,A-grade official first-party source within T0 window,eligible_for_p3s_review,no_exact_duplicate_in_existing_local_archive,0
+T0-TD-001,application_maturity,supplement candidate; no formal Evidence extracted,A-grade official first-party source within T0 window,eligible_for_p3s_review,no_exact_duplicate_in_existing_local_archive,0
+T0-TD-002,test_activity,supplement candidate; no formal Evidence extracted,A-grade official first-party source within T0 window,eligible_for_p3s_review,no_exact_duplicate_in_existing_local_archive,0
+T0-TD-002,test_result,supplement candidate; no formal Evidence extracted,A-grade official first-party source within T0 window,eligible_for_p3s_review,no_exact_duplicate_in_existing_local_archive,0
+T0-TD-002,application_maturity,supplement candidate; no formal Evidence extracted,A-grade official first-party source within T0 window,eligible_for_p3s_review,no_exact_duplicate_in_existing_local_archive,0
+T0-TD-003,engineering_conditions,supplement candidate; no formal Evidence extracted,A-grade official first-party source within T0 window,eligible_for_p3s_review,no_exact_duplicate_in_existing_local_archive,0
+T0-TD-003,application_maturity,supplement candidate; no formal Evidence extracted,A-grade official first-party source within T0 window,eligible_for_p3s_review,no_exact_duplicate_in_existing_local_archive,0
+T0-TD-005,test_activity,supplement candidate; no formal Evidence extracted,A-grade official first-party source within T0 window,eligible_for_p3s_review,no_exact_duplicate_in_existing_local_archive,0
+T0-TD-005,test_result,supplement candidate; no formal Evidence extracted,A-grade official first-party source within T0 window,eligible_for_p3s_review,no_exact_duplicate_in_existing_local_archive,0
+T0-TD-005,application_maturity,supplement candidate; no formal Evidence extracted,A-grade official first-party source within T0 window,eligible_for_p3s_review,no_exact_duplicate_in_existing_local_archive,0

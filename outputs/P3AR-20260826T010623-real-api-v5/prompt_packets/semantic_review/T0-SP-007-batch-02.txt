@@ -1,0 +1,9 @@
+PROMPT_ID: evidence_claim_alignment_review
+VERSION: 1.0
+BATCH_ID: T0-SP-007-batch-02
+TASK: Independently audit whether each candidate's claim, dimensions, and evidence nature are directly supported by its own excerpt.
+INPUT LIMIT: Use only the candidate fields below. Do not use source metadata, other candidates, prior runs, or outside knowledge.
+OUTPUT: strict JSON array with exactly candidate_index, status, reason, claim_supported, nature_supported, dimensions_supported.
+status must be pass, revise, or reject. Do not rewrite candidates.
+Reject claims that add a subject, action, or result absent from the excerpt. Reject mere glossary or generic definition entries that do not directly serve the research question.
+[]

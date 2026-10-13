@@ -1,0 +1,32 @@
+T1证据候选抽取。只使用下面提供的T1原文，不使用外部知识。
+研究问题：以公开、非密材料为依据，研究2025年1月1日至2026年6月30日期间，美国军用人工智能能力形成、应用部署和体系化发展的公开可观察变化。
+来源ID：T1-DAF-003
+标题：Air Force advances secure AI capabilities with IL5 approval for VIA’s
+发布日期：2026-04-17
+输出JSON数组；每条只表达一个可核查事实或明确主张。每条必须恰好包含以下8个字段：source_id, source_locator, excerpt_original, excerpt_zh, normalized_claim, evidence_nature, coding_dimensions, topics。不得输出其他字段；允许输出空数组；每份来源最多6条。source_id必须与给定来源一致；source_locator必须是给定定位。excerpt_original必须逐字连续来自给定段落；normalized_claim使用中文且不得扩大主体、行动、数字、范围或结果；excerpt_zh必须非空。evidence_nature只能使用单一枚举值，coding_dimensions和topics必须是字符串数组。不要把目标写成结果、把演示或试验写成部署、把预算或合同直接写成规模化能力。
+证据性质定义：
+- goal: 计划、目标、拟议能力或未来安排，不等于已经实现。
+- governance_event: 已经发生的政策、职责、指南或组织治理机制建立。
+- resource_input: 已经发生的预算、合同、采购、数据、人才或基础设施投入。
+- test_event: 测试、演示、演习或竞赛发生及其参与主体、配置。
+- test_result: 测试中明确观察到的功能、性能或结果。
+- deployment_event: 明确已经部署、实装、投入运行或持续使用。
+- constraint: 限制能力形成、部署或评估的已报告条件。
+- evaluation: 来源明确给出的评估、判断或评价，不改写为客观结果。
+编码维度定义：
+- integration_level: 跨项目、跨平台、跨军种或企业级系统集成的程度。
+- application_maturity: 从目标、演示、试验到部署和持续使用的应用成熟度。
+- human_machine_authority: 人机在任务中的权责、授权、监督与决策关系。
+- engineering_resource_conditions: 数据、算力、基础设施、人才、预算、采办和保障条件。
+- trust_governance_constraints: 可信性、安全、测试评估、责任、治理约束及制度落地。
+- organizational_system_fit: 组织运用、流程、任务适配和体系制度环境的匹配程度。
+原文段落：
+[web_paragraph_0001] Air Force advances secure AI capabilities with IL5 approval for VIA’s
+[web_paragraph_0002] Published April 17, 2026
+[web_paragraph_0003] By Secretary of the Air Force Public Affairs
+[web_paragraph_0004] The Department of the Air Force has awarded Via Science, Inc., a leading provider of AI technologies, Impact Level 5 Authority to Operate for its eJARVIS application.
+[web_paragraph_0005] The eJARVIS application (a USAF-configured version of VIA’s dual-use commercial Share Less, Ask More Artificial Intelligence solution) delivers fast, secure data access for rapid installation energy, utility and resilience data analysis.
+[web_paragraph_0006] “The Department of the Air Force is committed to responsibly accelerating AI integration to strengthen operational readiness,” said Nancy Balkus , deputy assistant secretary of the Air Force for Infrastructure, Energy and Environment. “Ensuring the availability and resilience of installation energy data is critical to DAF's power projection, and eJARVIS allows us to provide warfighters with access to this critical information in minutes rather than weeks, speeding decisions without compromising security.”
+[web_paragraph_0007] IL5 is a designation for storing and processing specialized types of Controlled Unclassified Information that require a higher level of protection than standard CUI. The increase to IL5 expands the range of data that eJARVIS’ generative artificial intelligence solution can analyze, increasing its reach and value beyond the IL4 capability awarded in May 2024.
+[web_paragraph_0008] In early 2024, eJARVIS achieved a significant milestone when it became one of the early generative AI applications to achieve Authority to Operate.
+[web_paragraph_0009] Web3 technologies represent the next iteration of the internet, centered on decentralization and user ownership of data. VIA’s Web3 blockchain technology enables a clear chain of custody for data, prompts and responses required for high-stakes decision making and after-action reviews. eJARVIS’ architecture reduces the need to share data with AI large language models, ensuring sensitive information remains protected. Additionally, eJARVIS enables non-technical users to analyze datasets previously too large for LLMs, providing faster, more data-informed decisions.

@@ -1,0 +1,41 @@
+{
+  "run_id": "P3SCOMPAT-20260826T125652Z-schema-v1",
+  "stage": "P3S-COMPAT",
+  "source_id": "T0-SP-001",
+  "model_api_calls": 1,
+  "semantic_model_calls": 0,
+  "evidence_inserted": 0,
+  "g1_executed": false,
+  "p4_executed": false,
+  "t1_read": false,
+  "api_key_written": false,
+  "compatibility_pass": false,
+  "prompt_template_version": "1.2",
+  "prompt_template_sha256": "f52b5003f0c457fd224a3a7997f8c65d748a5714082796c63d6c7d482655a4b4",
+  "prompt_sha256": "a3bfed39c3ae393ee1d0ad656b6483f845eb733ff2e2971750b1fcfdfd4e4e2e",
+  "input_text_sha256": "d4bed3c4fbc38d68ec1f6d82d6366070d25359ab2337102c6c204a4c50cdffa2",
+  "input_text_path": "outputs/P4Q-P2S-20260826T082341Z-v1/source_text/T0-SP-001.txt",
+  "transport": "openai_compatible_api",
+  "model_id": "deepseek-v4-flash-0731",
+  "provider_call_count": 1,
+  "physical_retry_count": 0,
+  "response_sha256": "a37b689686dcc1bed73a5f69e13df871e33fce7c450fe6499d6c8a7e9f7f4029",
+  "response_status_code": 200,
+  "requested_temperature": 0.0,
+  "provider_temperature": null,
+  "provider_token_usage": {
+    "prompt_tokens": 2499,
+    "completion_tokens": 1526,
+    "total_tokens": 4025
+  },
+  "provider_cost": null,
+  "latency_ms": 12358,
+  "raw_candidate_count": 0,
+  "schema_valid_count": 0,
+  "exact_quote_matched_count": 0,
+  "output_file_hashes": {
+    "generated_prompt.txt": "f7bf7de67a680a4090ee174c4c3983fc48de780d88ff37fb59980fbbc13d0054",
+    "raw_model_output.json": "346091ecb9e52a3ed3eba7dedc40fdd596e65eae0e4cb027ab610f1aee78fd3f",
+    "schema_validation.csv": "3cce50c1798f33b65a8b0e13094ad28a04536f83367d1ab35f27402edfc5be39"
+  }
+}

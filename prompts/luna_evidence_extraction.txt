@@ -1,0 +1,20 @@
+请从给定文档中抽取与研究问题直接相关的证据对象。
+
+规则：
+1. 每条证据只包含一个可核查事实或明确主张；
+2. excerpt_original必须逐字来自文档，不得改写；
+3. excerpt_zh只做忠实翻译，不扩展原文含义；
+4. normalized_claim可以规范化，但不得扩大原文含义；
+5. evidence_nature只能用于区分goal、resource_input、test_result、deployment_event、constraint、evaluation；
+6. 战略愿景不得标记为deployment_event；
+7. 必须填写页码或章节，找不到则标记page_pending_review；
+8. 只使用本文件内容，不调用模型记忆补充事实；
+9. 不判断最终发展路线；
+10. coding_dimensions只填写材料直接支持的编码维度；
+11. 输出严格JSON，不创造来源文件中不存在的事实。
+
+目标Evidence字段：
+case_id, evidence_id, version, snapshot_tag, title, source_type, source_grade,
+publisher, published_at, url_or_path, page_or_section, excerpt_original,
+excerpt_zh, normalized_claim, coding_dimensions, evidence_nature, topics, status,
+reviewed_by

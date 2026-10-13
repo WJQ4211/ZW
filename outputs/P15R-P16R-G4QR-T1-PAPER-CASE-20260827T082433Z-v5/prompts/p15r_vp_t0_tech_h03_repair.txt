@@ -1,0 +1,714 @@
+只修正上一轮P15R输出的格式/枚举/无效Evidence引用错误，不改变观点的专业视角、实质时间范围或原文事实边界。
+上一轮失败原因：unknown evidence id EV-T0-AD4CCAC18E1BB26C
+上一轮JSON：
+{
+  "judgment": "T1证据进一步确认了作战化AI安全评估能力、实验室到作战环境的转化边界以及数据规模约束，这些均指向技术成熟度仍受制于工程验证和资源条件；SABER等计划仍处于目标设定阶段，未构成已实现部署，因此本假设在技术成熟度视角下继续成立。",
+  "confidence": "medium",
+  "supporting_evidence": [
+    {
+      "evidence_id": "EV-T0-AD4CCAC18E1BB26C",
+      "version": 1,
+      "target_field": "judgment",
+      "relation": "support",
+      "importance": "high"
+    },
+    {
+      "evidence_id": "EV-T0-62B1ECDA7DF87F1A",
+      "version": 1,
+      "target_field": "judgment",
+      "relation": "support",
+      "importance": "high"
+    },
+    {
+      "evidence_id": "EV-T0-8E35B508DF5C2E65",
+      "version": 1,
+      "target_field": "judgment",
+      "relation": "support",
+      "importance": "high"
+    },
+    {
+      "evidence_id": "CE-T1-FE00C458FAADC5D8",
+      "version": 1,
+      "target_field": "judgment",
+      "relation": "support",
+      "importance": "high"
+    },
+    {
+      "evidence_id": "CE-T1-11BBC2ABED0945C2",
+      "version": 1,
+      "target_field": "judgment",
+      "relation": "support",
+      "importance": "high"
+    },
+    {
+      "evidence_id": "CE-T1-C4C1018771B30C5A",
+      "version": 1,
+      "target_field": "judgment",
+      "relation": "support",
+      "importance": "high"
+    },
+    {
+      "evidence_id": "CE-T1-FA2B6E620D8DDBD2",
+      "version": 1,
+      "target_field": "judgment",
+      "relation": "support",
+      "importance": "medium"
+    },
+    {
+      "evidence_id": "CE-T1-E2F907CF4DA00903",
+      "version": 1,
+      "target_field": "judgment",
+      "relation": "support",
+      "importance": "medium"
+    }
+  ],
+  "counter_evidence": [
+    {
+      "evidence_id": "EV-T0-0405886E04C205A6",
+      "version": 1,
+      "target_field": "boundary_conditions[0]",
+      "relation": "limit",
+      "importance": "medium"
+    },
+    {
+      "evidence_id": "EV-T0-FB39056D1BA1F579",
+      "version": 1,
+      "target_field": "boundary_conditions[0]",
+      "relation": "limit",
+      "importance": "medium"
+    },
+    {
+      "evidence_id": "CE-T1-95F7FE29CF48D86D",
+      "version": 1,
+      "target_field": "boundary_conditions[0]",
+      "relation": "limit",
+      "importance": "medium"
+    }
+  ],
+  "mechanism_claims": [
+    "机载AI系统的主要限制因素是处理速度（依据EV-T0-AD4CCAC18E1BB26C，直接证据）。",
+    "处理速度限制可能影响实时决策能力——此为合理推断，但现有证据未直接量化该影响，需进一步验证（推断）。",
+    "缺乏基于经测试标准的组织化方法，导致数据质量难以满足AI需求（依据EV-T0-62B1ECDA7DF87F1A，直接证据）。",
+    "国防部尚未制定全部门范围的AI采办指导方针，导致各军种自行制定标准，缺乏统一协调（依据EV-T0-8E35B508DF5C2E65，直接证据）。",
+    "T1证据表明，对AI系统的攻击演示大多在实验室条件下进行，且缺乏对已部署AI战场系统进行作战漏洞评估的成熟能力和生态，这直接限制了技术成熟度的验证（依据CE-T1-FE00C458FAADC5D8、CE-T1-11BBC2ABED0945C2、CE-T1-C4C1018771B30C5A，直接证据）。",
+    "SABER计划的目标是建立示范性AI红队并执行高保真作战AI安全演习，但该计划仍处于目标设定阶段，未构成已实现部署，因此不能作为技术成熟度提升的证据（依据CE-T1-FA2B6E620D8DDBD2、CE-T1-E2F907CF4DA00903，直接证据）。"
+  ],
+  "key_assumptions": [
+    "资源约束（如机载处理速度、数据质量、基础设施延迟）是能力形成的主要瓶颈。",
+    "预算投入（如2023财年11亿美元）和DARPA的数据收集（如100TB传感器数据）尚未完全解决这些瓶颈。",
+    "国防部层面的AI采办指导方针缺失是体系化发展的主要障碍。",
+    "T1证据中关于作战医疗领域的数据规模（0.017GB）仅代表该特定领域，不能外推为全军AI数据条件的普遍状态。"
+  ],
+  "boundary_conditions": [
+    "若数据、边缘算力和共用基础设施瓶颈持续存在，则本假设增强。",
+    "若统一采办和测试评估制度仍未落地，则本假设增强。",
+    "若资源与治理瓶颈得到解决并伴随跨任务规模化部署，则本假设削弱。",
+    "T1证据中关于作战化AI安全评估能力缺失的约束，仅反映截至2026年6月30日的状态，不排除后续能力建设。"
+  ],
+  "uncertainties": [
+    "预算投入是否已有效转化为实际的技术能力提升，缺乏直接证据。",
+    "DARPA收集的100TB传感器数据是否已用于解决数据质量瓶颈，尚不明确。",
+    "处理速度限制对实时决策能力的具体影响程度缺乏量化数据。",
+    "SABER计划后续是否能够成功建立作战评估能力，以及其时间表，尚不明确。"
+  ],
+  "information_gaps": [
+    "缺乏关于机载AI处理速度限制在具体项目中的量化影响数据。",
+    "国防部采办指导方针的制定进展缺乏公开时间表。",
+    "处理速度限制与实时决策能力之间的因果关系缺乏直接证据。",
+    "缺乏关于SABER计划当前进展阶段（如是否已进行首次演习）的公开信息。"
+  ],
+  "falsifiers": [
+    "若在2026年7月1日之后，出现多个军种在作战演习中常态化使用同一套AI系统，且不依赖DARPA等专门项目支持，则本假设不成立。",
+    "若在2026年7月1日之后，出现公开证据表明国防部已建立统一的AI采办指导方针并应用于多个军种，则本假设削弱。",
+    "若在2026年7月1日之后，SABER计划或其他类似项目公开报告已完成对已部署AI系统的作战漏洞评估并形成可复用流程，则本假设削弱。"
+  ],
+  "affected_fields": [
+    "judgment",
+    "boundary_conditions[0]"
+  ],
+  "evidence_field_changes": [
+    {
+      "target_field": "judgment",
+      "before": "T1证据补充了作战化评估能力、数据条件和工程约束，表明资源与可信治理瓶颈仍影响应用扩展；局部结果不足以消除这一条件性判断。",
+      "after": "T1证据进一步确认了作战化AI安全评估能力缺失、实验室到作战环境的转化边界以及数据规模约束，这些均指向技术成熟度仍受制于工程验证和资源条件；SABER等计划仍处于目标设定阶段，未构成已实现部署，因此本假设在技术成熟度视角下继续成立。",
+      "new_evidence_ids": [
+        "CE-T1-FE00C458FAADC5D8",
+        "CE-T1-11BBC2ABED0945C2",
+        "CE-T1-C4C1018771B30C5A",
+        "CE-T1-FA2B6E620D8DDBD2",
+        "CE-T1-E2F907CF4DA00903",
+        "CE-T1-95F7FE29CF48D86D"
+      ],
+      "change_reason": "T1证据提供了关于作战化AI安全评估能力缺失、实验室到作战环境转化边界以及数据规模约束的直接信息，强化了技术成熟度受限的判断；同时SABER计划的目标属性被明确为未实现部署，避免过度外推。"
+    },
+    {
+      "target_field": "boundary_conditions[0]",
+      "before": "若数据、边缘算力和共用基础设施瓶颈持续存在，则本假设增强。",
+      "after": "若数据、边缘算力和共用基础设施瓶颈持续存在，则本假设增强；T1证据中关于作战医疗领域的数据规模（0.017GB）仅代表该特定领域，不能外推为全军AI数据条件的普遍状态。",
+      "new_evidence_ids": [
+        "CE-T1-95F7FE29CF48D86D"
+      ],
+      "change_reason": "T1证据提供了作战医疗领域的数据规模约束，该约束被限定为局部条件，不改变主判断，但明确了外推边界。"
+    }
+  ],
+  "update_rationale": "T1证据中关于作战化AI安全评估能力缺失、实验室到作战环境转化边界以及数据规模约束的信息，均支持技术成熟度受限的判断；SABER计划的目标属性被明确为未实现部署，避免过度外推。因此，本假设在技术成熟度视角下继续成立，置信度维持medium。"
+}
+
+原始任务提示（仅用于保持字段定义）：
+你是P15R观点复评器。只处理一个观点位置。
+
+严格边界：只使用本提示提供的旧观点、P14影响边和T1正式Evidence；不得读取其他视角输出、其他观点的修订结论、T0假设全文、T0分歧内容或外部常识。不得引用六条排除T1 Evidence，也不得把两条historical_context当作T1变化信号。战略目标、官方评价和test_event不能写成已实现部署；局部空军、DARPA竞赛或作战医疗材料不能外推为全军成熟度。所有时间判断必须以截至2026年6月30日为当前边界，未来可证伪条件从2026年7月1日以后表述。
+
+专业差异必须保持：OPS只从任务运用/持续使用/作战适配出发；STRAT只从治理、资源配置、跨军种机制出发；TECH只从成熟度、工程复用、性能边界出发；TRUST只从可信性、验证、红队和治理条件出发。不得复制其他观点的judgment。
+
+每条判断必须说明证据范围，不能把‘未观察到’写成‘不存在’。引用对象的relation只能是support、challenge、limit、background，禁止使用qualify、boundary_change或其他值；importance只能是high、medium、low。只输出一个JSON对象，不要Markdown围栏，不要额外字段。输出字段必须恰好为：judgment、confidence、supporting_evidence、counter_evidence、mechanism_claims、key_assumptions、boundary_conditions、uncertainties、information_gaps、falsifiers、affected_fields、evidence_field_changes、update_rationale。supporting_evidence和counter_evidence为引用对象数组；evidence_field_changes必须逐字段说明before/after及new_evidence_ids。
+
+本次输入JSON：
+{
+  "perspective_id": "TECH",
+  "perspective_responsibility": "技术成熟度、工程复用、性能边界与技术转化",
+  "hypothesis_id": "HYP-T0-03",
+  "previous_latest_viewpoint": {
+    "admission_failure_reason": "",
+    "boundary_conditions": [
+      "若数据、边缘算力和共用基础设施瓶颈持续存在，则本假设增强。",
+      "若统一采办和测试评估制度仍未落地，则本假设增强。",
+      "若资源与治理瓶颈得到解决并伴随跨任务规模化部署，则本假设削弱。"
+    ],
+    "case_id": "us_military_ai_deployment",
+    "change_reason": "P14_evidence_field_impact_local_update",
+    "confidence": "medium",
+    "counter_evidence": [
+      {
+        "evidence_id": "EV-T0-0405886E04C205A6",
+        "note": "",
+        "relation": "limit",
+        "version": 1
+      },
+      {
+        "evidence_id": "EV-T0-FB39056D1BA1F579",
+        "note": "",
+        "relation": "limit",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-95F7FE29CF48D86D",
+        "note": "该材料来自作战医疗领域，直接提供数据规模或模型表现条件，但外推到全军AI需受任务范围约束。",
+        "relation": "boundary_change",
+        "version": 1
+      }
+    ],
+    "created_at": "2026-08-27T07:25:25Z",
+    "falsifiers": [
+      "若在2024年底前出现多个军种在作战演习中常态化使用同一套AI系统，且不依赖DARPA等专门项目支持，则本假设不成立。"
+    ],
+    "generator": {
+      "citation_details": [
+        {
+          "evidence_id": "EV-T0-AD4CCAC18E1BB26C",
+          "importance": "high",
+          "relation": "support",
+          "target_field": "judgment",
+          "version": 1
+        },
+        {
+          "evidence_id": "EV-T0-62B1ECDA7DF87F1A",
+          "importance": "high",
+          "relation": "support",
+          "target_field": "judgment",
+          "version": 1
+        },
+        {
+          "evidence_id": "EV-T0-8E35B508DF5C2E65",
+          "importance": "high",
+          "relation": "support",
+          "target_field": "judgment",
+          "version": 1
+        },
+        {
+          "evidence_id": "EV-T0-0405886E04C205A6",
+          "importance": "medium",
+          "relation": "limit",
+          "target_field": "boundary_conditions[0]",
+          "version": 1
+        },
+        {
+          "evidence_id": "EV-T0-FB39056D1BA1F579",
+          "importance": "medium",
+          "relation": "limit",
+          "target_field": "boundary_conditions[0]",
+          "version": 1
+        }
+      ],
+      "mechanism_claim_details": [
+        {
+          "basis": "evidence",
+          "claim": "机载AI系统的主要限制因素是处理速度（依据EV-T0-AD4CCAC18E1BB26C）。",
+          "evidence_ids": [
+            "EV-T0-AD4CCAC18E1BB26C"
+          ]
+        },
+        {
+          "basis": "model_inference",
+          "claim": "处理速度限制可能影响实时决策能力——此为合理推断，但现有证据未直接量化该影响，需进一步验证。",
+          "evidence_ids": []
+        },
+        {
+          "basis": "evidence",
+          "claim": "缺乏基于经测试标准的组织化方法，导致数据质量难以满足AI需求。",
+          "evidence_ids": [
+            "EV-T0-62B1ECDA7DF87F1A"
+          ]
+        },
+        {
+          "basis": "evidence",
+          "claim": "国防部尚未制定全部门范围的AI采办指导方针，导致各军种自行制定标准，缺乏统一协调。",
+          "evidence_ids": [
+            "EV-T0-8E35B508DF5C2E65"
+          ]
+        }
+      ],
+      "model_id": "deepseek-v4-flash-0731",
+      "p7_call": {
+        "requested_model_id": "deepseek-v4-flash-0731",
+        "response_sha256": "0222a4c9011d20cd3e0666b80ae8795dde1c00673a256bdd4eea382116b58150",
+        "reused": true,
+        "source_file": "P7/initial_viewpoints.jsonl",
+        "source_run_id": "P7P9-20260826T163818Z-t0-viewpoint-disagreement-prep-v1",
+        "transport": "reused_prior_artifact"
+      },
+      "p7_source": "reused_prior_p7",
+      "p8_response_call": {
+        "attempts": 1,
+        "batch_id": "p8r_response_tech",
+        "call_id": "p8r_response_tech",
+        "endpoint": "https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1/chat/completions",
+        "is_repair": false,
+        "latency_ms": 23206,
+        "phase": "P8R_RESPONSE",
+        "prompt_sha256": "34b5b770b0ec94287de01bf9f67cb31be73d43c9547ff8c2b468aefbba102bcd",
+        "provider_cost": null,
+        "provider_metrics_status": "observed",
+        "provider_model_id": "deepseek-v4-flash-0731",
+        "provider_temperature": null,
+        "provider_token_usage": {
+          "completion_tokens": 2995,
+          "prompt_tokens": 4262,
+          "total_tokens": 7257
+        },
+        "request_parameters": {
+          "enable_thinking": false,
+          "max_tokens": 24000,
+          "temperature": 0.0
+        },
+        "request_started_at_utc": "2026-08-27T02:05:50Z",
+        "requested_model_id": "deepseek-v4-flash-0731",
+        "response_sha256": "5fbbc9ef57824e083b80ea71229f2e88b052e67c8febbd9e8ff6313f5e5b3f3a",
+        "response_status_code": 200,
+        "retry_count": 0,
+        "source_id": "TECH",
+        "transport": "openai_compatible_api"
+      },
+      "perspective_id": "TECH",
+      "response_action": "revise",
+      "response_note": "针对质疑，修订机制声明以明确区分直接证据与推断，将'影响实时决策能力'的表述从机制声明中分离，改为基于处理速度限制的合理推断，并降低置信度。",
+      "run_id": "P7R-P9R-20260827T020335Z-case-strengthening-v1"
+    },
+    "human_verified": false,
+    "hypothesis_id": "HYP-T0-03",
+    "information_gaps": [
+      "缺乏关于机载AI处理速度限制在具体项目中的量化影响数据。",
+      "国防部采办指导方针的制定进展缺乏公开时间表。",
+      "处理速度限制与实时决策能力之间的因果关系缺乏直接证据。"
+    ],
+    "judgment": "T1证据补充了作战化评估能力、数据条件和工程约束，表明资源与可信治理瓶颈仍影响应用扩展；局部结果不足以消除这一条件性判断。",
+    "key_assumptions": [
+      "资源约束（如机载处理速度、数据质量、基础设施延迟）是能力形成的主要瓶颈。",
+      "预算投入（如2023财年11亿美元）和DARPA的数据收集（如100TB传感器数据）尚未完全解决这些瓶颈。",
+      "国防部层面的AI采办指导方针缺失是体系化发展的主要障碍。"
+    ],
+    "mechanism_claims": [
+      "机载AI系统的主要限制因素是处理速度（依据EV-T0-AD4CCAC18E1BB26C）。",
+      "处理速度限制可能影响实时决策能力——此为合理推断，但现有证据未直接量化该影响，需进一步验证。",
+      "缺乏基于经测试标准的组织化方法，导致数据质量难以满足AI需求。",
+      "国防部尚未制定全部门范围的AI采办指导方针，导致各军种自行制定标准，缺乏统一协调。"
+    ],
+    "parent_version": 2,
+    "perspective_id": "TECH",
+    "run_id": "G1-T1-P13-P16-99A723BFBC6D273A-formal-v1",
+    "schema_version": "phase-a.1",
+    "snapshot_id": "SNAP-T1-US-MILITARY-AI-99A723BFBC6D273A",
+    "stance": "support",
+    "status": "admitted",
+    "supporting_evidence": [
+      {
+        "evidence_id": "EV-T0-AD4CCAC18E1BB26C",
+        "note": "",
+        "relation": "support",
+        "version": 1
+      },
+      {
+        "evidence_id": "EV-T0-62B1ECDA7DF87F1A",
+        "note": "",
+        "relation": "support",
+        "version": 1
+      },
+      {
+        "evidence_id": "EV-T0-8E35B508DF5C2E65",
+        "note": "",
+        "relation": "support",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-FE00C458FAADC5D8",
+        "note": "该约束直接涉及作战化AI安全评估能力及实验室到作战环境的转化边界，改变技术成熟度判断的限制项。",
+        "relation": "support",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-11BBC2ABED0945C2",
+        "note": "该约束直接涉及作战化AI安全评估能力及实验室到作战环境的转化边界，改变技术成熟度判断的限制项。",
+        "relation": "support",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-C4C1018771B30C5A",
+        "note": "该约束直接涉及作战化AI安全评估能力及实验室到作战环境的转化边界，改变技术成熟度判断的限制项。",
+        "relation": "support",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-FA2B6E620D8DDBD2",
+        "note": "该约束直接涉及作战化AI安全评估能力及实验室到作战环境的转化边界，改变技术成熟度判断的限制项。",
+        "relation": "support",
+        "version": 1
+      },
+      {
+        "evidence_id": "CE-T1-E2F907CF4DA00903",
+        "note": "该约束直接涉及作战化AI安全评估能力及实验室到作战环境的转化边界，改变技术成熟度判断的限制项。",
+        "relation": "support",
+        "version": 1
+      }
+    ],
+    "t1_update": {
+      "affected_fields": [
+        "boundary_conditions[0]",
+        "judgment"
+      ],
+      "boundary_change": "新增T1来源的任务、机构和公开披露范围被明确保留。",
+      "confidence_change": "unchanged_or_conditioned",
+      "falsifiable_condition": "若后续A/B级材料显示跨军种共用平台实际迁移并形成可复用工程流程，则需重新评估。",
+      "mechanism_change": "T1材料补充了局部试验/使用或约束条件，但不强制改变主判断。",
+      "new_evidence_ids": [
+        "CE-T1-11BBC2ABED0945C2",
+        "CE-T1-95F7FE29CF48D86D",
+        "CE-T1-C4C1018771B30C5A",
+        "CE-T1-E2F907CF4DA00903",
+        "CE-T1-FA2B6E620D8DDBD2",
+        "CE-T1-FE00C458FAADC5D8"
+      ],
+      "source_snapshot": "SNAP-T0-US-MILITARY-AI-C6C812108AF95309",
+      "target_snapshot": "SNAP-T1-US-MILITARY-AI-99A723BFBC6D273A"
+    },
+    "uncertainties": [
+      "预算投入是否已有效转化为实际的技术能力提升，缺乏直接证据。",
+      "DARPA收集的100TB传感器数据是否已用于解决数据质量瓶颈，尚不明确。",
+      "处理速度限制对实时决策能力的具体影响程度缺乏量化数据。"
+    ],
+    "version": 3,
+    "viewpoint_id": "VP-T0-TECH-H03"
+  },
+  "assigned_p14_impact_edges": [
+    {
+      "confidence": "high",
+      "evidence_id": "CE-T1-FE00C458FAADC5D8",
+      "evidence_version": 1,
+      "hypothesis_id": "HYP-T0-03",
+      "rationale": "该约束直接涉及作战化AI安全评估能力及实验室到作战环境的转化边界，改变技术成熟度判断的限制项。",
+      "relation": "support",
+      "t1_change_signal_eligible": true,
+      "target_field": "judgment",
+      "viewpoint_id": "VP-T0-TECH-H03",
+      "viewpoint_version": 2
+    },
+    {
+      "confidence": "high",
+      "evidence_id": "CE-T1-11BBC2ABED0945C2",
+      "evidence_version": 1,
+      "hypothesis_id": "HYP-T0-03",
+      "rationale": "该约束直接涉及作战化AI安全评估能力及实验室到作战环境的转化边界，改变技术成熟度判断的限制项。",
+      "relation": "support",
+      "t1_change_signal_eligible": true,
+      "target_field": "judgment",
+      "viewpoint_id": "VP-T0-TECH-H03",
+      "viewpoint_version": 2
+    },
+    {
+      "confidence": "high",
+      "evidence_id": "CE-T1-C4C1018771B30C5A",
+      "evidence_version": 1,
+      "hypothesis_id": "HYP-T0-03",
+      "rationale": "该约束直接涉及作战化AI安全评估能力及实验室到作战环境的转化边界，改变技术成熟度判断的限制项。",
+      "relation": "support",
+      "t1_change_signal_eligible": true,
+      "target_field": "judgment",
+      "viewpoint_id": "VP-T0-TECH-H03",
+      "viewpoint_version": 2
+    },
+    {
+      "confidence": "high",
+      "evidence_id": "CE-T1-FA2B6E620D8DDBD2",
+      "evidence_version": 1,
+      "hypothesis_id": "HYP-T0-03",
+      "rationale": "该约束直接涉及作战化AI安全评估能力及实验室到作战环境的转化边界，改变技术成熟度判断的限制项。",
+      "relation": "support",
+      "t1_change_signal_eligible": true,
+      "target_field": "judgment",
+      "viewpoint_id": "VP-T0-TECH-H03",
+      "viewpoint_version": 2
+    },
+    {
+      "confidence": "high",
+      "evidence_id": "CE-T1-E2F907CF4DA00903",
+      "evidence_version": 1,
+      "hypothesis_id": "HYP-T0-03",
+      "rationale": "该约束直接涉及作战化AI安全评估能力及实验室到作战环境的转化边界，改变技术成熟度判断的限制项。",
+      "relation": "support",
+      "t1_change_signal_eligible": true,
+      "target_field": "judgment",
+      "viewpoint_id": "VP-T0-TECH-H03",
+      "viewpoint_version": 2
+    },
+    {
+      "confidence": "medium",
+      "evidence_id": "CE-T1-95F7FE29CF48D86D",
+      "evidence_version": 1,
+      "hypothesis_id": "HYP-T0-03",
+      "rationale": "该材料来自作战医疗领域，直接提供数据规模或模型表现条件，但外推到全军AI需受任务范围约束。",
+      "relation": "boundary_change",
+      "t1_change_signal_eligible": true,
+      "target_field": "boundary_conditions[0]",
+      "viewpoint_id": "VP-T0-TECH-H03",
+      "viewpoint_version": 2
+    }
+  ],
+  "t1_evidence_full_fields": [
+    {
+      "evidence_id": "CE-T1-FE00C458FAADC5D8",
+      "version": 1,
+      "source_id": "T1-DARPA-001",
+      "source_locator": "web_paragraph_0007",
+      "title": "Sharpening AI warfighting advantage on the battlefield",
+      "publisher": "DARPA",
+      "source_grade": "A",
+      "published_at": "2025-03-17",
+      "published_at_precision": "day",
+      "evidence_nature": "constraint",
+      "coding_dimensions": [
+        "trust_governance_constraints"
+      ],
+      "excerpt_original": "Researchers have demonstrated that AI-enabled systems can be tricked or manipulated via different \"attacks.\" But even these demonstrations have mostly been done in lab conditions, where researchers have complete control over the data and access to the AI's inner workings.",
+      "excerpt_zh": "研究人员已经证明，人工智能系统可以通过不同的“攻击”被欺骗或操纵。但即使是这些演示也大多是在实验室条件下进行的，研究人员可以完全控制数据并访问人工智能的内部运作。",
+      "normalized_claim": "对AI系统的攻击演示大多在实验室条件下进行。",
+      "topics": [
+        "AI安全",
+        "测试评估"
+      ],
+      "t1_change_signal_eligible": true,
+      "temporal_role": "current_t1_signal"
+    },
+    {
+      "evidence_id": "CE-T1-11BBC2ABED0945C2",
+      "version": 1,
+      "source_id": "T1-DARPA-001",
+      "source_locator": "web_paragraph_0007",
+      "title": "Sharpening AI warfighting advantage on the battlefield",
+      "publisher": "DARPA",
+      "source_grade": "A",
+      "published_at": "2025-03-17",
+      "published_at_precision": "day",
+      "evidence_nature": "constraint",
+      "coding_dimensions": [
+        "trust_governance_constraints"
+      ],
+      "excerpt_original": "the findings don't necessarily reflect how well the attacks would work in real-world military operations.",
+      "excerpt_zh": "这些发现不一定能反映攻击在真实军事行动中的效果。",
+      "normalized_claim": "实验室攻击演示结果不一定反映真实军事行动中的效果。",
+      "topics": [
+        "AI安全",
+        "作战适用性"
+      ],
+      "t1_change_signal_eligible": true,
+      "temporal_role": "current_t1_signal"
+    },
+    {
+      "evidence_id": "CE-T1-C4C1018771B30C5A",
+      "version": 1,
+      "source_id": "T1-DARPA-001",
+      "source_locator": "web_paragraph_0009",
+      "title": "Sharpening AI warfighting advantage on the battlefield",
+      "publisher": "DARPA",
+      "source_grade": "A",
+      "published_at": "2025-03-17",
+      "published_at_precision": "day",
+      "evidence_nature": "constraint",
+      "coding_dimensions": [
+        "engineering_resource_conditions",
+        "trust_governance_constraints"
+      ],
+      "excerpt_original": "no well-developed capability nor broader ecosystem exists to operationally assess currently deployed, AI-enabled battlefield systems for vulnerabilities.",
+      "excerpt_zh": "目前不存在成熟的能力或更广泛的生态系统来对已部署的AI赋能战场系统进行漏洞作战评估。",
+      "normalized_claim": "当前缺乏对已部署AI战场系统进行作战漏洞评估的成熟能力和生态。",
+      "topics": [
+        "AI安全",
+        "作战评估",
+        "能力缺口"
+      ],
+      "t1_change_signal_eligible": true,
+      "temporal_role": "current_t1_signal"
+    },
+    {
+      "evidence_id": "CE-T1-FA2B6E620D8DDBD2",
+      "version": 1,
+      "source_id": "T1-DARPA-001",
+      "source_locator": "web_paragraph_0011",
+      "title": "Sharpening AI warfighting advantage on the battlefield",
+      "publisher": "DARPA",
+      "source_grade": "A",
+      "published_at": "2025-03-17",
+      "published_at_precision": "day",
+      "evidence_nature": "goal",
+      "coding_dimensions": [
+        "application_maturity",
+        "integration_level"
+      ],
+      "excerpt_original": "SABER's goal is to build an exemplar AI red team capable of continuously integrating and employing emerging counter-AI techniques and tools to operationally assess AI-enabled battlefield systems.",
+      "excerpt_zh": "SABER的目标是建立一个示范性AI红队，能够持续整合和应用新兴的反AI技术与工具，对AI赋能战场系统进行作战评估。",
+      "normalized_claim": "SABER计划目标是建立示范性AI红队。",
+      "topics": [
+        "AI红队",
+        "SABER计划",
+        "作战评估"
+      ],
+      "t1_change_signal_eligible": true,
+      "temporal_role": "current_t1_signal"
+    },
+    {
+      "evidence_id": "CE-T1-E2F907CF4DA00903",
+      "version": 1,
+      "source_id": "T1-DARPA-001",
+      "source_locator": "web_paragraph_0012",
+      "title": "Sharpening AI warfighting advantage on the battlefield",
+      "publisher": "DARPA",
+      "source_grade": "A",
+      "published_at": "2025-03-17",
+      "published_at_precision": "day",
+      "evidence_nature": "goal",
+      "coding_dimensions": [
+        "application_maturity"
+      ],
+      "excerpt_original": "The program will execute a series of high-fidelity operational AI security exercises for agile experimentation with continuous evaluations.",
+      "excerpt_zh": "该项目将执行一系列高保真度的作战AI安全演习，以进行持续评估的敏捷实验。",
+      "normalized_claim": "SABER计划将执行一系列高保真作战AI安全演习。",
+      "topics": [
+        "AI安全演习",
+        "SABER计划"
+      ],
+      "t1_change_signal_eligible": true,
+      "temporal_role": "current_t1_signal"
+    },
+    {
+      "evidence_id": "CE-T1-95F7FE29CF48D86D",
+      "version": 1,
+      "source_id": "T1-IR-001",
+      "source_locator": "web_paragraph_0049",
+      "title": "Opportunities for Artificial Intelligence in Operational Medicine: Lessons from the United States Military",
+      "publisher": "Bioengineering (MDPI), peer-reviewed research",
+      "source_grade": "B",
+      "published_at": "2025-05-14",
+      "published_at_precision": "day",
+      "evidence_nature": "constraint",
+      "coding_dimensions": [
+        "engineering_resource_conditions"
+      ],
+      "excerpt_original": "the 15-year dataset in the US Joint Trauma System Department of Defense Trauma Registry (DoDTR) contains only 0.017 Gigabytes of data, despite including over 140,000 patient records",
+      "excerpt_zh": "美国联合创伤系统国防部创伤登记处（DoDTR）的15年数据集仅包含0.017 GB的数据，尽管包含超过14万份患者记录。",
+      "normalized_claim": "在作战医疗数据条件下，美国国防部创伤登记处15年数据集仅包含0.017 GB数据。",
+      "topics": [
+        "创伤登记",
+        "数据规模",
+        "AI训练限制"
+      ],
+      "t1_change_signal_eligible": true,
+      "temporal_role": "current_t1_signal"
+    }
+  ],
+  "time_boundary": {
+    "t0_end": "2024-12-31",
+    "t1_end": "2026-06-30",
+    "future_condition_boundary": "2026-07-01 onward"
+  }
+}
+
+占位结构示例（不得照抄占位符作为事实）：
+{
+  "judgment": "[中文、面向本视角的条件化判断]",
+  "confidence": "medium",
+  "supporting_evidence": [
+    {
+      "evidence_id": "CE-T1-PLACEHOLDER",
+      "version": 1,
+      "target_field": "judgment",
+      "relation": "support",
+      "importance": "medium"
+    }
+  ],
+  "counter_evidence": [
+    {
+      "evidence_id": "CE-T1-PLACEHOLDER",
+      "version": 1,
+      "target_field": "boundary_conditions[0]",
+      "relation": "limit",
+      "importance": "medium"
+    }
+  ],
+  "mechanism_claims": [
+    "[一个机制判断，明确标记为证据或推断]"
+  ],
+  "key_assumptions": [
+    "[关键假设]"
+  ],
+  "boundary_conditions": [
+    "[适用边界，使用截至2026年6月30日的口径]"
+  ],
+  "uncertainties": [
+    "[不确定性]"
+  ],
+  "information_gaps": [
+    "[信息缺口]"
+  ],
+  "falsifiers": [
+    "[2026年7月1日以后可观察的可证伪条件]"
+  ],
+  "affected_fields": [
+    "judgment",
+    "boundary_conditions[0]"
+  ],
+  "evidence_field_changes": [
+    {
+      "target_field": "judgment",
+      "before": "[旧字段摘要]",
+      "after": "[新字段摘要]",
+      "new_evidence_ids": [
+        "CE-T1-PLACEHOLDER"
+      ],
+      "change_reason": "[证据指向的变化]"
+    }
+  ],
+  "update_rationale": "[简明理由，不输出隐藏思维链]"
+}
+再次确认：只返回上述13个字段；不改变excerpt_original或source_locator；不生成假设、结论或建议。
+
+硬约束：这是T1观点追加版本；supporting_evidence、counter_evidence以及evidence_field_changes的new_evidence_ids只能使用下列38个eligible T1 Evidence ID，不得保留任何EV-T0-*、排除ID或historical_context ID：
+["CE-T1-02DFF1DCD73E8F93", "CE-T1-050BC7E34C88F297", "CE-T1-06554E1EE0D2B6C0", "CE-T1-0BF350B1F14580F5", "CE-T1-11BBC2ABED0945C2", "CE-T1-11BE4D003ECA817F", "CE-T1-12F70AE60CD787AA", "CE-T1-13704D059FDF383D", "CE-T1-2995ED3DEF557C50", "CE-T1-2EC1A86FF3D5DEEF", "CE-T1-43B8C6F6E7B77F40", "CE-T1-45417DAD097210B1", "CE-T1-4DBD99A761CDD8A5", "CE-T1-6B02747FAF17B29F", "CE-T1-6B0D6E320A21509E", "CE-T1-6C755FA494AD4E9A", "CE-T1-6FA016A513CC103A", "CE-T1-7239909FC989F79A", "CE-T1-7AB164824EAAD82A", "CE-T1-8FF394626242D949", "CE-T1-95F7FE29CF48D86D", "CE-T1-9865C47D4C68375C", "CE-T1-A66D49255D61B484", "CE-T1-AA937CC0AF5E2372", "CE-T1-B40332E796F16865", "CE-T1-B5C396D3278023D1", "CE-T1-BB675BA36EB74B19", "CE-T1-C20674F2CA89D5C5", "CE-T1-C4C1018771B30C5A", "CE-T1-C631674EB5FED17F", "CE-T1-CEACB21D2A3F685C", "CE-T1-CF7656CBCD8BBB03", "CE-T1-D0E7B9B8CC1298AB", "CE-T1-DCF49FC6CBC68958", "CE-T1-E2F907CF4DA00903", "CE-T1-F2BE64F4810C89EF", "CE-T1-FA2B6E620D8DDBD2", "CE-T1-FE00C458FAADC5D8"]
+relation只能是support、challenge、limit、background，禁止qualify和boundary_change；importance只能是high、medium、low。只返回严格JSON对象，字段恰好为原始任务规定的13个字段。

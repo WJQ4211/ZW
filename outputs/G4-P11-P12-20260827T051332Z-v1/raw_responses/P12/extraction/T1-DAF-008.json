@@ -1,0 +1,25 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "```json\n[\n  {\n    \"source_id\": \"T1-DAF-008\",\n    \"source_locator\": \"web_paragraph_0004\",\n    \"excerpt_original\": \"The 732nd Air Mobility Squadron recently participated in Exercise Arctic Bridge, a proof-of-concept tabletop exercise originally developed by the 735th AMS.\",\n    \"excerpt_zh\": \"第732空中机动中队最近参加了“北极桥”演习，这是一个最初由第735空中机动中队开发的概念验证桌面演习。\",\n    \"normalized_claim\": \"第732空中机动中队参加了由第735空中机动中队最初开发的概念验证桌面演习“北极桥”。\",\n    \"evidence_nature\": \"test_event\",\n    \"coding_dimensions\": [\"application_maturity\", \"organizational_system_fit\"],\n    \"topics\": [\"演习参与\", \"桌面演习\", \"概念验证\"]\n  },\n  {\n    \"source_id\": \"T1-DAF-008\",\n    \"source_locator\": \"web_paragraph_0004\",\n    \"excerpt_original\": \"The exercise was further tailored using artificial intelligence technology to reflect the 732nd AMS’s unique Arctic operating environment.\",\n    \"excerpt_zh\": \"该演习进一步使用人工智能技术进行定制，以反映第732空中机动中队独特的北极作战环境。\",\n    \"normalized_claim\": \"演习使用人工智能技术进行了定制，以反映第732空中机动中队的北极作战环境。\",\n    \"evidence_nature\": \"test_event\",\n    \"coding_dimensions\": [\"application_maturity\", \"organizational_system_fit\"],\n    \"topics\": [\"人工智能应用\", \"演习定制\", \"北极环境\"]\n  },\n  {\n    \"source_id\": \"T1-DAF-008\",\n    \"source_locator\": \"web_paragraph_0004\",\n    \"excerpt_original\": \"The 732nd AMS utilized Gemini through GenAI , an AI platform released by the Department of War in December 2025, that was built to provide a secure, department-wide generative AI ecosystem.\",\n    \"excerpt_zh\": \"第732空中机动中队通过GenAI使用了Gemini，GenAI是战争部于2025年12月发布的人工智能平台，旨在提供安全的、部门范围的生成式人工智能生态系统。\",\n    \"normalized_claim\": \"第732空中机动中队使用了战争部2025年12月发布的GenAI平台上的Gemini。\",\n    \"evidence_nature\": \"test_event\",\n    \"coding_dimensions\": [\"engineering_resource_conditions\", \"integration_level\"],\n    \"topics\": [\"人工智能平台\", \"GenAI\", \"Gemini\", \"部门级生态系统\"]\n  },\n  {\n    \"source_id\": \"T1-DAF-008\",\n    \"source_locator\": \"web_paragraph_0004\",\n    \"excerpt_original\": \"Leveraging its capability to securely ingest controlled unclassified information, the 732nd AMS was able to create a tailored and factual list of scenarios that were unique to the Arctic location.\",\n    \"excerpt_zh\": \"利用其安全摄取受控非机密信息的能力，第732空中机动中队能够创建一份针对北极地点的定制且符合事实的情景清单。\",\n    \"normalized_claim\": \"第732空中机动中队利用GenAI平台安全摄取受控非机密信息的能力，创建了针对北极地点的情景清单。\",\n    \"evidence_nature\": \"test_event\",\n    \"coding_dimensions\": [\"engineering_resource_conditions\", \"trust_governance_constraints\"],\n    \"topics\": [\"受控非机密信息\", \"情景生成\", \"数据能力\"]\n  },\n  {\n    \"source_id\": \"T1-DAF-008\",\n    \"source_locator\": \"web_paragraph_0004\",\n    \"excerpt_original\": \"Exercise Arctic Bridge placed participants in a simulated 179-day surge scenario averaging up to 70 aircraft movements per day.\",\n    \"excerpt_zh\": \"“北极桥”演习将参与者置于一个模拟的179天激增情景中，平均每天多达70次飞机出动。\",\n    \"normalized_claim\": \"“北极桥”演习模拟了179天、平均每天70次飞机出动的激增情景。\",\n    \"evidence_nature\": \"test_event\",\n    \"coding_dimensions\": [\"application_maturity\", \"organizational_system_fit\"],\n    \"topics\": [\"演习情景\", \"激增场景\", \"飞机出动量\"]\n  },\n  {\n    \"source_id\": \"T1-DAF-008\",\n    \"source_locator\": \"web_paragraph_0004\",\n    \"excerpt_original\": \"The exercise tested the squadron’s operational capacity, identified potential resource shortfalls and highlighted areas where mission strain points could emerge during sustained contingency operations.\",\n    \"excerpt_zh\": \"演习测试了中队的作战能力，识别了潜在的资源短缺，并指出了在持续应急行动中可能出现任务紧张点的领域。\",\n    \"normalized_claim\": \"演习测试了中队的作战能力，识别了资源短缺和任务紧张点。\",\n    \"evidence_nature\": \"test_result\",\n    \"coding_dimensions\": [\"application_maturity\", \"organizational_system_fit\"],\n    \"topics\": [\"作战能力测试\", \"资源短缺\", \"任务紧张点\"]\n  }\n]\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1787812198,
+  "id": "chatcmpl-97b7d0f5-bf53-44f6-98c0-a91aa7e7bfc9",
+  "model": "deepseek-v4-flash-0731",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 1118,
+    "prompt_tokens": 1868,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2986
+  }
+}

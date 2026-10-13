@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-78574086-e988-4753-ac28-5791d62a33f0",
+  "object": "chat.completion",
+  "created": 1787712654,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n  {\n    \"source_id\": \"T0-SP-008\",\n    \"source_locator\": \"pdf_page_14\",\n    \"excerpt_original\": \"Thus, DoD Components will seek to centralize certain AI development platforms for continuous experimentation and deployment, and then maximize the adoption of responsible AI shared services.\",\n    \"excerpt_zh\": \"因此，国防部各组成部门将寻求集中某些AI开发平台，以进行持续实验和部署，然后最大限度地采用负责任的AI共享服务。\",\n    \"normalized_claim\": \"国防部各组成部门将集中某些AI开发平台，用于持续实验和部署，并最大化采用负责任的AI共享服务。\",\n    \"coding_dimensions\": [\"engineering_resource_conditions\", \"organizational_system_fit\"],\n    \"evidence_nature\": \"goal\",\n    \"topics\": [\"AI基础设施\", \"共享服务\", \"集中化\"]\n  },\n  {\n    \"source_id\": \"T0-SP-008\",\n    \"source_locator\": \"pdf_page_12\",\n    \"excerpt_original\": \"The Department will conduct continuous experiments, and integrated multi-lateral exercises with high-impact Joint Force use cases that can inform additional investments in interoperable enterprise-level, warfighting capabilities.\",\n    \"excerpt_zh\": \"该部门将开展持续实验，以及针对高影响力联合作战用例的综合多边演习，这些演习可为可互操作的企业级作战能力的额外投资提供信息。\",\n    \"normalized_claim\": \"国防部将开展持续实验和综合多边演习，以支持可互操作的企业级作战能力的投资决策。\",\n    \"coding_dimensions\": [\"integration_level\", \"application_maturity\"],\n    \"evidence_nature\": \"goal\",\n    \"topics\": [\"实验\", \"演习\", \"联合作战能力\"]\n  },\n  {\n    \"source_id\": \"T0-SP-008\",\n    \"source_locator\": \"pdf_page_12\",\n    \"excerpt_original\": \"Capabilities deemed successful after rigorous testing will receive clear pathways to sustainment and wide-scale adoption.\",\n    \"excerpt_zh\": \"经过严格测试被认为成功的能力将获得明确的维持和大规模采用途径。\",\n    \"normalized_claim\": \"经过严格测试被认为成功的能力将获得明确的维持和大规模采用途径。\",\n    \"coding_dimensions\": [\"application_maturity\", \"trust_governance_constraints\"],\n    \"evidence_nature\": \"goal\",\n    \"topics\": [\"测试\", \"能力采用\", \"维持\"]\n  },\n  {\n    \"source_id\": \"T0-SP-008\",\n    \"source_locator\": \"pdf_page_13\",\n    \"excerpt_original\": \"The Department will invest in abundant, flexible, secure, and jointly interoperable infrastructure that is scalable for the needs of users.\",\n    \"excerpt_zh\": \"该部门将投资于充足、灵活、安全且可联合互操作的基础设施，以满足用户的可扩展需求。\",\n    \"normalized_claim\": \"国防部将投资于充足、灵活、安全且可联合互操作的基础设施。\",\n    \"coding_dimensions\": [\"engineering_resource_conditions\", \"integration_level\"],\n    \"evidence_nature\": \"goal\",\n    \"topics\": [\"基础设施\", \"投资\", \"互操作性\"]\n  },\n  {\n    \"source_id\": \"T0-SP-008\",\n    \"source_locator\": \"pdf_page_15\",\n    \"excerpt_original\": \"DoD leaders will first seek to adopt solutions that are already Joint- or Component-sponsored before exploring capabilities available on the open market.\",\n    \"excerpt_zh\": \"国防部领导人将首先寻求采用已由联合或部门赞助的解决方案，然后再探索公开市场上可用的能力。\",\n    \"normalized_claim\": \"国防部领导人将优先采用已由联合或部门赞助的解决方案，其次才考虑公开市场能力。\",\n    \"coding_dimensions\": [\"engineering_resource_conditions\", \"organizational_system_fit\"],\n    \"evidence_nature\": \"goal\",\n    \"topics\": [\"采办策略\", \"解决方案采用\", \"市场\"]\n  }\n]\n```"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10918,
+    "total_tokens": 11787,
+    "completion_tokens": 869,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

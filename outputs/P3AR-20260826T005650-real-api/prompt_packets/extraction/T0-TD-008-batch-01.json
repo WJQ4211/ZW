@@ -1,0 +1,32 @@
+{
+  "batch_id": "T0-TD-008-batch-01",
+  "source_id": "T0-TD-008",
+  "prompt_path": "outputs/P3AR-20260826T005650-real-api/prompt_packets/extraction/T0-TD-008-batch-01.txt",
+  "prompt_sha256": "ae534a839253b9dfa868d56936cb657e2e697b293d93c5e361a636a8166f851a",
+  "template_path": "prompts/evidence_extract_v1.yaml",
+  "template_sha256": "251e379bd8d0becb68609ca0f7a1f0f94ef7c6104f7684bda5db751ad3c56486",
+  "segments": [
+    {
+      "source_id": "T0-TD-008",
+      "source_locator": "article/paragraph-01",
+      "text": "MANAMA, Bahrain - The International Maritime Security Construct (IMSC) completed a three-day maritime exercise in the Arabian Gulf, Jan. 9, integrating unmanned systems and artificial intelligence during a naval drill for the second time in six months.",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "article",
+      "machine_extracted_anchor": "article/paragraph-01",
+      "visual_review_required": false
+    },
+    {
+      "source_id": "T0-TD-008",
+      "source_locator": "article/paragraph-02",
+      "text": "Download Download",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "article",
+      "machine_extracted_anchor": "article/paragraph-02",
+      "visual_review_required": false
+    }
+  ],
+  "model_input_restriction": "raw_source_segments_research_question_field_definitions_only",
+  "raw_model_outputs_created": false
+}

@@ -1,0 +1,19 @@
+{
+  "original_formal_run_id": "FORMAL-G3-T1-G4-T1-FINAL-PAPER-CASE-20260827T112444Z-v1",
+  "original_manifest_authorization_hash": "0168641acc42d8df525b4e1e3082b460464425603520bc0ebc70c7c3f618859a",
+  "original_authorization_file_hash": "650ffd3a0d28044c84db47d901d990571544f75a90a407dcf14679bff6c9fe41",
+  "recovered_authorization_text_hash": "e43aa1e1221275a902e19f390f4dd64d0c3b5f362911579e7da658f83801d7cf",
+  "encoding_rule": "UTF-8",
+  "bom": false,
+  "trailing_newline": false,
+  "hash_algorithm": "SHA-256",
+  "hash_input": "exact UTF-8 bytes of authorization_original.txt",
+  "old_hash_status": "legacy_recorded_authorization_hash_unverifiable",
+  "new_hash_status": "canonical_authorization_text_hash",
+  "correction_scope": "provenance_documentation_only",
+  "substantive_decisions_changed": false,
+  "formal_g3_g4_status_changed": false,
+  "database_writes": 0,
+  "historical_artifacts_modified": false,
+  "report_correction_scope": "single mandated audit sentence only"
+}

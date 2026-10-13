@@ -1,0 +1,138 @@
+PROMPT_ID: evidence_claim_alignment_review
+VERSION: 1.0
+BATCH_ID: T0-SP-007-batch-02
+TASK: Independently audit whether each candidate's claim, dimensions, and evidence nature are directly supported by its own excerpt.
+INPUT LIMIT: Use only the candidate fields below. Do not use source metadata, other candidates, prior runs, or outside knowledge.
+OUTPUT: strict JSON array with exactly candidate_index, status, reason, claim_supported, nature_supported, dimensions_supported.
+status must be pass, revise, or reject. Do not rewrite candidates.
+Reject claims that add a subject, action, or result absent from the excerpt. Reject mere glossary or generic definition entries that do not directly serve the research question.
+[
+  {
+    "candidate_index": 0,
+    "source_locator": "pdf_page_25",
+    "excerpt_original": "LOE 2.1.3: Create a test range environment and central repository of CDAO in coordination tools for T&E of Al, linking lo existing and emerging equivalent with the DoD Test DoD Component environments, that enables easy and continuous Resource Management testing for DoD testers.",
+    "normalized_claim": "CDAO计划创建一个测试靶场环境和用于AI测试与评估工具的中央存储库，以实现DoD测试人员的持续测试。",
+    "coding_dimensions": [
+      "integration_level",
+      "engineering_resource_conditions"
+    ],
+    "evidence_nature": "goal",
+    "topics": [
+      "T&E",
+      "CDAO",
+      "测试环境"
+    ]
+  },
+  {
+    "candidate_index": 1,
+    "source_locator": "pdf_page_25",
+    "excerpt_original": "LOE 2.1.6: Continue research into emerging A r topics, such as: OUSD(R&E) in coordination with a) HSI practices to the inform the design and developments of CDAO and Military AI capabilities that can be used consistent with the DoD AI Service Labs Ethical Principles; b) New methods for TEVV of Al; and c) Al security and defense to protect against adversarial attacks.",
+    "normalized_claim": "OUSD(R&E)与CDAO和军事服务实验室协调，继续研究新兴AI主题，包括HSI实践、TEVV新方法以及AI安全和防御。",
+    "coding_dimensions": [
+      "integration_level",
+      "trust_governance_constraints"
+    ],
+    "evidence_nature": "goal",
+    "topics": [
+      "研究",
+      "TEVV",
+      "AI安全",
+      "HSI"
+    ]
+  },
+  {
+    "candidate_index": 2,
+    "source_locator": "pdf_page_26",
+    "excerpt_original": "LOE 2.2.1: Require Al vendors and developers to plan for, resource, DoD Component RAJ and provide appropriate training and documentation, such as user Leads manuals, to be used prior to capability fielding in order to e ns ure warfighters are equipped with a n appropriate understanding of the capability' s function, risks, performance expectations, and potential harms.",
+    "normalized_claim": "DoD组件RAI负责人要求AI供应商和开发人员在能力部署前提供适当的培训和文档，以确保作战人员理解能力的功能、风险、性能预期和潜在危害。",
+    "coding_dimensions": [
+      "human_machine_authority",
+      "trust_governance_constraints"
+    ],
+    "evidence_nature": "constraint",
+    "topics": [
+      "培训",
+      "文档",
+      "部署",
+      "RAI"
+    ]
+  },
+  {
+    "candidate_index": 3,
+    "source_locator": "pdf_page_27",
+    "excerpt_original": "LOE 3.1.1: Develop an Acquisitio n Toolkit that draws upon best CDAO in coordination practices and innovative research from the DoD enterprise, industry, with OUSD(A&S) and and the academic community, as well as commercially avai lable OUSD(R&E) technology where appropriate.",
+    "normalized_claim": "CDAO与OUSD(A&S)和OUSD(R&E)协调，开发一个采购工具包，借鉴DoD企业、工业界和学术界的创新研究最佳实践。",
+    "coding_dimensions": [
+      "engineering_resource_conditions",
+      "organizational_system_fit"
+    ],
+    "evidence_nature": "goal",
+    "topics": [
+      "采购",
+      "工具包",
+      "RAI"
+    ]
+  },
+  {
+    "candidate_index": 4,
+    "source_locator": "pdf_page_28",
+    "excerpt_original": "LOE 3.1.2: Identify and develop approaches for conti nuous OUSD(A&S) in engagement of RAl expertise within the DoD ' s six adaptive coordination with acquisition pathways (Urgent Capability Acquisition, Middle Tier of CDAO Acquisition, Major Capabi lity Acquisition, Software Acquisition, Defense Business Systems, and Acquisition of Services) to address RAI risk considerations.",
+    "normalized_claim": "OUSD(A&S)与CDAO协调，确定并开发在DoD六个自适应采办途径中持续引入RAI专业知识的方法，以解决RAI风险考虑。",
+    "coding_dimensions": [
+      "organizational_system_fit",
+      "trust_governance_constraints"
+    ],
+    "evidence_nature": "goal",
+    "topics": [
+      "采办",
+      "RAI",
+      "自适应采办途径"
+    ]
+  },
+  {
+    "candidate_index": 5,
+    "source_locator": "pdf_page_29",
+    "excerpt_original": "LOE 3.2.2: Provide guidance on how and w he n the RAI Tools in CDAO in coordination LOE 3.2.1 should be used across lhe AI Product Lifecycle, based on with DoD Component an assessment of the A I technology' s level of technical manuity, RAJ Leads project sensitivity, and overall risk.",
+    "normalized_claim": "CDAO与DoD组件RAI负责人协调，根据对AI技术成熟度、项目敏感性和整体风险的评估，提供关于如何在AI产品生命周期中使用RAI工具的指导。",
+    "coding_dimensions": [
+      "application_maturity",
+      "trust_governance_constraints"
+    ],
+    "evidence_nature": "goal",
+    "topics": [
+      "RAI工具",
+      "AI产品生命周期",
+      "技术成熟度"
+    ]
+  },
+  {
+    "candidate_index": 6,
+    "source_locator": "pdf_page_30",
+    "excerpt_original": "LOE 4.2.1: Create a repository of A I-related requirements for CDAO in coordination common use cases, mission domains, and system architectures to w ith DoD Component faci litate reusability. RAJ Leads",
+    "normalized_claim": "CDAO与DoD组件RAI负责人协调，为常见用例、任务领域和系统架构创建AI相关需求存储库，以促进可重用性。",
+    "coding_dimensions": [
+      "engineering_resource_conditions",
+      "organizational_system_fit"
+    ],
+    "evidence_nature": "goal",
+    "topics": [
+      "需求",
+      "存储库",
+      "可重用性"
+    ]
+  },
+  {
+    "candidate_index": 7,
+    "source_locator": "pdf_page_37",
+    "excerpt_original": "The RAI toolkit includes the following available resources: • DIU RAI Guidelines • Templates for Al Project Management • Al Data Card template • Al Model Card template • HSI Framework",
+    "normalized_claim": "RAI工具包包括DIU RAI指南、AI项目管理模板、AI数据卡模板、AI模型卡模板和HSI框架等可用资源。",
+    "coding_dimensions": [
+      "engineering_resource_conditions"
+    ],
+    "evidence_nature": "resource_input",
+    "topics": [
+      "RAI工具包",
+      "资源"
+    ]
+  }
+]

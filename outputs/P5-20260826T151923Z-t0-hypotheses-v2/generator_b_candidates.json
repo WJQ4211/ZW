@@ -1,0 +1,108 @@
+[
+  {
+    "candidate_id": "GEN-B-H01",
+    "generator_id": "B",
+    "hypothesis_statement": "在2022-2024年间，美国军用人工智能的能力形成主要处于从实验室验证向有限实战部署过渡的阶段，其主导路径是通过DARPA等机构的前沿技术演示项目（如ACE、RACER、REMA）和陆军AIDP等快速部署项目并行推进，但整体上尚未形成大规模、体系化的作战能力。",
+    "scope": "2022-01-01至2024-12-31，美国国防部及其下属机构（DARPA、陆军、海军等）的军用AI能力形成过程，涵盖技术成熟度、工程资源、任务应用和体系集成。",
+    "supporting_evidence_ids": [
+      "EV-T0-DB4536B8270ECF58",
+      "EV-T0-30E9B209F0439B21",
+      "EV-T0-A8459E6E8776A15D",
+      "EV-T0-B3AD2B72573BBD49",
+      "EV-T0-9C79EF2837BC80A2"
+    ],
+    "counter_evidence_ids": [
+      "EV-T0-51D65DEC82584BCD",
+      "EV-T0-A515E3B9391C51B4"
+    ],
+    "key_assumptions": [
+      "DARPA和陆军等机构的项目进展能够代表美国军用AI整体能力形成的水平。",
+      "公开证据中的测试和部署事件反映了实际能力状态，而非仅宣传性声明。"
+    ],
+    "falsification_conditions": [
+      "若在2024年底前出现多个军种大规模、常态化部署AI作战系统的证据，则本假设不成立。",
+      "若发现AI系统已在主要作战指挥体系中全面集成并承担核心决策任务，则本假设不成立。"
+    ],
+    "unresolved_questions": [
+      "ACE和RACER等项目的成果是否已实际转化为军种采购和部署计划？",
+      "AIDP的快速部署是否代表普遍现象，还是个别案例？"
+    ],
+    "covered_dimensions": [
+      "technical_engineering_maturity",
+      "testing_deployment_application",
+      "resource_conditions",
+      "trust_organization_system_integration"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "candidate_id": "GEN-B-H02",
+    "generator_id": "B",
+    "hypothesis_statement": "美国军用AI的发展在2022-2024年间呈现出以平台化和基础设施共享为核心的组织演进路径，即通过联合通用基金会（JCF）、Tradewind市场等机制，试图将分散的AI开发活动整合到统一的企业级架构中，但这一整合进程因预算、合同和治理问题而滞后于技术演示的进展。",
+    "scope": "2022-01-01至2024-12-31，美国国防部层面的AI平台化、基础设施共享和采办机制建设，涉及JCF、Tradewind、CDAO等组织。",
+    "supporting_evidence_ids": [
+      "EV-T0-7E37FBD511FC654E",
+      "EV-T0-B1673A0975D16CA9",
+      "EV-T0-CA999183D4D473C4",
+      "EV-T0-357C993D92C95187",
+      "EV-T0-1D827623351A7C55"
+    ],
+    "counter_evidence_ids": [
+      "EV-T0-51D65DEC82584BCD",
+      "EV-T0-A515E3B9391C51B4"
+    ],
+    "key_assumptions": [
+      "JCF和Tradewind等平台是国防部AI体系化发展的核心载体。",
+      "平台建设的延迟反映了整体体系集成面临的真实约束。"
+    ],
+    "falsification_conditions": [
+      "若在2024年底前JCF达到全面作战能力并广泛使用，则本假设不成立。",
+      "若发现各军种已通过其他机制实现高效的AI体系集成，则本假设不成立。"
+    ],
+    "unresolved_questions": [
+      "JCF的延迟是否已通过其他替代方案（如各军种自建平台）得到弥补？",
+      "Tradewind的采办效率是否真正加速了AI能力的部署？"
+    ],
+    "covered_dimensions": [
+      "strategic_governance",
+      "resource_conditions",
+      "trust_organization_system_integration"
+    ],
+    "confidence": "medium"
+  },
+  {
+    "candidate_id": "GEN-B-H03",
+    "generator_id": "B",
+    "hypothesis_statement": "在2022-2024年间，美国军用AI的能力形成呈现出明显的领域分化：在情报处理（如AIDP）和后勤维护等非直接作战领域已实现快速部署和实战应用，而在自主作战平台（如RACER、ACE）领域仍处于技术验证和性能提升阶段，尚未达到实战标准。",
+    "scope": "2022-01-01至2024-12-31，美国军用AI在不同任务领域（情报、后勤、自主作战）的应用成熟度差异。",
+    "supporting_evidence_ids": [
+      "EV-T0-A8459E6E8776A15D",
+      "EV-T0-B33EF9F7AA480E81",
+      "EV-T0-7FD6156DA8592DF7",
+      "EV-T0-4AC04F3FF13BAF68",
+      "EV-T0-DDA30BF3C0C38B0C"
+    ],
+    "counter_evidence_ids": [
+      "EV-T0-30E9B209F0439B21",
+      "EV-T0-542BC468B66F4EB7"
+    ],
+    "key_assumptions": [
+      "AIDP和后勤模型代表了非作战领域的成熟应用，而RACER和ACE代表了作战领域的验证阶段。",
+      "领域间的差异反映了技术难度和部署优先级的真实差异。"
+    ],
+    "falsification_conditions": [
+      "若发现自主作战平台已在实战中大规模使用，则本假设不成立。",
+      "若发现情报和后勤领域的AI应用仍处于试验阶段，则本假设不成立。"
+    ],
+    "unresolved_questions": [
+      "AIDP的部署是否真正提升了作战效能，还是仅完成了技术上线？",
+      "RACER和ACE的测试结果是否已满足军种的实战需求？"
+    ],
+    "covered_dimensions": [
+      "technical_engineering_maturity",
+      "testing_deployment_application",
+      "resource_conditions"
+    ],
+    "confidence": "medium"
+  }
+]

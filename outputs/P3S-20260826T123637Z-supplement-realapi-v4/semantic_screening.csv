@@ -1,0 +1,6 @@
+﻿source_id,batch_id,candidate_index,status,claim_supported,nature_supported,reason,dimension_reviews,revised_fields,unsupported_dimensions_removed
+T0-SP-001,T0-SP-001-semantic-001,,skipped,,,semantic_skipped_no_valid_candidates,[],{},[]
+T0-TD-001,T0-TD-001-semantic-001,,skipped,,,semantic_skipped_no_valid_candidates,[],{},[]
+T0-TD-002,T0-TD-002-semantic-001,,skipped,,,semantic_skipped_no_valid_candidates,[],{},[]
+T0-TD-003,T0-TD-003-semantic-001,,skipped,,,semantic_skipped_no_valid_candidates,[],{},[]
+T0-TD-005,T0-TD-005-semantic-001,,skipped,,,semantic_skipped_no_valid_candidates,[],{},[]

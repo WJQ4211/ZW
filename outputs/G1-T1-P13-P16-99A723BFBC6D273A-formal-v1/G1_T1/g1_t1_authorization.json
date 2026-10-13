@@ -1,0 +1,10 @@
+{
+  "author_decision_count": 46,
+  "author_review_semantics": "author_batch_confirmation_not_full_source_or_visual_review",
+  "authorization_sha256": "99a723bfbc6d273a3aa780d296e68c79bd5f5be077afb4f2442204c46d2daf3e",
+  "authorization_text": "作者已正式授权基于P11R＋P12R＋G1Q-T1终审包执行G1-T1、P13、P14、P15、P16、G3Q/G4Q-T1；本阶段完成后停止，不执行正式G3-T1、G4-T1、T1快照冻结后的后续影响定位或观点更新。",
+  "human_source_visual_review_count": 0,
+  "review_mode": "ai_preannotation_author_bulk_signoff_with_key_item_adjudication",
+  "reviewer_id": "author_01",
+  "signed_at": "2026-08-27T07:25:25Z"
+}

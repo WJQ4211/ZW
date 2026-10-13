@@ -1,0 +1,117 @@
+{
+  "affected_fields": [
+    "judgment",
+    "boundary_conditions[0]"
+  ],
+  "boundary_conditions": [
+    "若出现跨军种复用的统一平台、统一模型或统一工程流程，则本假设被削弱。",
+    "若DARPA项目主要停留在演示验证而未转入规模化采办，则本假设增强。",
+    "截至2026年6月30日，DARPA分诊挑战赛等竞赛活动仍属于演示验证性质，未观察到向规模化采办转化的公开信号。"
+  ],
+  "confidence": "medium",
+  "counter_evidence": [
+    {
+      "evidence_id": "EV-T0-27370C837C885AEE",
+      "importance": "medium",
+      "relation": "limit",
+      "target_field": "boundary_conditions[0]",
+      "version": 1
+    },
+    {
+      "evidence_id": "EV-T0-5EA556C2C939C121",
+      "importance": "medium",
+      "relation": "limit",
+      "target_field": "boundary_conditions[0]",
+      "version": 1
+    }
+  ],
+  "evidence_field_changes": [
+    {
+      "after": "T1证据进一步显示DARPA分诊挑战赛等具体竞赛/测试活动仍是可观察的能力形成形态，这些信号支持任务分布牵引，但不能外推为全军规模化部署。",
+      "before": "T1证据进一步显示具体任务试验、竞赛和局部使用仍是可观察的能力形成形态；这些信号支持任务分布牵引，但不能外推为全军规模化部署。",
+      "change_reason": "T1证据具体化了竞赛/测试活动的性质，进一步明确其属于演示验证而非规模化部署。",
+      "new_evidence_ids": [
+        "CE-T1-F2BE64F4810C89EF",
+        "CE-T1-C20674F2CA89D5C5",
+        "CE-T1-43B8C6F6E7B77F40",
+        "CE-T1-12F70AE60CD787AA",
+        "CE-T1-45417DAD097210B1"
+      ],
+      "target_field": "judgment"
+    },
+    {
+      "after": "若出现跨军种复用的统一平台、统一模型或统一工程流程，则本假设被削弱；截至2026年6月30日，DARPA分诊挑战赛等竞赛活动仍属于演示验证性质，未观察到向规模化采办转化的公开信号。",
+      "before": "若出现跨军种复用的统一平台、统一模型或统一工程流程，则本假设被削弱。",
+      "change_reason": "T1证据进一步确认竞赛/测试活动仍处于演示验证阶段，强化了原有边界条件。",
+      "new_evidence_ids": [
+        "CE-T1-F2BE64F4810C89EF",
+        "CE-T1-C20674F2CA89D5C5",
+        "CE-T1-43B8C6F6E7B77F40",
+        "CE-T1-12F70AE60CD787AA",
+        "CE-T1-45417DAD097210B1"
+      ],
+      "target_field": "boundary_conditions[0]"
+    }
+  ],
+  "falsifiers": [
+    "若在2026年7月1日以后出现多个军种在作战演习中常态化使用同一套AI系统，且不依赖DARPA等专门项目支持，则本假设不成立。",
+    "若在2026年7月1日以后出现DARPA分诊挑战赛成果被正式纳入采办流程并形成跨军种部署的公开记录，则需重新评估本判断。"
+  ],
+  "information_gaps": [
+    "缺乏关于各项目之间技术复用或数据共享的具体证据。",
+    "SP-008中提到的集中平台是否已进入实际开发阶段，缺乏公开信息。",
+    "国防部或各军种是否在内部建立了跨项目共享的技术标准或组件库，未在公开证据中体现。",
+    "DARPA分诊挑战赛的竞赛成果是否被军方采纳或进入后续采办流程，缺乏公开信息。"
+  ],
+  "judgment": "T1证据进一步显示DARPA分诊挑战赛等具体竞赛/测试活动仍是可观察的能力形成形态，这些信号支持任务分布牵引，但不能外推为全军规模化部署。",
+  "key_assumptions": [
+    "各项目的独立进展反映了任务驱动的分散发展模式。",
+    "SP-008等规划文件尚未转化为实际的跨项目统一部署。",
+    "现有公开证据未显示跨项目复用机制，但无法排除未公开的共享安排。",
+    "DARPA分诊挑战赛的竞赛结果仅代表特定任务场景下的技术验证，不代表全军成熟度。"
+  ],
+  "mechanism_claims": [
+    "ACE项目通过X-62A测试飞机实现了AI自主空战，该成果在公开信息中仅限于空战领域，未显示向其他任务领域迁移（证据）。",
+    "RACER项目在越野自主驾驶上取得进展，其技术栈和传感器配置针对特定地形任务，公开信息未体现跨军种通用性（证据）。",
+    "AIDP在陆军情报领域快速部署，作为首个在陆军情报云环境中部署的项目，其应用范围在公开信息中局限于特定军种和任务（证据）。",
+    "DARPA分诊挑战赛作为竞赛/测试活动，展示了机器人平台在特定场景下的能力，但该活动本身是演示验证性质，未显示向规模化采办或跨军种部署转化（证据）。",
+    "基于上述项目各自独立进展的公开记录，推断缺乏跨项目复用的统一技术平台或模型——此为观察性推断，受限于公开证据的可得性（推断）。"
+  ],
+  "supporting_evidence": [
+    {
+      "evidence_id": "EV-T0-DB4536B8270ECF58",
+      "importance": "high",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "EV-T0-DDA30BF3C0C38B0C",
+      "importance": "high",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "EV-T0-A8459E6E8776A15D",
+      "importance": "high",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-43B8C6F6E7B77F40",
+      "importance": "medium",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    }
+  ],
+  "uncertainties": [
+    "ACE、RACER等项目的技术成果是否已进入正式的采办或列装流程尚不明确。",
+    "AIDP的部署是否代表了陆军AI能力的普遍水平，还是仅限情报领域，存在不确定性。",
+    "各项目之间是否存在未公开的技术复用或数据共享机制，无法从现有证据确认。",
+    "DARPA分诊挑战赛的后续是否可能转化为正式采办项目，目前无法从公开信息判断。"
+  ],
+  "update_rationale": "T1证据（DARPA分诊挑战赛相关）进一步支持了任务分布牵引的判断，但明确其属于竞赛/测试活动，未显示向规模化采办转化，因此维持原判断并强化边界条件。"
+}

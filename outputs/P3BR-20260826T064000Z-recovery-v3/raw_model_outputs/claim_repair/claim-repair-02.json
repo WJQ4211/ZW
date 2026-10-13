@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-aa4650f9-cee8-4032-b2c6-c5d5f771930b",
+  "object": "chat.completion",
+  "created": 1787718435,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"normalized_claim\": \"JAIC官员表示，2021年4月的AI基线清单不包括与运维相关的AI活动（如JAIC整体运营预算）或任何机密AI活动。\"}"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 249,
+    "total_tokens": 290,
+    "completion_tokens": 41,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

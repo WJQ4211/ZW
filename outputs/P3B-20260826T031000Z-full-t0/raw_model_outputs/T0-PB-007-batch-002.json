@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-14f2b0f0-05b9-4c6b-ab30-0a130b28e315",
+  "object": "chat.completion",
+  "created": 1787712075,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n  {\n    \"source_id\": \"T0-PB-007\",\n    \"source_locator\": \"pdf_page_27\",\n    \"excerpt_original\": \"given that DOD is investing considerable effort and funds toward developing and acquiring AI tools and capabilities and requested $1.1 billion for core AI in fiscal year 2023\",\n    \"excerpt_zh\": \"鉴于国防部正在投入大量精力和资金开发和采购人工智能工具和能力，并在2023财年为核心人工智能申请了11亿美元\",\n    \"normalized_claim\": \"美国国防部在2023财年为核心人工智能申请了11亿美元预算。\",\n    \"coding_dimensions\": {\n      \"application_maturity\": \"采购部署\",\n      \"engineering_resource_conditions\": \"预算\",\n      \"human_machine_authority\": \"\",\n      \"integration_level\": \"\",\n      \"organizational_system_fit\": \"\",\n      \"trust_governance_constraints\": \"\"\n    },\n    \"evidence_nature\": \"resource_input\",\n    \"topics\": [\"预算\", \"人工智能采购\"]\n  },\n  {\n    \"source_id\": \"T0-PB-007\",\n    \"source_locator\": \"pdf_page_29\",\n    \"excerpt_original\": \"The Defense Innovation Unit created several AI worksheets that walk developers through questions to help them align their AI projects with DOD’s ethical AI principles.\",\n    \"excerpt_zh\": \"国防创新小组创建了多份人工智能工作表，引导开发人员通过问题来帮助其人工智能项目与国防部的道德人工智能原则保持一致。\",\n    \"normalized_claim\": \"国防创新小组创建了多份人工智能工作表，以帮助项目与国防部道德人工智能原则保持一致。\",\n    \"coding_dimensions\": {\n      \"application_maturity\": \"研发\",\n      \"engineering_resource_conditions\": \"\",\n      \"human_machine_authority\": \"\",\n      \"integration_level\": \"\",\n      \"organizational_system_fit\": \"\",\n      \"trust_governance_constraints\": \"伦理\"\n    },\n    \"evidence_nature\": \"goal\",\n    \"topics\": [\"道德人工智能\", \"国防创新小组\"]\n  },\n  {\n    \"source_id\": \"T0-PB-007\",\n    \"source_locator\": \"pdf_page_29\",\n    \"excerpt_original\": \"Of the five military services, the Air Force has published AI-specific acquisition resources—specifically, the Air Force-Massachusetts Institute of Technology AI Acquisition Guidebook.\",\n    \"excerpt_zh\": \"在五个军种中，空军发布了针对人工智能的采办资源——具体而言，即空军-麻省理工学院人工智能采办指南。\",\n    \"normalized_claim\": \"美国空军发布了军种特定的人工智能采办指南。\",\n    \"coding_dimensions\": {\n      \"application_maturity\": \"采购部署\",\n      \"engineering_resource_conditions\": \"\",\n      \"human_machine_authority\": \"\",\n      \"integration_level\": \"\",\n      \"organizational_system_fit\": \"\",\n      \"trust_governance_constraints\": \"\"\n    },\n    \"evidence_nature\": \"deployment_event\",\n    \"topics\": [\"空军\", \"人工智能采办指南\"]\n  },\n  {\n    \"source_id\": \"T0-PB-007\",\n    \"source_locator\": \"pdf_page_31\",\n    \"excerpt_original\": \"Officials from the Navy also shared their plans to create the Naval AI Accelerator, a training and education Center of Excellence.\",\n    \"excerpt_zh\": \"海军官员还分享了创建海军人工智能加速器的计划，这是一个培训和教育卓越中心。\",\n    \"normalized_claim\": \"美国海军计划创建海军人工智能加速器，作为培训和教育卓越中心。\",\n    \"coding_dimensions\": {\n      \"application_maturity\": \"概念战略\",\n      \"engineering_resource_conditions\": \"人才\",\n      \"human_machine_authority\": \"\",\n      \"integration_level\": \"\",\n      \"organizational_system_fit\": \"\",\n      \"trust_governance_constraints\": \"\"\n    },\n    \"evidence_nature\": \"goal\",\n    \"topics\": [\"海军\", \"人工智能加速器\"]\n  },\n  {\n    \"source_id\": \"T0-PB-007\",\n    \"source_locator\": \"pdf_page_31\",\n    \"excerpt_original\": \"The Secretary of Defense should ensure that the Chief Digital and AI Officer, in conjunction with other DOD acquisition policy offices as appropriate, prioritize establishing department-wide AI acquisition guidance, including leveraging key private company factors, as appropriate. (Recommendation 1)\",\n    \"excerpt_zh\": \"国防部长应确保首席数字与人工智能官，酌情与其他国防部采办政策办公室合作，优先制定国防部范围内的人工智能采办指南，包括酌情利用关键私营公司因素。（建议1）\",\n    \"normalized_claim\": \"国防部长应确保首席数字与人工智能官优先制定国防部范围内的人工智能采办指南。\",\n    \"coding_dimensions\": {\n      \"application_maturity\": \"概念战略\",\n      \"engineering_resource_conditions\": \"\",\n      \"human_machine_authority\": \"\",\n      \"integration_level\": \"\",\n      \"organizational_system_fit\": \"\",\n      \"trust_governance_constraints\": \"治理\"\n    },\n    \"evidence_nature\": \"goal\",\n    \"topics\": [\"人工智能采办指南\", \"首席数字与人工智能官\"]\n  }\n]\n```"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9919,
+    "total_tokens": 11044,
+    "completion_tokens": 1125,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

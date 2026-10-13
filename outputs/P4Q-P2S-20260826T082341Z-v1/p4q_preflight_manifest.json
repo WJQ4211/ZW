@@ -1,0 +1,70 @@
+{
+  "run_id": "P4Q-P2S-20260826T082341Z-v1",
+  "stage": "P4Q",
+  "case_id": "us_military_ai_deployment",
+  "input_canonical_path": "outputs/G1-T0-C1-31F142A5227EA580-correction-v1/g1_t0_c1_latest_evidence_canonical.jsonl",
+  "input_canonical_sha256": "ac307f553614bd4b6114ecb117d7e2516b91a5e28ae2884c44a14043b4a0900c",
+  "p4q": {
+    "canonical_logical_evidence_count": 60,
+    "sqlite_physical_t0_evidence_rows": 61,
+    "sqlite_latest_version_logical_evidence_count": 60,
+    "canonical_latest_field_difference_count": 0,
+    "canonical_latest_field_difference_ids": [],
+    "target_evidence_id": "EV-T0-3D9421B5DCC381FC",
+    "target_versions_in_sqlite": [
+      1,
+      2
+    ],
+    "target_entries_in_canonical": [
+      {
+        "version": 2,
+        "evidence_nature": "resource_input"
+      }
+    ],
+    "formal_evidence_source_count": 9,
+    "source_grade_counts": {
+      "B": 29,
+      "A": 31
+    },
+    "a_grade_fragment_count": 31,
+    "b_grade_fragment_count": 29,
+    "d_grade_fragment_count": 0,
+    "a_grade_fragment_ratio": 0.516667,
+    "published_after_2024_12_31_count": 0,
+    "snapshot_count": 0,
+    "snapshot_items_count": 0,
+    "p4_gate_open": false,
+    "p4_block_reason": "A级正式证据片段占比51.67%，低于60%"
+  },
+  "p4_gate_open": false,
+  "p4_executed": false,
+  "p3s_executed": false,
+  "g1_supplement_executed": false,
+  "snapshot_frozen": false,
+  "evidence_inserted": 0,
+  "hypothesis_inserted": 0,
+  "model_api_calls": 0,
+  "t1_read": false,
+  "git_head": "unavailable_not_a_git_repository",
+  "python_version": "3.12.13",
+  "protected_prior_outputs_unchanged": true,
+  "protected_outputs_before_digest": "5517aeb0ede12b41c9a73009e2e963ab46e7577d28f8fa165407fa0cdf306261",
+  "protected_outputs_after_digest": "5517aeb0ede12b41c9a73009e2e963ab46e7577d28f8fa165407fa0cdf306261",
+  "output_file_hashes": {
+    "p2s_coverage_gap_matrix.csv": "652119042ae1f787b5ab1b0d7bfe441eaec7b4f01fd5b350d19bb987dc0c2db8",
+    "p2s_source_capture_log.csv": "d690fe7a0a0287b1713d92736100f066765820a5147a301fc502148c25a225d5",
+    "p2s_source_manifest.csv": "d06784364678a0546396a4391b63f25154b5baf632a1266f0dc4e74419cdf284",
+    "p4q_quality_gate_report.md": "4302609ab704580402075c8ca84f2347e17ebe998a2c84d5f738bc3f50bab770",
+    "source_raw/T0-SP-001.html": "1edcfe1f64ee283d812750cf764d7a3b86d3f0122cfe2b71d7070381e4023ea6",
+    "source_raw/T0-TD-001.html": "a1503c38e1f7d0e8e05db3658af554ab92a31343752772103db1008b0c0a53c9",
+    "source_raw/T0-TD-002.html": "169ae0cbccd4bd5e0a7f92585a0d38569a817cae1180ef78313e543e0fe73fd0",
+    "source_raw/T0-TD-003.html": "e197d2e66e2280e190cdc2c2936aa293e61305f978b7c45b2cbb3ec8a2191964",
+    "source_raw/T0-TD-005.html": "ba23fea385fcdc1dafa95324a58481e686caa41ef5a599ef4d20dfcbdcff91c4",
+    "source_text/T0-SP-001.txt": "d4bed3c4fbc38d68ec1f6d82d6366070d25359ab2337102c6c204a4c50cdffa2",
+    "source_text/T0-TD-001.txt": "1894ac2e81a8325375c0dc78a236accdc14c423224cc8310a185de8f53f365fa",
+    "source_text/T0-TD-002.txt": "919672a05758a2da7b4bd8a127048aab310c88028834256c5e6c844eefa3d681",
+    "source_text/T0-TD-003.txt": "fc84e740084c06e35d8f5a95a50fcdb8ab2e46e49c4a590d24dcf92c246eba28",
+    "source_text/T0-TD-005.txt": "5a59f334f0286fc44bc5797cd00351131bdd2786853bef2defb8351245b4ff72"
+  },
+  "manifest_self_hash_excluded_from_output_file_hashes": true
+}

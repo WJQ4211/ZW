@@ -1,0 +1,210 @@
+T1候选证据语义筛选。只检查给定候选字段与其摘录之间的直接支持关系。不得引用或推断任何T0分析。
+研究问题：以公开、非密材料为依据，研究2025年1月1日至2026年6月30日期间，美国军用人工智能能力形成、应用部署和体系化发展的公开可观察变化。
+来源：T1-DAF-008
+每条返回一项review，字段为candidate_evidence_id、status、reason、claim_supported、nature_supported、dimension_reviews、revised_fields。status只能是accept、revise或reject；dimension_reviews必须是数组，每项包含dimension、supported、supporting_span、reason。只处理候选原本声明的维度；不得新增维度。若claim或nature无直接支持则reject；revise不得修改excerpt_original和source_locator。
+证据性质完整定义：
+- goal: 计划、目标、拟议能力或未来安排，不等于已经实现。
+- governance_event: 已经发生的政策、职责、指南或组织治理机制建立。
+- resource_input: 已经发生的预算、合同、采购、数据、人才或基础设施投入。
+- test_event: 测试、演示、演习或竞赛发生及其参与主体、配置。
+- test_result: 测试中明确观察到的功能、性能或结果。
+- deployment_event: 明确已经部署、实装、投入运行或持续使用。
+- constraint: 限制能力形成、部署或评估的已报告条件。
+- evaluation: 来源明确给出的评估、判断或评价，不改写为客观结果。
+编码维度完整定义：
+- integration_level: 跨项目、跨平台、跨军种或企业级系统集成的程度。
+- application_maturity: 从目标、演示、试验到部署和持续使用的应用成熟度。
+- human_machine_authority: 人机在任务中的权责、授权、监督与决策关系。
+- engineering_resource_conditions: 数据、算力、基础设施、人才、预算、采办和保障条件。
+- trust_governance_constraints: 可信性、安全、测试评估、责任、治理约束及制度落地。
+- organizational_system_fit: 组织运用、流程、任务适配和体系制度环境的匹配程度。
+候选：
+[
+  {
+    "candidate_evidence_id": "CE-T1-D0E7B9B8CC1298AB",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "application_maturity",
+      "organizational_system_fit"
+    ],
+    "content_hash": "d0e7b9b8cc1298ab8d7be589c761b48d836a4f9baa79a9c0b7c661a2a5280924",
+    "evidence_nature": "test_event",
+    "excerpt_original": "The 732nd Air Mobility Squadron recently participated in Exercise Arctic Bridge, a proof-of-concept tabletop exercise originally developed by the 735th AMS.",
+    "excerpt_zh": "第732空中机动中队最近参加了“北极桥”演习，这是一个最初由第735空中机动中队开发的概念验证桌面演习。",
+    "extraction_run_id": "G4-P11-P12-20260827T051332Z-v1",
+    "normalized_claim": "第732空中机动中队参加了由第735空中机动中队最初开发的概念验证桌面演习“北极桥”。",
+    "pending_g1_translation_review": true,
+    "pending_g1_visual_review": false,
+    "published_at": "2026-06-04",
+    "published_at_precision": "day",
+    "publisher": "U.S. Air Force",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DAF-008",
+    "source_locator": "web_paragraph_0004",
+    "title": "732nd AMS leverages artificial intelligence to enhance Arctic TTX",
+    "topics": [
+      "演习参与",
+      "桌面演习",
+      "概念验证"
+    ],
+    "url_or_path": "https://www.af.mil/News/Article-Display/Article/4507566/732nd-ams-leverages-artificial-intelligence-to-enhance-arctic-ttx/",
+    "version": 1
+  },
+  {
+    "candidate_evidence_id": "CE-T1-BB675BA36EB74B19",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "application_maturity",
+      "organizational_system_fit"
+    ],
+    "content_hash": "bb675ba36eb74b192081dbf23c76a50a38d5e945c39349283fba11eefdd491bd",
+    "evidence_nature": "test_event",
+    "excerpt_original": "The exercise was further tailored using artificial intelligence technology to reflect the 732nd AMS’s unique Arctic operating environment.",
+    "excerpt_zh": "该演习进一步使用人工智能技术进行定制，以反映第732空中机动中队独特的北极作战环境。",
+    "extraction_run_id": "G4-P11-P12-20260827T051332Z-v1",
+    "normalized_claim": "演习使用人工智能技术进行了定制，以反映第732空中机动中队的北极作战环境。",
+    "pending_g1_translation_review": true,
+    "pending_g1_visual_review": false,
+    "published_at": "2026-06-04",
+    "published_at_precision": "day",
+    "publisher": "U.S. Air Force",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DAF-008",
+    "source_locator": "web_paragraph_0004",
+    "title": "732nd AMS leverages artificial intelligence to enhance Arctic TTX",
+    "topics": [
+      "人工智能应用",
+      "演习定制",
+      "北极环境"
+    ],
+    "url_or_path": "https://www.af.mil/News/Article-Display/Article/4507566/732nd-ams-leverages-artificial-intelligence-to-enhance-arctic-ttx/",
+    "version": 1
+  },
+  {
+    "candidate_evidence_id": "CE-T1-6B02747FAF17B29F",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "engineering_resource_conditions",
+      "integration_level"
+    ],
+    "content_hash": "6b02747faf17b29fc089dd085b275ae84a6a86ec2ec765035b7ad73052d5fd87",
+    "evidence_nature": "test_event",
+    "excerpt_original": "The 732nd AMS utilized Gemini through GenAI , an AI platform released by the Department of War in December 2025, that was built to provide a secure, department-wide generative AI ecosystem.",
+    "excerpt_zh": "第732空中机动中队通过GenAI使用了Gemini，GenAI是战争部于2025年12月发布的人工智能平台，旨在提供安全的、部门范围的生成式人工智能生态系统。",
+    "extraction_run_id": "G4-P11-P12-20260827T051332Z-v1",
+    "normalized_claim": "第732空中机动中队使用了战争部2025年12月发布的GenAI平台上的Gemini。",
+    "pending_g1_translation_review": true,
+    "pending_g1_visual_review": false,
+    "published_at": "2026-06-04",
+    "published_at_precision": "day",
+    "publisher": "U.S. Air Force",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DAF-008",
+    "source_locator": "web_paragraph_0004",
+    "title": "732nd AMS leverages artificial intelligence to enhance Arctic TTX",
+    "topics": [
+      "人工智能平台",
+      "GenAI",
+      "Gemini",
+      "部门级生态系统"
+    ],
+    "url_or_path": "https://www.af.mil/News/Article-Display/Article/4507566/732nd-ams-leverages-artificial-intelligence-to-enhance-arctic-ttx/",
+    "version": 1
+  },
+  {
+    "candidate_evidence_id": "CE-T1-CF7656CBCD8BBB03",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "engineering_resource_conditions",
+      "trust_governance_constraints"
+    ],
+    "content_hash": "cf7656cbcd8bbb036ac8881b3535ca6f6cb4929297fe7cffc6aecf24362e6a6e",
+    "evidence_nature": "test_event",
+    "excerpt_original": "Leveraging its capability to securely ingest controlled unclassified information, the 732nd AMS was able to create a tailored and factual list of scenarios that were unique to the Arctic location.",
+    "excerpt_zh": "利用其安全摄取受控非机密信息的能力，第732空中机动中队能够创建一份针对北极地点的定制且符合事实的情景清单。",
+    "extraction_run_id": "G4-P11-P12-20260827T051332Z-v1",
+    "normalized_claim": "第732空中机动中队利用GenAI平台安全摄取受控非机密信息的能力，创建了针对北极地点的情景清单。",
+    "pending_g1_translation_review": true,
+    "pending_g1_visual_review": false,
+    "published_at": "2026-06-04",
+    "published_at_precision": "day",
+    "publisher": "U.S. Air Force",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DAF-008",
+    "source_locator": "web_paragraph_0004",
+    "title": "732nd AMS leverages artificial intelligence to enhance Arctic TTX",
+    "topics": [
+      "受控非机密信息",
+      "情景生成",
+      "数据能力"
+    ],
+    "url_or_path": "https://www.af.mil/News/Article-Display/Article/4507566/732nd-ams-leverages-artificial-intelligence-to-enhance-arctic-ttx/",
+    "version": 1
+  },
+  {
+    "candidate_evidence_id": "CE-T1-6B7DB29A3B242353",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "application_maturity",
+      "organizational_system_fit"
+    ],
+    "content_hash": "6b7db29a3b24235395ad09b82f2605abda9a46214a18dcb73150ad87b13b6e3a",
+    "evidence_nature": "test_event",
+    "excerpt_original": "Exercise Arctic Bridge placed participants in a simulated 179-day surge scenario averaging up to 70 aircraft movements per day.",
+    "excerpt_zh": "“北极桥”演习将参与者置于一个模拟的179天激增情景中，平均每天多达70次飞机出动。",
+    "extraction_run_id": "G4-P11-P12-20260827T051332Z-v1",
+    "normalized_claim": "“北极桥”演习模拟了179天、平均每天70次飞机出动的激增情景。",
+    "pending_g1_translation_review": true,
+    "pending_g1_visual_review": false,
+    "published_at": "2026-06-04",
+    "published_at_precision": "day",
+    "publisher": "U.S. Air Force",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DAF-008",
+    "source_locator": "web_paragraph_0004",
+    "title": "732nd AMS leverages artificial intelligence to enhance Arctic TTX",
+    "topics": [
+      "演习情景",
+      "激增场景",
+      "飞机出动量"
+    ],
+    "url_or_path": "https://www.af.mil/News/Article-Display/Article/4507566/732nd-ams-leverages-artificial-intelligence-to-enhance-arctic-ttx/",
+    "version": 1
+  },
+  {
+    "candidate_evidence_id": "CE-T1-1797A97EF532F332",
+    "case_id": "us_military_ai_deployment",
+    "coding_dimensions": [
+      "application_maturity",
+      "organizational_system_fit"
+    ],
+    "content_hash": "1797a97ef532f332e76ecf7678ad772c9c479eaef486985303ae988ef3a67a90",
+    "evidence_nature": "test_result",
+    "excerpt_original": "The exercise tested the squadron’s operational capacity, identified potential resource shortfalls and highlighted areas where mission strain points could emerge during sustained contingency operations.",
+    "excerpt_zh": "演习测试了中队的作战能力，识别了潜在的资源短缺，并指出了在持续应急行动中可能出现任务紧张点的领域。",
+    "extraction_run_id": "G4-P11-P12-20260827T051332Z-v1",
+    "normalized_claim": "演习测试了中队的作战能力，识别了资源短缺和任务紧张点。",
+    "pending_g1_translation_review": true,
+    "pending_g1_visual_review": false,
+    "published_at": "2026-06-04",
+    "published_at_precision": "day",
+    "publisher": "U.S. Air Force",
+    "snapshot_tag": "T1",
+    "source_grade": "A",
+    "source_id": "T1-DAF-008",
+    "source_locator": "web_paragraph_0004",
+    "title": "732nd AMS leverages artificial intelligence to enhance Arctic TTX",
+    "topics": [
+      "作战能力测试",
+      "资源短缺",
+      "任务紧张点"
+    ],
+    "url_or_path": "https://www.af.mil/News/Article-Display/Article/4507566/732nd-ams-leverages-artificial-intelligence-to-enhance-arctic-ttx/",
+    "version": 1
+  }
+]

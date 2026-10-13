@@ -1,0 +1,200 @@
+{
+  "batch_id": "T0-TD-007-batch-001",
+  "source_id": "T0-TD-007",
+  "source_locator_count": 17,
+  "segments": [
+    {
+      "source_id": "T0-TD-007",
+      "source_locator": "web_paragraph_0001",
+      "text": "Cloud-based intel tool AIDP rolls out to Army units globally - Capability Program Executive - Intelligence and Spectrum Warfare - CPE ISW Cloud-based intel tool AIDP rolls out to Army units globally - Capability Program Executive - Intelligence and Spectrum Warfare - CPE ISW",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0001",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-TD-007",
+      "source_locator": "web_paragraph_0002",
+      "text": "Cloud-based intel tool AIDP rolls out to Army units globally",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0002",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-TD-007",
+      "source_locator": "web_paragraph_0003",
+      "text": "Oct 9, 2024 | News , PM IS&A",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0003",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-TD-007",
+      "source_locator": "web_paragraph_0004",
+      "text": "By Shawn Nesaw | Public Affairs Specialist, PEO IEW&S",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0004",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-TD-007",
+      "source_locator": "web_paragraph_0005",
+      "text": "U.S. Army Intelligence units around the world are receiving the Army Intelligence Data Platform (AIDP), enabling intelligence soldiers the ability to gather, analyze and distribute information to units faster and more accurately than ever before.",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0005",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-TD-007",
+      "source_locator": "web_paragraph_0006",
+      "text": "The Army deployed and operationalized AIDP rapidly to units in all priority theaters in under 12 months, showing just how important this new and improved intel tool is to Soldiers and DoD.",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0006",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-TD-007",
+      "source_locator": "web_paragraph_0007",
+      "text": "“24 months ago, we were testing AIDP with intel units stateside trying to stress the system and fine tune the system to meet the needs of intel soldiers,” Brig. Gen. Ed Barker, the Program Executive Officer for Intelligence, Electronic Warfare, and Sensors said. “Thanks to early adopter units and user feedback, AIDP transformed into the intel system the Army needs to increase our effectiveness in multi-domain operations.”",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0007",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-TD-007",
+      "source_locator": "web_paragraph_0008",
+      "text": "AIDP is a powerful tool for any intelligence unit supporting strategic and tactical operations due to its many features and ease of use. Major capabilities include data ingress, processing, egress, persistence, integrity, and discovery (query); and improved security and system administration. AIDP sets the foundation for future technology integration such as big data analytics, artificial intelligence & machine learning.",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0008",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-TD-007",
+      "source_locator": "web_paragraph_0009",
+      "text": "“AIDP acts as a high-tech detective that can not only find all the clues but also piece them together to show the big picture,” Col. Chris Anderson, Project Manager Intelligence Systems and Analytics (PM (IS&A ) said. “The platform analyzes the collected data to uncover patterns and insights, then presents them to leaders on the battlefield in a way that’s easy to understand, like charts or maps.”",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0009",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-TD-007",
+      "source_locator": "web_paragraph_0010",
+      "text": "Multiple Army Military Intelligence Brigades played important roles in the iterative process with the goal of making the system not only better overall but into the tool they knew their fellow soldiers wanted and needed.",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0010",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-TD-007",
+      "source_locator": "web_paragraph_0011",
+      "text": "“We worked through iteration after iteration of AIDP, providing constant user feedback to the PM and Contractor thanks to an in-app user feedback tool, and our industry partner was great about making the changes quickly,” Capt. Ryan Lesane, Bravo Company Commander, 297th Military Intelligence Battalion said.",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0011",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-TD-007",
+      "source_locator": "web_paragraph_0012",
+      "text": "AIDP’s automation capabilities help maintain a comprehensive operational picture and allows for better, more responsive handling of information during multi-domain operations because it is always gathering and processing data. As a cloud-based intel solution, multiple users, from multiple different regions of the world, can access AIDP simultaneously, a unique feature of the system. Additionally, AIDP is the first major Army Intel program to fully deploy in the Army Intel Cloud environment.",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0012",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-TD-007",
+      "source_locator": "web_paragraph_0013",
+      "text": "As of this writing, PM IS&A is executing the AIDP New Equipment Training (NET) and delivery program for echelons division and above. The pilot focuses on functionality and critical task training through a series of intelligence analyst workflows across the steps of the military decision-making process.",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0013",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-TD-007",
+      "source_locator": "web_paragraph_0014",
+      "text": "Soldiers will learn how to employ the tools in the AIDP system to execute mission analysis and all source intelligence support to multi-domain operations.",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0014",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-TD-007",
+      "source_locator": "web_paragraph_0015",
+      "text": "“We’re extremely pleased with the speed and effectiveness our trainers have rolled out AIDP to units,” Lt. Col. Jeffrey Timmons, Product Manager Data & Analytics, said. “This entire process has been a unity of effort, from the early adopters to the latest unit trained. As more soldiers receive training, even more useful user feedback is available to continue to push updates and make AIDP better.”",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0015",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-TD-007",
+      "source_locator": "web_paragraph_0016",
+      "text": "Archives",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0016",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    },
+    {
+      "source_id": "T0-TD-007",
+      "source_locator": "web_paragraph_0017",
+      "text": "Archives Select Month August 2026 July 2026 June 2026 May 2026 April 2026 March 2026 February 2026 January 2026 December 2025 November 2025 September 2025 August 2025 July 2025 June 2025 May 2025 April 2025 March 2025 February 2025 January 2025 December 2024 October 2024 September 2024 August 2024 July 2024 June 2024 May 2024 April 2024 March 2024 January 2024 December 2023 November 2023 October 2023 September 2023 August 2023 July 2023 June 2023 May 2023 April 2023 March 2023 February 2023",
+      "pdf_page_number": null,
+      "printed_page_number": null,
+      "section_title": "web_body",
+      "machine_extracted_anchor": "web_paragraph_0017",
+      "visual_review_required": false,
+      "extraction_status": "extracted"
+    }
+  ],
+  "source_raw_path": "data/staging/t0_candidates/manual_web/Cloud-based intel tool AIDP rolls out to Army units globally - Capability Program Executive - Intelligence and Spectrum Warfare - CPE ISW.html",
+  "source_text_path": "outputs/P1C-20260825T152730Z-manual-web/web_text/T0-TD-007.txt",
+  "source_raw_sha256": "dc147ecc6cf63cefeb7a59c4a72233b675229eaaf38ab1e40f7bfc64d58ae56a",
+  "source_text_sha256": "64a8c3596d2642a93cef934c6e6abe5dd1e898086528f42d694cfe7e66bafb02",
+  "max_batch_chars": 45000,
+  "max_candidates": 5
+}

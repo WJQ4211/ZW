@@ -1,0 +1,11 @@
+{
+  "approved": true,
+  "artifact_hash": "3c147e83751f496a0981a075959aaaa1f5a9adbec0965975974b72fc16738a3f",
+  "artifact_path": "outputs/phase-a-demo-20260825T072402Z-70e52b/report_t0.md",
+  "case_id": "synthetic_military_ai",
+  "created_at": "2026-08-25T07:24:03.713720+00:00",
+  "gate": "G4_T0",
+  "notes": "Synthetic fixture: T0 report structure signed for state-machine testing only.",
+  "reviewer": "synthetic-g4-reviewer",
+  "run_id": "phase-a-demo-20260825T072402Z-70e52b"
+}

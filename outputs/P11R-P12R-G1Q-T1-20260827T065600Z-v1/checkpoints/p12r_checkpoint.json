@@ -1,0 +1,11 @@
+{
+  "completed_sources": [
+    "T1-DARPA-001",
+    "T1-DARPA-003",
+    "T1-IR-001"
+  ],
+  "extraction_logical_call_count": 3,
+  "run_id": "P11R-P12R-G1Q-T1-20260827T065600Z-v1",
+  "semantic_logical_call_count": 3,
+  "status": "completed"
+}

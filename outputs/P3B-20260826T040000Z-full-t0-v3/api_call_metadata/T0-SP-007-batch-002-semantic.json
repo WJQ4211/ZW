@@ -1,0 +1,34 @@
+{
+  "transport": "openai_compatible_api",
+  "request_started_at_utc": "2026-08-26T02:50:35Z",
+  "endpoint": "https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "requested_model_id": "deepseek-v4-flash-0731",
+  "provider_model_id": "deepseek-v4-flash-0731",
+  "request_parameters": {
+    "temperature": 0.0,
+    "enable_thinking": false,
+    "max_tokens": 5000
+  },
+  "attempts": 1,
+  "retry_count": 0,
+  "latency_ms": 12953,
+  "response_sha256": "46eaf068e8d4e058bf4087d9bca24dbcc3bc2b929c2991f7c16301dd337384f2",
+  "provider_token_usage": {
+    "prompt_tokens": 1518,
+    "completion_tokens": 908,
+    "total_tokens": 2426
+  },
+  "provider_metrics_status": "observed",
+  "provider_temperature": null,
+  "provider_cost": null,
+  "response_status_code": 200,
+  "phase": "same_model_separate_call_semantic_screening",
+  "batch_id": "T0-SP-007-batch-002",
+  "prompt_path": "outputs/P3B-20260826T040000Z-full-t0-v3/prompt_packets/semantic_review/T0-SP-007-batch-002.txt",
+  "prompt_sha256": "7837d22837451be45f15009c62a445836672e47d781813339114ca8839e19b0c",
+  "raw_response_path": "outputs/P3B-20260826T040000Z-full-t0-v3/raw_semantic_reviews/T0-SP-007-batch-002.json",
+  "raw_response_sha256": "0216e5bbe1b96997adf329990b8b5cd03bfa9e83425ed83115eedb13a1f019a8",
+  "response_content_sha256": "c61375234da28a69e60d687671a299fabea65392d296927b3d0fd60582ab5298",
+  "requested_temperature": 0.0,
+  "provider_echoed_temperature": null
+}

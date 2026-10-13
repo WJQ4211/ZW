@@ -1,0 +1,99 @@
+{
+  "document_metadata": {
+    "source_id": "T0-SP-007",
+    "title": "Responsible AI Strategy and Implementation Pathway",
+    "publisher": "U.S. Department of Defense",
+    "document_date": "2022-06",
+    "published_at": "2022-06",
+    "source_grade": "A",
+    "material_type": "official_strategy",
+    "temporal_status": "within_t0",
+    "date_note": "User-supplied document date; filename year was not used.",
+    "case_id": "us_military_ai_deployment",
+    "file_name": "2024-06-RAI-STRATEGY-IMPLEMENTATION-PATHWAY.pdf",
+    "file_sha256": "cb30090fa1f7da0e4e469de160fa72b08bf9d13025e22c8be76578509fe66197",
+    "file_size_bytes": 5427778,
+    "pdf_page_count": 47,
+    "pdf_metadata": {
+      "/Author": "CDAO",
+      "/CreationDate": "D:20220621104619-04'00'",
+      "/Creator": "Canon ",
+      "/Keywords": "RAI, CDAO, Responsible Artificial Intelligence, Strategy and Implementation Pathway",
+      "/ModDate": "D:20220622104823-04'00'",
+      "/Producer": "Adobe Acrobat Pro DC (32-bit) 22 Paper Capture Plug-in",
+      "/Subject": "Responsible Artificial Intelligence Strategy and Implementation Pathway",
+      "/Title": "Responsible Artificial Intelligence Strategy and Implementation Pathway"
+    },
+    "pdf_open_status": "opened",
+    "extraction_status": "extracted"
+  },
+  "cover_page": [
+    {
+      "pdf_page": 1,
+      "printed_page_or_section": "page_pending_review",
+      "text_raw": "UNCLASSIFIED \nUNCLASSIFIED 1 \nU.S. DEPARTMENT OF DEFENSE \nRESPONSIBLE ARTIFICIAL \nINTELLIGENCE STRATEGY AND \nIMPLEMENTATION PATHWAY \nPrepared by the DoD Responsible AI Working Council in accordance with the memorandum \nissued by Deputy Secretary of Defense Kathleen Hicks on May 26, 2021, Implementing \nResponsible Artificial Intelligence in the Department of Defense. \nJune 2022\nr ",
+      "text_normalized": "unclassified unclassified 1 u.s. department of defense responsible artificial intelligence strategy and implementation pathway prepared by the dod responsible ai working council in accordance with the memorandum issued by deputy secretary of defense kathleen hicks on may 26, 2021, implementing responsible artificial intelligence in the department of defense. june 2022 r",
+      "character_count": 382,
+      "extraction_status": "extracted"
+    }
+  ],
+  "executive_summary_or_gao_highlights": [
+    {
+      "pdf_page": 20,
+      "text_raw": "RESPONSIIII \n-c( \nar: \n0 II. EQUITABLE \nCl) \nw .... \nA. \n-u TRACEABLE \nz -ar: \nA. \n.... \nc( \nu \nRl!LIAILE \n-:c ~ I-w \n8 GOVERNAIL! \nC \nUNCLASSIF IED \nEnsure warfighter trust by providing education and training, estab­\nlishing a test and evaluation and verification and validation \nframework that integrates real-time monitoring , algorithm confi­\ndence metrics, and user feedback to ensure trusted and trust­\nworthy Al capabilities. \nIncorporate RAI into all applicable Al requirements, including \njoint performance requirements established and approved by \nthe Joint Requiremen ts Oversight Council , to ensure RAI inclusion \nin appropria te DoD Al capabilities. \nBuild, train, equip, and retain an RAl-ready workforce to ensure \nrobust talent plann ing, recruitment. and capacity-building mea­\nsures, including workforce education and training on RAI. \nFigure 4: Summary of the DoD Ethical Principles for AI and Responsible AI Tenets \nUNCLASS IFIED 18 "
+    }
+  ],
+  "table_of_contents": [],
+  "conclusions_or_recommendations": [
+    {
+      "pdf_page": 41,
+      "text_raw": "UNCLASS IFIED \nGLOSSARY \nTerm Definition \nAlgorithm A method or set of rules or instruction to be \nfollowed in calc ulations or other problem-\nsource: DARPA solving operations, particular ly by a computer. \nArtificial lnteUigence AI refers to tbe ability of machines to perform \ntasks that normal ly require human intelligence \nsource: DoD Al Strategy (2018) - for example, recogniz ing patterns, learn ing \nfrom exper ience, drawing conclusions , makin g \npredictions, or taking action - whether \ndigitally or as the smart software behind \nauto nomous physical systems. \nAutonomy Autonomy refers to a system's ability to \naccomp lish goals independently, or with \nsource: DARPA minimal supervisio n from human operators in \nenvironments that are comp lex and \nunpredictable. \nAutonomous Weapon System A weapon system that, once activated , can \nselect and engage targets without further \nsource: DoDD 3000.09 intervention by a human operator. This \nincludes human -supervised autonomous \nweapon syste ms that are designed to alJow \nhuman operators to override operation of the \nweapon system , but can select and engage \ntargets without further human input after \nactivatio n. \nData Card A document for a dataset that prov ides insight \ninto collect ion, processing , usage, and security \nsource : JAJC, now CDAO practices. \nDoD Component Responsible Al Lead Individuals designated or hired by the C DAO \ngoverni ng council member organizations to be \nsource : CDAO responsible for ensuring the adoption , \nintegration , and implementation of \nResponsible Al programs and processes withi n \ntheir respective Components. \nEquitable DoD A[ Ethical Principles: The Department \nwill take deliberate steps to minim ize \nunintended bias in Al capabilities \nUNCLASS IFIED 39 "
+    }
+  ],
+  "dimension_hits": {
+    "deployment_fielding_operations": [
+      2,
+      4,
+      6
+    ],
+    "adoption_scaling": [
+      8,
+      9,
+      11
+    ],
+    "acquisition_procurement": [
+      3,
+      4,
+      9
+    ],
+    "test_evaluation": [
+      4,
+      11,
+      12
+    ],
+    "workforce_organization": [
+      3,
+      8,
+      9
+    ],
+    "governance_trust_responsibility": [
+      2,
+      3,
+      4
+    ],
+    "data_enterprise_collaboration": [
+      7,
+      10,
+      12
+    ]
+  },
+  "neutral_relevance_note": "Deterministic keyword recall found pages in 7 research dimensions; this card contains no semantic summary or P2 admission decision.",
+  "possible_information_increment": [
+    "Adds a manually supplied primary or oversight document to the P1b coverage map.",
+    "May provide page-locatable material for later human P2 review in the dimensions listed above."
+  ],
+  "p2_admission_pending": true,
+  "formal_evidence_created": false,
+  "competitive_hypotheses_created": false,
+  "case_conclusion_created": false
+}

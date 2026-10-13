@@ -1,0 +1,28 @@
+{
+  "exact_fields": [
+    "source_locator",
+    "excerpt_original",
+    "excerpt_zh",
+    "normalized_claim",
+    "evidence_nature",
+    "coding_dimensions",
+    "topics",
+    "possible_corroboration_group"
+  ],
+  "expected_exact_fields": [
+    "source_locator",
+    "excerpt_original",
+    "excerpt_zh",
+    "normalized_claim",
+    "evidence_nature",
+    "coding_dimensions",
+    "topics",
+    "possible_corroboration_group"
+  ],
+  "field_count": 8,
+  "schema_matches": true,
+  "contains_ten_fields_wording": false,
+  "contains_markdown_fence_instruction": true,
+  "empty_array_allowed": true,
+  "max_candidates_per_source": 6
+}

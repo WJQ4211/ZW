@@ -1,0 +1,47 @@
+{
+  "run_id": "P1-20260825T081142Z-7f4c9b",
+  "case_id": "us_military_ai_deployment",
+  "stage": "P1",
+  "group": "strategy_policy",
+  "raw_searches": [
+    {
+      "query_id": "P1-SP-DARPA-01",
+      "query_text": "decisions aligned human experts",
+      "source_domain": "darpa.mil/api/search",
+      "raw_total": 690,
+      "page_size_saved": 10,
+      "results": [
+        {"title":"Developing Algorithms that Make Decisions Aligned with Human Experts","url":"/news/2022/algorithms-human-experts","type":"news","summary":"Military operations &ndash; from combat, to medical triage, to disaster relief &ndash; require complex and rapid decision-making in dynamic situations where there is often no single right answer. As AI systems become more advanced in teaming with humans, building appropriate human trust in the AI&rsquo;s abilities to make sound decisions is vital."},
+        {"title":"Developing Trustworthy AI to Inform Decisions When Every Moment Counts","url":"/news/2023/trustworthy-ai","type":"news","summary":"DARPA has selected performers for the In the Moment (ITM) program to create the foundation for trusted algorithmic decision-making in challenging domains, such as medical triage."},
+        {"title":"AI Forge: Accelerating AI breakthroughs for national security","url":"/news/2026/ai-forge-accelerating-ai-breakthroughs-national-security","type":"news","summary":"New report and RFI aim to align government, academia, and industry around forward-looking AI research."},
+        {"title":"Enabling Human Control of Autonomous Partners","url":"/news/2021/human-control-autonomous-partners","type":"news","summary":"A major benefit of increasingly advanced automation and artificial intelligence technology is decreased workload and greater safety for humans &ndash; whether it&rsquo;s driving a vehicle, piloting an airplane, or patrolling a dangerous street in a deployed location with the aid of autonomous ground and airborne squad mates."},
+        {"title":"DARPA 'SNAPs' Up New Tools for Predicting Warfighter Readiness","url":"/news/2022/snap-warfighter-readiness","type":"news","summary":"Seeking to revolutionize how the Department of Defense (DoD) objectively measures individual warfighter readiness, DARPA&rsquo;s newest biotechnology funding opportunity aims to develop a hand-held prediction tool for warfighter physiological states based on molecular biomarkers."},
+        {"title":"Better Understanding of Human Brain Supports National Security","url":"/news/2013/understanding-human-brain","type":"news","summary":"DARPA intends to invest roughly $50 million in 2014 with the goal of understanding the dynamic functions of the brain and demonstrating breakthrough applications based on these insights."},
+        {"title":"OFFSET “Sprinters” to Pursue State-of-the-art Solutions for Second Swarm Sprint","url":"/news/2018/offset-second-swarm-sprint","type":"news","summary":"The OFFensive Swarm-Enabled Tactics (OFFSET) program envisions future small-unit infantry forces using small unmanned aircraft systems (UASs) and/or small unmanned ground systems (UGSs) in swarms."},
+        {"title":"DARPA Gives New Life to Old Concrete Structures Through “Vascularization”","url":"/news/2022/vascularization-concrete-structures","type":"news","summary":"Concrete is a ubiquitous building material, and it is often cited as the most consumed commodity on Earth, second only to potable water."},
+        {"title":"Science, Disrupted: Crowdsourcing Visions About the Future","url":"/news/2015/crowdsourcing-visions","type":"news","summary":"In early September, DARPA hosted Wait, What? A Future Technology Forum in St. Louis."},
+        {"title":"Elite Group of Young Scientists Embark on DARPA Research Efforts","url":"/news/2013/elite-group-young-scientists","type":"news","summary":"A group of early-career scientists at research universities have received grants totaling more than $12 million for basic research."}
+      ]
+    },
+    {
+      "query_id": "P1-SP-CSET-01",
+      "query_text": "governance",
+      "source_domain": "cset.georgetown.edu/wp-json/wp/v2/document",
+      "raw_total": 10,
+      "page_size_saved": 10,
+      "results": [
+        {"id":20660,"date":"12/17/2024 12:18:17","title":"Four Chinese Industry Associations Issue Statements Condemning U.S. Sanctions","link":"https://cset.georgetown.edu/publication/china-industry-response-to-us-sanctions/","slug":"china-industry-response-to-us-sanctions"},
+        {"id":20624,"date":"12/17/2024 00:42:42","title":"Identifying Emerging Technologies in Research","link":"https://cset.georgetown.edu/publication/identifying-emerging-technologies-in-research/","slug":"identifying-emerging-technologies-in-research"},
+        {"id":20613,"date":"12/16/2024 01:00:09","title":"AI and the Future of Workforce Training","link":"https://cset.georgetown.edu/publication/ai-and-the-future-of-workforce-training/","slug":"ai-and-the-future-of-workforce-training"},
+        {"id":20479,"date":"12/03/2024 01:25:57","title":"Anticipating Biological Risk: A Toolkit for Strategic Biosecurity Policy","link":"https://cset.georgetown.edu/publication/anticipating-biological-risk-a-toolkit-for-strategic-biosecurity-policy/","slug":"anticipating-biological-risk-a-toolkit-for-strategic-biosecurity-policy"},
+        {"id":20358,"date":"11/20/2024 08:27:00","title":"Funding the AI Cloud — Amazon, Alphabet, and Microsoft’s Cloud Computing Investments, Part 3","link":"https://cset.georgetown.edu/publication/funding-the-ai-cloud-amazon-alphabet-and-microsofts-cloud-computing-investments-part-3/","slug":"funding-the-ai-cloud-amazon-alphabet-and-microsofts-cloud-computing-investments-part-3"},
+        {"id":20366,"date":"11/20/2024 06:00:00","title":"AI Safety and Automation Bias","link":"https://cset.georgetown.edu/publication/ai-safety-and-automation-bias/","slug":"ai-safety-and-automation-bias"},
+        {"id":20347,"date":"11/19/2024 11:51:22","title":"Testimony before the U.S. Senate Judiciary Subcommittee on Privacy, Technology, and the Law","link":"https://cset.georgetown.edu/publication/testimony-before-the-u-s-senate-judiciary-subcommittee-on-privacy-technology-and-the-law/","slug":"testimony-before-the-u-s-senate-judiciary-subcommittee-on-privacy-technology-and-the-law"},
+        {"id":20338,"date":"11/19/2024 08:48:36","title":"Acquiring AI Companies: Tracking U.S. AI Mergers and Acquisitions","link":"https://cset.georgetown.edu/publication/acquiring-ai-companies-tracking-u-s-ai-mergers-and-acquisitions/","slug":"acquiring-ai-companies-tracking-u-s-ai-mergers-and-acquisitions"},
+        {"id":20264,"date":"11/13/2024 09:20:10","title":"Funding the AI Cloud — Amazon, Alphabet, and Microsoft’s Cloud Computing Investments, Part 2","link":"https://cset.georgetown.edu/publication/funding-the-ai-cloud-amazon-alphabet-and-microsofts-cloud-computing-investments-part-2/","slug":"funding-the-ai-cloud-amazon-alphabet-and-microsofts-cloud-computing-investments-part-2"},
+        {"id":20108,"date":"11/01/2024 00:26:48","title":"Cybersecurity Risks of AI-Generated Code","link":"https://cset.georgetown.edu/publication/cybersecurity-risks-of-ai-generated-code/","slug":"cybersecurity-risks-of-ai-generated-code"}
+      ]
+    }
+  ],
+  "raw_result_note": "Search-result fields are preserved as returned by the public search endpoints. They were used for discovery only; title/date/publisher verification was performed on original pages recorded in source_manifest_t0.csv."
+}

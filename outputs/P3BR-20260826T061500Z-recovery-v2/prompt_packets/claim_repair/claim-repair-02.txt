@@ -1,0 +1,21 @@
+PROMPT_ID: p3br_normalized_claim_repair_v1
+VERSION: 1.0
+REPAIR_INDEX: 2
+TASK: Generate only a Chinese normalized evidence claim for this one existing candidate.
+OUTPUT: strict JSON object with exactly one key: normalized_claim.
+Do not change or repeat the excerpt, locator, source, numbers, entities, actions, scope, or result.
+Do not add source-attribution prefixes such as 本报告认为 or 某机构指出.
+Use one checkable proposition only. If the excerpt is insufficient, return an empty normalized_claim.
+{
+  "source_id": "T0-IR-006",
+  "source_locator": "pdf_page_36",
+  "excerpt_original": "JAIC officials said the April 2021 AI baseline inventory does not include operations and maintenance-related AI activities—such the JAIC’s overall operating budget—or any classified AI activities.",
+  "evidence_nature": "evaluation",
+  "coding_dimensions": [
+    "engineering_resource_conditions"
+  ],
+  "topics": [
+    "AI活动清单",
+    "局限性"
+  ]
+}

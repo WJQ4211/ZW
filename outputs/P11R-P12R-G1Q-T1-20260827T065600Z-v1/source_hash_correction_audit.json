@@ -1,0 +1,27 @@
+{
+  "api_key_written": false,
+  "cause": "Windows text-mode newline translation made recorded string hash differ from archived byte hash",
+  "evidence_inserted": 0,
+  "formal_g1_t1_executed": false,
+  "model_api_calls": 0,
+  "raw_source_changed": false,
+  "repair_type": "source_text_byte_hash_alignment",
+  "run_id": "P11R-P12R-G1Q-T1-20260827T065600Z-v1",
+  "semantic_source_text_changed": false,
+  "source_hashes": {
+    "T1-DARPA-001": {
+      "raw_sha256": "a673820e08283bb0b642e11a7d10a9314b497314254a37aff5adb7c53399581c",
+      "text_sha256": "1663a3efce25c063e2df89b1355627be70dd4b9226e51069fad1aaf15c0e4f2c"
+    },
+    "T1-DARPA-003": {
+      "raw_sha256": "d0debec0180daad5c92c7556b46d39bca0ebcf0fe63162b675602c3fd40c6258",
+      "text_sha256": "27921552cf3cf921233c2c3da48b5da01fa2b9cc0aabdae7c4480a2bc4ead1fd"
+    },
+    "T1-IR-001": {
+      "raw_sha256": "70cfa17c00ae49fae4cc4cc2f93c82146105c3e5b8233518e2e715a368489a40",
+      "text_sha256": "5b04241772855e37cf563d99af143bdbbe4a9ce3c1748934e2638c0adf66e6dc"
+    }
+  },
+  "t1_read": true,
+  "t1_snapshot_frozen": false
+}

@@ -1,0 +1,844 @@
+PROMPT_ID: evidence_extract_p3b
+VERSION: 2.0
+BATCH_ID: T0-IR-006-batch-001
+SOURCE_DOCUMENT_ID: T0-IR-006
+RESEARCH_QUESTION: Based only on public, non-classified material available through 2024-12-31, what dominant deployment form is more likely for U.S. military AI capability building in 2025-2027?
+TASK: Extract at most five auditable evidence candidates from these source segments. Output zero candidates when the supplied text contains insufficient directly relevant evidence.
+INPUT LIMIT: Use only the source segments and definitions supplied here. Do not use prior runs, other sources, or outside knowledge.
+OUTPUT: strict JSON array; each object must contain exactly the eight model fields in the schema.
+normalized_claim must be Chinese only, state one evidence proposition, and contain no source-attribution prefix such as 本报告认为 or 某机构指出. Source metadata is supplied by the program.
+coding_dimensions must be a JSON array of zero or more exact dimension key strings, never an object/map and never Chinese descriptions or maturity labels. Allowed keys: integration_level, application_maturity, human_machine_authority, engineering_resource_conditions, trust_governance_constraints, organizational_system_fit.
+excerpt_original must be copied verbatim from one exact source_locator. Do not silently repair OCR, spelling, or layout extraction.
+If an English excerpt is returned, excerpt_zh must be non-empty and remains pending G1 translation review.
+Use goal for strategy/vision/plan; test_event only for a test or exercise occurrence, participants, or configuration; test_result only for an explicitly observed function, performance, or result; deployment_event only for deployment, fielding, adoption, or sustained use that has already occurred.
+Ordinary coordination, information transfer, training, or documentation does not automatically support human_machine_authority.
+Do not add subjects, actions, numbers, scope, or results absent from the excerpt. Do not generate hypotheses, viewpoints, conclusions, or a 2025-2027 route judgment.
+Do not use pseudo-continuous locators. One candidate expresses one checkable fact. Do not duplicate an equivalent excerpt within this source.
+CANDIDATE_LIMIT: 5
+SOURCE_SEGMENTS:
+--- pdf_page_1 ---
+pdf_page_number: 1
+printed_page_number: None
+section_title: ARTIFICIAL
+machine_extracted_anchor: pdf_page_1|printed_page_pending|section_ARTIFICIAL
+visual_review_required: false
+United States Government Accountability Office
+Report to Congressional Committees
+March 2022
+ARTIFICIAL
+INTELLIGENCE
+DOD Should Improve
+Strategies, Inventory
+Process, and
+Collaboration
+Guidance
+.
+GAO-22-105834
+--- pdf_page_2 ---
+pdf_page_number: 2
+printed_page_number: None
+section_title: ARTIFICIAL INTELLIGENCE
+machine_extracted_anchor: pdf_page_2|printed_page_pending|section_ARTIFICIAL_INTELLIGENCE
+visual_review_required: false
+March 2022
+ARTIFICIAL INTELLIGENCE
+DOD Should Improve Strategies, Inventory Process,
+and Collaboration Guidance
+Highlights of GAO-22-105834, a report to
+congressional committees
+Why GAO Did This Study What GAO Found
+DOD strategies state that AI will The 2018 Department of Defense (DOD) Artificial Intelligence (AI) Strategy
+transform the character of warfare, and defines AI as the ability of machines to perform tasks that normally require
+failure to adopt AI technology could human intelligence. The strategy and associated plans include some, but not all,
+hinder the capability of warfighters to characteristics of a comprehensive strategy. For example, DOD’s nine AI-related
+defend our nation. DOD is making strategies and plans do not include full descriptions of resources and investments
+organizational changes and investing and risk associated with adoption of AI-enabled technologies (See fig.). Issuing
+billions of dollars to incorporate AI
+guidance to include all characteristics of a comprehensive strategy in future AI-
+technology, such as establishing the
+related strategies could help DOD be better positioned to help managers ensure
+Joint AI Center to accelerate the
+accountability and responsible use of AI.
+delivery of AI-enabled capabilities
+across DOD.
+Assessment of DOD Artificial Intelligence-Related Strategies and Plans
+House Report 116-442 accompanying
+the National Defense Authorization Act
+for Fiscal Year 2021, includes a
+provision for GAO to assess DOD’s
+resources, capabilities, and plans for
+AI technology. This report evaluates
+the extent to which (1) DOD’s AI
+Strategy and associated plans include
+characteristics of a comprehensive
+strategy; (2) DOD has identified and
+reported AI activities across the
+department; and (3) DOD collaborates
+on its AI activities. GAO reviewed
+relevant laws and DOD strategies that
+outline plans and processes to manage DOD has begun to identify and report on its AI activities, but limitations exist in its
+AI across the department, interviewed AI baseline inventory, such as the exclusion of classified activities. DOD officials
+officials, and conducted a department- said these limitations will be addressed in subsequent phases of the AI inventory
+wide survey. This is a public version of identification process. However, DOD has not yet developed a high-level plan or
+a sensitive report that GAO issued in roadmap that captures all requirements and milestones. Such a plan would
+February 2022. Information that DOD
+provide DOD with a high-level, end-to-end view of all the features necessary to
+deemed sensitive has been omitted.
+accomplish the program’s goal to provide a complete and accurate inventory of
+What GAO Recommends AI activities to Congress and to DOD decision makers.
+DOD organizations collaborate on AI activities, but can more fully incorporate
+GAO is making seven
+leading collaboration practices. DOD uses a variety of formal and informal
+recommendations, including for DOD
+to issue guidance to include all collaborative mechanisms that GAO’s prior work has identified, such as
+characteristics of a comprehensive interagency groups. DOD has partially incorporated leading collaboration
+strategy; develop a high-level plan or practices, such as identifying leadership. However, DOD officials told us they are
+roadmap for its AI inventory process; in the process of developing guidance and agreements that clearly define the
+and finalize and issue guidance and roles and responsibilities of DOD components that participate in AI activities. By
+agreements that define roles and finalizing and issuing such guidance, DOD could help ensure all participants
+responsibilities for AI collaboration. agree upon responsibilities and decision making on AI efforts across the
+DOD concurred with all seven of these department.
+recommendations.
+V iew GAO-22-105834. For more information,
+contact Brian M. Mazanec at (202) 512-5130
+or mazanecb@gao.gov.
+United States Government Accountability Office
+--- pdf_page_3 ---
+pdf_page_number: 3
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_3|printed_page_pending|section_pending
+visual_review_required: true
+Contents
+Letter 1
+Background 6
+DOD’s AI Strategy and Plans Include Some, but Not All,
+Characteristics of a Comprehensive Strategy 20
+DOD Has Reported Some AI Activities, but Lacks a High-level
+Plan or Roadmap to Address Limitations 29
+DOD Collaborates on AI Activities, but Can More Fully Incorporate
+Leading Practices 36
+Conclusions 50
+Recommendations for Executive Action 51
+Agency Comments and Our Evaluation 52
+Appendix I Objectives, Scope, and Methodology 55
+Appendix II Survey about DOD Collaboration on AI Activities 64
+Appendix III DOD Officials’ Reported Perceptions of Extent of Collaboration on
+AI Activities 71
+Appendix IV Joint Common Foundation Development 76
+Appendix V Comments from the Department of Defense 79
+Appendix VI GAO Contact and Staff Acknowledgments 82
+Related GAO Products 83
+Tables
+Table 1: Department of Defense (DOD) Artificial Intelligence (AI)-
+Related Plans and Strategies 18
+Page i GAO-22-105834 Artificial Intelligence
+--- pdf_page_4 ---
+pdf_page_number: 4
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_4|printed_page_pending|section_pending
+visual_review_required: true
+Table 2: Department of Defense (DOD) Military Services Artificial
+Intelligence (AI)-Related Plans and Strategies 19
+Table 3: Extent to Which the 2018 DOD AI Strategy and 2019
+Summary of the DOD AI Strategy Include the Key
+Elements of a Comprehensive Strategy and Select
+Internal Controls 21
+Table 4: Examples of Reasons Organizations Did Not Include
+Certain Characteristics of a Comprehensive Strategy in
+Artificial Intelligence (AI)-Related Strategies 26
+Table 5: Select Mechanisms for Interagency Collaboration, Their
+Definitions, and Reported Usage, October 2021 38
+Table 6: GAO Analysis of the Extent to Which DOD Incorporated
+Leading Collaboration Practices and Key Considerations 41
+Table 7: Organizations Included in GAO’s Web-Based Survey 69
+Table 8: Number and Average of Artificial Intelligence-Related
+Collaborative Connections by Organization Type,
+Reported as a Point in Time from June through October
+2021 71
+Figures
+Figure 1: Overview of Artificial Intelligence (AI) Types and
+Technologies 8
+Figure 2: Timeline of Key Developments for DOD’s Pursuit of
+Artificial Intelligence (AI), April 2017 through February
+2022 11
+Figure 3: Timeline of JAIC Development from 2018 through 2021 13
+Figure 4: DOD AI Governance Model with JAIC Support, as of
+November 2021 14
+Figure 5: DOD Artificial Intelligence-Related Strategies and Plans 16
+Figure 6: Extent to Which Nine DOD Artificial Intelligence (AI)-
+Related Strategies Include the Key Elements of a
+Comprehensive Strategy and Select Internal Controls 24
+Figure 7: Joint Artificial Intelligence (AI) Center’s (JAIC) AI
+Activities Inventory Process 34
+Figure 8: DOD’s Joint Common Foundation Concept 39
+Figure 9: Comments from Survey Respondents 46
+Figure 10: Breakdown of Perceived Extent of Artificial Intelligence
+Collaboration by Organization Type, Reported as a Point
+in Time, from June through October 2021 73
+Figure 11: Timeline of Joint Common Foundation Development,
+as of August 2021 76
+Page ii GAO-22-105834 Artificial Intelligence
+--- pdf_page_5 ---
+pdf_page_number: 5
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_5|printed_page_pending|section_pending
+visual_review_required: false
+Abbreviations
+AI Artificial Intelligence
+CIO Chief Information Officer
+DOD Department of Defense
+JAIC Joint Artificial Intelligence Center
+ODNI Office of the Director of National Intelligence
+This is a work of the U.S. government and is not subject to copyright protection in the
+United States. The published product may be reproduced and distributed in its entirety
+without further permission from GAO. However, because this work may contain
+copyrighted images or other material, permission from the copyright holder may be
+necessary if you wish to reproduce this material separately.
+Page iii GAO-22-105834 Artificial Intelligence
+--- pdf_page_6 ---
+pdf_page_number: 6
+printed_page_number: None
+section_title: 441 G St. N.W
+machine_extracted_anchor: pdf_page_6|printed_page_pending|section_441_G_St_N_W
+visual_review_required: false
+Letter
+441 G St. N.W.
+Washington, DC 20548
+March 30, 2022
+Congressional Committees
+Artificial Intelligence (AI) will transform the character of warfare, according
+National Security Commission on AI
+to the Department of Defense’s (DOD) 2018 National Defense
+“AI technologies are the most powerful
+Strategy.1 Failure to adopt AI technology into legacy systems could hinder
+tools in generations…The ability of a
+machine to perceive, evaluate, and act the capability of warfighters to defend our nation, erode cohesion among
+more quickly and accurately than a
+allies and partners, and reduce access to markets that may contribute to
+human represents a competitive
+advantage in any field—civilian or a decline in our nation’s prosperity and standard of living, according to the
+military. AI technologies will be a source 2018 DOD AI Strategy.2 Additionally, the 2018 DOD AI Strategy noted
+of enormous power for the companies
+and countries that harness them.” that adversaries and strategic competitors such as China and Russia are
+Source: National Security Commission on Artificial making significant investments in AI for national security purposes.
+Intelligence, Final Report (Mar. 1, 2021). I GAO-22-
+105834
+DOD has made organizational changes and is investing billions of dollars
+to incorporate AI technology into its operations. For example:
+• DOD established the Joint Artificial Intelligence Center (JAIC) in 2018
+to accelerate the delivery of AI-enabled capabilities across DOD.
+• JAIC’s budget increased from $89 million in fiscal year 2019 to $242.5
+million in fiscal year 2020, to $278.2 million for fiscal year 2021.
+• DOD realigned the Director of the JAIC to report directly to the Deputy
+Secretary of Defense in response to a fiscal year 2021 statutory
+1Department of Defense, Summary of the 2018 National Defense Strategy of the United
+States of America (2018). (Referred to as the 2018 National Defense Strategy). According
+to the National Security Commission on AI, AI is a constellation of technologies rather
+than a single piece of hardware or software and requires talent, data, hardware,
+algorithms, applications, and integration. National Security Commission on Artificial
+Intelligence, Final Report (Mar. 1, 2021).
+2Department of Defense, Summary of the 2018 Department of Defense Artificial
+Intelligence Strategy: Harnessing AI to Advance Our Security and Prosperity (2018).
+(Hereafter referred to as the 2018 DOD AI Strategy).
+Page 1 GAO-22-105834 Artificial Intelligence
+--- pdf_page_7 ---
+pdf_page_number: 7
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_7|printed_page_pending|section_pending
+visual_review_required: false
+provision and provided acquisition authority of up to a total of $75
+million through fiscal year 2025.3
+• DOD requested $14.7 billion for science and technology programs for
+fiscal year 2022, including $874 million for the development of AI,
+compared with $841 million for fiscal year 2021, reflecting the rapidly
+growing importance of AI in DOD’s operations. However, the fiscal
+years 2021 and 2022 requests do not reflect the total of DOD’s AI
+investments.4
+• DOD announced initial operating capability of the Chief Digital and AI
+Officer in February 2022 to serve as the department’s senior official
+responsible for strengthening and integrating data, AI, and digital
+solutions within the department.5
+The House Armed Services Committee report accompanying a bill for the
+National Defense Authorization Act for Fiscal Year 2021 includes a
+provision that we assess DOD’s resources, capabilities, and plans for AI
+3The William M. (Mac) Thornberry National Defense Authorization Act for Fiscal Year
+2021, Pub. L. No. 116–283 § 232 and § 808 (2021). The act provides that during 2 years
+beginning on the date of the enactment, the Director of the JAIC shall report directly to the
+Deputy Secretary of Defense without intervening authority. Additionally, the Secretary of
+Defense shall delegate to the Director of the JAIC the acquisition authority to exercise the
+functions of a head of an agency (as defined in section 2302 of title 10, United States
+Code) with respect to appropriate acquisition activities of the Center. In exercising the
+acquisition authority granted in subsection (a), the Director may not obligate or expend
+more than $75 million out of the funds made available in fiscal years 2021–2025 to enter
+into new contracts to support appropriate acquisition activities.
+4According to a JAIC official, DOD’s fiscal years 2021 and 2022 AI budget requests
+include the JAIC’s operating budget and some other investments to procure or to develop
+AI technologies; however, the requests do not reflect the total of DOD’s AI investments.
+DOD’s effort to identify AI activities and associated investments is ongoing and described
+later in this report.
+5On Dec. 8, 2021, the Deputy Secretary of Defense issued a memorandum that directs
+the establishment of the Chief Digital and AI Officer. The memorandum states that the
+Office of the Chief Digital and AI Officer will serve as the successor organization to the
+JAIC in reporting directly to the Deputy Secretary of Defense. Deputy Secretary of
+Defense Memorandum, Establishment of the Chief Digital and Artificial Intelligence Officer
+(Dec. 8, 2021). On Feb. 1, 2022, the Deputy Secretary of Defense issued two memoranda
+announcing the initial operating capability and clarifying the roles of the Chief Digital and
+AI Officer. Deputy Secretary of Defense Memorandum, Initial Operating Capability of the
+Chief Digital and Artificial Intelligence Officer (Feb. 1, 2022) and Deputy Secretary of
+Defense Memorandum, Role Clarity for the Chief Digital and Artificial Intelligence Officer
+(Feb. 1, 2022). According to a senior JAIC official, as of March 2022, DOD’s intention is to
+formally stand down the JAIC by the end of fiscal year 2022.
+Page 2 GAO-22-105834 Artificial Intelligence
+--- pdf_page_8 ---
+pdf_page_number: 8
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_8|printed_page_pending|section_pending
+visual_review_required: false
+technology.6 Our report evaluates the extent to which (1) the 2018 DOD
+AI Strategy and associated plans include characteristics of a
+comprehensive strategy; (2) DOD has identified and reported AI activities
+across the department; and (3) DOD collaborates on its AI activities.7
+This report is a public version of a sensitive report that we issued in
+February 2022.8 DOD deemed some of the information in our February
+2022 report to be sensitive, which must be protected from public
+disclosure. Therefore, this report omits sensitive detailed information
+pertaining to our objective on the extent DOD has identified and reported
+on AI activities across the department. Specifically, we omit information
+on the methodology DOD used to create its inventory of AI activities and
+its plans for the next phases of the inventory process. Although the
+information provided in this report is more limited, the report addresses
+the same objectives as the sensitive report and uses the same
+methodology.
+To address these objectives, we reviewed relevant laws, regulations,
+executive orders, and DOD and military service strategies that outline
+plans and processes to manage AI across the department. We also
+interviewed and collected documentation from officials in the JAIC,
+military services, and relevant defense agencies, and DOD organizations
+with AI oversight responsibilities, as well as other federal organizations
+with AI oversight responsibilities. We included information from 2017,
+when the Algorithmic Warfare Cross-Functional Team was established, to
+2021.9
+6H.R. Rep. No. 116-442 at 257 (2020). This report also includes a provision that we review
+steps DOD has taken to examine the effects, risks, and efficiencies of AI on the nuclear
+mission. H.R. Rep. No. 116-42 at 246-47 (2020). We will address this provision
+separately.
+7Characteristics of a comprehensive strategy encompass the seven key elements of a
+comprehensive strategy we have identified in prior work and three selected internal control
+principles that relate to ethics, workforce, and risk.
+8GAO, Artificial Intelligence: DOD Should Improve Strategies, Inventory Process, and
+Collaboration Guidance, GAO-22-104516SU (Washington, D.C.: Feb.16, 2022).
+9The Algorithmic Warfare Cross-Functional Team was established by the Deputy
+Secretary of Defense in a memorandum signed on April 26, 2017. See Deputy Secretary
+of Defense Memorandum, Establishment of an Algorithmic Warfare Cross-Functional
+Team (Project Maven) (Apr. 26, 2017).
+Page 3 GAO-22-105834 Artificial Intelligence
+--- pdf_page_9 ---
+pdf_page_number: 9
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_9|printed_page_pending|section_pending
+visual_review_required: false
+For objective one, we assessed the 2018 DOD AI Strategy and
+associated implementation plans, comparing them to key elements of a
+comprehensive strategy identified in our prior work and relevant principles
+on management responsibilities and risk management outlined in
+Standards for Internal Control in the Federal Government.10 We also
+reviewed the National Defense Authorization Act for Fiscal Year 2017,
+which required DOD to develop the National Defense Strategy and
+update it at least once every 4 years and, during the years without an
+update, to assess the implementation of the strategy and whether any
+revision is required.11 Additionally, we discussed plans to update
+strategies with relevant officials, and compared those plans with federal
+internal controls that state that management should define objectives to
+include what is to be achieved, who is to achieve it, how it will be
+achieved, and the time frames for achievement.12
+For objective two, we reviewed existing DOD reporting requirements and
+processes to track and report AI investments and activities. We also
+reviewed the JAIC’s April 2021 report to Congress that provided a
+baseline inventory of AI activities and discussed with JAIC officials
+planned actions for the next phases of their effort to address certain areas
+not captured in the initial baseline. We assessed the baseline inventory
+against Standards for Internal Control in the Federal Government, which
+states that management should identify information requirements in an
+10GAO, Standards for Internal Control in the Federal Government, GAO-14-704G
+(Washington, D.C.: September 2014) and GAO, Defense Logistics: A Completed
+Comprehensive Strategy is Needed to Guide DOD’s In-Transit Visibility Efforts,
+GAO-13-201 (Washington, D.C.: Feb. 28, 2013), which used criteria derived from GAO,
+Managing for Results: Critical Issues for Improving Federal Agencies’ Strategic Plans,
+GAO/GGD-97-180 (Washington, D.C.: Sept. 16, 1997). We note in the 1997 report that
+the Government Performance Results Act of 1993 identifies key elements to be included
+in strategic plans.
+11Pub. L. No. 114-328, § 941(a) (2016) (codified at 10 U.S.C. § 113(g)).
+12Associated plans we assessed include: DOD, Office of the DOD Chief Information
+Officer, Artificial Intelligence Governance Plan Version 1.0 (May 2020); DOD, DOD Digital
+Modernization Strategy: DOD Information Resource Management Strategic Plan FY19-23
+(July 12, 2019); DOD, DOD Data Strategy (2020); DOD Joint AI Center and DOD Chief
+Information Officer, 2020 Department of Defense Artificial Intelligence Education Strategy
+(Sept. 2020); Department of the Air Force, The United States Air Force Artificial
+Intelligence Annex to The Department of Defense Artificial Intelligence Strategy (2019);
+United States Marine Corps, (U) USMC Annex to the DOD AI Strategy (Mar. 15, 2019)
+(U//FOUO); Department of the Army, The 2020 Army AI Strategy (2020); U.S. Navy, (U)
+The Navy’s Annex to the DOD AI Strategy (2019) (SECRET); and U.S. Navy,
+Transforming Naval Operations: USN AI Strategic Vectors (July 2020).
+Page 4 GAO-22-105834 Artificial Intelligence
+--- pdf_page_10 ---
+pdf_page_number: 10
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_10|printed_page_pending|section_pending
+visual_review_required: false
+iterative and ongoing process, using and communicating the resulting
+quality information to achieve an entity’s objective.13 Additionally, we
+reviewed the JAIC’s plans for the inventory’s next phases against our
+Agile Assessment Guide, which states that an integrated master schedule
+or similar artifact that captures both government and contractor activities,
+including Agile software development efforts, should capture all the
+planned features needed to accomplish the program goals at an
+appropriate level of detail.14
+For objective three, we surveyed representatives of 39 organizations,
+asking them about the presence, extent, and characteristics of their
+organizations’ collaboration (or coordination) with these organizations.15
+We received completed unclassified responses from 54 individuals (an 89
+percent response rate). We assessed DOD’s collaboration efforts against
+leading practices for interagency collaboration identified in our prior work
+and the extent to which DOD uses key mechanisms to facilitate
+collaboration.16 See appendix I for additional details on our objectives,
+scope, and methodology.
+The performance audit upon which this report is based was conducted
+from September 2020 to February 2022 in accordance with generally
+accepted government auditing standards. Those standards require that
+we plan and perform the audit to obtain sufficient, appropriate evidence to
+provide a reasonable basis for our findings and conclusions based on our
+audit objectives. We believe that the evidence obtained provides a
+reasonable basis for our findings and conclusions based on our audit
+objectives.
+We subsequently worked from February 2022 to March 2022 to prepare
+this version for public release. This public version was also prepared in
+accordance with those standards.
+13GAO-14-704G.
+14GAO, Agile Assessment Guide: Best Practices for Agile Adoption and Implementation,
+GAO-20-590G (Washington, D.C.: Sept. 28, 2020).
+15We surveyed 61 individuals from 39 unique organizations and asked them about their
+organizations’ collaborations with the other organizations. See appendix I for additional
+details on our survey methodology.
+16GAO, Managing for Results: Key Considerations for Implementing Interagency
+Collaborative Mechanisms, GAO-12-1022 (Washington, D.C.: Sept. 27, 2012).
+Page 5 GAO-22-105834 Artificial Intelligence
+--- pdf_page_11 ---
+pdf_page_number: 11
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_11|printed_page_pending|section_pending
+visual_review_required: false
+Background
+Definitions of AI Section 238 of the John S. McCain National Defense Authorization Act for
+Fiscal Year 2019 directed the Secretary of Defense to delineate a
+definition of the term “artificial intelligence” for use within the
+department.17 The 2018 DOD AI Strategy states that AI refers to the
+ability of machines to perform tasks that normally require human
+intelligence—for example, recognizing patterns, learning from
+experiences, drawing conclusions, making predictions, or taking action—
+whether digitally or as the smart software behind autonomous physical
+systems. In June 2020, the DOD Inspector General issued a report that
+recommended, among other things, that the JAIC Director establish an AI
+governance framework that includes a standard definition of AI that is
+updated at least annually.18 In response to the recommendation, the DOD
+CIO identified a March 2020 memorandum signed by the JAIC Director,
+which stated that the DOD AI Executive Steering Group approved the AI
+definition from the 2018 DOD AI Strategy as the enterprise AI definition
+for DOD.19
+More recently, Section 5002 of the William M. (Mac) Thornberry National
+Defense Authorization Act for Fiscal Year 2021, defined AI as a machine-
+based system that can, for a given set of human-defined objectives, make
+17Pub. L. No. 115-232, § 238 (2018).
+18DOD Inspector General, (U) Audit of Governance and Protection of Department of
+Defense Artificial Intelligence Data and Technology (June 29, 2020) (U//FOUO). The DOD
+Inspector General’s June 2020 recommendations to the JAIC included, among others, that
+when developing its AI governance framework and standards, JAIC should: include a
+standard definition of AI and regularly, at least annually, consider updating the definition;
+develop a process to accurately account for AI projects; and develop capabilities for
+sharing data. In July 2021, officials told us they closed or resolved these AI governance-
+related recommendations.
+19DOD Chief Information Officer Memorandum, Department of Defense Artificial
+Intelligence Executive Steering Group Decisions (Mar. 4, 2020). Distribution of this
+memorandum included the Secretaries of the Military Departments, Chairman of the Joint
+Chiefs of Staff, various Undersecretaries of Defense, and others. The definition of AI from
+the 2018 DOD AI Strategy is similar to other U.S. government definitions of AI. For
+example, the National Institute of Standards and Technology defines AI as follows: AI
+refers to computer systems able to perform tasks that normally require human intelligence,
+such as image classification and speech recognition. Machine learning refers to the
+components of AI systems that learn from data to perform such tasks. National Institute of
+Standards and Technology, Draft National Institute of Standards and Technology
+Interagency or Internal Report 8269: A Taxonomy and Terminology of Adversarial
+Machine Learning (Oct. 2019).
+Page 6 GAO-22-105834 Artificial Intelligence
+--- pdf_page_12 ---
+pdf_page_number: 12
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_12|printed_page_pending|section_pending
+visual_review_required: false
+predictions, recommendations or decisions influencing real or virtual
+environments. AI systems use machine and human-based inputs to—(A)
+perceive real and virtual environments; (B) abstract such perceptions into
+models through analysis in an automated manner; and (C) use model
+inference to formulate options for information or action.20 As of September
+2021, DOD continues to use the definition contained in the 2018 DOD AI
+Strategy. Figure 1 illustrates different types of AI and provides
+descriptions of how they are applied.
+20Pub. L. No. 116-283, § 5002 (2021). This definition of AI is part of the National Artificial
+Intelligence Initiative Act of 2020, which was enacted as Division E of the National
+Defense Authorization Act for Fiscal Year 2021. The act directed the President to
+establish the National AI Initiative to ensure continued U.S. leadership in AI research and
+development; lead the world in the development and use of trustworthy AI systems in the
+public and private sectors; prepare the present and future U.S. workforce for the
+integration of AI systems across all sectors of the economy and society; and coordinate
+ongoing AI research, development, and demonstration activities among the civilian
+agencies, the Department of Defense, and the Intelligence Community to ensure that each
+informs the work of the others. Pub. L. No. 116-283, §§ 5101-06 (2021).
+Page 7 GAO-22-105834 Artificial Intelligence
+--- pdf_page_13 ---
+pdf_page_number: 13
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_13|printed_page_pending|section_pending
+visual_review_required: false
+Figure 1: Overview of Artificial Intelligence (AI) Types and Technologies
+DOD’s AI History including Before the 2018 National Defense Strategy, which prioritized AI as one of
+Roles and Responsibilities the technologies that will transform future warfare, DOD had a long
+history of working with AI and investing in its research and development.
+For example, since the late 1950s the Defense Advanced Research
+Page 8 GAO-22-105834 Artificial Intelligence
+--- pdf_page_14 ---
+pdf_page_number: 14
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_14|printed_page_pending|section_pending
+visual_review_required: false
+Projects Agency has engaged in research aimed at applying AI principles
+to defense challenges. Additionally, the Navy established its Center for
+Applied Research in AI in 1981.21 DOD has integrated AI capabilities into
+various efforts within the department, such as the Algorithmic Warfare
+Cross-Functional Team (known as Project Maven). According to a Deputy
+Secretary of Defense memorandum establishing Project Maven, the
+objective is to turn the enormous volume of data available to DOD into
+actionable intelligence and insights.22
+Algorithmic Warfare Cross-Functional Team. In 2017, DOD
+established the Algorithmic Warfare Cross-Functional Team, or Project
+Maven, and tasked the Office of the Undersecretary of Defense for
+Intelligence with oversight (the Under Secretary of Defense for
+Intelligence was later renamed the Under Secretary of Defense for
+Intelligence and Security).23 According to Office of the Under Secretary of
+Defense for Intelligence and Security officials, Project Maven is designed
+to develop AI projects to and facilitate their placement into permanent
+DOD programs.24 The Office of the Under Secretary of Defense for
+Intelligence and Security’s Project Maven office establishes policy and
+provides guidance for all algorithm-based technology initiatives affecting
+21The Navy Center for Applied Research in Artificial Intelligence is a branch within the
+Information Technology Division of the U.S. Naval Research Laboratory. The Center
+conducts basic and applied research on AI to address the application of AI technology and
+techniques to critical Navy and national problems.
+22Deputy Secretary of Defense Memorandum, Establishment of an Algorithmic Warfare
+Cross-Functional Team (Project Maven) (Apr. 26, 2017).
+23Deputy Secretary of Defense Memorandum, Establishment of an Algorithmic Warfare
+Cross-Functional Team (Project Maven) (Apr. 26, 2017). We previously reported that
+cross-functional teams rely on individuals with different types of expertise to work toward a
+common, well-defined goal, and are thought to deliver better and faster solutions to
+complex and fast-moving problems. GAO, Defense Management: DOD Should Set
+Deadlines on Stalled Collaboration Efforts and Clarify Cross-Functional Team Funding
+Responsibilities, GAO-19-598 (Washington, D.C.: Aug. 20, 2019).
+24In January 2022, the DOD Inspector General issued a report evaluating whether the
+Algorithmic Warfare Cross-Functional Team monitored Project Maven contracts in
+accordance with federal laws and DOD policy. The DOD Inspector General made two
+recommendations including that the Chief of the Algorithmic Warfare Cross-Functional
+Team formalize Project Maven’s processes and procedures for monitoring and managing
+AI development contracts. According to the DOD Inspector General’s report, in October
+2021, to address the anticipated recommendations, DOD provided a description of roles
+and responsibilities, standard operating procedures, and a Project Maven acquisition
+guide. DOD Inspector General, Evaluation of Contract Monitoring and Management for
+Project Maven (Jan. 6, 2022).
+Page 9 GAO-22-105834 Artificial Intelligence
+--- pdf_page_15 ---
+pdf_page_number: 15
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_15|printed_page_pending|section_pending
+visual_review_required: false
+intelligence mission areas within the Defense Intelligence Enterprise.25
+This includes overseeing implementation of a DOD data labeling effort for
+full-motion video and overhead imagery. Additionally, in January 2021, an
+Office of the Under Secretary of Defense for Intelligence and Security
+official said geospatial-intelligence technology initiatives will transfer to
+the National Geospatial-Intelligence Agency by fiscal year 2023, and non-
+geospatial intelligence technology initiatives would remain with the Office
+of the Under Secretary of Defense for Intelligence and Security through
+fiscal year 2025. See figure 2 for key developments and history of AI
+integration.
+25Deputy Secretary of Defense Memorandum, Establishment of an Algorithmic Warfare
+Cross-Functional Team (Project Maven) (Apr. 26, 2017).
+Page 10 GAO-22-105834 Artificial Intelligence
+--- pdf_page_16 ---
+pdf_page_number: 16
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_16|printed_page_pending|section_pending
+visual_review_required: false
+Figure 2: Timeline of Key Developments for DOD’s Pursuit of Artificial Intelligence (AI), April 2017 through February 2022
+Page 11 GAO-22-105834 Artificial Intelligence
+--- pdf_page_17 ---
+pdf_page_number: 17
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_17|printed_page_pending|section_pending
+visual_review_required: false
+aThe John S. McCain National Defense Authorization Act for Fiscal Year 2019, Pub. L. No. 115-232 §
+238 (2018)
+bThe William M. (Mac) Thornberry National Defense Authorization Act for Fiscal Year 2021, Pub. L.
+No. 116–283 § 232 (2021).
+JAIC roles and responsibilities. In June 2018, DOD established the
+JAIC to accelerate AI development and integration, with the goal of the
+JAIC becoming fully operational by October 1, 2019. The JAIC’s first
+director was confirmed by the Senate in December 2018. The JAIC’s
+roles and responsibilities are derived from the John S. McCain National
+Defense Authorization Act for Fiscal Year 2019, and prescribed in the
+2018 DOD AI Strategy, and Deputy Secretary of Defense memoranda.
+The JAIC collaborates with key offices across the department, including
+the Office of the Under Secretary of Defense for Research and
+Engineering, the Office of the Under Secretary of Defense for Acquisition
+and Sustainment, the Director of Operational Test and Evaluation, and
+the DOD CIO and Chief Data Officer.26 Within the Office of the Under
+Secretary of Defense for Research and Engineering, the Defense
+Advanced Research Projects Agency supports AI research and the
+Defense Innovation Unit conducts projects to transition commercial
+prototypes for specific applications that support the JAIC’s efforts.
+The JAIC also addresses broad AI challenges through Mission Initiatives
+using a cross-functional team approach.27 According to the Director of the
+JAIC, efforts are moving from the initial phase of adopting AI to a second
+phase of AI integration, and then there will be a third phase of scaling of
+AI capabilities throughout the department.
+As shown in figure 3, the JAIC has grown since its inception in 2018 and
+has shifted from executing and implementing AI solutions of its own to
+providing technical services, acquisition support, expertise, and best
+practices to other DOD organizations.
+26National Security Commission on Artificial Intelligence, Final Report (Mar. 1, 2021).
+27In February 2022, we reported on some of the JAIC’s initiatives to address DOD’s broad
+AI challenges. GAO, Artificial Intelligence: Status of Developing and Acquiring Capabilities
+for Weapons Systems, GAO-22-104765 (Washington, D.C.: Feb. 17, 2022).
+Page 12 GAO-22-105834 Artificial Intelligence
+--- pdf_page_18 ---
+pdf_page_number: 18
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_18|printed_page_pending|section_pending
+visual_review_required: false
+Figure 3: Timeline of JAIC Development from 2018 through 2021
+Section 238 of the John S. McCain National Defense Act for Fiscal Year
+2019 mandated that the duties of the senior official designated by the
+Secretary of Defense (Director, JAIC) include regularly convening
+appropriate officials across the department to integrate the functional
+activities related to AI and machine learning.28 The JAIC, in coordination
+with the DOD CIO, established a governance framework as a key
+28Pub. L. No. 115-232, § 238 (2018).
+Page 13 GAO-22-105834 Artificial Intelligence
+--- pdf_page_19 ---
+pdf_page_number: 19
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_19|printed_page_pending|section_pending
+visual_review_required: false
+collaboration mechanism, consisting of the DOD AI Executive Steering
+Group, AI Working Group, and nine subcommittees as show in figure 4.
+Figure 4: DOD AI Governance Model with JAIC Support, as of November 2021
+Mission initiatives. According to the JAIC’s June 2021 biannual report to
+Congress, the JAIC has six mission initiatives, which have been scoped
+and selected based on the joint requirements provided to the JAIC by its
+partners.29 For example, the Joint Logistics Mission Initiative team seeks
+to enable the development of AI-based solutions for logistics across the
+DOD by improving access to integrated development tools and vehicle
+data and by conducting AI projects to find and overcome barriers. One of
+the Joint Logistics Mission Initiative team’s lines of effort is focused on
+29Joint Artificial Intelligence Center, (U) Biannual Report to Congress of the Joint Artificial
+Intelligence Center, (June 2021) (CUI).
+Page 14 GAO-22-105834 Artificial Intelligence
+--- pdf_page_20 ---
+pdf_page_number: 20
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_20|printed_page_pending|section_pending
+visual_review_required: false
+predictive logistics for aircraft entering major maintenance cycles. Aircraft
+entering these cycles can sometimes require more extensive
+maintenance resulting in an unscheduled longer-than-normal
+maintenance period which reduces maintenance efficiency and aircraft
+availability. The Joint Logistics Mission Initiative team is using historic
+maintenance data to train AI models to predict these longer than normal
+maintenance periods. The initial logistics model was demonstrated on
+February 11, 2021.
+Chief Digital and AI Officer. On December 8, 2021, the Deputy
+Secretary of Defense issued a memorandum directing the establishment
+of the Chief Digital and AI Officer, effective in February 2022, but the
+implementation plan for this effort has not been published.30 The
+memorandum outlines initial reporting relationships with the JAIC, the
+Defense Digital Service, and the Chief Data Officer. For example, the
+Office of the Chief Digital and AI Officer will be the successor organization
+to the JAIC in reporting directly to the Deputy Secretary of Defense. As of
+December 2021, JAIC officials characterized the memorandum’s directed
+changes as related to reporting structure. On February 1, 2022, the
+Deputy Secretary of Defense issued two memoranda announcing the
+initial operating capability and clarifying the roles of the Chief Digital and
+AI Officer.31 According to a senior JAIC official, as of March 2022, DOD’s
+intention is to formally stand down the JAIC by the end of fiscal year
+2022.
+30Deputy Secretary of Defense Memorandum, Establishment of the Chief Digital and
+Artificial Intelligence Officer (Dec. 8, 2021).
+31Deputy Secretary of Defense Memorandum, Initial Operating Capability of the Chief
+Digital and Artificial Intelligence Officer (Feb. 1, 2022) and Deputy Secretary of Defense
+Memorandum, Role Clarity for the Chief Digital and Artificial Intelligence Officer (Feb. 1,
+2022).
+Page 15 GAO-22-105834 Artificial Intelligence
+--- pdf_page_21 ---
+pdf_page_number: 21
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_21|printed_page_pending|section_pending
+visual_review_required: false
+DOD and the Military DOD and the military services have issued a number of AI-related
+Services’ AI-Related strategies and plans. (See fig. 5.)
+Strategies and Plans
+Figure 5: DOD Artificial Intelligence-Related Strategies and Plans
+Page 16 GAO-22-105834 Artificial Intelligence
+--- pdf_page_22 ---
+pdf_page_number: 22
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_22|printed_page_pending|section_pending
+visual_review_required: false
+2018 DOD AI Strategy. Section 238 of the John S. McCain National
+Defense Authorization Act for Fiscal Year 2019 directed the development
+of a detailed strategic plan to develop, mature, adopt, and transition AI
+technologies into operational use.32 DOD issued the 2018 DOD AI
+Strategy, which directs DOD to accelerate the adoption of AI and
+emphasizes that a strong, technologically advanced department is
+essential for protecting the security of the nation.33 The 2018 DOD AI
+Strategy presents a strategic approach to guide DOD’s efforts to
+accelerate AI adoption, which includes initiatives such as scaling AI’s
+impact across DOD through a common foundation that enables
+decentralized development and experimentation, cultivating a leading AI
+workforce, and leading in military ethics and AI safety. According to JAIC
+officials, an updated 2018 DOD AI Strategy is expected to be issued in
+the summer of 2022 following the release of a new national defense
+strategy.
+DOD AI-related strategies and plans. In addition to the 2018 DOD AI
+Strategy, DOD has issued the AI-related plans and strategies shown in
+table 1.
+32Pub. L. No. 115-232, § 238 (2018).
+33The 2018 DOD AI Strategy is an annex to the 2018 National Defense Strategy, which
+underpins DOD’s planned budgets for fiscal years 2019 through 2023, including
+accelerating modernization programs such as AI-related applications. The summary of the
+National Defense Strategy states that, “The Department will invest broadly in military
+application of autonomy, artificial intelligence, and machine learning, including rapid
+application of commercial breakthroughs, to gain competitive military advantages.”
+Page 17 GAO-22-105834 Artificial Intelligence
+--- pdf_page_23 ---
+pdf_page_number: 23
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_23|printed_page_pending|section_pending
+visual_review_required: false
+Table 1: Department of Defense (DOD) Artificial Intelligence (AI)-Related Strategies and Plans
+Title of AI-related strategy or Description of AI-related
+plan strategy or plan
+2018 DOD AI According to Joint Artificial Intelligence Center (JAIC) officials, the 2018 DOD AI Governance Plan
+Governance Plan provides a pathway to implement the 2018 DOD AI Strategy.a Additionally, it outlines DOD AI
+governance structures to establish and advance policies. This includes initiatives to identify and
+integrate AI technologies, tools, and systems across DOD in support of the 2018 National Defense
+Strategy and the 2019 DOD Digital Modernization Strategy. According to JAIC officials, there are no
+plans to update the 2018 DOD AI Governance Plan but they plan to issue a memorandum to reflect
+the reporting relationship of the JAIC Director to the Deputy Secretary of Defense, as required by the
+William M. (Mac) Thornberry National Defense Authorization Act for Fiscal Year 2021.b
+2019 DOD Digital This strategy provides a roadmap to support implementation of the 2018 National Defense Strategy
+Modernization Strategy lines of effort through information technology (IT) priorities, including AI.c It presents the DOD CIO’s
+vision for achieving the department’s goals and creating more secure, coordinated, seamless,
+transparent, and cost-effective IT architecture. According to a DOD CIO official, the 2019 Digital
+Modernization Strategy is required to be updated every 5 years.
+2020 DOD Data Strategy This strategy supports both the 2018 National Defense Strategy and the 2019 Digital Modernization
+Strategy.d It provides the overarching vision, guiding principles, essential capabilities, goals, and
+objectives necessary to aid the department as it becomes more data centric. Additionally, it
+discusses the importance of data as DOD integrates AI into joint warfighting. According to officials
+from the Chief Data Office, there are no plans to update the 2020 DOD Data Strategy at this time.
+2020 DOD AI Education Section 256 of the National Defense Authorization Act for Fiscal Year 2020 required the Secretary of
+Strategy Defense to develop a strategy for educating military service members in relevant occupational fields
+on matters relating to AI.34 The 2020 DOD AI Education Strategy includes a curriculum designed to
+give military service members in relevant occupational fields a basic knowledge of AI.e According to
+JAIC officials, they have no plans to update the 2020 DOD AI Education Strategy at this time.
+Source: GAO analysis of Department of Defense (DOD) information. I GAO-22-105834
+aDepartment of Defense, Office of the DOD Chief Information Officer, Artificial Intelligence
+Governance Plan Version 1.0 (May 2020).
+bWilliam M. (Mac) Thornberry National Defense Authorization Act for Fiscal Year 2021, Pub. L. No.
+116-283, § 5002 (2021).
+cDepartment of Defense, DOD Digital Modernization Strategy: DOD Information Resource
+Management Strategic Plan FY19–23 (July 12, 2019).
+dDepartment of Defense, DOD Data Strategy (2020).
+eDepartment of Defense Joint AI Center and DOD Chief Information Officer, 2020 Department of
+Defense Artificial Intelligence Education Strategy (Sept. 2020).
+34Pub. L. No. 116-92, § 256 (2019).
+Page 18 GAO-22-105834 Artificial Intelligence
+--- pdf_page_24 ---
+pdf_page_number: 24
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_24|printed_page_pending|section_pending
+visual_review_required: false
+Military services AI-related strategies. In 2018, the Deputy Secretary of
+Defense directed the military departments to develop annexes to the
+2018 DOD AI Strategy.35 In response, the military services and other
+organizations issued additional AI-related strategy documentation, and
+more strategies are under development.36 See table 2 for military service
+AI-related strategies.
+Table 2: Department of Defense (DOD) Military Services Artificial Intelligence (AI)-Related Strategies and Plans
+Title of military service AI-related strategy Status of military service AI-related strategy
+2019 United States Air Force Artificial Intelligence (AI) Annex to According to an Air Force official, this annex needs a revision to
+The Department of Defense Artificial Intelligence Strategya incorporate U.S. Space Force, and they are in the early stages of
+drafting an AI strategy for the Department of the Air Force.
+2019 United States Marine Corps Annex to the DOD AI Strategyb Marine Corps officials said that they are creating an AI Roadmap
+to unify their service-wide approach to integration of AI and
+machine learning projects, and the Roadmap will inform and
+update the 2019 USMC Annex to the 2018 DOD AI Strategy.
+2020 Army AI Strategyc An Army official said no revisions to their AI strategy are planned
+or underway.
+2019 The Naval Annex to the DOD AI Strategyd A Navy official said there are no plans to update The Naval Annex
+2020 Transforming Naval Operations: USN AI Strategic Vectorse to the 2018 DOD AI Strategy. However, the Navy official said
+Transforming Naval Operations: USN AI Strategic Vectors is
+regularly updated.
+Space Force AI Strategy According to Space Force officials, Space Force does not have its
+own AI strategy and has not determined whether they will develop
+their own strategy. A Space Force official stated that Space Force
+has incorporated the 2018 DOD AI Strategy into actions versus
+developing a reinforcing document.
+Source: GAO analysis of Department of Defense (DOD) information. I GAO-22-105834
+aDepartment of the Air Force, The United States Air Force Artificial Intelligence (AI) Annex to The
+Department of Defense Artificial Intelligence Strategy (2019).
+bUnited States Marine Corps, (U) USMC Annex to the DOD AI Strategy (Mar. 15, 2019) (U//FOUO).
+cDepartment of the Army, The 2020 Army AI Strategy (2020).
+dU.S. Navy, (U) The Naval Annex to the DOD AI Strategy (2019) (SECRET).
+eU.S. Navy, Transforming Naval Operations: USN AI Strategic Vectors (July 2020).
+352018 DOD AI Strategy and Deputy Secretary of Defense Memorandum, Joint Artificial
+Intelligence Center Implementation (Sept. 11, 2018).
+36For example, in May 2021 the Deputy Secretary of Defense issued a memorandum that
+calls for the development of a responsible AI strategy and implementation pathway that
+will include components such as proposed actions, with corresponding metrics and
+timelines, while leveraging existing efforts, processes, policies, and structures for
+responsible AI integration across the department. Deputy Secretary of Defense
+Memorandum, Implementing Responsible Artificial Intelligence in the Department of
+Defense (May 26, 2021).
+Page 19 GAO-22-105834 Artificial Intelligence
+FIELD_DEFINITIONS:
+{"coding_dimensions_allowed_values": ["integration_level", "application_maturity", "human_machine_authority", "engineering_resource_conditions", "trust_governance_constraints", "organizational_system_fit"], "exact_fields": ["source_id", "source_locator", "excerpt_original", "excerpt_zh", "normalized_claim", "coding_dimensions", "evidence_nature", "topics"], "excerpt_original_rule": "逐字复制输入文本；不得静默纠正OCR或版式错误", "field_types": {"coding_dimensions": "array of zero or more exact dimension key strings", "evidence_nature": "string", "excerpt_original": "string", "excerpt_zh": "string", "normalized_claim": "string", "source_id": "string", "source_locator": "string", "topics": "array of strings"}, "normalized_claim_language": "zh-CN"}
+{"application_maturity": "应用成熟度：概念战略、研发、试验、试点、采购部署或持续运用。", "engineering_resource_conditions": "工程与资源条件：数据、算力、模型、接口、供应链、预算、人才和保障。", "human_machine_authority": "人机权限关系：辅助决策、人在回路中、受监督自主或更高程度自主；普通系统协同、信息传输、培训或文档要求本身不足以支持此维度。", "integration_level": "能力集成层级：单工具、单任务、单平台、跨平台、跨任务或体系级集成。", "organizational_system_fit": "组织与体系适配：指挥流程、任务编组、跨平台协同、人员负荷和组织变革。", "trust_governance_constraints": "可信与治理约束：安全、可靠性、测试评价、授权边界、责任与伦理。"}
+{"constraint": "限制、风险、障碍、依赖或边界条件。", "deployment_event": "部署、实装、现场运用或正式采用已经发生。", "evaluation": "评价、审查、验证或评估结论。", "goal": "战略目标、愿景或计划方向；不能写成已实现结果。", "resource_input": "投入、资源、预算、数据、人才或基础设施条件。", "test_event": "测试或演习发生、参与主体或配置；不表示功能结果或作战效能。", "test_result": "测试中观察到的功能、性能或结果；必须由摘录直接说明。"}
+JSON_REPAIR: Return one strict JSON array with exactly the eight output fields and no Markdown, commentary, metadata, or source-attribution prefix.

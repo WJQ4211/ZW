@@ -1,0 +1,2 @@
+﻿candidate_index,actual_fields,missing_fields,extra_fields,schema_valid,source_locator_exists,exact_quote_match,coding_dimensions_is_array,topics_is_array,evidence_nature_is_single_legal_enum,possible_corroboration_group_is_string,compatibility_pass,reasons
+,[],[],[],false,false,false,false,false,false,false,false,"[""response_not_strict_json""]"

@@ -1,0 +1,62 @@
+{
+  "run_id": "G1-T0-SUPP-B9D958364FDA6E0B-formal-v1",
+  "case_id": "us_military_ai_deployment",
+  "stage": "G1-T0-SUPPLEMENT",
+  "executed_at_utc": "2026-08-26T14:07:43Z",
+  "authorization_sha256": "b9d958364fda6e0b9044cabd1b60849e2dffb2e959913bcf3d9e17918cb13ed7",
+  "source_run_id": "P3SR-20260826T133937Z-v5-offline-recovery-v1",
+  "input_source_run_hashes": {
+    "evidence_candidates_p3sr_final.jsonl": "de88ec6f271147c24e53f67aad154046e5c8e733ffcbc5d0fa209595c69f4002",
+    "g1_supplement_ai_preannotation.csv": "19121dd7390839863220de7fa3bb5ac44769f744ed9142289bbd8189bfb81ada",
+    "g1_supplement_author_decision_template.csv": "19121dd7390839863220de7fa3bb5ac44769f744ed9142289bbd8189bfb81ada",
+    "p3sr_manifest.json": "a6b03040d7f8d8bba7bc7439d0366d4966d878b166adfdfba66cdb8f590506fa",
+    "p3sr_quality_report.json": "f0703f245c78c638f27fe9f7afbcc3ff1ce8335d08794be1c7fd63be25c19786",
+    "p3sr_quality_report.md": "2531890f29426c21bf92eeeadf5e88f59df27d75a2567ffd3e85bedfcb3616fc",
+    "recovery_lineage.jsonl": "4f56d1278828e00ea2ad96fcadf3a41aff149f7eeb2db3d68224774f74a9cfc3",
+    "rejected_candidates_p3sr.jsonl": "872fbc2f3affa1168fc8adc099d2d6913459d9904fea0b982ebbc6b5cdfb8959",
+    "semantic_before_after.csv": "30241c7f58ba1a257b1cfdf8b7f1c3d0d535e32292559f4a6c4b1be1d389de81",
+    "semantic_response_normalization.jsonl": "4b5f0092f72bb797cf9a332fff0e2000e71b8492fb6aa0f079e7a25fb164ad62"
+  },
+  "protected_prior_outputs_unchanged": true,
+  "git_head": "unavailable_not_a_git_repository",
+  "python_version": "3.11.7",
+  "author_signoff_count": 27,
+  "direct_accept_count": 19,
+  "revised_accept_count": 6,
+  "exclusion_count": 2,
+  "decision_counts": {
+    "accept": 19,
+    "revise": 6,
+    "exclude": 2
+  },
+  "formal_evidence_count": 25,
+  "formal_evidence_db_rows_added": 25,
+  "formal_evidence_ids_unique": true,
+  "formal_evidence_has_no_composite_nature": true,
+  "new_model_api_calls": 0,
+  "model_api_call_count": 0,
+  "evidence_inserted": 25,
+  "hypothesis_inserted": 0,
+  "formal_g1_supplement_executed": true,
+  "p4_executed": false,
+  "snapshot_frozen": false,
+  "p5_executed": false,
+  "t1_read": false,
+  "api_key_written": false,
+  "author_actual_review_count": 27,
+  "transaction_result": {
+    "replayed": false,
+    "evidence_rows_added": 25,
+    "author_rows_added": 27,
+    "before_count": 61,
+    "after_count": 86
+  },
+  "output_file_hashes": {
+    "g1_t0_supplement_author_decisions.csv": "07fd2e40cbfec8ab78a0ef47549af2ea524f8c8b33568c6d6532fa65d72ec72c",
+    "g1_t0_supplement_authorization.json": "24f27886c8e370a8d35124437330f92ecaf6345ca5a154cc23a126f514fa1914",
+    "g1_t0_supplement_exclusions.csv": "4b0b550af1607ce9fc3e24755df1f94075bd09c966faa03fd32aac91373cb6fa",
+    "g1_t0_supplement_final_evidence.jsonl": "5429c308efc2d15804c9d5e96407f65f856f4a3af0a7d37e83545ddc4ccf90a3",
+    "g1_t0_supplement_quality_report.md": "b398d800564ab5d222bec799b37e752971713746c2f86a13c03ea5762537ff54",
+    "g1_t0_supplement_revision_log.jsonl": "9d97fe30b26fa42cc17b5af03406e34f031fec6108db6279d540de01946faba7"
+  }
+}

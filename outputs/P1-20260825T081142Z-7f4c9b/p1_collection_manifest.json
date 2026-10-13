@@ -1,0 +1,65 @@
+{
+  "run_id": "P1-20260825T081142Z-7f4c9b",
+  "case_id": "us_military_ai_deployment",
+  "stage": "P1",
+  "execution_date": "2026-08-25",
+  "executed_at_utc": "2026-08-25T08:11:42Z",
+  "luna_model_id": "manual_web_research_no_luna_modelclient",
+  "code_version": "unverified_local_copy",
+  "config_path": "config/case_us_military_ai.yaml",
+  "config_sha256": "1d700c41d2e776a3141c0fe8294c8feb032f0e771ef3de835f2c7fc59208fb79",
+  "collection_prompt_path": "prompts/luna_source_collection.txt",
+  "collection_prompt_sha256": "289feb48ffc71cb5db26d559585e85ea184555de9485a5aff78ad4cdb9c9ef1b",
+  "research_question": "以公开、非密材料为依据，截至2024年12月31日，美军军用人工智能能力建设在2025—2027年更可能呈现何种主导部署形态？",
+  "t0_date_window": {"start": "2022-01-01", "end": "2024-12-31", "inclusive": true},
+  "search_groups": {
+    "strategy_policy": {"candidate_count": 6, "raw_endpoint_total_hits": 700, "raw_saved_result_count": 20},
+    "program_budget": {"candidate_count": 6, "raw_endpoint_total_hits": 1090, "raw_saved_result_count": 20},
+    "test_deployment": {"candidate_count": 6, "raw_endpoint_total_hits": 757, "raw_saved_result_count": 20},
+    "independent_review": {"candidate_count": 5, "raw_endpoint_total_hits": 12, "raw_saved_result_count": 12}
+  },
+  "candidate_count_before_dedup": 23,
+  "candidate_count_after_dedup": 23,
+  "duplicate_candidates_removed": 0,
+  "candidate_selection_status": "candidate_for_human_review_only",
+  "output_files": [
+    "data/curated/source_manifest_t0.csv",
+    "data/curated/search_log_t0.csv",
+    "outputs/P1-20260825T081142Z-7f4c9b/raw_strategy_policy.json",
+    "outputs/P1-20260825T081142Z-7f4c9b/raw_program_budget.json",
+    "outputs/P1-20260825T081142Z-7f4c9b/raw_test_deployment.json",
+    "outputs/P1-20260825T081142Z-7f4c9b/raw_independent_review.json"
+  ],
+  "output_file_sha256": {
+    "data/curated/source_manifest_t0.csv": "4adf69488227499a35a2bbd131bf878e8bcf2fc3ead72922fcd938d91397ef12",
+    "data/curated/search_log_t0.csv": "0a06409cc3d867273c416f50d2bc5b24c600550d91d59737bce1278bd17f014f",
+    "outputs/P1-20260825T081142Z-7f4c9b/raw_strategy_policy.json": "1aaca86999797e6d5d074d9520803cba381686d2d24895f29019cab9971ddc85",
+    "outputs/P1-20260825T081142Z-7f4c9b/raw_program_budget.json": "0a2a2d42090781f76e5059583c71fa092b1a473c3d9979abda766b39218cd4ec",
+    "outputs/P1-20260825T081142Z-7f4c9b/raw_test_deployment.json": "3a98ec4c564ac85fd215efacf5b30f04b9cd02bf932f043f2433cd603bd58885",
+    "outputs/P1-20260825T081142Z-7f4c9b/raw_independent_review.json": "3a1a416ed55581675dbaa2293f96d053b5de0cee8ab82d1e58849e71a3377ed9"
+  },
+  "inaccessible_or_date_unverified_materials": [
+    {"url":"https://media.defense.gov/2024/Oct/26/2003571790/-1/-1/0/2024-06-RAI-STRATEGY-IMPLEMENTATION-PATHWAY.PDF","reason":"Original PDF returned HTTP 403 in this execution environment; not entered as candidate."},
+    {"url":"https://media.defense.gov/2023/Nov/02/2003333300/-1/-1/1/DOD_DATA_ANALYTICS_AI_ADOPTION_STRATEGY.PDF","reason":"Original PDF returned HTTP 403 in this execution environment; not entered as candidate."},
+    {"url":"https://www.gao.gov/products/gao-22-105834","reason":"Original GAO page returned HTTP 403 in this execution environment; not entered as candidate."},
+    {"url":"https://www.gao.gov/products/gao-23-105850","reason":"Original GAO page returned HTTP 403 in this execution environment; not entered as candidate."},
+    {"url":"https://www.gao.gov/products/gao-24-105645","reason":"Original GAO page returned HTTP 403 in this execution environment; not entered as candidate."},
+    {"url":"https://crsreports.congress.gov/product/details?prodcode=R45178","reason":"Original CRS page returned HTTP 403 in this execution environment; not entered as candidate."}
+  ],
+  "boundary_declarations": {
+    "t1_materials_read": false,
+    "t1_sealed_path_read": false,
+    "t1_statement": "T1 materials were not read; data/raw/t1_sealed was not accessed.",
+    "formal_evidence_imported": false,
+    "evidence_extracted": false,
+    "evidence_statement": "No formal Evidence was downloaded, imported, or extracted; source content hashes are page-response metadata hashes only.",
+    "competitive_hypotheses_generated": false,
+    "case_conclusion_formed": false,
+    "p2_or_later_executed": false,
+    "modelclient_started": false,
+    "candidate_to_include_automation": false
+  },
+  "stop_condition": "P1 collection artifacts complete; stop and wait for human P2 review.",
+  "manifest_sha256": null,
+  "manifest_hash_note": "Self-hash is intentionally null because including it would create a circular hash; all other P1 output hashes are recorded above."
+}

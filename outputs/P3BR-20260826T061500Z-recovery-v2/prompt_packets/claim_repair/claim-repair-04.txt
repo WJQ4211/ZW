@@ -1,0 +1,21 @@
+PROMPT_ID: p3br_normalized_claim_repair_v1
+VERSION: 1.0
+REPAIR_INDEX: 4
+TASK: Generate only a Chinese normalized evidence claim for this one existing candidate.
+OUTPUT: strict JSON object with exactly one key: normalized_claim.
+Do not change or repeat the excerpt, locator, source, numbers, entities, actions, scope, or result.
+Do not add source-attribution prefixes such as 本报告认为 or 某机构指出.
+Use one checkable proposition only. If the excerpt is insufficient, return an empty normalized_claim.
+{
+  "source_id": "T0-IR-006",
+  "source_locator": "pdf_page_41",
+  "excerpt_original": "DOD officials reported collaborating on AI activities using informal and formal collaboration mechanisms, and that DOD intends to use the Joint Common Foundation as a mechanism to improve collaboration.",
+  "evidence_nature": "goal",
+  "coding_dimensions": [
+    "organizational_system_fit"
+  ],
+  "topics": [
+    "协作机制",
+    "联合通用基金会"
+  ]
+}

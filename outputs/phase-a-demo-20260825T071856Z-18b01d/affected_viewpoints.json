@@ -1,0 +1,55 @@
+{
+  "candidate_reasons": {
+    "VP-OPS-A": [
+      "safety_net:EV-T1-001:1",
+      "safety_net:EV-T1-002:1",
+      "trigger:TRG-002:EV-T1-002:1"
+    ],
+    "VP-OPS-B": [
+      "safety_net:EV-T1-002:1",
+      "trigger:TRG-002:EV-T1-002:1"
+    ],
+    "VP-TECH-A": [
+      "safety_net:EV-T1-001:1",
+      "trigger:TRG-001:EV-T1-001:1"
+    ],
+    "VP-TECH-B": [
+      "trigger:TRG-001:EV-T1-001:1"
+    ]
+  },
+  "expert_reference_set": [
+    "VP-OPS-B",
+    "VP-TECH-A"
+  ],
+  "false_positives": [
+    "VP-OPS-A",
+    "VP-TECH-B"
+  ],
+  "intersection": [
+    "VP-OPS-B",
+    "VP-TECH-A"
+  ],
+  "missed": [],
+  "override_reasons": {},
+  "paths": {
+    "VP-OPS-A": [
+      "EV-T1-001:1",
+      "EV-T1-002:1"
+    ],
+    "VP-OPS-B": [
+      "EV-T1-002:1"
+    ],
+    "VP-TECH-A": [
+      "EV-T1-001:1"
+    ],
+    "VP-TECH-B": [
+      "EV-T1-001:1"
+    ]
+  },
+  "system_candidates": [
+    "VP-OPS-A",
+    "VP-OPS-B",
+    "VP-TECH-A",
+    "VP-TECH-B"
+  ]
+}

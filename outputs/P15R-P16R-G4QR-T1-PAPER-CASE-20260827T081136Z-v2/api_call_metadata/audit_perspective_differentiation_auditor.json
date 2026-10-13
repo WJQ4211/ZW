@@ -1,0 +1,31 @@
+{
+  "attempts": 1,
+  "batch_id": "audit_perspective_differentiation_auditor",
+  "endpoint": "https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "is_repair": false,
+  "latency_ms": 31132,
+  "logical_call": true,
+  "phase": "P15R_INDEPENDENT_AUDIT",
+  "prompt_sha256": "f9ecdf1d74277600bbd28817aec9356773a4677af86614953f4c945a7349def0",
+  "provider_cost": null,
+  "provider_metrics_status": "observed",
+  "provider_model_id": "deepseek-v4-flash-0731",
+  "provider_temperature": null,
+  "provider_token_usage": {
+    "completion_tokens": 3666,
+    "prompt_tokens": 12494,
+    "total_tokens": 16160
+  },
+  "request_parameters": {
+    "enable_thinking": false,
+    "max_tokens": 24000,
+    "temperature": 0.0
+  },
+  "request_started_at_utc": "2026-08-27T08:13:33Z",
+  "requested_model_id": "deepseek-v4-flash-0731",
+  "response_sha256": "e7a5839ed0862ea4ae7661b9faacfb311e85b7b11b2d46eff9ed10bbad23f33c",
+  "response_status_code": 200,
+  "retry_count": 0,
+  "source_id": "perspective_differentiation_auditor",
+  "transport": "openai_compatible_api"
+}

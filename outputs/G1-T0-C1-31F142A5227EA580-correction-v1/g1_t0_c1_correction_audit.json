@@ -1,0 +1,38 @@
+{
+  "correction_type": "G1-T0-C1",
+  "case_id": "us_military_ai_deployment",
+  "evidence_id": "EV-T0-3D9421B5DCC381FC",
+  "correction_of_version": 1,
+  "new_version": 2,
+  "evidence_nature": "resource_input",
+  "coding_dimensions": [
+    "engineering_resource_conditions",
+    "application_maturity"
+  ],
+  "normalized_claim": "REMA项目首个开发周期于2023年12月启动。",
+  "correction_reason": "落实作者已授权的G1重点裁决：开发周期启动不是测试或演习事件",
+  "reviewed_by": "author_01",
+  "review_mode": "authorized_g1_adjudication_correction",
+  "correction_sha256": "31f142a5227ea5800011535007fc3650f9b81e0849e2e0e1028291c46a792c96",
+  "run_id": "G1-T0-C1-31F142A5227EA580-correction-v1",
+  "executed_at_utc": "2026-08-26T08:05:33Z",
+  "transaction_result": {
+    "replayed": false,
+    "run_id": "G1-T0-C1-31F142A5227EA580-correction-v1",
+    "evidence_rows_added": 1,
+    "preconditions": {
+      "physical_t0_before": 60,
+      "physical_t1_before": 0,
+      "v1_hash_before": "90a27931067c9d49bd7623994eeb9e2117b99814fbe2b1c60a9bb20a95c7220c"
+    }
+  },
+  "preconditions": {
+    "physical_t0_before": 60,
+    "physical_t1_before": 0,
+    "v1_hash_before": "90a27931067c9d49bd7623994eeb9e2117b99814fbe2b1c60a9bb20a95c7220c"
+  },
+  "v1_still_present": true,
+  "v1_content_hash_before": "90a27931067c9d49bd7623994eeb9e2117b99814fbe2b1c60a9bb20a95c7220c",
+  "v2_content_hash": "90a27931067c9d49bd7623994eeb9e2117b99814fbe2b1c60a9bb20a95c7220c",
+  "no_update_or_delete": true
+}

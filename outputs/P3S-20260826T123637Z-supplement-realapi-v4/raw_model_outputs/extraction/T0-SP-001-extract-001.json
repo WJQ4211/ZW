@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-fce11db0-ad64-48fd-9142-a118afd78e8f",
+  "object": "chat.completion",
+  "created": 1787747800,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n  {\n    \"source_locator\": \"web_paragraph_0002\",\n    \"excerpt_original\": \"DARPA announced the In the Moment (ITM) program , which seeks to quantify the alignment of algorithms with trusted human decision-makers in difficult domains where there is no agreed upon right answer. ITM aims to evaluate and build trusted algorithmic decision-makers for mission-critical Department of Defense (DoD) operations.\",\n    \"excerpt_zh\": \"DARPA宣布了“当下时刻”（ITM）项目，该项目旨在量化算法与受信任的人类决策者在没有公认正确答案的困难领域中的一致性。ITM旨在为国防部（DoD）关键任务行动评估和构建受信任的算法决策者。\",\n    \"normalized_claim\": \"DARPA启动了“当下时刻”（ITM）项目，目标是评估和构建用于国防部关键任务行动的受信任算法决策者。\",\n    \"evidence_nature\": \"goal\",\n    \"coding_dimensions\": {\n      \"application_maturity\": \"研发\",\n      \"engineering_resource_conditions\": \"无\",\n      \"human_machine_authority\": \"受监督自主\",\n      \"integration_level\": \"单任务\",\n      \"organizational_system_fit\": \"无\",\n      \"trust_governance_constraints\": \"无\"\n    },\n    \"topics\": [\"算法决策者\", \"人机信任\", \"国防部关键任务\"],\n    \"possible_corroboration_group\": \"DARPA ITM项目目标\"\n  },\n  {\n    \"source_locator\": \"web_paragraph_0009\",\n    \"excerpt_original\": \"ITM is a 3.5-year program encompassing two phases with potential for a third phase devoted to maturing the technology with a transition partner. The first phase is 24-months long and focuses on small-unit triage as the decision-making scenario. Phase 2 is 18-months long and increases decision-making complexity by focusing on mass-casualty events.\",\n    \"excerpt_zh\": \"ITM是一个为期3.5年的项目，包含两个阶段，并有可能进入第三阶段，与转型伙伴一起使技术成熟。第一阶段为期24个月，以小单位分诊作为决策场景。第二阶段为期18个月，通过关注大规模伤亡事件来增加决策复杂性。\",\n    \"normalized_claim\": \"ITM项目总时长3.5年，第一阶段24个月聚焦小单位分诊场景，第二阶段18个月聚焦大规模伤亡事件场景。\",\n    \"evidence_nature\": \"goal\",\n    \"coding_dimensions\": {\n      \"application_maturity\": \"研发\",\n      \"engineering_resource_conditions\": \"无\",\n      \"human_machine_authority\": \"无\",\n      \"integration_level\": \"单任务\",\n      \"organizational_system_fit\": \"无\",\n      \"trust_governance_constraints\": \"无\"\n    },\n    \"topics\": [\"项目阶段\", \"医疗分诊\", \"大规模伤亡\"],\n    \"possible_corroboration_group\": \"ITM项目阶段规划\"\n  },\n  {\n    \"source_locator\": \"web_paragraph_0010\",\n    \"excerpt_original\": \"To evaluate the whole ITM process, multiple human and algorithmic decision-makers will be presented scenarios from the medical triage (Phase 1) or mass casualty (Phase 2) domains. Algorithmic decision-makers will include an aligned algorithmic decision-maker with knowledge of key human decision-making attributes and a baseline algorithmic decision-maker with no knowledge of those key human attributes. A human triage professional will also be included as an experimental control.\",\n    \"excerpt_zh\": \"为了评估整个ITM流程，多个人类和算法决策者将面对来自医疗分诊（第一阶段）或大规模伤亡（第二阶段）领域的场景。算法决策者将包括一个了解关键人类决策属性的对齐算法决策者，以及一个不了解这些关键人类属性的基线算法决策者。一名人类分诊专业人员也将作为实验对照。\",\n    \"normalized_claim\": \"ITM项目评估将使用医疗分诊或大规模伤亡场景，包含对齐算法、基线算法和人类分诊专业人员作为对照。\",\n    \"evidence_nature\": \"test_event\",\n    \"coding_dimensions\": {\n      \"application_maturity\": \"试验\",\n      \"engineering_resource_conditions\": \"无\",\n      \"human_machine_authority\": \"无\",\n      \"integration_level\": \"单任务\",\n      \"organizational_system_fit\": \"无\",\n      \"trust_governance_constraints\": \"无\"\n    },\n    \"topics\": [\"评估设计\", \"算法对比\", \"医疗分诊\"],\n    \"possible_corroboration_group\": \"ITM项目评估方案\"\n  }\n]\n```"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2061,
+    "total_tokens": 3045,
+    "completion_tokens": 984,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

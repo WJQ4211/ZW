@@ -1,0 +1,4 @@
+[
+  {"need_id":"NEED-001","disagreement_id":"DIS-001","question":"后续受约束自治试验是否在联合任务序列中完成可重复的人机交接？","possible_outcomes":["完成可重复交接并扩大任务边界","边缘情形失败或仍需人工逐项授权"],"favours_if":{"完成可重复交接并扩大任务边界":"加强 HYP-A，削弱 HYP-B","边缘情形失败或仍需人工逐项授权":"加强 HYP-B，削弱 HYP-A"},"source_plan":["official field trial notices","test and evaluation reports"],"observation_window":"synthetic 2026 first half","feasibility":"high","discriminativeness":5},
+  {"need_id":"NEED-002","disagreement_id":"DIS-002","question":"操作员负荷评估和授权文件是否允许把人机交接嵌入例行任务流程？","possible_outcomes":["负荷评估通过且授权扩大","负荷或授权约束保持不变"],"favours_if":{"负荷评估通过且授权扩大":"加强 HYP-A","负荷或授权约束保持不变":"加强 HYP-B"},"source_plan":["procurement notices","official authorization documents"],"observation_window":"synthetic 2026 first half","feasibility":"medium","discriminativeness":4}
+]

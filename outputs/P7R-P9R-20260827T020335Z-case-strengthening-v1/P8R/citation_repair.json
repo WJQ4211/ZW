@@ -1,0 +1,78 @@
+{
+  "issues": [
+    {
+      "issue_id": "CIT-001",
+      "perspective_id": "TECH",
+      "viewpoint_id": "VP-T0-TECH-H01",
+      "field": "supporting_evidence",
+      "index": 3,
+      "evidence_id": "EV-T0-51D65DEC82584BCD",
+      "returned_relation": "support",
+      "allowed_relations": [
+        "limit"
+      ]
+    },
+    {
+      "issue_id": "CIT-002",
+      "perspective_id": "TECH",
+      "viewpoint_id": "VP-T0-TECH-H01",
+      "field": "supporting_evidence",
+      "index": 4,
+      "evidence_id": "EV-T0-A515E3B9391C51B4",
+      "returned_relation": "support",
+      "allowed_relations": [
+        "limit"
+      ]
+    }
+  ],
+  "repairs": {
+    "citation_repairs": [
+      {
+        "issue_id": "CIT-001",
+        "perspective_id": "TECH",
+        "viewpoint_id": "VP-T0-TECH-H01",
+        "field": "supporting_evidence",
+        "index": 3,
+        "evidence_id": "EV-T0-51D65DEC82584BCD",
+        "relation": "limit",
+        "target_field": "supporting_evidence",
+        "importance": "required"
+      },
+      {
+        "issue_id": "CIT-002",
+        "perspective_id": "TECH",
+        "viewpoint_id": "VP-T0-TECH-H01",
+        "field": "supporting_evidence",
+        "index": 4,
+        "evidence_id": "EV-T0-A515E3B9391C51B4",
+        "relation": "limit",
+        "target_field": "supporting_evidence",
+        "importance": "required"
+      }
+    ]
+  },
+  "applied_repairs": [
+    {
+      "issue_id": "CIT-001",
+      "model_relation": "limit",
+      "model_target_field": "supporting_evidence",
+      "model_importance": "required",
+      "applied_relation": "limit",
+      "applied_target_field": "boundary_conditions[0]",
+      "applied_importance": "high",
+      "repair_origin": "deterministic_copy_of_unique_prior_p7_mapping"
+    },
+    {
+      "issue_id": "CIT-002",
+      "model_relation": "limit",
+      "model_target_field": "supporting_evidence",
+      "model_importance": "required",
+      "applied_relation": "limit",
+      "applied_target_field": "boundary_conditions[0]",
+      "applied_importance": "high",
+      "repair_origin": "deterministic_copy_of_unique_prior_p7_mapping"
+    }
+  ],
+  "inherited_blank_repairs": [],
+  "repair_origin": "limited_model_field_repair_only"
+}

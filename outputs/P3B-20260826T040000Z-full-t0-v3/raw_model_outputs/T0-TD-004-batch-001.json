@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-5fec374c-cc5d-42f5-9914-6c6325d56683",
+  "object": "chat.completion",
+  "created": 1787712696,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n  {\n    \"source_id\": \"T0-TD-004\",\n    \"source_locator\": \"web_paragraph_0009\",\n    \"excerpt_original\": \"DARPA’s Air Combat Evolution (ACE) program has achieved the first-ever in-air tests of AI algorithms autonomously flying an F-16 against a human-piloted F-16 in within-visual-range combat scenarios (sometimes referred to as “dogfighting”).\",\n    \"excerpt_zh\": \"DARPA的“空战演进”（ACE）项目实现了首次在空中测试中，AI算法自主驾驶F-16与人类驾驶的F-16进行视距内空战（有时称为“狗斗”）。\",\n    \"normalized_claim\": \"ACE项目首次实现了AI算法自主驾驶F-16与人类驾驶的F-16进行视距内空战测试。\",\n    \"coding_dimensions\": [\"application_maturity\", \"human_machine_authority\"],\n    \"evidence_nature\": \"test_event\",\n    \"topics\": [\"AI空战\", \"自主飞行\", \"ACE项目\"]\n  },\n  {\n    \"source_id\": \"T0-TD-004\",\n    \"source_locator\": \"web_paragraph_0011\",\n    \"excerpt_original\": \"In flight, the ACE AI algorithms controlled a specially modified F-16 test aircraft known as the X-62A, or VISTA (Variable In-flight Simulator Test Aircraft), at the Air Force Test Pilot School at Edwards Air Force Base, California, where all demonstrations of autonomous combat maneuvers took place in 2023 and are continuing in 2024.\",\n    \"excerpt_zh\": \"在飞行中，ACE AI算法控制了一架经过特殊改装的F-16测试飞机，即X-62A，或VISTA（可变飞行模拟器测试飞机），在加利福尼亚州爱德华兹空军基地的空军试飞员学校，所有自主空战机动演示于2023年进行，并持续到2024年。\",\n    \"normalized_claim\": \"ACE AI算法在2023年及2024年持续于爱德华兹空军基地控制X-62A测试飞机进行自主空战机动演示。\",\n    \"coding_dimensions\": [\"application_maturity\", \"integration_level\"],\n    \"evidence_nature\": \"test_event\",\n    \"topics\": [\"X-62A\", \"自主空战机动\", \"测试地点\"]\n  },\n  {\n    \"source_id\": \"T0-TD-004\",\n    \"source_locator\": \"web_paragraph_0007\",\n    \"excerpt_original\": \"In-air combat tests between AI- and human-piloted F-16s show transformational progress for human-machine teaming and trusted autonomy\",\n    \"excerpt_zh\": \"AI与人类驾驶的F-16之间的空中作战测试显示了人机编队和可信自主的变革性进展。\",\n    \"normalized_claim\": \"AI与人类驾驶的F-16之间的空中作战测试显示了人机编队和可信自主的变革性进展。\",\n    \"coding_dimensions\": [\"human_machine_authority\", \"trust_governance_constraints\"],\n    \"evidence_nature\": \"test_result\",\n    \"topics\": [\"人机编队\", \"可信自主\", \"空战测试\"]\n  }\n]\n```"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2059,
+    "total_tokens": 2763,
+    "completion_tokens": 704,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

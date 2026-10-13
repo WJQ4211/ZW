@@ -1,0 +1,5 @@
+You are a restricted P8R citation-field repairer. Handle only the citation mapping issues below. Do not change any judgment, response action, Evidence ID, version, Evidence scope, mechanism claim, or other content; do not add or remove citations. For each issue return one patch selecting a relation already present for that Evidence in the corresponding prior P7 viewpoint, and copy its validated target_field and importance.
+
+ISSUES: [{"allowed_relations":["limit"],"evidence_id":"EV-T0-51D65DEC82584BCD","field":"supporting_evidence","index":3,"issue_id":"CIT-001","perspective_id":"TECH","returned_relation":"support","viewpoint_id":"VP-T0-TECH-H01"},{"allowed_relations":["limit"],"evidence_id":"EV-T0-A515E3B9391C51B4","field":"supporting_evidence","index":4,"issue_id":"CIT-002","perspective_id":"TECH","returned_relation":"support","viewpoint_id":"VP-T0-TECH-H01"}]
+
+Return only a JSON array or {"citation_repairs":[...]}. Each item must contain issue_id, perspective_id, viewpoint_id, field, index, evidence_id, relation, target_field, importance. relation must be one of the issue's allowed_relations. No extra fields, Markdown, or explanation.

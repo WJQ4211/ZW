@@ -1,0 +1,20 @@
+{
+  "batch_id": "T0-TD-008-batch-01",
+  "source_id": "T0-TD-008",
+  "source_locators": [
+    "td008/article/paragraph-01",
+    "td008/article/paragraph-02",
+    "td008/article/paragraph-03",
+    "td008/article/paragraph-04",
+    "td008/article/paragraph-05",
+    "td008/article/paragraph-06",
+    "td008/article/paragraph-07",
+    "td008/article/paragraph-08",
+    "td008/article/paragraph-09",
+    "td008/article/paragraph-10"
+  ],
+  "prompt_path": "outputs/P3A-20260825T161738Z-pilot/prompt_packets/T0-TD-008-batch-01.txt",
+  "prompt_sha256": "4f93cf922e2625d10eb4b7001fab6d65a4c626b6238c717333abd80d4d7910a5",
+  "template_sha256": "ad18f9491be481b05efb3d35a124dcce8695af97cf959dfeb71806a2f928ad35",
+  "transport": "codex_agent_file_bridge"
+}

@@ -1,0 +1,39 @@
+{
+  "run_id": "P1-20260825T081142Z-7f4c9b",
+  "case_id": "us_military_ai_deployment",
+  "stage": "P1",
+  "group": "independent_review",
+  "raw_searches": [
+    {
+      "query_id": "P1-IR-CSET-01",
+      "query_text": "military",
+      "source_domain": "cset.georgetown.edu/wp-json/wp/v2/document",
+      "raw_total": 10,
+      "page_size_saved": 10,
+      "results": [
+        {"id":20502,"date":"12/03/2024 12:55:44","title":"Ministry of Commerce Notice 2024 No. 46: Notice Concerning Strengthening Controls on Exports of Relevant Dual-Use Items to the United States","link":"https://cset.georgetown.edu/publication/china-rare-earth-export-ban/","slug":"china-rare-earth-export-ban"},
+        {"id":20347,"date":"11/19/2024 11:51:22","title":"Testimony before the U.S. Senate Judiciary Subcommittee on Privacy, Technology, and the Law","link":"https://cset.georgetown.edu/publication/testimony-before-the-u-s-senate-judiciary-subcommittee-on-privacy-technology-and-the-law/","slug":"testimony-before-the-u-s-senate-judiciary-subcommittee-on-privacy-technology-and-the-law"},
+        {"id":20085,"date":"10/30/2024 09:43:49","title":"Funding the AI Cloud — Amazon, Alphabet, and Microsoft’s Cloud Computing Investments, Part 1","link":"https://cset.georgetown.edu/publication/funding-the-ai-cloud-amazon-alphabet-and-microsofts-cloud-computing-investments-part-1/","slug":"funding-the-ai-cloud-computing-investments-part-1"},
+        {"id":19282,"date":"08/13/2024 11:34:58","title":"Building the Tech Coalition","link":"https://cset.georgetown.edu/publication/building-the-tech-coalition/","slug":"building-the-tech-coalition"},
+        {"id":18992,"date":"07/09/2024 00:00:17","title":"Enabling Principles for AI Governance","link":"https://cset.georgetown.edu/publication/enabling-principles-for-ai-governance/","slug":"enabling-principles-for-ai-governance"},
+        {"id":18868,"date":"06/20/2024 00:05:52","title":"A Quantitative Assessment of Department of Defense S&amp;T Publication Collaborations","link":"https://cset.georgetown.edu/publication/a-quantitative-assessment-of-department-of-defense-st-publication-collaborations/","slug":"a-quantitative-assessment-of-department-of-defense-st-publication-collaborations"},
+        {"id":18782,"date":"06/18/2024 00:13:10","title":"China&#8217;s Military AI Roadblocks","link":"https://cset.georgetown.edu/publication/chinas-military-ai-roadblocks/","slug":"chinas-military-ai-roadblocks"},
+        {"id":18749,"date":"06/05/2024 09:26:32","title":"Identifying Cyber Education Hotspots: An Interactive Guide","link":"https://cset.georgetown.edu/publication/identifying-cyber-education-hotspots-an-interactive-guide/","slug":"identifying-cyber-education-hotspots-an-interactive-guide"},
+        {"id":18319,"date":"05/09/2024 07:00:00","title":"China, Biotechnology, and BGI","link":"https://cset.georgetown.edu/publication/china-biotechnology-and-bgi/","slug":"china-biotechnology-and-bgi"},
+        {"id":17378,"date":"02/22/2024 06:00:00","title":"Which Ties Will Bind?","link":"https://cset.georgetown.edu/publication/which-ties-will-bind/","slug":"which-ties-will-bind"}
+      ]
+    },
+    {
+      "query_id": "P1-IR-RAND-01",
+      "query_text": "RAND original publication pages: military artificial intelligence",
+      "source_domain": "rand.org",
+      "raw_total": 2,
+      "page_size_saved": 2,
+      "results": [
+        {"title":"Exploring the Civil-Military Divide over Artificial Intelligence","url":"https://www.rand.org/pubs/research_reports/RRA1498-1.html","published_at":"2022/5/11","publisher":"RAND"},
+        {"title":"Strategic competition in the age of AI: Emerging risks and opportunities from military use of artificial intelligence","url":"https://www.rand.org/pubs/research_reports/RRA3295-1.html","published_at":"2024/9/6","publisher":"RAND"}
+      ]
+    }
+  ],
+  "raw_result_note": "The RAND records are direct original publication-page discovery records; CSET records preserve the fields returned by its public API. All were used for discovery only; title/date/publisher verification was performed on original pages recorded in source_manifest_t0.csv."
+}

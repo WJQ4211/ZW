@@ -1,0 +1,25 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "```json\n[\n  {\n    \"source_id\": \"T1-DAF-007\",\n    \"source_locator\": \"web_paragraph_0005\",\n    \"excerpt_original\": \"The effort became the foundation of Luke's AI Task Force, a team built to explore how artificial intelligence could reshape daily operations, preserve institutional knowledge and give Airmen more time to focus on the human elements of the mission.\",\n    \"excerpt_zh\": \"这项工作成为卢克AI工作队的基石，该团队旨在探索人工智能如何重塑日常运营、保存机构知识，并让飞行员有更多时间专注于任务中的人为因素。\",\n    \"normalized_claim\": \"卢克空军基地的这项工作成为该基地AI工作队的基石，该团队旨在探索AI在基地日常运营中的应用。\",\n    \"evidence_nature\": \"governance_event\",\n    \"coding_dimensions\": [\"organizational_system_fit\"],\n    \"topics\": [\"AI任务部队\", \"组织建设\"]\n  },\n  {\n    \"source_id\": \"T1-DAF-007\",\n    \"source_locator\": \"web_paragraph_0005\",\n    \"excerpt_original\": \"A base-wide survey, which received over 170 responses, revealed a consistent theme: while many Airmen recognize AI's growing importance, many feel uncertain on how to use it effectively and within approved guidelines.\",\n    \"excerpt_zh\": \"一项覆盖全基地的调查收到了超过170份回复，揭示了一个一致的主题：虽然许多飞行员认识到AI日益增长的重要性，但许多人对如何有效且符合批准指南地使用它感到不确定。\",\n    \"normalized_claim\": \"卢克空军基地一项全基地调查收到超过170份回复，显示许多飞行员对如何有效且合规地使用AI感到不确定。\",\n    \"evidence_nature\": \"test_event\",\n    \"coding_dimensions\": [\"trust_governance_constraints\"],\n    \"topics\": [\"调查\", \"飞行员认知\", \"使用指南\"]\n  },\n  {\n    \"source_id\": \"T1-DAF-007\",\n    \"source_locator\": \"web_paragraph_0005\",\n    \"excerpt_original\": \"Some Airmen are already using AI to draft emails, summarize information, analyze data and reduce repetitive administrative tasks, while others remain unsure what tools are authorized or how to apply them in a mission context.\",\n    \"excerpt_zh\": \"一些飞行员已经在使用AI起草电子邮件、总结信息、分析数据和减少重复性行政任务，而另一些人则不确定哪些工具是授权的，或如何在任务环境中应用它们。\",\n    \"normalized_claim\": \"卢克空军基地部分飞行员已在日常工作中使用AI进行起草邮件、总结信息、分析数据等任务。\",\n    \"evidence_nature\": \"deployment_event\",\n    \"coding_dimensions\": [\"application_maturity\"],\n    \"topics\": [\"日常使用\", \"任务应用\"]\n  },\n  {\n    \"source_id\": \"T1-DAF-007\",\n    \"source_locator\": \"web_paragraph_0007\",\n    \"excerpt_original\": \"Instead of just studying AI, the team decided to put it into practice. Members built tools, analyzed survey data and explored how emerging technology could support training, administration and decision-making processes.\",\n    \"excerpt_zh\": \"团队没有仅仅研究AI，而是决定将其付诸实践。成员们构建了工具，分析了调查数据，并探索了新兴技术如何支持训练、行政和决策过程。\",\n    \"normalized_claim\": \"卢克AI工作队的成员构建了工具并分析了调查数据，以探索AI在训练、行政和决策中的支持作用。\",\n    \"evidence_nature\": \"test_event\",\n    \"coding_dimensions\": [\"application_maturity\"],\n    \"topics\": [\"工具构建\", \"实践探索\"]\n  },\n  {\n    \"source_id\": \"T1-DAF-007\",\n    \"source_locator\": \"web_paragraph_0007\",\n    \"excerpt_original\": \"The team also explored how AI could help preserve institutional knowledge, capturing experience that is often lost as Airmen transition out of the service and preserving knowledge for the next generation of warfighters.\",\n    \"excerpt_zh\": \"团队还探索了AI如何帮助保存机构知识，捕捉飞行员退役时经常丢失的经验，并为下一代作战人员保留知识。\",\n    \"normalized_claim\": \"卢克AI工作队探索了AI在保存机构知识和经验方面的应用。\",\n    \"evidence_nature\": \"goal\",\n    \"coding_dimensions\": [\"organizational_system_fit\"],\n    \"topics\": [\"知识管理\", \"机构记忆\"]\n  },\n  {\n    \"source_id\": \"T1-DAF-007\",\n    \"source_locator\": \"web_paragraph_0007\",\n    \"excerpt_original\": \"To address this, the group recommended expanding AI education, identifying trained advocates within units and improving awareness of approved platforms, with the goal of shifting from informal use to a deliberate, mission-focused approach.\",\n    \"excerpt_zh\": \"为了解决这个问题，该小组建议扩大AI教育，在单位内确定受过培训的倡导者，并提高对已批准平台的认识，目标是从非正式使用转变为有意的、以任务为中心的方法。\",\n    \"normalized_claim\": \"卢克AI工作队建议扩大AI教育、确定单位内受过培训的倡导者并提高对已批准平台的认识。\",\n    \"evidence_nature\": \"goal\",\n    \"coding_dimensions\": [\"trust_governance_constraints\"],\n    \"topics\": [\"AI教育\", \"培训\", \"平台意识\"]\n  }\n]\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1787812178,
+  "id": "chatcmpl-fa57f388-b5b3-4ffc-8d6e-ecc8d89a4bc4",
+  "model": "deepseek-v4-flash-0731",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 1175,
+    "prompt_tokens": 1885,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 3060
+  }
+}

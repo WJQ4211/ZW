@@ -1,0 +1,79 @@
+﻿$(document).ready(function () {
+    // For some reason the scroll height is incorrect when opening from close
+    // So we need to pad by 40px the first time it is opened.
+    function setMaxHeight(el, fromClosed) {
+        var pt = 24,
+            pb = 18;
+        $("body").hasClass("header-banner-is-open") ?
+            (el.style.maxHeight = el.scrollHeight + (fromClosed ? 40 : 0) + "px", el.style.paddingTop =
+                pt + "px", el.style.paddingBottom = pb + "px") :
+            (el.style.maxHeight = null, el.style.paddingTop = 0, el.style.paddingBottom = 0);
+    }
+
+    let debounceId = 0;
+    var el = document.getElementsByClassName("header_banner_accordion");
+    var t = document.getElementsByClassName("header_banner_container");
+    var panel = document.getElementsByClassName("header_banner_panel");
+
+    new ResizeObserver(function () {
+        window.dispatchEvent(new Event('resize'));
+    }).observe(panel[0]);
+
+    var elm = el[0];
+        elm.addEventListener("click",
+            function () {
+                this.classList.toggle("active"),
+                    $("body").toggleClass("header-banner-is-open"),
+                    t[0].classList.toggle("active");
+                var e = this.parentElement.nextElementSibling;
+                e.classList.toggle("active");
+                updateAria(elm);
+                setMaxHeight(e, true);
+                jQuery(window).resize(function () {
+                    clearTimeout(debounceId);
+                    debounceId = setTimeout(function () {
+                        setMaxHeight(e);
+                    }, 50);
+                });
+            });
+    elm.addEventListener("keyup",
+        function (event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                elm.dispatchEvent(new MouseEvent('click', {
+                    view: window,
+                    bubbles: true,
+                    cancelable: true
+                }));
+            }
+        });
+
+    /**
+     * Sets the class of the header based on the window scroll position
+     */
+    var $header = $("#header-main");
+    function calculateHeaderClass() {
+        var y = window.pageYOffset;
+        if (y < 2) {
+            $header.addClass("top");
+        } else if (y > 2) {
+            $header.removeClass("top");
+            // close the banner accordion if we scroll down and the banner was open
+            if ($("body").hasClass("header-banner-is-open")) {
+                $(".header_banner_accordion").click();
+            }
+        }
+    }
+    function updateAria(element) {
+        var expandedattr = element.getAttribute("aria-expanded");
+
+        if(expandedattr === "true")
+            element.setAttribute("aria-expanded", "false");
+        else
+            element.setAttribute("aria-expanded", "true");
+    }
+    window.addEventListener("scroll", calculateHeaderClass);
+    $header.css("visibility", "visible");
+    calculateHeaderClass();
+
+}); //ready

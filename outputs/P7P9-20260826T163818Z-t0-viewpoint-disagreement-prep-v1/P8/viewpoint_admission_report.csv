@@ -1,0 +1,13 @@
+﻿viewpoint_id,perspective_id,hypothesis_id,status,admission_failure_reason,human_verified
+VP-T0-TECH-H01,TECH,HYP-T0-01,suspended,response update failed deterministic validation,False
+VP-T0-TECH-H02,TECH,HYP-T0-02,suspended,response update failed deterministic validation,False
+VP-T0-TECH-H03,TECH,HYP-T0-03,suspended,response update failed deterministic validation,False
+VP-T0-ENG-H01,ENG,HYP-T0-01,suspended,response update failed deterministic validation,False
+VP-T0-ENG-H02,ENG,HYP-T0-02,suspended,response update failed deterministic validation,False
+VP-T0-ENG-H03,ENG,HYP-T0-03,suspended,response update failed deterministic validation,False
+VP-T0-OPS-H01,OPS,HYP-T0-01,suspended,response update failed deterministic validation,False
+VP-T0-OPS-H02,OPS,HYP-T0-02,suspended,response update failed deterministic validation,False
+VP-T0-OPS-H03,OPS,HYP-T0-03,suspended,response update failed deterministic validation,False
+VP-T0-TRUST-H01,TRUST,HYP-T0-01,suspended,response update failed deterministic validation,False
+VP-T0-TRUST-H02,TRUST,HYP-T0-02,suspended,response update failed deterministic validation,False
+VP-T0-TRUST-H03,TRUST,HYP-T0-03,suspended,response update failed deterministic validation,False

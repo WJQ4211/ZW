@@ -1,0 +1,31 @@
+{
+  "transport": "openai_compatible_api",
+  "request_started_at_utc": "2026-08-26T16:42:52Z",
+  "endpoint": "https://token-plan.cn-beijing.maas.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "requested_model_id": "deepseek-v4-flash-0731",
+  "provider_model_id": "deepseek-v4-flash-0731",
+  "request_parameters": {
+    "temperature": 0.0,
+    "enable_thinking": false,
+    "max_tokens": 16000
+  },
+  "attempts": 1,
+  "retry_count": 0,
+  "latency_ms": 29836,
+  "response_sha256": "150f1b27f59a43eb12c34c2ff93474ad63d48c8bda47423fa2b74f4e855f4d74",
+  "provider_token_usage": {
+    "prompt_tokens": 5718,
+    "completion_tokens": 3376,
+    "total_tokens": 9094
+  },
+  "provider_metrics_status": "observed",
+  "provider_temperature": null,
+  "provider_cost": null,
+  "response_status_code": 200,
+  "batch_id": "p8_response_ops",
+  "call_id": "p8_response_ops",
+  "phase": "P8_RESPONSE",
+  "source_id": "OPS",
+  "prompt_sha256": "ef07e74afcab4e3af334b5de64aa1d3bab39ec9d8c7d92c195302d609e165e3a",
+  "is_repair": false
+}

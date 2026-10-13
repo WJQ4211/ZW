@@ -1,0 +1,12 @@
+batch_id,source_id,source_locator,source_locator_exists,exact_match_after_normalization,excerpt_word_count,evidence_nature_valid,coding_dimensions_valid,duplicate_status,accepted,failure_reasons
+T0-SP-007-batch-01,T0-SP-007,pdf_page_4,True,True,33,True,True,unique,True,
+T0-SP-007-batch-01,T0-SP-007,pdf_page_4,True,True,64,True,True,unique,True,
+T0-SP-007-batch-01,T0-SP-007,pdf_page_7,True,True,35,True,True,unique,True,
+T0-SP-007-batch-01,T0-SP-007,pdf_page_12,True,True,41,True,True,unique,True,
+T0-SP-007-batch-01,T0-SP-007,pdf_page_16,True,True,93,True,True,unique,True,
+T0-SP-007-batch-01,T0-SP-007,pdf_page_18,True,True,90,True,True,unique,True,
+T0-SP-007-batch-02,T0-SP-007,pdf_page_44,True,True,38,True,True,unique,True,
+T0-TD-008-batch-01,T0-TD-008,td008/article/paragraph-01,True,True,36,True,True,unique,True,
+T0-TD-008-batch-01,T0-TD-008,td008/article/paragraph-04,True,True,42,True,True,unique,True,
+T0-TD-008-batch-01,T0-TD-008,td008/article/paragraph-06--08,True,True,65,True,True,unique,True,
+T0-TD-008-batch-01,T0-TD-008,td008/article/paragraph-07,True,True,19,True,True,unique,True,

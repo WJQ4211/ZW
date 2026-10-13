@@ -1,0 +1,135 @@
+{
+  "affected_fields": [
+    "judgment",
+    "boundary_conditions[0]",
+    "mechanism_claims[0]"
+  ],
+  "boundary_conditions": [
+    "若后续进展继续集中于军种或任务专属项目，则本假设增强。",
+    "若DARPA项目主要停留在演示验证而未转入规模化采办，则本假设增强。",
+    "若出现跨军种复用的统一平台、统一模型或统一工程流程，则本假设削弱。",
+    "若综合多边演习等体系化意图转化为实际的跨军种统一部署，则本假设削弱。",
+    "T1证据中出现的部门级平台（如GenAI）在局部演习中的使用，不改变任务驱动主导模式，但需关注其是否向跨军种复用发展。"
+  ],
+  "confidence": "high",
+  "counter_evidence": [
+    {
+      "evidence_id": "CE-T1-6B02747FAF17B29F",
+      "importance": "medium",
+      "relation": "limit",
+      "target_field": "boundary_conditions[0]",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-95F7FE29CF48D86D",
+      "importance": "medium",
+      "relation": "limit",
+      "target_field": "boundary_conditions[0]",
+      "version": 1
+    }
+  ],
+  "evidence_field_changes": [
+    {
+      "after": "T1证据进一步显示具体任务试验、竞赛和局部使用仍是可观察的能力形成形态；这些信号支持任务分布牵引，但不能外推为全军规模化部署。新增的局部使用案例（如卢克基地、北极桥演习）和DARPA竞赛结果强化了任务驱动模式，但部门级平台的出现需关注。",
+      "before": "T1证据进一步显示具体任务试验、竞赛和局部使用仍是可观察的能力形成形态；这些信号支持任务分布牵引，但不能外推为全军规模化部署。",
+      "change_reason": "T1证据补充了局部试验/使用或约束条件，但不强制改变主判断。",
+      "new_evidence_ids": [
+        "CE-T1-DCF49FC6CBC68958",
+        "CE-T1-AA937CC0AF5E2372",
+        "CE-T1-B40332E796F16865",
+        "CE-T1-7239909FC989F79A",
+        "CE-T1-D0E7B9B8CC1298AB",
+        "CE-T1-BB675BA36EB74B19",
+        "CE-T1-6B02747FAF17B29F",
+        "CE-T1-CF7656CBCD8BBB03",
+        "CE-T1-F2BE64F4810C89EF",
+        "CE-T1-C20674F2CA89D5C5",
+        "CE-T1-43B8C6F6E7B77F40",
+        "CE-T1-12F70AE60CD787AA",
+        "CE-T1-45417DAD097210B1",
+        "CE-T1-95F7FE29CF48D86D"
+      ],
+      "target_field": "judgment"
+    },
+    {
+      "after": "若后续进展继续集中于军种或任务专属项目，则本假设增强。T1证据中的局部使用案例（如卢克基地、北极桥演习）和DARPA竞赛结果均属于任务专属项目，支持此边界条件。",
+      "before": "若后续进展继续集中于军种或任务专属项目，则本假设增强。",
+      "change_reason": "T1证据显示局部使用和竞赛均属于任务专属项目，支持边界条件。",
+      "new_evidence_ids": [
+        "CE-T1-DCF49FC6CBC68958",
+        "CE-T1-AA937CC0AF5E2372",
+        "CE-T1-B40332E796F16865",
+        "CE-T1-7239909FC989F79A",
+        "CE-T1-D0E7B9B8CC1298AB",
+        "CE-T1-BB675BA36EB74B19",
+        "CE-T1-6B02747FAF17B29F",
+        "CE-T1-CF7656CBCD8BBB03",
+        "CE-T1-F2BE64F4810C89EF",
+        "CE-T1-C20674F2CA89D5C5",
+        "CE-T1-43B8C6F6E7B77F40",
+        "CE-T1-12F70AE60CD787AA",
+        "CE-T1-45417DAD097210B1",
+        "CE-T1-95F7FE29CF48D86D"
+      ],
+      "target_field": "boundary_conditions[0]"
+    },
+    {
+      "after": "RACER、REMA等DARPA项目通过技术演示和试验验证，在特定任务领域（越野自主、无人机任务自主）形成能力，但未进入规模化采办。T1证据中的DARPA Triage Challenge竞赛结果（CE-T1-43B8C6F6E7B77F40）进一步支持此机制，但需注意竞赛结果仅代表演示验证。",
+      "before": "RACER、REMA等DARPA项目通过技术演示和试验验证，在特定任务领域（越野自主、无人机任务自主）形成能力，但未进入规模化采办。",
+      "change_reason": "T1证据中的DARPA竞赛结果补充了演示验证的实例，但未改变未进入规模化采办的判断。",
+      "new_evidence_ids": [
+        "CE-T1-F2BE64F4810C89EF",
+        "CE-T1-C20674F2CA89D5C5",
+        "CE-T1-43B8C6F6E7B77F40",
+        "CE-T1-12F70AE60CD787AA",
+        "CE-T1-45417DAD097210B1"
+      ],
+      "target_field": "mechanism_claims[0]"
+    }
+  ],
+  "falsifiers": [
+    "若在2026年7月1日以后出现多个军种在作战演习中常态化使用同一套AI系统，且不依赖DARPA等专门项目支持，则本假设不成立。",
+    "若联合通用基金会达到全面作战能力并实现跨军种数据共享，则表明体系化能力已形成。",
+    "若GenAI平台在2026年7月1日以后被多个军种在作战任务中广泛使用，并形成统一工程流程，则本假设削弱。"
+  ],
+  "information_gaps": [
+    "缺乏各项目之间是否存在数据共享或技术复用的直接证据。",
+    "缺乏SP-008战略实施后各项目整合进展的具体记录。",
+    "缺乏综合多边演习计划的具体实施方案和预期成果的公开信息。",
+    "缺乏GenAI平台在各部门实际使用范围和成熟度的数据。"
+  ],
+  "judgment": "T1证据进一步显示具体任务试验、竞赛和局部使用仍是可观察的能力形成形态；这些信号支持任务分布牵引，但不能外推为全军规模化部署。",
+  "key_assumptions": [
+    "各项目的独立进展反映了任务驱动的分散发展模式。",
+    "体系整合的规划文件（如SP-008）和意图声明（如综合多边演习计划）尚未转化为实际的跨项目统一部署。",
+    "联合通用基金会的延迟表明体系化整合面临资源和技术挑战。"
+  ],
+  "mechanism_claims": [
+    "卢克空军基地的AI工作队和日常使用案例（CE-T1-DCF49FC6CBC68958、CE-T1-AA937CC0AF5E2372等）表明任务驱动的局部应用正在发生，但仅限于单个基地的日常行政任务，未扩展至跨军种或作战核心任务。",
+    "第732空中机动中队在北极桥演习中使用GenAI平台（CE-T1-6B02747FAF17B29F）显示部门级平台开始被局部采用，但该使用仍属于概念验证演习，未证明作战效能或规模化部署。",
+    "DARPA Triage Challenge的竞赛结果（CE-T1-43B8C6F6E7B77F40）展示了特定任务领域的技术能力，但属于DARPA项目演示验证，未进入正式采办流程。"
+  ],
+  "supporting_evidence": [
+    {
+      "evidence_id": "CE-T1-AA937CC0AF5E2372",
+      "importance": "medium",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    },
+    {
+      "evidence_id": "CE-T1-43B8C6F6E7B77F40",
+      "importance": "medium",
+      "relation": "support",
+      "target_field": "judgment",
+      "version": 1
+    }
+  ],
+  "uncertainties": [
+    "AIDP的部署是否代表了陆军AI能力的普遍水平，还是仅限情报领域，尚不明确。",
+    "RACER和REMA等项目的技术成果是否已进入正式的采办或列装流程，缺乏公开证据。",
+    "综合多边演习计划的具体时间表和预期成果尚不明确，无法判断其是否能在短期内改变任务驱动的主导模式。",
+    "GenAI平台在局部演习中的使用是否预示着部门级统一平台的推广，尚不明确。"
+  ],
+  "update_rationale": "T1证据中的局部使用案例（卢克基地、北极桥演习）和DARPA竞赛结果进一步支持任务驱动主导模式，但部门级平台（GenAI）的出现需关注其是否向跨军种复用发展。边界条件中增加了对部门级平台的考量，但总体判断不变。"
+}

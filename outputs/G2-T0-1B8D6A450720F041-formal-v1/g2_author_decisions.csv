@@ -1,0 +1,6 @@
+﻿candidate_id,decision,formal_hypothesis_id,merge_target,source_candidate_ids,author_authorization_sha256,reviewed_by,review_mode,author_signoff_count,author_decision_count,raw_source_visual_review_claimed
+G2-H01,revise_and_accept,HYP-T0-01,,"[""GEN-A-H01""]",1b8d6a450720f0419c8d88fa3e74e41719a7f5702b01466997bfa81c2b3fb672,author_01,ai_preannotation_plus_author_batch_signoff,1,5,False
+G2-H02,convert_to_shared_baseline,,BASE-T0-01,"[""GEN-A-H02"",""GEN-B-H01"",""GEN-C-H01""]",1b8d6a450720f0419c8d88fa3e74e41719a7f5702b01466997bfa81c2b3fb672,author_01,ai_preannotation_plus_author_batch_signoff,1,5,False
+G2-H03,revise_and_accept,HYP-T0-02,,"[""GEN-B-H02""]",1b8d6a450720f0419c8d88fa3e74e41719a7f5702b01466997bfa81c2b3fb672,author_01,ai_preannotation_plus_author_batch_signoff,1,5,False
+G2-H04,merge_and_accept,HYP-T0-03,HYP-T0-03,"[""GEN-B-H03"",""GEN-C-H02""]",1b8d6a450720f0419c8d88fa3e74e41719a7f5702b01466997bfa81c2b3fb672,author_01,ai_preannotation_plus_author_batch_signoff,1,5,False
+G2-H05,merge_and_accept,HYP-T0-03,HYP-T0-03,"[""GEN-C-H03""]",1b8d6a450720f0419c8d88fa3e74e41719a7f5702b01466997bfa81c2b3fb672,author_01,ai_preannotation_plus_author_batch_signoff,1,5,False

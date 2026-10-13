@@ -1,0 +1,96 @@
+[
+  {
+    "source_id": "T0-SP-007",
+    "source_locator": "pdf_page_4",
+    "excerpt_original": "Modern ize gove rnance structur es and processe s that allow for continuous overs ight of DoD use of AL takin g into account the context in which the technology will be used;",
+    "excerpt_zh": "",
+    "normalized_claim": "The strategy sets continuous oversight of DoD AI use as a governance goal that should account for the context of use.",
+    "coding_dimensions": [
+      "trust_governance_constraints"
+    ],
+    "evidence_nature": "goal",
+    "topics": [
+      "governance",
+      "oversight"
+    ]
+  },
+  {
+    "source_id": "T0-SP-007",
+    "source_locator": "pdf_page_4",
+    "excerpt_original": "Exercise approp riate care in the Al product and acqu isition lifecyc le to ensure potential Al risks are cons idered from the outset of an Al project , and efforts are taken to mitigate or ameliorate such risks and reduce unintend ed consequences, while e nab ling Al developme nt at the pace the Departm ent needs to meet the National Defense Stra tegy:",
+    "excerpt_zh": "",
+    "normalized_claim": "The strategy calls for considering AI risks from the outset of a project and mitigating unintended consequences while enabling development.",
+    "coding_dimensions": [
+      "trust_governance_constraints",
+      "application_maturity"
+    ],
+    "evidence_nature": "goal",
+    "topics": [
+      "acquisition_lifecycle",
+      "risk_management"
+    ]
+  },
+  {
+    "source_id": "T0-SP-007",
+    "source_locator": "pdf_page_7",
+    "excerpt_original": "RELIABLE: The Department's Al capabilities will have explicit, well-defined uses, and the safety, security, and effectiveness of such capabilities will be subject to testing and assurance within those defined uses across their entire life-cycle s.",
+    "excerpt_zh": "",
+    "normalized_claim": "The stated reliable-AI principle subjects safety, security, and effectiveness to testing and assurance within defined uses across the life cycle.",
+    "coding_dimensions": [
+      "trust_governance_constraints"
+    ],
+    "evidence_nature": "goal",
+    "topics": [
+      "reliability",
+      "testing"
+    ]
+  },
+  {
+    "source_id": "T0-SP-007",
+    "source_locator": "pdf_page_12",
+    "excerpt_original": "Use the requirements validation process to ensure that capabilitie s that leverage AI are aligned with operati onal needs while addressing relevant Al risks. System performance requirements validation increases the reliability and safety of systems prior to and during deplo yment.",
+    "excerpt_zh": "",
+    "normalized_claim": "The requirements-validation goal links AI capabilities to operational needs and relevant risks, and describes validation as increasing reliability and safety before and during deployment.",
+    "coding_dimensions": [
+      "trust_governance_constraints",
+      "organizational_system_fit"
+    ],
+    "evidence_nature": "goal",
+    "topics": [
+      "requirements",
+      "operational_relevance"
+    ]
+  },
+  {
+    "source_id": "T0-SP-007",
+    "source_locator": "pdf_page_16",
+    "excerpt_original": "project needs will change as DoD Componen ts progress through the AI Produc t Lifecyc le's four phases: design , develop , deploy , and use (as shown in the figure below). It may not be necessar y or possible to conduct a full risk anal ysis for bas ic A l research projects without a pro posed operat iona l use case; howeve r, an AJ capability that is ready to deplo y in an operatio nal system must undergo processe s to demonstrate that it meets OoD standar ds for safety , security, and more.",
+    "excerpt_zh": "",
+    "normalized_claim": "The pathway distinguishes design, development, deployment, and use phases and states that a capability ready for operational deployment must undergo processes addressing safety and security.",
+    "coding_dimensions": [
+      "application_maturity",
+      "trust_governance_constraints"
+    ],
+    "evidence_nature": "goal",
+    "topics": [
+      "lifecycle",
+      "deployment_readiness"
+    ]
+  },
+  {
+    "source_id": "T0-SP-007",
+    "source_locator": "pdf_page_18",
+    "excerpt_original": "Centralized, DoD-wide coordin ation of DoD RAI policies and guidance is critical to establi shing interoperabil ity, cons isten t guidelines and approaches , sharing best practices , and identifying opportunities for collaboration. At the same time , DoD Components must optimize integration of RAI w ithin the context of their exist ing workflows , structu res, and processes. This approach of top-down policy and coo rdin ation with bottom-up execution and innovation allows for tailoring RAI integration to the uses and needs of eac h DoD Component while increasing overall adopt ion rate.",
+    "excerpt_zh": "",
+    "normalized_claim": "The implementation approach combines centralized DoD-wide coordination with decentralized execution so Components can tailor integration to their uses and needs.",
+    "coding_dimensions": [
+      "organizational_system_fit",
+      "integration_level"
+    ],
+    "evidence_nature": "goal",
+    "topics": [
+      "enterprise_coordination",
+      "decentralized_execution"
+    ]
+  }
+]

@@ -1,0 +1,67 @@
+function wr360QueryGetParameterByName(name) {
+    var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+    return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+}
+
+jQuery(document).ready(function() {
+    var popup360Elm = jQuery('#wr360PlayerId20');
+    if (popup360Elm.length === 1) {
+        var backgroundColor = wr360QueryGetParameterByName('background');
+        if (backgroundColor && backgroundColor.length > 0)
+            popup360Elm.css('background-color', backgroundColor);
+
+        popup360Elm.rotator({
+            licenseFileURL: wr360QueryGetParameterByName('lic'),
+            graphicsPath: wr360QueryGetParameterByName('grphpath'),
+            configFileURL: wr360QueryGetParameterByName('config'),
+            rootPath: wr360QueryGetParameterByName('root'),
+            googleEventTracking: wr360QueryGetParameterByName('analyt') === 'true',
+            viewName: wr360QueryGetParameterByName('viewname')
+        });
+    }
+    else {
+        var prettySkin = typeof getWR360PopupSkin !== 'undefined' ? getWR360PopupSkin() : 'light_clean';
+
+        if (typeof jQuery.fn.prettyPhoto !== 'undefined')
+            jQuery("a[data-rel^='prettyPhoto']").prettyPhoto({animation_speed: 0, deeplinking: false, theme: prettySkin });
+    }
+
+    jQuery('.single_variation_wrap').on('show_variation', function(event, variation) {
+        var swiperEl = document.querySelector('.wr360-swiper-view');
+        if (!swiperEl || !swiperEl.swiper)
+            return;
+
+        var slidesEl = jQuery(swiperEl).find('.swiper-slide');
+        if (!slidesEl.length)
+            return;
+
+        var $swiper = jQuery(swiperEl),
+            varsLoadedAttrName = 'data-wr360-vars-loaded',
+            isVariationsLoaded = $swiper.attr(varsLoadedAttrName);
+
+        if (!isVariationsLoaded)
+            $swiper.attr(varsLoadedAttrName, 1);
+
+        var $firstSlide = jQuery(slidesEl[0]);
+        if ($firstSlide.data('wr360-cfg') && !isVariationsLoaded)
+            return;
+
+        for (var slideCount = 0; slideCount < slidesEl.length; slideCount++) {
+            var $slide = jQuery(slidesEl[slideCount]);
+            if ($slide.data('image-id') != variation.image_id)
+                continue;
+
+            var swiperMenuEl = document.querySelector('.wr360-swiper-menu'),
+                oldMenuSpeed = null;
+            if (swiperMenuEl && swiperMenuEl.swiper) {
+                oldMenuSpeed = swiperMenuEl.swiper.params.speed;
+                swiperMenuEl.swiper.params.speed = 0;
+            }
+
+            swiperEl.swiper.slideTo($slide.data('index'), 0);
+            if (oldMenuSpeed)
+                swiperMenuEl.swiper.params.speed = oldMenuSpeed;
+            break;
+        }
+    });
+});

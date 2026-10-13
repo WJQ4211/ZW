@@ -1,0 +1,13 @@
+﻿source_id,action,reason,duplicate_status,duplicate_of,search_summary_used_as_source
+T1-DAF-001,candidate,官方军种战略与治理材料，直接涉及数据和AI战略实施。,unique_in_p11_catalogue,,False
+T1-DAF-002,candidate,官方军种人才治理与工程资源材料。,unique_in_p11_catalogue,,False
+T1-DAF-003,candidate,官方安全AI能力和运行环境准入材料。,unique_in_p11_catalogue,,False
+T1-DAF-004,candidate,官方跨军种AI应用与整合活动材料。,unique_in_p11_catalogue,,False
+T1-DAF-005,excluded,publication date not found in original source,not_assessed,,False
+T1-DAF-006,candidate,官方AI试验与战斗管理运用材料。,unique_in_p11_catalogue,,False
+T1-DAF-007,candidate,官方基层组织日常运用与部署材料。,unique_in_p11_catalogue,,False
+T1-DAF-008,candidate,官方战区环境桌面演练和组织运用材料。,unique_in_p11_catalogue,,False
+T1-DARPA-001,excluded,publication date not found in original source,not_assessed,,False
+T1-DARPA-002,candidate,DARPA官方工程整合项目材料，涉及从研发到应用的转化条件。,unique_in_p11_catalogue,,False
+T1-DARPA-003,excluded,publication date not found in original source,not_assessed,,False
+T1-IR-001,excluded,publication date not found in original source,not_assessed,,False

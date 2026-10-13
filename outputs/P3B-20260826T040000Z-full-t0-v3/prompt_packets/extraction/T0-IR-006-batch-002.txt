@@ -1,0 +1,787 @@
+PROMPT_ID: evidence_extract_p3b
+VERSION: 2.0
+BATCH_ID: T0-IR-006-batch-002
+SOURCE_DOCUMENT_ID: T0-IR-006
+RESEARCH_QUESTION: Based only on public, non-classified material available through 2024-12-31, what dominant deployment form is more likely for U.S. military AI capability building in 2025-2027?
+TASK: Extract at most five auditable evidence candidates from these source segments. Output zero candidates when the supplied text contains insufficient directly relevant evidence.
+INPUT LIMIT: Use only the source segments and definitions supplied here. Do not use prior runs, other sources, or outside knowledge.
+OUTPUT: strict JSON array; each object must contain exactly the eight model fields in the schema.
+normalized_claim must be Chinese only, state one evidence proposition, and contain no source-attribution prefix such as 本报告认为 or 某机构指出. Source metadata is supplied by the program.
+coding_dimensions must be a JSON array of zero or more exact dimension key strings, never an object/map and never Chinese descriptions or maturity labels. Allowed keys: integration_level, application_maturity, human_machine_authority, engineering_resource_conditions, trust_governance_constraints, organizational_system_fit.
+excerpt_original must be copied verbatim from one exact source_locator. Do not silently repair OCR, spelling, or layout extraction.
+If an English excerpt is returned, excerpt_zh must be non-empty and remains pending G1 translation review.
+Use goal for strategy/vision/plan; test_event only for a test or exercise occurrence, participants, or configuration; test_result only for an explicitly observed function, performance, or result; deployment_event only for deployment, fielding, adoption, or sustained use that has already occurred.
+Ordinary coordination, information transfer, training, or documentation does not automatically support human_machine_authority.
+Do not add subjects, actions, numbers, scope, or results absent from the excerpt. Do not generate hypotheses, viewpoints, conclusions, or a 2025-2027 route judgment.
+Do not use pseudo-continuous locators. One candidate expresses one checkable fact. Do not duplicate an equivalent excerpt within this source.
+CANDIDATE_LIMIT: 5
+SOURCE_SEGMENTS:
+--- pdf_page_25 ---
+pdf_page_number: 25
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_25|printed_page_pending|section_pending
+visual_review_required: false
+GAO AI Accountability In June 2021, we published an AI accountability framework to help
+Framework managers ensure accountability and responsible use of AI in government
+programs and processes.37 Our objective was to identify key practices to
+help ensure accountability and responsible AI use by federal agencies
+and other entities involved in the design, development, deployment, and
+continuous monitoring of AI systems.38 The AI accountability framework is
+organized around four complementary principles, which address
+governance, data, performance, and monitoring. For each principle, the
+framework describes key practices for federal agencies and other entities
+that are considering, selecting, and implementing AI systems. Each
+practice includes a set of questions for entities, auditors, and third-party
+assessors to consider, as well as procedures for auditors and third-party
+assessors. In particular, the key practices for governance at the
+organizational level in the AI accountability framework—which include
+clear goals, roles and responsibilities, values, workforce, stakeholder
+involvement, and risk management—align with some characteristics of a
+comprehensive strategy and internal control principles.39
+Our assessment shows that the 2018 DOD AI Strategy and most
+DOD’s AI Strategy
+associated AI-related plans and strategies include some characteristics of
+and Plans Include
+a comprehensive strategy. These characteristics are problem definition,
+scope, and methodology; activities, milestones, and performance
+Some, but Not All,
+measures; resources and investments; organizational roles,
+Characteristics of a
+Comprehensive
+Strategy
+37GAO, Artificial Intelligence: An Accountability Framework for Federal Agencies and
+Other Entities, GAO-21-519SP (Washington, D.C.: June 30, 2021).
+38To develop the AI accountability framework, we convened a Comptroller General Forum,
+in September of 2020, of experts in industry, government, nonprofits, and academia to
+discuss factors affecting oversight of AI, including AI governance, sources of evidence,
+methods to assess implementation of AI systems, and identifying and mitigating potential
+bias and inequities. In addition to perspectives from the Comptroller General Forum and
+subject matter expert interviews, we also conducted an extensive literature review and
+obtained independent validation of key practices from program officials and subject matter
+experts.
+39We did not use the GAO AI accountability framework to assess DOD’s AI strategies
+because the strategies assessed in this report were published before it was issued.
+However, the criteria we used aligns with the AI accountability framework.
+Page 20 GAO-22-105834 Artificial Intelligence
+--- pdf_page_26 ---
+pdf_page_number: 26
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_26|printed_page_pending|section_pending
+visual_review_required: false
+responsibilities, and coordination; key external factors; and risk.40 In
+addition, the strategies and plans do not fully include some of these
+characteristics, particularly performance measures, resources and
+investments, and risk. We previously reported on the importance of
+including such characteristics in strategy documents.41
+2018 DOD AI Strategy. We found that the 2018 DOD AI Strategy fully
+includes some, but not all, key elements of a comprehensive strategy and
+select internal control principles. Specifically, we found that the 2018
+DOD AI Strategy and the 2019 Summary of the DOD AI Strategy fully
+include four characteristics of a comprehensive strategy and partially
+include six characteristics of a comprehensive strategy.42 (See table 3.)
+Table 3: Extent to Which the 2018 DOD AI Strategy and 2019 Summary of the DOD AI Strategy Include the Key Elements of a
+Comprehensive Strategy and Select Internal Controls
+Element included Element inclusion
+Element/principle Description in strategy assessment
+Mission statement A comprehensive statement that The strategy discusses its main
+●
+summarizes the main purpose purpose.
+of the strategy.
+Problem definition, Presents the issues to be The introduction presents the AI
+scope, and methodology addressed by the strategy, the problem statement and gives an
+scope the strategy covers, and overview of scope. There is no
+◐
+the process by which it was discussion of the process by
+developed. which the strategy was
+developed.
+Goals and objectives The goals to be achieved by the The strategy includes
+strategy. The strategy includes overarching goals and
+overarching goals and ● objectives that address the
+objectives that address the overall results desired from its
+overall results desired from implementation.
+implementation of the strategy.
+40Characteristics of a comprehensive strategy refers to the seven key elements of a
+comprehensive strategy and three select internal control principles.
+41GAO-13-201. For example, we found that it is important to identify needed resources
+and investments—which may include skills and technology, and human capital,
+information, and other resources required to meet a strategy’s goals and objectives.
+Additionally, we found that it is important to identify key external factors that might affect a
+comprehensive strategy so that a mitigation plan can be developed.
+42In 2019, DOD issued an unclassified summary of the 2018 DOD AI Strategy, which is a
+classified Secret document. We assessed the 2018 DOD AI Strategy and its unclassified
+summary as one document.
+Page 21 GAO-22-105834 Artificial Intelligence
+--- pdf_page_27 ---
+pdf_page_number: 27
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_27|printed_page_pending|section_pending
+visual_review_required: false
+Element included Element inclusion
+Element/principle Description in strategy assessment
+Activities, milestones, The identification of steps to The strategy discusses activities
+and performance measures achieve those results, as well as to be conducted to achieve
+milestones and performance strategy goals. Milestones and
+◐
+measures to gauge results. performance measures are
+included for some, but not all
+activities.
+Resources and Costs to execute the plan and The strategy discusses
+investments the sources and types of resources in general but does
+resources and investments, not identify the types of
+including skills and technology resources or investments
+◐
+and the human, capital, needed to execute the strategy
+information, and other (e.g., human capital, information
+resources required to meet the technology, contracts, etc.).
+goals/objectives.
+Organizational roles, A description of roles and The strategy’s summary
+responsibilities, and responsibilities for managing describes the Joint Artificial
+coordination and overseeing the Intelligence Center’s roles and
+implementation of the strategy responsibilities, but not in
+and the establishment of context of implementing the
+mechanisms for multiple strategy. Additionally, the
+◐
+stakeholders to coordinate their strategy indicates that DOD will
+efforts throughout establish organizations within
+implementation and make the department to enable
+necessary adjustments to the coordination and integration of
+strategy based on performance. AI.
+Key external factors Key factors external to the The summary discusses how
+that could affect the organization and beyond its adversaries’ advancements in
+achievement of goals control that could significantly AI for military purposes hinder
+affect the achievement of the the U.S. goal to transform all
+long-term goals contained in the functions of the department,
+strategy. These external factors which is an external factor. The
+can include economic, ◐ strategy does not include other
+demographic, social, external factors that would be
+technological, or environmental relevant, such as technological
+factors, as well as conditions or challenges.
+events that would affect DOD’s
+ability to achieve the desired
+results.
+Ethical values The oversight body and The strategy includes
+management should leadership in military ethics and
+●
+demonstrate a commitment to AI safety as a strategic area.
+integrity and ethical values.
+Workforce Management should The strategy includes workforce
+demonstrate a commitment to as a strategic area.
+●
+recruit, develop, and retain
+competent individuals.
+Page 22 GAO-22-105834 Artificial Intelligence
+--- pdf_page_28 ---
+pdf_page_number: 28
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_28|printed_page_pending|section_pending
+visual_review_required: false
+Element included Element inclusion
+Element/principle Description in strategy assessment
+Risk Management should identify, While the strategy lists AI-
+analyze, and respond to risks related risks, risk mitigation and
+◐
+related to achieving the defined risk response are not included.
+objectives.
+Key: ● = fully included element; ◐ = partially included element; ○ = does not include element
+Source: GAO analysis of Department of Defense (DOD) information. I GAO-22-105834
+Associated AI strategies and plans. We also found that the body of
+associated AI strategies and plans include some, but not all, key
+elements of a comprehensive strategy and select internal control
+principles.43 (See fig. 6.)
+43The body of associated AI-related strategies and plans we assessed include: 2018 DOD
+AI Governance Plan; 2019 DOD Digital Modernization Strategy; 2020 DOD Data Strategy;
+2020 DOD AI Education Strategy; and military service AI-related strategies including the
+2019 United States Air Force AI Annex to The DOD AI Strategy; 2019 USMC Annex to the
+DOD AI Strategy; 2020 Army AI Strategy; 2019 Naval Annex to the DOD AI Strategy; and
+2020 Transforming Naval Operations: USN AI Strategic Vectors.
+Page 23 GAO-22-105834 Artificial Intelligence
+--- pdf_page_29 ---
+pdf_page_number: 29
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_29|printed_page_pending|section_pending
+visual_review_required: false
+Figure 6: Extent to Which Nine DOD Artificial Intelligence (AI)-Related Strategies Include the Key Elements of a
+Comprehensive Strategy and Select Internal Controls
+DOD’s body of AI-related strategies also include some characteristics of a
+comprehensive strategy, but lack other characteristics. Characteristics
+that are mostly included are mission statement, goals and objectives,
+Page 24 GAO-22-105834 Artificial Intelligence
+--- pdf_page_30 ---
+pdf_page_number: 30
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_30|printed_page_pending|section_pending
+visual_review_required: false
+commitment to integrity and ethical values, and commitment to recruit,
+develop, and retain competent individuals. However, overall the body of
+AI-related strategies partially include or do not include the following
+characteristics: problem definition, scope, and methodology; activities,
+milestones, and performance measures; resources and investments;
+organizational roles, responsibilities, and coordination; key external
+factors; and risk.
+The JAIC officials we interviewed identified several potential reasons why
+certain characteristics were not fully included in their strategies, such as
+the 2018 DOD AI Strategy, 2018 DOD AI Governance Plan, and the 2020
+DOD AI Education Strategy.44 For example:
+• A JAIC official stated that resources had not been determined when
+the 2018 DOD AI Strategy was issued. Additionally, the JAIC official
+said they could not speak to why risks in AI were not included in the
+2018 DOD AI Strategy.
+• JAIC officials said that they have begun to draft an updated DOD AI
+Strategy, which is expected to be issued as an annex to the new
+National Defense Strategy.45 According to the Director of the JAIC,
+the updated DOD AI Strategy is needed as the JAIC shifts its focus
+from adoption of AI capabilities to integration. The Director of the JAIC
+said the updated strategy will drive that integration and reflect how AI
+governance has matured since the original strategy was issued.
+Other DOD organizations with AI-related strategies. Additionally,
+officials from other DOD organizations with AI-related strategies provided
+various reasons why all characteristics of a comprehensive strategy were
+not fully included in their strategies. See table 4 for examples of reasons
+why certain characteristics may not have been included in a strategy.
+44The DOD Chief Information Officer developed the 2018 DOD AI Strategy and 2018 DOD
+AI Governance Plan, but ownership transferred to the JAIC. The 2018 DOD AI Strategy
+was issued prior to establishment of the JAIC and officials explained they could therefore
+not definitively say why all characteristics of a comprehensive strategy were not included.
+The JAIC issued the 2020 AI Education Strategy.
+45On March 28, 2022, DOD announced that it transmitted the classified 2022 National
+Defense Strategy to Congress.
+Page 25 GAO-22-105834 Artificial Intelligence
+--- pdf_page_31 ---
+pdf_page_number: 31
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_31|printed_page_pending|section_pending
+visual_review_required: false
+Table 4: Examples of Reasons Organizations Did Not Include Certain Characteristics of a Comprehensive Strategy in Artificial
+Intelligence (AI)-Related Strategies
+Characteristic Examples
+Methodology Air Force. An Air Force official said the 2019 United States Air Force AI Annex to The DOD AI Strategy followed
+the general structure of the 2018 DOD AI Strategy, which did not have a methodology section, so the annex does
+not either.
+DOD Chief Data Officer. According to a Chief Data Officer official, the 2020 DOD Data Strategy did not include
+methodology because it did not have a simple, structured development path that is easy to summarize.
+Performance Army. According to an Army official, the 2020 Army AI Strategy may not have included characteristics such as
+measures performance measures because it is not a characteristic typically found in an Army strategy document. The official
+said that such details are typically found in an execute order.
+Marine Corps. According to Marine Corps officials, AI-related efforts were not mature enough to assess
+integration of characteristics such as milestones and performance measures in the 2019 USMC Annex to the DOD
+AI Strategy. The officials stated that as AI is implemented, the Marine Corps will have a stronger understanding of
+appropriate milestone objectives.
+Resources DOD CIO. A DOD CIO official said characteristics not included in the 2019 DOD Digital Modernization Strategy
+may have been addressed elsewhere, such as governance bodies chaired by DOD CIO senior leaders that guide
+and prioritize resourcing, mitigate the impact of external factors, and measure progress.
+DOD Chief Data Officer. Officials from the Chief Data Office said that the office is beginning to issue the data
+calls, edit reporting requirements, and update policies to better monitor and manage data resources and
+investments.
+Key external Army. According to an Army official, the 2020 Army AI Strategy may not have included characteristics such as key
+factors external factors because it is not a characteristic typically found in an Army strategy document.
+Air Force. An official from the U.S. Air Force said they were not able to determine key external factors at the time
+the annex was issued because their AI efforts were in a nascent stage.
+Risk Navy. A Navy official said risk was not included in either the Navy’s annex to the DOD AI Strategy or the
+Transforming Naval Operations: USN AI Strategic Vectors document because there were not enough fielded AI
+capabilities to have the data needed to determine risk. According to the official, the Navy intends to incorporate risk
+management measures and policies as AI application increases and experiential data becomes available.
+DOD CIO. A DOD CIO official noted that at the time of drafting the 2019 DOD Digital Modernization Strategy, many
+of the initiatives were in their infancy and therefore lacked specific detail for several characteristics, including risk.
+General Navy. A Navy official said that some actions listed in the Navy’s annex to the DOD AI Strategy were proposals that
+comments were never executed, or nascent tasks that did not move forward. The official said that more information is
+reflected in the regularly updated strategic blueprint Transforming Naval Operations: USN AI Strategic Vectors
+document.
+Marine Corps. Marine Corps officials said that several characteristics not included in their annex will be
+incorporated in an updated document.
+Source: GAO analysis of Department of Defense (DOD) information. I GAO-22-105834
+We previously reported that a comprehensive strategy provides the
+foundation upon which an agency builds its plan for defining what the
+agency intends to accomplish and provides a roadmap for how it will
+Page 26 GAO-22-105834 Artificial Intelligence
+--- pdf_page_32 ---
+pdf_page_number: 32
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_32|printed_page_pending|section_pending
+visual_review_required: false
+achieve desired results and meet its goals and objectives.46 To achieve
+this purpose, a comprehensive strategy should include a mission
+statement; a problem definition, scope, and methodology; goals and
+objectives; activities, milestones, and performance measures; resources
+and investments; information about organizational roles, responsibilities,
+and coordination; and a description of key external factors that could
+affect the achievement of goals. Additionally, federal internal control
+standards that apply to the DOD’s AI body of strategies include that the
+oversight body and management should: demonstrate a commitment to
+integrity and ethical values; demonstrate a commitment to recruit,
+develop, and retain competent individuals; and identify, analyze, and
+respond to risks related to achieving the defined objectives.47
+However, DOD did not issue guidance to the JAIC, military services, and
+DOD organizations to include in AI strategies and associated plans the
+key elements of a comprehensive strategy and select internal control
+principles, including methodology, performance measures, resources and
+investments, external factors, and risk. For example, the 2018 DOD AI
+Strategy includes guidance for the annexes to discuss objectives listed in
+the strategy but does not include guidance related to these characteristics
+in particular. Additionally, the September 2018 Deputy Secretary of
+Defense memorandum requiring annexes directs the military
+departments, functional combatant commands and others to develop and
+submit annexes, but does not specify what should be included in the
+annexes.48 According to a Navy official, the September 2018 Deputy
+Secretary of Defense memorandum was the only guidance provided to
+military services. Additionally, after speaking with relevant parties at the
+JAIC and the military services—to include reviewing the classified 2018
+DOD AI Strategy—a DOD CIO official confirmed that they are not aware
+of any other instructions or guidance to the military services regarding AI
+annexes.
+Additionally, as shown in table 2 above, military service appendixes to the
+2018 DOD AI Strategy have various review and update plans.
+Specifically, DOD has not established documented procedures, including
+timelines, for the periodic review of its strategy and the associated military
+46GAO-13-201.
+47GAO-14-704G.
+48Deputy Secretary of Defense Memorandum, Joint Artificial Intelligence Implementation
+(Sept. 11, 2018).
+Page 27 GAO-22-105834 Artificial Intelligence
+--- pdf_page_33 ---
+pdf_page_number: 33
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_33|printed_page_pending|section_pending
+visual_review_required: false
+service annexes even though the JAIC is beginning to update the 2018
+DOD AI Strategy, which is an annex to the 2018 National Defense
+Strategy with expected issuance in 2022. The law that mandated the
+2018 DOD AI Strategy and the Deputy Secretary of Defense
+memorandum requiring associated military department annexes does not
+require periodic reviews.49 However, the National Defense Authorization
+Act for Fiscal Year 2017 required DOD to develop the National Defense
+Strategy and update it at least once every 4 years and, during the years
+without an update, to assess the implementation of the strategy and
+whether any revision is necessary.50 Additionally, federal internal controls
+state that management should define objectives to include what is to be
+achieved, who is to achieve it, how it will be achieved, and the time
+frames for achievement.51
+Overall, DOD would be better positioned to help managers ensure
+accountability and responsible use of AI in government programs and
+processes by ensuring future AI strategies and plans include key
+elements of a comprehensive strategy and select internal controls such
+as methodology, performance measures, resources and investments, key
+external factors, and risk. Furthermore, the military services and
+components would benefit from procedures promulgated by DOD
+regarding the periodic review and update of its annexes and associated
+requirements such as addressing the key characteristics of effective
+strategies.52 Additionally, DOD could use the GAO AI accountability
+framework to incorporate such characteristics in its strategies and plans
+moving forward, as the key principles for governance presented there
+align with some characteristics of a comprehensive strategy.53 For
+example:
+• DOD would be better able to track progress in achieving goals and
+objectives through using of performance measures and strategy users
+49Pub. L. No. 115-232, § 238 (2018) and Deputy Secretary of Defense Memorandum,
+Joint Artificial Intelligence Implementation (Sept. 11, 2018).
+50Pub. L. No. 114-328, § 941(a) (2016) (codified at 10 U.S.C. § 113(g)).
+51GAO-14-704G.
+52GAO-21-519SP.
+53GAO-21-519SP. Our AI accountability framework provides key governance practices to
+help management, and those charged with oversight of AI, to establish governance
+structures and processes to manage risk, demonstrate the importance of integrity and
+ethical values, and ensure compliance with relevant laws, regulations, and guidance.
+Page 28 GAO-22-105834 Artificial Intelligence
+--- pdf_page_34 ---
+pdf_page_number: 34
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_34|printed_page_pending|section_pending
+visual_review_required: false
+would have a better understanding of how a strategy was created
+through inclusion of a methodology.
+• DOD would be better positioned to understand investments being
+made in AI across the department, and understand all types of
+resources needed to achieve a strategy’s goals and objectives.
+• DOD would also have a more realistic understanding of the influence
+posed by external factors and would be better positioned to address
+the factors.
+• DOD would be better positioned to understand and mitigate risks that
+could threaten success of the strategy’s goals and objectives by
+including in AI strategies how to identify, analyze, and respond to risk.
+DOD Has Reported
+Some AI Activities,
+but Lacks a High-
+level Plan or
+Roadmap to Address
+Limitations
+DOD Created a Baseline DOD’s April 2021 AI baseline inventory. In January 2021, in response
+Inventory of AI Activities in to a Congressional mandate, the JAIC began to develop a new process
+for identifying AI-related activities that improved upon the methodology
+2021, but It Is Not
+previously used to create lists of AI activities.54 In April 2021, JAIC
+Comprehensive
+officials provided to Congress an AI baseline inventory and report that
+included the methodology, key findings, and limitations for this initial
+54The Joint Explanatory Statement accompanying the Consolidated Appropriations Act,
+2021, Pub. L. No. 116-260 (2020) available at 166 Cong. Rec. H8251 (Dec. 21, 2020)
+stated that: The statement supports the AI activities of the DOD which are intended to
+improve the affordability and effectiveness of military operations. However, the statement
+reflects a concern about a lack of coordination among the myriad of AI programs within
+the department and the military services. Therefore, the Director of the JAIC is directed to
+provide the congressional defense committees, not later than 120 days after the
+enactment of the Act, an inventory of all AI activities to include each program’s
+appropriation, project, and line number; the current and future years defense program
+funding; the identification of academic or industry mission partners, if applicable; and any
+planned transition partners.
+Page 29 GAO-22-105834 Artificial Intelligence
+--- pdf_page_35 ---
+pdf_page_number: 35
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_35|printed_page_pending|section_pending
+visual_review_required: false
+inventory.55 According to the April 2021 AI baseline inventory report, the
+JAIC improved upon prior efforts to identify DOD AI activities and
+leveraged existing AI-related investment information that DOD CIO
+requires organizations to report in support of DOD’s AI-related information
+technology and cyberspace budget submission.56
+The April 2021 AI baseline inventory addressed some of the challenges
+identified through prior efforts to report DOD AI activities. For example,
+according to the JAIC’s April 2021 AI baseline inventory report, AI is a
+difficult investment category to track because it is a capability that is
+embedded in other systems, not a new type of system that is distinct and
+largely separate from other systems. Further, officials from DOD
+organizations and the military services told us they were determining how
+to define and identify specific AI activities. For example, as a part of our
+review, we surveyed 39 organizations across DOD on how they define,
+identify, track, and report AI activities, and we found there is not a
+consistent definition of AI or method for identifying, tracking, and reporting
+AI activities.
+To help address these challenges, the JAIC used three definitions to
+categorize AI activities in the April 2021 AI baseline inventory based on a
+recommendation from the National Security Commission on AI: core AI,
+55Joint Artificial Intelligence Center, (U) Overview of AI Inventory Methodology and Future
+Activities and Annual Artificial Intelligence Inventory Baseline Assessment-Fiscal Year
+(FY) 2021 (Apr. 2021) (CUI) (Hereafter referred to as the April 2021 AI baseline inventory
+report).
+56Department of Defense Chief Information Officer, (U) DOD CIO Fiscal Year (FY) 2022-
+2026 Capability Programming Guidance (CPG) (Washington, D.C.: Dec. 20, 2019)
+(SECRET//NOFORN). This guidance was updated in Jan. 2021 and required
+organizations to report AI projects and infrastructure-related resource information through
+DOD’s Defense Information Technology Investment Portal and the Selective Native
+Programming–Information Technology systems. Department of Defense 7000.14-R
+Financial Management Regulation (FMR) Volume 2B, Chapter 18, Information Technology
+(Including Cyberspace Operations) states that: The DOD Information Technology
+Investment Portal provides a centralized location for information technology investment
+portfolio data and aligns information technology systems information in the Defense
+Information Technology Portfolio Registry with budget information in the Select and Native
+Programming-Information Technology system, which is a database application used to
+collect and assemble information required in support of the information technology budget
+request submitted to Congress. DOD also uses the system to report its information
+technology budget data on the Information Technology Dashboard.
+Page 30 GAO-22-105834 Artificial Intelligence
+--- pdf_page_36 ---
+pdf_page_number: 36
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_36|printed_page_pending|section_pending
+visual_review_required: false
+AI enabled, and AI enabling.57 Specific definitions and examples of AI
+activities for each of these categories were omitted because the
+information is sensitive. We also omitted specific details for the
+methodology the JAIC used to develop the April 2021 AI baseline
+inventory because the information is sensitive.
+The April 2021 AI baseline inventory contained 685 project and line item
+accounts that include AI-related activities.58 The 685 AI activities identified
+included 135 AI activities reported in the fiscal year 2021 President’s
+Information Technology Budget submission, according to the JAIC’s
+report.59 The report also stated that the process used to create the
+baseline inventory provided the foundation for a repeatable methodology
+to inventory AI projects more effectively and efficiently than previous JAIC
+and DOD CIO efforts. Further, the report stated that the new methodology
+provided insight and value to each of the military services and DOD
+organizations in their strategic planning for their respective AI portfolios.
+DOD’s April 2021 AI baseline inventory is not comprehensive.
+However, JAIC officials also reported to Congress that the April 2021 AI
+baseline inventory is not comprehensive and has limitations. Specifically,
+JAIC officials said the April 2021 AI baseline inventory does not include
+operations and maintenance-related AI activities—such the JAIC’s overall
+operating budget—or any classified AI activities. These categories were
+57National Security Commission on AI, Final Report (Mar. 1, 2021). The National Security
+Commission on AI was established by Section 1051 of the John S. McCain National
+Defense Authorization Act for Fiscal Year 2019 to review advances in AI, related machine
+learning developments, and associated technologies. The statute directed the
+Commission’s review to consider the methods and means necessary to maintain a
+technological advantage in artificial intelligence, machine learning, and associated
+technologies that are materially related to the national security and defense needs of the
+United States. Pub. L. No. 115-232, § 1051 (2018). On Mar. 1, 2021, the Commission
+issued its final report that included recommendations, analysis and blueprints for how
+DOD and the Intelligence Community must become “AI-ready” by 2025.
+58Joint Artificial Intelligence Center, (U) Overview of AI Inventory Methodology and Future
+Activities and Annual Artificial Intelligence Inventory Baseline Assessment–Fiscal Year
+(FY) 2021 (Apr. 2021) (CUI).
+59While requiring DOD organizations to report AI projects and infrastructure-related
+resource information, DOD’s budget reporting requirement for Information Technology and
+Cyberspace Operations exempts organizations from having to report investments for
+programs, projects, and activities embedded in non-Command and Control and
+Communications programs, weapon systems, or in military service force structure
+because they are not readily identifiable in the budget. DOD 7000.14-R Financial
+Management Regulation (FMR) Volume 2B, Chapter 18: “Information Technology
+(Including Cyberspace Operations)” (revised Sept. 2015).
+Page 31 GAO-22-105834 Artificial Intelligence
+--- pdf_page_37 ---
+pdf_page_number: 37
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_37|printed_page_pending|section_pending
+visual_review_required: false
+excluded because the budget justification documents for those activities
+had not been fully converted into a machine-readable dataset. The
+number of activities not included could not be estimated.
+Further, JAIC officials reported that for the April 2021 AI baseline
+inventory they were unable to include funding-related summary data on
+the overall DOD AI budget or identify relationships between related
+projects or projects that are addressing similar problems because AI is
+not identified as its own line item in the budget documentation. The April
+2021 baseline inventory report also stated that the JAIC intends to build
+on the baseline inventory effort to establish a repeatable process that will
+enable DOD to provide an accurate estimate of overall AI-related
+spending each year and address these gaps and limitations in the second
+phase of their effort.60
+DOD Is Building an AI The JAIC’s April 2021 AI baseline inventory report to Congress stated
+Inventory Portfolio that in the second phase of its AI inventory process they plan to address
+three limitations in the baseline inventory: (1) operations and
+Analytics Tool to Address
+maintenance activities, (2) DOD classified activities, and (3) AI-related
+Limitations, but Does Not
+funding information. Specifically, the JAIC plans to continue adding and
+Have a Detailed Plan or updating relevant datasets, improve web-enabled database tool
+Timelines capabilities and the user-interface, and continue close coordination with
+Office of the Under Secretary of Defense (Comptroller) and other DOD
+organizations.61 The JAIC reported that the web-enabled database tool—
+the DOD AI Inventory Portfolio Analytics Tool—is expected to improve
+DOD’s ability to synchronize and deconflict its AI portfolio. The JAIC’s
+Director told us that the AI inventory could also serve as a reference
+catalogue for the Joint Common Foundation, an enterprise cloud
+development environment equipped with practices and repositories for AI
+development, as discussed in the next section.62
+60JAIC reported the second phase will also better capture contracting information with
+industry and academia, and planned transition partners.
+61Joint Artificial Intelligence Center, (U) Overview of AI Inventory Methodology and Future
+Activities and Annual Artificial Intelligence Inventory Baseline Assessment - Fiscal Year
+(FY) 2021 (Apr. 2021) (CUI).
+62As defined by the National Institute of Standards and Technology, cloud services enable
+on-demand access to resources (e.g., networks, servers, storage applications, and
+services) that can be rapidly provisioned. Purchasing information technology services
+through a cloud service provider is a means for federal agencies to buy services more
+quickly and possibly at a lower cost than building, operating, and maintaining these cloud
+computing resources themselves.
+Page 32 GAO-22-105834 Artificial Intelligence
+--- pdf_page_38 ---
+pdf_page_number: 38
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_38|printed_page_pending|section_pending
+visual_review_required: false
+However, the JAIC official leading the inventory project team said they
+have identified challenges in addressing the limitations of the April 2021
+baseline inventory that could lead to incomplete information being
+submitted to Congress for the second phase of their process. We have
+omitted details about how the JAIC plans to address the limitations
+because the information is sensitive.
+The JAIC defines the AI Inventory Portfolio Analytics Tool as a tool
+designed to catalog AI budget data with a web form capability to assist in
+the collection of data from and coordination with various DOD
+organizations. Specifically:
+• JAIC will leverage a multi-purpose data analytics system, called
+Advancing Analytics (Advana), which is managed by the Office of the
+Under Secretary of Defense (Comptroller) and is used to analyze data
+across the department.63
+• During development of the first iteration of the AI Inventory Portfolio
+Analytics Tool, Advana’s contractor team will apply their product
+management lifecycle that is their recommended methodology to
+govern the development of all Advana products, and which
+incorporates Agile development.
+• The Agile approach stresses the iterative delivery of software in short,
+incremental segments, which allows for greater flexibility and the
+ability to adapt to meet changing customer needs and requirements.64
+Figure 7 illustrates the JAIC’s evolving inventory process.
+63Deputy Secretary of Defense Memorandum, Creating Data Advantage (May 5, 2021).
+This memorandum provides that common access to authoritative data is essential for
+providing a “single source of truth” for objective and informed decision-making. The
+Advancing Analytics (Advana) platform is the single enterprise authoritative data
+management and analytics platform for the Secretary of Defense, Deputy Secretary of
+Defense, and Principal Staff Assistants, with inputs from all DOD Components. The use of
+other data management and analytics platforms must be approved by the DOD Chief Data
+Officer and appropriate Component Chief Data Officer to ensure adherence to an open
+data standard architecture. A JAIC official told us in October 2021 that the platform was
+used by at least 20,000 staff across 42 DOD organizations.
+64Agile emphasizes early and continuous software delivery, as well as using collaborative
+teams, fast feedback cycles, and measuring progress with working software. GAO, Agile
+Assessment Guide: Best Practices for Agile Adoption and Implementation, GAO-20-590G
+(Washington, D.C.: Sept. 2020).
+Page 33 GAO-22-105834 Artificial Intelligence
+--- pdf_page_39 ---
+pdf_page_number: 39
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_39|printed_page_pending|section_pending
+visual_review_required: false
+Figure 7: Joint Artificial Intelligence (AI) Center’s (JAIC) AI Activities Inventory
+Process
+The JAIC’s April 2021 report to Congress stated that the JAIC plans to
+update and refine the AI Inventory Portfolio Analytics Tool using Agile
+methods over the next 2 to 3 years. The JAIC official also said that, in
+addition to addressing the limitations of the April 2021 baseline AI
+inventory, the JAIC plans to meet the remaining inventory-related
+congressional requirements by August 2022, including to better capture
+spending on individual contracts for AI-related activities with industry and
+academia, and other planned transition partners. The JAIC will provide
+access to the AI Inventory Portfolio Analytics Tool to DOD components to
+support the analysis of and management of their AI portfolios.
+The JAIC has a customer agreement with the Advana contractor team
+and has set milestones and estimated delivery dates to reach core
+functionality of the AI Inventory Portfolio Analytics Tool in December 2021
+and complete the second phase of the inventory process. The Advana
+contractor team also established business requirements in September
+2021 for delivery of the second-phase AI Inventory Portfolio Analytics
+Tool.
+In October 2021, the Advana contractor team issued its AI Inventory
+Portfolio Analytics Tool product roadmap that provides some additional
+milestones and estimated delivery dates. However, the roadmap did not
+capture all the high-level requirements or milestones for addressing
+deficiencies in its baseline inventory to provide a complete list of AI
+activities that supports the preparation of the department’s AI portfolio
+inventory and budget data. Specifically, the JAIC’s plans for its AI
+inventory process, such as establishing core functionality and future
+phases of the DOD AI Inventory Portfolio Analytics Tool, are incomplete
+and they have not captured a schedule for the whole program. For
+Page 34 GAO-22-105834 Artificial Intelligence
+--- pdf_page_40 ---
+pdf_page_number: 40
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_40|printed_page_pending|section_pending
+visual_review_required: false
+example, the roadmap does not provide an indication of the duration of
+the tasks, only the estimated date of delivery and does not go beyond
+completion of the second phase in December 2021.
+The Standards for Internal Control in the Federal Government states that
+management should identify information requirements in an iterative and
+ongoing process, using and communicating the resulting quality
+information to achieve an entity’s objective.65 The guidance also
+stipulates that quality information includes data that are appropriate,
+current, complete, accurate, accessible, and provided on a timely basis,
+and that management should have accurate and complete information for
+decision-making. Additionally, our Agile Assessment Guide states that
+while Agile emphasizes that only near-term work is planned in detail (e.g.,
+the next iteration), programs need to define their overall goal in a vision
+and plan the work, at a high-level, needed to satisfy the vision.66 The
+detailed plan is subject to change, but the vision provides a strategic view
+of the program goals to be accomplished. An integrated master schedule
+or similar artifact that captures both government and contractor activities,
+including Agile software development efforts, should capture all the
+planned features needed to accomplish the program goals at an
+appropriate level of detail.67
+Accurate and complete information on the overall DOD AI-related
+activities and spending amounts each year is an important aspect of
+evaluating DOD’s efforts and prioritizing resources and to synchronize
+and deconflict its AI portfolio. To do this more effectively, DOD would
+benefit from a high-level plan or roadmap—aligned with the best practices
+of an integrated master schedule for the whole program development and
+refinement of the DOD AI Inventory Portfolio Analytics Tool—that
+captures all requirements, activities, and milestones to fully develop its
+inventory. Such a plan would provide DOD with a high-level, end-to-end
+view of all the features necessary to accomplish the program’s goals to
+65GAO-14-704G.
+66GAO-20-590G.
+67An integrated master schedule is a program schedule that includes the entire required
+scope of effort, including the effort necessary from all government, contractor, and other
+key parties for a program’s successful execution from start to finish. It should consist of
+logically related activities whose forecasted dates are automatically recalculated when
+activities change. The integrated master schedule includes summary, intermediate, and
+detail-level schedules. GAO Schedule Assessment Guide: Best Practices for Project
+Schedules, GAO-16-89G (Washington, D.C.: Dec. 22, 2015).
+Page 35 GAO-22-105834 Artificial Intelligence
+--- pdf_page_41 ---
+pdf_page_number: 41
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_41|printed_page_pending|section_pending
+visual_review_required: false
+provide a complete and accurate inventory of AI activities to Congress
+and DOD decision makers.
+DOD officials reported collaborating on AI activities using informal and
+DOD Collaborates
+formal collaboration mechanisms, and that DOD intends to use the Joint
+on AI Activities, but
+Common Foundation as a mechanism to improve collaboration. DOD has
+not fully incorporated leading collaboration practices in its AI activities.
+Can More Fully
+Incorporate Leading
+Practices
+DOD Uses Informal and We surveyed 39 organizations with a role in the oversight and
+Formal Collaboration management of DOD’s AI activities about their collaboration activities.68
+Our survey results showed that the mechanisms an organization reported
+Mechanisms to Coordinate
+using to collaborate with other organizations are associated with the
+AI Activities
+quantity of the reported collaboration.69 Officials we surveyed reported
+collaborating most frequently through informal discussions, but also
+reported using formal mechanisms to collaborate, such as interagency
+groups.
+Informal collaborative mechanisms. We found that most organizations
+reported collaborating informally on a variety of AI activities.70 According
+to DOD officials from multiple organizations, their collaboration with other
+AI organizations is generally relationship-dependent and conducted
+through informal discussions. For example, one DOD official said that
+informal networking with officials from other organizations is the most
+effective way to collaborate. According to another survey respondent,
+informal discussions provide an opportunity to assess progress, share
+lessons learned, and identify opportunities to leverage work already
+68See Appendix II for a complete list of the organizations we surveyed. We took multiple
+steps to identify a respondent(s) who could speak to their organization’s AI collaboration
+efforts as a whole with the JAIC, with other organizations across DOD, or with the Office
+of the Director of National Intelligence. See Appendix I for the full methodology of how we
+selected respondent(s) from each organization.
+69See Appendix III for our analysis of DOD officials’ reported perceptions of extent of
+collaboration on AI activities.
+70In the survey, we asked respondents to specify which formal mechanisms they use to
+collaborate with other organizations, such as memoranda of understanding or memoranda
+of agreement, interagency agreements, working groups or other types of collaboration.
+Some organizations responded that they had other interactions in addition to GAO-
+identified mechanisms and indicated that they were informal arrangements.
+Page 36 GAO-22-105834 Artificial Intelligence
+--- pdf_page_42 ---
+pdf_page_number: 42
+printed_page_number: None
+section_title: 72GAO-12-1022
+machine_extracted_anchor: pdf_page_42|printed_page_pending|section_72GAO_12_1022
+visual_review_required: false
+performed. In contrast, other respondents described challenges related to
+informal collaboration. For example, one respondent said individual
+personalities challenge their informal collaboration. Overall, 94 percent of
+survey respondents said they use informal discussions to collaborate with
+at least one of their partner organizations and 79 percent reported they
+used information sharing.
+Formal collaborative mechanisms. Survey respondents also reported
+using a variety of formal mechanisms to collaborate on AI activities that
+our prior work has identified, such as interagency working groups,
+conferences, and memoranda of understanding.71 For example,
+respondents reported using interagency agreements in 23 percent of their
+connections to collaborate with their partner organizations. See table 5 for
+definitions of the selected mechanisms the federal government uses to
+facilitate interagency collaboration that we reported on in 2012 and the
+frequency survey respondents reported using each mechanism.72
+71As we reported in September 2012, experts defined an interagency mechanism for
+collaboration as any arrangement that can facilitate collaboration between agencies. The
+types of mechanisms listed in GAO-12-1022 are examples of frequently used collaborative
+mechanisms. GAO, Managing for Results: Key Considerations for Implementing
+Interagency Collaborative Mechanisms, GAO-12-1022 (Washington, D.C.: Sept. 27,
+2012).
+72GAO-12-1022.
+Page 37 GAO-22-105834 Artificial Intelligence
+FIELD_DEFINITIONS:
+{"coding_dimensions_allowed_values": ["integration_level", "application_maturity", "human_machine_authority", "engineering_resource_conditions", "trust_governance_constraints", "organizational_system_fit"], "exact_fields": ["source_id", "source_locator", "excerpt_original", "excerpt_zh", "normalized_claim", "coding_dimensions", "evidence_nature", "topics"], "excerpt_original_rule": "逐字复制输入文本；不得静默纠正OCR或版式错误", "field_types": {"coding_dimensions": "array of zero or more exact dimension key strings", "evidence_nature": "string", "excerpt_original": "string", "excerpt_zh": "string", "normalized_claim": "string", "source_id": "string", "source_locator": "string", "topics": "array of strings"}, "normalized_claim_language": "zh-CN"}
+{"application_maturity": "应用成熟度：概念战略、研发、试验、试点、采购部署或持续运用。", "engineering_resource_conditions": "工程与资源条件：数据、算力、模型、接口、供应链、预算、人才和保障。", "human_machine_authority": "人机权限关系：辅助决策、人在回路中、受监督自主或更高程度自主；普通系统协同、信息传输、培训或文档要求本身不足以支持此维度。", "integration_level": "能力集成层级：单工具、单任务、单平台、跨平台、跨任务或体系级集成。", "organizational_system_fit": "组织与体系适配：指挥流程、任务编组、跨平台协同、人员负荷和组织变革。", "trust_governance_constraints": "可信与治理约束：安全、可靠性、测试评价、授权边界、责任与伦理。"}
+{"constraint": "限制、风险、障碍、依赖或边界条件。", "deployment_event": "部署、实装、现场运用或正式采用已经发生。", "evaluation": "评价、审查、验证或评估结论。", "goal": "战略目标、愿景或计划方向；不能写成已实现结果。", "resource_input": "投入、资源、预算、数据、人才或基础设施条件。", "test_event": "测试或演习发生、参与主体或配置；不表示功能结果或作战效能。", "test_result": "测试中观察到的功能、性能或结果；必须由摘录直接说明。"}
+JSON_REPAIR: Return one strict JSON array with exactly the eight output fields and no Markdown, commentary, metadata, or source-attribution prefix.

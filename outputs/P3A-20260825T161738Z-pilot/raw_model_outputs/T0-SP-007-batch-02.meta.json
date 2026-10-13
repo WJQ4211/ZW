@@ -1,0 +1,25 @@
+{
+  "transport": "codex_agent_file_bridge",
+  "prompt_path": "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P3A-20260825T161738Z-pilot\\prompt_packets\\T0-SP-007-batch-02.txt",
+  "response_path": "D:\\MasterDegree\\CETC\\研二\\智能化+科技情报研究\\代码实现\\outputs\\P3A-20260825T161738Z-pilot\\raw_model_outputs\\T0-SP-007-batch-02.json",
+  "prompt_sha256": "63efd3e0b2856e2b3dad03c103669ad7cebd74290236efd798456ca5285ce446",
+  "response_sha256": "9d309f2634e8aecc4da8233a1409ac8b6633759bbcdfb0610e7e0757510b0b4e",
+  "candidate_count": 1,
+  "provider_call_count": null,
+  "token_count": null,
+  "temperature": null,
+  "cost": null,
+  "provider_metrics_status": "not_observable",
+  "batch_id": "T0-SP-007-batch-02",
+  "schema_validation": "passed",
+  "raw_response_fields": [
+    "coding_dimensions",
+    "evidence_nature",
+    "excerpt_original",
+    "excerpt_zh",
+    "normalized_claim",
+    "source_id",
+    "source_locator",
+    "topics"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "```json\n[\n  {\n    \"source_id\": \"T1-DAF-001\",\n    \"source_locator\": \"web_paragraph_0004\",\n    \"excerpt_original\": \"The Office of the Chief Data and Artificial Intelligence Officer for the Department of the Air Force announced, April 20, the public release of the DAF Data and AI Strategies.\",\n    \"excerpt_zh\": \"空军部首席数据和人工智能官办公室于4月20日宣布公开发布《空军部数据和人工智能战略》。\",\n    \"normalized_claim\": \"空军部首席数据和人工智能官办公室于2026年4月20日宣布公开发布《空军部数据和人工智能战略》。\",\n    \"evidence_nature\": \"governance_event\",\n    \"coding_dimensions\": [\"organizational_system_fit\"],\n    \"topics\": [\"战略发布\", \"治理机制\"]\n  },\n  {\n    \"source_id\": \"T1-DAF-001\",\n    \"source_locator\": \"web_paragraph_0005\",\n    \"excerpt_original\": \"These strategies provide a strategic roadmap for the department to become an AI-first force, operationalizing data and AI as decisive force multipliers and strategic assets to maintain air and space dominance from the boardroom to the battlefield.\",\n    \"excerpt_zh\": \"这些战略为空军部成为一支AI优先部队提供了战略路线图，将数据和AI作为决定性力量倍增器和战略资产加以运用，以维持从会议室到战场的空中和太空优势。\",\n    \"normalized_claim\": \"《空军部数据和人工智能战略》为空军部成为AI优先部队提供了战略路线图。\",\n    \"evidence_nature\": \"goal\",\n    \"coding_dimensions\": [\"application_maturity\", \"organizational_system_fit\"],\n    \"topics\": [\"战略目标\", \"AI优先部队\"]\n  },\n  {\n    \"source_id\": \"T1-DAF-001\",\n    \"source_locator\": \"web_paragraph_0005\",\n    \"excerpt_original\": \"These strategies are directly aligned with the 2026 National Defense Strategy and the 2026 AI Strategy for the Department of War, specifically supporting the Secretary of War’s priorities of reviving the warrior ethos and reestablishing deterrence through technological superiority.\",\n    \"excerpt_zh\": \"这些战略与2026年《国防战略》和2026年《战争部AI战略》直接保持一致，具体支持战争部长的优先事项，即重振战士精神并通过技术优势重建威慑。\",\n    \"normalized_claim\": \"《空军部数据和人工智能战略》与2026年《国防战略》和2026年《战争部AI战略》保持一致。\",\n    \"evidence_nature\": \"goal\",\n    \"coding_dimensions\": [\"organizational_system_fit\"],\n    \"topics\": [\"战略对齐\", \"国防战略\"]\n  },\n  {\n    \"source_id\": \"T1-DAF-001\",\n    \"source_locator\": \"web_paragraph_0005\",\n    \"excerpt_original\": \"The guiding documents establish AI priorities across several different mission areas, ranging from training and readiness to multi-domain operations.\",\n    \"excerpt_zh\": \"这些指导文件在多个不同任务领域确立了AI优先事项，范围从训练和战备到多域作战。\",\n    \"normalized_claim\": \"《空军部数据和人工智能战略》在训练、战备和多域作战等多个任务领域确立了AI优先事项。\",\n    \"evidence_nature\": \"goal\",\n    \"coding_dimensions\": [\"organizational_system_fit\"],\n    \"topics\": [\"任务领域\", \"AI优先事项\"]\n  },\n  {\n    \"source_id\": \"T1-DAF-001\",\n    \"source_locator\": \"web_paragraph_0005\",\n    \"excerpt_original\": \"Recognizing that data is the ammunition of modern warfare, the strategies emphasize treating data as a strategic asset and by adopting a decentralized data architecture, the DAF provides warfighters with trusted data at the speed of mission.\",\n    \"excerpt_zh\": \"认识到数据是现代战争的弹药，这些战略强调将数据视为战略资产，并通过采用去中心化数据架构，空军部以任务速度向作战人员提供可信数据。\",\n    \"normalized_claim\": \"《空军部数据和人工智能战略》强调将数据视为战略资产，并采用去中心化数据架构。\",\n    \"evidence_nature\": \"goal\",\n    \"coding_dimensions\": [\"engineering_resource_conditions\"],\n    \"topics\": [\"数据战略\", \"去中心化架构\"]\n  },\n  {\n    \"source_id\": \"T1-DAF-001\",\n    \"source_locator\": \"web_paragraph_0005\",\n    \"excerpt_original\": \"The implementation of these strategies directly advances the CDAO’s FY2026 goal to institutionalize data and AI as core mission components.\",\n    \"excerpt_zh\": \"这些战略的实施直接推进了首席数据和AI办公室2026财年的目标，即将数据和AI制度化为核心任务组成部分。\",\n    \"normalized_claim\": \"《空军部数据和人工智能战略》的实施推进了首席数据和AI办公室2026财年将数据和AI制度化为核心任务组成部分的目标。\",\n    \"evidence_nature\": \"goal\",\n    \"coding_dimensions\": [\"organizational_system_fit\"],\n    \"topics\": [\"制度化\", \"2026财年目标\"]\n  }\n]\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1787812073,
+  "id": "chatcmpl-cc3f1934-0bcc-4d5f-87aa-d37f1387e7c5",
+  "model": "deepseek-v4-flash-0731",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 1126,
+    "prompt_tokens": 1049,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2175
+  }
+}

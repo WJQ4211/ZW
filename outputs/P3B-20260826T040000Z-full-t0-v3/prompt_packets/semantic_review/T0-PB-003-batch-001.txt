@@ -1,0 +1,81 @@
+PROMPT_ID: same_model_separate_call_semantic_screening
+VERSION: 1.0
+BATCH_ID: T0-PB-003-batch-001
+TASK: In a separate model call, screen whether each candidate claim and evidence nature are directly supported by its own excerpt, and review every declared coding dimension separately.
+INPUT LIMIT: Use only the candidate fields below. Do not use source metadata, other candidates, prior runs, or outside knowledge.
+OUTPUT: strict JSON array. Each item must contain exactly candidate_index, status, reason, claim_supported, nature_supported, dimension_reviews.
+dimension_reviews must contain one object for every declared dimension, each with exactly dimension, supported, supporting_span, reason. Do not rewrite the candidate.
+status must be pass, revise, or reject. Reject claims that add a subject, action, number, scope, or result absent from the excerpt, or that are only glossary/general definitions unrelated to the research question.
+A test/exercise occurrence is test_event, not test_result unless the excerpt explicitly reports an observed function, performance, or result. Do not treat ordinary coordination as human_machine_authority; information delivered to watchstanders can support an auxiliary relationship; training or documentation alone does not establish authority allocation.
+CODING_DIMENSION_DEFINITIONS: {"application_maturity": "应用成熟度：概念战略、研发、试验、试点、采购部署或持续运用。", "engineering_resource_conditions": "工程与资源条件：数据、算力、模型、接口、供应链、预算、人才和保障。", "human_machine_authority": "人机权限关系：辅助决策、人在回路中、受监督自主或更高程度自主；普通系统协同、信息传输、培训或文档要求本身不足以支持此维度。", "integration_level": "能力集成层级：单工具、单任务、单平台、跨平台、跨任务或体系级集成。", "organizational_system_fit": "组织与体系适配：指挥流程、任务编组、跨平台协同、人员负荷和组织变革。", "trust_governance_constraints": "可信与治理约束：安全、可靠性、测试评价、授权边界、责任与伦理。"}
+[
+  {
+    "candidate_index": 0,
+    "normalized_claim": "REMA项目旨在使无人机在失去与操作员连接时自主继续其预定义任务。",
+    "evidence_nature": "goal",
+    "topics": [
+      "REMA项目",
+      "无人机自主",
+      "任务自主"
+    ],
+    "source_locator": "web_paragraph_0009",
+    "source_id": "T0-PB-003",
+    "excerpt_zh": "DARPA的快速实验任务化自主（REMA）项目旨在使无人机在失去与操作员连接时自主继续其预定义任务。",
+    "coding_dimensions": [
+      "human_machine_authority"
+    ],
+    "excerpt_original": "DARPA’s Rapid Experimental Missionized Autonomy (REMA) program aims to enable a drone to autonomously continue its predefined mission when connection to the operator is lost."
+  },
+  {
+    "candidate_index": 1,
+    "normalized_claim": "REMA项目专注于创建自主解决方案，以最大化现役商用和小型军用无人机在战场上的效能。",
+    "evidence_nature": "goal",
+    "topics": [
+      "REMA项目",
+      "自主解决方案",
+      "无人机效能"
+    ],
+    "source_locator": "web_paragraph_0012",
+    "source_id": "T0-PB-003",
+    "excerpt_zh": "REMA专注于创建自主解决方案，以最大化现役商用和小型军用无人机在战场上的效能。",
+    "coding_dimensions": [
+      "application_maturity"
+    ],
+    "excerpt_original": "REMA is focused on creating autonomous solutions to maximize effectiveness of stock commercial and small military drones on the battlefield"
+  },
+  {
+    "candidate_index": 2,
+    "normalized_claim": "REMA项目为期18个月，分为无人机自主适配器接口和任务特定自主软件两个技术领域。",
+    "evidence_nature": "goal",
+    "topics": [
+      "REMA项目",
+      "技术领域",
+      "自主适配器",
+      "自主软件"
+    ],
+    "source_locator": "web_paragraph_0013",
+    "source_id": "T0-PB-003",
+    "excerpt_zh": "这个为期18个月的单阶段项目分为两个技术领域：1）无人机自主适配器接口和2）任务特定自主软件。",
+    "coding_dimensions": [
+      "engineering_resource_conditions"
+    ],
+    "excerpt_original": "The 18-month, single-phase program is divided into two technical areas: 1) A drone-autonomy adapter interface and 2) mission-specific autonomy software."
+  },
+  {
+    "candidate_index": 3,
+    "normalized_claim": "REMA项目已将无人机自主适配器接口合同授予Anduril和RTX，将任务特定自主软件合同授予Leidos、Northrop Grumman和SoarTech。",
+    "evidence_nature": "deployment_event",
+    "topics": [
+      "REMA项目",
+      "合同授予",
+      "承包商"
+    ],
+    "source_locator": "web_paragraph_0014",
+    "source_id": "T0-PB-003",
+    "excerpt_zh": "无人机自主适配器接口技术领域的合同已授予Anduril和RTX。任务特定自主软件技术领域的合同已授予Leidos、Northrop Grumman和SoarTech。",
+    "coding_dimensions": [
+      "engineering_resource_conditions"
+    ],
+    "excerpt_original": "Contracts for the drone-autonomy adapter interface technical area have been awarded to Anduril and RTX. Contracts for the mission-specific autonomy software technical area have been awarded to Leidos, Northrop Grumman, and SoarTech."
+  }
+]

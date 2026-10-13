@@ -1,0 +1,5 @@
+{"merge_action": "retain", "merge_reason": "该候选独立描述了从分散采用向体系化整合演进的总体方向，与其他候选在核心判断上存在差异，保留以体现战略治理维度的独特视角。", "proposed_hypothesis_id": "G2-H01", "source_candidate_ids": ["GEN-A-H01"]}
+{"merge_action": "merge", "merge_reason": "GEN-A-H02、GEN-B-H01和GEN-C-H01均强调从实验室向有限实战部署过渡的核心判断，且都以DARPA演示项目和AIDP部署为主要证据，语义高度重叠，合并为一个候选以消除重复。", "proposed_hypothesis_id": "G2-H02", "source_candidate_ids": ["GEN-A-H02", "GEN-B-H01", "GEN-C-H01"]}
+{"merge_action": "retain", "merge_reason": "该候选强调任务驱动和分散验证的具体路径，与G2-H01的体系化整合方向形成竞争性判断，且证据基础不同，保留以体现路径差异。", "proposed_hypothesis_id": "G2-H03", "source_candidate_ids": ["GEN-B-H02"]}
+{"merge_action": "merge", "merge_reason": "GEN-B-H03和GEN-C-H02均以资源条件（数据、算力、基础设施）为核心制约因素，且都引用JCF延迟和机载AI性能限制作为主要证据，语义高度一致，合并为一个候选。", "proposed_hypothesis_id": "G2-H04", "source_candidate_ids": ["GEN-B-H03", "GEN-C-H02"]}
+{"merge_action": "retain", "merge_reason": "该候选聚焦战略目标与实施进展的落差，强调治理层面的缺失，与G2-H01的演进方向判断和G2-H03的分散路径判断均不同，保留以体现治理维度的独立视角。", "proposed_hypothesis_id": "G2-H05", "source_candidate_ids": ["GEN-C-H03"]}

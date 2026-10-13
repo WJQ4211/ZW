@@ -1,0 +1,9 @@
+{
+  "run_id": "P3A-20260825T161738Z-pilot",
+  "generation_mode": "deterministic_hardcoded_fixture",
+  "real_model_extraction_executed": false,
+  "validation_scope": "structural_and_quote_presence_only",
+  "result_not_eligible_for_g1": true,
+  "audit_reason": "This historical pilot used candidate payloads embedded in its runner and is retained as a fixture-test artifact only. It must not be treated as model-generated evidence or reused as P3a-R input.",
+  "superseded_by": "P3a-R workflow with independent prepare, execute-model, and validate steps"
+}

@@ -1,0 +1,944 @@
+你是perspective_differentiation_auditor。仅审查下面6条P15R候选修订和它们引用的T1正式Evidence。不得读取网络、T0之外的材料或补充常识。
+审计必须具体指出Evidence ID、性质、时间范围、外推边界和字段问题。六条排除Evidence和两条historical_context不得作为T1变化信号。检查‘未观察到’与‘不存在’的区别，检查官方目标/评价/test_event是否被写成部署结果，检查局部案例是否被外推为全军成熟度。
+返回且只返回：{"status":"pass|fail","failures":[{"viewpoint_id":"...","reason":"..."}],"global_reason":"..."}。不要输出Markdown围栏。
+
+候选修订：
+[
+  {
+    "viewpoint_id": "VP-T0-OPS-H02",
+    "perspective_id": "OPS",
+    "hypothesis_id": "HYP-T0-02",
+    "judgment": "T1证据进一步显示具体任务试验、竞赛和局部使用仍是可观察的能力形成形态；这些信号支持任务分布牵引，但不能外推为全军规模化部署。",
+    "confidence": "high",
+    "supporting_evidence": [
+      {
+        "evidence_id": "CE-T1-AA937CC0AF5E2372",
+        "version": 1,
+        "target_field": "judgment",
+        "relation": "support",
+        "importance": "medium"
+      },
+      {
+        "evidence_id": "CE-T1-43B8C6F6E7B77F40",
+        "version": 1,
+        "target_field": "judgment",
+        "relation": "support",
+        "importance": "medium"
+      }
+    ],
+    "counter_evidence": [
+      {
+        "evidence_id": "CE-T1-6B02747FAF17B29F",
+        "version": 1,
+        "target_field": "boundary_conditions[0]",
+        "relation": "limit",
+        "importance": "medium"
+      },
+      {
+        "evidence_id": "CE-T1-95F7FE29CF48D86D",
+        "version": 1,
+        "target_field": "boundary_conditions[0]",
+        "relation": "limit",
+        "importance": "medium"
+      }
+    ],
+    "affected_fields": [
+      "judgment",
+      "boundary_conditions[0]",
+      "mechanism_claims[0]"
+    ],
+    "evidence_field_changes": [
+      {
+        "target_field": "judgment",
+        "before": "T1证据进一步显示具体任务试验、竞赛和局部使用仍是可观察的能力形成形态；这些信号支持任务分布牵引，但不能外推为全军规模化部署。",
+        "after": "T1证据进一步显示具体任务试验、竞赛和局部使用仍是可观察的能力形成形态；这些信号支持任务分布牵引，但不能外推为全军规模化部署。新增的局部使用证据（卢克基地、北极桥演习）和DARPA竞赛结果进一步强化了任务驱动模式的观察，但均未显示跨军种通用部署。",
+        "new_evidence_ids": [
+          "CE-T1-AA937CC0AF5E2372",
+          "CE-T1-43B8C6F6E7B77F40",
+          "CE-T1-6B02747FAF17B29F",
+          "CE-T1-95F7FE29CF48D86D"
+        ],
+        "change_reason": "T1证据补充了局部使用和竞赛结果，进一步支持任务驱动模式，但未改变总体判断。"
+      },
+      {
+        "target_field": "boundary_conditions[0]",
+        "before": "若后续进展继续集中于军种或任务专属项目，则本假设增强。",
+        "after": "若后续进展继续集中于军种或任务专属项目，则本假设增强。T1证据中的局部使用（卢克基地、北极桥演习）和DARPA竞赛结果均属于任务专属项目，进一步支持该边界条件。",
+        "new_evidence_ids": [
+          "CE-T1-AA937CC0AF5E2372",
+          "CE-T1-6B02747FAF17B29F",
+          "CE-T1-95F7FE29CF48D86D"
+        ],
+        "change_reason": "T1证据中的局部使用和竞赛结果均属于任务专属项目，强化了该边界条件的适用性。"
+      },
+      {
+        "target_field": "mechanism_claims[0]",
+        "before": "RACER、REMA等DARPA项目通过技术演示和试验验证，在特定任务领域（越野自主、无人机任务自主）形成能力，但未进入规模化采办。",
+        "after": "RACER、REMA等DARPA项目通过技术演示和试验验证，在特定任务领域（越野自主、无人机任务自主）形成能力，但未进入规模化采办。T1证据补充了DARPA Triage Challenge竞赛结果和局部演习使用，进一步表明任务驱动的局部应用正在发生，但均未显示跨军种通用部署。",
+        "new_evidence_ids": [
+          "CE-T1-43B8C6F6E7B77F40",
+          "CE-T1-6B02747FAF17B29F",
+          "CE-T1-BB675BA36EB74B19"
+        ],
+        "change_reason": "T1证据补充了DARPA竞赛和局部演习使用，进一步支持任务驱动的局部应用观察。"
+      }
+    ],
+    "mechanism_claims": [
+      "卢克空军基地的AI工作队及其日常任务使用（邮件起草、信息摘要、数据分析）表明任务驱动的局部应用正在发生，但该使用局限于单一基地的日常行政任务，未显示跨军种通用部署（证据：CE-T1-AA937CC0AF5E2372、CE-T1-DCF49FC6CBC68958）。",
+      "DARPA Triage Challenge的竞赛结果展示了特定任务领域（创伤分诊）的技术能力，但竞赛环境中的表现不能直接等同于作战环境中的规模化部署（证据：CE-T1-43B8C6F6E7B77F40、CE-T1-C20674F2CA89D5C5）。",
+      "第732空中机动中队在北极桥演习中使用GenAI平台进行演习定制，表明部门级AI平台在局部演习场景中的应用，但该使用属于概念验证性质，未证明作战效能或跨单位推广（证据：CE-T1-6B02747FAF17B29F、CE-T1-BB675BA36EB74B19）。"
+    ]
+  },
+  {
+    "viewpoint_id": "VP-T0-STRAT-H01",
+    "perspective_id": "STRAT",
+    "hypothesis_id": "HYP-T0-01",
+    "judgment": "T1证据继续支持治理与整合目标存在，但新增材料主要是战略目标、局部运用和测试约束，尚不足以证明跨军种共用底座已经形成。",
+    "confidence": "medium",
+    "supporting_evidence": [
+      {
+        "evidence_id": "CE-T1-02DFF1DCD73E8F93",
+        "version": 1,
+        "target_field": "judgment",
+        "relation": "support",
+        "importance": "medium"
+      },
+      {
+        "evidence_id": "CE-T1-050BC7E34C88F297",
+        "version": 1,
+        "target_field": "judgment",
+        "relation": "support",
+        "importance": "medium"
+      },
+      {
+        "evidence_id": "CE-T1-2995ED3DEF557C50",
+        "version": 1,
+        "target_field": "judgment",
+        "relation": "support",
+        "importance": "medium"
+      },
+      {
+        "evidence_id": "CE-T1-B5C396D3278023D1",
+        "version": 1,
+        "target_field": "judgment",
+        "relation": "support",
+        "importance": "medium"
+      },
+      {
+        "evidence_id": "CE-T1-CEACB21D2A3F685C",
+        "version": 1,
+        "target_field": "judgment",
+        "relation": "support",
+        "importance": "medium"
+      },
+      {
+        "evidence_id": "CE-T1-A66D49255D61B484",
+        "version": 1,
+        "target_field": "judgment",
+        "relation": "support",
+        "importance": "medium"
+      }
+    ],
+    "counter_evidence": [
+      {
+        "evidence_id": "CE-T1-DCF49FC6CBC68958",
+        "version": 1,
+        "target_field": "boundary_conditions[0]",
+        "relation": "limit",
+        "importance": "low"
+      },
+      {
+        "evidence_id": "CE-T1-AA937CC0AF5E2372",
+        "version": 1,
+        "target_field": "boundary_conditions[0]",
+        "relation": "limit",
+        "importance": "low"
+      },
+      {
+        "evidence_id": "CE-T1-B40332E796F16865",
+        "version": 1,
+        "target_field": "boundary_conditions[0]",
+        "relation": "limit",
+        "importance": "low"
+      },
+      {
+        "evidence_id": "CE-T1-7239909FC989F79A",
+        "version": 1,
+        "target_field": "boundary_conditions[0]",
+        "relation": "limit",
+        "importance": "low"
+      }
+    ],
+    "affected_fields": [
+      "judgment",
+      "boundary_conditions[0]"
+    ],
+    "evidence_field_changes": [
+      {
+        "target_field": "judgment",
+        "before": "T1证据继续支持治理与整合目标存在，但新增材料主要是战略目标、局部运用和测试约束，尚不足以证明跨军种共用底座已经形成。",
+        "after": "T1证据继续支持治理与整合目标存在，但新增材料主要是战略目标、局部运用和测试约束，尚不足以证明跨军种共用底座已经形成。",
+        "new_evidence_ids": [
+          "CE-T1-02DFF1DCD73E8F93",
+          "CE-T1-050BC7E34C88F297",
+          "CE-T1-2995ED3DEF557C50",
+          "CE-T1-B5C396D3278023D1",
+          "CE-T1-CEACB21D2A3F685C",
+          "CE-T1-A66D49255D61B484"
+        ],
+        "change_reason": "T1新增的部门战略目标证据进一步确认治理目标存在，但未改变判断核心，仅强化了目标层面的支持。"
+      },
+      {
+        "target_field": "boundary_conditions[0]",
+        "before": "该判断适用于2022-2024年间的战略规划与组织建设阶段，仅评估治理架构的规划与建设状态，不评估具体任务项目的技术成熟度，也不将治理目标的设定视为治理结果的实现。",
+        "after": "该判断适用于2022-2026年6月间的战略规划与组织建设阶段，仅评估治理架构的规划与建设状态，不评估具体任务项目的技术成熟度，也不将治理目标的设定视为治理结果的实现。T1新增的部门战略目标、局部单位应用和测试约束仅用于限定判断范围，不构成跨军种共用底座已形成的证据。",
+        "new_evidence_ids": [
+          "CE-T1-DCF49FC6CBC68958",
+          "CE-T1-AA937CC0AF5E2372",
+          "CE-T1-B40332E796F16865",
+          "CE-T1-7239909FC989F79A"
+        ],
+        "change_reason": "T1新增的局部单位应用证据显示层级差异，用于限定体系整合外推边界，时间范围扩展至2026年6月。"
+      }
+    ],
+    "mechanism_claims": [
+      "CDAO作为继任机构，通过发布战略文件和建立平台来推动统一治理，但该机制受制于资源约束和合同问题，尚未形成对任务项目的有效牵引。治理目标的设定与治理结果的实现之间存在明确落差。"
+    ]
+  },
+  {
+    "viewpoint_id": "VP-T0-STRAT-H02",
+    "perspective_id": "STRAT",
+    "hypothesis_id": "HYP-T0-02",
+    "judgment": "T1证据显示，截至2026年6月30日，美国空军部发布的数据与AI战略及AI人才计划仍处于目标设定与制度规划层面，未提供跨军种统一平台或统一工程流程已实际部署的证据。这些战略目标覆盖多个任务领域并强调制度化，但其性质仍是目标，不能替代任务项目的实际转化证据。因此，任务分布牵引仍是可观察的能力形成形态，部门级治理整合意图尚未被证据表明已对项目方向产生实质性改变。",
+    "confidence": "medium",
+    "supporting_evidence": [
+      {
+        "evidence_id": "CE-T1-02DFF1DCD73E8F93",
+        "version": 1,
+        "target_field": "judgment",
+        "relation": "support",
+        "importance": "high"
+      },
+      {
+        "evidence_id": "CE-T1-050BC7E34C88F297",
+        "version": 1,
+        "target_field": "judgment",
+        "relation": "support",
+        "importance": "high"
+      },
+      {
+        "evidence_id": "CE-T1-2995ED3DEF557C50",
+        "version": 1,
+        "target_field": "judgment",
+        "relation": "support",
+        "importance": "high"
+      },
+      {
+        "evidence_id": "CE-T1-B5C396D3278023D1",
+        "version": 1,
+        "target_field": "judgment",
+        "relation": "support",
+        "importance": "medium"
+      },
+      {
+        "evidence_id": "CE-T1-CEACB21D2A3F685C",
+        "version": 1,
+        "target_field": "judgment",
+        "relation": "support",
+        "importance": "medium"
+      },
+      {
+        "evidence_id": "CE-T1-A66D49255D61B484",
+        "version": 1,
+        "target_field": "judgment",
+        "relation": "support",
+        "importance": "medium"
+      }
+    ],
+    "counter_evidence": [
+      {
+        "evidence_id": "CE-T1-02DFF1DCD73E8F93",
+        "version": 1,
+        "target_field": "boundary_conditions[0]",
+        "relation": "limit",
+        "importance": "medium"
+      },
+      {
+        "evidence_id": "CE-T1-050BC7E34C88F297",
+        "version": 1,
+        "target_field": "boundary_conditions[0]",
+        "relation": "limit",
+        "importance": "medium"
+      },
+      {
+        "evidence_id": "CE-T1-2995ED3DEF557C50",
+        "version": 1,
+        "target_field": "boundary_conditions[0]",
+        "relation": "limit",
+        "importance": "medium"
+      },
+      {
+        "evidence_id": "CE-T1-B5C396D3278023D1",
+        "version": 1,
+        "target_field": "boundary_conditions[0]",
+        "relation": "limit",
+        "importance": "medium"
+      },
+      {
+        "evidence_id": "CE-T1-CEACB21D2A3F685C",
+        "version": 1,
+        "target_field": "boundary_conditions[0]",
+        "relation": "limit",
+        "importance": "medium"
+      },
+      {
+        "evidence_id": "CE-T1-A66D49255D61B484",
+        "version": 1,
+        "target_field": "boundary_conditions[0]",
+        "relation": "limit",
+        "importance": "medium"
+      }
+    ],
+    "affected_fields": [
+      "judgment",
+      "boundary_conditions[0]"
+    ],
+    "evidence_field_changes": [
+      {
+        "target_field": "judgment",
+        "before": "T1证据进一步显示具体任务试验、竞赛和局部使用仍是可观察的能力形成形态；这些信号支持任务分布牵引，但不能外推为全军规模化部署。",
+        "after": "T1证据显示，截至2026年6月30日，美国空军部发布的数据与AI战略及AI人才计划仍处于目标设定与制度规划层面，未提供跨军种统一平台或统一工程流程已实际部署的证据。这些战略目标覆盖多个任务领域并强调制度化，但其性质仍是目标，不能替代任务项目的实际转化证据。因此，任务分布牵引仍是可观察的能力形成形态，部门级治理整合意图尚未被证据表明已对项目方向产生实质性改变。",
+        "new_evidence_ids": [
+          "CE-T1-02DFF1DCD73E8F93",
+          "CE-T1-050BC7E34C88F297",
+          "CE-T1-2995ED3DEF557C50",
+          "CE-T1-B5C396D3278023D1",
+          "CE-T1-CEACB21D2A3F685C",
+          "CE-T1-A66D49255D61B484"
+        ],
+        "change_reason": "T1证据补充了空军部2026年战略与人才计划，其性质为目标设定与制度规划，进一步支持任务分布牵引判断，同时强化了战略目标未转化为实际部署的边界。"
+      },
+      {
+        "target_field": "boundary_conditions[0]",
+        "before": "该判断适用于2022-2024年间的项目执行层面，仅评估现有证据所能支持的程度，不评估战略规划文件的长期影响，也不排除SP-008目标已产生部分影响但未被现有证据捕捉的可能性。",
+        "after": "该判断适用于2022-2026年6月30日间的项目执行层面，仅评估现有证据所能支持的程度，不评估战略规划文件的长期影响，也不排除SP-008目标已产生部分影响但未被现有证据捕捉的可能性。T1来源的任务、机构和公开披露范围被明确保留，不将空军部战略目标或人才计划外推为全军成熟度。",
+        "new_evidence_ids": [
+          "CE-T1-02DFF1DCD73E8F93",
+          "CE-T1-050BC7E34C88F297",
+          "CE-T1-2995ED3DEF557C50",
+          "CE-T1-B5C396D3278023D1",
+          "CE-T1-CEACB21D2A3F685C",
+          "CE-T1-A66D49255D61B484"
+        ],
+        "change_reason": "T1证据将时间边界从2024年扩展至2026年6月30日，并明确保留T1来源的任务、机构和公开披露范围，防止将战略目标外推为全军成熟度。"
+      }
+    ],
+    "mechanism_claims": [
+      "各军种和DARPA根据各自任务需求独立推进AI项目，通过试验和局部部署逐步扩展能力。部门级治理和共用平台的整合意图已通过SP-008等文件明确表达，但缺乏证据表明这些意图已对项目方向产生实质性改变。T1证据进一步显示，空军部2026年发布的数据与AI战略及人才计划仍处于目标设定与制度规划层面，未提供跨军种统一平台或统一工程流程已实际部署的证据。"
+    ]
+  },
+  {
+    "viewpoint_id": "VP-T0-TECH-H02",
+    "perspective_id": "TECH",
+    "hypothesis_id": "HYP-T0-02",
+    "judgment": "T1证据进一步显示DARPA分诊挑战赛等具体任务竞赛和测试活动仍是可观察的能力形成形态；这些信号支持任务分布牵引，但不能外推为全军规模化部署。",
+    "confidence": "medium",
+    "supporting_evidence": [
+      {
+        "evidence_id": "CE-T1-F2BE64F4810C89EF",
+        "version": 1,
+        "target_field": "judgment",
+        "relation": "support",
+        "importance": "high"
+      },
+      {
+        "evidence_id": "CE-T1-C20674F2CA89D5C5",
+        "version": 1,
+        "target_field": "judgment",
+        "relation": "support",
+        "importance": "high"
+      },
+      {
+        "evidence_id": "CE-T1-43B8C6F6E7B77F40",
+        "version": 1,
+        "target_field": "judgment",
+        "relation": "support",
+        "importance": "high"
+      },
+      {
+        "evidence_id": "CE-T1-12F70AE60CD787AA",
+        "version": 1,
+        "target_field": "judgment",
+        "relation": "support",
+        "importance": "medium"
+      },
+      {
+        "evidence_id": "CE-T1-45417DAD097210B1",
+        "version": 1,
+        "target_field": "judgment",
+        "relation": "support",
+        "importance": "medium"
+      }
+    ],
+    "counter_evidence": [
+      {
+        "evidence_id": "CE-T1-F2BE64F4810C89EF",
+        "version": 1,
+        "target_field": "boundary_conditions[0]",
+        "relation": "limit",
+        "importance": "medium"
+      },
+      {
+        "evidence_id": "CE-T1-C20674F2CA89D5C5",
+        "version": 1,
+        "target_field": "boundary_conditions[0]",
+        "relation": "limit",
+        "importance": "medium"
+      },
+      {
+        "evidence_id": "CE-T1-43B8C6F6E7B77F40",
+        "version": 1,
+        "target_field": "boundary_conditions[0]",
+        "relation": "limit",
+        "importance": "medium"
+      },
+      {
+        "evidence_id": "CE-T1-12F70AE60CD787AA",
+        "version": 1,
+        "target_field": "boundary_conditions[0]",
+        "relation": "limit",
+        "importance": "medium"
+      },
+      {
+        "evidence_id": "CE-T1-45417DAD097210B1",
+        "version": 1,
+        "target_field": "boundary_conditions[0]",
+        "relation": "limit",
+        "importance": "medium"
+      }
+    ],
+    "affected_fields": [
+      "judgment",
+      "boundary_conditions[0]"
+    ],
+    "evidence_field_changes": [
+      {
+        "target_field": "judgment",
+        "before": "T1证据进一步显示具体任务试验、竞赛和局部使用仍是可观察的能力形成形态；这些信号支持任务分布牵引，但不能外推为全军规模化部署。",
+        "after": "T1证据进一步显示DARPA分诊挑战赛等具体任务竞赛和测试活动仍是可观察的能力形成形态；这些信号支持任务分布牵引，但不能外推为全军规模化部署。",
+        "new_evidence_ids": [
+          "CE-T1-F2BE64F4810C89EF",
+          "CE-T1-C20674F2CA89D5C5",
+          "CE-T1-43B8C6F6E7B77F40",
+          "CE-T1-12F70AE60CD787AA",
+          "CE-T1-45417DAD097210B1"
+        ],
+        "change_reason": "T1证据具体化了任务竞赛和测试活动的实例（DARPA分诊挑战赛），强化了任务分布牵引的判断，同时明确其竞赛测试性质，不构成规模化部署证据。"
+      },
+      {
+        "target_field": "boundary_conditions[0]",
+        "before": "若出现跨军种复用的统一平台、统一模型或统一工程流程，则本假设被削弱。",
+        "after": "若出现跨军种复用的统一平台、统一模型或统一工程流程，则本假设被削弱；截至2026年6月30日，T1证据中的DARPA分诊挑战赛属于竞赛测试活动，未显示向全军部署转化。",
+        "new_evidence_ids": [
+          "CE-T1-F2BE64F4810C89EF",
+          "CE-T1-C20674F2CA89D5C5",
+          "CE-T1-43B8C6F6E7B77F40",
+          "CE-T1-12F70AE60CD787AA",
+          "CE-T1-45417DAD097210B1"
+        ],
+        "change_reason": "T1证据补充了具体竞赛测试活动的实例，进一步明确其未转化为全军部署，强化了边界条件的适用性。"
+      }
+    ],
+    "mechanism_claims": [
+      "ACE项目通过X-62A测试飞机实现了AI自主空战，该成果在公开信息中仅限于空战领域，未显示向其他任务领域迁移（证据）。",
+      "RACER项目在越野自主驾驶上取得进展，其技术栈和传感器配置针对特定地形任务，公开信息未体现跨军种通用性（证据）。",
+      "AIDP在陆军情报领域快速部署，作为首个在陆军情报云环境中部署的项目，其应用范围在公开信息中局限于特定军种和任务（证据）。",
+      "DARPA分诊挑战赛作为竞赛活动，展示了机器人平台在特定场景下的能力，但属于测试事件，不构成规模化采办或部署（证据）。",
+      "基于上述项目各自独立进展的公开记录，推断缺乏跨项目复用的统一技术平台或模型——此为观察性推断，受限于公开证据的可得性（推断）。"
+    ]
+  },
+  {
+    "viewpoint_id": "VP-T0-TECH-H03",
+    "perspective_id": "TECH",
+    "hypothesis_id": "HYP-T0-03",
+    "judgment": "T1证据进一步确认了作战化AI安全评估能力缺失、实验室到作战环境的转化边界以及数据规模约束，这些均指向技术成熟度仍受制于工程验证和资源条件；SABER等计划仍处于目标设定阶段，未构成已实现部署，因此本假设在技术成熟度视角下继续成立。",
+    "confidence": "medium",
+    "supporting_evidence": [
+      {
+        "evidence_id": "CE-T1-FE00C458FAADC5D8",
+        "version": 1,
+        "target_field": "judgment",
+        "relation": "support",
+        "importance": "high"
+      },
+      {
+        "evidence_id": "CE-T1-11BBC2ABED0945C2",
+        "version": 1,
+        "target_field": "judgment",
+        "relation": "support",
+        "importance": "high"
+      },
+      {
+        "evidence_id": "CE-T1-C4C1018771B30C5A",
+        "version": 1,
+        "target_field": "judgment",
+        "relation": "support",
+        "importance": "high"
+      },
+      {
+        "evidence_id": "CE-T1-FA2B6E620D8DDBD2",
+        "version": 1,
+        "target_field": "judgment",
+        "relation": "support",
+        "importance": "medium"
+      },
+      {
+        "evidence_id": "CE-T1-E2F907CF4DA00903",
+        "version": 1,
+        "target_field": "judgment",
+        "relation": "support",
+        "importance": "medium"
+      }
+    ],
+    "counter_evidence": [
+      {
+        "evidence_id": "CE-T1-95F7FE29CF48D86D",
+        "version": 1,
+        "target_field": "boundary_conditions[0]",
+        "relation": "limit",
+        "importance": "medium"
+      }
+    ],
+    "affected_fields": [
+      "judgment",
+      "boundary_conditions[0]"
+    ],
+    "evidence_field_changes": [
+      {
+        "target_field": "judgment",
+        "before": "T1证据补充了作战化评估能力、数据条件和工程约束，表明资源与可信治理瓶颈仍影响应用扩展；局部结果不足以消除这一条件性判断。",
+        "after": "T1证据进一步确认了作战化AI安全评估能力缺失、实验室到作战环境的转化边界以及数据规模约束，这些均指向技术成熟度仍受制于工程验证和资源条件；SABER等计划仍处于目标设定阶段，未构成已实现部署，因此本假设在技术成熟度视角下继续成立。",
+        "new_evidence_ids": [
+          "CE-T1-FE00C458FAADC5D8",
+          "CE-T1-11BBC2ABED0945C2",
+          "CE-T1-C4C1018771B30C5A",
+          "CE-T1-FA2B6E620D8DDBD2",
+          "CE-T1-E2F907CF4DA00903"
+        ],
+        "change_reason": "T1证据提供了关于作战化AI安全评估能力缺失、实验室到作战环境转化边界以及数据规模约束的直接信息，强化了技术成熟度受限的判断；同时SABER计划的目标属性被明确为未实现部署，避免过度外推。"
+      },
+      {
+        "target_field": "boundary_conditions[0]",
+        "before": "若数据、边缘算力和共用基础设施瓶颈持续存在，则本假设增强。",
+        "after": "若数据、边缘算力和共用基础设施瓶颈持续存在，则本假设增强；T1证据中关于作战医疗领域的数据规模（0.017GB）仅代表该特定领域，不能外推为全军AI数据条件的普遍状态。",
+        "new_evidence_ids": [
+          "CE-T1-95F7FE29CF48D86D"
+        ],
+        "change_reason": "T1证据提供了作战医疗领域的数据规模约束，该约束被限定为局部条件，不改变主判断，但明确了外推边界。"
+      }
+    ],
+    "mechanism_claims": [
+      "机载AI系统的主要限制因素是处理速度（依据EV-T0-AD4CCAC18E1BB26C，直接证据）。",
+      "处理速度限制可能影响实时决策能力——此为合理推断，但现有证据未直接量化该影响，需进一步验证（推断）。",
+      "缺乏基于经测试标准的组织化方法，导致数据质量难以满足AI需求（依据EV-T0-62B1ECDA7DF87F1A，直接证据）。",
+      "国防部尚未制定全部门范围的AI采办指导方针，导致各军种自行制定标准，缺乏统一协调（依据EV-T0-8E35B508DF5C2E65，直接证据）。",
+      "T1证据表明，对AI系统的攻击演示大多在实验室条件下进行，且缺乏对已部署AI战场系统进行作战漏洞评估的成熟能力和生态，这直接限制了技术成熟度的验证（依据CE-T1-FE00C458FAADC5D8、CE-T1-11BBC2ABED0945C2、CE-T1-C4C1018771B30C5A，直接证据）。",
+      "SABER计划的目标是建立示范性AI红队并执行高保真作战AI安全演习，但该计划仍处于目标设定阶段，未构成已实现部署，因此不能作为技术成熟度提升的证据（依据CE-T1-FA2B6E620D8DDBD2、CE-T1-E2F907CF4DA00903，直接证据）。"
+    ]
+  },
+  {
+    "viewpoint_id": "VP-T0-TRUST-H03",
+    "perspective_id": "TRUST",
+    "hypothesis_id": "HYP-T0-03",
+    "judgment": "T1证据进一步确认，截至2026年6月30日，可信治理与作战化评估能力的缺口仍是约束性边界，而非一般目标表述；SABER计划仍处于目标设定阶段，尚未形成已部署的成熟能力。",
+    "confidence": "medium",
+    "supporting_evidence": [
+      {
+        "evidence_id": "CE-T1-FE00C458FAADC5D8",
+        "version": 1,
+        "target_field": "judgment",
+        "relation": "support",
+        "importance": "high"
+      },
+      {
+        "evidence_id": "CE-T1-11BBC2ABED0945C2",
+        "version": 1,
+        "target_field": "judgment",
+        "relation": "support",
+        "importance": "high"
+      },
+      {
+        "evidence_id": "CE-T1-C4C1018771B30C5A",
+        "version": 1,
+        "target_field": "judgment",
+        "relation": "support",
+        "importance": "high"
+      },
+      {
+        "evidence_id": "CE-T1-FA2B6E620D8DDBD2",
+        "version": 1,
+        "target_field": "boundary_conditions[0]",
+        "relation": "support",
+        "importance": "medium"
+      },
+      {
+        "evidence_id": "CE-T1-E2F907CF4DA00903",
+        "version": 1,
+        "target_field": "boundary_conditions[0]",
+        "relation": "support",
+        "importance": "medium"
+      }
+    ],
+    "counter_evidence": [
+      {
+        "evidence_id": "CE-T1-02DFF1DCD73E8F93",
+        "version": 1,
+        "target_field": "boundary_conditions[0]",
+        "relation": "limit",
+        "importance": "medium"
+      },
+      {
+        "evidence_id": "CE-T1-050BC7E34C88F297",
+        "version": 1,
+        "target_field": "boundary_conditions[0]",
+        "relation": "limit",
+        "importance": "medium"
+      },
+      {
+        "evidence_id": "CE-T1-06554E1EE0D2B6C0",
+        "version": 1,
+        "target_field": "boundary_conditions[0]",
+        "relation": "limit",
+        "importance": "low"
+      },
+      {
+        "evidence_id": "CE-T1-0BF350B1F14580F5",
+        "version": 1,
+        "target_field": "boundary_conditions[0]",
+        "relation": "limit",
+        "importance": "low"
+      },
+      {
+        "evidence_id": "CE-T1-11BE4D003ECA817F",
+        "version": 1,
+        "target_field": "boundary_conditions[0]",
+        "relation": "limit",
+        "importance": "low"
+      },
+      {
+        "evidence_id": "CE-T1-12F70AE60CD787AA",
+        "version": 1,
+        "target_field": "boundary_conditions[0]",
+        "relation": "limit",
+        "importance": "low"
+      }
+    ],
+    "affected_fields": [
+      "judgment",
+      "boundary_conditions[0]"
+    ],
+    "evidence_field_changes": [
+      {
+        "target_field": "judgment",
+        "before": "T1证据补充了作战化评估能力、数据条件和工程约束，表明资源与可信治理瓶颈仍影响应用扩展；局部结果不足以消除这一条件性判断。",
+        "after": "T1证据进一步确认，截至2026年6月30日，可信治理与作战化评估能力的缺口仍是约束性边界，而非一般目标表述；SABER计划仍处于目标设定阶段，尚未形成已部署的成熟能力。",
+        "new_evidence_ids": [
+          "CE-T1-FE00C458FAADC5D8",
+          "CE-T1-11BBC2ABED0945C2",
+          "CE-T1-C4C1018771B30C5A",
+          "CE-T1-FA2B6E620D8DDBD2",
+          "CE-T1-E2F907CF4DA00903"
+        ],
+        "change_reason": "T1证据将可信治理与作战化评估能力的缺口从一般目标表述升级为约束性边界，同时明确SABER计划仍处于目标阶段。"
+      },
+      {
+        "target_field": "boundary_conditions[0]",
+        "before": "该判断适用于2022-2024年间的公开证据，不排除后续资源投入和治理改进带来能力提升。",
+        "after": "该判断适用于截至2026年6月30日的公开证据，不排除后续资源投入和治理改进带来能力提升；T1证据来源为DARPA公开披露，仅反映该机构视角，不构成全军成熟度判断。",
+        "new_evidence_ids": [
+          "CE-T1-FE00C458FAADC5D8",
+          "CE-T1-11BBC2ABED0945C2",
+          "CE-T1-C4C1018771B30C5A",
+          "CE-T1-FA2B6E620D8DDBD2",
+          "CE-T1-E2F907CF4DA00903"
+        ],
+        "change_reason": "T1证据将时间边界从2022-2024年扩展至2026年6月30日，并明确证据来源的机构局限性。"
+      }
+    ],
+    "mechanism_claims": [
+      "T1证据（CE-T1-C4C1018771B30C5A）显示，截至2026年6月30日，不存在成熟能力或更广泛生态系统对已部署AI战场系统进行作战漏洞评估，这一缺口构成可信治理的约束性边界（证据支持）。",
+      "SABER计划的目标（CE-T1-FA2B6E620D8DDBD2、CE-T1-E2F907CF4DA00903）表明相关能力仍处于规划与实验阶段，尚未转化为已部署的成熟能力（证据支持，但仅限目标表述，不构成已实现部署）。",
+      "实验室条件下的攻击演示（CE-T1-FE00C458FAADC5D8、CE-T1-11BBC2ABED0945C2）不能直接外推至真实军事行动效果，这强化了作战化评估能力缺口的约束性（证据支持）。"
+    ]
+  }
+]
+
+可用T1证据ID与性质：
+{
+  "CE-T1-11BBC2ABED0945C2": {
+    "source_id": "T1-DARPA-001",
+    "source_locator": "web_paragraph_0007",
+    "published_at": "2025-03-17",
+    "evidence_nature": "constraint",
+    "normalized_claim": "实验室攻击演示结果不一定反映真实军事行动中的效果。"
+  },
+  "CE-T1-C4C1018771B30C5A": {
+    "source_id": "T1-DARPA-001",
+    "source_locator": "web_paragraph_0009",
+    "published_at": "2025-03-17",
+    "evidence_nature": "constraint",
+    "normalized_claim": "当前缺乏对已部署AI战场系统进行作战漏洞评估的成熟能力和生态。"
+  },
+  "CE-T1-E2F907CF4DA00903": {
+    "source_id": "T1-DARPA-001",
+    "source_locator": "web_paragraph_0012",
+    "published_at": "2025-03-17",
+    "evidence_nature": "goal",
+    "normalized_claim": "SABER计划将执行一系列高保真作战AI安全演习。"
+  },
+  "CE-T1-FA2B6E620D8DDBD2": {
+    "source_id": "T1-DARPA-001",
+    "source_locator": "web_paragraph_0011",
+    "published_at": "2025-03-17",
+    "evidence_nature": "goal",
+    "normalized_claim": "SABER计划目标是建立示范性AI红队。"
+  },
+  "CE-T1-FE00C458FAADC5D8": {
+    "source_id": "T1-DARPA-001",
+    "source_locator": "web_paragraph_0007",
+    "published_at": "2025-03-17",
+    "evidence_nature": "constraint",
+    "normalized_claim": "对AI系统的攻击演示大多在实验室条件下进行。"
+  },
+  "CE-T1-95F7FE29CF48D86D": {
+    "source_id": "T1-IR-001",
+    "source_locator": "web_paragraph_0049",
+    "published_at": "2025-05-14",
+    "evidence_nature": "constraint",
+    "normalized_claim": "在作战医疗数据条件下，美国国防部创伤登记处15年数据集仅包含0.017 GB数据。"
+  },
+  "CE-T1-06554E1EE0D2B6C0": {
+    "source_id": "T1-DAF-006",
+    "source_locator": "web_paragraph_0009",
+    "published_at": "2025-07-29",
+    "evidence_nature": "test_result",
+    "normalized_claim": "据官方披露的初步结果，DASH 2中开发的软件在准确性上与人类表现相当，尽管开发时间只有两周。"
+  },
+  "CE-T1-11BE4D003ECA817F": {
+    "source_id": "T1-DAF-006",
+    "source_locator": "web_paragraph_0009",
+    "published_at": "2025-07-29",
+    "evidence_nature": "test_result",
+    "normalized_claim": "据官方披露的初步结果，在DASH 2中，两家供应商各自在一小时内为大约20个问题生成了超过6000个解决方案。"
+  },
+  "CE-T1-7AB164824EAAD82A": {
+    "source_id": "T1-DAF-006",
+    "source_locator": "web_paragraph_0009",
+    "published_at": "2025-07-29",
+    "evidence_nature": "test_result",
+    "normalized_claim": "据官方披露的初步结果，DASH 2 的初步结果显示，机器在不到十秒内产生建议，并生成比纯人类团队多30倍的选项。"
+  },
+  "CE-T1-12F70AE60CD787AA": {
+    "source_id": "T1-DARPA-003",
+    "source_locator": "web_paragraph_0021",
+    "published_at": "2025-11-14",
+    "evidence_nature": "resource_input",
+    "normalized_claim": "数据竞赛中团队使用了DARPA提供的去标识化创伤患者生理数据。"
+  },
+  "CE-T1-43B8C6F6E7B77F40": {
+    "source_id": "T1-DARPA-003",
+    "source_locator": "web_paragraph_0010",
+    "published_at": "2025-11-14",
+    "evidence_nature": "test_result",
+    "normalized_claim": "据DARPA竞赛环境中的官方披露结果，Coordinated Robotics展示了能够检测生命体征和识别损伤模式的机器人平台。"
+  },
+  "CE-T1-45417DAD097210B1": {
+    "source_id": "T1-DARPA-003",
+    "source_locator": "web_paragraph_0029",
+    "published_at": "2025-11-14",
+    "evidence_nature": "resource_input",
+    "normalized_claim": "多个政府和行业合作伙伴为DARPA分诊挑战赛提供数据、独立验证和技术专长。"
+  },
+  "CE-T1-C20674F2CA89D5C5": {
+    "source_id": "T1-DARPA-003",
+    "source_locator": "web_paragraph_0010",
+    "published_at": "2025-11-14",
+    "evidence_nature": "test_event",
+    "normalized_claim": "系统竞赛于2025年9月26日至10月3日在佐治亚州佩里市Guardian Centers举行。"
+  },
+  "CE-T1-F2BE64F4810C89EF": {
+    "source_id": "T1-DARPA-003",
+    "source_locator": "web_paragraph_0006",
+    "published_at": "2025-11-14",
+    "evidence_nature": "test_event",
+    "normalized_claim": "DARPA于2025年10月4日结束了DARPA分诊挑战赛第二年。"
+  },
+  "CE-T1-0BF350B1F14580F5": {
+    "source_id": "T1-DAF-003",
+    "source_locator": "web_paragraph_0006",
+    "published_at": "2026-04-17",
+    "evidence_nature": "evaluation",
+    "normalized_claim": "空军部副助理部长Nancy Balkus表示，eJARVIS使作战人员能在几分钟而非几周内访问关键设施能源数据，加快决策且不损害安全性。"
+  },
+  "CE-T1-6C755FA494AD4E9A": {
+    "source_id": "T1-DAF-003",
+    "source_locator": "web_paragraph_0007",
+    "published_at": "2026-04-17",
+    "evidence_nature": "governance_event",
+    "normalized_claim": "eJARVIS的IL5授权扩大了其可分析数据范围，超越了2024年5月获得的IL4能力。"
+  },
+  "CE-T1-9865C47D4C68375C": {
+    "source_id": "T1-DAF-003",
+    "source_locator": "web_paragraph_0004",
+    "published_at": "2026-04-17",
+    "evidence_nature": "governance_event",
+    "normalized_claim": "空军部授予Via Science公司的eJARVIS应用程序Impact Level 5运营授权。"
+  },
+  "CE-T1-02DFF1DCD73E8F93": {
+    "source_id": "T1-DAF-001",
+    "source_locator": "web_paragraph_0005",
+    "published_at": "2026-04-22",
+    "evidence_nature": "goal",
+    "normalized_claim": "《空军部数据和人工智能战略》为空军部成为AI优先部队提供了战略路线图。"
+  },
+  "CE-T1-050BC7E34C88F297": {
+    "source_id": "T1-DAF-001",
+    "source_locator": "web_paragraph_0005",
+    "published_at": "2026-04-22",
+    "evidence_nature": "goal",
+    "normalized_claim": "《空军部数据和人工智能战略》在训练、战备和多域作战等多个任务领域确立了AI优先事项。"
+  },
+  "CE-T1-2995ED3DEF557C50": {
+    "source_id": "T1-DAF-001",
+    "source_locator": "web_paragraph_0005",
+    "published_at": "2026-04-22",
+    "evidence_nature": "goal",
+    "normalized_claim": "《空军部数据和人工智能战略》强调将数据视为战略资产，并采用去中心化数据架构。"
+  },
+  "CE-T1-B5C396D3278023D1": {
+    "source_id": "T1-DAF-001",
+    "source_locator": "web_paragraph_0005",
+    "published_at": "2026-04-22",
+    "evidence_nature": "goal",
+    "normalized_claim": "《空军部数据和人工智能战略》的实施推进了首席数据和AI办公室2026财年将数据和AI制度化为核心任务组成部分的目标。"
+  },
+  "CE-T1-4DBD99A761CDD8A5": {
+    "source_id": "T1-DAF-002",
+    "source_locator": "web_paragraph_0004",
+    "published_at": "2026-04-28",
+    "evidence_nature": "governance_event",
+    "normalized_claim": "美国空军部于2026年4月批准了一项全面战略，以招募、培训和保留顶尖人工智能专业人员。"
+  },
+  "CE-T1-A66D49255D61B484": {
+    "source_id": "T1-DAF-002",
+    "source_locator": "web_paragraph_0004",
+    "published_at": "2026-04-28",
+    "evidence_nature": "goal",
+    "normalized_claim": "该计划提议创建美国空军部双轨职业模型，以支持AI专业人员的技术专家晋升路径。"
+  },
+  "CE-T1-CEACB21D2A3F685C": {
+    "source_id": "T1-DAF-002",
+    "source_locator": "web_paragraph_0004",
+    "published_at": "2026-04-28",
+    "evidence_nature": "goal",
+    "normalized_claim": "该计划指示美国空军部简化招聘流程并加快关键AI职位的招聘。"
+  },
+  "CE-T1-7239909FC989F79A": {
+    "source_id": "T1-DAF-007",
+    "source_locator": "web_paragraph_0007",
+    "published_at": "2026-05-18",
+    "evidence_nature": "goal",
+    "normalized_claim": "卢克AI工作队建议扩大AI教育、确定单位内受过培训的倡导者并提高对已批准平台的认识。"
+  },
+  "CE-T1-AA937CC0AF5E2372": {
+    "source_id": "T1-DAF-007",
+    "source_locator": "web_paragraph_0005",
+    "published_at": "2026-05-18",
+    "evidence_nature": "deployment_event",
+    "normalized_claim": "卢克空军基地部分人员在邮件起草、信息摘要和数据分析等日常任务中使用AI。"
+  },
+  "CE-T1-B40332E796F16865": {
+    "source_id": "T1-DAF-007",
+    "source_locator": "web_paragraph_0007",
+    "published_at": "2026-05-18",
+    "evidence_nature": "goal",
+    "normalized_claim": "卢克AI工作队探索了AI在保存机构知识和经验方面的应用。"
+  },
+  "CE-T1-DCF49FC6CBC68958": {
+    "source_id": "T1-DAF-007",
+    "source_locator": "web_paragraph_0005",
+    "published_at": "2026-05-18",
+    "evidence_nature": "governance_event",
+    "normalized_claim": "卢克空军基地的这项工作成为该基地AI工作队的基石，该团队旨在探索AI在基地日常运营中的应用。"
+  },
+  "CE-T1-6B02747FAF17B29F": {
+    "source_id": "T1-DAF-008",
+    "source_locator": "web_paragraph_0004",
+    "published_at": "2026-06-04",
+    "evidence_nature": "test_event",
+    "normalized_claim": "第732空中机动中队使用了战争部2025年12月发布的GenAI平台上的Gemini。"
+  },
+  "CE-T1-BB675BA36EB74B19": {
+    "source_id": "T1-DAF-008",
+    "source_locator": "web_paragraph_0004",
+    "published_at": "2026-06-04",
+    "evidence_nature": "test_event",
+    "normalized_claim": "演习使用人工智能技术进行了定制，以反映第732空中机动中队的北极作战环境。"
+  },
+  "CE-T1-CF7656CBCD8BBB03": {
+    "source_id": "T1-DAF-008",
+    "source_locator": "web_paragraph_0004",
+    "published_at": "2026-06-04",
+    "evidence_nature": "test_event",
+    "normalized_claim": "第732空中机动中队利用GenAI平台安全摄取受控非机密信息的能力，创建了针对北极地点的情景清单。"
+  },
+  "CE-T1-D0E7B9B8CC1298AB": {
+    "source_id": "T1-DAF-008",
+    "source_locator": "web_paragraph_0004",
+    "published_at": "2026-06-04",
+    "evidence_nature": "test_event",
+    "normalized_claim": "第732空中机动中队参加了由第735空中机动中队最初开发的概念验证桌面演习“北极桥”。"
+  },
+  "CE-T1-13704D059FDF383D": {
+    "source_id": "T1-DAF-004",
+    "source_locator": "web_paragraph_0006",
+    "published_at": "2026-06-30",
+    "evidence_nature": "test_event",
+    "normalized_claim": "美国太空军人员首次参加MASH实验，与空军人员及软件开发者共同评估工具集成。"
+  },
+  "CE-T1-2EC1A86FF3D5DEEF": {
+    "source_id": "T1-DAF-004",
+    "source_locator": "web_paragraph_0005",
+    "published_at": "2026-06-30",
+    "evidence_nature": "test_event",
+    "normalized_claim": "美国空军在拉斯维加斯举办了一次为期两周的名为MASH的人机编队多决策优势冲刺实验。"
+  },
+  "CE-T1-6B0D6E320A21509E": {
+    "source_id": "T1-DAF-004",
+    "source_locator": "web_paragraph_0027",
+    "published_at": "2026-06-30",
+    "evidence_nature": "test_result",
+    "normalized_claim": "据参与者报告，MASH实验的一个重大突破是成功集成了不同的供应商工具。"
+  },
+  "CE-T1-6FA016A513CC103A": {
+    "source_id": "T1-DAF-004",
+    "source_locator": "web_paragraph_0008",
+    "published_at": "2026-06-30",
+    "evidence_nature": "test_event",
+    "normalized_claim": "MASH实验由空军部ABMS跨职能团队领导，与空军研究实验室、太空军和第805战斗训练中队合作执行。"
+  },
+  "CE-T1-8FF394626242D949": {
+    "source_id": "T1-DAF-004",
+    "source_locator": "web_paragraph_0033",
+    "published_at": "2026-06-30",
+    "evidence_nature": "test_result",
+    "normalized_claim": "据参与者报告，在MASH实验中，一名空军上尉报告称，使用工具后，完成的任务数量从一项增加到五六项。"
+  },
+  "CE-T1-C631674EB5FED17F": {
+    "source_id": "T1-DAF-004",
+    "source_locator": "web_paragraph_0010",
+    "published_at": "2026-06-30",
+    "evidence_nature": "test_event",
+    "normalized_claim": "在MASH实验中，太空军卫士直接参与并影响了涵盖太空领域的战斗管理工具开发。"
+  }
+}

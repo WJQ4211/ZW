@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-33990274-d946-49ae-b93d-4100c081bc14",
+  "object": "chat.completion",
+  "created": 1787712768,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n  {\n    \"source_id\": \"T0-TD-008\",\n    \"source_locator\": \"web_paragraph_0007\",\n    \"excerpt_original\": \"The International Maritime Security Construct (IMSC) completed a three-day maritime exercise in the Arabian Gulf, Jan. 9, integrating unmanned systems and artificial intelligence during a naval drill for the second time in six months.\",\n    \"excerpt_zh\": \"国际海上安全构架（IMSC）于1月9日在阿拉伯湾完成了一次为期三天的海上演习，这是六个月内第二次在海军演习中整合无人系统和人工智能。\",\n    \"normalized_claim\": \"IMSC在阿拉伯湾完成了一次为期三天的海上演习，整合了无人系统和人工智能，这是六个月内第二次此类演习。\",\n    \"coding_dimensions\": [\"integration_level\", \"application_maturity\"],\n    \"evidence_nature\": \"test_event\",\n    \"topics\": [\"unmanned systems\", \"artificial intelligence\", \"maritime exercise\"]\n  },\n  {\n    \"source_id\": \"T0-TD-008\",\n    \"source_locator\": \"web_paragraph_0010\",\n    \"excerpt_original\": \"“We planned this exercise to demonstrate how artificial intelligence and unmanned systems effectively increase CTF Sentinel’s maritime domain awareness to maintain maritime security in Middle Eastern waters,” said Royal Saudi Navy Capt. Alamri Assem, CTF Sentinel’s director of plans.\",\n    \"excerpt_zh\": \"“我们计划这次演习是为了展示人工智能和无人系统如何有效提升CTF Sentinel的海上态势感知能力，以维护中东水域的海上安全，”沙特皇家海军上校、CTF Sentinel计划主任Alamri Assem说。\",\n    \"normalized_claim\": \"CTF Sentinel计划主任表示，该演习旨在展示人工智能和无人系统如何有效提升其海上态势感知能力。\",\n    \"coding_dimensions\": [\"goal\", \"integration_level\"],\n    \"evidence_nature\": \"goal\",\n    \"topics\": [\"artificial intelligence\", \"unmanned systems\", \"maritime domain awareness\"]\n  },\n  {\n    \"source_id\": \"T0-TD-008\",\n    \"source_locator\": \"web_paragraph_0014\",\n    \"excerpt_original\": \"The systems were able to help locate and identify objects in nearby waters and relay visual depictions to watchstanders.\",\n    \"excerpt_zh\": \"这些系统能够帮助定位和识别附近水域的物体，并将视觉图像传送给值班人员。\",\n    \"normalized_claim\": \"在演习中，无人和人工智能系统能够帮助定位和识别附近水域的物体，并将视觉图像传送给值班人员。\",\n    \"coding_dimensions\": [\"test_result\", \"human_machine_authority\"],\n    \"evidence_nature\": \"test_result\",\n    \"topics\": [\"unmanned systems\", \"artificial intelligence\", \"object detection\"]\n  },\n  {\n    \"source_id\": \"T0-TD-008\",\n    \"source_locator\": \"web_paragraph_0015\",\n    \"excerpt_original\": \"“Saildrones transmitted information on contacts of interest and our watch officers coordinated with the destroyer for further monitoring,” said U.S. Navy Capt. Brian Granger, CTF Sentinel’s deputy commander.\",\n    \"excerpt_zh\": \"“Saildrone传输了有关感兴趣目标的信息，我们的值班军官与驱逐舰协调进行进一步监控，”美国海军上校、CTF Sentinel副指挥官Brian Granger说。\",\n    \"normalized_claim\": \"Saildrone传输了感兴趣目标的信息，值班军官与驱逐舰协调进行进一步监控。\",\n    \"coding_dimensions\": [\"test_result\", \"human_machine_authority\", \"organizational_system_fit\"],\n    \"evidence_nature\": \"test_result\",\n    \"topics\": [\"unmanned systems\", \"information relay\", \"human-machine coordination\"]\n  },\n  {\n    \"source_id\": \"T0-TD-008\",\n    \"source_locator\": \"web_paragraph_0020\",\n    \"excerpt_original\": \"The late-summer event was the first time IMSC planners specifically designed a Sentinel Shield exercise to integrate unmanned systems.\",\n    \"excerpt_zh\": \"夏末的这次活动是IMSC规划人员首次专门设计Sentinel Shield演习以整合无人系统。\",\n    \"normalized_claim\": \"夏末的Sentinel Shield演习是IMSC规划人员首次专门设计以整合无人系统。\",\n    \"coding_dimensions\": [\"test_event\", \"integration_level\"],\n    \"evidence_nature\": \"test_event\",\n    \"topics\": [\"unmanned systems\", \"exercise design\"]\n  }\n]\n```"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4995,
+    "total_tokens": 5981,
+    "completion_tokens": 986,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

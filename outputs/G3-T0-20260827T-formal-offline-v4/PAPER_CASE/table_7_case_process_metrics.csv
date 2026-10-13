@@ -1,0 +1,14 @@
+﻿metric,value
+frozen_evidence,85
+frozen_hypotheses,3
+viewpoints,15
+dependency_edges,94
+formal_disagreements,3
+discriminative_needs,3
+monitor_indicators,4
+trigger_rules,8
+model_api_calls,0
+evidence_inserted,0
+hypothesis_inserted,0
+t1_read,False
+formal_g4_executed,False

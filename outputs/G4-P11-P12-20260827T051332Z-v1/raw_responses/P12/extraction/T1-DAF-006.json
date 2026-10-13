@@ -1,0 +1,25 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "```json\n[\n  {\n    \"source_id\": \"T1-DAF-006\",\n    \"source_locator\": \"web_paragraph_0007\",\n    \"excerpt_original\": \"The Air Force wrapped up the second Decision Advantage Sprint for Human-Machine Teaming, known as DASH 2, a fast-paced experiment exploring how artificial intelligence can help operators make faster, smarter decisions in complex battlespaces.\",\n    \"excerpt_zh\": \"空军结束了第二次人机编队决策优势冲刺（DASH 2），这是一项快节奏的实验，探索人工智能如何帮助操作员在复杂战场空间中做出更快、更明智的决策。\",\n    \"normalized_claim\": \"美国空军完成了第二次人机编队决策优势冲刺（DASH 2）实验，该实验旨在探索人工智能帮助操作员在复杂战场中更快、更明智地做出决策。\",\n    \"evidence_nature\": \"test_event\",\n    \"coding_dimensions\": [\"application_maturity\", \"human_machine_authority\"],\n    \"topics\": [\"DASH 2实验\", \"人机编队\", \"决策优势\"]\n  },\n  {\n    \"source_id\": \"T1-DAF-006\",\n    \"source_locator\": \"web_paragraph_0007\",\n    \"excerpt_original\": \"DASH 2 took place at the Shadow Operations Center-Nellis’ unclassified location in downtown Las Vegas and was led by the Advanced Battle Management System Cross-Functional Team.\",\n    \"excerpt_zh\": \"DASH 2 在拉斯维加斯市中心的 Shadow Operations Center-Nellis 非保密地点举行，由先进战斗管理系统跨职能团队牵头。\",\n    \"normalized_claim\": \"DASH 2 实验在拉斯维加斯市中心的 Shadow Operations Center-Nellis 非保密地点举行，由先进战斗管理系统跨职能团队领导。\",\n    \"evidence_nature\": \"test_event\",\n    \"coding_dimensions\": [\"organizational_system_fit\"],\n    \"topics\": [\"DASH 2实验\", \"ABMS跨职能团队\", \"实验地点\"]\n  },\n  {\n    \"source_id\": \"T1-DAF-006\",\n    \"source_locator\": \"web_paragraph_0009\",\n    \"excerpt_original\": \"Initial results showed that machines produced recommendations in less than ten seconds and generated 30 times more options than human-only teams.\",\n    \"excerpt_zh\": \"初步结果显示，机器在不到十秒内产生建议，并生成比纯人类团队多30倍的选项。\",\n    \"normalized_claim\": \"DASH 2 的初步结果显示，机器在不到十秒内产生建议，并生成比纯人类团队多30倍的选项。\",\n    \"evidence_nature\": \"test_result\",\n    \"coding_dimensions\": [\"application_maturity\"],\n    \"topics\": [\"DASH 2实验结果\", \"机器性能\", \"决策速度\"]\n  },\n  {\n    \"source_id\": \"T1-DAF-006\",\n    \"source_locator\": \"web_paragraph_0009\",\n    \"excerpt_original\": \"Two vendors each produced more than 6,000 solutions for roughly 20 problems in just one hour.\",\n    \"excerpt_zh\": \"两家供应商各自在一小时内为大约20个问题生成了超过6000个解决方案。\",\n    \"normalized_claim\": \"在DASH 2中，两家供应商各自在一小时内为大约20个问题生成了超过6000个解决方案。\",\n    \"evidence_nature\": \"test_result\",\n    \"coding_dimensions\": [\"application_maturity\"],\n    \"topics\": [\"DASH 2实验结果\", \"供应商产出\", \"解决方案数量\"]\n  },\n  {\n    \"source_id\": \"T1-DAF-006\",\n    \"source_locator\": \"web_paragraph_0009\",\n    \"excerpt_original\": \"The software’s accuracy was on par with human performance, despite only two weeks of development.\",\n    \"excerpt_zh\": \"尽管只有两周的开发时间，该软件的准确性与人类表现相当。\",\n    \"normalized_claim\": \"DASH 2中开发的软件在准确性上与人类表现相当，尽管开发时间只有两周。\",\n    \"evidence_nature\": \"test_result\",\n    \"coding_dimensions\": [\"application_maturity\"],\n    \"topics\": [\"DASH 2实验结果\", \"软件准确性\", \"开发周期\"]\n  },\n  {\n    \"source_id\": \"T1-DAF-006\",\n    \"source_locator\": \"web_paragraph_0011\",\n    \"excerpt_original\": \"Seven teams participated in DASH 2, including six industry teams and one ShOC-N innovation team.\",\n    \"excerpt_zh\": \"七个团队参加了DASH 2，包括六个行业团队和一个ShOC-N创新团队。\",\n    \"normalized_claim\": \"DASH 2有七个团队参加，包括六个行业团队和一个ShOC-N创新团队。\",\n    \"evidence_nature\": \"test_event\",\n    \"coding_dimensions\": [\"organizational_system_fit\"],\n    \"topics\": [\"DASH 2实验\", \"参与团队\", \"行业合作\"]\n  }\n]\n```",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1787812161,
+  "id": "chatcmpl-8ebf28e4-31c0-4983-ac63-b318e117fdbd",
+  "model": "deepseek-v4-flash-0731",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 1093,
+    "prompt_tokens": 3341,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 4434
+  }
+}

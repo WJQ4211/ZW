@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-a0253d07-7d79-450e-881d-2281932af3db",
+  "object": "chat.completion",
+  "created": 1787712516,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n  {\n    \"candidate_index\": 0,\n    \"status\": \"pass\",\n    \"reason\": \"The claim accurately restates the excerpt without adding or omitting information. The evidence nature 'deployment_event' is supported by the excerpt describing access to a platform for building AI solutions, which indicates a deployment/availability event.\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": [\n      {\n        \"dimension\": \"engineering_resource_conditions\",\n        \"supported\": true,\n        \"supporting_span\": \"any DOD user with a Common Access Card can join the Joint Common Foundation to leverage these services and start building AI solutions\",\n        \"reason\": \"The excerpt describes the availability of a platform (Joint Common Foundation) and its services to DOD users, which constitutes an engineering resource condition (platform and access).\"\n      },\n      {\n        \"dimension\": \"integration_level\",\n        \"supported\": false,\n        \"supporting_span\": \"start building AI solutions for their respective domains\",\n        \"reason\": \"The excerpt mentions building AI solutions for respective domains, but does not specify the level of integration (e.g., single tool, single task, single platform, cross-platform, cross-task, or system-level). The mention of 'respective domains' is too vague to determine a specific integration level.\"\n      }\n    ]\n  },\n  {\n    \"candidate_index\": 1,\n    \"status\": \"pass\",\n    \"reason\": \"The claim accurately restates the excerpt. The evidence nature 'deployment_event' is supported by the explicit mention of achieving initial operational capability, which is a deployment milestone.\",\n    \"claim_supported\": true,\n    \"nature_supported\": true,\n    \"dimension_reviews\": [\n      {\n        \"dimension\": \"application_maturity\",\n        \"supported\": true,\n        \"supporting_span\": \"initial operational capability of the Joint Common Foundation was achieved in March 2021\",\n        \"reason\": \"The excerpt explicitly states that initial operational capability (IOC) was achieved, which directly corresponds to the 'deployment' stage in the application maturity definition.\"\n      },\n      {\n        \"dimension\": \"engineering_resource_conditions\",\n        \"supported\": true,\n        \"supporting_span\": \"initial operational capability of the Joint Common Foundation was achieved in March 2021 with unclassified capabilities\",\n        \"reason\": \"The excerpt mentions the achievement of IOC with unclassified capabilities, which indicates the availability of a platform (engineering resource) at a certain capability level.\"\n      }\n    ]\n  }\n]\n```"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 884,
+    "total_tokens": 1425,
+    "completion_tokens": 541,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

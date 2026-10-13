@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-9a6e6c2c-b5e3-47ee-9aed-3a179711a094",
+  "object": "chat.completion",
+  "created": 1787712000,
+  "model": "deepseek-v4-flash-0731",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n[\n  {\n    \"source_id\": \"T0-IR-006\",\n    \"source_locator\": \"pdf_page_20\",\n    \"excerpt_original\": \"The initial logistics model was demonstrated on February 11, 2021.\",\n    \"excerpt_zh\": \"初始后勤模型于2021年2月11日进行了演示。\",\n    \"normalized_claim\": \"初始后勤模型于2021年2月11日进行了演示。\",\n    \"coding_dimensions\": {\n      \"application_maturity\": \"试验\",\n      \"engineering_resource_conditions\": \"模型\",\n      \"human_machine_authority\": \"不适用\",\n      \"integration_level\": \"单任务\",\n      \"organizational_system_fit\": \"不适用\",\n      \"trust_governance_constraints\": \"不适用\"\n    },\n    \"evidence_nature\": \"test_event\",\n    \"topics\": [\"预测性后勤\", \"模型演示\"]\n  }\n]\n```"
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 12064,
+    "total_tokens": 12268,
+    "completion_tokens": 204,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  }
+}

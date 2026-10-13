@@ -1,0 +1,963 @@
+PROMPT_ID: evidence_extract_p3b
+VERSION: 2.0
+BATCH_ID: T0-IR-006-batch-004
+SOURCE_DOCUMENT_ID: T0-IR-006
+RESEARCH_QUESTION: Based only on public, non-classified material available through 2024-12-31, what dominant deployment form is more likely for U.S. military AI capability building in 2025-2027?
+TASK: Extract at most five auditable evidence candidates from these source segments. Output zero candidates when the supplied text contains insufficient directly relevant evidence.
+INPUT LIMIT: Use only the source segments and definitions supplied here. Do not use prior runs, other sources, or outside knowledge.
+OUTPUT: strict JSON array; each object must contain exactly the eight model fields in the schema.
+normalized_claim must be Chinese only, state one evidence proposition, and contain no source-attribution prefix such as 本报告认为 or 某机构指出. Source metadata is supplied by the program.
+coding_dimensions must be a JSON array of zero or more exact dimension key strings, never an object/map and never Chinese descriptions or maturity labels. Allowed keys: integration_level, application_maturity, human_machine_authority, engineering_resource_conditions, trust_governance_constraints, organizational_system_fit.
+excerpt_original must be copied verbatim from one exact source_locator. Do not silently repair OCR, spelling, or layout extraction.
+If an English excerpt is returned, excerpt_zh must be non-empty and remains pending G1 translation review.
+Use goal for strategy/vision/plan; test_event only for a test or exercise occurrence, participants, or configuration; test_result only for an explicitly observed function, performance, or result; deployment_event only for deployment, fielding, adoption, or sustained use that has already occurred.
+Ordinary coordination, information transfer, training, or documentation does not automatically support human_machine_authority.
+Do not add subjects, actions, numbers, scope, or results absent from the excerpt. Do not generate hypotheses, viewpoints, conclusions, or a 2025-2027 route judgment.
+Do not use pseudo-continuous locators. One candidate expresses one checkable fact. Do not duplicate an equivalent excerpt within this source.
+CANDIDATE_LIMIT: 5
+SOURCE_SEGMENTS:
+--- pdf_page_63 ---
+pdf_page_number: 63
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_63|printed_page_pending|section_pending
+visual_review_required: false
+Appendix I: Objectives, Scope, and
+Methodology
+information to achieve an entity’s objective.10 The guidance also
+stipulates that quality information includes data that are appropriate,
+current, complete, accurate, accessible, and provided on a timely basis,
+and that management should have accurate and complete information for
+decision-making. Additionally, we reviewed the JAIC’s plans for the
+second phase of its inventory process against our Agile Assessment
+Guide, which states that while Agile emphasizes that only near-term work
+is planned in detail (e.g., the next iteration), programs need to define their
+overall goal in a vision and plan the releases needed to satisfy the
+vision.11 The detailed plan is subject to change, but the vision provides a
+high-level view and strategic view of the program’s goals. An integrated
+master schedule or similar artifact that captures both government and
+contractor activities, including Agile software development efforts, should
+capture all the planned features needed to accomplish the program goals
+at an appropriate level of detail.
+Additionally, we identified the processes used by the military services and
+other DOD components to track and report their AI activities and
+coordinate with the JAIC’s inventory effort. In addition to interviewing
+officials from each of the military services and other relevant DOD
+components, we included in a department-wide survey question
+requesting information on how AI activities are identified and tracked
+within the organizations. Details for how we developed and administered
+this survey are described below.
+To address objective three, we administered a department-wide
+unclassified survey to determine the collaborative relationships between
+key organizations on AI-related activities across DOD. To learn about AI
+collaboration (or coordination), the survey identified the different methods
+that organizations use to collaborate across the department as well as
+factors that help and hinder successful collaboration.12 In addition, we
+asked questions about the extent of collaboration, the coordination
+mechanisms used to facilitate collaboration, and factors that helped and
+hindered collaboration. Specifically, we surveyed 39 unique organizations
+asking each of the organizations about their collaboration with one
+10GAO-14-704G.
+11GAO-20-590G.
+12Our survey analysis includes unclassified information provided by respondents about AI-
+related collaboration activities.
+Page 58 GAO-22-105834 Artificial Intelligence
+--- pdf_page_64 ---
+pdf_page_number: 64
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_64|printed_page_pending|section_pending
+visual_review_required: false
+Appendix I: Objectives, Scope, and
+Methodology
+another as well as with the JAIC.13 We identified the 40 organizations
+based on prior interviews with officials representing the JAIC, the military
+services, other DOD organizations and components, and the Office of the
+Director of National Intelligence.14 We then reviewed and confirmed the
+universe of organizations participating in AI collaboration with JAIC
+officials. Additionally, we notified each respondent before administering
+the survey to confirm they could speak to their organization’s AI
+collaboration efforts as a whole with the JAIC, with other organizations
+across DOD, or with the Office of the Director of National Intelligence.
+To minimize errors that might occur from respondents interpreting our
+questions differently than we intended, we developed the survey with the
+assistance of several of our survey specialists, including an independent
+review by an additional survey specialist on the draft instrument.
+Furthermore, we pretested the survey with four DOD entities including:
+the JAIC Missions Directorate, Air Force, Office of the Under Secretary of
+Defense Comptroller, and Joint Staff J-6. We conducted pretests to check
+that (1) the questions were clear and unambiguous, (2) terminology was
+used correctly, (3) the questionnaire did not place an undue burden on
+agency officials, (4) the information could feasibly be obtained, (5) the
+survey was comprehensive and unbiased, and (6) that we had identified
+the key respondents with knowledge about AI and associated
+collaboration. We conducted these four pretests over the telephone. We
+made changes to the content and format of the survey after each of the
+first three pretests, based on the feedback received. We noted any
+potential problems identified by the reviewers and through the pretests
+and modified the questionnaire based on the feedback received. For
+example, we identified that the military services often have multiple units
+or sub-organizations involved in AI activities; therefore, a single
+respondent would likely be unable to respond on behalf of the entire
+organization. As a result, we administered multiple surveys to six
+organizations—six surveys to the Army, four to the Air Force, two to the
+Navy, two to the Office of the Chief Information Officer, one to each Joint
+Staff Directorate for a total of eight, and five to the JAIC. We administered
+one survey to the other organizations for 61 total surveys administered.
+13DOD Office of General Counsel did not identify a point of contact to receive the survey.
+Therefore, we continued to survey each of the 39 other organizations about their
+collaboration with other organizations, including the Office of General Counsel.
+14A list of these organizations can be found in appendix II.
+Page 59 GAO-22-105834 Artificial Intelligence
+--- pdf_page_65 ---
+pdf_page_number: 65
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_65|printed_page_pending|section_pending
+visual_review_required: false
+Appendix I: Objectives, Scope, and
+Methodology
+See Appendix II for a list of organizations we surveyed and for select
+survey questions.
+We conducted the survey between June 2021 and October 2021. We
+developed and administered a Web-based questionnaire accessible
+through a secure server. When we completed the final survey questions
+and format, we sent an e-mail announcement of the survey to each
+identified organization. To maximize our response rate, we sent initial
+notification emails, as well as reminder emails to encourage recipients to
+complete the survey and followed up with nonrespondents with phone
+calls. In total, we received 54 of the 61 administered surveys for an 89
+percent response rate.
+Since this was a Web-based survey, respondents entered their answers
+directly into the electronic questionnaire, eliminating the need to key data
+into a database, minimizing error.15 Further, because this was not a
+sample survey, it has no sampling errors. However, the practical
+difficulties of conducting any survey may introduce errors, commonly
+referred to as nonsampling errors. For example, difficulties in interpreting
+a particular question, sources of information available to respondents, or
+entering data into a database or analyzing them can introduce unwanted
+variability into the survey results. We took steps in developing the
+questionnaire, collecting the data, and analyzing them to minimize such
+nonsampling errors.
+We performed a content analysis of open-ended responses by reviewing
+responses to the open-ended questions for themes or issues relevant to
+our objectives. For all open-ended survey questions, one analyst
+evaluated the open-ended question responses and coded the information
+into categories. A different analyst checked the coded information for
+accuracy. The analysts then discussed and resolved any initial
+disagreements in the coding to arrive at the final categories.
+We also assessed the extent to which the JAIC’s guidance and processes
+for collaborating with the military services and other organizations on AI
+activities include leading practices for interagency collaboration.16
+Specifically, one analyst independently reviewed and assessed DOD’s AI
+15Six respondents submitted their survey late and were unable to use the web-based
+questionnaire. As a result, we manually entered and coded their responses.
+16GAO, Managing for Results: Key Considerations for Implementing Interagency
+Collaborative Mechanisms, GAO-12-1022 (Washington, D.C.: Sept. 27, 2012).
+Page 60 GAO-22-105834 Artificial Intelligence
+--- pdf_page_66 ---
+pdf_page_number: 66
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_66|printed_page_pending|section_pending
+visual_review_required: false
+Appendix I: Objectives, Scope, and
+Methodology
+collaboration against seven leading practices for interagency
+collaboration to determine the extent to which DOD’s actions incorporated
+these leading practices. This analyst assessed DOD’s AI collaboration on
+a scale of fully incorporates, partially incorporates, or does not
+incorporate for each leading practice, and a second analyst checked the
+scoring for accuracy. The analysts discussed any assessment
+discrepancies to reach consensus.
+We assessed DOD’s plans to develop additional AI-related collaboration
+guidance and agreements against Standards for Internal Control in the
+Federal Government, which states that management should define
+objectives to include what is to be achieved, who is to achieve it, how it
+will be achieved, and the time frames for achievement.17
+To address all our objectives, we interviewed officials and, where
+appropriate, obtained documentation and survey responses from the
+following organizations:
+• Department of Defense
+• Military Services and National Guard:
+• Army
+• Air Force
+• Navy
+• Marine Corps
+• National Guard
+• Space Force
+• Combatant Commands:
+• U.S. Africa Command
+• U.S. Central Command
+• U.S. Cyber Command
+• U.S. European Command
+• U.S. Indo-Pacific Command
+• U.S. Northern Command
+17GAO-14-704G.
+Page 61 GAO-22-105834 Artificial Intelligence
+--- pdf_page_67 ---
+pdf_page_number: 67
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_67|printed_page_pending|section_pending
+visual_review_required: false
+Appendix I: Objectives, Scope, and
+Methodology
+• U.S. Southern Command
+• U.S. Space Command
+• U.S. Special Operations Command
+• U.S. Strategic Command
+• U.S. Transportation Command
+• Defense Advanced Research Projects Agency
+• Defense Intelligence Agency
+• Defense Logistics Agency
+• Defense Threat Reduction Agency
+• Joint Chiefs of Staff
+• Missile Defense Agency
+• National Geospatial-Intelligence Agency
+• National Reconnaissance Office
+• National Security Agency
+• Office of the Chief Information Officer, include the Chief Data
+Officer
+• Office of the Director of Cost Assessment and Program Evaluation
+• Office of the Directors of Operational Test and Evaluation
+• Office of the Under Secretary of Defense Comptroller
+• Office of the Under Secretary of Defense for Acquisition and
+Sustainment
+• Office of the Under Secretary of Defense for Intelligence and
+Security
+• Office of the Under Secretary of Defense for Personnel and
+Readiness
+• Office of the Under Secretary of Defense for Policy
+• Office of the Under Secretary of Defense for Research and
+Engineering
+• Space Development Agency
+• Office of the Director of National Intelligence
+The performance audit upon which this report is based was conducted
+from September 2020 to February 2022 in accordance with generally
+Page 62 GAO-22-105834 Artificial Intelligence
+--- pdf_page_68 ---
+pdf_page_number: 68
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_68|printed_page_pending|section_pending
+visual_review_required: false
+Appendix I: Objectives, Scope, and
+Methodology
+accepted government auditing standards. Those standards require that
+we plan and perform the audit to obtain sufficient, appropriate evidence to
+provide a reasonable basis for our findings and conclusions based on our
+audit objectives. We believe that the evidence obtained provides a
+reasonable basis for our findings and conclusions based on our audit
+objectives.
+We subsequently worked from February 2022 to March 2022 to prepare
+this version for public release. This public version was also prepared in
+accordance with those standards.
+Page 63 GAO-22-105834 Artificial Intelligence
+--- pdf_page_69 ---
+pdf_page_number: 69
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_69|printed_page_pending|section_pending
+visual_review_required: true
+Appendix II: Survey about DOD
+Appendix II: Survey about DOD Collaboration
+on AI Activities
+Collaboration o n AI Activities
+This appendix describes an abbreviated version of the survey questions
+and the respondents.
+Abbreviated Survey and GAO administered a web-based survey to various DOD organizations
+Survey Respondents and the Director of National Intelligence. We received 54 responses out of
+61 for an 89 percent response rate. The survey included questions to help
+us identify the extent to which collaboration exists, different methods that
+organizations use to collaborate across DOD, and factors that help and
+hinder successful collaboration. For the purpose of this survey, we
+broadly defined collaboration as any joint activity that is intended to
+produce more public value than could be produced when the
+organizations act alone. For example, this could include coordinating with
+another organization to establish compatible policies and procedures or
+identify and address needs by leveraging outside resources.
+Reprinted below are the survey questions that informed the information
+presented in this report. Table 7 contains the list of organizations we
+surveyed.
+1. GAO recognizes that across the DOD there is no consensus or
+agreement on a single definition of AI. The Fiscal Year 2021 National
+Defense Authorization Act defines Artificial Intelligence (AI) as
+a machine-based system that can, for a given set of human-
+defined objectives, make predictions, recommendations or
+decisions influencing real or virtual environments. AI systems use
+machine and human-based inputs to—
+(A) perceive real and virtual environments;
+(B) abstract such perceptions into models through analysis in an
+automated manner; and
+(C) use model inference.
+Is this the definition of AI that your organization uses?
+☐Yes (Skip to question 4)
+☐ No (Continue with next question a)
+For the purpose of this survey, please provide the definition of AI your
+organization uses or where the definition of AI comes from (e.g. DOD
+AI Strategy) that you will use to answer the following questions.
+Page 64 GAO-22-105834 Artificial Intelligence
+--- pdf_page_70 ---
+pdf_page_number: 70
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_70|printed_page_pending|section_pending
+visual_review_required: false
+Appendix II: Survey about DOD Collaboration
+on AI Activities
+2. Please describe how your organization identifies, tracks, and reports
+AI activities (e.g., data calls or keyword search methodologies).
+3. Please describe any planned actions your organization has to
+collaborate AI activities with the Joint Artificial Intelligence Center
+(JAIC) Executive Steering Group, Working Group, or subcommittees,
+and any associated milestones. If none, please go to question 5.
+4. Below we list various elements of the JAIC and for those that you
+collaborate with we ask you a short series of questions about that
+collaboration.
+Does your organization collaborate with this part of the JAIC on AI
+activities?
+☐ Yes (Continue with next question)
+☐ No (Skip to next organization)
+When answering questions ii through vi, consider in general the entire
+array of collaboration activities you have with this part of the JAIC.
+Overall, to what extent does your organization collaborate with this
+part of the JAIC on AI activities?
+☐ Great extent
+☐ Moderate extent
+☐ Some extent
+☐ Little extent
+☐ No extent
+What are the most important AI activities that your organization
+collaborates on with this part of the JAIC? (Please describe in
+some detail at least three of your most important AI activities, if
+possible)
+Which mechanisms does your organization use to collaborate with
+this part of the JAIC?
+Page 65 GAO-22-105834 Artificial Intelligence
+--- pdf_page_71 ---
+pdf_page_number: 71
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_71|printed_page_pending|section_pending
+visual_review_required: false
+Appendix II: Survey about DOD Collaboration
+on AI Activities
+Collaboration Mechanism Yes No
+MOUs, MOAs, Interagency Agreements ☐ ☐
+Interagency groups (e.g., working groups, issue groups, communities of practice, task force, cross ☐ ☐
+functional teams)
+Conferences ☐ ☐
+Strategy development ☐ ☐
+Co-location (e.g., working in the same facility or in some cases, located in the same geographic ☐ ☐
+region)
+Specific positions to facilitate coordination (e.g. liaisons) ☐ ☐
+Shared data systems, technology (e.g., shared databases and web portals) ☐ ☐
+Information sharing ☐ ☐
+Informal discussions ☐ ☐
+Other (please describe):
+Overall, how effective is the collaboration on AI activities between
+your organization and this part of the JAIC?
+☐ Very effective
+☐ Moderately effective
+☐ Somewhat effective
+☐ Little effective
+☐ Not effective
+What factors, if any, help and/or hinder your organization’s
+collaboration on AI activities with this part of the JAIC? Please
+consider the following: agency policies and procedures, available
+resources, leadership, personalities, presence of written
+agreements, and accountability measures.
+5. In this section, we list organizations that we have identified as having
+a role in the oversight and integration of DOD’s AI activities and for
+those that you collaborate with we ask you a short series of questions
+on collaboration you have with about that collaboration.
+[Questions i – v repeated for all organizations in Table X]
+Does your organization collaborate with this organization on AI
+activities?
+Page 66 GAO-22-105834 Artificial Intelligence
+--- pdf_page_72 ---
+pdf_page_number: 72
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_72|printed_page_pending|section_pending
+visual_review_required: false
+Appendix II: Survey about DOD Collaboration
+on AI Activities
+☐ Yes (Continue with next question)
+☐ No (Skip to next organization)
+When answering questions ii through vi, consider in general the entire
+array of collaboration activities you have with this organization.
+Overall, to what extent does your organization collaborate with this
+organization on AI activities?
+☐ Great extent
+☐ Moderate extent
+☐ Some extent
+☐ Little extent
+☐ No extent
+What are the most important AI activities that your organization
+collaborates with this organization on? (Please describe in some
+detail at least three of your most important AI activities, indicating
+the particular units and/or sub-organizations you work with on
+these activities, if possible.)
+Which mechanisms does your organization use to collaborate with
+this organization on AI activities?
+Page 67 GAO-22-105834 Artificial Intelligence
+--- pdf_page_73 ---
+pdf_page_number: 73
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_73|printed_page_pending|section_pending
+visual_review_required: false
+Appendix II: Survey about DOD Collaboration
+on AI Activities
+Collaboration Mechanism Yes No
+MOUs, MOAs, Interagency Agreements ☐ ☐
+Interagency groups (e.g., working groups, issue groups, communities of practice, task force, cross ☐ ☐
+functional teams)
+Conferences ☐ ☐
+Strategy development ☐ ☐
+Co-location (e.g., working in the same facility or in some cases, located in the same geographic ☐ ☐
+region)
+Specific positions to facilitate coordination (e.g. liaisons) ☐ ☐
+Shared data systems, technology (e.g., shared databases and web portals) ☐ ☐
+Information sharing ☐ ☐
+Informal discussions ☐ ☐
+Other (please describe):
+Overall, how effective is the collaboration on AI activities between
+your organization and this organization?
+☐ Very effective
+☐ Moderately effective
+☐ Somewhat effective
+☐ Little effective
+☐ Not effective
+What factors, if any, help and/or hinder your organization’s
+collaboration on AI activities with this organization? Please
+consider the following: agency policies and procedures, available
+resources, leadership, personalities, presence of written
+agreements, and accountability measures.
+6. Please describe any planned actions to collaborate and associated
+milestones with any of the above organizations.
+Page 68 GAO-22-105834 Artificial Intelligence
+--- pdf_page_74 ---
+pdf_page_number: 74
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_74|printed_page_pending|section_pending
+visual_review_required: false
+Appendix II: Survey about DOD Collaboration
+on AI Activities
+Table 7: Organizations Included in GAO’s Web-Based Survey
+Organization Type Organization Name
+Military Services and National Guard Air Forcea
+Armyb
+National Guard
+Navyc
+Marine Corpsd
+Space Force
+Offices of the Secretary of Defense Office of the Chief Information Officere
+Office of the Director of Cost Assessment and Program Evaluation
+Office of the Director of Operational Test and Evaluation
+Office of the General Counself
+Office of the Under Secretary of Defense (Comptroller)
+Office of the Under Secretary of Defense for Acquisition and Sustainment
+Office of the Under Secretary of Defense for Intelligence and Security
+Office of the Under Secretary of Defense for Personnel and Readiness
+Office of the Under Secretary of Defense for Policy
+Office of the Under Secretary of Defense for Research and Engineeringg
+Joint Chiefs of Staff Joint Staff Directorates
+Combatant Commands U.S. Africa Command
+U.S. Central Command
+U.S. Cyber Command
+U.S. European Command
+U.S. Indo-Pacific Command
+U.S. Northern Command
+U.S. Southern Command
+U.S. Space Command
+U.S. Special Operations Command
+U.S. Strategic Command
+U.S. Transportation Command
+Defense Agencies Defense Advanced Research Projects Agency
+Defense Information Systems Agency
+Defense Logistics Agency
+Defense Threat Reduction Agency
+Missile Defense Agency
+Space Development Agency
+Defense Intelligence Enterprise Defense Intelligence Agency
+Page 69 GAO-22-105834 Artificial Intelligence
+--- pdf_page_75 ---
+pdf_page_number: 75
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_75|printed_page_pending|section_pending
+visual_review_required: false
+Appendix II: Survey about DOD Collaboration
+on AI Activities
+National Geospatial-Intelligence Agency
+National Security Agency
+National Reconnaissance Office
+Office of the Director of National Intelligence Office of the Director of National Intelligence
+Joint Artificial Intelligence Center Joint Artificial Intelligence Center
+Source: GAO Survey about Department of Defense (DOD) Collaboration on Artificial Intelligence (AI) Activities I GAO-22-105834
+Note: We categorized the 40 organizations included in our survey questions into broad types of
+organizations. While we could characterize some organizations into multiple of the organization types
+listed, we grouped the organizations into types based on DOD organizational structure. For example,
+various military services components are a part of the Defense Intelligence Enterprise; however, we
+characterized the military services in the organization type Military Service and National Guard based
+on their overall DOD organizational relationship.
+aAir Force includes the Air Force Warfighting and Integration Capability/AF A5/7, Air Force AI Cross
+Functional Team, Air Force Research Lab, Air Force AI Accelerator at MIT.
+bArmy includes the Army AI Task Force, AI Integration Center, Combat Capabilities Development
+Command (DEVCOM) Army Research Lab, DEVCOM Aviation & Missile Center, DEVCOM
+Command, Control, Computers, Communications, Cyber, Intelligence, Surveillance and
+Reconnaissance, Army Cross Functional Teams.
+cNavy includes the Office of Naval Research, Fleet Cyber Command/C10F.
+dMarine Corps includes the Marine Corps AI Task Force, Marine Corps Warfighting Lab.
+eThe Office of the Chief Information Officer includes the Office of the Chief Data Officer.
+fDOD Office of the General Counsel did not provide a point of contact to receive the survey.
+Therefore, we surveyed each of the 39 other organizations about their collaboration with other
+organizations, including the Office of General Counsel.
+gFor this survey’s purposes, the Office of the Under Secretary of Defense for Research and
+Engineering includes Defense Innovation Unit, Defense Science Board, Defense Innovation Board,
+among other R&E enterprises. This does not include not Defense Advanced Research Projects
+Agency, Missile Defense Agency, and Space Defense Agency, which are listed separately.
+Page 70 GAO-22-105834 Artificial Intelligence
+--- pdf_page_76 ---
+pdf_page_number: 76
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_76|printed_page_pending|section_pending
+visual_review_required: true
+Appendix III: DOD Officials’ Reported
+Appendix III: DOD Officials’ Reported
+Perceptions of Extent of Collaboration on AI
+Activities
+Perceptions of Extent of Collaboration on AI
+Activities
+We identified 40 organizations with a role in the oversight and
+management of DOD’s AI activities.1 We surveyed 39 of these
+organizations about whether they collaborate and to what extent.2 As
+shown in table 10 and figure 10, some types of DOD organizations
+reported more collaborative connections (or engagement) than others.
+Specifically, a connection refers to if an organization reports that it
+collaborates with another organization—it does not imply the other
+organization reported the same collaborative connection.
+See table 8 for our analysis of collaborative connections reported
+between June and October 2021 for each organization type.
+Table 8: Number and Average of Artificial Intelligence-Related Collaborative Connections by Organization Type, Reported as a
+Point in Time from June through October 2021
+Number of times organization type Average number of times organization
+Type of Number of reported a collaborative connection type reported collaborative connection
+organizationa respondents with another organization with another organizationb
+Defense intelligence 4 83 20.8
+enterprise organizationsc
+Office of the Director of 1 19 19.0
+National Intelligence
+Joint Artificial 5 94 18.8
+Intelligence Center
+Office of the Secretary of 9 130 14.4
+Defense organizations
+Joint Chiefs of Staff 7 87 12.4
+Military services and 14 157 11.2
+National Guard
+Combatant commands 9 71 7.9
+1See Appendix II for a complete list of the 40 organizations we identified and survey
+questions. For each of the 61 individuals surveyed, we asked them about the presence,
+extent, and characteristics of their organizations’ collaborations with the other 39
+organizations. Overall, the 54 respondents reported 670 collaboration connections. Our
+survey analysis includes unclassified information provided by respondents about AI-
+related collaboration activities.
+2We took multiple steps to identify a respondent(s) who could speak to their organization’s
+AI collaboration efforts as a whole with the JAIC, with other organizations across DOD, or
+with the Office of the Director of National Intelligence. DOD Office of General Counsel did
+not provide a point of contact to receive the survey. Therefore, we surveyed 39
+organizations about their collaboration. See Appendix I for the full methodology of how we
+selected respondent(s) from each organization.
+Page 71 GAO-22-105834 Artificial Intelligence
+--- pdf_page_77 ---
+pdf_page_number: 77
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_77|printed_page_pending|section_pending
+visual_review_required: false
+Appendix III: DOD Officials’ Reported
+Perceptions of Extent of Collaboration on AI
+Activities
+Number of times organization type Average number of times organization
+Type of Number of reported a collaborative connection type reported collaborative connection
+organizationa respondents with another organization with another organizationb
+Defense agency 5 29 5.8
+organizations
+All organization types 54 670 12.4
+Source: GAO Survey about Department of Defense (DOD) Collaboration on Artificial Intelligence (AI) Activities I GAO-22-105834
+Note: Survey respondents responded to our unclassified survey from June through October 2021 and
+the views of each individual respondent are based on the point in time they completed their survey.
+aWe categorized the 39 organizations we surveyed into broad organization types. The
+representative(s) of each of these were asked questions about their collaboration with 39 DOD and
+JAIC organizations. While some organizations fit into multiple organization types, we grouped the
+organizations based on DOD organizational structure. For example, the intelligence elements of the
+military services are a part of the Defense Intelligence Enterprise; however, we placed the military
+services in the organization type “Military Services and National Guard” based on their overall DOD
+organizational structure. See appendix II for the full list of 40 organizations we asked about in our
+survey and their associated organization type for the purpose of this survey’s analysis.
+bThe average number of collaborative connections reported by respondent is calculated by dividing
+the total number of collaborative connections reported by the number of respondents. We calculated
+this average to provide a fair representation as some organization types had more respondents than
+others. For example, the military services and National Guard represented 6 organizations and had
+14 respondents, while the Joint Chiefs of Staff is 1 organization with 7 respondents.
+cDOD defines the Defense Intelligence Enterprise as the organizations, infrastructure, and measures
+to include policies, processes, procedures, and products of the intelligence, counterintelligence, and
+security components of the Joint Staff, combatant commands, military departments, and other DOD
+elements that perform national intelligence, defense intelligence, intelligence-related,
+counterintelligence, and security functions, as well as those organizations under the authority,
+direction, and control of the Under Secretary of Defense for Intelligence and Security. However, for
+the purpose of this survey, we only included the Defense Intelligence Agency, National Geospatial
+Intelligence Agency, National Reconnaissance Office, and National Security Agency as a part of our
+Defense Intelligence Enterprise classification.
+In addition to asking survey respondents if they have a connection with
+another organization, we also asked them to rate the extent of their
+perceived collaboration on a four-point scale.3 Specifically, extent refers
+to a respondent’s perception of how much they collaborate with the other
+organization that they reported a collaborative connection with. According
+to our analysis, having a connection does not necessarily mean there is a
+great extent of collaboration. As shown in figure 10, the perceived extent
+of collaboration (or how much they collaborate) also varied.
+3We asked survey respondents to rate their perceived extent of collaboration with the
+organization in question on a four point scale—little extent, some extent, moderate extent,
+and great extent.
+Page 72 GAO-22-105834 Artificial Intelligence
+--- pdf_page_78 ---
+pdf_page_number: 78
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_78|printed_page_pending|section_pending
+visual_review_required: false
+Appendix III: DOD Officials’ Reported
+Perceptions of Extent of Collaboration on AI
+Activities
+Figure 10: Breakdown of Perceived Extent of Artificial Intelligence Collaboration by Organization Type, Reported as a Point in
+Time, from June through October 2021
+Note: Survey respondents responded to our unclassified survey from June through October 2021,
+and the views of each individual respondent are based on the point in time they completed their
+survey.
+aWe categorized the 39 organizations we surveyed into broad organization types. The representative
+of each of these were asked questions about their collaboration with 39 DOD and JAIC organizations.
+While some organizations fit into multiple organization types, we grouped the organizations based on
+DOD organizational structure. For example, the intelligence elements of the military services are a
+part of the Defense Intelligence Enterprise; however, we placed the military services in the
+organization type “Military Services and National Guard” based on their overall DOD organizational
+structure. See appendix II for the full list of 39 organizations surveyed and their associated
+organization type for the purpose of this survey’s analysis.
+bDOD defines the Defense Intelligence Enterprise as the organizations, infrastructure, and measures
+to include policies, processes, procedures, and products of the intelligence, counterintelligence, and
+security components of the Joint Staff, combatant commands, military departments, and other DOD
+elements that perform national intelligence, defense intelligence, intelligence-related,
+counterintelligence, and security functions, as well as those organizations under the authority,
+direction, and control of the Under Secretary of Defense for Intelligence and Security. However, for
+the purpose of this survey, we only included the Defense Intelligence Agency, National Geospatial
+Intelligence Agency, National Reconnaissance Office, and National Security Agency as a part of our
+Defense Intelligence Enterprise classification.
+Page 73 GAO-22-105834 Artificial Intelligence
+--- pdf_page_79 ---
+pdf_page_number: 79
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_79|printed_page_pending|section_pending
+visual_review_required: false
+Appendix III: DOD Officials’ Reported
+Perceptions of Extent of Collaboration on AI
+Activities
+Our analysis showed that for the majority of reported connections, the
+extent, or how much they collaborate varies by organization type. For
+example:
+• The Offices of the Secretary of Defense respondents we surveyed
+characterized a majority of their collaboration as being to a little or
+some extent. For example, according to the Office of the Secretary of
+Defense for Policy respondent, they have collaborated with many of
+the other organizations on the development of relevant AI policies and
+on lethal autonomous weapons policies. However, after the policies
+are developed, as DOD begins to adopt and integrate AI, the extent of
+their collaboration declines as AI-related issues enter the broader
+policy discussions to a more limited degree.4
+• The military services respondents we surveyed characterized a
+majority of their collaboration as being to some or a moderate extent.
+This is generally consistent with the military services’ reported
+participation in various JAIC-led groups and initiatives. For example,
+each military service had at least one respondent who described
+participating in JAIC-led AI subcommittees or DOD AI Working Group.
+• The Defense Intelligence Enterprise respondents we surveyed
+characterized the majority of their connections as being to a great or
+moderate extent.5 This is generally consistent with the longer and
+more established AI efforts that various Defense Intelligence
+Enterprise respondents described in their written responses. For
+example, multiple respondents described collaboration related to
+geospatial intelligence-related projects. Specifically, they reported
+activities related to the Augmenting Intelligence using Machines
+4The Offices of the Secretary of Defense respondents we surveyed include respondents
+from the Office of the Chief Information Officer; Offices of the Directors of Cost
+Assessment and Program Evaluation and Operational Test and Evaluation; the Office of
+the Under Secretary of Defense (Comptroller); and the Offices of the Under Secretary of
+Defense for Acquisition and Sustainment, Intelligence and Security, Personnel and
+Readiness, and Policy.
+5The Defense Intelligence Enterprise respondents we surveyed include respondents from
+Defense Intelligence Agency, National Geospatial-Intelligence Agency, National Security
+Agency, and National Reconnaissance Office.
+Page 74 GAO-22-105834 Artificial Intelligence
+--- pdf_page_80 ---
+pdf_page_number: 80
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_80|printed_page_pending|section_pending
+visual_review_required: false
+Appendix III: DOD Officials’ Reported
+Perceptions of Extent of Collaboration on AI
+Activities
+Strategy, Project Maven, and Machine-Assisted Analytic Rapid-
+Repository System.6
+Additionally, as previously discussed, the JAIC was established to
+accelerate the delivery of AI-enabled capabilities across DOD. Our
+analysis of the survey responses for JAIC-specific collaboration showed
+that from the perspective of those surveyed between June and October
+2021, opportunities exist to improve the extent of collaboration with the
+JAIC. Specifically, when the respondents reported collaborating with the
+JAIC, 49 percent of those reported collaborative connections were
+perceived as to a little extent or some extent.7
+6The Office of the Director of National Intelligence’s 2019 Augmenting Intelligence using
+Machines Strategy provides a framework for the incorporation of Augmenting Intelligence
+using Machines technologies to accelerate mission capability development across the
+Intelligence Community. DOD launched Project Maven in 2017 with the aim to simplify
+work for intelligence analysts by recognizing objects in video footage captured by drones
+and other platforms. As reported in GAO-21-57, the Defense Intelligence Agency intends
+to replace its legacy system, the Modernized Integrated Database, which captures such
+intelligence with a new system—the Machine-Assisted Analytic Rapid-Repository System
+as of 2020.
+7In total, respondents reported 101 collaborative connections with the JAIC.
+Page 75 GAO-22-105834 Artificial Intelligence
+--- pdf_page_81 ---
+pdf_page_number: 81
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_81|printed_page_pending|section_pending
+visual_review_required: true
+Appendix IV: Joint Common Foundation
+Appendix IV: Joint Common Foundation
+Development
+Development
+According to DOD officials, DOD intends to improve collaboration by
+establishing the Joint Common Foundation as a collaborative mechanism.
+The 2018 DOD AI Strategy’s strategic approach includes creating a
+common foundation of shared data, reusable tools, frameworks and
+standards, and cloud and edge services, as part of its strategic approach
+to accelerate AI adoption and deliver AI-enabled capabilities at scale. The
+JAIC’s efforts to develop the Joint Common Foundation are supported by
+several other development platforms across the department. With some
+military service-specific platforms already in use, a 2020 Deputy
+Secretary of Defense Memorandum established data interoperability
+requirements for the military services and DOD organizations.1 In 2019,
+the JAIC began developing the Joint Common Foundation as shown in
+figure 11.
+Figure 11: Timeline of Joint Common Foundation Development, as of August 2021
+1Deputy Secretary of Defense Memorandum, Actions to Enhance and Accelerate
+Enterprise Data Management, (Dec 10, 2020).
+Page 76 GAO-22-105834 Artificial Intelligence
+--- pdf_page_82 ---
+pdf_page_number: 82
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_82|printed_page_pending|section_pending
+visual_review_required: false
+Appendix IV: Joint Common Foundation
+Development
+As described in figure 11, JAIC officials told us that initial operational
+capability of the Joint Common Foundation was achieved in March 2021
+with unclassified capabilities.2 According to DOD documentation, any
+DOD user with a Common Access Card can join the Joint Common
+Foundation to leverage these services and start building AI solutions for
+their respective domains.3 This enables DOD users to execute a wide
+range of data science and AI tasks, thus lowering or eliminating factors
+that potentially prevent or impede AI integration, according to JAIC
+officials. Through the Agile development process, DOD officials quickly
+identified some gaps and areas for improvement via the onboarding and
+training processes since reaching initial operating capability in March
+2021.
+Full operational capability for the Joint Common Foundation is an
+evolving concept in the Agile development process, according to JAIC
+officials. According to a JAIC official and DOD documentation, budgetary
+and contracting issues (e.g., the cancellation of the Joint Enterprise
+Defense Infrastructure cloud contract), as well as the impacts of COVID-
+19, have delayed the Joint Common Foundation reaching full operational
+capability and an estimated date for that milestone has not been
+determined.4 The JAIC, in coordination with the Intelligence Community,
+plans for the Joint Common Foundation being able to accommodate
+classified information by 2023.5 According to JAIC officials, the final
+operating capability of the Joint Common Foundation will ensure security
+and use at various classification levels (e.g., secret and top secret data).
+As of July 2021, JAIC officials told us they are working on incorporating
+higher classification levels but did not provide additional details on the
+2According to JAIC officials, the JAIC announced initial operational capabilities with
+Amazon Web Services in March 2021 and capabilities with Microsoft Azure in May 2021.
+Amazon Web Services and Microsoft Azure are cloud-computing services.
+3DOD issues a unique identification credential called a common access card to military
+personnel, civilian employees, and eligible contractors, according to DOD Manual 5200.08
+Volume 3.
+4The Joint Enterprise Defense Infrastructure contract was a DOD cloud-computing
+contract, which has been reported as being worth $10 billion over ten years. According to
+a July 6, 2021 DOD news release, DOD determined to cancel this contract due to evolving
+requirements, increased cloud conversancy, and industry advances, and that it no longer
+meets its needs.
+5The JAIC, in coordination with the Intelligence Community, is working to build on what the
+Intelligence Community has accomplished with their infrastructures to be able to use the
+Joint Common Foundation for Joint Worldwide Intelligence Communication System and
+top-secret data.
+Page 77 GAO-22-105834 Artificial Intelligence
+--- pdf_page_83 ---
+pdf_page_number: 83
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_83|printed_page_pending|section_pending
+visual_review_required: false
+Appendix IV: Joint Common Foundation
+Development
+actions being taken. According to DOD officials, DOD planned to finalize
+a roadmap or high-level plan with milestones for the Joint Common
+Foundation by August 2021, but has experienced multiple delays, and as
+of November 2021 the roadmap was not finalized.
+According to the Director of the JAIC, the JAIC aims to develop an
+enterprise fabric to accommodate AI projects and interconnect DOD
+components by enabling data sharing across components using different
+platforms. Specifically, components would not be limited to one cloud
+platform, but can choose among the platforms available to DOD and
+select the one that aligns with their needs. As the JAIC developed the
+Joint Common Foundation to enable DOD to test, field, and validate AI
+capabilities, JAIC officials told us that they are mindful that the Joint
+Common Foundation will need to seamlessly integrate with the growing
+ecosystem of DOD AI cloud-neutral software development platforms.6
+6A cloud-neutral capability uses different cloud providers for a federated and vendor-
+neutral approach. According to a JAIC official, at full operational capability, the Joint
+Common Foundation is intended to evolve to a cloud-neutral capability using different
+cloud providers in order to incorporate new technologies.
+Page 78 GAO-22-105834 Artificial Intelligence
+--- pdf_page_84 ---
+pdf_page_number: 84
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_84|printed_page_pending|section_pending
+visual_review_required: true
+Appendix V: Comments from the Department
+Appendix V: Comments from the Department
+of Defense
+of Defense
+Page 79 GAO-22-105834 Artificial Intelligence
+--- pdf_page_85 ---
+pdf_page_number: 85
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_85|printed_page_pending|section_pending
+visual_review_required: false
+Appendix V: Comments from the Department
+of Defense
+Page 80 GAO-22-105834 Artificial Intelligence
+--- pdf_page_86 ---
+pdf_page_number: 86
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_86|printed_page_pending|section_pending
+visual_review_required: false
+Appendix V: Comments from the Department
+of Defense
+Page 81 GAO-22-105834 Artificial Intelligence
+--- pdf_page_87 ---
+pdf_page_number: 87
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_87|printed_page_pending|section_pending
+visual_review_required: true
+Appendix VI: G AO Contact and Staff
+Error! No text of specified style in document.
+Acknowledgments
+Brian M. Mazanec at (202) 512-5130 or mazanecb@gao.gov.
+GAO Contact
+In addition to the contact named above, Penney Harwell Caramia,
+Staff
+(Assistant Director); Jennifer Andreone (Analyst-in-Charge); Tracy
+Acknowledgments
+Barnes; Erin Butkowski; Raj Chitikila; David Dornisch; Hannah Hubbard;
+Joshua Leiling; Jennifer Leotta; Amie Lesser; Sean Manzano; Gabrielle
+Matuzsan; Clarice Ransom; Andrew Stavisky; Megan Stewart; and Sarah
+Veale made key contributions to this report.
+Page 82 GAO-22-105834 Artificial Intelligence
+--- pdf_page_88 ---
+pdf_page_number: 88
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_88|printed_page_pending|section_pending
+visual_review_required: false
+Related GAO P roducts
+Error! No text of specified style in document.
+Artificial Intelligence: Status of Developing and Acquiring Capabilities for
+Weapon Systems. GAO-22-104765. Washington, D.C.: February 17,
+2022.
+Artificial Intelligence: DOD Should Improve Strategies, Inventory Process,
+and Collaboration Guidance. GAO-22-104516SU. Washington, D.C.:
+February 16, 2022.
+Artificial Intelligence: An Accountability Framework for Federal Agencies
+and Other Entities. GAO-21-519SP. Washington, D.C.: June 2, 2021.
+Agile Assessment Guide: Best Practices for Agile Adoption and
+Implementation, GAO-20-590G. Washington, D.C.: September 28, 2020.
+Defense Logistics: A Completed Comprehensive Strategy is Needed to
+Guide DOD’s In-Transit Visibility Efforts. GAO-13-201. Washington, D.C.:
+February 28, 2013.
+Managing for Results: Key Considerations for Implementing Interagency
+Collaborative Mechanisms. GAO-12-1022. Washington, D.C.: September
+27, 2012.
+Managing for Results: GPRA Modernization Act Implementation Provides
+Important Opportunities to Address Government Challenges.
+GAO-11-617T. Washington, D.C.: May 10, 2011.
+Results-Oriented Government: Practices That Can Help Enhance and
+Sustain Collaboration among Federal Agencies. GAO-06-15. Washington,
+D.C.: October 21, 2005.
+(105834)
+Page 83 GAO-22-105834 Artificial Intelligence
+--- pdf_page_89 ---
+pdf_page_number: 89
+printed_page_number: None
+section_title: 
+machine_extracted_anchor: pdf_page_89|printed_page_pending|section_pending
+visual_review_required: false
+The Government Accountability Office, the audit, evaluation, and investigative
+GAO’s Mission
+arm of Congress, exists to support Congress in meeting its constitutional
+responsibilities and to help improve the performance and accountability of the
+federal government for the American people. GAO examines the use of public
+funds; evaluates federal programs and policies; and provides analyses,
+recommendations, and other assistance to help Congress make informed
+oversight, policy, and funding decisions. GAO’s commitment to good government
+is reflected in its core values of accountability, integrity, and reliability.
+Connect with GAO on Facebook, Flickr, Twitter, and YouTube.
+Connect with GAO
+Subscribe to our RSS Feeds or Email Updates. Listen to our Podcasts.
+Visit GAO on the web at https://www.gao.gov.
+Contact FraudNet:
+To Report Fraud,
+Website: https://www.gao.gov/about/what-gao-does/fraudnet
+Waste, and Abuse in
+Automated answering system: (800) 424-5454 or (202) 512-7700
+Federal Programs
+A. Nicole Clowers, Managing Director, ClowersA@gao.gov, (202) 512-4400, U.S.
+Congressional
+Government Accountability Office, 441 G Street NW, Room 7125, Washington,
+Relations DC 20548
+Chuck Young, Managing Director, youngc1@gao.gov, (202) 512-4800
+Public Affairs
+U.S. Government Accountability Office, 441 G Street NW, Room 7149
+Washington, DC 20548
+Stephen J. Sanford, Managing Director, spel@gao.gov, (202) 512-4707
+Strategic Planning and
+U.S. Government Accountability Office, 441 G Street NW, Room 7814,
+External Liaison Washington, DC 20548
+Please Print on Recycled Paper.
+FIELD_DEFINITIONS:
+{"coding_dimensions_allowed_values": ["integration_level", "application_maturity", "human_machine_authority", "engineering_resource_conditions", "trust_governance_constraints", "organizational_system_fit"], "exact_fields": ["source_id", "source_locator", "excerpt_original", "excerpt_zh", "normalized_claim", "coding_dimensions", "evidence_nature", "topics"], "excerpt_original_rule": "逐字复制输入文本；不得静默纠正OCR或版式错误", "field_types": {"coding_dimensions": "array of zero or more exact dimension key strings", "evidence_nature": "string", "excerpt_original": "string", "excerpt_zh": "string", "normalized_claim": "string", "source_id": "string", "source_locator": "string", "topics": "array of strings"}, "normalized_claim_language": "zh-CN"}
+{"application_maturity": "应用成熟度：概念战略、研发、试验、试点、采购部署或持续运用。", "engineering_resource_conditions": "工程与资源条件：数据、算力、模型、接口、供应链、预算、人才和保障。", "human_machine_authority": "人机权限关系：辅助决策、人在回路中、受监督自主或更高程度自主；普通系统协同、信息传输、培训或文档要求本身不足以支持此维度。", "integration_level": "能力集成层级：单工具、单任务、单平台、跨平台、跨任务或体系级集成。", "organizational_system_fit": "组织与体系适配：指挥流程、任务编组、跨平台协同、人员负荷和组织变革。", "trust_governance_constraints": "可信与治理约束：安全、可靠性、测试评价、授权边界、责任与伦理。"}
+{"constraint": "限制、风险、障碍、依赖或边界条件。", "deployment_event": "部署、实装、现场运用或正式采用已经发生。", "evaluation": "评价、审查、验证或评估结论。", "goal": "战略目标、愿景或计划方向；不能写成已实现结果。", "resource_input": "投入、资源、预算、数据、人才或基础设施条件。", "test_event": "测试或演习发生、参与主体或配置；不表示功能结果或作战效能。", "test_result": "测试中观察到的功能、性能或结果；必须由摘录直接说明。"}
+JSON_REPAIR: Return one strict JSON array with exactly the eight output fields and no Markdown, commentary, metadata, or source-attribution prefix.

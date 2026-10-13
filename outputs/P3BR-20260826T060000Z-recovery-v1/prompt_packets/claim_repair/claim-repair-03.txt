@@ -1,0 +1,21 @@
+PROMPT_ID: p3br_normalized_claim_repair_v1
+VERSION: 1.0
+REPAIR_INDEX: 3
+TASK: Generate only a Chinese normalized evidence claim for this one existing candidate.
+OUTPUT: strict JSON object with exactly one key: normalized_claim.
+Do not change or repeat the excerpt, locator, source, numbers, entities, actions, scope, or result.
+Do not add source-attribution prefixes such as 本报告认为 or 某机构指出.
+Use one checkable proposition only. If the excerpt is insufficient, return an empty normalized_claim.
+{
+  "source_id": "T0-IR-006",
+  "source_locator": "pdf_page_39",
+  "excerpt_original": "The JAIC’s April 2021 report to Congress stated that the JAIC plans to update and refine the AI Inventory Portfolio Analytics Tool using Agile methods over the next 2 to 3 years.",
+  "evidence_nature": "goal",
+  "coding_dimensions": [
+    "engineering_resource_conditions"
+  ],
+  "topics": [
+    "AI库存工具",
+    "开发计划"
+  ]
+}

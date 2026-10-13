@@ -1,0 +1,12 @@
+﻿category,item,count
+Evidence,总数,85
+来源等级,A,56
+来源等级,B,29
+证据性质,constraint,12
+证据性质,deployment_event,4
+证据性质,evaluation,3
+证据性质,goal,37
+证据性质,governance_event,6
+证据性质,resource_input,10
+证据性质,test_event,9
+证据性质,test_result,4

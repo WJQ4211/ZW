@@ -1,0 +1,5 @@
+﻿search_id,executed_at,category,query,discovery_method,candidate_source_ids,result_count,search_result_is_source,notes
+P11-S01,2026-08-27T06:27:53Z,strategy_policy_governance,site:af.mil OR site:spaceforce.mil artificial intelligence strategy policy governance,official RSS discovery,"[""T1-DAF-001"", ""T1-DAF-002""]",2,False,检索结果仅用于发现；原文核验见source_manifest。
+P11-S02,2026-08-27T06:27:53Z,program_budget_acquisition,site:af.mil OR site:darpa.mil artificial intelligence program budget acquisition 2025 2026,official RSS/sitemap discovery,"[""T1-DAF-003"", ""T1-DAF-004"", ""T1-DARPA-002""]",3,False,检索结果仅用于发现；原文核验见source_manifest。
+P11-S03,2026-08-27T06:27:53Z,test_deployment_organization,site:af.mil OR site:darpa.mil artificial intelligence test deployment exercise 2025 2026,official RSS/sitemap discovery,"[""T1-DAF-005"", ""T1-DAF-006"", ""T1-DAF-007"", ""T1-DAF-008"", ""T1-DARPA-001"", ""T1-DARPA-003""]",6,False,检索结果仅用于发现；原文核验见source_manifest。
+P11-S04,2026-08-27T06:27:53Z,independent_review_research,military artificial intelligence operational medicine peer reviewed 2025,Crossref discovery API,"[""T1-IR-001""]",1,False,检索结果仅用于发现；原文核验见source_manifest。

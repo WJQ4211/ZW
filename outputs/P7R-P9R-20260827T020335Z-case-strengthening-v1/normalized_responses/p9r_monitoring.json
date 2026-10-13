@@ -1,0 +1,412 @@
+{
+  "discriminative_needs": [
+    {
+      "need_id": "ND-01",
+      "disagreement_id": "DISP-01",
+      "question": "截至2026年6月30日，JCF是否已实现全面作战能力并成为跨军种AI应用的实际共用平台？",
+      "what_to_observe": "JCF的全面作战能力状态、跨军种数据共享的实际运行情况、各军种AI项目对JCF的实际采用与迁移情况",
+      "outcome_a": "JCF达到全面作战能力，多个军种AI项目实际迁移至JCF并实现跨军种数据共享，表明集中式体系整合已形成",
+      "outcome_b": "JCF仍处于初始作战能力或延迟状态，各军种AI项目继续独立运行，未出现实质性跨军种迁移，表明分散模式仍为主导",
+      "public_sources": [
+        "美国国防部CDAO官方公告",
+        "JCF项目状态报告",
+        "国防部预算与采办文件",
+        "国会听证会记录",
+        "国防部监察长报告"
+      ],
+      "observation_frequency": "quarterly",
+      "affected_viewpoint_ids": [
+        "VP-T0-STRAT-H01",
+        "VP-T0-TECH-H01",
+        "VP-T0-ENG-H01",
+        "VP-T0-OPS-H01",
+        "VP-T0-TRUST-H01"
+      ],
+      "discriminativeness": "discriminative"
+    },
+    {
+      "need_id": "ND-02",
+      "disagreement_id": "DISP-02",
+      "question": "截至2026年6月30日，是否出现跨军种复用的统一AI平台、统一模型或统一工程流程的实际部署？",
+      "what_to_observe": "各军种AI项目之间是否存在统一平台、统一模型或统一工程流程的实际复用案例，而非仅停留在规划文件层面",
+      "outcome_a": "出现多个军种在作战演习或实际任务中常态化使用同一套AI系统或统一工程流程，且不依赖DARPA等专门项目支持，表明体系整合已实现",
+      "outcome_b": "各军种AI项目继续独立推进，未出现跨军种复用的统一平台或统一工程流程，表明任务驱动分散模式仍为主导",
+      "public_sources": [
+        "各军种AI项目公开报告",
+        "国防部联合演习报告",
+        "CDAO年度报告",
+        "国防部技术转移与复用公告"
+      ],
+      "observation_frequency": "quarterly",
+      "affected_viewpoint_ids": [
+        "VP-T0-STRAT-H02",
+        "VP-T0-TECH-H02",
+        "VP-T0-ENG-H02",
+        "VP-T0-OPS-H02",
+        "VP-T0-TRUST-H02"
+      ],
+      "discriminativeness": "discriminative"
+    },
+    {
+      "need_id": "ND-03",
+      "disagreement_id": "DISP-03",
+      "question": "截至2026年6月30日，数据质量、边缘算力、基础设施、采办指导方针和测试评估标准等瓶颈是否已得到实质性缓解并伴随跨任务规模化部署？",
+      "what_to_observe": "数据质量改进措施、边缘算力提升、基础设施延迟解决情况、国防部层面统一采办指导方针的制定与执行、测试评估标准的统一程度，以及是否伴随跨任务规模化部署",
+      "outcome_a": "瓶颈得到实质性缓解，出现跨任务规模化部署，统一采办和测试评估流程在多个军种落地，表明体系化能力已形成",
+      "outcome_b": "瓶颈持续存在，未出现跨任务规模化部署，统一采办和测试评估流程仍未落地，表明资源与治理约束仍制约体系化发展",
+      "public_sources": [
+        "国防部预算执行报告",
+        "CDAO治理与采办公告",
+        "各军种采办指南更新",
+        "国防部数据战略进展报告",
+        "GAO评估报告"
+      ],
+      "observation_frequency": "quarterly",
+      "affected_viewpoint_ids": [
+        "VP-T0-STRAT-H03",
+        "VP-T0-TECH-H03",
+        "VP-T0-ENG-H03",
+        "VP-T0-OPS-H03",
+        "VP-T0-TRUST-H03"
+      ],
+      "discriminativeness": "discriminative"
+    },
+    {
+      "need_id": "ND-04",
+      "disagreement_id": "DISP-01",
+      "question": "截至2026年6月30日，CDAO是否已发布并执行统一的AI采办指导方针和测试评估标准？",
+      "what_to_observe": "CDAO是否发布全部门范围的AI采办指导方针、测试评估标准，以及这些标准是否已在多个军种实际执行",
+      "outcome_a": "CDAO发布统一采办指导方针和测试评估标准，并在多个军种实际执行，表明统一治理已转化为实际制度",
+      "outcome_b": "CDAO未发布统一采办指导方针，各军种继续自行制定标准，表明统一治理仍停留在规划层面",
+      "public_sources": [
+        "CDAO政策文件发布",
+        "国防部指令与指示",
+        "各军种采办指南更新",
+        "国防部监察长审计报告"
+      ],
+      "observation_frequency": "quarterly",
+      "affected_viewpoint_ids": [
+        "VP-T0-STRAT-H01",
+        "VP-T0-TRUST-H01",
+        "VP-T0-ENG-H01"
+      ],
+      "discriminativeness": "discriminative"
+    },
+    {
+      "need_id": "ND-05",
+      "disagreement_id": "DISP-02",
+      "question": "截至2026年6月30日，DARPA项目（如ACE、RACER、REMA）是否已从演示验证阶段转入规模化采办或跨任务复用？",
+      "what_to_observe": "DARPA各项目的采办状态、是否进入正式列装流程、是否出现跨任务或跨军种的技术复用",
+      "outcome_a": "DARPA项目转入规模化采办并实现跨任务复用，表明任务驱动模式正向体系化整合演进",
+      "outcome_b": "DARPA项目仍停留在演示验证阶段，未进入规模化采办，表明任务驱动分散模式仍为主导",
+      "public_sources": [
+        "DARPA项目状态公告",
+        "国防部采办文件",
+        "各军种列装公告",
+        "国会国防授权法案相关条款"
+      ],
+      "observation_frequency": "quarterly",
+      "affected_viewpoint_ids": [
+        "VP-T0-TECH-H02",
+        "VP-T0-ENG-H02",
+        "VP-T0-OPS-H02",
+        "VP-T0-TRUST-H02"
+      ],
+      "discriminativeness": "discriminative"
+    }
+  ],
+  "monitor_indicators": [
+    {
+      "indicator_id": "IND-01",
+      "need_id": "ND-01",
+      "name": "JCF全面作战能力状态",
+      "operational_definition": "JCF是否正式宣布达到全面作战能力，并具备跨军种数据共享和AI应用整合的实际运行能力",
+      "source_types": [
+        "官方公告",
+        "项目状态报告",
+        "预算文件"
+      ],
+      "cadence": "quarterly",
+      "direction_a": "JCF正式宣布达到全面作战能力，并出现跨军种数据共享的实际运行案例",
+      "direction_b": "JCF未宣布达到全面作战能力，或仍处于延迟状态，无跨军种数据共享的实际运行案例",
+      "affected_viewpoint_ids": [
+        "VP-T0-STRAT-H01",
+        "VP-T0-TECH-H01",
+        "VP-T0-ENG-H01",
+        "VP-T0-OPS-H01",
+        "VP-T0-TRUST-H01"
+      ]
+    },
+    {
+      "indicator_id": "IND-02",
+      "need_id": "ND-01",
+      "name": "军种AI项目向JCF迁移情况",
+      "operational_definition": "各军种AI项目是否实际迁移至JCF平台运行，而非仅停留在规划或试点阶段",
+      "source_types": [
+        "项目公告",
+        "CDAO报告",
+        "军种技术报告"
+      ],
+      "cadence": "quarterly",
+      "direction_a": "多个军种AI项目实际迁移至JCF运行，形成跨军种共用平台的实际使用记录",
+      "direction_b": "各军种AI项目继续在自有平台独立运行，未出现向JCF迁移的实际案例",
+      "affected_viewpoint_ids": [
+        "VP-T0-STRAT-H01",
+        "VP-T0-TECH-H01",
+        "VP-T0-ENG-H01",
+        "VP-T0-OPS-H01"
+      ]
+    },
+    {
+      "indicator_id": "IND-03",
+      "need_id": "ND-02",
+      "name": "跨军种统一平台/模型/流程复用案例",
+      "operational_definition": "是否存在多个军种在作战演习或实际任务中常态化使用同一套AI系统、统一模型或统一工程流程，且不依赖DARPA等专门项目支持",
+      "source_types": [
+        "联合演习报告",
+        "军种部署公告",
+        "CDAO年度报告"
+      ],
+      "cadence": "quarterly",
+      "direction_a": "出现多个军种常态化复用同一套AI系统或统一工程流程的实际案例",
+      "direction_b": "未出现跨军种复用案例，各军种继续使用各自独立的AI系统和流程",
+      "affected_viewpoint_ids": [
+        "VP-T0-STRAT-H02",
+        "VP-T0-TECH-H02",
+        "VP-T0-ENG-H02",
+        "VP-T0-OPS-H02",
+        "VP-T0-TRUST-H02"
+      ]
+    },
+    {
+      "indicator_id": "IND-04",
+      "need_id": "ND-02",
+      "name": "SP-008整合目标对项目方向的实际影响",
+      "operational_definition": "SP-008中关于集中平台和优先采用联合解决方案的目标是否已对具体项目方向产生可验证的影响，如项目方向调整、资源重新分配",
+      "source_types": [
+        "项目变更公告",
+        "CDAO治理记录",
+        "预算调整文件"
+      ],
+      "cadence": "quarterly",
+      "direction_a": "出现SP-008整合目标对具体项目方向产生可验证影响的成果记录",
+      "direction_b": "未出现SP-008整合目标对项目方向产生实际影响的成果记录",
+      "affected_viewpoint_ids": [
+        "VP-T0-STRAT-H02",
+        "VP-T0-TRUST-H02"
+      ]
+    },
+    {
+      "indicator_id": "IND-05",
+      "need_id": "ND-03",
+      "name": "统一采办指导方针制定与执行状态",
+      "operational_definition": "国防部层面是否已制定并执行全部门范围的AI采办指导方针，且该方针已在多个军种实际落地",
+      "source_types": [
+        "CDAO政策文件",
+        "国防部指令",
+        "军种采办指南"
+      ],
+      "cadence": "quarterly",
+      "direction_a": "国防部发布统一AI采办指导方针，并在多个军种实际执行",
+      "direction_b": "国防部未发布统一采办指导方针，各军种继续自行制定标准",
+      "affected_viewpoint_ids": [
+        "VP-T0-STRAT-H03",
+        "VP-T0-TECH-H03",
+        "VP-T0-ENG-H03",
+        "VP-T0-OPS-H03",
+        "VP-T0-TRUST-H03"
+      ]
+    },
+    {
+      "indicator_id": "IND-06",
+      "need_id": "ND-03",
+      "name": "数据质量与边缘算力瓶颈缓解证据",
+      "operational_definition": "是否存在数据质量改进、边缘算力提升、基础设施延迟解决的具体措施和可验证效果，并伴随跨任务规模化部署",
+      "source_types": [
+        "技术评估报告",
+        "项目部署公告",
+        "国防部数据战略进展报告"
+      ],
+      "cadence": "quarterly",
+      "direction_a": "出现数据质量和边缘算力瓶颈缓解的量化证据，并伴随跨任务规模化部署",
+      "direction_b": "未出现瓶颈缓解的可验证证据，或虽有投入但未伴随跨任务规模化部署",
+      "affected_viewpoint_ids": [
+        "VP-T0-STRAT-H03",
+        "VP-T0-TECH-H03",
+        "VP-T0-ENG-H03",
+        "VP-T0-OPS-H03",
+        "VP-T0-TRUST-H03"
+      ]
+    },
+    {
+      "indicator_id": "IND-07",
+      "need_id": "ND-04",
+      "name": "CDAO统一采办指导方针发布与执行",
+      "operational_definition": "CDAO是否发布全部门范围的AI采办指导方针和测试评估标准，并已在多个军种实际执行",
+      "source_types": [
+        "CDAO政策文件",
+        "国防部指令",
+        "军种执行报告"
+      ],
+      "cadence": "quarterly",
+      "direction_a": "CDAO发布统一采办指导方针和测试评估标准，并在多个军种实际执行",
+      "direction_b": "CDAO未发布统一采办指导方针，或虽发布但未在军种层面实际执行",
+      "affected_viewpoint_ids": [
+        "VP-T0-STRAT-H01",
+        "VP-T0-TRUST-H01",
+        "VP-T0-ENG-H01"
+      ]
+    },
+    {
+      "indicator_id": "IND-08",
+      "need_id": "ND-05",
+      "name": "DARPA项目采办与列装状态",
+      "operational_definition": "DARPA项目（如ACE、RACER、REMA）是否已从演示验证阶段转入正式的采办或列装流程",
+      "source_types": [
+        "DARPA项目公告",
+        "国防部采办文件",
+        "军种列装公告"
+      ],
+      "cadence": "quarterly",
+      "direction_a": "DARPA项目转入规模化采办或正式列装流程",
+      "direction_b": "DARPA项目仍停留在演示验证阶段，未进入规模化采办",
+      "affected_viewpoint_ids": [
+        "VP-T0-TECH-H02",
+        "VP-T0-ENG-H02",
+        "VP-T0-OPS-H02",
+        "VP-T0-TRUST-H02"
+      ]
+    }
+  ],
+  "trigger_rules": [
+    {
+      "trigger_id": "TRG-01",
+      "indicator_id": "IND-01",
+      "predicate_type": "status_change",
+      "trigger_condition": "JCF正式宣布达到全面作战能力，并出现跨军种数据共享的实际运行案例",
+      "strengthens_branch": "体系整合已形成",
+      "weakens_branch": "分散模式仍为主导",
+      "required_source_grade": "A",
+      "affected_viewpoint_ids": [
+        "VP-T0-STRAT-H01",
+        "VP-T0-TECH-H01",
+        "VP-T0-ENG-H01",
+        "VP-T0-OPS-H01",
+        "VP-T0-TRUST-H01"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "trigger_id": "TRG-02",
+      "indicator_id": "IND-02",
+      "predicate_type": "event_match",
+      "trigger_condition": "出现多个军种AI项目实际迁移至JCF运行的具体案例",
+      "strengthens_branch": "体系整合已形成",
+      "weakens_branch": "分散模式仍为主导",
+      "required_source_grade": "A",
+      "affected_viewpoint_ids": [
+        "VP-T0-STRAT-H01",
+        "VP-T0-TECH-H01",
+        "VP-T0-ENG-H01",
+        "VP-T0-OPS-H01"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "trigger_id": "TRG-03",
+      "indicator_id": "IND-03",
+      "predicate_type": "event_match",
+      "trigger_condition": "出现多个军种在作战演习或实际任务中常态化使用同一套AI系统或统一工程流程，且不依赖DARPA等专门项目支持",
+      "strengthens_branch": "体系整合已形成",
+      "weakens_branch": "任务驱动分散模式仍为主导",
+      "required_source_grade": "A",
+      "affected_viewpoint_ids": [
+        "VP-T0-STRAT-H02",
+        "VP-T0-TECH-H02",
+        "VP-T0-ENG-H02",
+        "VP-T0-OPS-H02",
+        "VP-T0-TRUST-H02"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "trigger_id": "TRG-04",
+      "indicator_id": "IND-04",
+      "predicate_type": "event_match",
+      "trigger_condition": "出现SP-008整合目标对具体项目方向产生可验证影响的成果记录，如项目方向调整、资源重新分配",
+      "strengthens_branch": "体系整合意图已产生实际牵引",
+      "weakens_branch": "整合意图未产生实质性影响",
+      "required_source_grade": "A",
+      "affected_viewpoint_ids": [
+        "VP-T0-STRAT-H02",
+        "VP-T0-TRUST-H02"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "trigger_id": "TRG-05",
+      "indicator_id": "IND-05",
+      "predicate_type": "status_change",
+      "trigger_condition": "国防部发布统一AI采办指导方针，并在多个军种实际执行",
+      "strengthens_branch": "治理瓶颈已缓解，体系化发展条件改善",
+      "weakens_branch": "治理瓶颈持续存在",
+      "required_source_grade": "A",
+      "affected_viewpoint_ids": [
+        "VP-T0-STRAT-H03",
+        "VP-T0-TECH-H03",
+        "VP-T0-ENG-H03",
+        "VP-T0-OPS-H03",
+        "VP-T0-TRUST-H03"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "trigger_id": "TRG-06",
+      "indicator_id": "IND-06",
+      "predicate_type": "event_match",
+      "trigger_condition": "出现数据质量和边缘算力瓶颈缓解的量化证据，并伴随跨任务规模化部署",
+      "strengthens_branch": "资源瓶颈已缓解，体系化能力形成",
+      "weakens_branch": "资源瓶颈持续制约能力形成",
+      "required_source_grade": "A",
+      "affected_viewpoint_ids": [
+        "VP-T0-STRAT-H03",
+        "VP-T0-TECH-H03",
+        "VP-T0-ENG-H03",
+        "VP-T0-OPS-H03",
+        "VP-T0-TRUST-H03"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "trigger_id": "TRG-07",
+      "indicator_id": "IND-07",
+      "predicate_type": "status_change",
+      "trigger_condition": "CDAO发布统一采办指导方针和测试评估标准，并在多个军种实际执行",
+      "strengthens_branch": "统一治理已转化为实际制度",
+      "weakens_branch": "统一治理仍停留在规划层面",
+      "required_source_grade": "A",
+      "affected_viewpoint_ids": [
+        "VP-T0-STRAT-H01",
+        "VP-T0-TRUST-H01",
+        "VP-T0-ENG-H01"
+      ],
+      "human_approval_required": true
+    },
+    {
+      "trigger_id": "TRG-08",
+      "indicator_id": "IND-08",
+      "predicate_type": "status_change",
+      "trigger_condition": "DARPA项目转入规模化采办或正式列装流程",
+      "strengthens_branch": "任务驱动模式正向体系化整合演进",
+      "weakens_branch": "任务驱动分散模式仍为主导",
+      "required_source_grade": "A",
+      "affected_viewpoint_ids": [
+        "VP-T0-TECH-H02",
+        "VP-T0-ENG-H02",
+        "VP-T0-OPS-H02",
+        "VP-T0-TRUST-H02"
+      ],
+      "human_approval_required": true
+    }
+  ]
+}
